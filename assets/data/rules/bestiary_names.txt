@@ -451,3 +451,4 @@ maln_spirit1			Призванное существо
 maln_spirit2			Призванное существо							
 maln_spirit3			Призванное существо							
 Maln			Мальн							
+mortification1			Умертвие							

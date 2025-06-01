@@ -610,3 +610,10 @@ spiritualism
   orig: 64, 64
   offset: 0, 0
   index: -1
+flash_and_bones
+  rotate: false
+  xy: 67, 1
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

@@ -616,7 +616,7 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 4501	Crown of Galade	armor_head		2	0,0,0,0,0,0	0,0,0,2,0,0	[detection,2]	-1	crown1	25	0							SetVariable#lost_kingdom,20	VariableEqual#lost_kingdom,10					
 4502	Tiara of the Mentalist	armor_head		2	0,0,10,0,0,10		[detection,1]	4000	crown1	0	15												C,M	
 4503	Greater Tiara of the Heavens	armor_head		2	0,0,25,0,0,0	0,0,0,2,0,0	[detection,2]	9999	crown1	15	0													
-5000	Potion of Light Healing	POTION		0				10	potion_red	0	0									"GainHP#30;GainItems#6011,20;GainItem#50000;TrainSkill#gate"				1
+5000	Potion of Light Healing	POTION		0				10	potion_red	0	0									"GainHP#30;GainItems#6011,20;GainItem#50000;TrainSkill#flash_and_bones"				1
 5001	Potion of Moderate Healing	POTION		0				250	potion_red2	0	0									GainHP#60				1
 5002	Potion of Lesser Shielding	POTION		0				100	potion_yellow	0	0									"GainShield#6,12;TrainSkill#spiritualism"				1
 5003	Potion of Shielding	POTION		0				200	potion_yellow	0	0									GainShield#10,12				1
@@ -784,7 +784,7 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 13003	Kassian legs	armor_feet		1	0,0,0,5,0,5			1200	armor_leather_feet1	0	0												M	
 13004	Kassian longsword	WEAPON	kassian lsword	0			[silver]	0	weapon_sword_long_magic4	0	0						longsword						M	
 13005	Regordiand_necklace	necklace		0	10,10,0,0,0,5			-1	medallion1	0	0													
-13006	Iron crossbow	WEAPON	iron_crossbow	0				140	weapon_bow_fire	0	0						shortbow						W,R	
+13006	Iron crossbow	WEAPON	iron_crossbow	0				140	weapon_bow_fire	0	0						crossbow						W,R	
 14000	Dock Key	general		0				90	key1	0	0													1
 15000	rog_summon_goblin	POTION		0				1500	rog_summon	0	0													0
 15001	kogot_summon_wolf	POTION		0				2000	kogot_summon	0	0													0
