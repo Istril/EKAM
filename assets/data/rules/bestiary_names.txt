@@ -450,4 +450,4 @@ blue_spirit			Синий дух
 maln_spirit1			Призванное существо							
 maln_spirit2			Призванное существо							
 maln_spirit3			Призванное существо							
-Maln			Призванное существо							
+Maln			Мальн							

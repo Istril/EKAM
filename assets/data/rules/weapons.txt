@@ -437,3 +437,18 @@ maln_spirit1	spirit_maul	10	18	5	220	8	1	1									stun	13	3
 longsword_spirit2	spirit_lsword	8	15	11	250	14	1								12	p				
 longsword_spirit3	spirit_lsword	3	5	4	350	21	1								12	p				
 maln_staff	eldrich_cold	19	28	5	200	9	7	1	1			s	ice1	c			stun	40	2	
+iron_crossbow	crossbow1	6	20	10	160	2	8	1	1				arrow1							
+steel_crossbow	crossbow2	15	30	10	160	2	8	1	1				arrow1							
+bluesteel_crossbow	crossbow3	25	40	10	160	2	8	1	1				arrow1							
+silver_crossbow	crossbow4	16	28	10	160	4	8	1	1				arrow1							
+cascade_crossbow	crossbow5	10	65	6	190	3	8	1	1				arrow1							
+guardian_crossbow	crossbow6	60	80	5	160	1	8	1	1				arrow1							
+vasilisk_eye	crossbow7	25	50	4	160	3	8	1	1				arrow1		15	t	paralysis	15	3	
+amnystia_crossbow	crossbow8	10	250	4	150	1	8	1	1				arrow1							
+justiciar_crossbow_fire	crossbow9	60	80	5	160	1	8	1	1				arrow1		4	f				
+justiciar_crossbow_cold	crossbow9	60	80	5	160	1	8	1	1				arrow1		4	c				
+assasin_crossbow	samostrel1	9	18	18	150	11	8	1	1				arrow1							
+executioner_crossbow	crossbow10	320	320	1	100	1	8	1	1				arrow1							
+iltera_shard	samostrel2	9	15	18	140	13	8	1	1				arrow1		3	d				
+valhella_shard	samostrel3	7	17	18	160	13	8	1	1				arrow1		3	f				
+greatsword_wights	flash_and_bones	6	11	4	200	8	1	1												

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="32">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="37">
  <properties>
   <property name="music" value="dark_chamber"/>
   <property name="name" value="Sagar Enclave"/>
@@ -1093,7 +1093,7 @@
  <tileset firstgid="625" source="cherch.tsx"/>
  <layer id="1" name="nonwalk" width="60" height="60" visible="0">
   <data encoding="base64" compression="zlib">
-   eJzt1zEOwCAMBEH+/+U0kVuEgim5zEj0rIwLxgAAAAAAAAAAuNuzOMnmvvTmVVvyrL+aEpt3PWm73W1IaT65v977/LG305Cyv6Xbm6Izt6Tesnuvab1l9XdI2lsAAJi9bRo17g==
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
   </data>
  </layer>
  <layer id="2" name="water" width="60" height="60">
@@ -1103,7 +1103,7 @@
  </layer>
  <layer id="3" name="ground" width="60" height="60">
   <data encoding="base64" compression="zlib">
-   eJztluEKwjAMhCf6QL7/04k/CiV006a57Jrkg2CrA/vtPOZxxObZDcs50PM+OHxRe7lmyRe1v9tNIu85Yn/2XXcgO4XYM/U3W75oIruNyJgvU3/RZMw3Exnzrf7GJbLbCIt8H0bjgUV/d/Pt1xnyXcXK18ObKV8vX5b+Zs0XeS8Y++vlmyVftv5WvtVfLRnzrf7OsauvBkanK1bz3dF3pb+7eDaY8vWAqb8eZMyXqb/o+8SW7/f19ees+mqw9J1x7Z1nYMq39+3fa2c6u24Gpv5Kj7ZuZxt9FilftK8GlK/83cmJlu+M769rryZ6f3uY8vXw1YD0bWP5PFoF5Yv6v7GKta9mPNn13FrKt3zLt3zLl5Py3df3A7TcC8k=
+   eJzt1lEKgzAQQEGL3sfe/3RSqBBodeNHYNnMwIKggg+DZlkAAAAAAABgnNegyerzbNvNtOffwbXtPVnp/X32vZkZensa9eakt35vNJV6I1V6R+2rsu6vet/b0zVdobfKen7a267X9Tv/vmuVes/js/fqumz0xr1rMHrzsJ71zv4/6p2svTPtnwEArhx9YgcU
   </data>
  </layer>
  <layer id="4" name="ground2" width="60" height="60">
@@ -1118,7 +1118,7 @@
  </layer>
  <layer id="6" name="objects" width="60" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt17sOgkAQhWHiO6mdCsZovJX6kNp6Kb20PJQ2duLsrOAy4/8lW0ExZw9hIcsAAAAAAAAAAAB+Y99JPQGasBN6PdO7Syd6deko9Hqnd5MOQm83Z732neWJdXW2Dz0hz9hZ3ioXRc7Bc00Ua1bvqEG6Qp5CkVc7f4q8sco3+2A5by70unaWN4bFvCOh19WH6xbzfmOqvD9l3qHQ6zLgPa2dX7s/bePheV5w/lbSzp83MkWcudDrtobzt015Y7y+i4vAZcHmT/6TAACA7AG+ZRkD
+   eJzt1lEKwjAMANCdTFAQxVt5Lj2c658fui7dUou8B/lqWhJCIdMEAAAAAAAAeQ5znBeidv4prl07iKnV1lK7fseh39j5Xnd6qdV2SXjzl8w3dr7XnV70Gzvf6062yN70nrtk5P2q1HQP5EbfHk2kpn/p13y357bk92C+30V3ylH7zZpvy86dzf9dzn3M8VyZf2yqKFfmfEftN+v/jthv2XNPKyOSW+LWsQ8AgK1erxsl8Q==
   </data>
  </layer>
  <layer id="7" name="roofs" width="60" height="60">
@@ -1128,21 +1128,21 @@
  </layer>
  <objectgroup id="8" name="data">
   <object id="13" x="814" y="842"/>
-  <object id="22" name="entry" type="entry" gid="245" x="1135" y="1449" width="64" height="64">
+  <object id="22" name="entry" type="entry" gid="245" x="1134" y="1503.33" width="64" height="64">
    <properties>
     <property name="entry" value="1"/>
     <property name="entry_id" value="1"/>
    </properties>
   </object>
-  <object id="24" name="Chest" type="container" gid="249" x="1024" y="1280" width="64" height="64">
+  <object id="24" name="Chest" type="container" gid="249" x="640" y="1536" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="loot_table" value="test_chest1"/>
     <property name="name" value="@CHEST"/>
    </properties>
   </object>
-  <object id="25" name="Bed" type="bed" gid="249" x="1120" y="1280" width="64" height="64"/>
-  <object id="28" name="fisherman" type="staticNPC" gid="247" x="1216" y="1280" width="64" height="64">
+  <object id="25" name="Bed" type="bed" gid="249" x="990.333" y="1516.33" width="64" height="64"/>
+  <object id="28" name="fisherman" type="staticNPC" gid="247" x="992" y="1408" width="64" height="64">
    <properties>
     <property name="conversation" value="testNPC"/>
     <property name="name" value="Гарет"/>
@@ -1160,7 +1160,7 @@
     <property name="sprite" value="male_red_1"/>
    </properties>
   </object>
-  <object id="30" name="crate" type="container" gid="249" x="1280" y="1440" width="64" height="64">
+  <object id="30" name="crate" type="container" gid="249" x="640" y="1472" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="items" value="1003,1003,1003,1003,1003"/>
@@ -1168,11 +1168,21 @@
     <property name="tag" value="C10_test_crate"/>
    </properties>
   </object>
-  <object id="31" name="Chest" type="container" gid="249" x="992" y="1536" width="64" height="64">
+  <object id="31" name="Chest" type="container" gid="249" x="640" y="1600" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="items" value="15010,15011,15012"/>
     <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="32" name="Light" type="light" gid="249" x="1120" y="1344" width="64" height="64"/>
+  <object id="33" name="Light" type="light" gid="249" x="1120" y="1536" width="64" height="64"/>
+  <object id="34" name="Light" type="light" gid="249" x="768" y="1536" width="64" height="64"/>
+  <object id="35" name="Light" type="light" gid="249" x="768" y="1312" width="64" height="64"/>
+  <object id="36" type="transition" x="928" y="928" width="61.5" height="61.5">
+   <properties>
+    <property name="area_id" value="H10"/>
+    <property name="entry_id" value="999"/>
    </properties>
   </object>
  </objectgroup>

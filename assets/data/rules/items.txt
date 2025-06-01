@@ -784,6 +784,7 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 13003	Kassian legs	armor_feet		1	0,0,0,5,0,5			1200	armor_leather_feet1	0	0												M	
 13004	Kassian longsword	WEAPON	kassian lsword	0			[silver]	0	weapon_sword_long_magic4	0	0						longsword						M	
 13005	Regordiand_necklace	necklace		0	10,10,0,0,0,5			-1	medallion1	0	0													
+13006	Iron crossbow	WEAPON	iron_crossbow	0				140	weapon_bow_fire	0	0						shortbow						W,R	
 14000	Dock Key	general		0				90	key1	0	0													1
 15000	rog_summon_goblin	POTION		0				1500	rog_summon	0	0													0
 15001	kogot_summon_wolf	POTION		0				2000	kogot_summon	0	0													0

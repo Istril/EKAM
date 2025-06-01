@@ -10,14 +10,14 @@ index	type	text	text_ES	Go To	conditions	actions	requisites
 6	A	25000		0		GainXP#25000	
 6	A	50000		0		GainXP#50000	
 10	Q	Сколько ОН тебя интересут		11			
-11	A	2		10		GainSkillPoint#	
+11	A	5		10		"GainSkillPoint#;GainSkillPoint#;GainSkillPoint#;GainSkillPoint#;GainSkillPoint#"	
 11	A	4		10		TrainSkill#summoner
 11	A	назад		1			
 15	Q	Сколько ОС тебя интересут		16			
-16	A	4		15		GainTrait#	
+16	A	5		15		"GainTrait#;GainTrait#;GainTrait#;GainTrait#;GainTrait#"	
 16	A	Назад		1			
 20	Q	Что-то ещё?		21			
 21	A	Сбросить статистику		0		ResetPlayerTraits#	
 21	A	Сбросить Умения себе		0		ResetPlayerSkills#	
-21	A	Сбросить Умения себе		0		ForgetPlayerAdvancedSkills#	
+21	A	Забыть продвинутые умения		0		ForgetPlayerAdvancedSkills#	
 21	A	забыть умения компаньону		0		ResetCompanion#	
