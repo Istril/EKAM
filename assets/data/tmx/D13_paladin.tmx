@@ -1245,7 +1245,7 @@
  </layer>
  <layer id="3" name="ground" width="96" height="96">
   <data encoding="base64" compression="gzip">
-   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
+   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
   </data>
  </layer>
  <layer id="4" name="ground2" width="96" height="96">
@@ -1260,7 +1260,7 @@
  </layer>
  <layer id="6" name="objects" width="96" height="96">
   <data encoding="base64" compression="gzip">
-   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
+   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
   </data>
  </layer>
  <layer id="7" name="roofs" width="96" height="96">
@@ -1272,12 +1272,6 @@
   <object id="46" type="entry" gid="17" x="2827.5" y="1770.5" width="64" height="64">
    <properties>
     <property name="entry_id" value="50"/>
-   </properties>
-  </object>
-  <object id="47" name="Test1" type="transition" x="2460.93" y="1631.85" width="34" height="62.6667">
-   <properties>
-    <property name="area_id" value="E10_tower1"/>
-    <property name="entry_id" value="26"/>
    </properties>
   </object>
   <object id="48" name="grate" type="mapitem" gid="21" x="2688" y="1760" width="64" height="64">
@@ -1345,12 +1339,6 @@
     <property name="name" value="@BARRET"/>
     <property name="portrait" value="57"/>
     <property name="sprite" value="male_red_1"/>
-   </properties>
-  </object>
-  <object id="64" name="Test4" type="transition" x="2208" y="1632" width="31" height="30.3333">
-   <properties>
-    <property name="area_id" value="D13_paladin"/>
-    <property name="entry_id" value="53"/>
    </properties>
   </object>
   <object id="66" type="entry" gid="17" x="2432" y="2016" width="64" height="64">
@@ -1523,7 +1511,12 @@
     <property name="entry_id" value="62"/>
    </properties>
   </object>
-  <object id="152" name="TP in second floor" x="32" y="2272" width="64.6667" height="63.3333"/>
+  <object id="152" name="TP in second floor" type="transition" x="32" y="2272" width="64.6667" height="63.3333">
+   <properties>
+    <property name="area_id" value="D13_paladinsecondfloor"/>
+    <property name="entry_id" value="100"/>
+   </properties>
+  </object>
   <object id="153" x="642.667" y="2546.67"/>
   <object id="154" name="Bed" type="bed" gid="21" x="768" y="1408" width="64" height="64"/>
   <object id="155" name="Energy barrier" type="mapitem" gid="21" x="128" y="2304" width="64" height="64">
@@ -1681,9 +1674,9 @@
   </object>
   <object id="190" name="Bridge" type="mapitem" gid="21" x="1408" y="160" width="64" height="64">
    <properties>
+    <property name="active" value=""/>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
-    <property name="inactive" value=""/>
     <property name="inactive_sprite" value=""/>
     <property name="tag" value="bridge2"/>
    </properties>
@@ -1698,27 +1691,27 @@
   </object>
   <object id="194" name="Bridge" type="mapitem" gid="21" x="1440" y="160" width="70" height="64">
    <properties>
+    <property name="active" value=""/>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
-    <property name="inactive" value=""/>
     <property name="inactive_sprite" value=""/>
     <property name="tag" value="bridge2"/>
    </properties>
   </object>
   <object id="195" name="Bridge" type="mapitem" gid="21" x="1472" y="160" width="64" height="64">
    <properties>
+    <property name="active" value=""/>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
-    <property name="inactive" value=""/>
     <property name="inactive_sprite" value=""/>
     <property name="tag" value="bridge2"/>
    </properties>
   </object>
   <object id="196" name="Bridge" type="mapitem" gid="21" x="1504" y="160" width="64" height="64">
    <properties>
+    <property name="active" value=""/>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
-    <property name="inactive" value=""/>
     <property name="inactive_sprite" value=""/>
     <property name="tag" value="bridge2"/>
    </properties>
@@ -1726,36 +1719,36 @@
   <object id="198" x="1633.5" y="78.5"/>
   <object id="199" name="Bridge" type="mapitem" gid="21" x="1408" y="128" width="64" height="64">
    <properties>
+    <property name="active" value=""/>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
-    <property name="inactive" value=""/>
     <property name="inactive_sprite" value=""/>
     <property name="tag" value="bridge2"/>
    </properties>
   </object>
   <object id="200" name="Bridge" type="mapitem" gid="21" x="1440" y="128" width="64" height="64">
    <properties>
+    <property name="active" value=""/>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
-    <property name="inactive" value=""/>
     <property name="inactive_sprite" value=""/>
     <property name="tag" value="bridge2"/>
    </properties>
   </object>
   <object id="201" name="Bridge" type="mapitem" gid="21" x="1472" y="128" width="64" height="64">
    <properties>
+    <property name="active" value=""/>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
-    <property name="inactive" value=""/>
     <property name="inactive_sprite" value=""/>
     <property name="tag" value="bridge2"/>
    </properties>
   </object>
   <object id="202" name="Bridge" type="mapitem" gid="21" x="1504" y="128" width="64" height="64">
    <properties>
+    <property name="active" value=""/>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
-    <property name="inactive" value=""/>
     <property name="inactive_sprite" value=""/>
     <property name="tag" value="bridge2"/>
    </properties>
@@ -1827,13 +1820,6 @@
     <property name="conditions" value=" NPCinArea#cardinal;VariableLower#TMP_D13_cardinal,1"/>
    </properties>
   </object>
-  <object id="213" name="tp k cardinaly 6 int" type="conversation" gid="21" x="1248" y="288" width="64" height="64">
-   <properties>
-    <property name="conversation" value="paladin_tpcardinal_book"/>
-    <property name="icon" value="book"/>
-    <property name="name" value="@BOOK"/>
-   </properties>
-  </object>
   <object id="215" name="LightBarrier" type="mapitem" gid="21" x="1920" y="1728" width="64" height="64">
    <properties>
     <property name="active" value=""/>
@@ -1877,46 +1863,10 @@
     <property name="tag" value="grateE2"/>
    </properties>
   </object>
-  <object id="232" name="second floor" type="transition" x="1793.5" y="1922.5" width="28" height="29.5">
-   <properties>
-    <property name="area_id" value="H5"/>
-    <property name="entry_id" value="2"/>
-   </properties>
-  </object>
   <object id="233" name="Bed" type="bed" gid="21" x="2016" y="2112" width="64" height="64"/>
-  <object id="234" name="D13_paladinpropovednikroom" type="transition" x="1311.5" y="1856.5" width="32.5" height="31.5">
-   <properties>
-    <property name="area_id" value="D13_paladinpropovednikroom"/>
-    <property name="entry_id" value="1"/>
-   </properties>
-  </object>
   <object id="235" name="second floor tp" type="transition" x="77.1667" y="112.833" width="29.5" height="36.5">
    <properties>
     <property name="area_id" value="D13_paladinsecondfloor"/>
-    <property name="entry_id" value="1"/>
-   </properties>
-  </object>
-  <object id="236" name="D13_paladinnastoytelroom" type="transition" x="1312" y="1952" width="32" height="32">
-   <properties>
-    <property name="area_id" value="D13_paladinnastoytelroom"/>
-    <property name="entry_id" value="1"/>
-   </properties>
-  </object>
-  <object id="237" name="D13_paladinarhiepiscoproom" type="transition" x="1408" y="1952" width="32" height="32">
-   <properties>
-    <property name="area_id" value="D13_paladinarhiepiscoproom"/>
-    <property name="entry_id" value="1"/>
-   </properties>
-  </object>
-  <object id="243" name="D13_paladinwatherroom (Проект карманного измерения удалён)" type="transition" x="1593.83" y="2042.17" width="29.5" height="30.5">
-   <properties>
-    <property name="area_id" value="D13_paladinwatherroom"/>
-    <property name="entry_id" value="1"/>
-   </properties>
-  </object>
-  <object id="244" name="D13_paladindungeon" type="transition" x="1312" y="2048" width="29.5" height="28.5">
-   <properties>
-    <property name="area_id" value="D13_paladindungeon"/>
     <property name="entry_id" value="1"/>
    </properties>
   </object>
