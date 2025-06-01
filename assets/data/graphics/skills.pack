@@ -617,3 +617,10 @@ flash_and_bones
   orig: 64, 64
   offset: 0, 0
   index: -1
+master_necromancer
+  rotate: false
+  xy: 133, 1
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

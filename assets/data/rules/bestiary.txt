@@ -449,4 +449,4 @@ maln_spirit1	strong	warrior	18	18	maln_spirit1	15	150,150,300,0,-175,150	1	[outs
 maln_spirit2	strong	warrior	15	15	longsword_spirit2	15	100,100,300,-300,-175,250	1	[outsider]		"fk_spirit;composite/female_mainhand_longsword"	1		patroller	enemy	M	0		LoseHPFrost#90		
 maln_spirit3	strong	rogue	13	13	longsword_spirit3	5	100,100,300,-300,-175,250	1	[outsider]		"fk_spirit;composite/female_mainhand_longsword"	1		patroller	enemy	M	0		LoseHPPoison#70		
 Maln	strong	warrior	16	19	maln_staff	8	-80,90,40,25,25,120	1		bandit_5	male_red_ssword	1	heal_wounds#3	civilian	neutral	M	116				
-mortification1		warrior	8	15	greatsword_wights	4	-250,300,0,300,200,-50	1	[undead][outsider]		knight_wights	1		patroller	enemy	M	0		Summon#mortification1,5,60		
+mortification1		warrior	6	10	greatsword_wights	4	-250,300,0,300,200,-50	1	[undead][outsider]		knight_wights	1		patroller	enemy	M	0		Summon#mortification1,5,60		

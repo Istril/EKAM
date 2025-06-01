@@ -1870,7 +1870,7 @@
 
     move-result v0
 
-    if-eqz v0, :flash_and_bones
+    if-eqz v0, :cond_flash_and_bones
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -1935,7 +1935,7 @@
 
     goto/16 :goto_0
 
-    :flash_and_bones
+    :cond_flash_and_bones
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -1962,45 +1962,39 @@
 
     move-result v0
 
-    if-ne v0, v5, :cond_flash_and_bones_lvl2
+    if-ne v0, v5, :cond_fab
 
     const-string v2, "mortification1"
 
-    const/4 v3, 0x3
+    const/4 v3, 0x6
 
     const/16 v5, 0x1e
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_flash_and_bones_lvl2
-    if-ne v0, v1, :cond_flash_and_bones_lvl3
+    :cond_fab
+    if-ne v0, v1, :cond_fab1
 
-    const-string v1, "small_blue_spirit1"
+    const-string v1, "mortification1"
 
-    const/16 v2, 0x4
+    const/16 v2, 0xa
 
     const/16 v3, 0x23
 
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
+    :cond_fab1
+    if-ne v0, v4, :cond_fab2
 
-    invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
+    const-string v0, "mortification1"
 
-    invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
-
-    :cond_flash_and_bones_lvl3
-    if-ne v0, v4, :cond_flash_and_bones_end
-
-    const-string v0, "blue_spirit"
-
-    const/16 v1, 0xc
+    const/16 v1, 0xf
 
     const/16 v2, 0x32
 
     invoke-static {p0, v0, v1, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_flash_and_bones_end
+    :cond_fab2
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
