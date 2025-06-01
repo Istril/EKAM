@@ -1,0 +1,3 @@
+index	type	text	text_ES	Go To	conditions	actions	requisites
+1	Q	Проходя мимо вам хватило внимательности, что бы разглядеть странную горку из песка.		2			AWA#2
+2	A	Вот и лопата пригодилась. Вскопать.		0	PlayerHasItem#12031	GainItem#12030	

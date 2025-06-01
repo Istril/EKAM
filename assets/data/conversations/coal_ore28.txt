@@ -1,0 +1,11 @@
+index	type	text	text_ES	Go To	conditions	actions
+1	Q	Вы нашли Залеж угля. (стальная красная кирка)		4	PlayerHasItem#12025	
+1	Q	Вы нашли Залеж угля. (стальная фиол кирка)		5	PlayerHasItem#12024	
+1	Q	Вы нашли Залеж угля. (стальная синяя кирка)		6	PlayerHasItem#12023	
+1	Q	Вы нашли Залеж угля. (стальная кирка)		2	PlayerHasItem#12022	
+1	Q	Вы нашли Залеж угля, но увы, у вас нет подходящего для добычи инструмента.		3		
+2	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_gold_ore28,1	"SetVariable#TMP_gold_ore28,1;GainItem#12016;GainXP#5"
+3	A	Вернусь позже.		0		
+4	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_gold_ore28,1	"SetVariable#TMP_gold_ore28,1;GainItems#12016,4;GainXP#20"
+5	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_gold_ore28,1	"SetVariable#TMP_gold_ore28,1;GainItem#12016;GainXP#50"
+6	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_gold_ore28,1	"SetVariable#TMP_gold_ore28,1;GainItems#12016,2;GainXP#10"

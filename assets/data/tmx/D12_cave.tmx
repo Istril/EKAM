@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="80" height="80" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="163">
+ <properties>
+  <property name="maxlight" value="45"/>
+  <property name="music" value="dark_chamber"/>
+  <property name="name" value="Lambar Cave"/>
+  <property name="name_ES" value="Cueva Lambar"/>
+ </properties>
+ <tileset firstgid="1" source="cave.tsx"/>
+ <tileset firstgid="241" source="spawns.tsx"/>
+ <tileset firstgid="249" source="grassland.tsx"/>
+ <tileset firstgid="377" source="trees.tsx"/>
+ <tileset firstgid="393" source="dungeon stairs.tsx"/>
+ <tileset firstgid="397" source="dryground.tsx"/>
+ <tileset firstgid="461" source="town_objects.tsx"/>
+ <tileset firstgid="541" source="town_objexts2.tsx"/>
+ <tileset firstgid="605" source="grounds_indoor.tsx"/>
+ <tileset firstgid="765" source="natural_grounds.tsx"/>
+ <tileset firstgid="893" source="cave2.tsx"/>
+ <layer id="1" name="nonwalk" width="80" height="80" visible="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQdvoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDXAF0TSAQAZAAA
+  </data>
+ </layer>
+ <layer id="2" name="water" width="80" height="80">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQdvoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDXAF0TSAQAZAAA
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="80" height="80">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="80" height="80">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQdvoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDXAF0TSAQAZAAA
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="80" height="80">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQdvoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDXAF0TSAQAZAAA
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="80" height="80">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="80" height="80">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQdvoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIDXAF0TSAQAZAAA
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="1" name="exit to D12" type="transition" x="2517" y="1539" width="65" height="134">
+   <properties>
+    <property name="area_id" value="D12"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="2" name="exit from dungeon" type="entry" gid="241" x="2445" y="1603" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="3" name="flames" type="mapeffect" gid="245" x="2379" y="1649" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="4" name="flames" type="mapeffect" gid="245" x="2331" y="1657" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="5" name="flames" type="mapeffect" gid="245" x="2308" y="1626" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="6" name="flames" type="mapeffect" gid="245" x="2334" y="1612" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="7" name="flames" type="mapeffect" gid="245" x="2309" y="1561" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="8" name="flames" type="mapeffect" gid="245" x="2058" y="1644" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="9" name="flames" type="mapeffect" gid="245" x="2032" y="1659" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="10" name="flames" type="mapeffect" gid="245" x="1999" y="1632" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="11" name="flames" type="mapeffect" gid="245" x="2035" y="1614" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="12" name="flames" type="mapeffect" gid="245" x="2010" y="1563" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="13" name="flames" type="mapeffect" gid="245" x="2046" y="1586" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="14" name="flames" type="mapeffect" gid="245" x="2051" y="1559" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="15" name="flames" type="mapeffect" gid="245" x="1942" y="1597" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="16" name="flames" type="mapeffect" gid="245" x="1976" y="1558" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="17" name="flames" type="mapeffect" gid="245" x="1989" y="1596" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="18" name="flames" type="mapeffect" gid="245" x="1936" y="1554" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="19" name="flames" type="mapeffect" gid="245" x="1852" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="20" name="flames" type="mapeffect" gid="245" x="1885" y="1499" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="21" name="flames" type="mapeffect" gid="245" x="1800" y="1510" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="22" name="flames" type="mapeffect" gid="245" x="1665" y="1340" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="23" name="flames" type="mapeffect" gid="245" x="1646" y="1440" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="24" name="flames" type="mapeffect" gid="245" x="1613" y="1413" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="25" name="flames" type="mapeffect" gid="245" x="1660" y="1367" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="26" name="flames" type="mapeffect" gid="245" x="1649" y="1395" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="27" name="flames" type="mapeffect" gid="245" x="1672" y="1425" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="28" name="flames" type="mapeffect" gid="245" x="1603" y="1377" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="29" name="flames" type="mapeffect" gid="245" x="1624" y="1344" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="30" name="flames" type="mapeffect" gid="245" x="1686" y="1473" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="31" name="flames" type="mapeffect" gid="245" x="1667" y="1573" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="32" name="flames" type="mapeffect" gid="245" x="1634" y="1546" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="33" name="flames" type="mapeffect" gid="245" x="1681" y="1500" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="34" name="flames" type="mapeffect" gid="245" x="1670" y="1528" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="35" name="flames" type="mapeffect" gid="245" x="1693" y="1558" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="36" name="flames" type="mapeffect" gid="245" x="1624" y="1510" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="37" name="flames" type="mapeffect" gid="245" x="1645" y="1477" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="38" name="flames" type="mapeffect" gid="245" x="1467" y="1556" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="39" name="flames" type="mapeffect" gid="245" x="1448" y="1656" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="40" name="flames" type="mapeffect" gid="245" x="1415" y="1629" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="41" name="flames" type="mapeffect" gid="245" x="1462" y="1583" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="42" name="flames" type="mapeffect" gid="245" x="1451" y="1611" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="43" name="flames" type="mapeffect" gid="245" x="1474" y="1641" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="44" name="flames" type="mapeffect" gid="245" x="1405" y="1593" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="45" name="flames" type="mapeffect" gid="245" x="1426" y="1560" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="46" name="flames" type="mapeffect" gid="245" x="1436" y="1530" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="47" name="flames" type="mapeffect" gid="245" x="1368" y="1564" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="48" name="flames" type="mapeffect" gid="245" x="1401" y="1567" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="49" name="flames" type="mapeffect" gid="245" x="1538" y="1534" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="50" name="flames" type="mapeffect" gid="245" x="1378" y="1631" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="51" name="flames" type="mapeffect" gid="245" x="1215" y="1532" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="52" name="flames" type="mapeffect" gid="245" x="1210" y="1562" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="53" name="flames" type="mapeffect" gid="245" x="1220" y="1598" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="54" name="flames" type="mapeffect" gid="245" x="1253" y="1625" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="55" name="flames" type="mapeffect" gid="245" x="1243" y="1563" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="56" name="flames" type="mapeffect" gid="245" x="1253" y="1599" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="57" name="flames" type="mapeffect" gid="245" x="1286" y="1626" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="58" name="flames" type="mapeffect" gid="245" x="1145" y="1438" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="59" name="flames" type="mapeffect" gid="245" x="1155" y="1474" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="60" name="flames" type="mapeffect" gid="245" x="1188" y="1501" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="61" name="flames" type="mapeffect" gid="245" x="1176" y="1590" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="62" name="flames" type="mapeffect" gid="245" x="1186" y="1626" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="63" name="flames" type="mapeffect" gid="245" x="1219" y="1653" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="64" name="flames" type="mapeffect" gid="245" x="958" y="1446" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="65" name="flames" type="mapeffect" gid="245" x="977" y="1475" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="66" name="flames" type="mapeffect" gid="245" x="1001" y="1509" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="67" name="flames" type="mapeffect" gid="245" x="903" y="1441" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="68" name="flames" type="mapeffect" gid="245" x="942" y="1477" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="69" name="flames" type="mapeffect" gid="245" x="933" y="1443" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="70" name="flames" type="mapeffect" gid="245" x="917" y="1489" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="71" name="flames" type="mapeffect" gid="245" x="884" y="1463" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="72" name="flames" type="mapeffect" gid="245" x="895" y="1510" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="73" name="flames" type="mapeffect" gid="245" x="872" y="1421" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="74" name="flames" type="mapeffect" gid="245" x="861" y="1478" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="75" name="flames" type="mapeffect" gid="245" x="791" y="1474" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="76" name="flames" type="mapeffect" gid="245" x="750" y="1478" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="77" name="flames" type="mapeffect" gid="245" x="786" y="1501" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="78" name="flames" type="mapeffect" gid="245" x="775" y="1529" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="79" name="flames" type="mapeffect" gid="245" x="798" y="1559" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="80" name="flames" type="mapeffect" gid="245" x="464" y="1310" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="81" name="flames" type="mapeffect" gid="245" x="423" y="1314" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="82" name="flames" type="mapeffect" gid="245" x="459" y="1337" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="83" name="flames" type="mapeffect" gid="245" x="448" y="1365" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="84" name="flames" type="mapeffect" gid="245" x="471" y="1395" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="85" name="flames" type="mapeffect" gid="245" x="286" y="1410" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="86" name="flames" type="mapeffect" gid="245" x="279" y="1375" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="87" name="flames" type="mapeffect" gid="245" x="308" y="1396" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="88" name="flames" type="mapeffect" gid="245" x="283" y="1351" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="89" name="flames" type="mapeffect" gid="245" x="363" y="1266" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="90" name="flames" type="mapeffect" gid="245" x="224" y="1280" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="91" name="flames" type="mapeffect" gid="245" x="289" y="1185" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="92" name="flames" type="mapeffect" gid="245" x="523" y="1539" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="93" name="flames" type="mapeffect" gid="245" x="487" y="1529" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="94" name="flames" type="mapeffect" gid="245" x="548" y="1367" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="95" name="Light" type="light" gid="245" x="2320" y="1605" width="64" height="64"/>
+  <object id="96" name="Light" type="light" gid="245" x="2059" y="1614" width="64" height="64"/>
+  <object id="97" name="Light" type="light" gid="245" x="1924" y="1569" width="64" height="64"/>
+  <object id="98" name="Light" type="light" gid="245" x="1844" y="1540" width="64" height="64"/>
+  <object id="99" name="Light" type="light" gid="245" x="1637" y="1491" width="64" height="64"/>
+  <object id="100" name="Light" type="light" gid="245" x="1623" y="1367" width="64" height="64"/>
+  <object id="101" name="Light" type="light" gid="245" x="1426" y="1590" width="64" height="64"/>
+  <object id="102" name="Light" type="light" gid="245" x="1207" y="1593" width="64" height="64"/>
+  <object id="103" name="Light" type="light" gid="245" x="1152" y="1481" width="64" height="64"/>
+  <object id="104" name="Light" type="light" gid="245" x="915" y="1459" width="64" height="64"/>
+  <object id="105" name="Light" type="light" gid="245" x="860" y="1476" width="64" height="64"/>
+  <object id="106" name="Light" type="light" gid="245" x="775" y="1499" width="64" height="64"/>
+  <object id="107" name="Light" type="light" gid="245" x="494" y="1530" width="64" height="64"/>
+  <object id="108" name="Light" type="light" gid="245" x="437" y="1324" width="64" height="64"/>
+  <object id="109" name="Light" type="light" gid="245" x="262" y="1368" width="64" height="64"/>
+  <object id="110" name="Light" type="light" gid="245" x="287" y="1183" width="64" height="64"/>
+  <object id="111" name="Chest" type="container" gid="245" x="2394" y="2172" width="64" height="64">
+   <properties>
+    <property name="icon" value="nest"/>
+    <property name="loot_table" value="vorator_nest"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="112" name="Vorator" type="spawn" gid="243" x="2373" y="2297" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="113" name="Vorator" type="spawn" gid="243" x="2091" y="2285" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="114" name="Vorator" type="spawn" gid="243" x="1756" y="2281" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="115" name="Vorator" type="spawn" gid="243" x="1289" y="1990" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="116" name="Vorator" type="spawn" gid="243" x="1193" y="2107" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="117" name="Vorator" type="spawn" gid="243" x="2279" y="1902" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="118" name="Vorator" type="spawn" gid="243" x="2124" y="1911" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="119" name="Vorator" type="spawn" gid="243" x="783" y="2153" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="120" name="MAtriarch" type="spawn" gid="243" x="231" y="2249" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator_matriarch"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="121" name="Vorator" type="spawn" gid="243" x="292" y="1950" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="122" name="Vorator" type="spawn" gid="243" x="378" y="2151" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="123" name="Vorator" type="spawn" gid="243" x="515" y="1805" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="124" name="Vorator" type="spawn" gid="243" x="2244" y="1140" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="125" name="Vorator" type="spawn" gid="243" x="2043" y="1138" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="126" name="Grozza" type="spawn" gid="243" x="1177" y="868" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator_grozza"/>
+    <property name="unique_tag" value="grozza"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="127" name="MAtriarch" type="spawn" gid="243" x="1244" y="809" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="128" name="MAtriarch" type="spawn" gid="243" x="1225" y="941" width="64" height="64">
+   <properties>
+    <property name="conditions" value="NPCIsDead#grozza"/>
+    <property name="spawn" value="vorator_matriarch"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="129" name="Vorator" type="spawn" gid="243" x="1515" y="475" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="130" name="Vorator" type="spawn" gid="243" x="1452" y="553" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="131" name="Vorator" type="spawn" gid="243" x="807" y="269" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="132" name="Vorator" type="spawn" gid="243" x="705" y="383" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="133" name="Vorator" type="spawn" gid="243" x="699" y="584" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="134" name="Vorator" type="spawn" gid="243" x="2064" y="393" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="135" name="Vorator" type="spawn" gid="243" x="1853" y="414" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="136" name="MAtriarch" type="spawn" gid="243" x="2358" y="461" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator_matriarch"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="137" name="zuz'sare hostile" type="spawn" gid="243" x="284" y="1266" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#prodigal_daughter,70"/>
+    <property name="spawn" value="zuzsare_hostile"/>
+    <property name="unique_tag" value="zuzsare"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="138" name="zuzsare" type="spawn" gid="243" x="289" y="1271" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#prodigal_daughter,60"/>
+    <property name="conversation" value="D12_zuzsare"/>
+    <property name="spawn" value="zuzsare"/>
+    <property name="tag" value="zuzsare"/>
+    <property name="unique_tag" value="zuzsare"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="139" name="Chest" type="container" gid="245" x="2362" y="282" width="64" height="64">
+   <properties>
+    <property name="icon" value="nest"/>
+    <property name="loot_table" value="vorator_nest"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="140" name="Chest" type="container" gid="245" x="1109" y="891" width="64" height="64">
+   <properties>
+    <property name="icon" value="nest"/>
+    <property name="loot_table" value="vorator_nest"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="141" name="Chest" type="container" gid="245" x="148" y="2262" width="64" height="64">
+   <properties>
+    <property name="icon" value="nest"/>
+    <property name="loot_table" value="vorator_nest"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="142" name="flames" type="mapeffect" gid="245" x="462" y="1430" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="143" name="flames" type="mapeffect" gid="245" x="510" y="1511" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="144" name="flames" type="mapeffect" gid="245" x="503" y="1426" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="145" name="flames" type="mapeffect" gid="245" x="587" y="1483" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="146" name="Light" type="light" gid="245" x="476" y="1440" width="64" height="64"/>
+  <object id="147" name="flames" type="mapeffect" gid="245" x="487" y="1481" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="148" name="flames" type="mapeffect" gid="245" x="498" y="1453" width="64" height="64">
+   <properties>
+    <property name="id" value="flames"/>
+   </properties>
+  </object>
+  <object id="149" name="flames" type="mapeffect" gid="245" x="359" y="1389" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="150" name="flames" type="mapeffect" gid="245" x="353" y="1369" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="151" name="flames" type="mapeffect" gid="245" x="381" y="1375" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="152" name="flames" type="mapeffect" gid="245" x="393" y="1345" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="153" name="flames" type="mapeffect" gid="245" x="692" y="1465" width="64" height="64">
+   <properties>
+    <property name="id" value="small_flames"/>
+   </properties>
+  </object>
+  <object id="154" name="iron ore 17" type="conversation" gid="245" x="2080" y="2432" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore17,1"/>
+    <property name="conversation" value="iron_ore17"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="155" name="iron ore 18" type="conversation" gid="245" x="790.667" y="2078.67" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore18,1"/>
+    <property name="conversation" value="iron_ore18"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="157" name="silver ore 5" type="conversation" gid="245" x="1268" y="728" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_silver_ore5,1"/>
+    <property name="conversation" value="silver_ore5"/>
+    <property name="icon" value="silver"/>
+    <property name="name" value="@SILVER"/>
+   </properties>
+  </object>
+  <object id="158" name="silver ore 6" type="conversation" gid="245" x="544" y="352" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_silver_ore6,1"/>
+    <property name="conversation" value="silver_ore6"/>
+    <property name="icon" value="silver"/>
+    <property name="name" value="@SILVER"/>
+   </properties>
+  </object>
+  <object id="159" name="silver ore 7" type="conversation" gid="245" x="1919.67" y="1048.33" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_silver_ore7,1"/>
+    <property name="conversation" value="silver_ore7"/>
+    <property name="icon" value="silver"/>
+    <property name="name" value="@SILVER"/>
+   </properties>
+  </object>
+  <object id="160" name="silver ore 8" type="conversation" gid="245" x="1216" y="352" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_silver_ore8,1"/>
+    <property name="conversation" value="silver_ore8"/>
+    <property name="icon" value="silver"/>
+    <property name="name" value="@SILVER"/>
+   </properties>
+  </object>
+  <object id="161" name="silver ore 9" type="conversation" gid="245" x="192" y="1440" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_silver_ore9,1"/>
+    <property name="conversation" value="silver_ore9"/>
+    <property name="icon" value="silver"/>
+    <property name="name" value="@SILVER"/>
+   </properties>
+  </object>
+  <object id="162" name="starmetal ore 3" type="conversation" gid="245" x="2176" y="256" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_starmetal_ore3,1"/>
+    <property name="conversation" value="starmetall_ore3"/>
+    <property name="icon" value="starmetal"/>
+    <property name="name" value="@STARMETAL"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

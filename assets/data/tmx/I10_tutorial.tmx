@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="125">
+ <properties>
+  <property name="music" value="decline"/>
+  <property name="name" value="A forest road"/>
+  <property name="name_ES" value="Un camino en el bosque"/>
+  <property name="outdoor" value=""/>
+ </properties>
+ <tileset firstgid="1" source="trees.tsx"/>
+ <tileset firstgid="17" source="spawns.tsx"/>
+ <tileset firstgid="25" source="grassland.tsx"/>
+ <tileset firstgid="153" source="stoneroad1.tsx"/>
+ <tileset firstgid="169" source="stoneroad1-grass.tsx"/>
+ <tileset firstgid="187" source="town_objects.tsx"/>
+ <tileset firstgid="267" source="rocks_small.tsx"/>
+ <tileset firstgid="277" source="natural_grounds.tsx"/>
+ <tileset firstgid="405" source="rocks.tsx"/>
+ <tileset firstgid="411" source="grassland_structures.tsx"/>
+ <layer id="1" name="nonwalk" width="96" height="96" visible="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu1XAY4jMQibX+z/f3qqVidVUUgwGOJ0a2mktpOAYwjQn+d5fr7P0QdFZA/Dx4/xroMPgg79T+bK6XxlaJrRnwkmj5md8c6curuzNQr6v8COwWiX7QPhsFqjov8LLD7Z2ppFdf2pPJNaTqCorP+Mvo36UUW29442Mj4roBoD1uwz2lKEGj923qmdbwYVflV3vvp8O87e96dRlavVtdxbL5X179anAl/917bHz13+d4j4ruqTFRhtz3x13I8VIn6ZnE/orxSDjN8s3675xOPzljtw03yO6B/hxOKO+GXc1a5cy9TWKvtMv5ma1XHPu+7XbfVAUX/Gfc4gok20ZnX1uOhszbCF4N12tf6dYNb/yjNYczLb/s6m555EbKFgzUeIv4j+K62itUxF/846xNJ/Vsc6ZqoKe136z3gycqyql3txqud4gdx1rw3Pnp0tFlT199bZZ/NuZzPKiwVF/RHts3ajNlhQ05+tebd9FEpcXqjmk+0llXwUUM3F0r+q5iF8FMDg4unV4/uv/r9g9tqVfUt/No8dovqrxW2E5//A7rcOfPW3f+uAuo5R3Kj/J8XhZv1vjMFMz9ValXMrcWEB4X/qzCu9PbFQjtHt+qPvFaGuv9e3us4WVPTf2fX4vjEGqP6VPLz6Zu14uKDrrTq4mhsQrh155a0xXjtVPFa+MrFA/FSBMctkz9TV6xT1f/dl5RZqY7cm+p4Blfpv+YvUytGGMpTqv+VzrJ+oDWUo1h/L7w35HAFr9qvAX9D/hY5+H8Ff0f8FxRgo6N+pi1oMTuqfnYGzfrP7szwZ80/E5+irk0dm3p7tZ3F5nr5z7/xX1YjVfx7kP0ImbpY9aw2KlZZWvu9sMLDT3uMrkxeI/Qw8Oe3NNRYnDw8Pt13OeHlaa9n6M3rciheipycHGD3Berf7bfV7hAMzZ8fPo7/I4z2HlyNDU2ZtY9ft0a515mhtX9mIrmPnBmKfhVUdQfdm/KJrKu7mzP7MFxtWDNB9Ub+ZvYjO6Lnev1cjo78CPDnq4RutBQzM7kHURvR91m/G94m8tzhEz+Ot1zvfXp4I0Luhon/mPleBqX+2V7MR5dLBOaPP6r4q9rL3z5+oP1N39tkj8xDDV9ceds5/gv6Ru4bsq6zvavqje07oz0SV/tEYZPRHgeo/fmagopbN+lUlsn0V0f95NPVf3emOOa1L/6p8ZdlZ8ayMQYX+Vq9Q0n/Fy/pNBaj+Vf49ayxtvWd4/66C2/SP1nTWOapntdX7U/r/X7fa35XTf1V/j42OGLB7+k7fSv2ZdrtisOtDlT7ROstc6wFqr7OOdNhG78rJOxXVC5mzWH49eyJ1SmWmQmxV1vronuoeHUGV/hk+Ffor6Y6cj6V/pNdFa89KfwUo6b+akxDcpD+KjpmFZcfierP+L9yo/2weiD4MG4yHgYpYerii8Zitne2tREXMEN7MPDmduwwNb9H/+5x7/gGLTzpTAJAAAA==
+  </data>
+ </layer>
+ <layer id="2" name="water" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2bCW4VMQyGh2uAxAngYMAJWASCFsRVWEvZzscLj6hpyOIsdpzk/6SoUucpk/ntOI4zcxwAAACAfh7eGT2CMbwdPQAm3oweQALNY9PGu8brlkeF9y39/UhK/ImqlyZMjBoxZ1rWBI7x2j45bJjy91XXCCDDjDFnd3a2Gede4HHk/zXrRYuNZspvtIC8nU7Iz0v0i82TFmax3wPBWkTvOF/aHzW37OUPpf1QbVHrW1rW2dz4Z5k7KUb7eooV9G0lNzehkRxa4tIoVj0P4Krl7FAjQvwBPlL76NXiEVW3nnHlbse+wJnSmHiv4h6S+2Ggj9i+YIcc1cQ/+P947Pr7euww/rJLHvrx1D557avAfbXrS8mdavMm++xG+x+n9sVrPw8ZG7Ti+02L/0j7g9X+96ldOe37cbbB9aBxleD7Tan/XPINLYmr/Tfv2ofjtv6jeZ64dhVpxodq5zB3jSelvUGb/jV8Ptps0BvXpjl93eu986AXnftLoc0GlhL9exCzYSqu9EKbDdx8h8P/JTQtpYcNQjl6ac7lah+L/YYV4r+Pa4OcjqEWytFLci6q9gap+MOJvaebX1ob5HRMNT9X93N21wY2FqS0vx8Yu5T/U+Z07724sUEsZ6W0mN+6tvXnmK99LgfpoT9FW8qcnmkvnppfuZjj0qp/rKbRa15rJja/qNobrP72mUtydj/W1c5niz+vR9ngVYc+qLlh6plTfZSs8S6z2MAikU+UPjNF+5a9by8bhOptGs46QlCfOaS91brn2WFofUsR0vXyGFfzrIFiA7telMSc1vH8OvL6t6JlXrg2COVE0vtlN8doQYu+FFIaa65XzPz9l3vuVaK/8av3mb45vjviJnQOKHU2WOv/Gt7doay3pWtyj/2AS84fa/RvqUVrrGPn6G0TF39PHLqmMf6vQigPtT7aqj/3meSIPIdjfYvVWHPnaaAd6+uxGqvE3gucCdVYoT0AAIDVeTZ6AIfse4QAADlqa9ZPu44CAB1c/Ps745nFKnCds7xk6lczGvLHFqi55xPWUeyN5Lmi5u8vQZ4ZzzJz7J4LUHJ9zrVVw3sN4IaL/E9UoDX3kYgnqNkBcMPua/hOuHvBFfNRMB8c+1r49m2Q89SxY100xMjvN2bZU83EKE25a9Gja90zf+eUYrXas9b6Rwqs4esyoz9KYH2es0Yxw14BNZr/mcFuAAAAAACAhz9tmYhiAJAAAA==
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3WMQoAIAwDQN8tPt4HCAo6pODdXsjUpDUAgNVIBwAg5rUDTvc6BgD+1dMBKO92K9qYVOPfAcCergQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJImIVFHVACQAAA=
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu1dzXIkNQzuOSaTCbwdT0FxgBNQVO2eloLr7CS5LPA+vBNx7YgoQtafJbezxVfV1TMZd7f9WZYlWe7cbtt2+3wctxfcba9x3NbA3eHz8aXheD3uthfu4fOROfbE8Zn/0xvtA8zhzfW4Dd7rfHg5w+cHcn66nh/J+dw5Xw6fj4aP5F4fCef0mWdSjl7/iOr0hMrAQetzMdRRujfmFw4KKPM/cmGV6VZub/7pXJMJOmbo9yq8Jf4bsvsA65TZ6OmaXllv26v6y1PvleFpA9g8FD92ygP3XwpXURyZM7YNrdwcHWVvyDnaB72+BazQt706nq5HA8e9xufv5Du29zXge9NzNlbwMzg07nG9bpnPHk44/jX59JYbAfgpK6DH+wga93u3T3q+Rz9KGJUV7LNmotL2bujpENqOXrtWkf8sXUjlICMOoQHrctwOPJ+vzD+NTWYCxrcUo8h8FpypLcVx3LONZwM4qZADzHmPf/CR95RDz7OxHZghT5UySeMPHM97j//IGADuR+WmUvc0nLbX/Xuz6X3A1Qf8igqb9G7z+SmZqPYD77f/tqtxnd3no/3S5MTKP5bZKH9YBivHP6cjJf69fmm2/Hj6IKr/K+zBnvxF6rhXbGDveagC1fOLt39/Fn4D/k9CmVFkrnHTWJv0PAtG5W9kPGO9c0J1+cV5bQ84/0C75ifD/ayIxFekfoj2kdQm4ILznTW0ay3tu9n2sa+i8S2u/ZU+GuTBVDwLc9/rA9AloK9hDEo8WHhtORURXYefS+f2ijVljn8LpPnN24fAp1YPaH8l/71nS3+Poqd/4DnSPCfNb965Fp63wrpQ09cV8wAG9Xm5dmvPkfi9UX5vwH1b4ZeOyH81OO6pfQrj4MP1O53HOX6jsYyquc3Kv2Sbe/Fb5+9cfqRWP4mXvzvlI/xX+Z2ryD9uX6Udpc27vfmkgv+mf2blelj9luo4wwr5LRmw+NcSqD7Dsm/xa6OgMXdu/WlW/1x2yJHUdH/kWiu4Z9D119njY6b+xzqIyn+G/69xx/FP/wb3+DWhPhouAfvTk1+n4R36nBVTkOq353p+j5vIWBsdo+8HrtUgyRNne0I8ZwR4rHjs9Ij+x/m3HozEbd/pRf6FxD8Xm1o113QleGRK45/Kzeja/ohctT0i2h6xvXAftM2ofL8nv9G8Lol/zn+uAsRqPWPxg15kOrR8XgDwvmdu2ePhtU7cM9cmA14uoZ17ru1z+lAaB5X5kDOBZSzSlhG9f0b7hin/NHeS9kMvR24VeGzJkRzFrHiwJueZiPiUTc48/oJ1/vLEeyL+iiXOrcU/R/KDRv13mgMIbQHeevWyyn+1vQd7e6U+OBriz9zeCQ5SbMwb16c5wZD/CQf+ne4/tMpLps/V00VYZtg6JPJvuUeD1gfe/csc99Z+qMylA2i+laWeHu6lvUQz4NH/s+ok6UzPXu0GSZ9ptkQ01oJtPW1eseq42XEfalPifTpWvIU4ldWenMk/xA+Bb7re4MGevjHYgZrtTbntld9DnmjdVpbpkX0zmnzvFXem8rtSzNMKj++/mnxRW2gl/kd8Ns5HXXFther/1eqXjSw/N3Peo/7jbJzIOQpPTtdIvBBiwqP9COMRt3uG/qFrTnQdpBKwxkLXNiztxvXOGkPSO4SyIHHKyXxVH3AyK+UP0PlH8zmluKhV72X1K3dgriVdY9n35oXEPfy+MWUwIIbZ+80KqV1Z8i/FWi16Pnvtk1s36pXxcgDlubpye/6kdlXbBpE51hJj0vYA4piXJSfOygMux9XTa29l2T9Zcgu2Bne/Xu4UtfO9to7nHYTcZ/o3mldB5xyrbEig70qvxCw/iu6z5H7vxZEx9/g+mPtv0Gc4R/jH9nCl7eLlfLSfRuYfjsv2/fvn44frYbnGg1nv7/OsKd4X1SWKvw7b9m3nt4hfODs/a3T9M2tfgRefnnn/4/n4U8ij9Oxp3TsvboR/754MgGc/UmQ907pPfpV8RK19PbuJQy+foldOQ0SXW/TPzFjNKPZaz7LYgd91ruXyD+Fe+L4zcjUk4Hpa6+IZD1HgPGovjhsfE1lNzqNyPTvHxAvMfzb31ncfeWDRsRnvwMQ5yJ78HOAT5/Nr12Bkyn3FGMJ8VOtDLc5DEeEf+68VfK20Zuf11bV9EBJg3rHwX4Xs/OLefgTP9d5ro/UHH1x7Xrs/jONV5Z/m6WObZlb+rBdWnVIt/xn36K2RzLLRIuNG45/KE/6/PhmAOWiUI6v/v7dvQmGR++q8h9H9Ydp65N7xKAmwZ8TCQcU+Oqs/yL0r07MO7Ck74/81ASxtx/8fscJH9PR9xvNHxkL2OhJdd+RwPuhlorDGXVbJfezVN6qjLXt0z8Xvvtpr3SMCTg7oe8qyAe+esT7jK8e9M8fzjD7ozSGV6/6ed/+AP/e1oWxFnffMka+0sx6U/aeNd7CtrfOElsMRhbUPInxF49R4/Yzm1VrwZBwDK7zrISvfEn7HZaL84zrdO+/xaND/q9gnDZnyb1mb8OYuR/kfef4MtHp48gSsfpu25u7ZHxCZHx4E+V9J7iug2Wc97jPtuoc3Iv9eVNormbaF5H996fIfReZ7pzD/Vv36lpDp/1VwcyH8R+DJz8uEZf9sFv9V71oD/iVdA7YHfJbe2wFr/7foOviOc5RoGVyWvosU/34kZ3zQ3/A82ea5dkB74QzxX9ADT4fX78egMTSo0x3zGdtLl8PrZ7TjTJ6FZf8fHQB9eQCQAAA=
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="1" x="-166" y="1097"/>
+  <object id="2" x="-131" y="880"/>
+  <object id="3" x="-143" y="867"/>
+  <object id="4" x="-143" y="885"/>
+  <object id="5" name="goblin" type="spawn" gid="19" x="1794" y="1597" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="2"/>
+   </properties>
+  </object>
+  <object id="6" name="goblin" type="spawn" gid="19" x="1807" y="986" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="7" name="adaon" type="spawn" gid="19" x="1200" y="1327" width="64" height="64">
+   <properties>
+    <property name="conversation" value="adaon_tutorial"/>
+    <property name="faction" value="player"/>
+    <property name="spawn" value="adaon_tutorial"/>
+    <property name="tag" value="adaon_tutorial"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="8" name="conversationTrigger" type="trigger" x="1074.94" y="1120.64" width="79" height="410">
+   <properties>
+    <property name="actions" value="StartConversation#adaon_tutorial,adaon_tutorial"/>
+    <property name="conditions" value="NPCisNotInParty#adaon_tutorial,adaon_tutorial"/>
+   </properties>
+  </object>
+  <object id="9" name="entrypoint" type="entry" gid="17" x="160" y="3024" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="0001"/>
+   </properties>
+  </object>
+  <object id="10" name="goblin" type="spawn" gid="19" x="868" y="1281" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="11" name="wolf" type="spawn" gid="19" x="878" y="1327" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="12" name="goblin" type="spawn" gid="19" x="1762" y="1225" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="13" name="goblin" type="spawn" gid="19" x="840" y="1301" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="15" name="goblin" type="spawn" gid="19" x="1456" y="1255" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="16" name="conversationTrigger" type="trigger" x="7" y="934" width="59" height="197">
+   <properties>
+    <property name="actions" value="StartConversation#adaon_tutorial,adaon_tutorial_camp"/>
+    <property name="conditions" value="VariableLower#want_letter_back,10"/>
+   </properties>
+  </object>
+  <object id="17" name="wolf" type="spawn" gid="19" x="1482" y="981" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="19" name="goblin" type="spawn" gid="19" x="2085" y="1808" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="20" name="goblin" type="spawn" gid="19" x="1767" y="969" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="21" name="goblin" type="spawn" gid="19" x="900" y="1201" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="22" name="goblin" type="spawn" gid="19" x="579" y="1261" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="23" name="bear trap" type="trap" gid="21" x="1774" y="1324" width="64" height="64">
+   <properties>
+    <property name="id" value="bear"/>
+    <property name="maxlevel" value="1"/>
+    <property name="minlevel" value="1"/>
+   </properties>
+  </object>
+  <object id="25" name="crate" type="container" gid="21" x="1984" y="1120" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="items" value="1003,1003,1003,1003,1003"/>
+    <property name="name" value="@CHEST"/>
+    <property name="unique_tag" value="I10_tutorialforestchest"/>
+   </properties>
+  </object>
+  <object id="26" name="Kolodec" type="conversation" gid="21" x="2944" y="2048" width="64" height="64">
+   <properties>
+    <property name="conversation" value="tutorial_colodec"/>
+    <property name="icon" value="kolodec"/>
+    <property name="name" value="@KOLODEC"/>
+   </properties>
+  </object>
+  <object id="27" name="wolf" type="spawn" gid="19" x="224" y="2432" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="28" name="wolf" type="spawn" gid="19" x="416" y="2624" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="29" name="wolf" type="spawn" gid="19" x="512" y="2400" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="31" name="wolf" type="spawn" gid="19" x="736" y="2880" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="32" name="wolf" type="spawn" gid="19" x="704" y="2208" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="33" name="wolf" type="spawn" gid="19" x="896" y="2336" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="34" name="wolf" type="spawn" gid="19" x="992" y="2048" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="35" name="wolf" type="spawn" gid="19" x="992" y="2752" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="36" name="wolf" type="spawn" gid="19" x="1248" y="2880" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="37" name="wolf" type="spawn" gid="19" x="1790" y="2772" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="38" name="wolf" type="spawn" gid="19" x="1696" y="2592" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="39" name="wolf" type="spawn" gid="19" x="1984" y="2656" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="40" name="wolf" type="spawn" gid="19" x="2112" y="2400" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="41" name="wolf" type="spawn" gid="19" x="1536" y="2208" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="42" name="wolf" type="spawn" gid="19" x="1920" y="2016" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="43" name="wolf" type="spawn" gid="19" x="2368" y="2272" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="44" name="wolf" type="spawn" gid="19" x="2432" y="2592" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="45" name="wolf" type="spawn" gid="19" x="2228" y="1896" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="46" name="wolf" type="spawn" gid="19" x="1152" y="2272" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="47" name="wolf" type="spawn" gid="19" x="832" y="2048" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="48" name="wolf" type="spawn" gid="19" x="1399.09" y="2668.85" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="49" name="wolf" type="spawn" gid="19" x="1696" y="2272" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="50" name="wolf" type="spawn" gid="19" x="2560" y="1792" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="51" name="wolf" type="spawn" gid="19" x="2400" y="1632" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="52" name="wolf" type="spawn" gid="19" x="2336" y="1216" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="53" name="wolf" type="spawn" gid="19" x="2752" y="1696" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="54" name="wolf" type="spawn" gid="19" x="2550.61" y="549.273" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="55" name="wolf" type="spawn" gid="19" x="2176" y="864" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="56" name="wolf" type="spawn" gid="19" x="2880" y="1248" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="57" name="wolf" type="spawn" gid="19" x="2656" y="960" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="58" name="wolf" type="spawn" gid="19" x="2848" y="416" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="59" name="wolf" type="spawn" gid="19" x="2053.21" y="440.364" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="60" name="wolf" type="spawn" gid="19" x="1920" y="576" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="61" name="wolf" type="spawn" gid="19" x="1376" y="288" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="62" name="wolf" type="spawn" gid="19" x="2144" y="224" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="63" name="wolf" type="spawn" gid="19" x="1472" y="544" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="64" name="goblin" type="spawn" gid="19" x="896" y="224" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="65" name="goblin" type="spawn" gid="19" x="960" y="800" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="66" name="goblin" type="spawn" gid="19" x="1120" y="544" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="67" name="goblin" type="spawn" gid="19" x="1696" y="288" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="68" name="goblin" type="spawn" gid="19" x="192" y="864" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="69" name="goblin" type="spawn" gid="19" x="320" y="800" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="70" name="goblin" type="spawn" gid="19" x="538.061" y="379.758" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="71" name="goblin" type="spawn" gid="19" x="192" y="256" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="72" name="goblin" type="spawn" gid="19" x="616.848" y="931.273" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="73" name="wolf" type="spawn" gid="19" x="1472" y="1760" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="74" name="wolf" type="spawn" gid="19" x="1504" y="1600" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="75" name="wolf" type="spawn" gid="19" x="1248" y="1632" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="76" name="wolf" type="spawn" gid="19" x="160" y="1536" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="78" name="goblin" type="spawn" gid="19" x="288" y="1696" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="79" name="goblin" type="spawn" gid="19" x="288" y="1792" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="80" name="wolf" type="spawn" gid="19" x="320" y="1760" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="81" name="wolf" type="spawn" gid="19" x="160" y="2016" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="82" name="wolf" type="spawn" gid="19" x="96" y="1728" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="83" name="goblin" type="spawn" gid="19" x="1913" y="303" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="84" name="goblin" type="spawn" gid="19" x="2720" y="512" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="86" name="convTrigger" type="trigger" x="2778.67" y="2312.67" width="192.667" height="60.6667">
+   <properties>
+    <property name="actions" value="StartConversation#eger,tutorial_eger;SetVariable#conv_tutor,5"/>
+    <property name="conditions" value="VariableLower#conv_tutor,5"/>
+   </properties>
+  </object>
+  <object id="87" name="convTrigger" type="trigger" x="2612" y="2012" width="30.6667" height="116">
+   <properties>
+    <property name="actions" value="StartConversation#eger,tutorial_eger;SetVariable#conv_tutor,5"/>
+    <property name="conditions" value="VariableLower#conv_tutor,5"/>
+   </properties>
+  </object>
+  <object id="89" name="Bed" type="bed" gid="21" x="2880" y="2592" width="64" height="64"/>
+  <object id="90" name="eger" type="spawn" gid="19" x="2912" y="2208" width="64" height="64">
+   <properties>
+    <property name="conversation" value="tutorial_eger"/>
+    <property name="faction" value="player"/>
+    <property name="spawn" value="Eger_tutor"/>
+    <property name="tag" value="eger"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="91" name="Blue Orchid" type="plant" gid="21" x="1152" y="2176" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="92" name="Blue Orchid" type="plant" gid="21" x="1472" y="2592" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="93" name="Blue Orchid" type="plant" gid="21" x="544" y="2784" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="94" name="Blue Orchid" type="plant" gid="21" x="2528" y="2368" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="95" name="Blue Orchid" type="plant" gid="21" x="2720" y="1504" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="96" name="Blue Orchid" type="plant" gid="21" x="2336" y="992" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="97" name="Blue Orchid" type="plant" gid="21" x="1568" y="608" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="98" name="Blue Orchid" type="plant" gid="21" x="1312" y="1120" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="99" name="Blue Orchid" type="plant" gid="21" x="1937" y="431" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="100" name="Blue Orchid" type="plant" gid="21" x="928" y="608" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="101" name="Blue Orchid" type="plant" gid="21" x="384" y="416" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="102" name="Blue Orchid" type="plant" gid="21" x="192" y="1888" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="103" name="thouseconv" type="conversation" gid="21" x="2786" y="2152.67" width="64" height="64">
+   <properties>
+    <property name="conversation" value="tdoor"/>
+    <property name="icon" value="Wooden_door"/>
+    <property name="name" value="@DOOR"/>
+   </properties>
+  </object>
+  <object id="104" name="houese entry" type="entry" gid="17" x="2797.5" y="2189.5" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="105" name="Blue Orchid" type="plant" gid="21" x="2624" y="2912" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="106" name="Blue Orchid" type="plant" gid="21" x="2880" y="2880" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="107" name="Blue Orchid" type="plant" gid="21" x="1344" y="1632" width="64" height="64">
+   <properties>
+    <property name="id" value="blue_orchid"/>
+   </properties>
+  </object>
+  <object id="108" name="Red Orchid" type="plant" gid="21" x="2784" y="2752" width="64" height="64">
+   <properties>
+    <property name="id" value="red_orchid"/>
+   </properties>
+  </object>
+  <object id="109" name="Red Orchid" type="plant" gid="21" x="1714" y="2414" width="64" height="64">
+   <properties>
+    <property name="id" value="red_orchid"/>
+   </properties>
+  </object>
+  <object id="110" name="Red Orchid" type="plant" gid="21" x="1600" y="1728" width="64" height="64">
+   <properties>
+    <property name="id" value="red_orchid"/>
+   </properties>
+  </object>
+  <object id="111" name="Red Orchid" type="plant" gid="21" x="2432" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="red_orchid"/>
+   </properties>
+  </object>
+  <object id="112" name="Red Orchid" type="plant" gid="21" x="1472" y="224" width="64" height="64">
+   <properties>
+    <property name="id" value="red_orchid"/>
+   </properties>
+  </object>
+  <object id="113" name="Red Orchid" type="plant" gid="21" x="576" y="576" width="64" height="64">
+   <properties>
+    <property name="id" value="red_orchid"/>
+   </properties>
+  </object>
+  <object id="114" name="Red Orchid" type="plant" gid="21" x="627.455" y="181.273" width="64" height="64">
+   <properties>
+    <property name="id" value="red_orchid"/>
+   </properties>
+  </object>
+  <object id="116" name="wolf" type="spawn" gid="19" x="1408" y="1216" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="117" name="wolf" type="spawn" gid="19" x="992" y="800" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="118" name="wolf" type="spawn" gid="19" x="928" y="800" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="119" name="wolf" type="spawn" gid="19" x="544" y="160" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="120" name="wolf" type="spawn" gid="19" x="544" y="192" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="121" name="wolf" type="spawn" gid="19" x="576" y="160" width="64" height="64">
+   <properties>
+    <property name="faction" value="enemy"/>
+    <property name="spawn" value="grey_wolf"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="122" name="goblin" type="spawn" gid="19" x="608" y="1024" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="123" name="goblin" type="spawn" gid="19" x="704" y="1696" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="124" name="goblin" type="spawn" gid="19" x="928" y="1632" width="64" height="64">
+   <properties>
+    <property name="spawn" value="goblin"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,11 @@
+boot_s.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+acidspitter
+  rotate: false
+  xy: 1, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

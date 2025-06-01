@@ -1,0 +1,101 @@
+.class public Lcom/badlogic/gdx/graphics/g3d/ModelBatch$RenderablePool;
+.super Lcom/badlogic/gdx/utils/j;
+.source "ModelBatch.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/badlogic/gdx/graphics/g3d/ModelBatch;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xc
+    name = "RenderablePool"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/badlogic/gdx/utils/j",
+        "<",
+        "Lcom/badlogic/gdx/graphics/g3d/Renderable;",
+        ">;"
+    }
+.end annotation
+
+
+# direct methods
+.method protected constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lcom/badlogic/gdx/utils/j;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected newObject()Lcom/badlogic/gdx/graphics/g3d/Renderable;
+    .locals 1
+
+    new-instance v0, Lcom/badlogic/gdx/graphics/g3d/Renderable;
+
+    invoke-direct {v0}, Lcom/badlogic/gdx/graphics/g3d/Renderable;-><init>()V
+
+    return-object v0
+.end method
+
+.method protected bridge synthetic newObject()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/badlogic/gdx/graphics/g3d/ModelBatch$RenderablePool;->newObject()Lcom/badlogic/gdx/graphics/g3d/Renderable;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public obtain()Lcom/badlogic/gdx/graphics/g3d/Renderable;
+    .locals 7
+
+    const/4 v3, 0x0
+
+    const/4 v2, 0x0
+
+    invoke-super {p0}, Lcom/badlogic/gdx/utils/j;->obtain()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v6, v0
+
+    check-cast v6, Lcom/badlogic/gdx/graphics/g3d/Renderable;
+
+    iput-object v2, v6, Lcom/badlogic/gdx/graphics/g3d/Renderable;->environment:Lcom/badlogic/gdx/graphics/g3d/Environment;
+
+    iput-object v2, v6, Lcom/badlogic/gdx/graphics/g3d/Renderable;->material:Lcom/badlogic/gdx/graphics/g3d/Material;
+
+    iget-object v0, v6, Lcom/badlogic/gdx/graphics/g3d/Renderable;->meshPart:Lcom/badlogic/gdx/graphics/g3d/model/MeshPart;
+
+    const-string v1, ""
+
+    move v4, v3
+
+    move v5, v3
+
+    invoke-virtual/range {v0 .. v5}, Lcom/badlogic/gdx/graphics/g3d/model/MeshPart;->set(Ljava/lang/String;Lcom/badlogic/gdx/graphics/Mesh;III)Lcom/badlogic/gdx/graphics/g3d/model/MeshPart;
+
+    iput-object v2, v6, Lcom/badlogic/gdx/graphics/g3d/Renderable;->shader:Lcom/badlogic/gdx/graphics/g3d/Shader;
+
+    iput-object v2, v6, Lcom/badlogic/gdx/graphics/g3d/Renderable;->userData:Ljava/lang/Object;
+
+    return-object v6
+.end method
+
+.method public bridge synthetic obtain()Ljava/lang/Object;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/badlogic/gdx/graphics/g3d/ModelBatch$RenderablePool;->obtain()Lcom/badlogic/gdx/graphics/g3d/Renderable;
+
+    move-result-object v0
+
+    return-object v0
+.end method

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="174">
+ <properties>
+  <property name="exit_n" value="E8"/>
+  <property name="music" value="gloom"/>
+  <property name="outdoor" value=""/>
+ </properties>
+ <tileset firstgid="1" source="grassland.tsx"/>
+ <tileset firstgid="129" source="spawns.tsx"/>
+ <tileset firstgid="137" source="town_objects.tsx"/>
+ <tileset firstgid="217" source="rocks_gray.tsx"/>
+ <tileset firstgid="227" source="rocks_gray_small.tsx"/>
+ <tileset firstgid="239" source="water.tsx"/>
+ <tileset firstgid="303" source="natural_grounds.tsx"/>
+ <tileset firstgid="431" source="mountain_ground.tsx"/>
+ <tileset firstgid="447" source="mountain-transitions.tsx"/>
+ <tileset firstgid="465" source="town_objexts2.tsx"/>
+ <tileset firstgid="529" name="kings1_2" tilewidth="512" tileheight="640" tilecount="1" columns="1">
+  <image source="kings1_2.png" width="512" height="640"/>
+ </tileset>
+ <tileset firstgid="530" name="trees_desert" tilewidth="128" tileheight="256" tilecount="16" columns="8">
+  <image source="trees_desert.png" width="1024" height="512"/>
+ </tileset>
+ <tileset firstgid="546" name="king3" tilewidth="256" tileheight="384" tilecount="1" columns="1">
+  <image source="king3.png" width="256" height="384"/>
+ </tileset>
+ <tileset firstgid="547" name="king4" tilewidth="256" tileheight="384" tilecount="1" columns="1">
+  <image source="king4.png" width="256" height="384"/>
+ </tileset>
+ <tileset firstgid="548" name="king5" tilewidth="384" tileheight="384" tilecount="1" columns="1">
+  <image source="king5.png" width="384" height="384"/>
+ </tileset>
+ <tileset firstgid="549" name="gate_red" tilewidth="128" tileheight="128" tilecount="4" columns="4">
+  <image source="gate_red.png" width="512" height="128"/>
+ </tileset>
+ <tileset firstgid="553" name="gate_blue2" tilewidth="128" tileheight="128" tilecount="1" columns="1">
+  <image source="gate_blue2.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="554" name="desert_water" tilewidth="64" tileheight="64" tilecount="112" columns="16">
+  <image source="desert_water.png" width="1024" height="448"/>
+ </tileset>
+ <tileset firstgid="666" name="greenground" tilewidth="64" tileheight="32" tilecount="64" columns="8">
+  <image source="greenground.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="730" name="town_objects3" tilewidth="64" tileheight="128" tilecount="32" columns="8">
+  <image source="town_objects3.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="762" name="grounds_indoor" tilewidth="64" tileheight="32" tilecount="160" columns="16">
+  <image source="grounds_indoor.png" width="1024" height="320"/>
+ </tileset>
+ <tileset firstgid="922" name="trees_big" tilewidth="128" tileheight="320" tilecount="14" columns="14">
+  <image source="trees_big.png" width="1792" height="320"/>
+ </tileset>
+ <tileset firstgid="936" source="desert_water.tsx"/>
+ <tileset firstgid="1048" source="greenground.tsx"/>
+ <tileset firstgid="1112" source="cave.tsx"/>
+ <tileset firstgid="1352" source="grassland_structures.tsx"/>
+ <tileset firstgid="1388" source="trees.tsx"/>
+ <tileset firstgid="1404" source="grounds_indoor.tsx"/>
+ <tileset firstgid="1564" source="dungeon2.tsx"/>
+ <tileset firstgid="1804" source="dungeon.tsx"/>
+ <layer id="1" name="nonwalk" width="96" height="96" visible="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <layer id="2" name="water" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2Z7W7iMBBF+6fiD0leoAsvmrLQSIvUp17QxtLd6fgj/sA23CONkhKD1OPxeDBvb4QQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEPBf7Xd4g27g7mzIF/W+H/uuyF/5igv7jkf5C52Gi/yxo+S/nIORv+o/DVn9wPRw964P+43HV//trH6v/o2UM/afhyv8PiMMtfjH/s2Or/8b3cb0emP9FcOX/QXHP/M+Lq/8xNYj9Tzl8/b+r5tB/Oinffyf6TybFP/M/HfTH87fHQ/91yVF/MMg2WL/rQv91of+60H9d6L8u9F8X+q8L/deF/utC/3Wh/7rQf13ovy7P7j/HmW7peHb/uX7fKB30T/+5yf37kq9+sP78j/z/fDk43mJYYwzMWbwf4X3m3uX1Ff2PHr+j5xm+V/M/iWvoGsC/nwVb/qNHl+9JjJHzZvOP79VqjW9N2aI3pJ9BmQOsN+Pup3c5xjwfNuT/tNPz3Hx+6B7dGy34l2vF5X9+/xen95/3l1ucRcxiHL7eArXqT2z+G4/3+LrFsl5P4H8Bz4uYA4wWaG3/9flfwOsX3J/WK66BC6yLGcZ8Nu7fFTn6T9/+68v/M+S/yX3zOtYhrfZg3WqBR3//GpXY6l/W/xn8u+r/LOapBUJ7vhwR0+fH9D93v7+hHl0bca3xaP9yP5drIMS/r/83uX/tzH/JuoM+tR52q38XJv+/1722J/+u3MU+37dubHVfepdzFLqOXGD+Lx36H0TIZ66x8rmv7pj7rWvLBfZB1878G3+DuNf8y7HaePSPuS/nXKtR8jNCwfrz3aF/rLdYb/bKvazNWn2y5b9Wr3L5n6H20L/93Efuu9o1xv953Xt7zP9H1B95PuGahxj/S6f1v9T+q/U8su+0zUNK/vfW/5fqP/GZ7wzCdnYXisn/Px32/zlD+1zXnPnmMBQ8f+ip/y8VNvcy10e45ug/L+saoP/wPXYU15T689nJ/lsqtDqinfVoa0L7jFDw95fW878ULv/a3mubg5T8v3aQ/6XIta+n5P/C/M+6h4TSU/9fihb899D/l6LEfh4K1v9Xzf+aYP/5qvW/Jth/vmr/UxPcf13nD38BAa7gYQCQAAA=
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2ay06EMBSGWUzm8XRldHTjZa9xfAUv0Y1LFxqfwfGy03cTMk5ssIUChb+t35c0A8Ic9OP0VEqLAgAAAAAAAAAAAAAAAAAAAAAAAAAAIC8W86I4DNT25+q/Jj1OAjrbwn9n8K/F9N+nFpnfx393TH99+gL+h4F/LfjXgn8t+NeCfy3414J/LfjXgn8tpr+meYYjx8938D8I5t+04F+L6X+33N4e0A7w3xnGTy3414J/LfjXgn8t+NeCfy3414J/LfjXgn8t+NeCfy25+w+5vn6Mlvv7q5DvN8YG/1py9z9GLbLFPzdatd903dzr/9D1HV3jP1mu0XRd/IeLv8T/H6bOfxtm/am2z2o1aLO252Ke1njlQwz+beesys+rjn0lRab0/+AR3zzn2nJ+1T8+Zuu2+vn86rkfA7Hmf4XNP/nfP/6pR/1ftvg/xn/v+EvP/L8s203Zbv9Z/vs8T7nWGfvM33StPzb2yuP3s3V7m/1um/uPtdr+7Dg/BqbMJ9dzrs898j1e8VlzexeJaxtT+ve5lqtGmTHa5kneE/XvM//jW39scc089/l9XMfbzknVf8i+0DeueQ8Xxj0372FbvJea71f8D45h9s22fkT+h/ffJUaq428u/qk/Wv/UH/z7kqP/ev3B/7Qx6uNvKvV/rHU71B83U8w/UH/c5Oi/nv8x15/Q631s8z/q+h9z/o8F/39q8R3Xm+ZT+47hKdX/sQg9ruRa/8ciJv//Mf9Dj+c+7242UH+0pPT8myPUHy2+/r8Bw2ZGxACQAAA=
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="169" name="НПС проверяющий пропуск" x="2272" y="2241.33" width="32" height="32"/>
+  <object id="170" x="2783.67" y="3019" width="93.6667" height="45">
+   <properties>
+    <property name="area_id" value="E7"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="171" x="3026.67" y="2205.33" width="42.6667" height="98.6667">
+   <properties>
+    <property name="area_id" value="E7"/>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="172" gid="129" x="2976" y="2272" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="173" gid="129" x="2842.67" y="2988" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

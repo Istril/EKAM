@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="89">
+ <properties>
+  <property name="house" value=""/>
+  <property name="maxlight" value="50"/>
+  <property name="music" value="dark_chamber"/>
+  <property name="name" value="Tower of Tremadan"/>
+  <property name="name_ES" value="Torre de Tremadan"/>
+  <property name="nominimap" value=""/>
+ </properties>
+ <tileset firstgid="1" source="dungeon.tsx"/>
+ <tileset firstgid="241" name="dungeon stairs" tilewidth="128" tileheight="128" tilecount="4" columns="4">
+  <image source="dungeon_stairs.png" width="512" height="128"/>
+  <tile id="0">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="245" source="spawns.tsx"/>
+ <tileset firstgid="253" source="cave.tsx"/>
+ <tileset firstgid="493" source="town_objects.tsx"/>
+ <tileset firstgid="573" source="gate_blue.tsx"/>
+ <tileset firstgid="577" source="grounds_indoor.tsx"/>
+ <tileset firstgid="737" source="teleporter.tsx"/>
+ <tileset firstgid="738" source="artifacts.tsx"/>
+ <tileset firstgid="742" source="town_objects3.tsx"/>
+ <tileset firstgid="774" source="town_objexts2.tsx"/>
+ <tileset firstgid="838" source="dungeon5.tsx"/>
+ <layer id="1" name="nonwalk" width="60" height="60" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer id="2" name="water" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt2lEKwjAQANGUeA31Xnr/e8iCwbKYpf3sZB4siPTDMa0R2tbW1A8MSfTc0vT0Psno6sVrEnvX6t0PuXc2xN6V9iNJkiRJkiRJ0hpevR6aaHpPhtKb17DqJTRXjcQ1tpffe+YapiHvSdW99dlcWXz+7TvVPfZxDKX32eo1JfXmZ0bGWo/v4J6Ou7J/vY/2O4fzszK03ljLsb7U3jhv99dn7t0a6/rNPbPfKmJvtRdRelf6vxGITZIkSR9R2yHu
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztzgENAAAIA6D3z2sAY9w5SEACfDHtAAAAAAAAAAAAAAAAAHDGAjXuAPU=
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt2k0KwjAQhuFAbuXCXcSlLkSvojfxMvVqNmAwDakxQqkz8z4wKHUW+RioP6NzNm3HCq+6FI+x9usdbRGtPNrynhuva8vLfKe05bU2X2t5Q6M26x0NAAAAAAAAAICf5fvYWHf/3slq+60/+pRJS9400zjDtL84jXMd/LRPy769luHhKxdneqVJGY4zGWu9ksUMhy+ypl7pWjv2nIa8PRmk583vzeWuOb+2czruz/n5r539EvWeX0PeW2e/ZBbnu2T/v+l5742k57U2X2t5a58hyu/82v7vFornGjIBAAA8AfbaHx4=
+  </data>
+ </layer>
+ <layer id="9" name="objects2" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt1UENADAIBEGS+gP/buqhIfDojIK910UAAAAAAAAAQK862wVz8qOtALDF3wIAAAC8uck6APU=
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztz7EJAAAIwDDBM/3/D0d3NzGBHtAIAAAAAAAAANipnD749gsAAAAAANzW/6cCNQ==
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="72" name="exit to I10" type="transition" x="1023" y="1600.75" width="60.75" height="25">
+   <properties>
+    <property name="area_id" value="H11"/>
+    <property name="entry_id" value="250"/>
+   </properties>
+  </object>
+  <object id="73" type="entry" gid="245" x="1063.5" y="1565" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="74" name="summon " type="spawn" gid="247" x="1120" y="1376" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#maln,2"/>
+    <property name="faction" value="beasts"/>
+    <property name="spawn" value="maln_spirit1"/>
+    <property name="tag" value="summon_spirit"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="75" name="summon " type="spawn" gid="247" x="1056" y="1568" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#maln,2"/>
+    <property name="faction" value="beasts"/>
+    <property name="spawn" value="maln_spirit2"/>
+    <property name="tag" value="summon_spirit"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="76" name="summon " type="spawn" gid="247" x="1248" y="1472" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#maln,2"/>
+    <property name="faction" value="beasts"/>
+    <property name="spawn" value="maln_spirit3"/>
+    <property name="tag" value="summon_spirit"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="77" name="maln" type="spawn" gid="247" x="1216" y="1344" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#maln_info,2"/>
+    <property name="conversation" value="H11_maln"/>
+    <property name="shop_items" value="5015,5006,7002,576,404,402"/>
+    <property name="spawn" value="Maln"/>
+    <property name="tag" value="Maln"/>
+    <property name="wander" value="3"/>
+   </properties>
+  </object>
+  <object id="78" name="maln" type="spawn" gid="247" x="1152" y="1344" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#maln_info,5"/>
+    <property name="conversation" value="H11_maln"/>
+    <property name="shop_items" value="5015,5006,7002,576,404,402"/>
+    <property name="spawn" value="Maln"/>
+    <property name="tag" value="Maln1"/>
+    <property name="wander" value="3"/>
+   </properties>
+  </object>
+  <object id="79" type="transition" x="1059" y="1184.33" width="28.5" height="28.8333">
+   <properties>
+    <property name="area_id" value="H11_maln_shop"/>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="80" name="Light" type="light" gid="249" x="1280" y="1504" width="64" height="64"/>
+  <object id="81" name="Light" type="light" gid="249" x="1248" y="1216" width="64" height="64"/>
+  <object id="82" name="Light" type="light" gid="249" x="256" y="192" width="64" height="64"/>
+  <object id="83" name="Light" type="light" gid="249" x="1088" y="1472" width="64" height="64"/>
+  <object id="84" name="Light" type="light" gid="249" x="1120" y="1184" width="64" height="64"/>
+  <object id="85" name="maln" type="spawn" gid="247" x="256" y="128" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#maln_info,2;VariableLower#maln_info,4"/>
+    <property name="conversation" value="H11_maln2"/>
+    <property name="spawn" value="Maln"/>
+    <property name="tag" value="Maln2"/>
+    <property name="wander" value="2"/>
+   </properties>
+  </object>
+  <object id="86" type="transition" x="113.75" y="80.9167" width="60.5" height="60.8333">
+   <properties>
+    <property name="area_id" value="H11_maln_shop"/>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+  <object id="87" type="entry" gid="245" x="160" y="192" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="88" type="entry" gid="245" x="1152" y="1216" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

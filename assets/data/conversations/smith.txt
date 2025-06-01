@@ -1,0 +1,276 @@
+index	type	text	text_ES	Go To	conditions	actions
+1	Q	[BLUE]Кузнечное дело[] Вы можете перековать некоторое оружие и броню, если у вас есть рецепт (материала, предмета) и необходимые ресурсы.		2		
+2	A	Перековать.		3		
+2	A	Выплавить.		50		
+2	A	Вы что-нибудь продаёте?		800		
+2	A	Спасибо, но мне пора.		0		
+3	Q	[BLUE]Выберите тип предмета.[]		4		
+4	A	Оружие		5		
+4	A	Броня		9		
+4	A	Левая рука		13		
+4	A	Назад		1		
+5	Q	[BLUE]Выберите категорию предмета[]		6		
+6	A	Мечи		20		
+6	A	Стрелковое		21		
+6	A	Кинжалы		22		
+6	A	Далее		7		
+7	Q	[BLUE]Выберите категорию предмета[]		8		
+8	A	Молоты		23		
+8	A	Топоры		24		
+8	A	Булавы		25		
+8	A	Магическое		26		
+9	Q	[BLUE]Выберите категорию предмета.[]		10		
+10	A	Шлем		200		
+10	A	Нагрудник или мантия		201		
+10	A	Перчатки		202		
+10	A	Далее		11		
+11	Q	[BLUE]Выберите категорию предмета.[]		12		
+12	A	Краги или поножи		203		
+12	A	Сапоги		204		
+12	A	Назад		1		
+13	Q	[BLUE]Выберите категорию предмета.[]		14		
+14	A	Щиты		300		
+14	A	Даги		301		
+14	A	Сферы		302		
+14	A	Назад		1		
+20	Q	[BLUE]Выберите класс предмета[]		40		
+40	A	Длинные мечи		100		
+40	A	Короткие мечи		101		
+40	A	Двуручные мечи		102		
+40	A	Назад		1		
+21	Q	[BLUE]Выберите класс предмета[]		41		
+41	A	Луки		110		
+41	A	Арбалеты		111		
+41	A	Назад		1		
+22	Q	[BLUE]Выберите класс предмета[]		42		
+42	A	Кинжалы		120		
+42	A	Рапиры		121		
+42	A	Назад		1		
+23	Q	[BLUE]Выберите класс предмета[]		43		
+43	A	Молотки		130		
+43	A	Кувалды		131		
+43	A	Назад		1		
+24	Q	[BLUE]Выберите класс предмета[]		44		
+44	A	Топоры		140		
+44	A	Секиры		141		
+44	A	Назад		1		
+25	Q	[BLUE]Выберите класс предмета[]		45		
+45	A	Булавы		150		
+45	A	Моргенштерны		151		
+45	A	Назад		1		
+26	Q	[BLUE]Выберите класс предмета[]		46		
+46	A	Палочки		160		
+46	A	Посохи		161		
+45	A	Назад		1		
+50	Q	Выберите слиток. [RED] (Если в предложенных вариантах нету слитков, то возможно вам не хватает знаний или материалов для его получения)[].		51		
+51	A	Железный слиток.		50	"PlayerHasItems#12007,2;PlayerHasItem#12016"	"LoseItems#12007,2;LoseItem#12016;GainItem#12008"
+51	A	Стальной слиток.		50	"PlayerHasItems#12008,2;PlayerHasItems#12016,2"	"LoseItems#12008,2;LoseItems#12016,2;GainItem#12001"	
+51	A	Слиток синей стали.		50	"PlayerHasItems#12002,2;PlayerHasItem#12016"	"LoseItems#12002,2;LoseItem#12016;GainItem#12003"	
+51	A	Серебрянный слиток.		50	"PlayerHasItems#12009,2;PlayerHasItem#12016"	"LoseItems#12009,2;LoseItem#12016;GainItem#12010"	
+51	A	Золотой слиток.		50	"PlayerHasItems#12011,10;PlayerHasItems#12016,5"	"LoseItems#12011,10;LoseItems#12016,5;GainItem#12012"	
+51	A	Слитки готовы.		1		
+100	Q	Улучшение длинных мечей требует 3 слитка и 2 дерева		500		
+500	A	Стальной меч		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#523"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#523;GainItem#23000"
+500	A	Меч из голубой стали		0	"PlayerHasItems#12003,3;PlayerHasItems#12026,2;PlayerHasItem#533"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#533;GainItem#23001"
+500	A	Серебрянный меч		0	"PlayerHasItems#12010,3;PlayerHasItems#12026,2;PlayerHasItem#703"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#703;GainItem#23002"
+500	A	Оркорез		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#589"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#589;GainItem#23003"
+500	A	Меч молнии		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#580"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#580;GainItem#23004"
+500	A	Меч пламени		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#583"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#583;GainItem#23005"
+500	A	Правосудие		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#606"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#606;GainItem#23006"
+500	A	Молниеносный		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#605"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#605;GainItem#23007"
+500	A	Праведность		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#594"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#594;GainItem#23008"
+500	A	Наноуглеродный меч		0	"PlayerHasItems#12020,3;PlayerHasItems#12026,2;PlayerHasItem#750"	"LoseItems#12020,3;LoseItems#12026,2;LoseItem#750;GainItem#23009"
+500	A	Меч магмы		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#593"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#593;GainItem#23010"
+500	A	Фантомный меч		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#756"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#756;GainItem#23011"
+500	A	Меч Мельморта		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#764"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#764;GainItem#23012"
+500	A	Меч паладина		0	"PlayerHasItems#12018,3;PlayerHasItems#12026,2;PlayerHasItem#734"	"LoseItems#12018,3;LoseItems#12026,2;LoseItem#734;GainItem#23013"
+500	A	Меч Падающей Звезды		0	"PlayerHasItems#12006,3;PlayerHasItems#12026,2;PlayerHasItem#712"	"LoseItems#12006,3;LoseItems#12026,2;LoseItem#712;GainItem#23014"
+500	A	Родовой клинок Оленя		0	"PlayerHasItems#12003,3;PlayerHasItems#12026,2;PlayerHasItem#624"	"LoseItems#12003,3;LoseItems#12026,2;LoseItem#624;GainItem#23015"
+500	A	Адамантиевый Меч		0	"PlayerHasItems#12015,3;PlayerHasItems#12026,2;PlayerHasItem#553"	"LoseItems#12015,3;LoseItems#12026,2;LoseItem#553;GainItem#23016"
+500	A	Назад		3		
+101	Q	Улучшение коротких мечей требует 2 слитка и 1 дерево		501		
+501	A	Стальной короткий меч		0	"PlayerHasItems#12001,2;PlayerHasItem#12026,1;PlayerHasItem#522"	"LoseItems#12001,2;LoseItems#12026,1;LoseItem#522;GainItem#27000"
+501	A	Короткий серебрянный меч		0	"PlayerHasItems#12010,2;PlayerHasItem#12026,1;PlayerHasItem#702"	"LoseItems#12010,2;LoseItems#12026,1;LoseItem#702;GainItem#27001"
+501	A	Короткий меч из голубой стали		0	"PlayerHasItems#12003,2;PlayerHasItem#12026,1;PlayerHasItem#532"	"LoseItems#12003,2;LoseItems#12026,1;LoseItem#532;GainItem#27002"
+501	A	Сабля Корсара		0	"PlayerHasItems#12003,2;PlayerHasItems#12026,1;PlayerHasItem#598"	"LoseItems#12003,2;LoseItems#12026,1;LoseItem#598;GainItem#27003"
+501	A	Морозный короткий меч		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,1;PlayerHasItem#582"	"LoseItems#12001,2;LoseItems#12026,1;LoseItem#582;GainItem#27004"
+501	A	Ледниковый Хладень		0	"PlayerHasItems#12003,2;PlayerHasItems#12026,1;PlayerHasItem#610"	"LoseItems#12003,2;LoseItems#12026,1;LoseItem#610;GainItem#27005"
+501	A	Магмовый Короткий меч		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,1;PlayerHasItem#587"	"LoseItems#12001,2;LoseItems#12026,1;LoseItem#587;GainItem#27006"
+501	A	Танцующее Пламя		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,1;PlayerHasItem#778"	"LoseItems#12001,2;LoseItems#12026,1;LoseItem#778;GainItem#27007"
+501	A	Мачете Охотника		0	"PlayerHasItems#12003,2;PlayerHasItems#12026,1;PlayerHasItem#776"	"LoseItems#12003,2;LoseItems#12026,1;LoseItem#776;GainItem#27008"
+501	A	Коготь Смерти		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,1;PlayerHasItem#577"	"LoseItems#12001,2;LoseItems#12026,1;LoseItem#577;GainItem#27009"
+501	A	Хладень		0	"PlayerHasItems#12003,2;PlayerHasItems#12026,1;PlayerHasItem#614"	"LoseItems#12003,2;LoseItems#12026,1;LoseItem#614;GainItem#27010"
+501	A	Мечущий молнии		0	"PlayerHasItems#12003,2;PlayerHasItems#12026,1;PlayerHasItem#619"	"LoseItems#12003,2;LoseItems#12026,1;LoseItem#619;GainItem#27011"
+501	A	Клинок Теней		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,1;PlayerHasItem#763"	"LoseItems#12001,2;LoseItems#12026,1;LoseItem#763;GainItem#27012"
+501	A	Сонет		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,1;PlayerHasItem#717"	"LoseItems#12001,2;LoseItems#12026,1;LoseItems#717;GainItem#27013"
+501	A	Адамантиевый Короткий Меч		0	"PlayerHasItems#12015,2;PlayerHasItems#12026,1;PlayerHasItem#552"	"LoseItems#12015,2;LoseItems#12026,1;LoseItem#552;GainItem#27014"
+501	A	Назад		3		
+102	Q	Улучшение двуручных мечей требует 5 слитка и 2 дерева		502		
+502	A	Двуручный Стальной меч		0	"PlayerHasItems#12001,5;PlayerHasItems#12026,2;PlayerHasItem#524"	"LoseItems#12001,5;LoseItems#12026,2;LoseItem#524;GainItem#20000"
+502	A	Серебряный Двуручный меч		0	"PlayerHasItems#12010,5;PlayerHasItems#12026,2;PlayerHasItem#704"	"LoseItems#12010,5;LoseItems#12026,2;LoseItem#704;GainItem#20001"
+502	A	Двуручный меч из голубой стали		0	"PlayerHasItems#12003,5;PlayerHasItems#12026,2;PlayerHasItem#534"	"LoseItems#12003,5;LoseItems#12026,2;LoseItem#534;GainItem#20002"
+502	A	Тяжелый Ятаган		0	"PlayerHasItems#12003,5;PlayerHasItems#12026,2;PlayerHasItem#599"	"LoseItems#12003,5;LoseItems#12026,2;LoseItem#599;GainItem#20003"
+502	A	Ледяной Клеймор		0	"PlayerHasItems#12001,5;PlayerHasItems#12026,2;PlayerHasItem#552"	"LoseItems#12001,5;LoseItems#12026,2;LoseItem#552;GainItem#20004"
+502	A	Льдистый Двуручный меч		0	"PlayerHasItems#12001,5;PlayerHasItems#12026,2;PlayerHasItem#581"	"LoseItems#12001,5;LoseItems#12026,2;LoseItem#581;GainItem#20005"
+502	A	Неистовая Буря		0	"PlayerHasItems#12001,5;PlayerHasItems#12026,2;PlayerHasItem#737"	"LoseItems#12001,5;LoseItems#12026,2;LoseItem#737;GainItem#20006"
+502	A	Ятаган пламени		0	"PlayerHasItems#12003,5;PlayerHasItems#12026,2;PlayerHasItem#615"	"LoseItems#12003,5;LoseItems#12026,2;LoseItem#615;GainItem#20007"
+502	A	Волчья Сабля		0	"PlayerHasItems#12003,5;PlayerHasItems#12026,2;PlayerHasItem#766"	"LoseItems#12003,5;LoseItems#12026,2;LoseItem#766;GainItem#20008"
+502	A	Жестокость		0	"PlayerHasItems#12001,5;PlayerHasItems#12026,2;PlayerHasItem#590"	"LoseItems#12001,5;LoseItems#12026,2;LoseItem#590;GainItem#20009"
+502	A	Злоба		0	"PlayerHasItems#12001,5;PlayerHasItems#12026,2;PlayerHasItem#597"	"LoseItems#12001,5;LoseItems#12026,2;LoseItem#597;GainItem#20010"
+502	A	Рубитель Духов		0	"PlayerHasItems#12001,5;PlayerHasItems#12026,2;PlayerHasItem#760"	"LoseItems#12001,5;LoseItems#12026,2;LoseItem#760;GainItem#20011"
+502	A	Коготь Демона		0	"PlayerHasItems#12001,5;PlayerHasItems#12026,2;PlayerHasItem#622"	"LoseItems#12001,5;LoseItems#12026,2;LoseItem#622;GainItem#20012"
+502	A	Адамантиевый Двуручный Меч		0	"PlayerHasItems#12015,2;PlayerHasItems#12026,2;PlayerHasItem#554"	"LoseItems#12015,5;LoseItems#12026,2;LoseItem#554;GainItem#20013"
+502	A	Назад		3		
+110	Q	Улучшение луков требует 5 дерева и 3 нити.		503		
+503	A	Короткий лук		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#601"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#601;GainItem#29000"
+503	A	Охотничий лук		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#602"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#602;GainItem#29001"
+503	A	Дубовый лук		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#603"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#603;GainItem#29002"
+503	A	Серебрянный лук		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#700"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#700;GainItem#29003"
+503	A	Охотничья метка		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#604"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#604;GainItem#29004"
+503	A	Ядовитый лук		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#715"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#715;GainItem#29005"
+503	A	Морозный лук		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#713"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#713;GainItem#29006"
+503	A	Лук из скелета		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#771"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#771;GainItem#29007"
+503	A	Вулканический лук		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#708"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#708;GainItem#29008"
+503	A	Ядовитый длинный лук		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#716"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#716;GainItem#29009"
+503	A	Ионная дуга		0	"PlayerHasItems#12028,3;PlayerHasItems#12020,5;PlayerHasItem#753"	"LoseItems#12028,3;LoseItems#12020,5;LoseItem#753;GainItem#29010"
+503	A	Имперский троллей		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#736"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#736;GainItem#29011"
+503	A	Око Владычицы		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#774"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#774;GainItem#29012"
+503	A	Глаз призрака		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#772"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#772;GainItem#29013"
+503	A	Зачарованный вулканический лук		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#755"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#755;GainItem#29014"
+503	A	Составной лук		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#729"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#729;GainItem#29015"
+503	A	Лук охотника тумана		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#732"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#732;GainItem#29016"
+503	A	Лук вечной мерзлоты		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#773"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#773;GainItem#29017"
+503	A	Серебрянный лук Малана		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#765"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#765;GainItem#29018"
+503	A	Убийца змей		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#754"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#754;GainItem#29019"
+503	A	Назад		3		
+111	Q	Улучшение арбалетов требует 2 слитка металла, 3 дерева и 2 нити.		504		
+504	A	Назад		3		
+120	Q	Улучшение кинжалов требует 1 слиток металла и 1 дерево.		505		
+505	A	Гоблинский кромсатель		0	"PlayerHasItems#12001,1;PlayerHasItems#12026,1;PlayerHasItem#201"	"LoseItems#12001,1;LoseItems#12026,1;LoseItem#201;GainItem#26000"
+505	A	Острый орочий нож		0	"PlayerHasItems#12001,1;PlayerHasItems#12026,1;PlayerHasItem#204"	"LoseItems#12001,1;LoseItems#12026,1;LoseItem#204;GainItem#26001"
+505	A	Стальной кинжал		0	"PlayerHasItems#12001,1;PlayerHasItems#12026,1;PlayerHasItem#521"	"LoseItems#12001,1;LoseItems#12026,1;LoseItem#521;GainItem#26002"
+505	A	Кинжал из голубой стали		0	"PlayerHasItems#12003,1;PlayerHasItems#12026,1;PlayerHasItem#531"	"LoseItems#12003,1;LoseItems#12026,1;LoseItem#531;GainItem#26003"
+505	A	Серебрянный кинжал		0	"PlayerHasItems#12010,1;PlayerHasItems#12026,1;PlayerHasItem#701"	"LoseItems#12010,1;LoseItems#12026,1;LoseItem#701;GainItem#26004"
+505	A	Кинжал льда		0	"PlayerHasItems#12001,1;PlayerHasItems#12026,1;PlayerHasItem#574"	"LoseItems#12001,1;LoseItems#12026,1;LoseItem#574;GainItem#26005"
+505	A	Отравленный кинжал		0	"PlayerHasItems#12001,1;PlayerHasItems#12026,1;PlayerHasItem#575"	"LoseItems#12001,1;LoseItems#12026,1;LoseItem#575;GainItem#26006"
+505	A	Шоковый кинжал		0	"PlayerHasItems#12001,1;PlayerHasItems#12026,1;PlayerHasItem#572"	"LoseItems#12001,1;LoseItems#12026,1;LoseItem#572;GainItem#26007"
+505	A	Вулканический кинжал		0	"PlayerHasItems#12001,1;PlayerHasItems#12026,1;PlayerHasItem#708"	"LoseItems#12001,1;LoseItems#12026,1;LoseItem#708;GainItem#26008"
+505	A	Охотничий коготь		0	"PlayerHasItems#12001,1;PlayerHasItems#12026,1;PlayerHasItem#578"	"LoseItems#12001,1;LoseItems#12026,1;LoseItem#578;GainItem#26009"
+505	A	Древний коготь		0	"PlayerHasItems#12001,1;PlayerHasItems#12026,1;PlayerHasItem#613"	"LoseItems#12001,1;LoseItems#12026,1;LoseItem#613;GainItem#26010"
+505	A	Жало пожирателя		0	"PlayerHasItems#12001,1;PlayerHasItems#12026,1;PlayerHasItem#612"	"LoseItems#12001,1;LoseItems#12026,1;LoseItem#612;GainItem#26011"
+505	A	Ядовитый кинжал из голубой стали		0	"PlayerHasItems#12003,1;PlayerHasItems#12026,1;PlayerHasItem#576"	"LoseItems#12003,1;LoseItems#12026,1;LoseItem#576;GainItem#26012"
+505	A	Наноуглеродный скальпель		0	"PlayerHasItems#12020,1;PlayerHasItems#12026,1;PlayerHasItem#752"	"LoseItems#12020,1;LoseItems#12026,1;LoseItem#752;GainItem#26013"
+505	A	Кинжал Магмы		0	"PlayerHasItems#12001,1;PlayerHasItems#12026,1;PlayerHasItem#777"	"LoseItems#12001,1;LoseItems#12026,1;LoseItem#777;GainItem#26014"
+505	A	Стилет		0	"PlayerHasItems#12001,1;PlayerHasItems#12026,1;PlayerHasItem#611"	"LoseItems#12001,1;LoseItems#12026,1;LoseItem#611;GainItem#26015"
+505	A	Сердце королевы		0	"PlayerHasItems#12001,1;PlayerHasItems#12026,1;PlayerHasItem#757"	"LoseItems#12001,1;LoseItems#12026,1;LoseItem#757;GainItem#26016"
+505	A	Тесак тролля		0	"PlayerHasItems#12001,1;PlayerHasItems#12026,1;PlayerHasItem#211"	"LoseItems#12001,1;LoseItems#12026,1;LoseItem#211;GainItem#26017"
+505	A	Дьявольский кинжал		0	"PlayerHasItems#12003,1;PlayerHasItems#12026,1;PlayerHasItem#625"	"LoseItems#12003,1;LoseItems#12026,1;LoseItem#625;GainItem#26018"
+505	A	Назад		3		
+121	Q	Улучшение рапир требует 3 слитка и 2 дерева		506		
+506	A	Назад		3		
+130	Q	Улучшение молотов требует 2 слитка и 1 дерево		507		
+507	A	Стальной клевец		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,1;PlayerHasItem#526"	"LoseItems#12001,2;LoseItems#12026,1;LoseItem#526;GainItem#28000"
+507	A	Клевец из синей стали		0	"PlayerHasItems#12003,2;PlayerHasItems#12026,1;PlayerHasItem#536"	"LoseItems#12003,2;LoseItems#12026,1;LoseItem#536;GainItem#28001"
+507	A	Клевец коррозии		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,1;PlayerHasItem#719"	"LoseItems#12001,2;LoseItems#12026,1;LoseItem#719;GainItem#28002"
+507	A	Буря		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,1;PlayerHasItem#591"	"LoseItems#12001,2;LoseItems#12026,1;LoseItem#591;GainItem#28003"
+507	A	Кровавая буря		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,1;PlayerHasItem#592"	"LoseItems#12001,2;LoseItems#12026,1;LoseItem#592;GainItem#28004"
+507	A	Отчаяние		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,1;PlayerHasItem#722"	"LoseItems#12001,2;LoseItems#12026,1;LoseItem#722;GainItem#28005"
+507	A	Пылающий молот		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,1;PlayerHasItem#733"	"LoseItems#12001,2;LoseItems#12026,1;LoseItem#733;GainItem#28006"
+507	A	Молот белого жреца		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,1;PlayerHasItem#768"	"LoseItems#12001,2;LoseItems#12026,1;LoseItem#768;GainItem#28007"
+507	A	Крушитель духов		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,1;PlayerHasItem#761"	"LoseItems#12001,2;LoseItems#12026,1;LoseItem#761;GainItem#28008"
+507	A	Назад		3		
+131	Q	Улучшение кувалд требует 6 слитка и 2 дерево		508		
+508	A	Стальной молот		0	"PlayerHasItems#12001,6;PlayerHasItems#12026,2;PlayerHasItem#527"	"LoseItems#12001,6;LoseItems#12026,2;LoseItem#527;GainItem#21000"
+508	A	Молот из голубой стали		0	"PlayerHasItems#12003,6;PlayerHasItems#12026,2;PlayerHasItem#537"	"LoseItems#12003,6;LoseItems#12026,2;LoseItem#537;GainItem#21001"
+508	A	Костяная колотушка		0	"PlayerHasItems#12001,6;PlayerHasItems#12026,2;PlayerHasItem#616"	"LoseItems#12001,6;LoseItems#12026,2;LoseItem#616;GainItem#21002"
+508	A	Молот вулкан		0	"PlayerHasItems#12003,6;PlayerHasItems#12026,2;PlayerHasItem#595"	"LoseItems#12003,6;LoseItems#12026,2;LoseItem#595;GainItem#21003"
+508	A	Льдистая кувалда		0	"PlayerHasItems#12003,6;PlayerHasItems#12026,2;PlayerHasItem#596"	"LoseItems#12003,6;LoseItems#12026,2;LoseItem#596;GainItem#21004"
+508	A	Кувалда ужаса		0	"PlayerHasItems#12003,6;PlayerHasItems#12026,2;PlayerHasItem#742"	"LoseItems#12003,6;LoseItems#12026,2;LoseItem#742;GainItem#21005"
+508	A	Молот коррозии		0	"PlayerHasItems#12003,6;PlayerHasItems#12026,2;PlayerHasItem#720"	"LoseItems#12003,6;LoseItems#12026,2;LoseItem#720;GainItem#21006"
+508	A	Пневматический молот		0	"PlayerHasItems#12020,6;PlayerHasItems#12026,2;PlayerHasItem#751"	"LoseItems#12020,6;LoseItems#12026,2;LoseItem#751;GainItem#21007"
+508	A	Кувалда недуга		0	"PlayerHasItems#12003,6;PlayerHasItems#12026,2;PlayerHasItem#767"	"LoseItems#12003,6;Lo8eItems#12026,2;LoseItem#767;GainItem#21008"
+508	A	Защитник		0	"PlayerHasItems#12001,6;PlayerHasItems#12026,2;PlayerHasItem#770"	"LoseItems#12001,6;LoseItems#12026,2;LoseItem#770;GainItem#21009"
+508	A	Молот Гургутха		0	"PlayerHasItems#12001,6;PlayerHasItems#12026,2;PlayerHasItem#741"	"LoseItems#12001,6;LoseItems#12026,2;LoseItem#741;GainItem#21010"
+508	A	Молот скверны		0	"PlayerHasItems#12003,6;PlayerHasItems#12026,2;PlayerHasItem#731"	"LoseItems#12003,6;LoseItems#12026,2;LoseItem#731;GainItem#21011"
+508	A	Молот Гаррака		0	"PlayerHasItems#12010,6;PlayerHasItems#12026,2;PlayerHasItem#723"	"LoseItems#12010,6;LoseItems#12026,2;LoseItem#723;GainItem#21012"
+508	A	Назад		3		
+140	Q	Улучшение топоров требует 2 слитка и 2 дерево		509		
+509	A	Стальной топор		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,2;PlayerHasItem#528"	"LoseItems#12001,2;LoseItems#12026,2;LoseItem#528;GainItem#24000"
+509	A	Топор из голубой стали		0	"PlayerHasItems#12003,2;PlayerHasItems#12026,2;PlayerHasItem#538"	"LoseItems#12003,2;LoseItems#12026,2;LoseItem#538;GainItem#24001"
+509	A	Огнеплюй		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,2;PlayerHasItem#609"	"LoseItems#12001,2;LoseItems#12026,2;LoseItem#609;GainItem#24002"
+509	A	Топор молний		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,2;PlayerHasItem#709"	"LoseItems#12001,2;LoseItems#12026,2;LoseItem#709;GainItem#24003"
+509	A	Кромсающий души		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,2;PlayerHasItem#727"	"LoseItems#12001,2;LoseItems#12026,2;LoseItem#727;GainItem#24004"
+509	A	Топор магмы		0	"PlayerHasItems#12001,2;PlayerHasItems#12026,2;PlayerHasItem#725"	"LoseItems#12001,2;LoseItems#12026,2;LoseItem#725;GainItem#24005"
+509	A	Назад		3		
+141	Q	Улучшение секиры требует 4 слитка и 2 дерево		510		
+510	A	Стальная секира		0	"PlayerHasItems#12001,4;PlayerHasItems#12026,2;PlayerHasItem#529"	"LoseItems#12001,4;LoseItems#12026,2;LoseItem#529;GainItem#22000"
+510	A	Секира из голубой стали		0	"PlayerHasItems#12003,4;PlayerHasItems#12026,2;PlayerHasItem#539"	"LoseItems#12003,4;LoseItems#12026,2;LoseItem#539;GainItem#22001"
+510	A	Секира молний		0	"PlayerHasItems#12001,4;PlayerHasItems#12026,2;PlayerHasItem#710"	"LoseItems#12001,4;LoseItems#12026,2;LoseItem#710;GainItem#22002"
+510	A	Секира падающей звезды		0	"PlayerHasItems#12006,4;PlayerHasItems#12026,2;PlayerHasItem#711"	"LoseItems#12006,4;LoseItems#12026,2;LoseItem#711;GainItem#22003"
+510	A	Топор минотавра		0	"PlayerHasItems#12001,4;PlayerHasItems#12026,2;PlayerHasItem#608"	"LoseItems#12001,4;LoseItems#12026,2;LoseItem#608;GainItem#22004"
+510	A	Топор глубин		0	"PlayerHasItems#12001,4;PlayerHasItems#12026,2;PlayerHasItem#740"	"LoseItems#12001,4;LoseItems#12026,2;LoseItem#740;GainItem#22005"
+510	A	Испивающий души		0	"PlayerHasItems#12001,4;PlayerHasItems#12026,2;PlayerHasItem#726"	"LoseItems#12001,4;LoseItems#12026,2;LoseItem#726;GainItem#22006"
+510	A	Топор палача		0	"PlayerHasItems#12003,4;PlayerHasItems#12026,2;PlayerHasItem#714"	"LoseItems#12003,4;LoseItems#12026,2;LoseItem#714;GainItem#22007"
+510	A	Секира вечного льда		0	"PlayerHasItems#12003,4;PlayerHasItems#12026,2;PlayerHasItem#735"	"LoseItems#12003,4;LoseItems#12026,2;LoseItem#735;GainItem#22008"
+510	A	Топор короля минотавров		0	"PlayerHasItems#12006,4;PlayerHasItems#12026,2;PlayerHasItem#741"	"LoseItems#12006,4;LoseItems#12026,2;LoseItem#741;GainItem#22009"
+510	A	Назад		3		
+150	Q	Улучшение булавы требует 3 слитка и 2 дерево		511		
+511	A	Стальная булава		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#525"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#525;GainItem#25000"
+511	A	Булава из голубой стали		0	"PlayerHasItems#12003,3;PlayerHasItems#12026,2;PlayerHasItem#535"	"LoseItems#12003,3;LoseItems#12026,2;LoseItem#535;GainItem#25001"
+511	A	Костяная булава		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#617"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#617;GainItem#25002"
+511	A	Воющая булава		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#769"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#769;GainItem#25003"
+511	A	Серебряная булава		0	"PlayerHasItems#12010,3;PlayerHasItems#12026,2;PlayerHasItem#705"	"LoseItems#12010,3;LoseItems#12026,2;LoseItem#705;GainItem#25004"
+511	A	Зимний камень		0	"PlayerHasItems#12010,3;PlayerHasItems#12026,2;PlayerHasItem#584"	"LoseItems#12010,3;LoseItems#12026,2;LoseItem#584;GainItem#25005"
+511	A	Костолом		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#540"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#540;GainItem#25006"
+511	A	Кулак железного голема		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#724"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#724;GainItem#25007"
+511	A	Магическая костяная булава		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#618"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#618;GainItem#25008"
+511	A	Зверобой		0	"PlayerHasItems#12003,3;PlayerHasItems#12026,2;PlayerHasItem#579"	"LoseItems#12003,3;LoseItems#12026,2;LoseItem#579;GainItem#25009"
+511	A	Огнекрушитель		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#585"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#585;GainItem#25010"
+511	A	Духобой		0	"PlayerHasItems#12003,3;PlayerHasItems#12026,2;PlayerHasItem#718"	"LoseItems#12003,3;LoseItems#12026,2;LoseItem#718;GainItem#25011"
+511	A	Ледниковый камень		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#620"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#620;GainItem#25012"
+511	A	Кулак владыки		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#775"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#775;GainItem#25013"
+511	A	Полночь		0	"PlayerHasItems#12001,3;PlayerHasItems#12026,2;PlayerHasItem#762"	"LoseItems#12001,3;LoseItems#12026,2;LoseItem#762;GainItem#25014"
+511	A	Назад		3		
+151	Q	Улучшение цепов требует 4 слитка		512		
+512	A	Назад		3		
+160	Q	Улучшение палочек требует 8 древесины		513		
+513	A	Ивовая Палочка		0	"PlayerHasItems#12026,8;PlayerHasItem#370"	"LoseItems#12026,8;LoseItem#370;GainItem#31000"
+513	A	Опаляющий Жезл		0	"PlayerHasItems#12026,8;PlayerHasItem#372"	"LoseItems#12026,8;LoseItem#372;GainItem#31001"
+513	A	Дубовая Палочка		0	"PlayerHasItems#12026,8;PlayerHasItem#371"	"LoseItems#12026,8;LoseItem#371;GainItem#31002"
+513	A	Вязовая палочкал		0	"PlayerHasItems#12026,8;PlayerHasItem#391"	"LoseItems#12026,8;LoseItem#391;GainItem#31003"
+513	A	Палочка Батракса		0	"PlayerHasItems#12026,8;PlayerHasItem#374"	"LoseItems#12026,8;LoseItem#374;GainItem#31004"
+513	A	Невидимый Кулак		0	"PlayerHasItems#12026,8;PlayerHasItem#395"	"LoseItems#12026,8;LoseItem#395;GainItem#31005"
+513	A	Толассианская палочка		0	"PlayerHasItems#12026,8;PlayerHasItem#386"	"LoseItems#12026,8;LoseItem#386;GainItem#31006"
+513	A	Эмиттер Теслы		0	"PlayerHasItems#12026,8;PlayerHasItem#398"	"LoseItems#12026,8;LoseItem#398;GainItem#31007"
+513	A	Палочка Мага		0	"PlayerHasItems#12026,8;PlayerHasItem#361"	"LoseItems#12026,8;LoseItem#361;GainItem#31008"
+513	A	Сжигающий Жезл		0	"PlayerHasItems#12026,8;PlayerHasItem#390"	"LoseItems#12026,8;LoseItem#390;GainItem#31009"
+513	A	Палочка Штормов		0	"PlayerHasItems#12026,8;PlayerHasItem#385"	"LoseItems#12026,8;LoseItem#385;GainItem#31010"
+513	A	Кислотный распылитель		0	"PlayerHasItems#12026,8;PlayerHasItem#375"	"LoseItems#12026,8;LoseItem#375;GainItem#31011"
+513	A	Ветка Священного Дерева		0	"PlayerHasItems#12026,8;PlayerHasItem#363"	"LoseItems#12026,8;LoseItem#363;GainItem#31012"
+513	A	Кристаллическая Палочка		0	"PlayerHasItems#12026,8;PlayerHasItem#368"	"LoseItems#12026,8;LoseItem#368;GainItem#31013"
+513	A	Золотой Жезл		0	"PlayerHasItems#12026,8;PlayerHasItem#779"	"LoseItems#12026,8;LoseItem#779;GainItem#31014"
+513	A	Ледяная Палочка		0	"PlayerHasItems#12026,8;PlayerHasItem#373"	"LoseItems#12026,8;LoseItem#373;GainItem#31015"
+513	A	Имперская палочка боевого мага		0	"PlayerHasItems#12026,8;PlayerHasItem#389"	"LoseItems#12026,8;LoseItem#389;GainItem#31016"
+513	A	Скипетр Преисподней		0	"PlayerHasItems#12026,8;PlayerHasItem#360"	"LoseItems#12026,8;LoseItem#360;GainItem#31017"
+513	A	Опаляющий Жезл		0	"PlayerHasItems#12026,8;PlayerHasItem#372"	"LoseItems#12026,8;LoseItem#372;GainItem#31018"
+513	A	Назад		3		
+161	Q	Улучшение посохов требует 5 древесины и 1 камень соответствующий стихии оружия (Рубин, Циркон, Сапфир, Аметист, Изумруд, Цитрин)		514		
+514	A	Посох Силы		0	"PlayerHasItems#12026,5;PlayerHasItem#380"	"LoseItems#12026,5;LoseItem#380;GainItem#30000"
+514	A	Пылающий Кадуцей		0	"PlayerHasItems#12026,5;PlayerHasItem#2013;PlayerHasItem#381"	"LoseItems#12026,5;LoseItem#2013;LoseItem#381;GainItem#30001"
+514	A	Посох мощных снарядов		0	"PlayerHasItems#12026,5;PlayerHasItem#392"	"LoseItems#12026,5;LoseItem#392;GainItem#30002"
+514	A	Великий Посох Магмы		0	"PlayerHasItems#12026,5;PlayerHasItem#2013;PlayerHasItem#393"	"LoseItems#12026,5;LoseItem#2013;LoseItem#393;GainItem#30003"
+514	A	Жезл теслы		0	"PlayerHasItems#12026,5;PlayerHasItem#2014;PlayerHasItem#399"	"LoseItems#12026,5;LoseItem#2014;LoseItem#399;GainItem#30004"
+514	A	Первая Зима		0	"PlayerHasItems#12026,5;PlayerHasItem#50010;PlayerHasItem#394"	"LoseItems#12026,5;LoseItem#50010;LoseItem#394;GainItem#30005"
+514	A	Посох Мага		0	"PlayerHasItems#12026,5;PlayerHasItem#362"	"LoseItems#12026,5;LoseItem#362;GainItem#30006"
+514	A	Посох Путешественника		0	"PlayerHasItems#12026,5;PlayerHasItem#2014;PlayerHasItem#364"	"LoseItems#12026,5;LoseItem#2014;LoseItem#364;GainItem#30007"
+514	A	Великий Толласианский Посох		0	"PlayerHasItems#12026,5;PlayerHasItem#50004;PlayerHasItem#387"	"LoseItems#12026,5;LoseItem#50004;LoseItem#387;GainItem#30008"
+514	A	Посох штормов		0	"PlayerHasItems#12026,5;PlayerHasItem#2014;PlayerHasItem#388"	"LoseItems#12026,5;LoseItem#2014;LoseItem#388;GainItem#30009"
+514	A	Посох Морей		0	"PlayerHasItems#12026,5;PlayerHasItem#50010;PlayerHasItem#384"	"LoseItems#12026,5;LoseItem#50010;LoseItem#384;GainItem#30010"
+514	A	Поляризованный Посох		0	"PlayerHasItems#12026,5;PlayerHasItem#2014;PlayerHasItem#376"	"LoseItems#12026,5;LoseItem#2014;LoseItem#376;GainItem#30011"
+514	A	Посох Воздействия		0	"PlayerHasItems#12026,5;PlayerHasItem#365"	"LoseItems#12026,5;LoseItem#365;GainItem#30012"
+514	A	Посох Мёртвых Королей		0	"PlayerHasItems#12026,5;PlayerHasItem#50004;PlayerHasItem#366"	"LoseItems#12026,5;LoseItem#50004;LoseItem#366;GainItem#30013"
+514	A	Посох Чудес		0	"PlayerHasItems#12026,5;PlayerHasItem#50008;PlayerHasItem#369"	"LoseItems#12026,5;LoseItem#50008;LoseItem#369;GainItem#30014"
+514	A	Осквернитель		0	"PlayerHasItems#12026,5;PlayerHasItem#2012;PlayerHasItem#396"	"LoseItems#12026,5;LoseItem#2012;LoseItem#396;GainItem#30015"
+514	A	Посох Кислоты		0	"PlayerHasItems#12026,5;PlayerHasItem#2012;PlayerHasItem#383"	"LoseItems#12026,5;LoseItem#2012;LoseItem#383;GainItem#30016"
+514	A	Назад		3		
+800	Q	В основном всё идёт под заказ, но и для подобных случаев, я оставлял лишний товар.		0		OpenShop#

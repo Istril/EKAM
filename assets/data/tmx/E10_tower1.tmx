@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="89">
+ <properties>
+  <property name="house" value=""/>
+  <property name="maxlight" value="50"/>
+  <property name="music" value="dark_chamber"/>
+  <property name="name" value="Tower of Tremadan"/>
+  <property name="name_ES" value="Torre de Tremadan"/>
+  <property name="nominimap" value=""/>
+ </properties>
+ <tileset firstgid="1" source="dungeon.tsx"/>
+ <tileset firstgid="241" name="dungeon stairs" tilewidth="128" tileheight="128" tilecount="4" columns="4">
+  <image source="dungeon_stairs.png" width="512" height="128"/>
+  <tile id="0">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="245" source="spawns.tsx"/>
+ <tileset firstgid="253" source="cave.tsx"/>
+ <tileset firstgid="493" source="town_objects.tsx"/>
+ <tileset firstgid="573" source="gate_blue.tsx"/>
+ <tileset firstgid="577" source="grounds_indoor.tsx"/>
+ <tileset firstgid="737" source="teleporter.tsx"/>
+ <tileset firstgid="738" source="artifacts.tsx"/>
+ <tileset firstgid="742" source="town_objects3.tsx"/>
+ <tileset firstgid="774" source="town_objexts2.tsx"/>
+ <tileset firstgid="838" source="dungeon3.tsx"/>
+ <layer id="1" name="nonwalk" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer id="2" name="water" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztz8EJwDAQA0HXkuD0X2K4Du51xmIG9NeuBQAAAAAAAAAAAKR6Th8YVr379IlBerPpzaY3m95serPpzab3Tm9zJaG3fM11/DBUB0s=
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztld0KgzAMRuPPC1S8GoK92Btub7QX3cISdLKBsECxngMf1noRDkmrCAAAAAAAAAAAwHl4tPsSza39nvn1bbTM8WWL+WZ5+yV7Drancd9LfNmivhp31cz27r5TfNmi89zL5yxrGXVM9qxpnrfnVme3tf0sS6+jKeWr8+uu2mf3zbbWvTG+bFHftfN2vvVbH1+2mK+eUXdSv8nWSZbe1tTffhW/k4dVkiWa0vdVluWf63u69j4DAAAAAEA9dDtTC2f0vXeL1691LZyxv57rJo3ge3Twrdu32ZlawBdffI8LvvjW5Av/8QQ3Xlkk
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztzgEJAAAIA7CD+e1sDBW2BEsAAAAAAAAAAACAb7q2BwAAAMB1A1zEAJE=
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="47" type="entry" gid="245" x="1536" y="1792" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="25"/>
+   </properties>
+  </object>
+  <object id="49" name="Test1" type="transition" x="1407.25" y="1407.75" width="32.25" height="30.75">
+   <properties>
+    <property name="area_id" value="E10_tower"/>
+    <property name="entry_id" value="29"/>
+   </properties>
+  </object>
+  <object id="69" name="TPtest" type="transition" x="1504" y="1410" width="33" height="27">
+   <properties>
+    <property name="area_id" value="E10_tower1"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="70" x="1523.5" y="1422.5"/>
+  <object id="71" x="1516.5" y="1419.5"/>
+  <object id="73" name="TPtest" type="transition" x="1654.5" y="829.5" width="68.5" height="63.5">
+   <properties>
+    <property name="area_id" value="Blood_temple"/>
+    <property name="entry_id" value="20"/>
+   </properties>
+  </object>
+  <object id="75" type="entry" gid="245" x="1824" y="832" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="76" type="entry" gid="245" x="1376" y="1792" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="77" type="entry" gid="245" x="1376" y="1664" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="26"/>
+   </properties>
+  </object>
+  <object id="79" name="BloodTemple" type="transition" x="1311.25" y="1408.75" width="31.5" height="29.5">
+   <properties>
+    <property name="area_id" value="D13_paladin"/>
+    <property name="entry_id" value="50"/>
+   </properties>
+  </object>
+  <object id="80" name="Beam6" type="mapitem" gid="249" x="1536" y="1472" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="nonwalk" value=""/>
+   </properties>
+  </object>
+  <object id="81" name="Beam8" type="mapitem" gid="249" x="1504" y="1472" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="nonwalk" value=""/>
+   </properties>
+  </object>
+  <object id="82" name="Beam7" type="mapitem" gid="249" x="1504" y="1440" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="nonwalk" value=""/>
+   </properties>
+  </object>
+  <object id="83" name="Beam1" type="mapitem" gid="249" x="1504" y="1408" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="nonwalk" value=""/>
+   </properties>
+  </object>
+  <object id="84" name="Beam2" type="mapitem" gid="249" x="1536" y="1408" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="nonwalk" value=""/>
+   </properties>
+  </object>
+  <object id="85" name="Beam3" type="mapitem" gid="249" x="1568" y="1408" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="nonwalk" value=""/>
+   </properties>
+  </object>
+  <object id="86" name="Beam4" type="mapitem" gid="249" x="1568" y="1440" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="nonwalk" value=""/>
+   </properties>
+  </object>
+  <object id="87" name="Beam5" type="mapitem" gid="249" x="1568" y="1472" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="nonwalk" value=""/>
+   </properties>
+  </object>
+  <object id="88" name="Bed" type="bed" gid="249" x="1568" y="1696" width="64" height="64"/>
+ </objectgroup>
+</map>

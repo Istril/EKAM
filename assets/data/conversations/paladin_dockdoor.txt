@@ -1,0 +1,4 @@
+index	type	text	text_ES	Go To	conditions	actions
+1	Q	This door leads to the dock warehouse	Una vieja palanca, movida hacia la izquierda. Quién sabe qué pasará s la mueves hacia la derecha...	2		
+2	A	go up the second floor	¡Veámos lo que hace! [BLUE](Empujar a la derecha)[]	3	PlayerHasItem#14000	Travel#D13_paladinsecondfloor,1,0
+2	A	Stay on this floor I prefer not to touch this.	Vale... No gracias. Mejor no tocarla.	0		

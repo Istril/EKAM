@@ -1,0 +1,11 @@
+index	type	text	text_ES	Go To	conditions	actions
+1	Q	Неверотно! Вы смогли найти адамантитовую залеж! (стальная красная кирка)		4	PlayerHasItem#12025	
+1	Q	Неверотно! Вы смогли найти адамантитовую залеж! (стальная фиол кирка)		5	PlayerHasItem#12024	
+1	Q	Неверотно! Вы смогли найти адамантитовую залеж! (стальная синяя кирка)		6	PlayerHasItem#12023	
+1	Q	Неверотно! Вы смогли найти адамантитовую залеж! (стальная кирка)		2	PlayerHasItem#12022	
+1	Q	Сама удача на вашей стороне - вы нашли редкую адамантитовую жилу, но увы, вы забыли свой инструмент для добычи такой редкой и ценной руды.		3		
+2	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_adamantite_ore1,1	"SetVariable#TMP_adamantite_ore1,1;GainItem#12034;GainXP#100"
+3	A	Вернусь позже.		0		
+4	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_adamantite_ore1,1	"SetVariable#TMP_adamantite_ore1,1;GainItems#12034,4;GainXP#400"
+5	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_adamantite_ore1,1	"SetVariable#TMP_adamantite_ore1,1;GainItem#12034;GainXP#1000"
+6	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_adamantite_ore1,1	"SetVariable#TMP_adamantite_ore1,1;GainItems#12034,2;GainXP#200"

@@ -1,0 +1,23 @@
+index	type	text	text_ES	Go To	conditions	actions	requisites
+1	Q	Здравствуй путник, зачем же время занесло тебя в это место?		2			
+2	A	Получить опыт		5			
+2	A	Получить очки навыка		10			
+2	A	Получать очки статистики		15			
+2	A	Далее		20			
+5	Q	Сколько опыта тебя интересует		6			
+6	A	1000		0		GainXP#1000	
+6	A	5000		0		GainXP#5000	
+6	A	25000		0		GainXP#25000	
+6	A	50000		0		GainXP#50000	
+10	Q	Сколько ОН тебя интересут		11			
+11	A	2		10		GainSkillPoint#	
+11	A	4		10		TrainSkill#summoner
+11	A	назад		1			
+15	Q	Сколько ОС тебя интересут		16			
+16	A	4		15		GainTrait#	
+16	A	Назад		1			
+20	Q	Что-то ещё?		21			
+21	A	Сбросить статистику		0		ResetPlayerTraits#	
+21	A	Сбросить Умения себе		0		ResetPlayerSkills#	
+21	A	Сбросить Умения себе		0		ForgetPlayerAdvancedSkills#	
+21	A	забыть умения компаньону		0		ResetCompanion#	

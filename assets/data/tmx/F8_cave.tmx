@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="72" height="72" tilewidth="64" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="32">
+ <properties>
+  <property name="music" value="complex"/>
+  <property name="name" value="Deepsands Cave"/>
+  <property name="name_ES" value="Cuevas Arenasprofundas"/>
+ </properties>
+ <tileset firstgid="1" source="cave.tsx"/>
+ <tileset firstgid="241" source="spawns.tsx"/>
+ <tileset firstgid="249" source="dungeon.tsx"/>
+ <tileset firstgid="489" source="grounds_indoor.tsx"/>
+ <tileset firstgid="649" source="cave2.tsx"/>
+ <layer id="1" name="water" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAvgaEKQb9AFEAAA==
+  </data>
+ </layer>
+ <layer id="2" name="ground" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="3" name="ground2" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAvgaEKQb9AFEAAA==
+  </data>
+ </layer>
+ <layer id="4" name="objects" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2aa3LUMAzHPbkRC4XyHsrzK4UL0HKFln7lsezAjSiPs7GatcAY2ZZsK+l49ZvxJLtxEvsfWZaVOGcYhrHj9rb8mJy7ud2u3L9bKA8WbNuSgC7Q/0eJ4xu/PdqWO7O0aHlAk5UvoS4buvofrqu1KM15sH9/W459wfbHdn457X632Ps1Rp2PxH9L6IPAM4VnuSaOnUe/z9zO3ms1ovT54regy+fEebcq79fKK7fT5pMv0L4zxnm1Gh0E+1+jY2vfhvfEeUvYD9oNAO1aO9qGUtRo9HNKH/tQuBeMcfQBsH8S/Hfit738ONpNDNp3PK7C3xfBvlSjg3KVJnrNdS87XAOR+AaOf26lh0ZvejTEc9X0AVr9Fdj5u8Qx9NVcpHPLDV+eZOo8DuodFupStOqTeo7gZ8AHcfTBea527s35orh/95xMo1Z9cuML5rCUn6b+09CHuqZEI019AIyFSsA4uFvZBqk+AFcjrfEVUoqFWrQptSHXP45GPfwzh9BPxqVFG4Tq53PGtUvxSas+uTgWabUPDtRz4vSt9Hxb9cnpj/53jjUPNcY4/l7bfjjjawl9YGw9ZJxX8kG99LnI1ME1YVyksfup260fV34b7j+N6kpiBUn8JCU3v1MxDwJz/jMn00uyppD0S1Of2nUQxkVhfBTqdTn9r1muH3GuCa/1a/qbu0zpn/NB2vFhCcwX5cD87NvGe4FmlEa18RMH7TxMK7FdUX4pZz9Hjfe/6vrEpNZjLzLngEZgv2HO8Zh5P7j2YeH6XHJzIIdwPZwitx7r0YcU4RiGeBk0w5wL7ktzL1xAF3jvVdKmtN7Q1CgcZymfhrYWr79adMP80saXnK/nxETS/FAKeGeBef84PpP6fEo3Sa6PM64AbsyI7SkVCoxhw7k2zq/2XE+EesGWsn+0oVKcMMe7wTDeSb3/01xvpebLnP3g80vFPz3hxIOa+nwj8imSd5HaNvSdke9Zwn64aOszdz4jNw/UoK3PHDlbgDMPcNCcO1Jo55QAzjxQw1zfb6RizV65ZtQHc0iStQfWpextzu9bqDiqVx5e6/36kt+P9aTndw8ho+gjXQdxfdQo+gAauaWR9NHwQSPpY/aTx+wnDXz3+drlv0WtYRR9tPL+o+ijlQseRR9AQ6OR9AF6ajTHd0hL0EOjUbVBWjQaXRukRqN90QaRaLRv2iDc93f7qI1hGIZhGIZhGIZhGIaE37WxXHIAUQAA
+  </data>
+ </layer>
+ <layer id="5" name="roofs" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAvgaEKQb9AFEAAA==
+  </data>
+ </layer>
+ <objectgroup id="6" name="data">
+  <object id="1" name="exit to F8" type="transition" x="2244" y="896" width="63" height="92">
+   <properties>
+    <property name="area_id" value="F8"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="2" name="exit from dungeon" type="entry" gid="241" x="2209" y="933" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="3" name="nest spawn 1" type="spawn" gid="243" x="1916" y="420" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#nest1,3;VariableLower#sand_vermin,100"/>
+    <property name="respawn" value="45"/>
+    <property name="spawn" value="mirmek_hatchling"/>
+    <property name="tag" value="nest_spawn_1"/>
+    <property name="wander" value="7"/>
+   </properties>
+  </object>
+  <object id="4" name="nest" type="mapitem" gid="245" x="1952" y="416" width="64" height="64">
+   <properties>
+    <property name="active" value="VariableLower#sand_vermin,100;VariableLower#nest1,3"/>
+    <property name="active_sprite" value="eggsac"/>
+    <property name="inactive_sprite" value="eggsac_dead"/>
+    <property name="tag" value="nest1"/>
+   </properties>
+  </object>
+  <object id="5" name="nest1 conv" type="conversation" gid="245" x="1952" y="416" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#sand_vermin,100;VariableLower#nest1,3"/>
+    <property name="conversation" value="F8_nest_1"/>
+    <property name="icon" value="eggsac"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="6" name="nest spawn 1" type="spawn" gid="243" x="1958" y="449" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#nest1,3;VariableLower#sand_vermin,100"/>
+    <property name="respawn" value="45"/>
+    <property name="spawn" value="mirmek_hatchling"/>
+    <property name="tag" value="nest_spawn_1"/>
+    <property name="wander" value="7"/>
+   </properties>
+  </object>
+  <object id="7" name="nest spawn 1" type="spawn" gid="243" x="1970" y="391" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#nest1,3;VariableLower#sand_vermin,100"/>
+    <property name="respawn" value="45"/>
+    <property name="spawn" value="mirmek_hatchling"/>
+    <property name="tag" value="nest_spawn_1"/>
+    <property name="wander" value="7"/>
+   </properties>
+  </object>
+  <object id="8" name="nest spawn 1" type="spawn" gid="243" x="1426" y="393" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#sand_vermin,100"/>
+    <property name="spawn" value="mirmek"/>
+   </properties>
+  </object>
+  <object id="9" name="nest spawn 1" type="spawn" gid="243" x="1255" y="942" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#sand_vermin,100"/>
+    <property name="spawn" value="mirmek"/>
+   </properties>
+  </object>
+  <object id="10" name="nest1 conv" type="conversation" gid="245" x="1216" y="1568" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#sand_vermin,100;VariableLower#nest2,3"/>
+    <property name="conversation" value="F8_nest_2"/>
+    <property name="icon" value="eggsac"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="11" name="nest spawn 2" type="spawn" gid="243" x="1176" y="1507" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#nest2,3;VariableLower#sand_vermin,100"/>
+    <property name="respawn" value="45"/>
+    <property name="spawn" value="mirmek_hatchling"/>
+    <property name="tag" value="nest_spawn_2"/>
+    <property name="wander" value="7"/>
+   </properties>
+  </object>
+  <object id="12" name="nest" type="mapitem" gid="245" x="1216" y="1568" width="64" height="64">
+   <properties>
+    <property name="active" value="VariableLower#sand_vermin,100;VariableLower#nest2,3"/>
+    <property name="active_sprite" value="eggsac"/>
+    <property name="inactive_sprite" value="eggsac_dead"/>
+    <property name="tag" value="nest2"/>
+   </properties>
+  </object>
+  <object id="13" name="nest spawn 1" type="spawn" gid="243" x="1521" y="1212" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#sand_vermin,100"/>
+    <property name="spawn" value="mirmek"/>
+   </properties>
+  </object>
+  <object id="14" name="nest spawn 1" type="spawn" gid="243" x="1527" y="1572" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#sand_vermin,100"/>
+    <property name="spawn" value="mirmek"/>
+   </properties>
+  </object>
+  <object id="15" name="nest spawn 2" type="spawn" gid="243" x="1242" y="1537" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#nest2,3;VariableLower#sand_vermin,100"/>
+    <property name="respawn" value="45"/>
+    <property name="spawn" value="mirmek"/>
+    <property name="tag" value="nest_spawn_2"/>
+    <property name="wander" value="7"/>
+   </properties>
+  </object>
+  <object id="16" name="nest spawn 2" type="spawn" gid="243" x="1227" y="1621" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#nest2,3;VariableLower#sand_vermin,100"/>
+    <property name="respawn" value="45"/>
+    <property name="spawn" value="mirmek"/>
+    <property name="tag" value="nest_spawn_2"/>
+    <property name="wander" value="7"/>
+   </properties>
+  </object>
+  <object id="17" name="nest" type="mapitem" gid="245" x="736" y="352" width="64" height="64">
+   <properties>
+    <property name="active" value="VariableLower#sand_vermin,100;VariableLower#nest3,3"/>
+    <property name="active_sprite" value="eggsac"/>
+    <property name="inactive_sprite" value="eggsac_dead"/>
+    <property name="tag" value="nest3"/>
+   </properties>
+  </object>
+  <object id="18" name="nest spawn 2" type="spawn" gid="243" x="701" y="313" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#nest3,3;VariableLower#sand_vermin,100"/>
+    <property name="respawn" value="45"/>
+    <property name="spawn" value="mirmek_fire"/>
+    <property name="tag" value="nest_spawn_3"/>
+    <property name="wander" value="7"/>
+   </properties>
+  </object>
+  <object id="19" name="nest spawn 2" type="spawn" gid="243" x="767" y="343" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#nest3,3;VariableLower#sand_vermin,100"/>
+    <property name="respawn" value="45"/>
+    <property name="spawn" value="mirmek"/>
+    <property name="tag" value="nest_spawn_3"/>
+    <property name="wander" value="7"/>
+   </properties>
+  </object>
+  <object id="20" name="nest1 conv" type="conversation" gid="245" x="736" y="352" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#sand_vermin,100;VariableLower#nest3,3"/>
+    <property name="conversation" value="F8_nest_3"/>
+    <property name="icon" value="eggsac"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="21" name="nest spawn 1" type="spawn" gid="243" x="754" y="870" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#sand_vermin,100"/>
+    <property name="spawn" value="mirmek"/>
+   </properties>
+  </object>
+  <object id="22" name="nest spawn 1" type="spawn" gid="243" x="429" y="614" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#sand_vermin,100"/>
+    <property name="spawn" value="mirmek_fire"/>
+   </properties>
+  </object>
+  <object id="23" name="Event" type="spawn" gid="243" x="264" y="1147" width="64" height="64">
+   <properties>
+    <property name="event_location" value="F8_cave_1"/>
+    <property name="event_spawn" value="1"/>
+    <property name="spawn" value="mirmek_queen"/>
+   </properties>
+  </object>
+  <object id="24" name="iron ore 14" type="conversation" gid="245" x="1216.5" y="1119.5" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore14,1"/>
+    <property name="conversation" value="iron_ore14"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="25" name="iron ore 15" type="conversation" gid="245" x="1018" y="804" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore15,1"/>
+    <property name="conversation" value="iron_ore15"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="26" name="iron ore 16" type="conversation" gid="245" x="736" y="224" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore16,1"/>
+    <property name="conversation" value="iron_ore16"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="27" name="gold ore 4" type="conversation" gid="245" x="1472" y="128" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_gold_ore4,1"/>
+    <property name="conversation" value="gold_ore4"/>
+    <property name="icon" value="gold"/>
+    <property name="name" value="@GOLD"/>
+   </properties>
+  </object>
+  <object id="28" name="gold ore 5" type="conversation" gid="245" x="192" y="1152" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_gold_ore5,1"/>
+    <property name="conversation" value="gold_ore5"/>
+    <property name="icon" value="gold"/>
+    <property name="name" value="@GOLD"/>
+   </properties>
+  </object>
+  <object id="29" name="coal ore 15" type="conversation" gid="245" x="1280" y="320" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore15,1"/>
+    <property name="conversation" value="coal_ore15"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+  <object id="30" name="coal ore 16" type="conversation" gid="245" x="1600" y="800" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore16,1"/>
+    <property name="conversation" value="coal_ore16"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+  <object id="31" name="coal ore 17" type="conversation" gid="245" x="320" y="640" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore17,1"/>
+    <property name="conversation" value="coal_ore17"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,7 @@
+index	type	text	text_ES	Go To	conditions	actions	requisites
+1	Q	Похоже это тот самый беглый вор. Далеко же он забрался.		2	VariableEqual#kassian_map,10		
+1	Q	Вы находите мёртвого человека.		4			
+2	A	Обыскать		3			
+3	Q	В кармане его камзола была карта. Надеюсь этот тот самый предмет.		5			
+4	A	Наверное такой же путник как и я. Только ему не повезло.		0			
+5	A	Забрать карту.		0		"GainItem#12029;SetVariable#kassian_map,40"	

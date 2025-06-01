@@ -1,0 +1,11 @@
+index	type	text	text_ES	Go To	conditions	actions
+1	Q	А вы везучий раз нашли золотую жилу! (стальная красная кирка)		4	PlayerHasItem#12025	
+1	Q	А вы везучий раз нашли золотую жилу! (стальная фиол кирка)		5	PlayerHasItem#12024	
+1	Q	А вы везучий раз нашли золотую жилу! (стальная синяя кирка)		6	PlayerHasItem#12023	
+1	Q	А вы везучий раз нашли золотую жилу! (стальная кирка)		2	PlayerHasItem#12022	
+1	Q	С одной стороны вам повезло - вы нашли золотую жилу, но увы, у вас нет подходящего для добычи инструмента.		3		
+2	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_gold_ore13,1	"SetVariable#TMP_gold_ore13,1;GainItem#12011;GainXP#30"
+3	A	Вернусь позже.		0		
+4	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_gold_ore13,1	"SetVariable#TMP_gold_ore13,1;GainItems#12011,4;GainXP#120"
+5	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_gold_ore13,1	"SetVariable#TMP_gold_ore13,1;GainItem#12011;GainXP#300"
+6	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_gold_ore13,1	"SetVariable#TMP_gold_ore13,1;GainItems#12011,2;GainXP#60"

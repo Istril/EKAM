@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="101">
+ <properties>
+  <property name="indoor" value=""/>
+  <property name="maxlight" value="60"/>
+  <property name="music" value="Sovngarde_TESV"/>
+ </properties>
+ <tileset firstgid="1" source="trees.tsx"/>
+ <tileset firstgid="17" source="spawns.tsx"/>
+ <tileset firstgid="25" source="dryground.tsx"/>
+ <tileset firstgid="89" source="town_objects.tsx"/>
+ <tileset firstgid="169" source="rocks.tsx"/>
+ <tileset firstgid="175" name="dungeon" tilewidth="64" tileheight="128" tilecount="240" columns="16">
+  <image source="adt_tiled_dungeon.png" width="1024" height="1920"/>
+  <tile id="48">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="49">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="50">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="51">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="52">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="53">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="54">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="55">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="56">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="57">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="58">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="59">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="60">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="61">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="62">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="63">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="64">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="65">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="66">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="67">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="68">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="69">
+   <properties>
+    <property name="door" value="L"/>
+   </properties>
+  </tile>
+  <tile id="70">
+   <properties>
+    <property name="door" value="R"/>
+   </properties>
+  </tile>
+  <tile id="71">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="72">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="73">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="74">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="75">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="76">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="77">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="78">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="79">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="81">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="82">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="83">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="84">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="85">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="86">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="87">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="88">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="89">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="90">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="91">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="92">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="93">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="94">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="95">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="102">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="103">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="104">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="105">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="106">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="107">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="108">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="109">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="110">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="111">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="112">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="113">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="114">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="115">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="116">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="117">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="118">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="119">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="121">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="122">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="123">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="124">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="125">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="126">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="127">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="128">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="129">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="130">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="131">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="132">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="133">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="135">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="136">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="142">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="144">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="145">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="147">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="148">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="light" value="brazier"/>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="178">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="179">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="180">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="181">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="182">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="183">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="185">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="186">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="187">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="188">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="189">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="192">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="193">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="194">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="195">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="196">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="197">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="198">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="199">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="200">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="201">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="202">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="203">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="204">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="205">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="206">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="207">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="208">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="209">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="210">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="211">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="212">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="213">
+   <properties>
+    <property name="door" value="L"/>
+   </properties>
+  </tile>
+  <tile id="214">
+   <properties>
+    <property name="door" value="R"/>
+   </properties>
+  </tile>
+  <tile id="215">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="216">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="217">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="218">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="219">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="220">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="221">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="222">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="223">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="224">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="225">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="226">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="227">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="228">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="229">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="230">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="231">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="232">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="233">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="234">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="235">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="236">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="237">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="238">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="239">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="415" name="town_objexts2" tilewidth="64" tileheight="64" tilecount="64" columns="8">
+  <image source="town_objects2.png" width="512" height="512"/>
+  <tile id="6">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="light" value="brazier_lamp"/>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="35">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="36">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="479" source="natural_grounds.tsx"/>
+ <tileset firstgid="607" name="grounds indoor 2" tilewidth="64" tileheight="32" tilecount="160" columns="16">
+  <image source="grounds_indoor2.png" width="1024" height="320"/>
+  <tile id="64">
+   <properties>
+    <property name="effect" value="gas_weak"/>
+   </properties>
+  </tile>
+  <tile id="65">
+   <properties>
+    <property name="effect" value="gas_weak"/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="effect" value="death_weak"/>
+   </properties>
+  </tile>
+  <tile id="88">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="89">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="90">
+   <properties>
+    <property name="effect" value="lava2"/>
+   </properties>
+  </tile>
+  <tile id="136">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="142">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="144">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="145">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="147">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="148">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="150">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="152">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="153">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="154">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="156">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="157">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="158">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="159">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="767" name="pof_ground" tilewidth="64" tileheight="32" tilecount="16" columns="8">
+  <image source="mountain_ground.png" width="512" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="783" source="mountain-transitions.tsx"/>
+ <tileset firstgid="801" source="walls_red.tsx"/>
+ <tileset firstgid="816" source="rocks_gray.tsx"/>
+ <tileset firstgid="826" source="rocks_gray_small.tsx"/>
+ <tileset firstgid="838" source="teleporter.tsx"/>
+ <tileset firstgid="839" source="icemist_items.tsx"/>
+ <tileset firstgid="887" source="icemist_large.tsx"/>
+ <tileset firstgid="927" source="dungeon2.tsx"/>
+ <tileset firstgid="1167" source="grounds_indoor.tsx"/>
+ <tileset firstgid="1327" source="dungeon3.tsx"/>
+ <tileset firstgid="1567" source="dungeon stairs.tsx"/>
+ <tileset firstgid="1571" source="dungeon.tsx"/>
+ <tileset firstgid="1811" source="dungeon4.tsx"/>
+ <tileset firstgid="2051" source="town_objects3.tsx"/>
+ <tileset firstgid="2083" source="water.tsx"/>
+ <layer id="1" name="nonwalk" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3WwQnAQAgAQV9pLf13dO9rIIthpgJlQZwBAAAAAAAAAAAAtnifegI06GkAAMDX/KA9DXoa9DToaQCU3KCeBkDpDzdo+w7b5wcAAAAAAAAAAAAAAAAAAAAAAG4HB18dXQCQAAA=
+  </data>
+ </layer>
+ <layer id="2" name="water" width="96" height="96">
+  <properties>
+   <property name="music" value="Sovngarde_TESV"/>
+  </properties>
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3aQQrCQBAEwJz8mIr6/w/JgoEoBCIeZnusgtx7ezabBLIsAAAAAAAAAAAAcMzlVJ0AM6hnBrAsN/dBKf3X0n8t/ddK6j8p61Epa7ofyJmylq0u3wFH5gPAvi7Pg1T6r6X/emZQzwxqjf4Tvye3kvdQl/6T15C8f1bpa0jPP6TfA8n50+m/Vnr/6ednh/7lr3F+5Za/xtg7j9Dsa/fp+e2dGh3yp+6d9L2fnL/LuZmYPzn7arZz83p6v/Z06H6Y8dwf/1Ztr8+ZXJt0n3Luf85jvZJ1uX8T6b5OUvezn4vfSuq+4//ns71r/iLx+Tvju+Y/0X89/QMAAAAAAAAAAMB3npZoLdgAkAAA
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2bW27TUBCGLVnyRpzmiQcWgcoj0A0GWgrlrgYQdx5YAivCo2SU6eTcbZ9xy/9JoybOTfpmMmd8nDYNAOAu0HfuAHUg1+shTkTAfz36vfO1yAP816NXtb+G/1nx9ftYgGnoVa9ZeUL2JPifDr3eroRnjlWHfjQXvaP2Xf5X8D8L8G8L/NsC/7a41l89a2L9nQ89f5446l8fh//piJ1f4fyrLqfdLnz3wbzAvy3wX5fS/bcHyMkkkMtn7XFs9uF6jP0/RA5GA/+2wL8t8G8Ludy0eQH/00Euz9u84PNf+B9H6eyJPYjxsEO915YayEEa0hkz1r3OAc7F/Lj8u1x+GY5/2sfXJn5cBvz7SfFPjn8M8bTdxc9m51ofvz88917Av+uzwDG6ttkxH+ccuI5TDvR3Af7zYEcfG/9awDXv6/mfG/gvxeefneual8dC/kEaofonzy/bw77/lcoH/IeJ9QC95ureQ64vhP9LRx+i1/AajX5zk5D/FPc+/yk5wPfA7z/VPR3X/nvPeowcpJHqfhPwvxnxPVjiXPTBE1OT6n7dxf375tLYerAE/z7fc+cgNutP5V/PRATvT1v7z3E/dQ6W4N8S9rkd4joS2yY/B1PMO5sM/znrgDXb5uCU/dJfeU5JIR+7bvJyMHbeWXfH/l8L/68c/kvXgdpIj7LGZQ58x6byn9p3pH+KP+0u+H6qf1cfsmDbHNe/q9ZD34nStYBe87/71+upq+Zd7s9H+pfuU3pPqf8l96BtE69//i2BzMG58F+Sg5h7mWfXb0o4aP/t+T6u1GP6da49U6scSN+++g/5l/W/yfTPzwv1HXrfs+6wz+AKcv+mPdT/W0cOZNB7Pe7ie6Q1CM3zufXPtcU5+BsI+Tkx/+yK55tT0WsoLtqb9yku1X35WnqvJ5n+QzPzXff/aAb/Zwvxfxv6D9eqr5/Q7P9euH7XHs4BfP1nKfXPLGH9/T7c/t2Urb+Ugxf70O5T199fw2d/a+b1HHNhPX+6clBj/rR2T+D8y/b8iz3Mvf9AuPop/NfZfyNC/mM9yLX/qX//4Nv/XGrvkcy9/0z45olYDlzfg5L9/6W6Z5Z8/UU6Lbn+u8S+48LCPZHiX+bA59/nfgnzfgk13BMpPUjnIOX3Pzm9Z4n+a5KagxL/KX3/f/dP5KzF+vrjbVxzrSmZSWUO2D/clzF2JpX+4T6fUM8NzUSx+r8Ns+bS8fmXMyj717Mn/I9nTv+YdeLEzoND/vU60MN/NuyWcOVC+/c5l+/DwH8c6S2Wi5Bzl38Qx+fQlYvU54N0Unzm3gbpwL8t8G8L/NsC/7bIa9Kh2+Q29pw5rhnddfTv88YGyCPFqaxz+K+L9g/qAv+2oL/YAv+2oP/YAv+2wL8t8G8L/NcB+wu2+P5XFv7rEPKP/jM/8G8L/NuC9RdMwT8pBwU8AJAAAA==
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3awWrCQBQF0KzylaV0J/R7uujvdSfUgrSgYKE0LoQYpsaKyY3mHHioYxbDTXyTyFQVcA/WdVVtO7Wr07Oaj1LW8h/PIeuX5vW1Ph5jeK7/cXX7/aqQtfVgOJdkKf/rkX+W/LPknyX/LPlnyT9L/lndZ6tzjis9owFwW56aXr5o1cFfn/f1rP9fzSVZyv965J8l/yz5Z8k/S/5Zi7pcp75/kD9wprU9I1H+M54Pv7WsKf/WHpt5vU90bnPw0XNtOD9ZfeeH22ANzJryGghzpCdm6Ylwn/TWLL0VAGD63DNnuWcG4B64n8hyPwFQZn3Ksj5B1tj7m/XcY2PvP9dz/8f+c7h91p0s6w4AAABT8N3U54nato7d9Rz7M9qs52PTev8Wm8V8yT9L/lnyz5J/lvyz5J8l/yz5j2PV1Fen9mPL1jHyH87mjDH5D6eUf5f8hyP/LP0nq7v27mtZGINTfgGMQlFiAJAAAA==
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3auxGAIAwAUCr3n8eV/MwgnWchFnIS5L0JuCQkKZISAAAAAAAAAAAAwD/MU+sXwBj8Ne7suTYW9dHMlmO/FuIvP2095Yc+mIEAJz0RoD69FQAAyuzMAMBb9gkAIjKfgJF9fd+s5165P4/N/Tn0z9wBAAAAAAAAAAAAgPgOJTtHCgCQAAA=
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="55" name="Второй бой с АП" x="1568" y="1440" width="319.333" height="326"/>
+  <object id="56" x="1396" y="1377.33"/>
+  <object id="57" name="Минибосс - Тень архимага" x="1616.67" y="276.667" width="237.333" height="146.667"/>
+  <object id="58" x="296" y="1444" width="273" height="319"/>
+  <object id="62" name="Light" type="light" gid="21" x="2112" y="960" width="64" height="64"/>
+  <object id="63" name="Light" type="light" gid="21" x="2304" y="1216" width="64" height="64"/>
+  <object id="64" name="Light" type="light" gid="21" x="2432" y="1568" width="64" height="64"/>
+  <object id="65" name="Light" type="light" gid="21" x="2304" y="1888" width="64" height="64"/>
+  <object id="66" name="Light" type="light" gid="21" x="2144" y="2144" width="64" height="64"/>
+  <object id="67" name="Light" type="light" gid="21" x="992" y="1344" width="64" height="64"/>
+  <object id="68" name="Light" type="light" gid="21" x="1120" y="1120" width="64" height="64"/>
+  <object id="69" name="Light" type="light" gid="21" x="1248" y="896" width="64" height="64"/>
+  <object id="70" name="Energy barrier" type="mapitem" gid="21" x="1664" y="640" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="arh_shadow"/>
+   </properties>
+  </object>
+  <object id="71" name="Energy barrier" type="mapitem" gid="21" x="1696" y="640" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="arh_shadow"/>
+   </properties>
+  </object>
+  <object id="72" name="Energy barrier" type="mapitem" gid="21" x="1824" y="640" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="arh_shadow"/>
+   </properties>
+  </object>
+  <object id="73" name="Energy barrier" type="mapitem" gid="21" x="1785.5" y="640.5" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="arh_shadow"/>
+   </properties>
+  </object>
+  <object id="74" name="Energy barrier" type="mapitem" gid="21" x="1728" y="864" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="75" name="Energy barrier" type="mapitem" gid="21" x="1760" y="864" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="76" name="Energy barrier" type="mapitem" gid="21" x="1056" y="1600" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="77" name="Energy barrier" type="mapitem" gid="21" x="1056" y="1632" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="79" name="Energy barrier" type="mapitem" gid="21" x="1440" y="2208" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="80" name="Energy barrier" type="mapitem" gid="21" x="1472" y="2208" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="81" name="Energy barrier" type="mapitem" gid="21" x="1536" y="2240" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="82" name="Energy barrier" type="mapitem" gid="21" x="1568" y="2240" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="83" name="Energy barrier" type="mapitem" gid="21" x="1632" y="2272" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="84" name="Energy barrier" type="mapitem" gid="21" x="1664" y="2272" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="85" name="Energy barrier" type="mapitem" gid="21" x="1728" y="2304" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="86" name="Energy barrier" type="mapitem" gid="21" x="1760" y="2304" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="87" name="Energy barrier" type="mapitem" gid="21" x="1824" y="2272" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="88" name="Energy barrier" type="mapitem" gid="21" x="1856" y="2272" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="89" name="Energy barrier" type="mapitem" gid="21" x="1920" y="2240" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="90" name="Energy barrier" type="mapitem" gid="21" x="1952" y="2240" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="91" name="Energy barrier" type="mapitem" gid="21" x="2016" y="2208" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="92" name="Energy barrier" type="mapitem" gid="21" x="2048" y="2208" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="93" name="Energy barrier" type="mapitem" gid="21" x="1984" y="2208" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="94" name="Energy barrier" type="mapitem" gid="21" x="1888" y="2240" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="95" name="Energy barrier" type="mapitem" gid="21" x="1792" y="2272" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="96" name="Energy barrier" type="mapitem" gid="21" x="1696" y="2272" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="97" name="Energy barrier" type="mapitem" gid="21" x="1600" y="2240" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="98" name="Energy barrier" type="mapitem" gid="21" x="1504" y="2208" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="ap_barrier"/>
+   </properties>
+  </object>
+  <object id="99" name="Light" type="light" gid="21" x="1184" y="2016" width="64" height="64"/>
+  <object id="100" name="Light" type="light" gid="21" x="1024" y="1760" width="64" height="64"/>
+ </objectgroup>
+</map>

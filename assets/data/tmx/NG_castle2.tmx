@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="76" height="76" tilewidth="64" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="117">
+ <properties>
+  <property name="faction_civilian" value="varsilia"/>
+  <property name="faction_guard" value="varsilia"/>
+  <property name="music" value="fame_town"/>
+  <property name="name" value="New Garand"/>
+  <property name="outdoor" value=""/>
+ </properties>
+ <tileset firstgid="1" name="spawns" tilewidth="64" tileheight="64" tilecount="8" columns="2">
+  <image source="spawns.png" width="128" height="256"/>
+  <tile id="0">
+   <properties>
+    <property name="entry" value="1"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="entry" value="1"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="spawn" value="orc"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="spawn" value="goblin"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="9" source="water.tsx"/>
+ <tileset firstgid="73" source="town_objects.tsx"/>
+ <tileset firstgid="153" source="stoneroad1-grass.tsx"/>
+ <tileset firstgid="171" source="house_village_blue_1.tsx"/>
+ <tileset firstgid="243" source="house_village_blue_2.tsx"/>
+ <tileset firstgid="315" source="townhall_blue.tsx"/>
+ <tileset firstgid="351" name="house_bricks_1" tilewidth="64" tileheight="128" tilecount="30" columns="10">
+  <image source="house_bricks_1.png" width="640" height="384"/>
+ </tileset>
+ <tileset firstgid="381" source="stoneroad1.tsx"/>
+ <tileset firstgid="397" name="bridge" tilewidth="256" tileheight="320" tilecount="8" columns="4">
+  <image source="bridge.png" width="1024" height="640"/>
+ </tileset>
+ <tileset firstgid="405" source="stone_bridge_small_64_128.tsx"/>
+ <tileset firstgid="445" source="wall_stone_large1.tsx"/>
+ <tileset firstgid="454" source="tower_blue.tsx"/>
+ <tileset firstgid="460" source="ship.tsx"/>
+ <tileset firstgid="468" source="manor2.tsx"/>
+ <tileset firstgid="492" source="manor3.tsx"/>
+ <tileset firstgid="512" source="dryground.tsx"/>
+ <tileset firstgid="576" name="temple" tilewidth="64" tileheight="192" tilecount="16" columns="8">
+  <image source="temple.png" width="512" height="384"/>
+ </tileset>
+ <tileset firstgid="592" source="grassland.tsx"/>
+ <tileset firstgid="720" source="trees.tsx"/>
+ <tileset firstgid="736" source="dungeon.tsx"/>
+ <tileset firstgid="976" source="natural_grounds.tsx"/>
+ <tileset firstgid="1104" source="dungeon stairs.tsx"/>
+ <tileset firstgid="1108" source="spawns.tsx"/>
+ <tileset firstgid="1116" source="grounds_indoor.tsx"/>
+ <tileset firstgid="1276" source="town_objects3.tsx"/>
+ <layer id="1" name="nonwalk" width="76" height="76" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt3DENADAMA8EMQVn+QDpmrNwxupNM4AG4CgAAAPY4PeNNr4xeAAAAAAAAAAAAAAAAAAAAwC+/BRm9MnoB7HQBtkwGnQ==
+  </data>
+ </layer>
+ <layer id="2" name="water" width="76" height="76">
+  <data encoding="base64" compression="zlib">
+   eJzt18EOgyAURUEttv//yQ1LXWBvEwXiTMLenOdLYFkAAAAAAAD6W0vvL5hL7bVp9jO9Mnpl9MroldEro1dGr4xeGb0yemX0yuiV0SujV04vAEbxKvvDuXfZny6K2SXqffVTBpndBNzvM61exz21s+f/13FPR9rZ1jyvmvXs+9ia5xWznr3X3fTK6JXRK6NXRq+MXhm9Mnplntzr37fUU3tVd76lAAAAAJjLFxq3A4Q=
+  </data>
+ </layer>
+ <layer id="3" name="bridge" width="76" height="76">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeDJaQAAB
+  </data>
+ </layer>
+ <layer id="4" name="ground" width="76" height="76">
+  <data encoding="base64" compression="zlib">
+   eJztmg1SgzAQRjvoET2Wo1ekcAEED6CMrN1uN0sWQiHkezM7YH+iff2ySamXCwAAAAAAAACAo1JXjwXCjH5aVvBlA18+4MsHfPlAv/dTI1su4MsHfPngvtZWCcg1kq+VjVLW40vAyksjnHBf3GFJvkLE+Grh6x/48oH56AP93gf2Ez5qkZ1QppCvP/g+VpuXcn7C1+VydRR8IV8eSutfqT5Dn3V9DL3/14ichDLjqRx98ffa8hXq2ZovGmP4rV4Zf4j0ReNox3YH11v46thrasT99HtifTXTWNrxaL74ms99tcrPMl+jsy8xZj/dPojbLY6UL6unyIr1RceBPbdjDun1duzx30YdKV+Wr7eXZb74GMPkpWF+tHk8V2fOF+/vnTin1zmIceb+jhx8Lc0X9fGv6jYnm+o+V3WVZ75CDtfki847duwnZ70yZk79y/KVYn3k/Z5nrK/ufVnkkq81+y8674Qr2kvI51nklK8lvmiPJfeqPKtDle/+XmL5mlvL5h4Tel7OxK5ZKatkKGfWtcKtvk/zXNeNra2RfStU5DS1r5S5f6YvK2fkEr7uPWg5a8X9W/nKbT7KnPF9B3zdOJovzMcwufvas99rvo48H/feT4R8HQ0rV8/Yr27la6tMLukTqdjalzZH9uh5qXiGL+2aPb/trL68c0r6Cl1rObMvzz6C+wqtXyX40v7PqiRfsfOM+6rFeSm+3l/ni1jj6yz9fvTxaVRKX2fo96OPj0CuQr68/X6ucvUlc0XHFNd49v7MmQr48hEzH+HrBvnSCr4e8ewnAABgb34ArSxDAg==
+  </data>
+ </layer>
+ <layer id="5" name="ground2" width="76" height="76">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeDJaQAAB
+  </data>
+ </layer>
+ <layer id="6" name="scenery" width="76" height="76">
+  <data encoding="base64" compression="zlib">
+   eJzt3DENADAIAEEGFFL/XiqAhY2E3Cl4BR8BAAAAwFTldgEAAAAAAAAAAAAAAAAAAAAAdM8XA+CcD9t6AK4=
+  </data>
+ </layer>
+ <layer id="7" name="objects" width="76" height="76">
+  <data encoding="base64" compression="zlib">
+   eJztm71u2zAQxwkobtZkzJCpcbJ0iuMUsF+iWZshyBBk6FC0i4fmw8/Ruu9aEcmhxIE88iCKOpr3AwiZ1Ik8/sUvibIxiqIoiqIoiqIoilROO2PWTrjopvZINlgf1YtG9eKhevFQvXi4+tix/0T1Ijlz5kRtW2moXjxULx6gk+2bbrDj2efOnw6/l05oRe9QPSH9vnsLbvpfzzWt6IXbD4QrQsddw3qFCOlF6dgyqhcP1YtHbB5ITW8FWDfMA/OBG+YNrSdC4Pp/mBlzOHv7fdQfj2e0fWv46r9Fx5h9S3Drr3qNa79vtKbXacK8hsNXFP8WmAt952vTC+vj+v9I1AXObQbWtza9KH/viPhdwCZn+RaqvU+hNafMWFvynY9dEyufOj+lXjcH0/gQK+9akF6+tl7aB7ds33tZau9Jwr2tbfwtiU+bW9UriJQ5p2YkjKGp90/CvZUwhrpImh9z+9DC+mtqH2LlUX1Vwncu0vSSDvfdRGjf//uevp/IjVv/l4ANpG8y6wX3aoHu1RodcXrIrsS9hDJ+9eEpYAPnXk1enyCvn+9x/L0GxGPpcCyhF+zLbhPtc/p02ef1w4nj7zUgHkvfTaBXKmO0L6n5UWW8mPD45bPPwarP63cf/mTKs5RezyZt/MrtU83ti2Jr/o9vufWqsX2NaT8kL+7eV4nnhyn1Wg18Vp0C6xNnj61k+xpSFvwnz13brj1p3DK4z08523xsfhyiF77Wrmlr/355zPaFr7Vr2tq/X+boZfvX8v1ZE47UOwCb9iVBi33VC/8f4KHz26XmzbWTQGz9hfXy9SdsR6WlXisVbvvi5EPtI3B8kASsR2GffI7iQ/Rqffzi7jtpf+Tl06Je+PlxjfrtwnMOx10b338M9kmv8wJ1qen7kyF75aV8kETK+PVx5CBhDzmVT0Q9pOyHK4qiAP8AW6ZwCg==
+  </data>
+ </layer>
+ <layer id="8" name="roofs" width="76" height="76">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20ND6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeDJaQAAB
+  </data>
+ </layer>
+ <objectgroup id="9" name="data">
+  <object id="79" name="second stair" type="transition" x="971.5" y="1118.5" width="47" height="91">
+   <properties>
+    <property name="area_id" value="NG_custle2"/>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="80" name="rionniel temple" type="transition" x="1360.33" y="402.333" width="62.3333" height="64.3333">
+   <properties>
+    <property name="area_id" value="H8_tomb"/>
+    <property name="entry_id" value="0001"/>
+   </properties>
+  </object>
+  <object id="81" name="First stair" type="transition" x="140" y="2208" width="71.6667" height="85.6667">
+   <properties>
+    <property name="area_id" value="NG_custle2"/>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+  <object id="82" name="entrypoint" type="entry" gid="1108" x="192" y="2176" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="83" name="entrypoint" type="entry" gid="1108" x="1088" y="1184" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+  <object id="84" name="entrypoint" type="entry" gid="1108" x="1408" y="521" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="4"/>
+   </properties>
+  </object>
+  <object id="85" name="entrypoint" type="entry" gid="1108" x="2368" y="1312" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="86" name="kassian" type="spawn" gid="1110" x="1632" y="960" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#kassian_map,20"/>
+    <property name="conversation" value="kassian_in_castle_v2"/>
+    <property name="name" value="@Придворный маг"/>
+    <property name="spawn" value="kassianv1"/>
+    <property name="tag" value="kassian"/>
+    <property name="wander" value="3"/>
+   </properties>
+  </object>
+  <object id="87" name="knight" type="spawn" gid="1110" x="1696" y="1120" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="88" name="knight" type="spawn" gid="1110" x="1824" y="1120" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="89" name="knight" type="spawn" gid="1110" x="2240" y="1216" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="90" name="knight" type="spawn" gid="1110" x="2240" y="1376" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="91" name="knight" type="spawn" gid="1110" x="1536" y="1120" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="92" name="knight" type="spawn" gid="1110" x="1088" y="1408" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="93" name="knight" type="spawn" gid="1110" x="1088" y="1504" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="94" name="knight" type="spawn" gid="1110" x="1248" y="1440" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="95" name="knight" type="spawn" gid="1110" x="1376" y="1440" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="96" name="knight" type="spawn" gid="1110" x="1504" y="1440" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="97" name="knight" type="spawn" gid="1110" x="1504" y="1216" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="98" name="knight" type="spawn" gid="1110" x="1792" y="1504" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="99" name="knight" type="spawn" gid="1110" x="1664" y="1664" width="64" height="64">
+   <properties>
+    <property name="cycle" value="day"/>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="100" name="knight" type="spawn" gid="1110" x="1632" y="1568" width="64" height="64">
+   <properties>
+    <property name="cycle" value="day"/>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="101" name="knight" type="spawn" gid="1110" x="1856" y="1664" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="102" name="knight" type="spawn" gid="1110" x="1664" y="1760" width="64" height="64">
+   <properties>
+    <property name="cycle" value="day"/>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="103" name="knight" type="spawn" gid="1110" x="1856" y="1792" width="64" height="64">
+   <properties>
+    <property name="cycle" value="day"/>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="104" name="knight" type="spawn" gid="1110" x="1920" y="1216" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="105" name="knight" type="spawn" gid="1110" x="1920" y="1408" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="106" name="knight" type="spawn" gid="1110" x="1728" y="1824" width="64" height="64">
+   <properties>
+    <property name="cycle" value="night"/>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="107" name="knight" type="spawn" gid="1110" x="1792" y="1792" width="64" height="64">
+   <properties>
+    <property name="cycle" value="night"/>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="108" name="knight" type="spawn" gid="1110" x="224" y="2016" width="64" height="64">
+   <properties>
+    <property name="cycle" value="night"/>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="109" name="knight" type="spawn" gid="1110" x="224" y="1952" width="64" height="64">
+   <properties>
+    <property name="cycle" value="night"/>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="110" name="knight" type="spawn" gid="1110" x="224" y="1792" width="64" height="64">
+   <properties>
+    <property name="cycle" value="night"/>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="111" name="knight" type="spawn" gid="1110" x="160" y="1696" width="64" height="64">
+   <properties>
+    <property name="cycle" value="night"/>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="112" name="knight" type="spawn" gid="1110" x="384" y="1728" width="64" height="64">
+   <properties>
+    <property name="cycle" value="night"/>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="113" name="knight" type="spawn" gid="1110" x="486" y="1632" width="64" height="64">
+   <properties>
+    <property name="cycle" value="night"/>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="114" name="knight" type="spawn" gid="1110" x="416" y="2272" width="64" height="64">
+   <properties>
+    <property name="faction" value="#guard#"/>
+    <property name="name" value="@VARSILIAN_KNIGHT"/>
+    <property name="spawn" value="human_captain"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="116" name="Проход в казну" x="898.5" y="1251.5" width="57" height="57"/>
+ </objectgroup>
+</map>

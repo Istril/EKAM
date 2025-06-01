@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="194">
+ <properties>
+  <property name="exit_n" value="E8"/>
+  <property name="music" value="gloom"/>
+  <property name="outdoor" value=""/>
+ </properties>
+ <tileset firstgid="1" source="grassland.tsx"/>
+ <tileset firstgid="129" source="spawns.tsx"/>
+ <tileset firstgid="137" source="town_objects.tsx"/>
+ <tileset firstgid="217" source="rocks_gray.tsx"/>
+ <tileset firstgid="227" source="rocks_gray_small.tsx"/>
+ <tileset firstgid="239" source="water.tsx"/>
+ <tileset firstgid="303" source="natural_grounds.tsx"/>
+ <tileset firstgid="431" source="mountain_ground.tsx"/>
+ <tileset firstgid="447" source="mountain-transitions.tsx"/>
+ <tileset firstgid="465" source="town_objexts2.tsx"/>
+ <tileset firstgid="529" name="kings1_2" tilewidth="512" tileheight="640" tilecount="1" columns="1">
+  <image source="kings1_2.png" width="512" height="640"/>
+ </tileset>
+ <tileset firstgid="530" name="trees_desert" tilewidth="128" tileheight="256" tilecount="16" columns="8">
+  <image source="trees_desert.png" width="1024" height="512"/>
+ </tileset>
+ <tileset firstgid="546" name="king3" tilewidth="256" tileheight="384" tilecount="1" columns="1">
+  <image source="king3.png" width="256" height="384"/>
+ </tileset>
+ <tileset firstgid="547" name="king4" tilewidth="256" tileheight="384" tilecount="1" columns="1">
+  <image source="king4.png" width="256" height="384"/>
+ </tileset>
+ <tileset firstgid="548" name="king5" tilewidth="384" tileheight="384" tilecount="1" columns="1">
+  <image source="king5.png" width="384" height="384"/>
+ </tileset>
+ <tileset firstgid="549" name="gate_red" tilewidth="128" tileheight="128" tilecount="4" columns="4">
+  <image source="gate_red.png" width="512" height="128"/>
+ </tileset>
+ <tileset firstgid="553" name="gate_blue2" tilewidth="128" tileheight="128" tilecount="1" columns="1">
+  <image source="gate_blue2.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="554" name="desert_water" tilewidth="64" tileheight="64" tilecount="112" columns="16">
+  <image source="desert_water.png" width="1024" height="448"/>
+ </tileset>
+ <tileset firstgid="666" name="greenground" tilewidth="64" tileheight="32" tilecount="64" columns="8">
+  <image source="greenground.png" width="512" height="256"/>
+ </tileset>
+ <tileset firstgid="730" name="town_objects3" tilewidth="64" tileheight="128" tilecount="32" columns="8">
+  <image source="town_objects3.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="762" name="grounds_indoor" tilewidth="64" tileheight="32" tilecount="160" columns="16">
+  <image source="grounds_indoor.png" width="1024" height="320"/>
+ </tileset>
+ <tileset firstgid="922" name="trees_big" tilewidth="128" tileheight="320" tilecount="14" columns="14">
+  <image source="trees_big.png" width="1792" height="320"/>
+ </tileset>
+ <tileset firstgid="936" source="desert_water.tsx"/>
+ <tileset firstgid="1048" source="greenground.tsx"/>
+ <tileset firstgid="1112" source="cave.tsx"/>
+ <tileset firstgid="1352" source="grassland_structures.tsx"/>
+ <tileset firstgid="1388" source="trees.tsx"/>
+ <tileset firstgid="1404" source="grounds_indoor.tsx"/>
+ <tileset firstgid="1564" source="cave2.tsx"/>
+ <layer id="1" name="nonwalk" width="96" height="96" visible="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <layer id="2" name="water" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3QIQ4AMAgEQQT//2AFX6morSeBmWT95SIAAAAAAAAAAAAAAAAAAAAAAAAAAACAn5PdC/aqfNHD9wAAAAAAAAAAAAAAAMBUF/BGcqUAkAAA
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="169" name="Выход на первый этаж " x="163" y="133" width="67" height="53"/>
+  <object id="170" name="Минибосс" x="2550" y="922" width="206" height="146"/>
+  <object id="172" name="Вход в кузни" x="2502" y="658" width="182" height="98"/>
+  <object id="177" name="iron ore 32" type="conversation" gid="133" x="1472" y="256" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore32,1"/>
+    <property name="conversation" value="iron_ore32"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="178" name="iron ore 33" type="conversation" gid="133" x="576" y="96" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore33,1"/>
+    <property name="conversation" value="iron_ore33"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="179" name="iron ore 34" type="conversation" gid="133" x="472" y="664" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore34,1"/>
+    <property name="conversation" value="iron_ore34"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="180" name="iron ore 35" type="conversation" gid="133" x="1942.27" y="1247.18" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore35,1"/>
+    <property name="conversation" value="iron_ore35"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="181" name="coal ore 26" type="conversation" gid="133" x="1974" y="1249.33" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore25,1"/>
+    <property name="conversation" value="coal_ore25"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+  <object id="182" name="coal ore 27" type="conversation" gid="133" x="825.75" y="720.25" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore27,1"/>
+    <property name="conversation" value="coal_ore27"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+  <object id="183" name="coal ore 28" type="conversation" gid="133" x="896" y="1472" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore28,1"/>
+    <property name="conversation" value="coal_ore28"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+  <object id="184" name="coal ore 29" type="conversation" gid="133" x="1494.33" y="1536.33" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore29,1"/>
+    <property name="conversation" value="coal_ore29"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+  <object id="185" name="gold ore 12" type="conversation" gid="133" x="1088" y="2336" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_gold_ore12,1"/>
+    <property name="conversation" value="gold_ore12"/>
+    <property name="icon" value="gold"/>
+    <property name="name" value="@GOLD"/>
+   </properties>
+  </object>
+  <object id="186" name="gold ore 13" type="conversation" gid="133" x="1311" y="953" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_gold_ore13,1"/>
+    <property name="conversation" value="gold_ore13"/>
+    <property name="icon" value="gold"/>
+    <property name="name" value="@GOLD"/>
+   </properties>
+  </object>
+  <object id="187" name="gold ore 14" type="conversation" gid="133" x="2400.75" y="953.25" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_gold_ore14,1"/>
+    <property name="conversation" value="gold_ore14"/>
+    <property name="icon" value="gold"/>
+    <property name="name" value="@GOLD"/>
+   </properties>
+  </object>
+  <object id="188" name="adamantite ore 1" type="conversation" gid="133" x="1664" y="1024" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_adamantite_ore1,1"/>
+    <property name="conversation" value="adamantite_ore1"/>
+    <property name="icon" value="adamantite"/>
+    <property name="name" value="@ADAMANTITE"/>
+   </properties>
+  </object>
+  <object id="189" name="adamantite ore 2" type="conversation" gid="133" x="2712" y="605.333" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_adamantite_ore2,1"/>
+    <property name="conversation" value="adamantite_ore2"/>
+    <property name="icon" value="adamantite"/>
+    <property name="name" value="@ADAMANTITE"/>
+   </properties>
+  </object>
+  <object id="190" name="adamantite ore 3" type="conversation" gid="133" x="864.5" y="1529.5" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_adamantite_ore3,1"/>
+    <property name="conversation" value="adamantite_ore3"/>
+    <property name="icon" value="adamantite"/>
+    <property name="name" value="@ADAMANTITE"/>
+   </properties>
+  </object>
+  <object id="191" name="adamantite ore 4" type="conversation" gid="133" x="1939.5" y="1856.5" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_adamantite_ore4,1"/>
+    <property name="conversation" value="adamantite_ore4"/>
+    <property name="icon" value="adamantite"/>
+    <property name="name" value="@ADAMANTITE"/>
+   </properties>
+  </object>
+  <object id="192" name="starmetal ore 10" type="conversation" gid="133" x="224.333" y="1270.33" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_starmetal_ore10,1"/>
+    <property name="conversation" value="starmetall_ore10"/>
+    <property name="icon" value="starmetal"/>
+    <property name="name" value="@STARMETAL"/>
+   </properties>
+  </object>
+  <object id="193" name="starmetal ore 11" type="conversation" gid="133" x="921.667" y="1823.67" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_starmetal_ore11,1"/>
+    <property name="conversation" value="starmetall_ore11"/>
+    <property name="icon" value="starmetal"/>
+    <property name="name" value="@STARMETAL"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

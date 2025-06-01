@@ -1,0 +1,4 @@
+index	type	text	text_ES	Go To	conditions	actions
+1	Q	Запреметив нужное вам дерево вы решаете?		2		
+2	A	Срубить его [RED]Обновляется раз в день[]		0	"PlayerHasItem#12033;VariableLower#TMP_wood_ore6,0"	"SetVariable#TMP_wood_ore6,1;GainItem#12026"
+2	A	Пощадить природу. В этот раз.		0		

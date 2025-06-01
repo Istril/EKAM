@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ga_trackingId">UA-74109015-4</string>
+    <bool name="ga_autoActivityTracking">false</bool>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+    <string name="ga_appName">Exiled Kingdoms RPG</string>
+    <bool name="ga_debug">true</bool>
+    <item format="integer" name="ga_dispatchPeriod" type="integer">120</item>
+    <bool name="ga_anonymizeIp">true</bool>
+    <bool name="ga_dryRun">false</bool>
+    <string name="ga_sampleFrequency">100.0</string>
+    <integer name="ga_sessionTimeout">-1</integer>
+    <string name="net.fdgames.ek.android">Exiled Kingdoms RPG</string>
+</resources>

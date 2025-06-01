@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="64" height="64" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="81">
+ <properties>
+  <property name="maxlight" value="40"/>
+  <property name="music" value="complex"/>
+  <property name="name" value="Gurgurth Cave"/>
+  <property name="name_ES" value="Cueva Gurgurth"/>
+ </properties>
+ <tileset firstgid="1" source="spawns.tsx"/>
+ <tileset firstgid="9" source="town_objects.tsx"/>
+ <tileset firstgid="89" source="town_objexts2.tsx"/>
+ <tileset firstgid="153" source="dungeon.tsx"/>
+ <tileset firstgid="393" source="dungeon2.tsx"/>
+ <tileset firstgid="633" source="dungeon stairs.tsx"/>
+ <tileset firstgid="637" source="cave.tsx"/>
+ <tileset firstgid="877" source="grounds_indoor.tsx"/>
+ <tileset firstgid="1037" source="cave2.tsx"/>
+ <layer id="1" name="nonwalk" width="64" height="64" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20MH6AAAAAAAAAAAAAAAAAAAACAtwFAAAAB
+  </data>
+ </layer>
+ <layer id="2" name="water" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJztw0EJAAAIBDD7VxLMZod7+JANVgUAAAAAAAAANzr8yYQBAAAAAAAAgP8WiLkUnw==
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJzt2lsKwjAQheG4HK2XbkTSd/e/DxtoUILFCx1n2vN/EFLwIZNkMoXUlAAAAF7LU9+NbfAMxEmZ/5Ae69D+pqLOtc2BrefEbWzX6Vlpv1vv5q68Nth+HfgEZwBRcB7xb9Q/QJPy+0a97invvYd9ipFzXjHUOzllZ8ex5+5DI7LKk8j5d/EOIJDeOwAHx2RXHyLnvbW11DwsTy3v88yzCrX9Birl3FesdQA4++qU33vg/JP/iK5r+qWp14DKan2/Ve6xS12q3zwPhmPV71qlPxmO8wvr2lz+456fGoD4+p13BFijO9A2EsY=
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJzt2zEKwjAUBuDYK3gKRXoT0cFBcPZ4Lt7AA4geSQsOWYQObZP2fR8EOjzC/5NMhaQEAMzdqUnp/F37Zth92+x7O+zWs7ApHaAiu9IBmFx+5u3fKQAAAKB2ryal+2+9B/5/WLuu+yNY59wzcPfObcH9jz1mnH/pBOM59JhZcv8+ot//6P0BAAAAiG29Kp1gfNfSASoS8Y1DLuJ7h0vpAAAT+gDLkQ21
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJztW0tvFDEM3p1p9w9wgiMXOAI3XpU48mh5CTgAd6BCPMRD/KgChRbaA1AKQgipLSq0Epwo/6NAzMZs8Max85jtIvFJ0exmZjPz2R7HsbOt1n9sJVaqVuuhbd+dz8+qvHHPm9+fsWOcNcebpk2YdiFz3NKYts+zj/S/zJTBVfvbB2SM40PK34dHGc96i/ltk/zBlp8QW5Z0yPF/Zfqf/0P8gftr036aVte9/kVBBnPm3FtyPpc74MYA+SP3luG9aY5V/ff5p8I9qQyk6zW4W5A/+NJ7TrtJvi8JY0o2AJguzJ97phT+IMsD5riTOf9eMeai9Q3rpi3b9t32PUH7seD4rzjXY8Nxlp0+8DsfC/IHX7I/cP5d4XfqpeWAXJbt8UWB+6Tqf0fg/Ichm1M5dOp0/iFI7/9AUfeO7bo7F0EDnzzaEP+NyDFhfpuxbaH6u/+xc27G831Bea+O5f3DXD8CMrFySeF/zvzmlGmXmHZkRD8WndunIv0+tTWUGW0gJ+C+aa+vrA00Mf/P2fttCmP74pqlSP5T5BouRob4v13393P8Z8m8gn53bKTni6U4LmSbXEy3Ecmf6p/jP277t5N+jn9oHYKQ1mScDELxbIz+/8SZDiT+FBx/sKu94dv/hiQDKsc3Ae4ALf9ZD3dAyP59yNG/dE8AfT8lnWr4f6p6ayvtswD/Pe3+fo7/nMd/+iDpk86FEn8p7uf0juD4H43UPwXVI0DiDqD+SeIvzX+SXXL8c9f/se8x9zuJv+T/pdiqKf3H6hFR2v59dogIzSux/o9CO8+6mK/612i5/i9lTgXk8qd2LPHn/FSu/gFUBpr8WO77H6N/0Ps35rw0p7v2Eoot3PlJ44di4x8KbZy94rF5Fxx/yh3hkwHk3y7bPqhlYA7ummnHqm5dY8L5DOfOkDEwFiip/3lhbg7NGVNMPOO7l7T+jkHq+g/0gusiOELOjcuxAaT5MuTXKX/uXU7ByYyxOk4eIQRNrBCa1yl/assanGZ+czGDP9hrp+7P77vQxkkx+k/B9Qb4/0YB7oBQvmBY+Y/anCIng9jn9skgRoYhAP/dnv4U/sAb7d6XU0JgjQN95Gol10CpDErUfgBc/S9J/zaXOqrwfS6gpo+515AM1hrg77P/XS2Bv+VI9Yy50zqSPwDHC8V2TfEfa3UbAmp4If6Vrd/6bHxUsH0NOP8QmwPVYNKMc9AcD9nvh1vdGh7H31eHp+DiNQDITXo/OP5N6J+rWVwJjJ9Sx+JqOT74+NP1Qyn+KQjFJBxcTlINgPL3rZ1y9z3lIEX/lBMnAzqvc+s/gGa/hA+zZH2CtZyvtkljAn9NDcCFz6apDHzcQ2snQIodfCHX0z11klxL6B/B5Ss03BHuPgioxa3bmAp1u2r1um6/f1aMG5JBTA0EERPzzkdwbxKcj03hr7VTSe+5sUUMOP4p/h+AuZFQGwa9I0rqvylw+xq4JsVuLjj+A93HE1hHp+z/jNmDE6N/rR60+3JcwHqKxtSp638p9nIRo3+tf0/xHZhXcO0gJ/ejkYGUk6bQPg/YDuaGOoxdc/14DuSRm/sKySBmLwZC+zxrwnU+W/ehRO4vNa+Ww5/1nTb/MTJA/gCQgbtvUONTfBy0axHx/c/kj+sl3HN+p+rWue7Y77er/v/2uHUTKe+3EohRNDEet3bq2LwR7j+VQPc+4+dQjfGHre3R2s54BH/Q37Z2ryHwe+rayd1/2TQoxxj9a+avkAy8fpfkUJsG5TgZwV8b+4b8E655Zwq0lHiKcoQawLix3Ym2zF8b+5byzxJi4jkE5ejmQEN5T8Cw8Qf4ZHDfc3/sy6ntafiX+F9aLGLsIId/6v7tQUArg9zaNt0D67at4k6f7UTF/xdDesf/ox+/AMJv5ow=
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="64" height="64">
+  <data encoding="base64" compression="zlib">
+   eJztzjEBAAAIAyDLav8IFvDfISSgCgC4TDoQ1ukAAAAAAAAAAAAAAAAAADyz9AgAzA==
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="1" name="Secret Door" type="secretdoor" gid="5" x="1408" y="832" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="10"/>
+    <property name="secretdoor_tag" value="E8_cave_1"/>
+   </properties>
+  </object>
+  <object id="2" name="Secret Door" type="secretdoor" gid="5" x="1824" y="1696" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="10"/>
+    <property name="secretdoor_tag" value="E8_cave_2"/>
+   </properties>
+  </object>
+  <object id="3" name="Librarian" type="spawn" gid="3" x="1844" y="1065" width="64" height="64">
+   <properties>
+    <property name="name" value="Librarian"/>
+    <property name="name_ES" value="Bibliotecario"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="4" name="Librarian" type="spawn" gid="3" x="1854" y="1012" width="64" height="64">
+   <properties>
+    <property name="name" value="Librarian"/>
+    <property name="name_ES" value="Bibliotecario"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="5" name="Librarian" type="spawn" gid="3" x="1816" y="1095" width="64" height="64">
+   <properties>
+    <property name="name" value="Librarian"/>
+    <property name="name_ES" value="Bibliotecario"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="6" name="Librarian" type="spawn" gid="3" x="1902" y="1065" width="64" height="64">
+   <properties>
+    <property name="name" value="Librarian"/>
+    <property name="name_ES" value="Bibliotecario"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="7" name="Librarian" type="spawn" gid="3" x="1898" y="963" width="64" height="64">
+   <properties>
+    <property name="name" value="Librarian"/>
+    <property name="name_ES" value="Bibliotecario"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="8" name="Chest" type="container" gid="5" x="1756" y="1102" width="64" height="64">
+   <properties>
+    <property name="icon" value="shelf"/>
+    <property name="items" value="5013"/>
+    <property name="name" value="@SHELF"/>
+    <property name="unique_tag" value="E8_cave_shelf"/>
+   </properties>
+  </object>
+  <object id="9" name="spikes trap" type="trap" gid="5" x="1523" y="919" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="11"/>
+   </properties>
+  </object>
+  <object id="10" name="spikes trap" type="trap" gid="5" x="1567" y="895" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="11"/>
+   </properties>
+  </object>
+  <object id="11" name="spikes trap" type="trap" gid="5" x="1601" y="937" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="11"/>
+   </properties>
+  </object>
+  <object id="12" name="spikes trap" type="trap" gid="5" x="1817" y="615" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="11"/>
+   </properties>
+  </object>
+  <object id="13" name="spikes trap" type="trap" gid="5" x="1837" y="572" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="11"/>
+   </properties>
+  </object>
+  <object id="14" name="spikes trap" type="trap" gid="5" x="1870" y="619" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="11"/>
+   </properties>
+  </object>
+  <object id="15" name="Enraged troll" type="spawn" gid="3" x="766" y="1210" width="64" height="64">
+   <properties>
+    <property name="spawn" value="enraged_troll"/>
+    <property name="unique_tag" value="enraged_troll"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="16" name="troll shaman" type="spawn" gid="3" x="1391" y="673" width="64" height="64">
+   <properties>
+    <property name="spawn" value="troll_shaman"/>
+   </properties>
+  </object>
+  <object id="17" name="troll" type="spawn" gid="3" x="1489" y="534" width="64" height="64">
+   <properties>
+    <property name="spawn" value="troll"/>
+   </properties>
+  </object>
+  <object id="18" name="troll" type="spawn" gid="3" x="1189" y="319" width="64" height="64">
+   <properties>
+    <property name="spawn" value="troll"/>
+   </properties>
+  </object>
+  <object id="19" name="Troll Caves Spawn" type="spawn" gid="3" x="827" y="317" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="20" name="Troll Caves Spawn" type="spawn" gid="3" x="1120" y="156" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="21" name="Troll Caves Spawn" type="spawn" gid="3" x="797" y="374" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="22" name="troll shaman" type="spawn" gid="3" x="652" y="298" width="64" height="64">
+   <properties>
+    <property name="spawn" value="troll_shaman"/>
+   </properties>
+  </object>
+  <object id="23" name="Troll Caves Spawn" type="spawn" gid="3" x="1107" y="874" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="24" name="Troll Caves Spawn" type="spawn" gid="3" x="1058" y="991" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="25" name="Troll Caves Spawn" type="spawn" gid="3" x="706" y="803" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="26" name="Troll Caves Spawn" type="spawn" gid="3" x="507" y="1058" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="27" name="Troll Caves Spawn" type="spawn" gid="3" x="265" y="1346" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="28" name="Troll Caves Spawn" type="spawn" gid="3" x="794" y="1567" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="29" name="Troll Caves Spawn" type="spawn" gid="3" x="1185" y="1381" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="30" name="Troll Caves Spawn" type="spawn" gid="3" x="943" y="1534" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="31" name="Troll Caves Spawn" type="spawn" gid="3" x="263" y="574" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="32" name="Troll Caves Spawn" type="spawn" gid="3" x="251" y="756" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="33" name="Troll Caves Spawn" type="spawn" gid="3" x="405" y="1306" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="34" name="Troll Caves Spawn" type="spawn" gid="3" x="374" y="1431" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="35" name="Troll Caves Spawn" type="spawn" gid="3" x="197" y="1443" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="36" name="Troll Caves Spawn" type="spawn" gid="3" x="1632" y="1390" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="37" name="Troll Caves Spawn" type="spawn" gid="3" x="1811" y="1408" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="38" name="Troll Caves Spawn" type="spawn" gid="3" x="1739" y="1540" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="39" name="troll shaman" type="spawn" gid="3" x="1588" y="1875" width="64" height="64">
+   <properties>
+    <property name="spawn" value="troll_shaman"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="40" name="troll shaman" type="spawn" gid="3" x="1593" y="1791" width="64" height="64">
+   <properties>
+    <property name="spawn" value="troll_shaman"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="41" name="troll king" type="spawn" gid="3" x="1562" y="1803" width="64" height="64">
+   <properties>
+    <property name="conditions" value="NPCisDead#king_gurguth"/>
+    <property name="spawn" value="troll_king"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="42" name="rat" type="spawn" gid="3" x="210" y="1980" width="64" height="64">
+   <properties>
+    <property name="respawn" value="25"/>
+    <property name="spawn" value="swamp_rat"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="43" name="troll cook" type="spawn" gid="3" x="446" y="294" width="64" height="64">
+   <properties>
+    <property name="name" value="@TROLL_COOK"/>
+    <property name="spawn" value="elder_troll"/>
+   </properties>
+  </object>
+  <object id="44" name="troll" type="spawn" gid="3" x="1563" y="328" width="64" height="64">
+   <properties>
+    <property name="spawn" value="troll"/>
+   </properties>
+  </object>
+  <object id="45" name="Chest" type="container" gid="5" x="1114" y="94" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_big1"/>
+    <property name="loot_table" value="troll_chest"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="46" name="Chest" type="container" gid="5" x="638" y="1754" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_big1"/>
+    <property name="loot_table" value="troll_chest"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="47" name="Chest" type="container" gid="5" x="156" y="1335" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_big1"/>
+    <property name="loot_table" value="troll_chest"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="48" name="Chest" type="container" gid="5" x="763" y="1117" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_big1"/>
+    <property name="loot_table" value="troll_chest"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="49" name="Chest" type="container" gid="5" x="118" y="563" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_big1"/>
+    <property name="loot_table" value="troll_chest"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="50" name="Gurguthl" type="spawn" gid="3" x="1555" y="1826" width="64" height="64">
+   <properties>
+    <property name="spawn" value="king_gurguth"/>
+    <property name="unique_tag" value="king_gurguth"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="51" name="spikes trap" type="trap" gid="5" x="1319" y="1811" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="11"/>
+   </properties>
+  </object>
+  <object id="52" name="spikes trap" type="trap" gid="5" x="1234" y="1806" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="11"/>
+   </properties>
+  </object>
+  <object id="53" name="spikes trap" type="trap" gid="5" x="1326" y="1873" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="11"/>
+   </properties>
+  </object>
+  <object id="54" name="Troll Caves Spawn" type="spawn" gid="3" x="710" y="1714" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="55" name="Troll Caves Spawn" type="spawn" gid="3" x="1017" y="1716" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="56" name="troll cook" type="spawn" gid="3" x="438" y="346" width="64" height="64">
+   <properties>
+    <property name="name" value="@TROLL_COOK"/>
+    <property name="spawn" value="elder_troll"/>
+   </properties>
+  </object>
+  <object id="57" name="Chest" type="container" gid="5" x="337" y="338" width="64" height="64">
+   <properties>
+    <property name="icon" value="barrel1"/>
+    <property name="items" value="211"/>
+    <property name="name" value="@BARREL"/>
+    <property name="unique_tag" value="E8_cave_barrel"/>
+   </properties>
+  </object>
+  <object id="58" name="Chest" type="container" gid="5" x="1813" y="502" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="loot_table" value="dungeon_chest_7"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="59" name="Sarcophagus" type="container" gid="5" x="1834" y="1841" width="64" height="64">
+   <properties>
+    <property name="icon" value="sarcophagus"/>
+    <property name="items" value="212,703"/>
+    <property name="name" value="@SARCOPHAGUS"/>
+    <property name="unique_tag" value="E8_cave_sarcophagus"/>
+   </properties>
+  </object>
+  <object id="60" name="Corpse" type="container" gid="5" x="147" y="1879" width="64" height="64">
+   <properties>
+    <property name="icon" value="corpse3"/>
+    <property name="items" value="2012,2520"/>
+    <property name="name" value="@CORPSE"/>
+    <property name="unique_tag" value="E8_cave_corpse"/>
+   </properties>
+  </object>
+  <object id="61" name="exit to E9" type="transition" x="1761" y="30" width="95" height="52">
+   <properties>
+    <property name="area_id" value="E8"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="62" name="exit from dungeon" type="entry" gid="1" x="1833" y="140" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="63" name="rat" type="spawn" gid="3" x="272" y="1981" width="64" height="64">
+   <properties>
+    <property name="respawn" value="25"/>
+    <property name="spawn" value="swamp_rat"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="64" name="rat" type="spawn" gid="3" x="322" y="1962" width="64" height="64">
+   <properties>
+    <property name="respawn" value="25"/>
+    <property name="spawn" value="swamp_rat"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="65" name="rat" type="spawn" gid="3" x="160" y="1980" width="64" height="64">
+   <properties>
+    <property name="respawn" value="25"/>
+    <property name="spawn" value="swamp_rat"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="66" name="troll" type="spawn" gid="3" x="1017" y="351" width="64" height="64">
+   <properties>
+    <property name="spawn" value="troll"/>
+   </properties>
+  </object>
+  <object id="67" name="troll" type="spawn" gid="3" x="1467" y="1913" width="64" height="64">
+   <properties>
+    <property name="spawn" value="elder_troll"/>
+   </properties>
+  </object>
+  <object id="68" name="troll" type="spawn" gid="3" x="1438" y="1782" width="64" height="64">
+   <properties>
+    <property name="spawn" value="elder_troll"/>
+   </properties>
+  </object>
+  <object id="69" name="troll cook" type="spawn" gid="3" x="1392" y="1440" width="64" height="64">
+   <properties>
+    <property name="name" value="@TROLL_COOK"/>
+    <property name="spawn" value="elder_troll"/>
+   </properties>
+  </object>
+  <object id="70" name="troll shaman" type="spawn" gid="3" x="1854" y="1358" width="64" height="64">
+   <properties>
+    <property name="spawn" value="troll_shaman"/>
+   </properties>
+  </object>
+  <object id="71" name="troll shaman" type="spawn" gid="3" x="1857" y="1475" width="64" height="64">
+   <properties>
+    <property name="spawn" value="troll_shaman"/>
+   </properties>
+  </object>
+  <object id="72" name="Chest" type="container" gid="5" x="1789" y="1339" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_big1"/>
+    <property name="loot_table" value="troll_chest"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="73" name="Troll Caves Spawn" type="spawn" gid="3" x="1476" y="388" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="74" name="Troll Caves Spawn" type="spawn" gid="3" x="610" y="898" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="75" name="Troll Caves Spawn" type="spawn" gid="3" x="534" y="1128" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="troll_caves"/>
+   </properties>
+  </object>
+  <object id="76" name="troll" type="spawn" gid="3" x="1795" y="333" width="64" height="64">
+   <properties>
+    <property name="spawn" value="troll"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="77" name="corpse_loreseeker" type="container" gid="5" x="1593" y="1755" width="64" height="64">
+   <properties>
+    <property name="icon" value="throne"/>
+    <property name="items" value="2601,5021"/>
+    <property name="name" value="@THRONE"/>
+    <property name="unique_tag" value="E8_throne"/>
+   </properties>
+  </object>
+  <object id="78" name="spikes trap" type="trap" gid="5" x="1827" y="1762" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="11"/>
+   </properties>
+  </object>
+  <object id="79" name="iron ore 26" type="conversation" gid="5" x="281.25" y="512.75" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore26,1"/>
+    <property name="conversation" value="iron_ore26"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="80" name="coal ore 21" type="conversation" gid="5" x="570" y="443.333" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore21,1"/>
+    <property name="conversation" value="coal_ore21"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

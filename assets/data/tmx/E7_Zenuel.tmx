@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="77">
+ <properties>
+  <property name="house" value=""/>
+  <property name="maxlight" value="50"/>
+  <property name="music" value="dark_chamber"/>
+  <property name="name" value="Tower of Tremadan"/>
+  <property name="name_ES" value="Torre de Tremadan"/>
+  <property name="nominimap" value=""/>
+ </properties>
+ <tileset firstgid="1" source="dungeon.tsx"/>
+ <tileset firstgid="241" name="dungeon stairs" tilewidth="128" tileheight="128" tilecount="4" columns="4">
+  <image source="dungeon_stairs.png" width="512" height="128"/>
+  <tile id="0">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="245" source="spawns.tsx"/>
+ <tileset firstgid="253" source="cave.tsx"/>
+ <tileset firstgid="493" source="town_objects.tsx"/>
+ <tileset firstgid="573" source="gate_blue.tsx"/>
+ <tileset firstgid="577" source="grounds_indoor.tsx"/>
+ <tileset firstgid="737" source="teleporter.tsx"/>
+ <tileset firstgid="738" source="artifacts.tsx"/>
+ <tileset firstgid="742" source="town_objects3.tsx"/>
+ <tileset firstgid="774" source="town_objexts2.tsx"/>
+ <tileset firstgid="838" source="dungeon5.tsx"/>
+ <tileset firstgid="1078" source="dungeon2.tsx"/>
+ <layer id="1" name="nonwalk" width="60" height="60" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer id="2" name="water" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztmmluwyAQhUEl3bfTVGq636X3P0NBZZTJC8Ru84cZ3ic9Y5tY8qcReEsI45FqvJFWxANrPL04a4+rnHOVCNvXwbYzut7lPKddImzfB7vOLden6iieuo2136Jzy1V8lnxLa8m5V1dxkXXt2+q34oyu2l+cWnOyuOp92nlU5Fw34bd26Fva97x4UflI+/2ScvxFGLvG6IspfVvY95p2fhgrvrET7fsNvseOGd13tvoeG79fefGm8ulg/N7mPIZD37/Mzw85N2FcVwGd/3P91a6j+xbQGeunfbH+1lyFVp2XfK26Cr3x3PK17iqgc+t50IuroJ0va6Ja9+QqtK5DGEIIIYQQQgghhNin9w1lTSzSe/++FPraoJz3WY244P949Hd++a0n303Yr6X+ZubRV7+zxXe12tei8ynjl77jc8p85cWX85Uv39nuN2bznel5gRBCCJmBH1uoIXo=
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt2ksKwjAUheFQl6I7UAe+OxHcQMXVOBCcuQBXqRtQMBlcECShTU9Nbns+yEC0JT+tVZoaQ4S3tWNfYxxSTRDItS5rflZ7c5NWobU5plVoa27TKrQ0I1qFhmb0/NibF/T83DmN+n504TZKPYP/Og+sF30+r+1YgPeJhO6dgveHhvzNdMe2BO2rS4hmLa2iTbO2VhHTrLVVNGnW3irqNPelVbjmWWCUyWZGREREREREREjfz3Ucze/zHCfP612KyQLM7XgXxoyL+ttcTP734H1c76tBq9DaW9kxGVCvO75Xz3v3wHZae2PXH1Ym7zVwn6Gtjee8rtuFKnK73NfAfUK9fbxeuevzs+H/DUdz72NgvTG09m5MeM2Qa4lERET6fACDKCgy
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="72" name="exit to I10" type="transition" x="1611.75" y="1402.75" width="47" height="78">
+   <properties>
+    <property name="area_id" value="E7"/>
+    <property name="entry_id" value="10"/>
+   </properties>
+  </object>
+  <object id="73" type="entry" gid="245" x="1565.75" y="1434.75" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="74" name="exit to I10" type="transition" x="1438.75" y="339.15" width="49.2297" height="85.367">
+   <properties>
+    <property name="area_id" value="E7"/>
+    <property name="entry_id" value="10"/>
+   </properties>
+  </object>
+  <object id="75" type="entry" gid="245" x="1394.32" y="393.251" width="67.0362" height="67.0362">
+   <properties>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+  <object id="76" type="entry" gid="245" x="1239.48" y="1458.82" width="67.0362" height="67.0362">
+   <properties>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

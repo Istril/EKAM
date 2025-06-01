@@ -1,0 +1,4 @@
+index	type	text	text_ES	Go To	conditions	actions	requisites
+1	Q	[BLUE]Вы стоите перед дверью в дом егеря.[]	t	2			
+2	A	Пройти в дом	t	0		Travel#I10_tutorial_eger_house,1	
+2	A	Уйти	t	0			

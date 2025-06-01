@@ -1,0 +1,11 @@
+index	type	text	text_ES	Go To	conditions	actions
+1	Q	Вы нашли железную жилу. (стальная красная кирка)		4	PlayerHasItem#12025	
+1	Q	Вы нашли железную жилу. (стальная фиол кирка)		5	PlayerHasItem#12024	
+1	Q	Вы нашли железную жилу. (стальная синяя кирка)		6	PlayerHasItem#12023	
+1	Q	Вы нашли железную жилу. (стальная кирка)		2	PlayerHasItem#12022	
+1	Q	Вы нашли железную жилу, но увы, у вас нет подходящего для добычи инструмента.		3		
+2	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_iron_ore7,1	"SetVariable#TMP_iron_ore7,1;GainItem#12007;GainXP#10"
+3	A	Вернусь позже.		0		
+4	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_iron_ore7,1	"SetVariable#TMP_iron_ore7,4;GainItems#12007,4;GainXP#40"
+5	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_iron_ore7,1	"SetVariable#TMP_iron_ore7,1;GainItem#12007;GainXP#100"
+6	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_iron_ore7,1	"SetVariable#TMP_iron_ore7,2;GainItems#12007,2;GainXP#20"

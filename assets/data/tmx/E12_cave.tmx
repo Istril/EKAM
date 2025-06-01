@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="80" height="72" tilewidth="64" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="60">
+ <properties>
+  <property name="maxlight" value="30"/>
+  <property name="music" value="complex"/>
+  <property name="name" value="Cave of Echoes"/>
+  <property name="name_ES" value="Cueva de los Ecos"/>
+  <property name="norecall" value=""/>
+ </properties>
+ <tileset firstgid="1" source="dungeon.tsx"/>
+ <tileset firstgid="241" name="dungeon stairs" tilewidth="128" tileheight="128" tilecount="4" columns="4">
+  <image source="dungeon_stairs.png" width="512" height="128"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="245" source="cave.tsx"/>
+ <tileset firstgid="485" source="spawns.tsx"/>
+ <tileset firstgid="493" source="town_objexts2.tsx"/>
+ <tileset firstgid="557" source="town_objects.tsx"/>
+ <tileset firstgid="637" source="grounds_indoor.tsx"/>
+ <tileset firstgid="797" source="town_objects3.tsx"/>
+ <tileset firstgid="829" source="cave2.tsx"/>
+ <layer id="1" name="water" width="80" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQlPoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4GvZhUbEAWgAA
+  </data>
+ </layer>
+ <layer id="2" name="ground" width="80" height="72">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="3" name="ground2" width="80" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3b3QqCMBgG4OXd9nNmVyTZ7XXcmYySqIPIzXTq84AMRGF7+b4piCEAsDZ1NfcMSLXfzT2D8ZzVYRZ9/JJSSyXkdyykn9uQlsfUPVxKXp9iDm3IyyPl3luhefyqeY6X8Fh/8+3igfo84xiPuno/f194dr0S9rGlG7Putsi7HPzXaSXPKwAAAICtW9M3foChDvZAAAAAAAAmcvWPQzYZ5pNhPhnmkyEAAADAcnWlO130AFoAAA==
+  </data>
+ </layer>
+ <layer id="4" name="scenery" width="80" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3SgQkAMAgDQenKuj8OUcEW7iZ4QiIAAAB4RZ7tgn+V7a75HwAAAAAAAAAAAAAAAAAAAAAAwJwGwBGZ1wBaAAA=
+  </data>
+ </layer>
+ <layer id="5" name="objects" width="80" height="72">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="6" name="roofs" width="80" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQlPoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4GvZhUbEAWgAA
+  </data>
+ </layer>
+ <objectgroup id="7" name="data">
+  <object id="1" name="exit to G10" type="transition" x="591" y="2248" width="60" height="32">
+   <properties>
+    <property name="area_id" value="E12"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="2" name="exit from dungeon" type="entry" gid="485" x="625" y="2205" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="3" name="lever conv" type="conversation" gid="489" x="1421" y="600" width="64" height="64">
+   <properties>
+    <property name="conversation" value="E10_maze_lever"/>
+    <property name="icon" value="lever"/>
+    <property name="name" value="@LEVER"/>
+   </properties>
+  </object>
+  <object id="4" name="lever" type="mapitem" gid="489" x="1440" y="608" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever"/>
+   </properties>
+  </object>
+  <object id="5" name="grate" type="mapitem" gid="489" x="1472" y="672" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_l"/>
+    <property name="nonwalk" value=""/>
+    <property name="tag" value="grate"/>
+   </properties>
+  </object>
+  <object id="6" name="grate" type="mapitem" gid="489" x="1504" y="672" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_l"/>
+    <property name="nonwalk" value=""/>
+    <property name="tag" value="grate"/>
+   </properties>
+  </object>
+  <object id="7" name="exit from dungeon" type="entry" gid="485" x="2384" y="308" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="8" name="Secret Door" type="secretdoor" gid="489" x="1280" y="416" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="22"/>
+    <property name="minlevel" value="22"/>
+    <property name="secretdoor_tag" value="E12_cave_1"/>
+   </properties>
+  </object>
+  <object id="9" name="lever conv" type="conversation" gid="489" x="1428" y="732" width="64" height="64">
+   <properties>
+    <property name="conversation" value="firetrap_lever"/>
+    <property name="icon" value="lever"/>
+    <property name="name" value="@LEVER"/>
+   </properties>
+  </object>
+  <object id="10" name="lever" type="mapitem" gid="489" x="1440" y="736" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever_trap"/>
+   </properties>
+  </object>
+  <object id="11" name="Vorator" type="spawn" gid="487" x="663" y="1605" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="12" name="Vorator" type="spawn" gid="487" x="684" y="1261" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="13" name="Vorator" type="spawn" gid="487" x="826" y="1226" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="14" name="Vorator" type="spawn" gid="487" x="327" y="989" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="15" name="Vorator" type="spawn" gid="487" x="1216" y="1683" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="16" name="Vorator" type="spawn" gid="487" x="1608" y="1848" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="17" name="Vorator" type="spawn" gid="487" x="1371" y="1267" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="18" name="MAtriarch" type="spawn" gid="487" x="1185" y="941" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator_matriarch"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="19" name="Vorator" type="spawn" gid="487" x="1598" y="1230" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="20" name="Vorator" type="spawn" gid="487" x="1527" y="978" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="21" name="MAtriarch" type="spawn" gid="487" x="220" y="309" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator_matriarch"/>
+   </properties>
+  </object>
+  <object id="22" name="Vorator" type="spawn" gid="487" x="382" y="281" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="23" name="Vorator" type="spawn" gid="487" x="829" y="293" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="24" name="Vorator" type="spawn" gid="487" x="788" y="452" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="25" name="Vorator" type="spawn" gid="487" x="685" y="173" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="26" name="Vorator" type="spawn" gid="487" x="835" y="895" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="27" name="Vorator" type="spawn" gid="487" x="2318" y="1003" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="28" name="Vorator" type="spawn" gid="487" x="2112" y="1150" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="29" name="Vorator" type="spawn" gid="487" x="2168" y="1596" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="30" name="Secret Door" type="secretdoor" gid="489" x="1760" y="160" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="12"/>
+    <property name="minlevel" value="12"/>
+    <property name="secretdoor_tag" value="E12_cave_2"/>
+   </properties>
+  </object>
+  <object id="31" name="Chest" type="container" gid="489" x="375" y="182" width="64" height="64">
+   <properties>
+    <property name="icon" value="nest"/>
+    <property name="loot_table" value="vorator_nest"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="32" name="Chest" type="container" gid="489" x="1719" y="1751" width="64" height="64">
+   <properties>
+    <property name="icon" value="nest"/>
+    <property name="loot_table" value="vorator_nest"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="33" name="Chest" type="container" gid="489" x="2261" y="1589" width="64" height="64">
+   <properties>
+    <property name="icon" value="nest"/>
+    <property name="loot_table" value="vorator_nest"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="34" name="Vorator" type="spawn" gid="487" x="1987" y="405" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="35" name="Vorator" type="spawn" gid="487" x="1856" y="136" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="36" name="Vorator" type="spawn" gid="487" x="1749" y="435" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="37" name="Chest" type="container" gid="489" x="1590" y="130" width="64" height="64">
+   <properties>
+    <property name="icon" value="table"/>
+    <property name="items" value="2531,332,5016,5021"/>
+    <property name="name" value="@TABLE"/>
+    <property name="unique_tag" value="E12_cave_table"/>
+   </properties>
+  </object>
+  <object id="38" name="Chest" type="container" gid="489" x="1396" y="148" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="loot_table" value="laboratory_13"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="39" name="Chest" type="container" gid="489" x="1115" y="413" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_big1"/>
+    <property name="items" value="5051,5025,6008,6005,6005,1018,388"/>
+    <property name="name" value="@CHEST"/>
+    <property name="unique_tag" value="E12_cave_chest"/>
+   </properties>
+  </object>
+  <object id="40" name="Iron golem" type="spawn" gid="487" x="1442" y="344" width="64" height="64">
+   <properties>
+    <property name="faction" value="neutral"/>
+    <property name="name" value="@GUARDIAN_GOLEM"/>
+    <property name="portrait" value="95"/>
+    <property name="spawn" value="golem_iron"/>
+    <property name="tag" value="golem"/>
+    <property name="unique_tag" value="E12_golem_1"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="41" name="Vorator" type="spawn" gid="487" x="1762" y="1880" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="42" name="Vorator" type="spawn" gid="487" x="377" y="1389" width="64" height="64">
+   <properties>
+    <property name="spawn" value="vorator"/>
+   </properties>
+  </object>
+  <object id="43" name="Chest" type="container" gid="489" x="91" y="763" width="64" height="64">
+   <properties>
+    <property name="icon" value="nest"/>
+    <property name="loot_table" value="vorator_nest"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="44" name="Iron golem" type="spawn" gid="487" x="1157" y="409" width="64" height="64">
+   <properties>
+    <property name="spawn" value="golem_iron"/>
+    <property name="unique_tag" value="E12_golem_2"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="45" name="conversationTrigger" type="trigger" x="1354" y="267" width="242" height="190">
+   <properties>
+    <property name="actions" value="SetVariable#TMP_golem_talk,1;StartConversation#golem,E12_cave_golem"/>
+    <property name="conditions" value="VariableLower#TMP_golem_talk,1;NPCIsntDead#E12_golem_1"/>
+   </properties>
+  </object>
+  <object id="46" name="Iron golem" type="spawn" gid="487" x="1396" y="198" width="64" height="64">
+   <properties>
+    <property name="spawn" value="golem_iron"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="47" name="Event" type="spawn" gid="487" x="147" y="860" width="64" height="64">
+   <properties>
+    <property name="event_location" value="E12_cave_1"/>
+    <property name="event_spawn" value="1"/>
+    <property name="spawn" value="vorator_matriarch"/>
+   </properties>
+  </object>
+  <object id="48" name="Event" type="spawn" gid="487" x="2222" y="1770" width="64" height="64">
+   <properties>
+    <property name="event_location" value="E12_cave_2"/>
+    <property name="event_spawn" value="1"/>
+    <property name="spawn" value="vorator_matriarch"/>
+   </properties>
+  </object>
+  <object id="49" name=" sign" type="conversation" gid="489" x="592" y="2008" width="64" height="64">
+   <properties>
+    <property name="conversation" value="E12_cave_sign"/>
+    <property name="icon" value="notice"/>
+    <property name="name" value="@NOTICE"/>
+   </properties>
+  </object>
+  <object id="50" name="lever conv" type="conversation" gid="489" x="2326" y="311" width="64" height="64">
+   <properties>
+    <property name="conversation" value="E12_cave_rune"/>
+    <property name="icon" value="rune_p"/>
+    <property name="name" value="@RUNE"/>
+   </properties>
+  </object>
+  <object id="51" name="iron ore 13" type="conversation" gid="489" x="1536" y="1920" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore13,1"/>
+    <property name="conversation" value="iron_ore13"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="52" name="coal ore 13" type="conversation" gid="489" x="608" y="1504" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore13,1"/>
+    <property name="conversation" value="coal_ore13"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+  <object id="53" name="coal ore 14" type="conversation" gid="489" x="544" y="1152" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore14,1"/>
+    <property name="conversation" value="coal_ore14"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+  <object id="54" name="silver ore 1" type="conversation" gid="489" x="216.333" y="159.667" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_silver_ore1,1"/>
+    <property name="conversation" value="silver_ore1"/>
+    <property name="icon" value="silver"/>
+    <property name="name" value="@SILVER"/>
+   </properties>
+  </object>
+  <object id="55" name="silver ore 2" type="conversation" gid="489" x="2055" y="1627.67" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_silver_ore2,1"/>
+    <property name="conversation" value="silver_ore2"/>
+    <property name="icon" value="silver"/>
+    <property name="name" value="@SILVER"/>
+   </properties>
+  </object>
+  <object id="56" name="silver ore 3" type="conversation" gid="489" x="1216" y="1152" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_silver_ore3,1"/>
+    <property name="conversation" value="silver_ore3"/>
+    <property name="icon" value="silver"/>
+    <property name="name" value="@SILVER"/>
+   </properties>
+  </object>
+  <object id="57" name="silver ore 4" type="conversation" gid="489" x="864" y="1088" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_silver_ore4,1"/>
+    <property name="conversation" value="silver_ore4"/>
+    <property name="icon" value="silver"/>
+    <property name="name" value="@SILVER"/>
+   </properties>
+  </object>
+  <object id="58" name="gold ore 3" type="conversation" gid="489" x="288" y="736" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_gold_ore3,1"/>
+    <property name="conversation" value="gold_ore3"/>
+    <property name="icon" value="gold"/>
+    <property name="name" value="@GOLD"/>
+   </properties>
+  </object>
+  <object id="59" name="starmetal ore 2" type="conversation" gid="489" x="64" y="928" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_starmetal_ore2,1"/>
+    <property name="conversation" value="starmetall_ore2"/>
+    <property name="icon" value="starmetal"/>
+    <property name="name" value="@STARMETAL"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

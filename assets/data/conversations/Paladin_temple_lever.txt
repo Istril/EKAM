@@ -1,0 +1,4 @@
+index	type	text	text_ES	Go To	conditions	actions
+1	Q	Вы уже привели этот механизм в действие.		2	VariableGreater#tmp_paladin_lever_enter,0	
+1	Q	Вы нашли рычаг в полости стен, он выполнен в виде меча пронзающего солнце.		2		
+2	A	Потянуть рычаг на себя.		0		"ItemHide#grate;ItemWalkable#grate;ItemActivate#lever;SetVariable#tmp_paladin_lever_enter,1"

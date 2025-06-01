@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="72" height="72" tilewidth="64" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="89">
+ <properties>
+  <property name="maxlight" value="50"/>
+  <property name="music" value="complex"/>
+  <property name="name" value="Lannegar Mine"/>
+  <property name="name_ES" value="Mina de Lannegar"/>
+ </properties>
+ <tileset firstgid="1" source="dungeon.tsx"/>
+ <tileset firstgid="241" source="dungeon stairs.tsx"/>
+ <tileset firstgid="245" source="cave.tsx"/>
+ <tileset firstgid="485" source="spawns.tsx"/>
+ <tileset firstgid="493" source="grassland.tsx"/>
+ <tileset firstgid="621" source="town_objects.tsx"/>
+ <tileset firstgid="701" source="grounds_indoor.tsx"/>
+ <tileset firstgid="861" source="cave2.tsx"/>
+ <layer id="1" name="water" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAvgaEKQb9AFEAAA==
+  </data>
+ </layer>
+ <layer id="2" name="ground" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="3" name="ground2" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3OQQkAAAgEsMP+TSxpBJ8ibAmWAAAAAAAAAACbrusBAAAAAAAAAAAAAADAbwN6W/QcAFEAAA==
+  </data>
+ </layer>
+ <layer id="4" name="objects" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="5" name="roofs" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAvgaEKQb9AFEAAA==
+  </data>
+ </layer>
+ <objectgroup id="6" name="data">
+  <object id="1" name="exit to H10" type="transition" x="2286" y="1953" width="42" height="99">
+   <properties>
+    <property name="area_id" value="H10"/>
+    <property name="entry_id" value="0003"/>
+   </properties>
+  </object>
+  <object id="2" name="entry from H10_mine" type="entry" gid="485" x="2222" y="2002" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="3" name="Barrel" type="container" gid="489" x="1784" y="2008" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#lannegar_mine_cleared,1"/>
+    <property name="icon" value="barrel1"/>
+    <property name="loot_table" value="mine_barrel1"/>
+    <property name="name" value="@BARREL"/>
+   </properties>
+  </object>
+  <object id="4" name="Barrel" type="container" gid="489" x="1268" y="1459" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#lannegar_mine_cleared,1"/>
+    <property name="icon" value="barrel1"/>
+    <property name="loot_table" value="mine_barrel1"/>
+    <property name="name" value="@BARREL"/>
+   </properties>
+  </object>
+  <object id="5" name="Barrel" type="container" gid="489" x="1968" y="1425" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#lannegar_mine_cleared,1"/>
+    <property name="icon" value="barrel1"/>
+    <property name="loot_table" value="mine_barrel1"/>
+    <property name="name" value="@BARREL"/>
+   </properties>
+  </object>
+  <object id="6" name="Barrel" type="container" gid="489" x="563" y="659" width="64" height="64">
+   <properties>
+    <property name="icon" value="barrel1"/>
+    <property name="loot_table" value="mine_barrel1"/>
+    <property name="name" value="@BARREL"/>
+   </properties>
+  </object>
+  <object id="7" name="Barrel" type="container" gid="489" x="823" y="1525" width="64" height="64">
+   <properties>
+    <property name="icon" value="barrel1"/>
+    <property name="loot_table" value="mine_barrel1"/>
+    <property name="name" value="@BARREL"/>
+   </properties>
+  </object>
+  <object id="8" name="Crate" type="container" gid="489" x="1494" y="1462" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#lannegar_mine_cleared,1"/>
+    <property name="icon" value="crate1"/>
+    <property name="loot_table" value="mine_barrel1"/>
+    <property name="name" value="@CRATE"/>
+   </properties>
+  </object>
+  <object id="9" name="Crate" type="container" gid="489" x="1081" y="1017" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#lannegar_mine_cleared,1"/>
+    <property name="icon" value="crate1"/>
+    <property name="loot_table" value="mine_barrel1"/>
+    <property name="name" value="@CRATE"/>
+   </properties>
+  </object>
+  <object id="10" name="Crate" type="container" gid="489" x="1459" y="151" width="64" height="64">
+   <properties>
+    <property name="icon" value="crate1"/>
+    <property name="loot_table" value="mine_barrel1"/>
+    <property name="name" value="@CRATE"/>
+   </properties>
+  </object>
+  <object id="11" name="Crate" type="container" gid="489" x="1780" y="760" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#lannegar_mine_cleared,1"/>
+    <property name="icon" value="crate1"/>
+    <property name="loot_table" value="mine_barrel1"/>
+    <property name="name" value="@CRATE"/>
+   </properties>
+  </object>
+  <object id="12" name="Chest" type="container" gid="489" x="1176" y="1494" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="loot_table" value="dungeon_chest_2"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="13" name="Chest" type="container" gid="489" x="567" y="1018" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="loot_table" value="dungeon_chest_3"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="14" name="Chest" type="container" gid="489" x="1950" y="155" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="loot_table" value="dungeon_chest_3"/>
+    <property name="name" value="@CHEST"/>
+    <property name="quest_location" value="H10_mine_1"/>
+   </properties>
+  </object>
+  <object id="15" name="goblin" type="spawn" gid="487" x="1364" y="1502" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="lannegar_mine1"/>
+   </properties>
+  </object>
+  <object id="16" name="Imp" type="spawn" gid="487" x="144" y="330" width="64" height="64">
+   <properties>
+    <property name="quest_location" value="H10_mine_2"/>
+    <property name="quest_spawn" value="1"/>
+    <property name="spawn" value="imp_fire"/>
+    <property name="wander" value="2"/>
+   </properties>
+  </object>
+  <object id="17" name="goblin" type="spawn" gid="487" x="1006" y="992" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#lannegar_mine_cleared,1"/>
+    <property name="spawn" value="goblin_archer"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="18" name="goblin" type="spawn" gid="487" x="1890" y="270" width="64" height="64">
+   <properties>
+    <property name="quest_location" value="H10_mine_1"/>
+    <property name="quest_spawn" value="1"/>
+    <property name="spawntable" value="goblins"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="19" name="Imp" type="spawn" gid="487" x="169" y="385" width="64" height="64">
+   <properties>
+    <property name="quest_location" value="H10_mine_2"/>
+    <property name="quest_spawn" value="2"/>
+    <property name="spawn" value="imp_fire"/>
+    <property name="wander" value="2"/>
+   </properties>
+  </object>
+  <object id="20" name="Imp" type="spawn" gid="487" x="131" y="720" width="64" height="64">
+   <properties>
+    <property name="quest_location" value="H10_mine_2"/>
+    <property name="quest_spawn" value="2"/>
+    <property name="spawn" value="imp_fire"/>
+    <property name="wander" value="2"/>
+   </properties>
+  </object>
+  <object id="21" name="Chest" type="container" gid="489" x="183" y="184" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="loot_table" value="dungeon_chest_4"/>
+    <property name="name" value="Chest"/>
+    <property name="quest_location" value="H10_mine_2"/>
+   </properties>
+  </object>
+  <object id="22" name="goblin spearman" type="spawn" gid="487" x="1021" y="1056" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#lannegar_mine_cleared,1"/>
+    <property name="spawn" value="goblin_spearman"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="23" name="goblin" type="spawn" gid="487" x="1814" y="214" width="64" height="64">
+   <properties>
+    <property name="quest_location" value="H10_mine_1"/>
+    <property name="quest_spawn" value="2"/>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="24" name="Imp" type="spawn" gid="487" x="188" y="961" width="64" height="64">
+   <properties>
+    <property name="spawn" value="imp_fire"/>
+   </properties>
+  </object>
+  <object id="25" name="Imp" type="spawn" gid="487" x="576" y="992" width="64" height="64">
+   <properties>
+    <property name="spawn" value="imp_fire"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="26" name="Firedancer" type="spawn" gid="487" x="121" y="199" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#goblin_hunt3,10"/>
+    <property name="spawn" value="goblin_firedancer_izharrak"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="27" name="Chest" type="container" gid="489" x="728" y="345" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="loot_table" value="dungeon_chest_3"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="28" name="goblin" type="spawn" gid="487" x="1859" y="1879" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="lannegar_mine1"/>
+   </properties>
+  </object>
+  <object id="29" name="goblin" type="spawn" gid="487" x="1937" y="1639" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="lannegar_mine1"/>
+   </properties>
+  </object>
+  <object id="30" name="goblin" type="spawn" gid="487" x="1693" y="1503" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="lannegar_mine1"/>
+   </properties>
+  </object>
+  <object id="31" name="goblin" type="spawn" gid="487" x="1810" y="1030" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="lannegar_mine1"/>
+   </properties>
+  </object>
+  <object id="32" name="goblin" type="spawn" gid="487" x="1845" y="1147" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="lannegar_mine1"/>
+   </properties>
+  </object>
+  <object id="33" name="goblin" type="spawn" gid="487" x="1930" y="1286" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="lannegar_mine1"/>
+   </properties>
+  </object>
+  <object id="34" name="Guard" type="spawn" gid="487" x="1144" y="1046" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#lannegar_mine_cleared,1"/>
+    <property name="name" value="Guard"/>
+    <property name="name_ES" value="Guardia"/>
+    <property name="spawn" value="human_soldier_female"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="35" name="goblin spearman" type="spawn" gid="487" x="1686" y="677" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#lannegar_mine_cleared,1"/>
+    <property name="spawn" value="goblin_spearman"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="36" name="Guard" type="spawn" gid="487" x="1753" y="622" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#lannegar_mine_cleared,1"/>
+    <property name="name" value="Guard"/>
+    <property name="name_ES" value="Guardia"/>
+    <property name="spawn" value="human_soldier_female"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="37" name="goblin" type="spawn" gid="487" x="1937" y="645" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="lannegar_mine1"/>
+   </properties>
+  </object>
+  <object id="38" name="goblin" type="spawn" gid="487" x="1612" y="606" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#lannegar_mine_cleared,1"/>
+    <property name="spawn" value="goblin_archer"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="39" name="south stairs" type="conversation" gid="489" x="2085" y="901" width="64" height="64">
+   <properties>
+    <property name="conversation" value="H10_mine_stairs2"/>
+    <property name="icon" value="stairs_down"/>
+    <property name="name" value="@STAIRS"/>
+   </properties>
+  </object>
+  <object id="40" name="Guard" type="spawn" gid="487" x="1957" y="924" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#lannegar_mine_cleared,1"/>
+    <property name="name" value="Guard"/>
+    <property name="name_ES" value="Guardia"/>
+    <property name="spawn" value="human_soldier_female"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="41" name="goblin" type="spawn" gid="487" x="820" y="313" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="42" name="goblin" type="spawn" gid="487" x="1057" y="495" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="43" name="goblin" type="spawn" gid="487" x="1050" y="194" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="44" name="goblin" type="spawn" gid="487" x="1474" y="201" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="45" name="goblin" type="spawn" gid="487" x="794" y="386" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="46" name="goblin" type="spawn" gid="487" x="939" y="625" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="47" name="goblin" type="spawn" gid="487" x="649" y="629" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="48" name="goblin" type="spawn" gid="487" x="638" y="853" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="49" name="goblin" type="spawn" gid="487" x="675" y="810" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="50" name="goblin" type="spawn" gid="487" x="865" y="1312" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="51" name="goblin" type="spawn" gid="487" x="705" y="1345" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="52" name="goblin" type="spawn" gid="487" x="827" y="1460" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="53" name="goblin" type="spawn" gid="487" x="1759" y="255" width="64" height="64">
+   <properties>
+    <property name="quest_location" value="H10_mine_1"/>
+    <property name="quest_spawn" value="2"/>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="54" name="goblin" type="spawn" gid="487" x="200" y="686" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="goblins"/>
+   </properties>
+  </object>
+  <object id="55" name="goblin" type="spawn" gid="487" x="1511" y="701" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#lannegar_mine_cleared,1"/>
+    <property name="spawn" value="goblin_archer"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="56" name="entrance_beartrap" type="trap" gid="489" x="1113" y="1075" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#lannegar_mine_cleared,1"/>
+    <property name="id" value="bear"/>
+    <property name="maxlevel" value="3"/>
+   </properties>
+  </object>
+  <object id="57" name="entrance_beartrap" type="trap" gid="489" x="1760" y="704" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#lannegar_mine_cleared,1"/>
+    <property name="id" value="bear"/>
+    <property name="maxlevel" value="3"/>
+   </properties>
+  </object>
+  <object id="58" name="entrance_beartrap" type="trap" gid="489" x="1883" y="1009" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#lannegar_mine_cleared,1"/>
+    <property name="id" value="bear"/>
+    <property name="maxlevel" value="3"/>
+    <property name="random_range" value="2"/>
+   </properties>
+  </object>
+  <object id="59" name="beartrap" type="trap" gid="489" x="924" y="1270" width="64" height="64">
+   <properties>
+    <property name="id" value="bear"/>
+    <property name="maxlevel" value="7"/>
+    <property name="random_range" value="4"/>
+   </properties>
+  </object>
+  <object id="60" name="beartrap" type="trap" gid="489" x="740" y="867" width="64" height="64">
+   <properties>
+    <property name="id" value="bear"/>
+    <property name="maxlevel" value="7"/>
+    <property name="random_range" value="4"/>
+   </properties>
+  </object>
+  <object id="61" name="spikes trap" type="trap" gid="489" x="133" y="642" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="5"/>
+   </properties>
+  </object>
+  <object id="62" name="lever" type="mapitem" gid="489" x="1920" y="608" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever"/>
+   </properties>
+  </object>
+  <object id="63" name="lever conv" type="conversation" gid="489" x="1920" y="608" width="64" height="64">
+   <properties>
+    <property name="conversation" value="H10_mine_lever"/>
+    <property name="icon" value="lever"/>
+    <property name="name" value="@LEVER"/>
+   </properties>
+  </object>
+  <object id="64" name="grate" type="mapitem" gid="489" x="1472" y="1856" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="nonwalk" value=""/>
+    <property name="tag" value="grate"/>
+   </properties>
+  </object>
+  <object id="65" name="Teram" type="spawn" gid="487" x="1422" y="1847" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#goblin_hunt2,10"/>
+    <property name="conversation" value="goblinlair_teram"/>
+    <property name="spawn" value="teram"/>
+    <property name="tag" value="teram"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="66" name="Teram conv" type="conversation" gid="489" x="1468" y="1842" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#goblin_hunt2,10;IsItemActive#grate"/>
+    <property name="conversation" value="goblinlair_teram"/>
+    <property name="icon" value="teram"/>
+    <property name="name" value="Teram"/>
+   </properties>
+  </object>
+  <object id="67" name="trigger teram" type="trigger" x="2003" y="1867" width="93" height="203">
+   <properties>
+    <property name="actions" value="NPCSpawn#teram"/>
+    <property name="conditions" value="VariableEqual#goblin_hunt2,10;NPCNotinArea#teram"/>
+   </properties>
+  </object>
+  <object id="68" name="Foreman" type="staticNPC" gid="487" x="2007.33" y="827.333" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#lannegar_mine_cleared,1"/>
+    <property name="conversation" value="H10_mine_foreman"/>
+    <property name="facing" value="l"/>
+    <property name="name" value="@FOREMAN_DALLIS"/>
+    <property name="portrait" value="32"/>
+    <property name="sprite" value="male_grey_2"/>
+   </properties>
+  </object>
+  <object id="70" name="entry from H10_mine" type="entry" gid="485" x="2013" y="880.5" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="71" name="iron ore" type="conversation" gid="489" x="1760" y="2048" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore1,1"/>
+    <property name="conversation" value="iron_ore1"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="72" name="ore" type="conversation" gid="489" x="1582" y="1434" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore1,1"/>
+    <property name="conversation" value="coal_ore1"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+  <object id="73" name="Bed" type="bed" gid="489" x="1952" y="2048" width="64" height="64"/>
+  <object id="78" name="iron ore" type="conversation" gid="489" x="405.75" y="962.25" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore2,1"/>
+    <property name="conversation" value="iron_ore2"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="79" name="iron ore" type="conversation" gid="489" x="800" y="192" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore3,1"/>
+    <property name="conversation" value="iron_ore3"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="80" name="iron ore" type="conversation" gid="489" x="1792" y="896" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore4,1"/>
+    <property name="conversation" value="iron_ore4"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="iron ore"/>
+   </properties>
+  </object>
+  <object id="81" name="ore" type="conversation" gid="489" x="1081.5" y="134.5" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore4,1"/>
+    <property name="conversation" value="coal_ore4"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+  <object id="82" name="ore" type="conversation" gid="489" x="1050.25" y="133.75" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore3,1"/>
+    <property name="conversation" value="coal_ore3"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+  <object id="83" name="ore" type="conversation" gid="489" x="1792" y="1248" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore2,1"/>
+    <property name="conversation" value="coal_ore2"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+  <object id="84" name="ore" type="conversation" gid="489" x="1888" y="96" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_bluesteel_ore2,1"/>
+    <property name="conversation" value="bluesteel_ore2"/>
+    <property name="icon" value="bluesteel"/>
+    <property name="name" value="@BLUESTEEL"/>
+   </properties>
+  </object>
+  <object id="85" name="ore" type="conversation" gid="489" x="1440" y="1696" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_bluesteel_ore1,1"/>
+    <property name="conversation" value="bluesteel_ore1"/>
+    <property name="icon" value="bluesteel"/>
+    <property name="name" value="@BLUESTEEL"/>
+   </properties>
+  </object>
+  <object id="86" name="ore" type="conversation" gid="489" x="96" y="160" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_bluesteel_ore3,1"/>
+    <property name="conversation" value="bluesteel_ore3"/>
+    <property name="icon" value="bluesteel"/>
+    <property name="name" value="@BLUESTEEL"/>
+   </properties>
+  </object>
+  <object id="88" name="Chest" type="container" gid="489" x="96" y="256" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#steelpickaxe,1"/>
+    <property name="icon" value="corpse1"/>
+    <property name="items" value="12022"/>
+    <property name="name" value="@A_CORPSE"/>
+    <property name="unique_tag" value="H10_pickaxe"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

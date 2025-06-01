@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="72">
+ <properties>
+  <property name="house" value=""/>
+  <property name="maxlight" value="50"/>
+  <property name="music" value="dark_chamber"/>
+  <property name="name" value="Tower of Tremadan"/>
+  <property name="name_ES" value="Torre de Tremadan"/>
+  <property name="nominimap" value=""/>
+ </properties>
+ <tileset firstgid="1" source="dungeon.tsx"/>
+ <tileset firstgid="241" name="dungeon stairs" tilewidth="128" tileheight="128" tilecount="4" columns="4">
+  <image source="dungeon_stairs.png" width="512" height="128"/>
+  <tile id="0">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="245" source="spawns.tsx"/>
+ <tileset firstgid="253" source="cave.tsx"/>
+ <tileset firstgid="493" source="town_objects.tsx"/>
+ <tileset firstgid="573" source="gate_blue.tsx"/>
+ <tileset firstgid="577" source="grounds_indoor.tsx"/>
+ <tileset firstgid="737" source="teleporter.tsx"/>
+ <tileset firstgid="738" source="artifacts.tsx"/>
+ <tileset firstgid="742" source="town_objects3.tsx"/>
+ <tileset firstgid="774" source="town_objexts2.tsx"/>
+ <layer id="1" name="nonwalk" width="60" height="60" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt2CEOADAIBEH+/2VMTV1NJeFmEgxuExRVwCR953cPAAAAAOyU9hPsepuT+tkl7Xb1AgAAAAAAwFwH3wEMwA==
+  </data>
+ </layer>
+ <layer id="2" name="water" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt0kEKAjAMRcGeRdHDK3pG6cKtZJGmNcxAt5886Bj88th9QLHZ+9p9RCG9ventTW9venvT21uX3mfwTR16p3fwAQAAAAAA8H8uuw8oNntvu48otKI3889k/79VvVmb2ffpPWtT71l72Zt6z9rL3tR71l72pt6z9rI39dbtXYNvBDYzt1bsfd2Dr3ore+8DJ0czGg==
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztmAEKwjAMRTu9gyfwgmVeRedxRXAwa51p+itN8x+EwnCjb5XuNyH4JB5kNQpPl8uP6tVXM/e4uZ4rC74lc99ez70bK77Suaf3pO/Gkq9k7vS14fttnvT9vM/ifpVzK92vPH2PPOUNq3lSM3dvvoQQQgghhPSAtyxr+VypwXLfQIPVvpAWq30/LVLfUZzp68vX037l6XvkKW94ypOEEOKVo7BGgb71vsiMgM4brXyfOe+ajJoMuD5r3hm1vuekpqD3vYMyftw4Ic4LrXxRZzj0ebCV7y1zHtf6ngKuf/WP9a31RfbrJmGVEF97FMp3NuDrbX0X4H41g54VBJ6164v4Hq2/n8L72JNvLmPU5A1U/6qVLzJP7v1XSvOkBd+0ls58ybg8AM/iI6c=
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt2DENACAMAMEGR/hXgwcEIICpSwvJnYKfPwLgPbs7AAAAAACggBcK/5ndAQAAAJDkQQFAnTW6CwBuB11/A/E=
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztzzERADAIADGujhCAf1u10IGDoYmC/wgAAAAAAACgS24HDPvtt852AQAAAAAAALy7qe0Aog==
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztmstKAzEUhqd1J+Ib6EZfwFvxUm+ooKAgirduXCvi3rWXZ+i76EZBQRc+hFCrKN7WCp5DEwwx05xMJ02mzQc/k6aZ0/OTmbRzmihqT+6l9ivoBvQEemTtSwd52aIitKug7o5a+xx0wfp99TsFKoEKoG12LLE2HgdB09I56PeTte9i4vrqd0TRd5KLotNc7XgMGpLeryjOkfHZ75ein3s9Sej3uvHUrLBFGFPPbxl0oJCv87tIGCP7xTXqSHNO3H3tkgnQuNRXll7j9SyPw/ntzNvMzB183TrL/fWh3y6N31urWSWjCBpLMA799oLfPsnzh9AW71/VeuiKHcIY1XrVo/Ar4qvfRtfnOHxdn1W/N2Rkv1cE+bg+I5OgYUH8Pi0KfTNOMmsO/HtnwmkWgUAgEAgEAoEkYG0U65+8LsrF+1W10SwT96wi9svPKlkm+K0h1spayS+FdvOrqqEGssEAYQy1hpoFktQKs0ySWmGWaTe/cm1UpRlXyQUCgUAgNbBOsKBRK9UPKHtR5qxn0Txs+MVrRqw1Ye1pTeqj/G7isTYFNRILQb+6fTSmfvGZ5iEm5j47UnPEWO8sFt+D+Zyv7REyjYXYmN/1mP490CFrU3PEWG+a+XA9v5RnOGqOG9H//V5JYyE25pdSWzHxm1YsxMb8VjXxdiMzvz+aeCa1KxvzS6mtmKxX3ynuS/T9/qXUr0xqVzbml5Kjid+XFNfnWcKYpH7ldVV8Tc0Rr5X+DsME6uD7/FL2blI+j2NzfuuR5v3r+nrG/2QLGlG/Q8R63ShoSXhvmfVTrlEx3rxGqwbxbLMS+ZlXu/AL0mlyJg==
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="1" name="exit to Grasslands" type="transition" x="939" y="969" width="47" height="78">
+   <properties>
+    <property name="area_id" value="E10"/>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="2" type="entry" gid="245" x="893" y="1001" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="3" name="stairs down" type="transition" x="691" y="822" width="66" height="57">
+   <properties>
+    <property name="area_id" value="E10_tower"/>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="4" name="Trix" type="spawn" gid="247" x="706" y="1070" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#key_to_past,40"/>
+    <property name="conversation" value="E10_tower_trix"/>
+    <property name="spawn" value="trix"/>
+    <property name="tag" value="trix"/>
+    <property name="wander" value="2"/>
+   </properties>
+  </object>
+  <object id="5" name="conversationTrigger" type="trigger" x="720" y="908" width="104" height="250">
+   <properties>
+    <property name="actions" value="SetVariable#key_to_past,25;StartConversation#trix,E10_tower_trix"/>
+    <property name="conditions" value="VariableLower#key_to_past,25"/>
+   </properties>
+  </object>
+  <object id="6" name="south stairs" type="conversation" gid="249" x="662" y="973" width="64" height="64">
+   <properties>
+    <property name="conversation" value="E10_magic_gate"/>
+    <property name="icon" value="magic_gate"/>
+    <property name="name" value="@DOOR"/>
+   </properties>
+  </object>
+  <object id="7" type="entry" gid="245" x="1687" y="155" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="8" type="entry" gid="245" x="794" y="913" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+  <object id="9" name="stairs down" type="transition" x="1582" y="87" width="66" height="57">
+   <properties>
+    <property name="area_id" value="E10_tower"/>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+  <object id="10" name="stairs down" type="transition" x="1518" y="234" width="66" height="57">
+   <properties>
+    <property name="area_id" value="E10_cave_fire"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="11" name="stairs down" type="transition" x="1705" y="423" width="66" height="57">
+   <properties>
+    <property name="area_id" value="E10_cave_ice"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="12" type="entry" gid="245" x="1623" y="277" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="4"/>
+   </properties>
+  </object>
+  <object id="13" type="entry" gid="245" x="723" y="995" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="6"/>
+   </properties>
+  </object>
+  <object id="14" type="entry" gid="245" x="184" y="1518" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="7"/>
+   </properties>
+  </object>
+  <object id="15" name="stairs down" type="transition" x="220" y="1456" width="41" height="54">
+   <properties>
+    <property name="area_id" value="E10_tower"/>
+    <property name="entry_id" value="8"/>
+   </properties>
+  </object>
+  <object id="16" type="entry" gid="245" x="303" y="254" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="5"/>
+   </properties>
+  </object>
+  <object id="17" type="entry" gid="245" x="131" y="172" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="8"/>
+   </properties>
+  </object>
+  <object id="18" name="stairs down" type="transition" x="361" y="240" width="31" height="58">
+   <properties>
+    <property name="area_id" value="E10_tower"/>
+    <property name="entry_id" value="6"/>
+   </properties>
+  </object>
+  <object id="19" name="conversationTrigger" type="trigger" x="158" y="207" width="32" height="232">
+   <properties>
+    <property name="actions" value="SetVariable#key_to_past,60;StartConversation#tremadan,E10_tremadan"/>
+    <property name="conditions" value="VariableLower#key_to_past,60"/>
+   </properties>
+  </object>
+  <object id="20" name="Wizard" type="staticNPC" gid="247" x="138" y="289" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#key_to_past,100"/>
+    <property name="conversation" value="E10_tremadan"/>
+    <property name="facing" value="r"/>
+    <property name="name" value="@TREMADAN_IMAGE"/>
+    <property name="portrait" value="38"/>
+    <property name="sprite" value="tremadan"/>
+    <property name="tag" value="tremadan"/>
+   </properties>
+  </object>
+  <object id="21" name="Bed" type="bed" gid="249" x="294" y="80" width="64" height="64"/>
+  <object id="22" name="stairs down" type="transition" x="89" y="68" width="52" height="48">
+   <properties>
+    <property name="area_id" value="E10_tower"/>
+    <property name="entry_id" value="7"/>
+   </properties>
+  </object>
+  <object id="23" name="Trix" type="spawn" gid="247" x="172" y="1644" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#key_to_past,39"/>
+    <property name="conversation" value="E10_tower_trix_inner"/>
+    <property name="spawn" value="trix"/>
+    <property name="tag" value="trix2"/>
+    <property name="wander" value="3"/>
+   </properties>
+  </object>
+  <object id="24" name="stairs down" type="transition" x="143" y="1673" width="41" height="54">
+   <properties>
+    <property name="area_id" value="G8_tower"/>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="25" name="south stairs" type="conversation" gid="249" x="77" y="1487" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#shards_fate,0"/>
+    <property name="conversation" value="E10_tower_mirror"/>
+    <property name="icon" value="mirror"/>
+    <property name="name" value="@MIRROR"/>
+   </properties>
+  </object>
+  <object id="26" name="Wizard" type="staticNPC" gid="247" x="107" y="1499" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#shards_fate,10"/>
+    <property name="conversation" value="E10_tremadan_2"/>
+    <property name="facing" value="r"/>
+    <property name="name" value="@TREMADAN_IMAGE"/>
+    <property name="portrait" value="38"/>
+    <property name="sprite" value="tremadan"/>
+    <property name="tag" value="tremadan2"/>
+   </properties>
+  </object>
+  <object id="27" name="Chest" type="conversation" gid="249" x="213" y="86" width="64" height="64">
+   <properties>
+    <property name="conversation" value="E10_tower_chest"/>
+    <property name="icon" value="chest_gold"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="28" name="Wizard" type="staticNPC" gid="247" x="83" y="1543" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#shards_fate,13;VariableLower#shards_fate,100"/>
+    <property name="conversation" value="E10_tremadan_3"/>
+    <property name="facing" value="r"/>
+    <property name="name" value="@TREMADAN_IMAGE"/>
+    <property name="portrait" value="38"/>
+    <property name="sprite" value="tremadan"/>
+    <property name="tag" value="tremadan3"/>
+   </properties>
+  </object>
+  <object id="29" name="Wizard" type="staticNPC" gid="247" x="136" y="294" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#ark_lothasan,10;VariableLower#ark_lothasan,20"/>
+    <property name="conversation" value="E10_tremadan_4"/>
+    <property name="facing" value="r"/>
+    <property name="name" value="@TREMADAN_IMAGE"/>
+    <property name="portrait" value="38"/>
+    <property name="sprite" value="tremadan"/>
+    <property name="tag" value="tremadan4"/>
+   </properties>
+  </object>
+  <object id="30" name="Chest" type="conversation" gid="249" x="757" y="1491" width="64" height="64">
+   <properties>
+    <property name="conversation" value="E10_tower_chest2"/>
+    <property name="icon" value="chest_gold"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="31" name="south stairs" type="conversation" gid="249" x="50" y="1621" width="64" height="64">
+   <properties>
+    <property name="conversation" value="E10_lab_gate"/>
+    <property name="icon" value="door"/>
+    <property name="name" value="@DOOR"/>
+   </properties>
+  </object>
+  <object id="32" type="entry" gid="245" x="91" y="1630" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="13"/>
+   </properties>
+  </object>
+  <object id="33" name="stairs down" type="transition" x="926" y="1616" width="28" height="53">
+   <properties>
+    <property name="area_id" value="E10_tower"/>
+    <property name="entry_id" value="13"/>
+   </properties>
+  </object>
+  <object id="34" type="entry" gid="245" x="875" y="1633" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="9"/>
+   </properties>
+  </object>
+  <object id="35" name="stairs down" type="transition" x="804" y="1833" width="26" height="27">
+   <properties>
+    <property name="area_id" value="FT"/>
+    <property name="entry_id" value="999"/>
+   </properties>
+  </object>
+  <object id="36" type="entry" gid="245" x="1745" y="376" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="10"/>
+   </properties>
+  </object>
+  <object id="37" name="sign3" type="conversation" gid="249" x="708" y="1765" width="64" height="64">
+   <properties>
+    <property name="conversation" value="vault"/>
+    <property name="icon" value="sphere"/>
+    <property name="name" value="@SPHERE"/>
+   </properties>
+  </object>
+  <object id="38" name="table" type="conversation" gid="249" x="696" y="1640" width="64" height="64">
+   <properties>
+    <property name="conversation" value="E10_lab_table"/>
+    <property name="icon" value="table2"/>
+    <property name="name" value="@TABLE"/>
+   </properties>
+  </object>
+  <object id="39" name="HIRGE Trigger" type="trigger" x="159" y="138" width="59" height="35">
+   <properties>
+    <property name="actions" value="StartConversation#hirge,hirge_dreams"/>
+    <property name="conditions" value="NPCIsInParty#hirge,hirge;VariableEqual#three_versus_eleven,100;VariableLower#ancient_seal,10;VariableLower#TMP_hirge_dream,1;PlayerIsLevel#13"/>
+   </properties>
+  </object>
+  <object id="40" type="entry" gid="245" x="206" y="267" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="999"/>
+   </properties>
+  </object>
+  <object id="41" name="Chest" type="conversation" gid="249" x="1344" y="1664" width="64" height="64">
+   <properties>
+    <property name="conversation" value="E10_tower_chest3"/>
+    <property name="icon" value="chest_gold"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="42" name="Chest" type="conversation" gid="249" x="1344" y="1600" width="64" height="64">
+   <properties>
+    <property name="conversation" value="E10_tower_chest4"/>
+    <property name="icon" value="chest_gold"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="44" name="Chest" type="conversation" gid="249" x="1344" y="1536" width="64" height="64">
+   <properties>
+    <property name="conversation" value="E10_tower_chest5"/>
+    <property name="icon" value="chest_gold"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="45" name="Chest" type="conversation" gid="249" x="1343" y="1469" width="64" height="64">
+   <properties>
+    <property name="conversation" value="E10_tower_chest6"/>
+    <property name="icon" value="chest_gold"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="46" name="Test" type="transition" x="702" y="1532.67" width="33.3333" height="32">
+   <properties>
+    <property name="area_id" value="E10_tower"/>
+    <property name="entry_id" value="25"/>
+   </properties>
+  </object>
+  <object id="47" type="entry" gid="245" x="1536" y="1792" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="25"/>
+   </properties>
+  </object>
+  <object id="48" type="entry" gid="245" x="800" y="1696" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="29"/>
+   </properties>
+  </object>
+  <object id="49" name="Test1" type="transition" x="1407.25" y="1407.75" width="32.25" height="30.75">
+   <properties>
+    <property name="area_id" value="E10_tower"/>
+    <property name="entry_id" value="29"/>
+   </properties>
+  </object>
+  <object id="50" name="Lever" type="mapitem" gid="249" x="1440" y="1792" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever1"/>
+    <property name="toggle_items" value="rune1"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="51" name="Rune" type="mapitem" gid="249" x="1408" y="1792" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_A_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_A_i"/>
+    <property name="tag" value="rune1"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="54" name="Bridge" type="mapitem" gid="249" x="1280" y="1760" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#rune1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="55" name="Bridge" type="mapitem" gid="249" x="1248" y="1760" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#rune1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="56" name="Bridge" type="mapitem" gid="249" x="1216" y="1760" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#rune1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="57" name="Bridge" type="mapitem" gid="249" x="1184" y="1760" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#rune1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="58" name="Bridge" type="mapitem" gid="249" x="1152" y="1760" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#rune1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="59" name="Bridge" type="mapitem" gid="249" x="1120" y="1760" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#rune1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="60" name="Bridge" type="mapitem" gid="249" x="1088" y="1760" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#rune1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="61" name="Bridge" type="mapitem" gid="249" x="1056" y="1760" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#rune1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="62" name="Bridge" type="mapitem" gid="249" x="1024" y="1760" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#rune1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="63" name="Bridge" type="mapitem" gid="249" x="992" y="1760" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#rune1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="68" name="Secret Door" type="secretdoor" gid="249" x="1312" y="1760" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="40"/>
+    <property name="minlevel" value="30"/>
+    <property name="secretdoor_tag" value="E10_tower_1"/>
+   </properties>
+  </object>
+  <object id="69" name="TPtest" type="transition" x="1504" y="1410" width="33" height="27">
+   <properties>
+    <property name="area_id" value="E10_tower1"/>
+    <property name="entry_id" value="25"/>
+   </properties>
+  </object>
+  <object id="70" x="1523.5" y="1422.5"/>
+  <object id="71" x="1516.5" y="1419.5"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,3457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="377">
+ <properties>
+  <property name="indoor" value=""/>
+  <property name="maxlight" value="60"/>
+  <property name="music" value="Sovngarde_TESV"/>
+ </properties>
+ <tileset firstgid="1" source="trees.tsx"/>
+ <tileset firstgid="17" source="spawns.tsx"/>
+ <tileset firstgid="25" source="dryground.tsx"/>
+ <tileset firstgid="89" source="town_objects.tsx"/>
+ <tileset firstgid="169" source="rocks.tsx"/>
+ <tileset firstgid="175" name="dungeon" tilewidth="64" tileheight="128" tilecount="240" columns="16">
+  <image source="adt_tiled_dungeon.png" width="1024" height="1920"/>
+  <tile id="48">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="49">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="50">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="51">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="52">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="53">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="54">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="55">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="56">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="57">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="58">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="59">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="60">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="61">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="62">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="63">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="64">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="65">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="66">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="67">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="68">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="69">
+   <properties>
+    <property name="door" value="L"/>
+   </properties>
+  </tile>
+  <tile id="70">
+   <properties>
+    <property name="door" value="R"/>
+   </properties>
+  </tile>
+  <tile id="71">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="72">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="73">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="74">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="75">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="76">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="77">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="78">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="79">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="81">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="82">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="83">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="84">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="85">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="86">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="87">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="88">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="89">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="90">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="91">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="92">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="93">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="94">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="95">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="102">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="103">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="104">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="105">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="106">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="107">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="108">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="109">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="110">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="111">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="112">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="113">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="114">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="115">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="116">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="117">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="118">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="119">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="121">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="122">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="123">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="124">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="125">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="126">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="127">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="128">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="129">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="130">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="131">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="132">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="133">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="135">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="136">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="142">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="144">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="145">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="147">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="148">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="light" value="brazier"/>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="178">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="179">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="180">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="181">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="182">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="183">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="185">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="186">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="187">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="188">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="189">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="192">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="193">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="194">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="195">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="196">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="197">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="198">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="199">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="200">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="201">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="202">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="203">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="204">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="205">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="206">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="207">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="208">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="209">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="210">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="211">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="212">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="213">
+   <properties>
+    <property name="door" value="L"/>
+   </properties>
+  </tile>
+  <tile id="214">
+   <properties>
+    <property name="door" value="R"/>
+   </properties>
+  </tile>
+  <tile id="215">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="216">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="217">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="218">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="219">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="220">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="221">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="222">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="223">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="224">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="225">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="226">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="227">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="228">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="229">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="230">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="231">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="232">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="233">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="234">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="235">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="236">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="237">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="238">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="239">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="415" name="town_objexts2" tilewidth="64" tileheight="64" tilecount="64" columns="8">
+  <image source="town_objects2.png" width="512" height="512"/>
+  <tile id="6">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="light" value="brazier_lamp"/>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="35">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="36">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="479" source="natural_grounds.tsx"/>
+ <tileset firstgid="607" name="grounds indoor 2" tilewidth="64" tileheight="32" tilecount="160" columns="16">
+  <image source="grounds_indoor2.png" width="1024" height="320"/>
+  <tile id="64">
+   <properties>
+    <property name="effect" value="gas_weak"/>
+   </properties>
+  </tile>
+  <tile id="65">
+   <properties>
+    <property name="effect" value="gas_weak"/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="effect" value="death_weak"/>
+   </properties>
+  </tile>
+  <tile id="88">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="89">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="90">
+   <properties>
+    <property name="effect" value="lava2"/>
+   </properties>
+  </tile>
+  <tile id="136">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="142">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="144">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="145">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="147">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="148">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="150">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="152">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="153">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="154">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="156">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="157">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="158">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="159">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="767" name="pof_ground" tilewidth="64" tileheight="32" tilecount="16" columns="8">
+  <image source="mountain_ground.png" width="512" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="783" source="mountain-transitions.tsx"/>
+ <tileset firstgid="801" source="walls_red.tsx"/>
+ <tileset firstgid="816" source="rocks_gray.tsx"/>
+ <tileset firstgid="826" source="rocks_gray_small.tsx"/>
+ <tileset firstgid="838" source="teleporter.tsx"/>
+ <tileset firstgid="839" source="icemist_items.tsx"/>
+ <tileset firstgid="887" source="icemist_large.tsx"/>
+ <tileset firstgid="927" source="dungeon2.tsx"/>
+ <tileset firstgid="1167" source="grounds_indoor.tsx"/>
+ <tileset firstgid="1327" source="dungeon3.tsx"/>
+ <tileset firstgid="1567" source="dungeon stairs.tsx"/>
+ <tileset firstgid="1571" source="dungeon.tsx"/>
+ <tileset firstgid="1811" source="dungeon4.tsx"/>
+ <tileset firstgid="2051" source="town_objects3.tsx"/>
+ <tileset firstgid="2083" source="water.tsx"/>
+ <tileset firstgid="2147" source="town_objexts2.tsx"/>
+ <tileset firstgid="2211" source="grassland.tsx"/>
+ <tileset firstgid="2339" source="grassland_structures.tsx"/>
+ <layer id="1" name="nonwalk" width="96" height="96" visible="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <layer id="2" name="water" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3aQQqAIBRAwcD736mog4W7lm7iBc3A38sTxYXbBgAAAAAAAAAAAAAAAAAAAAAAAAAAAN+0j3oF/zb7n/Ygo39L/5b+Lf1b+rf0b+nf0r+lf0v/lv4t/Vv6t/Rv6d/Sv6V/S/+W/i39W/q39G/p39K/9+zvP1zLeWjp39IfqHj/tNz/Lf1b+r/jGGsz6f+Oa6wNa25z0xiEAJAAAA==
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2dXW7bRhDHCZhKDpCgF4ij18A+QQr7Fj1dThA5zfdDlLp9KvrY1x7AeUmQE1QDaaDxeGZ39ovkrvYP/EFSomz6t8PZ2V1CHoauWF2v0t2K1o/CnSrg94L4gh37Xm+N/7MAp/LH+OVsQ9pgKv7WeHyu2Po7ngk/0/Vaiq4dbK1tMCV/ZEljkDKGc16d7f327Lgfw//8YN9rKbomTC8Dcs7FjPx5jqBxD9u/D+zB/1TAH9lz/kuNfynn0LZ4dfbwHlhy/rlI9NL458j/U/a/rfFP/R1zxH9q/nk9yH6TychmSv419b/A+i9iYPaabEN9avxT60/OH0z5h8S6hb+r/knRHPknx/jLFccW/iHx76v/UzR1/wvKMf8QGs+h5yAbi1Ok/Uwp/nP8PlCO+Tdfnrfy1z7HRWOwtHLlmpKKyfMh/H33Rkl1/nn5/xzTvTTVxv/2LN5L5p/izj9esXEv3QcW/q6+2SfK//to95L5T6Uc9xmY8h9Xe/8Y9/45Hvfxvc5/L4l/qCT+wPob4/+NtEHnv1cJ/sgaeWuvdf7l+P8gnH9Zya93/vnyP+o7qelh/8mB/dPVw/eWXP9PpRL8eZw/VeJfkrbWFrv+tnQh/5sES/wt+V8Sn4vVXBN/yxgtJ39r/SPp+SP33Oi6Uv4fdn6788dhGv6W+l8S5X8uuFb+vx+274Yy/LENQsa/XHQtaE14r9kxXSOqQcDm887vd/40+OeIUizFLNonmvs5b35c0z3gy/85PBy254wV3WqiNQ3N/Rp/fg/U0g4hApab4T7jG7bP5+ys/KVakq8BW56VkNarW2kPzpyy37JtDH9t7X1t5M+fk6m1NtUk8cd9Gvd4j+BnXPy1PCNxd/GX2qHW2lSTK/6BP3APjX8p3l39tY9/C7WpJo0/bLfkGOMfnon28dfi3ff8i288JtWmtYvHvHR8O+Tj75prkO4d6T5qjb9m4I71D7ZJj/+8ssQ/tYV/z/92+fpf6ANuhzD+vf6xy8Wf5yIrf1Sv//3yjb/4/EUo/z7+dUvjv2FbjP8bwl+zpj7/81Ba/wvcc65XUrU6/xkjrc4JnTPVzpfU6vx/jHxz1jj3QGsgF3++ZqOpxfWvGGlxi69DHvq685/DsT22jvOl+klSi+u/MfLx/0N4D/lvhPP5PKp2D7T4/EOIfGtjlvxPaySNv68POJXnf7goX22t3TUO8+WfG7bvEn6exkPr4vw3xC7+lv5X4u9i2vn7+fM1YjzGvsDCXxsP0M93/vf583qHnufi/4b9fAv/Hv9y/FPe2j2h1f98PVmSlM9aV2z+3yj7KfMRp6jY+sfV/3bZ5YtT3h7S91e0ENvbMd1TCHj/NxwNxy0I+GnfzcG/q0zylPwhz1wctq3xl74bDra/Pr5/zM/p/NPk468dd/555OLvykct8F/C95cjf6m+8Jnyvx39TlEp/jF/d87vr+38j/fzpcF4bm7+qfmn849TaP/78nG7/EM8F/8e/2X4p46/TpU/Hsfq05huUM38U+qf0vzvGufPTdlanJv/HWPO96X2ANXIn4vzp/L1x7HS2Lu2vA1AOVlLOhX+GmOpbTr/8vnH8h4oF39Xf8f5+xyqJfCPrX9yydf3uWph3o+Gak7+d474lu6Bu8L8Y8akdKySm38p9fg/agn8Y/N/LlnGO9ZxU6jm5p9S/5SWxD+3lsA/tv4vrdr5a/NJuca/pdUCf7j231bHfYm/1B5T9r+arhj/q0r5U1v4T13/aGqVvyaJs3VOsIQ6//01fRnd7vxl4f+IpP+v08dfiu1/GW9+nPu6r1ZH0+ugr+fSFPXPC9YOvuuB9cWvB28F3qX50/EUZZ4yzpJUOpfG8kfu2A4W/pbrtp5H5yOA+0t2L+TkL423c6nz91/PEvmfUv4pzT+k/8VrOpX+d4r8H1J/atc4d/1J+dekXPznHn+dMv851Qp/+hxd5z+dtPnn/wGF/DLsAJAAAA==
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3WsQ3AIBAEQQJEH+6/BPdDHeQEjsCH7Bnp89NGXwoAAAD8Q6/pBQAAAAAAAAAAAAAAAAAAAABnuFp6AQAAAAAAAAAAAAAArHHX52O/ubf+79I/S/8s/bP0z9I/x/8J8A0DyifqcACQAAA=
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3UsQ2AMAwEQFcwB/uXEClkujRIUFLFhe8msF7/jgAquPfsC+qROZV1/V9G1vn8e3i1Zw92ARHDDoBFmn9DYaf+p7rkDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/HVv2BXxNeX0YVgCQAAA=
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu1dy64UNxBtNM3ckE3E8gKBSJHyAVnkXwh8AKv8Ax9weYUoX5BFUFZZssw+D7FCYhCvwC4Rj8uQjJIobU1b1K1btst22W33+EhWT/vt09Xl8qM9XdcQitWi654N7vV4xW5l8NfuxWLqFsgBtnUzXtcjN2vkL9V2Vx6x4TXBty2xbVfP+74jj78L4X8F5FHL4Qb5PRzcY8L9wayjbsu5vuv2R/dxb/aLbTsnfSny/24s5/LQ9k/6o1eNMz2d9okn/2eIPCm/XeJfl3Opp68KtfH/lpH+eSH8v2GUI8X/eaBrzvZmv9i2PxjS33O4d4Xwr8q5OLT7SwPHOs5Twv3JrCNHHnF5MXDZlhwbKyf/FyzcS9RFpf9oKOPRB/z4MVDP+6ojjumdhnWg7GYpp9vIlf8Y+KQ/3cuU9xUjjis85Tug835TmPxL8e+S/1L4L03+Jcrj6HfO+CsX/9y4sWWlih+SRynyT/UJ2H5wjeVdsPU/lK0SW56pTB93X5h/3E4qb593IhY5ywpFyrrh563tqyvLxr+G77hFCiGccMY82P3ueB+nxlR1Cik3dx+dA5J18smr8b+F5HjXZy4kVP/A32tHmWtUbon854LW3Vofh+jyEC4b/1tIyH/jPxyN/2nR+J8WeJxh6zMl9T/sZyTmHGoFxddPJ91+P4L7WPmHoPp/av1jLu+M9HxjLP+cNWmfckrAF33XfQjcZ+B34z89TiVcX8F5xPIfm75EfOpYY4wF5EL15/fGe9seEIo/au/grWXXXRvc9eVR/5r6gFzyD/tOOL/J5YqKc7Dc6s+DJS9+icD6H96bbErTPIT214Dc2viwhek8KTtU807xPzdbCMK0Nk+tXfvy77PGaeNfY462qWoDtTcldO0ydLzL4d9WVq0wyf9bQ1x4pRA63t1l/rnyr/e8hup/E2C/q/thDubCPyX/EvoHQ9uYlLsx8n/TEgfbpnPhn+vP4d+2595HtjEo23QO/JvsT2pfRqz8c2Sb845wyqoFOfWPCbuu/6n+V8L+afanGynlv/HvRsrxl894lcO/9J7hEpBT/9ueg41/27xR7XCtD8L5TbU2vFm8P1fAtJ9Ihf9lkfe5zn+GgLtfzgXb+0KVicNuGmxMzjkDNcNk/7u+3cHw4d8VFhKvVsSuD9ri296jxv8WUvybvmNo/NNw2RSvBOTf5k+tte33x/vyuep+13c3EvqHmw+OM1eZh3C1UYp/jj3V+D8OKf2j4dMXN/7l5J8Tp/F/HK6zi0Lic/riOfe5ENLyz/meaRd45WIK/dPwHtxv7l6O14eI3xUKr1W2dTsOgTOd5/qMCMsld3hvqW2vaU1Q81w/73XdL3t0+B3k/wO6b/zHIZa/xn8cfOd5MRr/cVD8fW3QPdz0OZCCf9334e/uDg2/cTyJtkvJPz6L/RDdx9Y1Bf+qTr8Nsnd7b3tV0Ndvhut3QC6peBL8S8m/un5+wh0vFKn4/3VsO75iUPGk+JdILz2ewkjF/5TpFaT0j/R8PkZK/rGNbQOMKyX/3wrpH068UMxV/l15uGSjZv5jz77TNkdM26h5w5eEnymsZv5z9X02cL/Dj61Difxjmx7O8eGxgT7vTN3rPXfrRbz8p+A/xXmzOca/+yfo3woSe7koUDrwDtiD99+C9sdlpz5HdK7847QUxxB3Dd/gpJ6H2BX+Q9NL6RpqTkbrWQjtD+2B2P9Xq5l/KUjlJ80/ZQvqsy1i5A33v/868sLhu8J/KkjZP1LYNf5L0z/c7zFc+01CdEIJ/GP7BsNk/6RGjj1qU/BP2e13A+z/1MD1rI3/FbDPNuCdLk3/c8upjX+qvo3/o8jB/4XlUT9uf+fKNzXmwr/LzxZmOrP3n8hxJwe1638J/mP22MeidvnXsvv9ya1zySr8Dk39XxTXpk41HsBlw3dQCrDu0u2wnedoQkjfXOs+8A16ximfrc3PJ7whDo3/aZGC//bM+HBxFTImSNX/2ubfJMvBTgq286y54Kzx1mx/pkSoPQ9hm++V2udgQo7xV0pI8D8lmvxPi1zvWSqYdMX/9XzxxQCQAAA=
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3RMREAQAgDQRr04N/dl48BaNidOQNJBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABwWeWPXX17HwAAAAAAAMx7F+R8hgCQAAA=
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="54" name="second floor" type="entry" gid="17" x="96" y="448" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="55" name="Dockbeam1" type="mapitem" gid="21" x="640" y="512" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="dock1"/>
+   </properties>
+  </object>
+  <object id="56" name="Dockbeam1" type="mapitem" gid="21" x="640" y="544" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="dock1"/>
+   </properties>
+  </object>
+  <object id="57" name="Dockbeam1" type="mapitem" gid="21" x="640" y="576" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="dock1"/>
+   </properties>
+  </object>
+  <object id="58" name="dockdoor" type="trigger" x="591.5" y="464.833" width="81.5" height="127">
+   <properties>
+    <property name="actions" value="SetVariable#TMP_D13_dockstorage,1;ItemHide#dock1;ItemWalkable#dock1"/>
+    <property name="conditions" value="PlayerHasItem#14000;VariableLower#TMP_D13_dockstorage,1"/>
+   </properties>
+  </object>
+  <object id="60" type="transition" x="32" y="320" width="30.7352" height="31.8886">
+   <properties>
+    <property name="area_id" value="D13_paladin"/>
+    <property name="entry_id" value="65"/>
+   </properties>
+  </object>
+  <object id="67" name="crate" type="container" gid="21" x="2592" y="2240" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="items" value="1003,1003,1003,1003,1003"/>
+    <property name="name" value="@CHEST"/>
+    <property name="unique_tag" value="D13_pchest8"/>
+   </properties>
+  </object>
+  <object id="68" name="Secret Door" type="secretdoor" gid="21" x="2592" y="2272" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="27"/>
+    <property name="minlevel" value="21"/>
+    <property name="secretdoor_tag" value="D13_paladin"/>
+   </properties>
+  </object>
+  <object id="70" name="rune open gate" type="mapitem" gid="21" x="2624" y="64" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_D_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_D_i"/>
+    <property name="tag" value="gaterune"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="71" name="lever open gate " type="mapitem" gid="21" x="2592" y="64" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="levergate"/>
+    <property name="toggle_items" value="gaterune"/>
+   </properties>
+  </object>
+  <object id="72" name="Energy barrier" type="mapitem" gid="21" x="1408" y="1888" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#gaterune"/>
+    <property name="tag" value="gate"/>
+   </properties>
+  </object>
+  <object id="73" name="Energy barrier" type="mapitem" gid="21" x="1440" y="1888" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#gaterune"/>
+    <property name="tag" value="gate"/>
+   </properties>
+  </object>
+  <object id="74" name="Energy barrier" type="mapitem" gid="21" x="1472" y="1888" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#gaterune"/>
+    <property name="tag" value="gate"/>
+   </properties>
+  </object>
+  <object id="76" type="transition" x="992" y="1600" width="33.375" height="32.625">
+   <properties>
+    <property name="area_id" value="D13_paladinsecondfloor"/>
+    <property name="entry_id" value="40"/>
+   </properties>
+  </object>
+  <object id="78" name="convexitpaladin" type="conversation" gid="21" x="2976" y="3008" width="64" height="64">
+   <properties>
+    <property name="conversation" value="Paladin_temple_lever"/>
+    <property name="icon" value="lever"/>
+    <property name="name" value="@LEVER"/>
+   </properties>
+  </object>
+  <object id="79" type="entry" gid="17" x="2944" y="128" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="40"/>
+   </properties>
+  </object>
+  <object id="80" type="transition" x="2974.75" y="32.25" width="65.25" height="63.75">
+   <properties>
+    <property name="area_id" value="D13_paladinsecondfloor"/>
+    <property name="entry_id" value="41"/>
+   </properties>
+  </object>
+  <object id="81" type="entry" gid="17" x="1664" y="1472" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="41"/>
+   </properties>
+  </object>
+  <object id="82" name="rune 2" type="mapitem" gid="21" x="704" y="960" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_A_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_A_i"/>
+    <property name="tag" value="rune_secret1"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="83" name="lever5" type="mapitem" gid="21" x="1440" y="1184" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever1secret"/>
+    <property name="toggle_items" value="rune_secret1"/>
+   </properties>
+  </object>
+  <object id="84" name="Secret Door" type="secretdoor" gid="21" x="1440" y="1440" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="30"/>
+    <property name="minlevel" value="22"/>
+    <property name="secretdoor_tag" value="D13_runet2"/>
+   </properties>
+  </object>
+  <object id="86" name="grate" type="mapitem" gid="21" x="864" y="960" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#lever1secret"/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="grate_secret"/>
+   </properties>
+  </object>
+  <object id="123" name="jar" type="mapitem" gid="21" x="128" y="2464" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="jar_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="jar_off"/>
+    <property name="tag" value="jarriddle1"/>
+   </properties>
+  </object>
+  <object id="124" name="jar" type="mapitem" gid="21" x="288" y="2304" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="jar_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="jar_off"/>
+    <property name="tag" value="jarriddle2"/>
+   </properties>
+  </object>
+  <object id="125" name="jar" type="mapitem" gid="21" x="448" y="2464" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="jar_on"/>
+    <property name="inactive_sprite" value="jar_off"/>
+    <property name="tag" value="jarriddle3"/>
+   </properties>
+  </object>
+  <object id="126" name="jar" type="mapitem" gid="21" x="288" y="2624" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="jar_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="jar_off"/>
+    <property name="tag" value="jarriddle4"/>
+   </properties>
+  </object>
+  <object id="127" name="rune 5" type="mapitem" gid="21" x="288" y="2464" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_D_a"/>
+    <property name="conditions_activate" value="Active#jarriddle1;Inactive#jarriddle2;Active#jarriddle3;Active#jarriddle4"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_D_i"/>
+    <property name="tag" value="runetj"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="128" name="lever5" type="mapitem" gid="21" x="192" y="2464" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever10"/>
+    <property name="toggle_items" value="jarriddle1"/>
+   </properties>
+  </object>
+  <object id="129" name="lever5" type="mapitem" gid="21" x="288" y="2368" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever11"/>
+    <property name="toggle_items" value="jarriddle2"/>
+   </properties>
+  </object>
+  <object id="130" name="lever5" type="mapitem" gid="21" x="384" y="2464" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever12"/>
+    <property name="toggle_items" value="jarriddle3"/>
+   </properties>
+  </object>
+  <object id="132" name="lever5" type="mapitem" gid="21" x="288" y="2560" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever14"/>
+    <property name="toggle_items" value="jarriddle4"/>
+   </properties>
+  </object>
+  <object id="133" name="lever5" type="mapitem" gid="21" x="1440" y="3040" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="leverbrigde1"/>
+    <property name="toggle_items" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="134" name="Bed" type="bed" gid="21" x="1440" y="2432" width="64" height="64"/>
+  <object id="135" name="bridge" type="mapitem" gid="21" x="1280" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="136" name="bridge" type="mapitem" gid="21" x="1280" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="137" name="bridge" type="mapitem" gid="21" x="1248" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="138" name="bridge" type="mapitem" gid="21" x="1248" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="139" name="bridge" type="mapitem" gid="21" x="1216" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="140" name="bridge" type="mapitem" gid="21" x="1152" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="141" name="bridge" type="mapitem" gid="21" x="1216" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="142" name="bridge" type="mapitem" gid="21" x="1184" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="143" name="bridge" type="mapitem" gid="21" x="1184" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="144" name="bridge" type="mapitem" gid="21" x="896" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="145" name="bridge" type="mapitem" gid="21" x="928" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="146" name="bridge" type="mapitem" gid="21" x="928" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="147" name="bridge" type="mapitem" gid="21" x="960" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="148" name="bridge" type="mapitem" gid="21" x="1056" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="149" name="bridge" type="mapitem" gid="21" x="960" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="150" name="bridge" type="mapitem" gid="21" x="1120" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="151" name="bridge" type="mapitem" gid="21" x="1120" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="152" name="bridge" type="mapitem" gid="21" x="1152" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="153" name="bridge" type="mapitem" gid="21" x="1088" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="154" name="bridge" type="mapitem" gid="21" x="1088" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="155" name="bridge" type="mapitem" gid="21" x="1056" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="156" name="bridge" type="mapitem" gid="21" x="736" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="157" name="bridge" type="mapitem" gid="21" x="768" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="158" name="bridge" type="mapitem" gid="21" x="864" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="159" name="bridge" type="mapitem" gid="21" x="800" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="160" name="bridge" type="mapitem" gid="21" x="768" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="161" name="bridge" type="mapitem" gid="21" x="832" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="162" name="bridge" type="mapitem" gid="21" x="736" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="163" name="bridge" type="mapitem" gid="21" x="896" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="164" name="bridge" type="mapitem" gid="21" x="832" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="165" name="bridge" type="mapitem" gid="21" x="800" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="167" name="bridge" type="mapitem" gid="21" x="864" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="168" name="bridge" type="mapitem" gid="21" x="992" y="2816" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="173" name="bridge" type="mapitem" gid="21" x="1024" y="2816" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="174" name="bridge" type="mapitem" gid="21" x="1024" y="2784" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="175" name="bridge" type="mapitem" gid="21" x="992" y="2784" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="176" name="bridge" type="mapitem" gid="21" x="1024" y="2752" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="177" name="bridge" type="mapitem" gid="21" x="992" y="2752" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="178" name="bridge" type="mapitem" gid="21" x="1024" y="2720" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="179" name="bridge" type="mapitem" gid="21" x="1024" y="2720" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="180" name="bridge" type="mapitem" gid="21" x="1024" y="2688" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="181" name="bridge" type="mapitem" gid="21" x="1024" y="2656" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="182" name="bridge" type="mapitem" gid="21" x="992" y="2656" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="183" name="bridge" type="mapitem" gid="21" x="992" y="2688" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="184" name="bridge" type="mapitem" gid="21" x="992" y="2720" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="185" name="bridge" type="mapitem" gid="21" x="992" y="2592" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="186" name="bridge" type="mapitem" gid="21" x="1024" y="2624" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="187" name="bridge" type="mapitem" gid="21" x="992" y="2624" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="188" name="bridge" type="mapitem" gid="21" x="1024" y="2592" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="189" name="bridge" type="mapitem" gid="21" x="1024" y="2560" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="190" name="bridge" type="mapitem" gid="21" x="1024" y="2528" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="191" name="bridge" type="mapitem" gid="21" x="992" y="2560" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="192" name="bridge" type="mapitem" gid="21" x="992" y="2496" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="193" name="bridge" type="mapitem" gid="21" x="1024" y="2496" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="194" name="bridge" type="mapitem" gid="21" x="992" y="2528" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="195" name="bridge" type="mapitem" gid="21" x="928" y="2528" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="196" name="bridge" type="mapitem" gid="21" x="960" y="2528" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="197" name="bridge" type="mapitem" gid="21" x="960" y="2496" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="198" name="bridge" type="mapitem" gid="21" x="928" y="2496" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="199" name="bridge" type="mapitem" gid="21" x="896" y="2496" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="200" name="bridge" type="mapitem" gid="21" x="896" y="2528" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="201" name="bridge" type="mapitem" gid="21" x="864" y="2528" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="202" name="bridge" type="mapitem" gid="21" x="864" y="2496" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="203" name="bridge" type="mapitem" gid="21" x="832" y="2528" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="204" name="bridge" type="mapitem" gid="21" x="832" y="2496" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="205" name="bridge" type="mapitem" gid="21" x="864" y="2464" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="206" name="bridge" type="mapitem" gid="21" x="832" y="2464" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="207" name="bridge" type="mapitem" gid="21" x="832" y="2432" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="208" name="bridge" type="mapitem" gid="21" x="832" y="2400" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="209" name="bridge" type="mapitem" gid="21" x="864" y="2400" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="210" name="bridge" type="mapitem" gid="21" x="864" y="2432" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="211" name="bridge" type="mapitem" gid="21" x="800" y="2368" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="212" name="bridge" type="mapitem" gid="21" x="864" y="2368" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="213" name="bridge" type="mapitem" gid="21" x="832" y="2368" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="214" name="bridge" type="mapitem" gid="21" x="864" y="2336" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="215" name="bridge" type="mapitem" gid="21" x="832" y="2336" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="216" name="bridge" type="mapitem" gid="21" x="800" y="2336" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="217" name="bridge" type="mapitem" gid="21" x="768" y="2336" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="218" name="bridge" type="mapitem" gid="21" x="768" y="2368" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="219" name="bridge" type="mapitem" gid="21" x="736" y="2368" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="220" name="bridge" type="mapitem" gid="21" x="736" y="2336" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#runetj"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1secret"/>
+   </properties>
+  </object>
+  <object id="221" name="grate" type="mapitem" gid="21" x="704" y="2336" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune_secret1"/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="graterd"/>
+   </properties>
+  </object>
+  <object id="223" name="grate" type="mapitem" gid="21" x="704" y="2368" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune_secret1"/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="graterd"/>
+   </properties>
+  </object>
+  <object id="224" name="bridge" type="mapitem" gid="21" x="1600" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="225" name="bridge" type="mapitem" gid="21" x="1600" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="226" name="bridge" type="mapitem" gid="21" x="1792" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="227" name="bridge" type="mapitem" gid="21" x="1824" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="228" name="bridge" type="mapitem" gid="21" x="1792" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="229" name="bridge" type="mapitem" gid="21" x="1760" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="230" name="bridge" type="mapitem" gid="21" x="1760" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="231" name="bridge" type="mapitem" gid="21" x="1728" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="232" name="bridge" type="mapitem" gid="21" x="1696" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="233" name="bridge" type="mapitem" gid="21" x="1664" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="234" name="bridge" type="mapitem" gid="21" x="1728" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="235" name="bridge" type="mapitem" gid="21" x="1696" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="236" name="bridge" type="mapitem" gid="21" x="1664" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="237" name="bridge" type="mapitem" gid="21" x="1632" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="238" name="bridge" type="mapitem" gid="21" x="1632" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="239" name="bridge" type="mapitem" gid="21" x="1824" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="240" name="bridge" type="mapitem" gid="21" x="2112" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="241" name="bridge" type="mapitem" gid="21" x="2080" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="242" name="bridge" type="mapitem" gid="21" x="2048" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="243" name="bridge" type="mapitem" gid="21" x="1984" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="244" name="bridge" type="mapitem" gid="21" x="2016" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="245" name="bridge" type="mapitem" gid="21" x="1952" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="246" name="bridge" type="mapitem" gid="21" x="1920" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="247" name="bridge" type="mapitem" gid="21" x="1888" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="248" name="bridge" type="mapitem" gid="21" x="1856" y="2848" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="249" name="bridge" type="mapitem" gid="21" x="1888" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="250" name="bridge" type="mapitem" gid="21" x="1856" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="251" name="bridge" type="mapitem" gid="21" x="2016" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="252" name="bridge" type="mapitem" gid="21" x="1984" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="253" name="bridge" type="mapitem" gid="21" x="1952" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="254" name="bridge" type="mapitem" gid="21" x="1920" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="255" name="bridge" type="mapitem" gid="21" x="2112" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="256" name="bridge" type="mapitem" gid="21" x="2048" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="257" name="bridge" type="mapitem" gid="21" x="2080" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Inactive#leverbrigde1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall"/>
+   </properties>
+  </object>
+  <object id="259" name="bridge" type="mapitem" gid="21" x="2336" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="260" name="bridge" type="mapitem" gid="21" x="2400" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="261" name="bridge" type="mapitem" gid="21" x="2400" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="262" name="bridge" type="mapitem" gid="21" x="2368" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="263" name="bridge" type="mapitem" gid="21" x="2368" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="264" name="bridge" type="mapitem" gid="21" x="2432" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="265" name="bridge" type="mapitem" gid="21" x="2464" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="266" name="bridge" type="mapitem" gid="21" x="2496" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="267" name="bridge" type="mapitem" gid="21" x="2528" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="268" name="bridge" type="mapitem" gid="21" x="2464" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="269" name="bridge" type="mapitem" gid="21" x="2528" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="270" name="bridge" type="mapitem" gid="21" x="2496" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="271" name="bridge" type="mapitem" gid="21" x="2432" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="272" name="bridge" type="mapitem" gid="21" x="2336" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="273" name="bridge" type="mapitem" gid="21" x="2560" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="274" name="bridge" type="mapitem" gid="21" x="2592" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="275" name="bridge" type="mapitem" gid="21" x="2624" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="276" name="bridge" type="mapitem" gid="21" x="2560" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="277" name="bridge" type="mapitem" gid="21" x="2592" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="278" name="bridge" type="mapitem" gid="21" x="2624" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="279" name="bridge" type="mapitem" gid="21" x="2656" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="280" name="bridge" type="mapitem" gid="21" x="2688" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="281" name="bridge" type="mapitem" gid="21" x="2720" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="282" name="bridge" type="mapitem" gid="21" x="2752" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="283" name="bridge" type="mapitem" gid="21" x="2784" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="284" name="bridge" type="mapitem" gid="21" x="2848" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="285" name="bridge" type="mapitem" gid="21" x="2816" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="286" name="bridge" type="mapitem" gid="21" x="2880" y="2912" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="287" name="bridge" type="mapitem" gid="21" x="2784" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="288" name="bridge" type="mapitem" gid="21" x="2752" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="289" name="bridge" type="mapitem" gid="21" x="2720" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="290" name="bridge" type="mapitem" gid="21" x="2688" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="291" name="bridge" type="mapitem" gid="21" x="2656" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="292" name="bridge" type="mapitem" gid="21" x="2880" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="293" name="bridge" type="mapitem" gid="21" x="2848" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="294" name="bridge" type="mapitem" gid="21" x="2816" y="2880" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#leverbrigdehall1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="295" name="leverhall" type="mapitem" gid="21" x="2432" y="2304" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="leverbrigdehall1"/>
+    <property name="toggle_items" value="bridgehall1"/>
+   </properties>
+  </object>
+  <object id="297" name="archer roomA2" type="transition" x="385" y="2111.67" width="31" height="32.3333">
+   <properties>
+    <property name="area_id" value="D13_paladin"/>
+    <property name="entry_id" value="62"/>
+   </properties>
+  </object>
+  <object id="298" type="transition" x="255.333" y="1918" width="36" height="36">
+   <properties>
+    <property name="area_id" value="D13_paladinsecondfloor"/>
+    <property name="entry_id" value="5"/>
+   </properties>
+  </object>
+  <object id="299" name="second floor" type="entry" gid="17" x="1440" y="2976" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="5"/>
+   </properties>
+  </object>
+  <object id="300" name="second floor" type="entry" gid="17" x="96" y="1984" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="100"/>
+   </properties>
+  </object>
+  <object id="303" name="Secret Door" type="secretdoor" gid="21" x="1502.83" y="763.167" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="19"/>
+    <property name="minlevel" value="17"/>
+    <property name="secretdoor_tag" value="D13_scards2"/>
+   </properties>
+  </object>
+  <object id="305" name="Open barrier trigger" type="trigger" x="1344" y="2112" width="160" height="32">
+   <properties>
+    <property name="actions" value="SetVariable#TMP_D13_rune2,1;ItemHide#gate;ItemWalkable#gate"/>
+    <property name="conditions" value="VariableLower#TMP_D13_rune2,1"/>
+   </properties>
+  </object>
+  <object id="306" name="warrior" type="spawn" gid="19" x="1344" y="2432" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="307" name="warrior" type="spawn" gid="19" x="1344" y="2496" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="308" name="warrior" type="spawn" gid="19" x="1696" y="2464" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="309" name="warrior" type="spawn" gid="19" x="1624" y="2432" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="310" name="archer" type="spawn" gid="19" x="1440" y="1984" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="311" name="archer" type="spawn" gid="19" x="1408" y="2176" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="312" name="archer" type="spawn" gid="19" x="1472" y="2176" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="313" name="inqusitor" type="spawn" gid="19" x="1312" y="1504" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_inquisitor"/>
+    <property name="tag" value="Paladin_inquisitor"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="314" name="inqusitor" type="spawn" gid="19" x="1568" y="1504" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_inquisitor"/>
+    <property name="tag" value="Paladin_inquisitor"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="315" name="cleric" type="spawn" gid="19" x="2176" y="2112" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="316" name="cleric" type="spawn" gid="19" x="2336" y="2048" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="317" type="entry" gid="17" x="1824" y="288" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="225"/>
+   </properties>
+  </object>
+  <object id="318" name="kardinal" type="transition" x="1632" y="768" width="30.7352" height="31.8886">
+   <properties>
+    <property name="area_id" value="D13_paladin"/>
+    <property name="entry_id" value="770"/>
+   </properties>
+  </object>
+  <object id="319" name="warrior" type="spawn" gid="19" x="1280" y="1280" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="320" name="warrior" type="spawn" gid="19" x="1280" y="1152" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="321" name="warrior" type="spawn" gid="19" x="1152" y="1056" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="322" name="warrior" type="spawn" gid="19" x="1152" y="1280" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="323" name="archer" type="spawn" gid="19" x="1152" y="1376" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="324" name="archer" type="spawn" gid="19" x="1152" y="1152" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="325" name="archer" type="spawn" gid="19" x="1056" y="864" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="326" name="archer" type="spawn" gid="19" x="928" y="864" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="327" name="archer" type="spawn" gid="19" x="992" y="928" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="328" name="archer" type="spawn" gid="19" x="896" y="736" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="329" name="warrior" type="spawn" gid="19" x="1216" y="864" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="330" name="warrior" type="spawn" gid="19" x="1152" y="960" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="331" name="warrior" type="spawn" gid="19" x="928" y="256" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="332" name="warrior" type="spawn" gid="19" x="1024" y="256" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="333" name="warrior" type="spawn" gid="19" x="992" y="320" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="334" name="inqusitor" type="spawn" gid="19" x="960" y="256" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_inquisitor"/>
+    <property name="tag" value="Paladin_inquisitor"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="335" name="cleric" type="spawn" gid="19" x="1024" y="224" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="336" name="cleric" type="spawn" gid="19" x="928" y="224" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="337" name="cleric" type="spawn" gid="19" x="2080" y="1408" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="338" name="cleric" type="spawn" gid="19" x="2336" y="1088" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="339" name="cleric" type="spawn" gid="19" x="2080" y="1088" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="340" name="inqusitor" type="spawn" gid="19" x="2048" y="1088" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_inquisitor"/>
+    <property name="tag" value="Paladin_inquisitor"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="341" name="inqusitor" type="spawn" gid="19" x="2080" y="1376" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_inquisitor"/>
+    <property name="tag" value="Paladin_inquisitor"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="342" name="archer" type="spawn" gid="19" x="2464" y="1152" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="343" name="archer" type="spawn" gid="19" x="2304" y="1120" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="344" name="archer" type="spawn" gid="19" x="2208" y="864" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="345" name="warrior" type="spawn" gid="19" x="2208" y="2592" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="346" name="warrior" type="spawn" gid="19" x="2240" y="2560" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="347" name="warrior" type="spawn" gid="19" x="2208" y="2400" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="348" name="warrior" type="spawn" gid="19" x="2944" y="2816" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="349" name="cleric" type="spawn" gid="19" x="2976" y="2784" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="350" name="cleric" type="spawn" gid="19" x="3008" y="2816" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="351" name="inqusitor" type="spawn" gid="19" x="2336" y="2144" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_inquisitor"/>
+    <property name="tag" value="Paladin_inquisitor"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="352" name="warrior" type="spawn" gid="19" x="2144" y="2208" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="353" name="warrior" type="spawn" gid="19" x="2304" y="2208" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="354" name="warrior" type="spawn" gid="19" x="1312" y="1632" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="355" name="warrior" type="spawn" gid="19" x="1408" y="1504" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="356" name="warrior" type="spawn" gid="19" x="1536" y="1632" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="357" name="archer" type="spawn" gid="19" x="1408" y="1568" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="358" name="archer" type="spawn" gid="19" x="1312" y="1568" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="359" name="cleric" type="spawn" gid="19" x="1344" y="1760" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="360" name="cleric" type="spawn" gid="19" x="1472" y="1728" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="361" name="warrior" type="spawn" gid="19" x="1696" y="1536" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="362" name="warrior" type="spawn" gid="19" x="1696" y="1632" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="363" name="warrior" type="spawn" gid="19" x="1824" y="1728" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="364" name="cleric" type="spawn" gid="19" x="1120" y="1568" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="365" name="warrior" type="spawn" gid="19" x="1056" y="1728" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="366" name="warrior" type="spawn" gid="19" x="1152" y="1664" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="367" name="warrior" type="spawn" gid="19" x="1856" y="1280" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="368" name="warrior" type="spawn" gid="19" x="1984" y="1120" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="369" name="warrior" type="spawn" gid="19" x="2112" y="896" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="370" name="warrior" type="spawn" gid="19" x="2272" y="1376" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="371" name="warrior" type="spawn" gid="19" x="2368" y="1312" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="372" name="warrior" type="spawn" gid="19" x="1536" y="1088" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="373" name="warrior" type="spawn" gid="19" x="1536" y="1344" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="374" name="archer" type="spawn" gid="19" x="1568" y="1280" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="375" name="archer" type="spawn" gid="19" x="1536" y="1152" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="376" name="archer" type="spawn" gid="19" x="1600" y="1056" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

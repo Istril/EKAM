@@ -1,0 +1,2269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="307">
+ <properties>
+  <property name="indoor" value=""/>
+  <property name="maxlight" value="60"/>
+  <property name="music" value="River_Time"/>
+ </properties>
+ <tileset firstgid="1" source="trees.tsx"/>
+ <tileset firstgid="17" source="spawns.tsx"/>
+ <tileset firstgid="25" source="dryground.tsx"/>
+ <tileset firstgid="89" source="town_objects.tsx"/>
+ <tileset firstgid="169" source="rocks.tsx"/>
+ <tileset firstgid="175" name="dungeon" tilewidth="64" tileheight="128" tilecount="240" columns="16">
+  <image source="adt_tiled_dungeon.png" width="1024" height="1920"/>
+  <tile id="48">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="49">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="50">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="51">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="52">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="53">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="54">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="55">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="56">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="57">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="58">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="59">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="60">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="61">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="62">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="63">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="64">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="65">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="66">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="67">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="68">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="69">
+   <properties>
+    <property name="door" value="L"/>
+   </properties>
+  </tile>
+  <tile id="70">
+   <properties>
+    <property name="door" value="R"/>
+   </properties>
+  </tile>
+  <tile id="71">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="72">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="73">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="74">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="75">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="76">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="77">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="78">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="79">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="81">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="82">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="83">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="84">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="85">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="86">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="87">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="88">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="89">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="90">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="91">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="92">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="93">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="94">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="95">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="102">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="103">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="104">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="105">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="106">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="107">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="108">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="109">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="110">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="111">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="112">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="113">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="114">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="115">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="116">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="117">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="118">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="119">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="121">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="122">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="123">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="124">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="125">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="126">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="127">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="128">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="129">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="130">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="131">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="132">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="133">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="135">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="136">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="142">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="144">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="145">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="147">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="148">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="light" value="brazier"/>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="178">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="179">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="180">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="181">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="182">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="183">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="185">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="186">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="187">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="188">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="189">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="192">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="193">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="194">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="195">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="196">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="197">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="198">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="199">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="200">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="201">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="202">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="203">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="204">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="205">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="206">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="207">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="208">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="209">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="210">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="211">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="212">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="213">
+   <properties>
+    <property name="door" value="L"/>
+   </properties>
+  </tile>
+  <tile id="214">
+   <properties>
+    <property name="door" value="R"/>
+   </properties>
+  </tile>
+  <tile id="215">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="216">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="217">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="218">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="219">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="220">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="221">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="222">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="223">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="224">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="225">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="226">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="227">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="228">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="229">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="230">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="231">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="232">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="233">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="234">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="235">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="236">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="237">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="238">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="239">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="415" name="town_objexts2" tilewidth="64" tileheight="64" tilecount="64" columns="8">
+  <image source="town_objects2.png" width="512" height="512"/>
+  <tile id="6">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="light" value="brazier_lamp"/>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="35">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="36">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="479" source="natural_grounds.tsx"/>
+ <tileset firstgid="607" name="grounds indoor 2" tilewidth="64" tileheight="32" tilecount="160" columns="16">
+  <image source="grounds_indoor2.png" width="1024" height="320"/>
+  <tile id="64">
+   <properties>
+    <property name="effect" value="gas_weak"/>
+   </properties>
+  </tile>
+  <tile id="65">
+   <properties>
+    <property name="effect" value="gas_weak"/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="effect" value="death_weak"/>
+   </properties>
+  </tile>
+  <tile id="88">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="89">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="90">
+   <properties>
+    <property name="effect" value="lava2"/>
+   </properties>
+  </tile>
+  <tile id="136">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="142">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="144">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="145">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="147">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="148">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="150">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="152">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="153">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="154">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="156">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="157">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="158">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="159">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="767" name="pof_ground" tilewidth="64" tileheight="32" tilecount="16" columns="8">
+  <image source="mountain_ground.png" width="512" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="783" source="mountain-transitions.tsx"/>
+ <tileset firstgid="801" source="walls_red.tsx"/>
+ <tileset firstgid="816" source="rocks_gray.tsx"/>
+ <tileset firstgid="826" source="rocks_gray_small.tsx"/>
+ <tileset firstgid="838" source="teleporter.tsx"/>
+ <tileset firstgid="839" source="icemist_items.tsx"/>
+ <tileset firstgid="887" source="icemist_large.tsx"/>
+ <tileset firstgid="927" source="dungeon2.tsx"/>
+ <tileset firstgid="1167" source="grounds_indoor.tsx"/>
+ <tileset firstgid="1327" source="dungeon3.tsx"/>
+ <tileset firstgid="1567" source="dungeon stairs.tsx"/>
+ <tileset firstgid="1571" source="dungeon.tsx"/>
+ <tileset firstgid="1811" source="dungeon4.tsx"/>
+ <tileset firstgid="2051" source="town_objects3.tsx"/>
+ <tileset firstgid="2083" source="water.tsx"/>
+ <tileset firstgid="2147" source="icemist_walls.tsx"/>
+ <tileset firstgid="2187" source="gate_red.tsx"/>
+ <tileset firstgid="2191" source="ship2.tsx"/>
+ <tileset firstgid="2199" source="grassland.tsx"/>
+ <tileset firstgid="2327" source="ship.tsx"/>
+ <tileset firstgid="2335" source="town_objexts2.tsx"/>
+ <layer id="1" name="nonwalk" width="96" height="96" visible="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3cQQrCMABFwS69QQ7k0vvfx7WhQk1jPklmQNqVNI8aAy0px3GUAR/Olep453v0/90/+nOd/ln6Z/Xqpn+bUp1b64xlnQkAAAAAAEAvnhll6Z+lP1fcuU96PM9/PlqvfA3p36n+5skk/bNW6z/b+2IzXesV+metNp4Z6Q8AAAAAAADzs2dNVt1b/7H0zzL/ACnmnyz/v1n6fxo9B5z133k/0dFj3LXzNzuPHQCYz+5rtzTtAQAAAAAAANq8Nt8HHYB1vAGQgRoGAJAAAA==
+  </data>
+ </layer>
+ <layer id="2" name="water" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3c247TMBDG8UhVRV4EATfccBD37ZYte2q7cMfD7goejJiNtanlw9ixO2Pn+0sjJEDA/hyyaeO06/K07V+G0qbPP0sP/vxR/VODub/S/sgf/HnD+Se+nGYl/Vv9/quvW3JNqVr2vzJGW147Bv75svnvLAP/Mkn2X8LrL5e/+XPS/Wtdg5b8a1wDqv90DST717YGPv+azv+1rkGMv/4/cGn/q8Dfua14DSRf/6jM1yQx/jWsQcv+NVSLf2jgD/+UWvHP0UN/PodhjsOchtkXWs/QeTV2cgd/Xn8V/Hn9n1Zd92dV3l+lnH8MczPM7TB3w9yP61Eiiqn5tcI/Xyn+tuuNkrXs78pnvyR/vQaX9tdR/HfwFxv1+tE2x/Xrn7O088/ccl5PHcZ1gD89ydezvlrxr7VW/HH88wZ/Gc25/sn5fZWaNP/vPX1aSIq/ft9/af6XznavZTrwLxv8eYM/bzn9v2ANosvp/xb+0cGfN/jzBn/ecvvjOiiunP6fh3k/DqKV03+prwPMfVsxE/KPGfjDnyP4y0i9Z63nfpxpej/LdOCfr6m/bQ3gz9PdaAJ/ntT+pce1DH8J99gvnfY3u7VYmFPCX/8Y8v84/NrXBtbH5c9R7PH/Dv5ZW7L/9Gvej+d/6dXkb9uv9DAe9/Avn81fHfu/xjXY9+fD4V/L+cf1bI/y1J8JQtmvp889m16Gv6ol/9DXAv+0qP76+eCQ/1awv2/vs0T/64n/yfJvNn9/rf5qPgnwV8+h6VHmS/Lnyny+dnp/b+Pw/z3ONJ//Cf7OQp8vB/+ypfj7zj+m/Q38vVH9zetQM/inFeuvxrb/uHZ/rjUw75On1oL/3Gf4Usa2VyEl+KeN+fkiu4b8KcWuUYnJsQY+f8mf0chtb/rrNTBfD4dGheM/j78+Xr+96bqfa/qoXNdOUuO2d/nnGPin+4f2fvveM4J/eX/KutTqX6KY69C5a6AH/q/B355U/7n28D9vrr8t+NOj+OvXTMdx4J8vyntB8Of3t9mn+rv2VkhKkv/0maKQPbU9/P9HfT86t7/+TGupwZ83Sf6HySj3OfdjdPB/Cf72bA4fiOeK3AN/3oE//C8dtznFX+2D9t37fV65RwX/+cd/6N7v35V7VP8A9wcvDwCQAAA=
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3dW0rDQBSA4YqmZgEuQbDgAlK8oKIVQaFV69rcjuAOij6pT27EDHVomo61mSRzZib/Bwehlrb8SWMuxfZ6AGLxnki/ApTNWCbeYFm0642+qGiQLiZLpV/N3ONW84/JtgddodZ11nf46mzX3XPxPgCwqXOH2yYAAAAAwLKRJ9cluqrt/nuco1txUTgPwfovi/6y6G9nnG9X7y1HmyT0r2pcaPiU/xzu2o1G/+p0d7g3a2gAADLGHJeLKO8/oh3rjn1U96lg+0lf7rldmibmAQAAAAAAALDebboYyKC/vDv6i6I/tOfSunCVmAdumFrT350u9D/I3/PH+Zzkcyr4t+AhWR2TGPv7oIv9Dz36v3ov26u3+br9GRk+/2JzHOXLuq+o/q+lZeBrf5NY+4ey/xlj/5DQ37265zDpL4v+sugvy5d9f6WL/S/p36jvnWr3p3991+l8bPzX//N3XAi1v9JW/698Puwe2kqI/dtc/7EZ+oeJ/s3R26FhPvuGyUq/y2pst/A3vRxoCwD+cPndPgAAAEAoOHchK9b+oXx/Yaz9Q3EUSX/1OfEq4wufPpdV102/2vggpv4hor8s+tejrwMPCpOly9cmi9eLB4b7/gDtCU4zAJAAAA==
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3cTUrDQBQA4CnFWk+g9V+voW67d+UpXHoKN4rVa6koXkIPYcWKIFkUm2T+vg8e2Q2Pl5fJMEwSAqk4HsbOoF5Hw9/I2eta7Az46809ScZLYvfiYv07SvFT3+fE6tyXw1HsDPI32YidQQjng/bH9G7uR9Pck8N8tJVA37flcV7vpwxqTnybBfV9k9rXRHRjv/DnBprs6XsqtKvvqdCOvgcAKMaHPdGo3tWfDm0PVgsAaNPlIlIyzfzs+bKuFtdZ1Cz6keL656v+t90MzZJuYicAAFTtuqDvz3Kk/gCwmodx7Aygf/f6ngrN9D0VutP38C9T5woBAJJ34L+aAFU6GYdwOo8z+14AAAAAAAAAAAAAQKU+AUGfiJAAkAAA
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3cTUrDQBgG4IBtbdV6C0FQcKmgrlTUnfY8InoD9SJewaOZoRX86ZgsOpmkeR54aemm4eVLmGlDigIAANptfzzPYZmDxXuad1L2fqx7gNreFyEP/eelfwAAgOU+NnIfAQAAAAAAQDpv7jenh17NPT30Yu4B/tgdFMVWRbYHuY9yfU3KbmfD/zPRfzJf/cfoP606/U9dg5Kp079zIJ2q/gP9p9OV+b8c5f3+VOr0H9aoO+Y/CeufvKz/85rW2P+69nTTw+bPV5r1XPb+WOZJ//TQRWTNHj6/ioTVCXum2yWdruteqm1Cz9f6z0b/eX3v3zW+ebH5pxn6z0v/ef3u/2jouZVNivW/17NzIrbXTJ3A/M/djPIEoE3uK+53AQAAAIDgzu9IAMAKnY6L4qzMuWdHQTL+C+6+T6gyodsAkAAA
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="46" type="entry" gid="17" x="2827.5" y="1770.5" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="50"/>
+   </properties>
+  </object>
+  <object id="47" name="Test1" type="transition" x="2460.93" y="1631.85" width="34" height="62.6667">
+   <properties>
+    <property name="area_id" value="E10_tower1"/>
+    <property name="entry_id" value="26"/>
+   </properties>
+  </object>
+  <object id="48" name="grate" type="mapitem" gid="21" x="2688" y="1760" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="tag" value="grate"/>
+   </properties>
+  </object>
+  <object id="49" name="grate" type="mapitem" gid="21" x="2688" y="1792" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="tag" value="grate"/>
+   </properties>
+  </object>
+  <object id="50" name="lever" type="mapitem" gid="21" x="2592" y="2976" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever"/>
+   </properties>
+  </object>
+  <object id="51" name="lever conv" type="conversation" gid="21" x="2592" y="2976" width="64" height="64">
+   <properties>
+    <property name="conversation" value="Paladin_temple_lever"/>
+    <property name="icon" value="lever"/>
+    <property name="name" value="@LEVER"/>
+   </properties>
+  </object>
+  <object id="52" name="Secret Door" type="secretdoor" gid="21" x="2496" y="2272" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="30"/>
+    <property name="minlevel" value="26"/>
+    <property name="secretdoor_tag" value="D13_paladin"/>
+   </properties>
+  </object>
+  <object id="53" name="Secret TP room" type="transition" x="2466.83" y="2211.83" width="22.6667" height="11.3333"/>
+  <object id="54" name="TP in wather room" type="transition" x="2556.33" y="2267.67" width="31" height="13">
+   <properties>
+    <property name="area_id" value="D13_paladin"/>
+    <property name="entry_id" value="51"/>
+   </properties>
+  </object>
+  <object id="55" type="entry" gid="17" x="2924.17" y="2964.5" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="51"/>
+   </properties>
+  </object>
+  <object id="56" type="entry" gid="17" x="2656" y="2336" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="52"/>
+   </properties>
+  </object>
+  <object id="57" name="Tp in first floor" type="transition" x="2954.33" y="2945.67" width="19.3333" height="28.6667">
+   <properties>
+    <property name="area_id" value="D13_paladin"/>
+    <property name="entry_id" value="52"/>
+   </properties>
+  </object>
+  <object id="63" name="fisherman" type="staticNPC" gid="19" x="2360.17" y="2041.17" width="62" height="60.6667">
+   <properties>
+    <property name="facing" value="r"/>
+    <property name="name" value="@BARRET"/>
+    <property name="portrait" value="57"/>
+    <property name="sprite" value="male_red_1"/>
+   </properties>
+  </object>
+  <object id="64" name="Test4" type="transition" x="2208" y="1632" width="31" height="30.3333">
+   <properties>
+    <property name="area_id" value="D13_paladin"/>
+    <property name="entry_id" value="53"/>
+   </properties>
+  </object>
+  <object id="66" type="entry" gid="17" x="2432" y="2016" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="53"/>
+   </properties>
+  </object>
+  <object id="67" name="Light" type="light" gid="21" x="2144" y="1728" width="64" height="64"/>
+  <object id="68" name="Light" type="light" gid="21" x="2368" y="1728" width="64" height="64"/>
+  <object id="69" name="Light" type="light" gid="21" x="2561" y="1732.33" width="64" height="64"/>
+  <object id="70" name="Light" type="light" gid="21" x="2784" y="2016" width="64" height="64"/>
+  <object id="71" name="Light" type="light" gid="21" x="2784" y="2144" width="64" height="64"/>
+  <object id="72" name="Light" type="light" gid="21" x="2784" y="1760" width="64" height="64"/>
+  <object id="73" name="Light" type="light" gid="21" x="2912" y="2912" width="64" height="64"/>
+  <object id="74" name="Light" type="light" gid="21" x="2688" y="2976" width="64" height="64"/>
+  <object id="75" name="Light" type="light" gid="21" x="2688" y="2848" width="64" height="64"/>
+  <object id="76" name="Light" type="light" gid="21" x="2656" y="2688" width="64" height="64"/>
+  <object id="77" name="Light" type="light" gid="21" x="2016" y="1728" width="64" height="64"/>
+  <object id="79" name="Secret Door" type="secretdoor" gid="21" x="1984" y="992" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="40"/>
+    <property name="minlevel" value="30"/>
+    <property name="secretdoor_tag" value="D13_paladin"/>
+   </properties>
+  </object>
+  <object id="80" name="Light" type="light" gid="21" x="1888" y="1344" width="64" height="64"/>
+  <object id="81" name="Light" type="light" gid="21" x="1888" y="1536" width="64" height="64"/>
+  <object id="82" name="Light" type="light" gid="21" x="1632" y="1344" width="64" height="64"/>
+  <object id="83" name="Light" type="light" gid="21" x="1632" y="1536" width="64" height="64"/>
+  <object id="84" name="Light" type="light" gid="21" x="1344" y="1536" width="64" height="64"/>
+  <object id="85" name="Light" type="light" gid="21" x="1504" y="1440" width="64" height="64"/>
+  <object id="86" name="Light" type="light" gid="21" x="1600" y="1728" width="64" height="64"/>
+  <object id="87" name="Light" type="light" gid="21" x="1344" y="1792" width="64" height="64"/>
+  <object id="88" name="Light" type="light" gid="21" x="1600" y="1600" width="64" height="64"/>
+  <object id="89" name="Light" type="light" gid="21" x="1344" y="2144" width="64" height="64"/>
+  <object id="90" name="Light" type="light" gid="21" x="1504" y="2176" width="64" height="64"/>
+  <object id="91" name="Light" type="light" gid="21" x="1632" y="2176" width="64" height="64"/>
+  <object id="92" name="Light" type="light" gid="21" x="1632" y="1952" width="64" height="64"/>
+  <object id="93" name="Light" type="light" gid="21" x="1792" y="2208" width="64" height="64"/>
+  <object id="94" name="Light" type="light" gid="21" x="1920" y="2208" width="64" height="64"/>
+  <object id="95" name="Light" type="light" gid="21" x="1920" y="1952" width="64" height="64"/>
+  <object id="96" name="Light" type="light" gid="21" x="2144" y="2144" width="64" height="64"/>
+  <object id="98" name="Teleport v podsobky kyhni" type="transition" x="2112.75" y="769.25" width="29.5" height="16.5"/>
+  <object id="104" name="Chest" type="container" gid="21" x="1984" y="832" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="items" value="221,5033"/>
+    <property name="name" value="@CHEST"/>
+    <property name="unique_tag" value="D9_crypt_chest_tomb1"/>
+   </properties>
+  </object>
+  <object id="105" name="BookSh1" gid="21" x="1696" y="992" width="64" height="64"/>
+  <object id="106" name="BookSh4" gid="21" x="1792" y="992" width="64" height="64"/>
+  <object id="109" name="Light" type="light" gid="21" x="1504" y="1152" width="64" height="64"/>
+  <object id="110" name="Light" type="light" gid="21" x="1728" y="1184" width="64" height="64"/>
+  <object id="111" name="Light" type="light" gid="21" x="1824" y="1056" width="64" height="64"/>
+  <object id="112" name="grate" type="mapitem" gid="21" x="768" y="832" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune100"/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="grateA1"/>
+   </properties>
+  </object>
+  <object id="113" name="grate" type="mapitem" gid="21" x="768" y="1216" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune101"/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="grateA2"/>
+   </properties>
+  </object>
+  <object id="119" name="Open grate trigger" type="trigger" x="992" y="736" width="29.5" height="157.5">
+   <properties>
+    <property name="actions" value="SetVariable#TMP_D13_rune1,1;ItemHide#grateA1;ItemWalkable#grateA1"/>
+    <property name="conditions" value="VariableLower#TMP_D13_rune1,1"/>
+   </properties>
+  </object>
+  <object id="126" name="Bed" type="bed" gid="21" x="1425" y="1015" width="64" height="64"/>
+  <object id="127" name="lever" type="mapitem" gid="21" x="832" y="1280" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever3"/>
+    <property name="toggle_items" value="rune101"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="128" name="rune 2" type="mapitem" gid="21" x="800" y="1280" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_A_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_A_i"/>
+    <property name="tag" value="rune101"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="129" name="Open grate trigger" type="trigger" x="992" y="1120" width="29.5" height="157.5">
+   <properties>
+    <property name="actions" value="SetVariable#TMP_D13_rune2,1;ItemHide#grateA2;ItemWalkable#grateA2"/>
+    <property name="conditions" value="VariableLower#TMP_D13_rune2,1"/>
+   </properties>
+  </object>
+  <object id="133" name="Teleport k propovedniky" type="transition" x="384" y="928" width="32" height="160">
+   <properties>
+    <property name="area_id" value="D13_paladinpropovednikroom"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="134" x="425" y="841"/>
+  <object id="136" name="Exit From propovednik" type="entry" gid="17" x="256" y="1024" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="60"/>
+   </properties>
+  </object>
+  <object id="139" name="Teleport in arhiepiscop room" type="transition" x="72.5" y="960" width="55.5" height="61.5">
+   <properties>
+    <property name="area_id" value="D13_paladinarhiepiscoproom"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="141" name="Energy barrier" type="mapitem" gid="21" x="96" y="2048" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="boss_barrier"/>
+   </properties>
+  </object>
+  <object id="142" name="Energy barrier" type="mapitem" gid="21" x="128" y="2048" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="boss_barrier"/>
+   </properties>
+  </object>
+  <object id="143" name="Energy barrier" type="mapitem" gid="21" x="160" y="2048" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="boss_barrier"/>
+   </properties>
+  </object>
+  <object id="144" name="lever conv" type="conversation" gid="21" x="1056" y="2368" width="64" height="64">
+   <properties>
+    <property name="conversation" value="paladin_boss_barrier"/>
+    <property name="icon" value="lever"/>
+    <property name="name" value="@LEVER"/>
+    <property name="tag" value="Lever_unb"/>
+   </properties>
+  </object>
+  <object id="145" name="Light" type="light" gid="21" x="960" y="1792" width="64" height="64"/>
+  <object id="146" name="Light" type="light" gid="21" x="827.667" y="1915" width="64" height="64"/>
+  <object id="147" name="Light" type="light" gid="21" x="1152" y="1952" width="64" height="64"/>
+  <object id="148" name="Light" type="light" gid="21" x="1152" y="1856" width="64" height="64"/>
+  <object id="150" name="Archery room1" type="entry" gid="17" x="1267" y="825" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="61"/>
+   </properties>
+  </object>
+  <object id="151" name="Archery room2" type="entry" gid="17" x="1262.67" y="1208" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="62"/>
+   </properties>
+  </object>
+  <object id="152" name="TP in second floor" x="32" y="2272" width="64.6667" height="63.3333"/>
+  <object id="153" x="642.667" y="2546.67"/>
+  <object id="154" name="Bed" type="bed" gid="21" x="768" y="1408" width="64" height="64"/>
+  <object id="155" name="Energy barrier" type="mapitem" gid="21" x="128" y="2304" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="VariableEqual#stbar,5"/>
+    <property name="tag" value="Stair_barrier"/>
+   </properties>
+  </object>
+  <object id="156" name="Energy barrier" type="mapitem" gid="21" x="128" y="2336" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="VariableEqual#stbar,5"/>
+    <property name="tag" value="Stair_barrier"/>
+   </properties>
+  </object>
+  <object id="157" name="Energy barrier" type="mapitem" gid="21" x="64" y="2272" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="VariableEqual#stbar,5"/>
+    <property name="tag" value="Stair_barrier"/>
+   </properties>
+  </object>
+  <object id="158" name="Energy barrier" type="mapitem" gid="21" x="128" y="2272" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="VariableEqual#stbar,5"/>
+    <property name="tag" value="Stair_barrier"/>
+   </properties>
+  </object>
+  <object id="159" name="Energy barrier" type="mapitem" gid="21" x="96" y="2272" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="VariableEqual#stbar,5"/>
+    <property name="tag" value="Stair_barrier"/>
+   </properties>
+  </object>
+  <object id="162" name="Pristan'" type="entry" gid="17" x="512" y="128" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="63"/>
+   </properties>
+  </object>
+  <object id="163" name="first floor" type="entry" gid="17" x="768" y="192" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="64"/>
+   </properties>
+  </object>
+  <object id="166" name="Tp in pristan'" type="transition" x="672" y="128" width="32" height="64">
+   <properties>
+    <property name="area_id" value="D13_paladin"/>
+    <property name="entry_id" value="63"/>
+   </properties>
+  </object>
+  <object id="167" name="Tp obratno c pristani" type="transition" x="544" y="96" width="27.5" height="28.5">
+   <properties>
+    <property name="area_id" value="D13_paladin"/>
+    <property name="entry_id" value="64"/>
+   </properties>
+  </object>
+  <object id="169" name="Exit from second floor cardinal" type="entry" gid="17" x="1572" y="156" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="500"/>
+   </properties>
+  </object>
+  <object id="172" name="jump" type="entry" gid="17" x="877.5" y="268.5" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="100"/>
+   </properties>
+  </object>
+  <object id="173" name="jump_conv" type="conversation" gid="21" x="864" y="352" width="64" height="64">
+   <properties>
+    <property name="conversation" value="paladin_bridge_jump"/>
+    <property name="icon" value="lever"/>
+    <property name="name" value="Jump"/>
+   </properties>
+  </object>
+  <object id="174" name="Bridge" type="mapitem" gid="21" x="864" y="320" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="175" name="Bridge" type="mapitem" gid="21" x="896" y="320" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="conditions_activate" value="Active#rune1"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="bridge1"/>
+   </properties>
+  </object>
+  <object id="176" name="Guard room" type="entry" gid="17" x="1728" y="2880" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="200"/>
+   </properties>
+  </object>
+  <object id="177" name="Entry in guard room" type="transition" x="1183.5" y="450.5" width="32.5" height="29.5">
+   <properties>
+    <property name="area_id" value="D13_paladin"/>
+    <property name="entry_id" value="200"/>
+   </properties>
+  </object>
+  <object id="178" x="1283" y="419"/>
+  <object id="179" name="Exit gr" type="entry" gid="17" x="992" y="384" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="201"/>
+   </properties>
+  </object>
+  <object id="180" name="Exit from guard room" type="transition" x="1696" y="2560" width="32" height="32">
+   <properties>
+    <property name="area_id" value="D13_paladin"/>
+    <property name="entry_id" value="201"/>
+   </properties>
+  </object>
+  <object id="182" name="Dock_bridge" type="conversation" gid="21" x="1888" y="2624" width="64" height="64">
+   <properties>
+    <property name="conversation" value="paladin_dock_bridge"/>
+    <property name="icon" value="sphere"/>
+    <property name="name" value="@SPHERE"/>
+   </properties>
+  </object>
+  <object id="184" name="Dockbeam2" type="mapitem" gid="21" x="832" y="128" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="dock"/>
+   </properties>
+  </object>
+  <object id="185" name="Dockbeam1" type="mapitem" gid="21" x="832" y="160" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="dock"/>
+   </properties>
+  </object>
+  <object id="187" name="dockdoor" type="trigger" x="736" y="65" width="187" height="127">
+   <properties>
+    <property name="actions" value="SetVariable#TMP_D13_dockdoor,1;ItemHide#dock;ItemWalkable#dock"/>
+    <property name="conditions" value="PlayerHasItem#14000;VariableLower#TMP_D13_dockdoor,1"/>
+   </properties>
+  </object>
+  <object id="190" name="Bridge" type="mapitem" gid="21" x="1408" y="160" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="bridge2"/>
+   </properties>
+  </object>
+  <object id="193" name="cardinal" type="spawn" gid="19" x="1856" y="256" width="64" height="64">
+   <properties>
+    <property name="spawn" value="cardinal"/>
+    <property name="tag" value="cardinal"/>
+    <property name="unique_tag" value="cardinal"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="194" name="Bridge" type="mapitem" gid="21" x="1440" y="160" width="70" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="bridge2"/>
+   </properties>
+  </object>
+  <object id="195" name="Bridge" type="mapitem" gid="21" x="1472" y="160" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="bridge2"/>
+   </properties>
+  </object>
+  <object id="196" name="Bridge" type="mapitem" gid="21" x="1504" y="160" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="bridge2"/>
+   </properties>
+  </object>
+  <object id="198" x="1633.5" y="78.5"/>
+  <object id="199" name="Bridge" type="mapitem" gid="21" x="1408" y="128" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="bridge2"/>
+   </properties>
+  </object>
+  <object id="200" name="Bridge" type="mapitem" gid="21" x="1440" y="128" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="bridge2"/>
+   </properties>
+  </object>
+  <object id="201" name="Bridge" type="mapitem" gid="21" x="1472" y="128" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="bridge2"/>
+   </properties>
+  </object>
+  <object id="202" name="Bridge" type="mapitem" gid="21" x="1504" y="128" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grid_ground_brown"/>
+    <property name="bridge" value=""/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="bridge2"/>
+   </properties>
+  </object>
+  <object id="203" name="barrier" type="mapitem" gid="21" x="1632" y="96" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="cardinal_barrier"/>
+   </properties>
+  </object>
+  <object id="204" name="barrier" type="mapitem" gid="21" x="1632" y="128" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="cardinal_barrier"/>
+   </properties>
+  </object>
+  <object id="205" name="barrier" type="mapitem" gid="21" x="1632" y="160" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="cardinal_barrier"/>
+   </properties>
+  </object>
+  <object id="206" name="barrier" type="mapitem" gid="21" x="1632" y="192" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="cardinal_barrier"/>
+   </properties>
+  </object>
+  <object id="207" name="barrier" type="mapitem" gid="21" x="2048" y="224" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="cardinal_barrier"/>
+   </properties>
+  </object>
+  <object id="208" name="barrier" type="mapitem" gid="21" x="2048" y="256" width="64" height="64">
+   <properties>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="cardinal_barrier"/>
+   </properties>
+  </object>
+  <object id="209" name="cardinal barrier" type="trigger" x="1663.5" y="33" width="33.5" height="315.5">
+   <properties>
+    <property name="actions" value="SetVariable#TMP_D13_cardinal,1;ItemActivate#cardinal_barrier"/>
+    <property name="conditions" value="NPCinArea#cardinal;VariableLower#TMP_D13_cardinal,1"/>
+   </properties>
+  </object>
+  <object id="211" name="conv off cardinal barrier" type="conversation" gid="21" x="1824" y="64" width="64" height="64">
+   <properties>
+    <property name="conversation" value="paladin_cardinal_spelltable"/>
+    <property name="icon" value="table"/>
+    <property name="name" value="@BOOK"/>
+   </properties>
+  </object>
+  <object id="212" name="cardinal barrier" type="trigger" x="1949.75" y="31.25" width="34.5" height="473">
+   <properties>
+    <property name="actions" value="SetVariable#TMP_D13_cardinal,1;ItemActivate#cardinal_barrier"/>
+    <property name="conditions" value=" NPCinArea#cardinal;VariableLower#TMP_D13_cardinal,1"/>
+   </properties>
+  </object>
+  <object id="213" name="tp k cardinaly 6 int" type="conversation" gid="21" x="1248" y="288" width="64" height="64">
+   <properties>
+    <property name="conversation" value="paladin_tpcardinal_book"/>
+    <property name="icon" value="book"/>
+    <property name="name" value="@BOOK"/>
+   </properties>
+  </object>
+  <object id="215" name="LightBarrier" type="mapitem" gid="21" x="1920" y="1728" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="garden barrier"/>
+   </properties>
+  </object>
+  <object id="216" name="LightBarrier" type="mapitem" gid="21" x="1920" y="1760" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="garden barrier"/>
+   </properties>
+  </object>
+  <object id="217" name="grate" type="mapitem" gid="21" x="1312" y="1024" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="grateE1"/>
+   </properties>
+  </object>
+  <object id="218" name="close grateE trigger" type="trigger" x="1022" y="960" width="34" height="96">
+   <properties>
+    <property name="actions" value="SetVariable#TMP_D13_grateE,1;ItemActivate#grateE1;NPCSpawn#ambush"/>
+    <property name="conditions" value="VariableLower#TMP_D13_grateE,1"/>
+   </properties>
+  </object>
+  <object id="219" name="stair in second floor" type="transition" x="2142.5" y="417.5" width="33.5" height="62.5"/>
+  <object id="220" name="tp from second floor" type="entry" gid="17" x="2176" y="384" width="64" height="64"/>
+  <object id="229" name="grate" type="mapitem" gid="21" x="544" y="1024" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune100;Active#rune101"/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="grateE2"/>
+   </properties>
+  </object>
+  <object id="232" name="second floor" type="transition" x="1793.5" y="1922.5" width="28" height="29.5">
+   <properties>
+    <property name="area_id" value="H5"/>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="233" name="Bed" type="bed" gid="21" x="2016" y="2112" width="64" height="64"/>
+  <object id="234" name="D13_paladinpropovednikroom" type="transition" x="1311.5" y="1856.5" width="32.5" height="31.5">
+   <properties>
+    <property name="area_id" value="D13_paladinpropovednikroom"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="235" name="second floor tp" type="transition" x="77.1667" y="112.833" width="29.5" height="36.5">
+   <properties>
+    <property name="area_id" value="D13_paladinsecondfloor"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="236" name="D13_paladinnastoytelroom" type="transition" x="1312" y="1952" width="32" height="32">
+   <properties>
+    <property name="area_id" value="D13_paladinnastoytelroom"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="237" name="D13_paladinarhiepiscoproom" type="transition" x="1408" y="1952" width="32" height="32">
+   <properties>
+    <property name="area_id" value="D13_paladinarhiepiscoproom"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="243" name="D13_paladinwatherroom (Проект карманного измерения удалён)" type="transition" x="1593.83" y="2042.17" width="29.5" height="30.5">
+   <properties>
+    <property name="area_id" value="D13_paladinwatherroom"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="244" name="D13_paladindungeon" type="transition" x="1312" y="2048" width="29.5" height="28.5">
+   <properties>
+    <property name="area_id" value="D13_paladindungeon"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="245" name="Pristan'" type="entry" gid="17" x="192" y="128" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="65"/>
+   </properties>
+  </object>
+  <object id="248" name="archer" type="spawn" gid="19" x="862.667" y="886.667" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="249" name="archer" type="spawn" gid="19" x="992" y="896" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="250" name="archer" type="spawn" gid="19" x="1184" y="896" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="251" name="archer" type="spawn" gid="19" x="832" y="1152" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="252" name="archer" type="spawn" gid="19" x="992" y="1152" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="253" name="archer" type="spawn" gid="19" x="1184" y="1152" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#false,1"/>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="254" name="inqusitor" type="spawn" gid="19" x="672" y="1312" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_inquisitor"/>
+    <property name="tag" value="Paladin_inquisitor"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="255" name="cleric" type="spawn" gid="19" x="736" y="1600" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="256" name="inqusitor" type="spawn" gid="19" x="1152" y="1600" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_inquisitor"/>
+    <property name="tag" value="Paladin_inquisitor"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="257" name="warrior" type="spawn" gid="19" x="736" y="1504" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="258" name="warrior" type="spawn" gid="19" x="768" y="1504" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="259" name="archer" type="spawn" gid="19" x="1184" y="1472" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="Paladin_ranger"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="260" name="archer" type="spawn" gid="19" x="1152" y="1344" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="Paladin_ranger"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="261" name="warrior" type="spawn" gid="19" x="992" y="1600" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="262" name="cleric" type="spawn" gid="19" x="1184" y="1600" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="263" name="warrior" type="spawn" gid="19" x="800" y="2112" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="264" name="warrior" type="spawn" gid="19" x="832" y="2112" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="265" name="warrior" type="spawn" gid="19" x="448" y="1856" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="266" name="warrior" type="spawn" gid="19" x="448" y="1888" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="267" name="warrior" type="spawn" gid="19" x="608" y="1920" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="268" name="warrior" type="spawn" gid="19" x="608" y="1888" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="269" name="inqusitor" type="spawn" gid="19" x="256" y="1888" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_inquisitor"/>
+    <property name="tag" value="Paladin_inquisitor"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="270" name="archer" type="spawn" gid="19" x="224" y="1888" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="Paladin_ranger"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="271" name="archer" type="spawn" gid="19" x="224" y="1920" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="Paladin_ranger"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="272" name="cleric" type="spawn" gid="19" x="1888" y="2880" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="273" name="warrior" type="spawn" gid="19" x="1920" y="2880" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="274" name="warrior" type="spawn" gid="19" x="1920" y="2656" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="275" name="warrior" type="spawn" gid="19" x="1920" y="2720" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="276" name="warrior" type="spawn" gid="19" x="1952" y="2592" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="277" name="cleric" type="spawn" gid="19" x="1856" y="2816" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="278" name="inqusitor" type="spawn" gid="19" x="1984" y="2848" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_inquisitor"/>
+    <property name="tag" value="Paladin_inquisitor"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="279" name="warrior" type="spawn" gid="19" x="1664" y="2752" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="280" name="warrior" type="spawn" gid="19" x="1504" y="2624" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="281" name="warrior" type="spawn" gid="19" x="1504" y="2688" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="282" name="warrior" type="spawn" gid="19" x="1504" y="2752" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="283" name="warrior" type="spawn" gid="19" x="1504" y="2816" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="284" name="cleric" type="spawn" gid="19" x="1088" y="2432" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="285" name="cleric" type="spawn" gid="19" x="1088" y="2464" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="286" name="cleric" type="spawn" gid="19" x="800" y="2208" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_cleric"/>
+    <property name="tag" value="Paladin_cleric"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="287" name="inqusitor" type="spawn" gid="19" x="1056" y="2464" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_inquisitor"/>
+    <property name="tag" value="Paladin_inquisitor"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="288" name="archer" type="spawn" gid="19" x="800" y="2528" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_ranger"/>
+    <property name="tag" value="Paladin_ranger"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="289" name="warrior" type="spawn" gid="19" x="800" y="2496" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="290" name="Light" type="light" gid="21" x="1696" y="2720" width="64" height="64"/>
+  <object id="291" name="Light" type="light" gid="21" x="1920" y="2816" width="64" height="64"/>
+  <object id="292" name="Light" type="light" gid="21" x="1920" y="2656" width="64" height="64"/>
+  <object id="293" name="Light" type="light" gid="21" x="1536" y="2720" width="64" height="64"/>
+  <object id="295" name="Light" type="light" gid="21" x="864" y="2496" width="64" height="64"/>
+  <object id="296" name="Light" type="light" gid="21" x="1088" y="2528" width="64" height="64"/>
+  <object id="297" name="Light" type="light" gid="21" x="416" y="1888" width="64" height="64"/>
+  <object id="298" name="Light" type="light" gid="21" x="64" y="2144" width="64" height="64"/>
+  <object id="299" name="Light" type="light" gid="21" x="544" y="2176" width="64" height="64"/>
+  <object id="300" name="Light" type="light" gid="21" x="1248" y="192" width="64" height="64"/>
+  <object id="301" name="Light" type="light" gid="21" x="352" y="128" width="64" height="64"/>
+  <object id="302" name="Light" type="light" gid="21" x="2144" y="288" width="64" height="64"/>
+  <object id="303" name="rune 5" type="mapitem" gid="21" x="800" y="768" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_D_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_D_i"/>
+    <property name="tag" value="rune100"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="304" name="lever5" type="mapitem" gid="21" x="832" y="768" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever100"/>
+    <property name="toggle_items" value="rune100"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="305" name="Bed" type="bed" gid="21" x="1280" y="128" width="64" height="64"/>
+  <object id="306" name="unbreack" type="spawn" gid="19" x="448" y="2176" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Unbrekeble"/>
+    <property name="tag" value="Unbrekeble"/>
+    <property name="unique_tag" value="Unbrekeble"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

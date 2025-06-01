@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="72" height="72" tilewidth="64" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="19">
+ <properties>
+  <property name="maxlight" value="70"/>
+  <property name="music" value="virtutes"/>
+  <property name="name" value="Abandoned smuggler hideout"/>
+  <property name="name_ES" value="Guarida abandonada"/>
+ </properties>
+ <tileset firstgid="1" source="dungeon.tsx"/>
+ <tileset firstgid="241" name="dungeon stairs" tilewidth="128" tileheight="128" tilecount="4" columns="4">
+  <image source="dungeon_stairs.png" width="512" height="128"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="245" source="cave.tsx"/>
+ <tileset firstgid="485" source="spawns.tsx"/>
+ <tileset firstgid="493" source="town_objects.tsx"/>
+ <tileset firstgid="573" source="grounds_indoor.tsx"/>
+ <tileset firstgid="733" source="cave2.tsx"/>
+ <layer id="1" name="water" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAvgaEKQb9AFEAAA==
+  </data>
+ </layer>
+ <layer id="2" name="ground" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2ZXY6bQBCEV3MvfowBY5grJCvv5v5nCCj1aTqW/JKHSIPrk0bYGK/U5e7qntmPD2PM/+aS/qx5X8O+8r46reP+XfeOz656bt3XTfeafY1aZyTqMyvuUfoc12VfvXQ4rpNeT3q/aLUn1enIj00a9cqV7xBro9gbPdPq+VkazSGHpvCds9BJl1Z1s4Zc+KmYH9KtCVpmfZb1/hH0mfTcGUCfI56vff1QjDfV2KD6QR9qbw51NevepO9Rc2egV8ybcmcLfoM3rano2Mins66drlvQdJKuZyCrR6HDIP/BY+YQdyNdyJs+eName/Q88q52JukSY8SDOl2Jd5VeF+XMLbxfQm61Qb/aWYKfXBXnL93bQg3dtA4NPqXXFrw4h5ob9Xl3An3IDfwmxnnky0Pa9bpuwWvItSGVeYB+x1xZOxfF1aYyJ/Pb4z+d8moOejz0epFfXbUu0hqvOoNG/O7URpxjWPQwZiCebVKpUXKIfGQWPwPMhOzDYqzU1hg8uglatanMPM8z+HQSfQ6yYv9Of88/9HPygX0GexN0ekgf+iGz9TvQhpq6SI/oUXct+nsT8vBdYMYeUpkHqMe4d816jhmpdujXfYj9Fa3qiD7F/uJLfyOH2rufxKPx4XsqZzzMh8+wZ7+lMkejRex7zJqL3tfsQ+zTN8VD3MwzxMw+H32YjejnfSqzIbVIndXcx/ANZuZR9bIqVrwW/ehN7E85b416xLNFfKpW8FbOfa7BWzjvoYbiGUgOucU+FS05K4rnt7WCp7Bvp2dzXkHuxHNqNJifNCLH0Jc6Y+9SK+xNuyf/5VyafcSg2mNepM6YrdGNmrqG52r2aXoPZ2XkBjMefWpIZRZABzwZLcid4/ufqXg756+18nzmPoacIh/ILbw79nnqk+/zfzRyrqlcn1ewn9hSmXNW5QR+Tn5w3pGDnvg0Z5DvCLoxN+FLcRYgl96dLeQbXsZZWmt9XkK9GWOMMcYYY4wxxhhjjDHGGGOMMcYYY4wxxhhjjPl3fgMZm5q3AFEAAA==
+  </data>
+ </layer>
+ <layer id="3" name="ground2" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3QwQkAIAwAseJf6C66/2yCA/gqKJhMcFwEAAAAAAAAP8l2u+AN3Ycy08uj4Q8AAAAAAAAAAAAAAABsC+K8Qx4AUQAA
+  </data>
+ </layer>
+ <layer id="4" name="objects" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3Y30rDMBTH8VavRfBGfIB16qoMhaHirX82H8BncOsbKHjn+/oCYg9LMJYuTTsL5vT7gbBuSy/OjyRtkiQA8D89p0mSmXZfttOyLcxnZq7P09/3nDn9Fs79WU3f2I3Kep4aarpx8pJ27ek/U5bRSUAtRdnn0/n+UnNP4fw2VpKPjJvHHmqZKMnn7o/rsONqrGSOjXqqQdYgDXNsXtawCqhjGVjrUtkaFLI2d6Uhn77ml5iwBnlpWYOYY3595qPhPajvNSh207KGY0+72qJGDfk0mW6R0RDyEV0z0rSXP9zx/z/kcfRgzneammR026HW2J/zsg97Tdbt3dNPzsm6vA/Enk+bmrucicQ+v9rk03b8rBTsM9ya3wL67jWs5VUzs35dRJrT/u7PteQjz7Ijk8FXum6WvG8ftMzHinWe+caPzcdmtM2ZbKz5yHM7d/YUueddp2m/Vnj+jzWfOm5muXMdup/9MP3c81tN+WxSHWtt9rFDyGeTutyq83TI+fjYvC7JBwAAAAAAAAAAAAAAAAAAAIDHN9JB8wcAUQAA
+  </data>
+ </layer>
+ <layer id="5" name="roofs" width="72" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAvgaEKQb9AFEAAA==
+  </data>
+ </layer>
+ <objectgroup id="6" name="data">
+  <object id="1" name="exit from dungeon" type="entry" gid="485" x="615" y="274" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="2" name="exit to G10" type="transition" x="557" y="175" width="75" height="50">
+   <properties>
+    <property name="area_id" value="G8"/>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="3" name="ghost" type="spawn" gid="487" x="358" y="754" width="64" height="64">
+   <properties>
+    <property name="condition" value="VariableLower#spicing_things_up,50"/>
+    <property name="name" value="@ANGRY_GHOST"/>
+    <property name="spawn" value="vengeful_wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="4" name="Skeleton" type="spawn" gid="487" x="594" y="598" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton"/>
+   </properties>
+  </object>
+  <object id="5" name="Skeleton" type="spawn" gid="487" x="688" y="435" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton"/>
+   </properties>
+  </object>
+  <object id="6" name="Skeleton" type="spawn" gid="487" x="525" y="449" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton"/>
+   </properties>
+  </object>
+  <object id="7" name="Skeleton" type="spawn" gid="487" x="316" y="381" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton"/>
+   </properties>
+  </object>
+  <object id="8" name="Skeleton" type="spawn" gid="487" x="731" y="638" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton"/>
+   </properties>
+  </object>
+  <object id="9" name="Skeleton" type="spawn" gid="487" x="758" y="844" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton"/>
+   </properties>
+  </object>
+  <object id="10" name="Skeleton" type="spawn" gid="487" x="852" y="568" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton"/>
+   </properties>
+  </object>
+  <object id="11" name="Skeleton" type="spawn" gid="487" x="860" y="398" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton"/>
+   </properties>
+  </object>
+  <object id="12" name="Skeleton" type="spawn" gid="487" x="954" y="831" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton"/>
+   </properties>
+  </object>
+  <object id="13" name="Chest" type="container" gid="489" x="349" y="791" width="64" height="64">
+   <properties>
+    <property name="icon" value="corpse1"/>
+    <property name="loot_table" value="quest_f8_spices,dungeon_chest_3"/>
+    <property name="name" value="@CORPSE"/>
+   </properties>
+  </object>
+  <object id="14" name="Secret Door" type="secretdoor" gid="489" x="672" y="832" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="10"/>
+    <property name="minlevel" value="8"/>
+    <property name="secretdoor_tag" value="G8_hideout"/>
+   </properties>
+  </object>
+  <object id="15" name="spikes trap" type="trap" gid="489" x="556" y="805" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="8"/>
+    <property name="minlevel" value="5"/>
+   </properties>
+  </object>
+  <object id="16" name="Skeleton" type="spawn" gid="487" x="1031" y="839" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton"/>
+   </properties>
+  </object>
+  <object id="17" name="Chest" type="container" gid="489" x="982" y="950" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="loot_table" value="bandit_chest_4,bandit_chest_4"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="18" name="gold ore 9" type="conversation" gid="489" x="320" y="864" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_gold_ore9,1"/>
+    <property name="conversation" value="gold_ore9"/>
+    <property name="icon" value="gold"/>
+    <property name="name" value="@GOLD"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

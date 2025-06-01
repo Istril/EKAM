@@ -1,0 +1,11 @@
+index	type	text	text_ES	Go To	conditions	actions
+1	Q	Вы нашли жилу редкой синей стали! (стальная красная кирка)		4	PlayerHasItem#12025	
+1	Q	Вы нашли жилу редкой синей стали! (стальная фиол кирка)		5	PlayerHasItem#12024	
+1	Q	Вы нашли жилу редкой синей стали! (стальная синяя кирка)		6	PlayerHasItem#12023	
+1	Q	Вы нашли жилу редкой синей стали! (стальная кирка)		2	PlayerHasItem#12022	
+1	Q	Вы нашли жилу редкой синей стали, но увы, у вас нет подходящего для добычи инструмента.		3		
+2	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_bluesteel_ore6,1	"SetVariable#TMP_bluesteel_ore6,1;GainItem#12002;GainXP#20"
+3	A	Вернусь позже.		0		
+4	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_bluesteel_ore6,1	"SetVariable#TMP_bluesteel_ore6,1;GainItems#12002,4;GainXP#80"
+5	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_bluesteel_ore6,1	"SetVariable#TMP_bluesteel_ore6,1;GainItem#12002;GainXP#200"
+6	A	Добыть [RED]Обновляется раз в день[].		0	VariableLower#TMP_bluesteel_ore6,1	"SetVariable#TMP_bluesteel_ore6,1;GainItems#12002,2;GainXP#40"

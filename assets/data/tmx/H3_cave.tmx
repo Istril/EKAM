@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="80" height="72" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="116">
+ <properties>
+  <property name="maxlight" value="30"/>
+  <property name="music" value="ashen"/>
+  <property name="norecall" value=""/>
+ </properties>
+ <tileset firstgid="1" name="dungeon stairs" tilewidth="128" tileheight="128" tilecount="4" columns="4">
+  <image source="dungeon_stairs.png" width="512" height="128"/>
+  <tile id="0">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="5" source="dungeon2.tsx"/>
+ <tileset firstgid="245" source="cave.tsx"/>
+ <tileset firstgid="485" source="spawns.tsx"/>
+ <tileset firstgid="493" source="town_objects.tsx"/>
+ <tileset firstgid="573" source="grounds_indoor.tsx"/>
+ <tileset firstgid="733" source="town_objects3.tsx"/>
+ <tileset firstgid="765" source="ruins.tsx"/>
+ <tileset firstgid="829" source="grounds indoor 2.tsx"/>
+ <tileset firstgid="989" source="scifi.tsx"/>
+ <tileset firstgid="1101" source="cave2.tsx"/>
+ <layer id="1" name="nonwalk" width="80" height="72" visible="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3cQQ0AAAgDMfAvFRM8kAAJnzY5AxOwCADgSuUEAAAAAAAAAAAAAAAAAAAAAAAAsOXbbMd+wLcG/EYY9wBaAAA=
+  </data>
+ </layer>
+ <layer id="2" name="water" width="80" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3aQQqAIBQEUC9TUd3/ftHOisKfgUjvwexlQJyFKQF/MbY+QOf2/ubWh+iY/uKmLDv9xS1ZgD7ZL3W8v3X0F/dmv7jnR9H9MqRr7zw797UmuzFKXwAAAAAAAAAAAABQx1/6mKkw3FsKAwAAAAAAfG8DK0nuoQBaAAA=
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="80" height="72">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="80" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3aXQqEIBQG0GgB1bQV2//aapgCGYZ+tAGlc14K7OnrSte0aQAAAAAA6ja2++PTMh4OnoEUL3WVpZMfAH+mB7wuzmySH5XTb+YbZJikX3Pb/ldYOwIAAAAA1OPXHlnIOH8Wn1173z9hD84+bXm8kzRyowRP+G5QJrUH9zKnztODpQvRmjN8XdXgNfK6l3kNAADwMQN/UXXlAFoAAA==
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="80" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3bUQqCQBAAULG/KMs6idX9z5ZB4SKCrFjq9B74oz+7yw47M4tFAQAAAAAQ27VcegQQ31Gcrdp+t/QItu1g/WCzLgHPp3s7p0f7nN5zqwLOEYBtU3/A9+T2XyLmwwAQjf4zAMD6VMldXKrfm6nL7t15pA/TJN9vejZZ6sDr9cv+nXvlYUOx/hF578G/Ec/TuGeC+TTiKcsrd03rprF6i07/zOvXsf75yCePmEYeMR9xCwAAsTwByhxeEQBaAAA=
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="80" height="72">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="80" height="72">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3OQQEAAAQEsNNG/4RS4LMlWAIAAAAAAAAAAAAAAAAAAAAAAAAAAGzr+h4AcGkAC4A/aABaAAA=
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="1" name="exit to G10" type="transition" x="963" y="2156" width="52" height="64">
+   <properties>
+    <property name="area_id" value="H3"/>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="2" name="exit from dungeon" type="entry" gid="485" x="1092" y="2206" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="3" name="exit from dungeon" type="entry" gid="485" x="2378" y="295" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="4" name="exit to G10" type="transition" x="2260" y="150" width="52" height="64">
+   <properties>
+    <property name="area_id" value="H3"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="5" name="barrier" type="mapitem" gid="489" x="1504" y="512" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="barrier_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#lever1;Inactive#lever2;Active#lever3;Inactive#lever4;Inactive#lever5;Active#lever6;Inactive#lever7;Inactive#lever8;Inactive#lever9"/>
+    <property name="tag" value="barrier1"/>
+   </properties>
+  </object>
+  <object id="6" name="rune 2" type="mapitem" gid="489" x="1248" y="672" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_A_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_A_i"/>
+    <property name="tag" value="runes1"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="7" name="lever" type="mapitem" gid="489" x="1280" y="672" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever1"/>
+    <property name="toggle_items" value="runes1"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="8" name="rune 2" type="mapitem" gid="489" x="1632" y="672" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_A_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_A_i"/>
+    <property name="tag" value="runes2"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="9" name="lever" type="mapitem" gid="489" x="1664" y="672" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever2"/>
+    <property name="toggle_items" value="runes2"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="10" name="lever" type="mapitem" gid="489" x="2048" y="672" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever3"/>
+    <property name="toggle_items" value="runes3"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="11" name="rune 2" type="mapitem" gid="489" x="2016" y="672" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_A_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_A_i"/>
+    <property name="tag" value="runes3"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="12" name="Secret Door" type="secretdoor" gid="489" x="1344" y="800" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="21"/>
+    <property name="minlevel" value="21"/>
+    <property name="secretdoor_tag" value="H3_cave_1"/>
+   </properties>
+  </object>
+  <object id="13" name="Secret Door" type="secretdoor" gid="489" x="1728" y="800" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="21"/>
+    <property name="minlevel" value="21"/>
+    <property name="secretdoor_tag" value="H3_cave_2"/>
+   </properties>
+  </object>
+  <object id="14" name="Secret Door" type="secretdoor" gid="489" x="2112" y="800" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="21"/>
+    <property name="minlevel" value="21"/>
+    <property name="secretdoor_tag" value="H3_cave_3"/>
+   </properties>
+  </object>
+  <object id="15" name="Secret Door" type="secretdoor" gid="489" x="1344" y="1088" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="21"/>
+    <property name="minlevel" value="21"/>
+    <property name="secretdoor_tag" value="H3_cave_4"/>
+   </properties>
+  </object>
+  <object id="16" name="rune 2" type="mapitem" gid="489" x="1248" y="960" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_A_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_A_i"/>
+    <property name="tag" value="runes4"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="17" name="lever" type="mapitem" gid="489" x="1280" y="960" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever4"/>
+    <property name="toggle_items" value="runes4"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="18" name="lever" type="mapitem" gid="489" x="1664" y="960" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever5"/>
+    <property name="toggle_items" value="runes5"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="19" name="Secret Door" type="secretdoor" gid="489" x="1728" y="1088" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="21"/>
+    <property name="minlevel" value="21"/>
+    <property name="secretdoor_tag" value="H3_cave_5"/>
+   </properties>
+  </object>
+  <object id="20" name="rune 2" type="mapitem" gid="489" x="1632" y="960" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_A_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_A_i"/>
+    <property name="tag" value="runes5"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="21" name="lever" type="mapitem" gid="489" x="2048" y="960" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever6"/>
+    <property name="toggle_items" value="runes6"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="22" name="Secret Door" type="secretdoor" gid="489" x="2112" y="1088" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="21"/>
+    <property name="minlevel" value="21"/>
+    <property name="secretdoor_tag" value="H3_cave_6"/>
+   </properties>
+  </object>
+  <object id="23" name="rune 2" type="mapitem" gid="489" x="2016" y="960" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_A_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_A_i"/>
+    <property name="tag" value="runes6"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="24" name="lever" type="mapitem" gid="489" x="1280" y="1248" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever7"/>
+    <property name="toggle_items" value="runes7"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="25" name="Secret Door" type="secretdoor" gid="489" x="1344" y="1376" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="21"/>
+    <property name="minlevel" value="21"/>
+    <property name="secretdoor_tag" value="H3_cave_7"/>
+   </properties>
+  </object>
+  <object id="26" name="rune 2" type="mapitem" gid="489" x="1248" y="1248" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_A_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_A_i"/>
+    <property name="tag" value="runes7"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="27" name="rune 2" type="mapitem" gid="489" x="1632" y="1248" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_A_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_A_i"/>
+    <property name="tag" value="runes8"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="28" name="lever" type="mapitem" gid="489" x="1664" y="1248" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever8"/>
+    <property name="toggle_items" value="runes8"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="29" name="Secret Door" type="secretdoor" gid="489" x="1728" y="1376" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="21"/>
+    <property name="minlevel" value="21"/>
+    <property name="secretdoor_tag" value="H3_cave_8"/>
+   </properties>
+  </object>
+  <object id="30" name="lever" type="mapitem" gid="489" x="2048" y="1248" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever9"/>
+    <property name="toggle_items" value="runes9"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="31" name="Secret Door" type="secretdoor" gid="489" x="2112" y="1376" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="21"/>
+    <property name="minlevel" value="21"/>
+    <property name="secretdoor_tag" value="H3_cave_9"/>
+   </properties>
+  </object>
+  <object id="32" name="rune 2" type="mapitem" gid="489" x="2016" y="1248" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_A_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_A_i"/>
+    <property name="tag" value="runes9"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="33" name="Secret Door" type="secretdoor" gid="489" x="2336" y="1728" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="22"/>
+    <property name="minlevel" value="22"/>
+    <property name="secretdoor_tag" value="H3_cave_10"/>
+   </properties>
+  </object>
+  <object id="34" name="barrier" type="mapitem" gid="489" x="1536" y="512" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="barrier_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#lever1;Inactive#lever2;Active#lever3;Inactive#lever4;Inactive#lever5;Active#lever6;Inactive#lever7;Inactive#lever8;Inactive#lever9"/>
+    <property name="tag" value="barrier1"/>
+   </properties>
+  </object>
+  <object id="35" name="barrier" type="mapitem" gid="489" x="640" y="128" width="64" height="64">
+   <properties>
+    <property name="active" value="VariableLower#mino_defeated,1"/>
+    <property name="active_sprite" value="barrier_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions" value="VariableLower#mino_defeated,1"/>
+    <property name="tag" value="barrier_stones"/>
+   </properties>
+  </object>
+  <object id="36" name="barrier" type="mapitem" gid="489" x="640" y="160" width="64" height="64">
+   <properties>
+    <property name="active" value="VariableLower#mino_defeated,1"/>
+    <property name="active_sprite" value="barrier_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions" value="VariableLower#mino_defeated,1"/>
+    <property name="tag" value="barrier_stones"/>
+   </properties>
+  </object>
+  <object id="37" name="barrier" type="mapitem" gid="489" x="640" y="192" width="64" height="64">
+   <properties>
+    <property name="active" value="VariableLower#mino_defeated,1"/>
+    <property name="active_sprite" value="barrier_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions" value="VariableLower#mino_defeated,1"/>
+    <property name="tag" value="barrier_stones"/>
+   </properties>
+  </object>
+  <object id="38" name="barrier" type="mapitem" gid="489" x="640" y="352" width="64" height="64">
+   <properties>
+    <property name="active" value="VariableLower#mino_defeated,1"/>
+    <property name="active_sprite" value="barrier_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions" value="VariableLower#mino_defeated,1"/>
+    <property name="tag" value="barrier_stones"/>
+   </properties>
+  </object>
+  <object id="39" name="barrier" type="mapitem" gid="489" x="640" y="384" width="64" height="64">
+   <properties>
+    <property name="active" value="VariableLower#mino_defeated,1"/>
+    <property name="active_sprite" value="barrier_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions" value="VariableLower#mino_defeated,1"/>
+    <property name="tag" value="barrier_stones"/>
+   </properties>
+  </object>
+  <object id="40" name="barrier" type="mapitem" gid="489" x="640" y="416" width="64" height="64">
+   <properties>
+    <property name="active" value="VariableLower#mino_defeated,1"/>
+    <property name="active_sprite" value="barrier_blue"/>
+    <property name="barrier" value=""/>
+    <property name="conditions" value="VariableLower#mino_defeated,1"/>
+    <property name="tag" value="barrier_stones"/>
+   </properties>
+  </object>
+  <object id="41" name="Oracle" type="spawn" gid="487" x="1319" y="1552" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="42" name="Secret Door" type="secretdoor" gid="489" x="512" y="1536" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="22"/>
+    <property name="minlevel" value="22"/>
+    <property name="secretdoor_tag" value="H3_cave_11"/>
+   </properties>
+  </object>
+  <object id="43" name="Chest" type="container" gid="489" x="218" y="2073" width="64" height="64">
+   <properties>
+    <property name="icon" value="crate2"/>
+    <property name="items" value="259,5070,5070,2625"/>
+    <property name="name" value="@CRATE"/>
+    <property name="unique_tag" value="H3_cave_crate"/>
+   </properties>
+  </object>
+  <object id="44" name="Warrior" type="spawn" gid="487" x="1291" y="1639" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="45" name="Warrior" type="spawn" gid="487" x="1264" y="1941" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="46" name="Warrior" type="spawn" gid="487" x="1165" y="1382" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="47" name="Warrior" type="spawn" gid="487" x="816" y="1379" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="48" name="Oracle" type="spawn" gid="487" x="640" y="1659" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="49" name="Oracle" type="spawn" gid="487" x="715" y="2055" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="50" name="Warrior" type="spawn" gid="487" x="773" y="2057" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="51" name="Oracle" type="spawn" gid="487" x="291" y="2163" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="52" name="Lord" type="spawn" gid="487" x="331" y="1432" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen_warlord"/>
+   </properties>
+  </object>
+  <object id="53" name="Oracle" type="spawn" gid="487" x="316" y="1545" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="54" name="Warrior" type="spawn" gid="487" x="320" y="872" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="55" name="Warrior" type="spawn" gid="487" x="269" y="987" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="56" name="Warrior" type="spawn" gid="487" x="746" y="1017" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="57" name="Oracle" type="spawn" gid="487" x="759" y="958" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="58" name="Warrior" type="spawn" gid="487" x="1502" y="1354" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="59" name="Warrior" type="spawn" gid="487" x="1477" y="1086" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="60" name="Warrior" type="spawn" gid="487" x="1118" y="930" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="61" name="Warrior" type="spawn" gid="487" x="1864" y="883" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="62" name="Warrior" type="spawn" gid="487" x="2249" y="1149" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="63" name="Warrior" type="spawn" gid="487" x="2226" y="561" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="64" name="Oracle" type="spawn" gid="487" x="1457" y="1143" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="65" name="Oracle" type="spawn" gid="487" x="1861" y="1109" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="66" name="Oracle" type="spawn" gid="487" x="1477" y="646" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="67" name="Oracle" type="spawn" gid="487" x="2131" y="1603" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="68" name="Warrior" type="spawn" gid="487" x="2186" y="1755" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="69" name="Warrior" type="spawn" gid="487" x="1854" y="1658" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="70" name="Oracle" type="spawn" gid="487" x="1809" y="1612" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="71" name="Warrior" type="spawn" gid="487" x="1587" y="1547" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="72" name="Warrior" type="spawn" gid="487" x="1948" y="2023" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="73" name="Oracle" type="spawn" gid="487" x="2215" y="1598" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="74" name="Warrior" type="spawn" gid="487" x="2423" y="1705" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="75" name="King" type="spawn" gid="487" x="789" y="240" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_underking"/>
+    <property name="unique_tag" value="mino_underking"/>
+   </properties>
+  </object>
+  <object id="76" name="Oracle" type="spawn" gid="487" x="876" y="283" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="77" name="Warrior" type="spawn" gid="487" x="1541" y="225" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="78" name="Chest" type="container" gid="489" x="149" y="915" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="loot_table" value="ashen_chest_18"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="79" name="Chest" type="container" gid="489" x="2391" y="1651" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="loot_table" value="ashen_chest_18"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="80" name="Chest" type="container" gid="489" x="1463" y="1652" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="loot_table" value="ashen_chest_18"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="81" name="Chest" type="container" gid="489" x="236" y="1524" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="loot_table" value="ashen_chest_18"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="82" name="Warrior" type="spawn" gid="487" x="1139" y="573" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="83" name="exit to G10" type="transition" x="1467" y="107" width="44" height="37">
+   <properties>
+    <property name="area_id" value="H3_cave"/>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+  <object id="84" name="exit from dungeon" type="entry" gid="485" x="1914" y="1659" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+  <object id="85" name="spikes trap" type="trap" gid="489" x="1152" y="1088" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="20"/>
+    <property name="minlevel" value="20"/>
+   </properties>
+  </object>
+  <object id="86" name="spikes trap" type="trap" gid="489" x="2144" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="23"/>
+    <property name="minlevel" value="23"/>
+   </properties>
+  </object>
+  <object id="87" name="spikes trap" type="trap" gid="489" x="2208" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="23"/>
+    <property name="minlevel" value="23"/>
+   </properties>
+  </object>
+  <object id="88" name="spikes trap" type="trap" gid="489" x="2240" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="23"/>
+    <property name="minlevel" value="23"/>
+   </properties>
+  </object>
+  <object id="89" name="spikes trap" type="trap" gid="489" x="2176" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="23"/>
+    <property name="minlevel" value="23"/>
+   </properties>
+  </object>
+  <object id="90" name="spikes trap" type="trap" gid="489" x="2112" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="23"/>
+    <property name="minlevel" value="23"/>
+   </properties>
+  </object>
+  <object id="91" name="spikes trap" type="trap" gid="489" x="1577" y="1580" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="23"/>
+    <property name="minlevel" value="23"/>
+   </properties>
+  </object>
+  <object id="92" name="spikes trap" type="trap" gid="489" x="1505" y="317" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="25"/>
+    <property name="minlevel" value="25"/>
+   </properties>
+  </object>
+  <object id="93" name="Oracle" type="spawn" gid="487" x="1847" y="841" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="94" name="Oracle" type="spawn" gid="487" x="2255" y="361" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_oracle_ashen"/>
+   </properties>
+  </object>
+  <object id="95" name="exit from dungeon" type="entry" gid="485" x="378" y="134" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="4"/>
+   </properties>
+  </object>
+  <object id="96" name="exit from dungeon" type="entry" gid="485" x="379" y="354" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="5"/>
+   </properties>
+  </object>
+  <object id="97" name="conv" type="conversation" gid="489" x="345" y="152" width="64" height="64">
+   <properties>
+    <property name="conversation" value="H3_stone"/>
+    <property name="icon" value="monolith"/>
+    <property name="name" value="@MONOLITH"/>
+   </properties>
+  </object>
+  <object id="98" name="Warrior" type="spawn" gid="487" x="330" y="2145" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen"/>
+   </properties>
+  </object>
+  <object id="99" name="Lord" type="spawn" gid="487" x="1558" y="1700" width="64" height="64">
+   <properties>
+    <property name="spawn" value="minotaur_ashen_warlord"/>
+   </properties>
+  </object>
+  <object id="100" name="spikes trap" type="trap" gid="489" x="1184" y="1088" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="20"/>
+    <property name="minlevel" value="20"/>
+   </properties>
+  </object>
+  <object id="101" name="spikes trap" type="trap" gid="489" x="2240" y="992" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="20"/>
+    <property name="minlevel" value="20"/>
+   </properties>
+  </object>
+  <object id="102" name="spikes trap" type="trap" gid="489" x="2272" y="992" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="20"/>
+    <property name="minlevel" value="20"/>
+   </properties>
+  </object>
+  <object id="103" name="spikes trap" type="trap" gid="489" x="2240" y="704" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="20"/>
+    <property name="minlevel" value="20"/>
+   </properties>
+  </object>
+  <object id="104" name="spikes trap" type="trap" gid="489" x="2272" y="704" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="20"/>
+    <property name="minlevel" value="20"/>
+   </properties>
+  </object>
+  <object id="105" name="conv" type="conversation" gid="489" x="345" y="379" width="64" height="64">
+   <properties>
+    <property name="conversation" value="H3_stone2"/>
+    <property name="icon" value="monolith"/>
+    <property name="name" value="@MONOLITH"/>
+   </properties>
+  </object>
+  <object id="106" name="Secret Door" type="secretdoor" gid="489" x="608" y="2112" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="22"/>
+    <property name="minlevel" value="22"/>
+    <property name="secretdoor_tag" value="H3_cave_depot"/>
+   </properties>
+  </object>
+  <object id="107" name="Chest" type="container" gid="489" x="704" y="2112" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="loot_table" value="ashen_chest_18"/>
+    <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="108" name="iron ore 30" type="conversation" gid="489" x="341" y="1915" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore30,1"/>
+    <property name="conversation" value="iron_ore30"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="109" name="iron ore 31" type="conversation" gid="489" x="625.5" y="924.5" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_iron_ore31,1"/>
+    <property name="conversation" value="iron_ore31"/>
+    <property name="icon" value="iron"/>
+    <property name="name" value="@IRON"/>
+   </properties>
+  </object>
+  <object id="110" name="coal ore 24" type="conversation" gid="489" x="117.25" y="977.75" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore24,1"/>
+    <property name="conversation" value="coal_ore24"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+  <object id="111" name="coal ore 25" type="conversation" gid="489" x="600.25" y="1407.75" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_coal_ore25,1"/>
+    <property name="conversation" value="coal_ore25"/>
+    <property name="icon" value="coal"/>
+    <property name="name" value="@COAL"/>
+   </properties>
+  </object>
+  <object id="112" name="silver ore 13" type="conversation" gid="489" x="1202" y="1816" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_silver_ore13,1"/>
+    <property name="conversation" value="silver_ore13"/>
+    <property name="icon" value="silver"/>
+    <property name="name" value="@SILVER"/>
+   </properties>
+  </object>
+  <object id="113" name="starmetal ore 7" type="conversation" gid="489" x="1852.83" y="1955.17" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_starmetal_ore7,1"/>
+    <property name="conversation" value="starmetall_ore7"/>
+    <property name="icon" value="starmetal"/>
+    <property name="name" value="@STARMETAL"/>
+   </properties>
+  </object>
+  <object id="114" name="starmetal ore 8" type="conversation" gid="489" x="285.667" y="771.667" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_starmetal_ore8,1"/>
+    <property name="conversation" value="starmetall_ore8"/>
+    <property name="icon" value="starmetal"/>
+    <property name="name" value="@STARMETAL"/>
+   </properties>
+  </object>
+  <object id="115" name="starmetal ore 9" type="conversation" gid="489" x="2212.25" y="214.75" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableLower#TMP_starmetal_ore9,1"/>
+    <property name="conversation" value="starmetall_ore9"/>
+    <property name="icon" value="starmetal"/>
+    <property name="name" value="@STARMETAL"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
