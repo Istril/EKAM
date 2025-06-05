@@ -672,17 +672,17 @@
 
     if-ne v3, v5, :cond_1
 
-    add-int/lit8 v2, v2, 0x1
+    add-int/lit8 v2, v2, 0x2
 
     :cond_1
     if-ne v3, v8, :cond_2
 
-    add-int/lit8 v2, v2, 0x3
+    add-int/lit8 v2, v2, 0x4
 
     :cond_2
     if-ne v3, v4, :cond_3
 
-    add-int/lit8 v2, v2, 0x5
+    add-int/lit8 v2, v2, 0x8
 
     :cond_3
     const-string v3, "giant"

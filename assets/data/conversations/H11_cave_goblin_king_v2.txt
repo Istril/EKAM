@@ -1,0 +1,3 @@
+index	type	text	text_ES	Go To	conditions	actions	requisites
+1	Q	Почти павший король вдруг медленно поднимает голову, и, спустя мгновение, его секира вспыхивает неудержимым пламенем.		2			
+2	A	[BLUE]Далее[].		0		"NPCSpawn#goblin_king_v2	

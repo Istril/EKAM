@@ -1377,14 +1377,6 @@
     <property name="name" value="@DOOR"/>
    </properties>
   </object>
-  <object id="97" name="ore" type="conversation" gid="21" x="1859" y="773" width="64" height="64">
-   <properties>
-    <property name="conditions" value="VariableLower#TMP_wood_ore17,1"/>
-    <property name="conversation" value="wood_ore17"/>
-    <property name="icon" value="tree"/>
-    <property name="name" value="Дерево"/>
-   </properties>
-  </object>
   <object id="98" name="ore" type="conversation" gid="21" x="2601.33" y="1334.67" width="64" height="64">
    <properties>
     <property name="conditions" value="VariableLower#TMP_wood_ore19,1"/>

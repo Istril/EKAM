@@ -136,8 +136,8 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 252	Ashen Leggings	armor_legs		5	0,0,11,0,0,4			13000	armor_plate_legs_black	13	5												W,C	
 253	Ashen Boots	armor_feet		4	0,0,9,0,0,5		[stability]	6000	armor_plate_feet_black	8	4												W,C	
 254	Ashen Helm	armor_head		4	0,0,10,0,0,10		[wisdom,1]	6000	armor_plate_head_black	9	5						plate2						W,C	
-255	Laminated Vest	armor_chest		7	10,0,20,0,0,0		[stability]	4600	vest3	16	0						platesl						W	
-256	Kevlar Vest	armor_chest		6	10,0,20,0,0,0			3000	vest2	12	0						mailb						W,R,C	
+255	Laminated Vest	armor_chest		7	10,0,20,0,0,0		[stability]	4600	vest3	16	0						plate						W	
+256	Kevlar Vest	armor_chest		6	10,0,20,0,0,0			3000	vest2	12	0						mail						W,R,C	
 257	Conductive Vest	armor_chest		7	0,0,20,0,0,10		[stunimmunity]	3000	vest1	10	30						plate						C	
 258	Goggled Helmet	armor_head		3	0,0,0,9,9,0	0,0,0,0,2,0	[detection,2][rad]	2000	helm1	0	0						chain							
 259	Strange Hood	armor_head		2			[rad]	2000	hood_rad	0	0						hood							
@@ -256,8 +256,8 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 505	Iron Mace	WEAPON	iron_mace	0				50	weapon_mace1	0	0						mace						W,C	
 506	Iron Hammer	WEAPON	iron_hammer	0				40	hammer3	0	0						hammer						W,C	
 507	Iron Maul	WEAPON	iron_maul	0				80	maul3	0	0						maul						W,C	
-508	Iron Axe	WEAPON	iron_axe	0				33	axe3	0	0						axe3						W,R	
-509	Iron Greataxe	WEAPON	iron_greataxe	0				55	battleaxe3	0	0						battleaxe1						W	
+508	Iron Axe	WEAPON	iron_axe	0				33	axe3	0	0						axe						W,R	
+509	Iron Greataxe	WEAPON	iron_greataxe	0				55	battleaxe3	0	0						battleaxe						W	
 521	Steel Dagger	WEAPON	steel_dagger	0				250	weapon_dagger1	0	0						dagger							
 522	Steel Shortsword	WEAPON	steel_shortsword	0				350	weapon_shortsword1	0	0						shortsword						W,R	
 523	Steel Longsword	WEAPON	steel_longsword	0				500	weapon_longsword1	0	0						longsword						W,R	
@@ -440,7 +440,7 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 2014	Sapphire	general		0				700	gem_sapphire2	0	0													1
 2015	Pearl	general		0				1100	pearl	0	0													1
 2016	Purple Diamond	general		0				25000	purple_diamond	0	0													1
-2100	Blue Orchid	POTION		0				10	flower_blue	0	0									GainMana#2				1
+2100	Blue Orchid	POTION		0				10	flower_blue	0	0									GainMana#2			C,M	1
 2101	Red Orchid	POTION		0				10	flower_red	0	0									GainHP#2				1
 2102	Luminescent Fungus	general		0				50	fungus_blue	0	0													1
 2103	Deadweed	general		0				30	deadweed	0	0													1
