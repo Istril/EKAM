@@ -617,7 +617,7 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 4503	Greater Tiara of the Heavens	armor_head		2	0,0,25,0,0,0	0,0,0,2,0,0	[detection,2]	9999	crown1	15	0													
 5000	Potion of Light Healing	POTION		0				10	potion_red	0	0									"GainHP#30"				1
 5001	Potion of Moderate Healing	POTION		0				250	potion_red2	0	0									GainHP#60				1
-5002	Potion of Lesser Shielding	POTION		0				100	potion_yellow	0	0									"GainShield#6,12;TrainSkill#spiritualism"				1
+5002	Potion of Lesser Shielding	POTION		0				100	potion_yellow	0	0									GainShield#6,12				1
 5003	Potion of Shielding	POTION		0				200	potion_yellow	0	0									GainShield#10,12				1
 5004	Potion of Ogre Might	POTION		0				120	potion_green	0	0									GainMight#3,20				1
 5005	Potion of Giant Strength	POTION		0				250	potion_green	0	0									GainMight#6,20				1

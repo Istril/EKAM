@@ -2425,7 +2425,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_mn
+    if-eqz v0, :cond_war_spirit
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -2441,7 +2441,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_mn
+    if-eqz v0, :cond_war_spirit
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -2451,10 +2451,10 @@
 
     invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
 
-    :cond_mn
+    :cond_war_spirit
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
-    const-string v1, "master_necromancer"
+    const-string v1, "war_spirit"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2470,7 +2470,7 @@
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
-    const-string v1, "master_necromancer"
+    const-string v1, "war_spirit"
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
 
@@ -2482,7 +2482,7 @@
 
     move-result-object v0
 
-    const-string v1, "master_necromancer"
+    const-string v1, "war_spirit"
 
     invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
 
@@ -2862,7 +2862,7 @@
 
     if-nez v1, :cond_3
 
-    const-string v1, "master_necromancer"
+    const-string v1, "war_spirit"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

@@ -1570,7 +1570,7 @@
     :cond_6
     sget-object v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;->d:Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;
 
-    if-ne p1, v2, :cond_0
+    if-ne p1, v2, :cond_7
 
     iget-object v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
@@ -1581,6 +1581,21 @@
     move-result v2
 
     mul-int/lit8 v2, v2, 0xc
+
+    add-int/2addr v0, v2
+
+    add-int/2addr v0, v1
+
+    :cond_7
+    iget-object v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v3, "spirit_protection"
+
+    invoke-virtual {v2, v3}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v2
+
+    mul-int/lit8 v2, v2, 0xa
 
     add-int/2addr v0, v2
 

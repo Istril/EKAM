@@ -624,3 +624,17 @@ master_necromancer
   orig: 64, 64
   offset: 0, 0
   index: -1
+war_spirit
+  rotate: false
+  xy: 199, 1
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+spirit_protection
+  rotate: false
+  xy: 265, 1
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

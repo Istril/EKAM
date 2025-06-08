@@ -453,3 +453,6 @@ greatsword_wights	flash_and_bones	6	11	4	200	8	1	1							5	t
 bluesteel_longsword_gorxv2	Blue steel longsword	5	10	6	200	10	1								4	f				
 Gaxe_fire	greataxe_fire4	5	13	6	200	9	1	1							4	f				
 fabskeleton2_Gsword	fabgs	2	8	6	200	9	1	1							8	t				
+spiritw_sword	spwsword	2	6	6	200	12	1							p						
+spiritw_berserk_sword	spwsword	4	8	8	200	16	1							p						
+spiritw_legattwoh_sword	spwsword	5	10	8	200	6	1	1						p	7	s				

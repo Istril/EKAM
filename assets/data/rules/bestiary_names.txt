@@ -452,3 +452,6 @@ maln_spirit2			Призванное существо
 maln_spirit3			Призванное существо							
 Maln			Мальн							
 mortification1			Умертвие							
+spirit_legioner			Дух легионера							
+spirit_berserker			Дух берсерка							
+spirit_legate			Дух легата							

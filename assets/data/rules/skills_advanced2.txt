@@ -41,11 +41,11 @@ flash_and_bones	A	N	M	N	You are capable of summoning an elemental from the Plane
 					Summon a level 7 Earth Elemental	1	40	20				Convoca a un elemental de Tierra de nivel 8
 					Summon a level 10 Earth Elemental	1	60	40				Convoca a un elemental de Tierra de nivel 11
 					Summon a level 13 Iron Golem	4	100	80				Convoca a un Gólem de Hierro de nivel 15
-master_necromancer	P	N	M	N	You are capable of summoning an elemental from the Plane of Earth for 3 minutes. You can only keep one summoned creature at the same time and its level can never go above yours.						Maestría de la Tierra	Puedes convocar un elemental del Plano de la Tierra durante 3 minutos. Sólo puedes mantener una criatura convocada a la vez y su nivel no puede superar el tuyo.
-					Summon a level 7 Earth Elemental	1						Convoca a un elemental de Tierra de nivel 8
-					Summon a level 10 Earth Elemental	1						Convoca a un elemental de Tierra de nivel 11
-					Summon a level 13 Iron Golem	1						Convoca a un Gólem de Hierro de nivel 15
 war_spirit	A	N	M	N	You are capable of summoning an elemental from the Plane of Earth for 3 minutes. You can only keep one summoned creature at the same time and its level can never go above yours.				lesser_summoning#2	PER#4	Maestría de la Tierra	Puedes convocar un elemental del Plano de la Tierra durante 3 minutos. Sólo puedes mantener una criatura convocada a la vez y su nivel no puede superar el tuyo.
 					Summon a level 7 Earth Elemental	1	40	30				Convoca a un elemental de Tierra de nivel 8
 					Summon a level 10 Earth Elemental	2	40	40				Convoca a un elemental de Tierra de nivel 11
-					Summon a level 13 Iron Golem	4	60	60				Convoca a un Gólem de Hierro de nivel 15
+					Summon a level 13 Iron Golem	4	100	60				Convoca a un Gólem de Hierro de nivel 15
+spirit_protection	P	N		N	You can endure death magic thanks to your training. Gain a permanent bonus to Death resistance, which stacks with other bonuses.					END#2	Barrera: Muerte	Puedes resistir daño de muerte gracias a tu entrenamiento. Gana una bonificación a tu resistencia a Muerte, que se acumula con otros bonos.
+					Gain +12 to resist death	1						Gana +12 a resistir muerte
+					Gain +24 to resist death	1						Gana +24 a resistir muerte
+					Gain +36 to resist death	1						Gana +36 a resistir muerte
