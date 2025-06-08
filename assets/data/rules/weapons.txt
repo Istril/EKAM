@@ -150,7 +150,7 @@ adamantite_greatsword		14	24	4	200	9	1	1
 tech_sword		11	17	6	200	10	1								8	s	emp	20	2	
 tech_maul		12	22	4	200	8	1	1							10	s	emp	25	3	
 tech_dagger		7	13	6	200	12	1			1					6	s	emp	15	1	
-tech_bow		3	7	5	200	15	7	1	1				ion		6	s	emp	15	1	
+tech_bow		3	7	5	200	15	7	1	1				arrow1		6	s	emp	15	1	
 maul_corrosion	Maul corrosion	7	15	3	200	8	1	1							4	t				
 maul_disease	Maul disease	7	15	3	200	8	1	1							5	t	slow	6	3	
 maul_fire	Fire Maul	6	14	3	200	8	1	1							2	f				
@@ -383,7 +383,7 @@ frost_bow+	Frost Bow	5	8	5	200	11	7	1	1				arrow1		2	c
 death_bow2+	Skeletal Bow	6	11	6	200	11	7	1	1				arrow1		4	d				
 vulcan_bow+	Vulcan bow	5	8	6	200	11	7	1	1				arrow1		2	f				
 poison_bow_tier2+	Poison Bow_tier2	6	11	5	200	10	7	1	1				arrow1		4	t				
-tech_bow+		7	12	5	200	15	7	1	1				ion		6	s	emp	15	1	
+tech_bow+		7	12	5	200	15	7	1	1				arrow1		6	s	emp	15	1	
 epic_short_bow_fire+	Imperial Scout bow	3	7	5	200	15	7	1	1				arrow1		2	f				
 frost_bow2+	Frost Bow	6	10	5	200	11	7	1	1				arrow1		4	c				
 death_bow3+	Ghost Eye	7	13	5	200	10	7	1	1				arrow1		6	d				
@@ -431,8 +431,6 @@ kassian lsword	kassian longsword v1	7	12	7	180	10	1							s	2	p
 wood_axe	Iron Axe	2	12	7	200	10	1													
 light_spirit	lightning	1	1	7	200	10	1							s						
 light_spirit_strong	lightning	4	7	7	200	10	8		1				arrow1	s						
-red_spirit	lightning	1	1	7	200	10	1													
-red_spirit_strong	lightning	7	7	7	200	10	8		1				arrow1							
 maln_spirit1	spirit_maul	10	18	5	220	8	1	1									stun	13	3	
 longsword_spirit2	spirit_lsword	8	15	11	250	14	1								12	p				
 longsword_spirit3	spirit_lsword	3	5	4	350	21	1								12	p				
@@ -451,6 +449,7 @@ assasin_crossbow	samostrel1	9	18	18	150	11	8	1	1				arrow1
 executioner_crossbow	crossbow10	320	320	1	100	1	8	1	1				arrow1							
 iltera_shard	samostrel2	9	15	18	140	13	8	1	1				arrow1		3	d				
 valhella_shard	samostrel3	7	17	18	160	13	8	1	1				arrow1		3	f				
-greatsword_wights	flash_and_bones	6	11	4	200	8	1	1												
+greatsword_wights	flash_and_bones	6	11	4	200	8	1	1							5	t				
 bluesteel_longsword_gorxv2	Blue steel longsword	5	10	6	200	10	1								4	f				
 Gaxe_fire	greataxe_fire4	5	13	6	200	9	1	1							4	f				
+fabskeleton2_Gsword	fabgs	2	8	6	200	9	1	1							8	t				

@@ -443,11 +443,15 @@ white_wolf1	miniboss	warrior	8	15	icewolf_bite	2	"""-25,280,0,0,0,0"""	1.2	[beas
 dire_wolf1	strong	warrior	6	12	wolf_bite	0	-25,25,0,0,0,0	1.2	[beast]	grey_wolf	wolf	0.85		patroller	beasts	M	0			"wolf1;wolf2;wolf4;wolf5;wolf6;wolf11;wolf12;wolf13"		
 spirit_wolf1	strong	warrior	13	18	spiritwolf_bite	4	150,150,150,0,0,0	1.2	[beast]		coyote	1		patroller	enemy	M	0			"wolf1;wolf2;wolf4;wolf5;wolf6;wolf11;wolf12;wolf13"		
 Eger_tutor	strong	rogue	8	15	long_bow	15		1			male_archer	1		patroller	player	M	109				
-small_blue_spirit	weak	warrior	3	3	light_spirit	2	0,0,100,0,0,50	1	[outsider]		"spirit;composite/male_mainhand_staff"	.5		patroller	enemy	M	0		GainMana#15		
-small_blue_spirit1	weak	warrior	5	5	light_spirit	2	0,0,100,0,0,70	1	[outsider]		"spirit;composite/male_mainhand_staff"	.5		patroller	enemy	M	0		"GainMana#20;GainHP#20"		
-blue_spirit		warrior	12	12	light_spirit_strong	8	0,0,300,0,0,150	1	[outsider][shock_elemental]		"spirit;composite/male_mainhand_staff"	1		patroller	enemy	M	0		"GainMana#250;GainHP#300"		
+small_blue_spirit	weak	warrior	3	3	light_spirit	2	-250,200,-250,250,250,50	1	[outsider]		"spirit;composite/male_mainhand_staff"	.5		patroller	enemy	M	0		GainMana#15		
+small_blue_spirit1	weak	warrior	5	5	light_spirit	2	-250,200,-250,250,250,70	1	[outsider]		"spirit;composite/male_mainhand_staff"	.5		patroller	enemy	M	0		"GainMana#20;GainHP#20"		
+blue_spirit		warrior	12	12	light_spirit_strong	8	-250,200,-250,250,250,50	1	[outsider][shock_elemental]		"spirit;composite/male_mainhand_staff"	1		patroller	enemy	M	0		"GainMana#250;GainHP#300"		
 maln_spirit1	strong	warrior	18	18	maln_spirit1	15	150,150,300,0,-175,150	1	[outsider][shield]		"fk_spirit;composite/female_mainhand_maul"	1		patroller	enemy	M	0		LoseHPFire#50		
 maln_spirit2	strong	warrior	15	15	longsword_spirit2	15	100,100,300,-300,-175,250	1	[outsider]		"fk_spirit;composite/female_mainhand_longsword"	1		patroller	enemy	M	0		LoseHPFrost#90		
 maln_spirit3	strong	rogue	13	13	longsword_spirit3	5	100,100,300,-300,-175,250	1	[outsider]		"fk_spirit;composite/female_mainhand_longsword"	1		patroller	enemy	M	0		LoseHPPoison#70		
 Maln	strong	warrior	16	19	maln_staff	8	-80,90,40,25,25,120	1		bandit_5	male_red_ssword	1	heal_wounds#3	civilian	neutral	M	116				
-mortification1		warrior	6	10	greatsword_wights	4	-250,300,0,300,200,-50	1	[undead][outsider]		knight_wights	1		patroller	enemy	M	0		Summon#mortification1,5,60		
+mortification1		warrior	6	10	greatsword_wights	4	-250,300,-40,300,200,-50	1	[undead][outsider]		knight_wights	1		patroller	enemy	M	0		Summon#fabskeleton1,3,60		
+mortification2		warrior	6	10	greatsword_wights	4	-250,300,-40,300,200,-50	1	[undead][outsider]		knight_wights	1		patroller	enemy	M	0		Summon#fabskeleton1,4,60		
+mortification3		warrior	6	10	greatsword_wights	4	-250,300,-40,300,200,-50	1	[undead][outsider]		knight_wights	1		patroller	enemy	M	0		Summon#fabskeleton2,8,60		
+fabskeleton1		warrior	2	10	iron_longsword	2	-80,40,0,300,150,-75	0.9	[undead][outsider][shield]		skeleton_weak	1		patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
+fabskeleton2		cleric	2	10	fabskeleton2_Gsword	5	-80,40,0,300,150,-50	0.9	[undead][outsider][shield]		skeleton_weak	1	arbenos_might#2	patroller	enemy	M	0		"Summon#fabskeleton1,4,60;Summon#fabskeleton1,4,60"	"skeleton1;skeleton2;skeleton3"	

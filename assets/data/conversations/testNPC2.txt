@@ -1,0 +1,11 @@
+index	type	text	text_ES	Go To	conditions	actions	requisites
+1	Q	Здравствуй путник, зачем же время занесло тебя в это место?		2			
+2	A	Духи		10			
+2	A	Некромантия		100			
+2	A	Бесы		200			
+2	A	Друид		300			
+10	Q	Мне нужна помощь. Я пришел сюда, чтобы узнать больше о духах.		11			
+11	A	Духи жизни		0		TrainSkill#spiritualism	
+11	A	Духи войны		0		TrainSkill#war_spirit	
+100	Q	Мне нужна помощь. Я пришел сюда, чтобы узнать больше о некромантии.		101			
+101	A	Духи жизни		0		TrainSkill#flash_and_bones	

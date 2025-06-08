@@ -1972,31 +1972,31 @@
 
     const-string v2, "mortification1"
 
-    const/4 v3, 0x6
+    const/4 v3, 0x4
 
-    const/16 v5, 0x1e
+    const/16 v5, 0x78
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
     :cond_fab
     if-ne v0, v1, :cond_fab1
 
-    const-string v1, "mortification1"
+    const-string v1, "mortification2"
 
-    const/16 v2, 0xa
+    const/16 v2, 0x8
 
-    const/16 v3, 0x23
+    const/16 v3, 0x78
 
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
     :cond_fab1
     if-ne v0, v4, :cond_fab2
 
-    const-string v0, "mortification1"
+    const-string v0, "mortification3"
 
-    const/16 v1, 0xf
+    const/16 v1, 0x10
 
-    const/16 v2, 0x32
+    const/16 v2, 0x78
 
     invoke-static {p0, v0, v1, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
