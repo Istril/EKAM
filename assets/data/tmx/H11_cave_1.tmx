@@ -342,7 +342,7 @@
    <properties>
     <property name="conversation" value="H11_cave_goblin_king_v2"/>
     <property name="name" value="Goblin king"/>
-    <property name="portrait" value="58"/>
+    <property name="portrait" value="117"/>
     <property name="spawn" value="goblin_king"/>
     <property name="unique_tag" value="goblin_king"/>
     <property name="wander" value="0"/>

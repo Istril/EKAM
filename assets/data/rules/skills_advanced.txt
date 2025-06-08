@@ -97,7 +97,7 @@ Battle Prayer	A	N	C	N	You bless your party members, summoned creatures and yours
 Flames of Faith	A	N	C	N	In a 3m area around you enemies are burned with spiritual flames and allies healed. It lasts 6 seconds and has no effect on you.				sacred_fire#3		Llamas de la Fe	En un area de 3m alrededor de ti surgen llamas espirituales que queman a los enemigos y curan a los aliados. Duran 6 segundos y a tí no te afectan.
 					Each second, flames heal allies for 5hp and burn enemies for 8 Spirit damage	1	30	15				Cada seg. las llamas curan 5hp a aliados y causan a enemigos daño Espiritual de 8
 					Each second, flames heal allies for 8hp and burn enemies for 15 Spirit damage	2	30	25				Cada seg. las llamas curan 8hp a aliados y causan a enemigos daño Espiritual de 15
-					Each second, flames heal allies for 10hp and burn enemies for 21 Spirit damage	3	30	35				Cada seg. las llamas curan 10hp a aliados y causan a enemigos daño Espiritual de 21
+					Each second, flames heal allies for 10hp and burn enemies for 21 Spirit damage	3	25	35				Cada seg. las llamas curan 10hp a aliados y causan a enemigos daño Espiritual de 21
 Smoke Bomb	P	N	R	N	You can use Stealth even if you are surrounded by enemies. Useful to escape, or to prepare a lethal backstab.				stealth#3		Bomba de humo	Puedes utilizar Sigilo incluso cuando estás rodeado de enemigos. Útil para huir o para preparar un golpe letal.
 					Basic smoke bomb, use stealth in front of enemies	2						Bomba de humo básica, permite esconderse frente a enemigos
 					Bomb has 35% chance to stun close enemies for 3 seconds	2						La bomba tiene un 35% de aturdir a enemigos cercanos durante 3s.

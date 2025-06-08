@@ -2178,7 +2178,7 @@
 
     const/4 v3, 0x0
 
-    const/high16 v5, 0x41400000    # 12.0f
+    const/high16 v5, 0x41a00000    # 12.0f
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -2237,9 +2237,9 @@
     :cond_1
     if-ne v4, v2, :cond_2
 
-    const/16 v1, 0x46
+    const/16 v1, 0x50
 
-    const/16 v0, 0xa
+    const/16 v0, 0x12
 
     :cond_2
     invoke-virtual {p0, v0, v5}, Lnet/fdgames/GameEntities/Character;->a(IF)V

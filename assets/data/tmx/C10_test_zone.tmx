@@ -1155,8 +1155,8 @@
     <property name="faction" value="mercia"/>
     <property name="name" value="Оружейник Мейл"/>
     <property name="portrait" value="11"/>
-    <property name="shop_items" value="184,609,709,710,711"/>
-    <property name="shop_modifier" value="1.5"/>
+    <property name="shop_items" value="6011,13007,13008"/>
+    <property name="shop_modifier" value="0.2"/>
     <property name="sprite" value="male_red_1"/>
    </properties>
   </object>

@@ -16,9 +16,9 @@ gas_persistent_5	toxic gas	gas tóxico	20	t	24	0	gas_2		1	1
 gas_weak	toxic gas	gas tóxico	9	t	24	0	gas_weak		0	0
 gas_death	death cloud	nube de muerte	60	d	24	0	gas_death		0	0
 death_weak	death cloud	nube de muerte	100	d	24	0	gas_death		0	0
-flames_faith_weak1	Flames of Faith	Llamas de la Fé	8	sp	24	6	fire_medium_purple	healparty1	.1	.1
-flames_faith_weak2	Flames of Faith	Llamas de la Fé	15	sp	24	6	fire_medium_purple	healparty2	.1	.1
-flames_faith_weak3	Flames of Faith	Llamas de la Fé	21	sp	24	6	fire_medium_purple	healparty3	.1	.1
+flames_faith_weak1	Flames of Faith	Llamas de la Fé	10	sp	24	6	fire_medium_purple	healparty1	.1	.1
+flames_faith_weak2	Flames of Faith	Llamas de la Fé	20	sp	24	6	fire_medium_purple	healparty2	.1	.1
+flames_faith_weak3	Flames of Faith	Llamas de la Fé	30	sp	24	6	fire_medium_purple	healparty3	.1	.1
 smoke_bomb	Smoke Bomb	Bomba de Humo	0		0	.6	smoke		.2	.1
 glowing_ashes	Glowing Ashes	Cenizas Luminosas	120		64	0	glowing_ashes		0	0
 gate			0		0	0	gate		0	0

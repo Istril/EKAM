@@ -1,6 +1,5 @@
-item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon	hp	mana	damage_bonus	damage_bonus_type	proc_type	proc_chance	proc_level	sprite	OnTake	OnTakeConditions	OnUse	Manacost	Requisites	Classes	stack
+chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon	hp	mana	damage_bonus	damage_bonus_type	proc_type	proc_chance	proc_level	sprite	OnTake	OnTakeConditions	OnUse	Manacost	Requisites	Classes	stack
 100	Leather Cuirass	armor_chest		1				100	armor_leather_chest1	3	0						leather							
-100	Leather Cuirass	armor_chest		1	40,30,30,30,25,0			3400	armor_leather_chest1	3	0						leather							
 101	Leather Leggings	armor_legs		1				80	armor_leather_legs1	3	0													
 102	Leather Bracers	armor_arms		0				30	armor_leather_hands1	2	0													
 103	Leather Boots	armor_feet		1				75	armor_leather_feet1	0	0													
@@ -21,28 +20,28 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 118	Platemail Boots	armor_feet		3				1800	armor_plate_feet	5	0												W	
 119	Knight Helm	armor_head		2				1700	armor_plate_head	4	0						chain						W	
 120	Buckler	SHIELD		1			[shield]	100	armor_buckler	3	0						buckler							
-121	Iron Shield	SHIELD		2			[shield]	800	armor_shield_round	5	0						shield2						W,C	
-122	Forest Chain Shirt	armor_chest		2				1100	armor_chain_chest_g	6	0						mailgr						W,R	
+121	Iron Shield	SHIELD		2			[shield]	800	armor_shield_round	5	0						shield						W,C	
+122	Forest Chain Shirt	armor_chest		2				1100	armor_chain_chest_g	6	0						mail						W,R	
 123	Forest Chain Leggings	armor_legs		2				1000	armor_chain_legs_g	6	0												W,R	
 124	Forest Chain Gauntlets	armor_arms		2				900	armor_chain_hands_g	2	0												W,R	
 125	Forest Chain Boots	armor_feet		1				800	armor_chain_feet_g	6	0												W,R	
-126	Forest Chain Coif	armor_head		1				950	armor_chain_head_g	4	0						chaingr						W,R	
-127	Blessed Chain Shirt	armor_chest		2				1400	armor_chain_chest_b	6	3						mailbl2						C	
+126	Forest Chain Coif	armor_head		1				950	armor_chain_head_g	4	0						chain						W,R	
+127	Blessed Chain Shirt	armor_chest		2				1400	armor_chain_chest_b	6	3						mail						C	
 128	Blessed Chain Leggings	armor_legs		2				1700	armor_chain_legs_b	6	2												C	
 129	Blessed Chain Gauntlets	armor_arms		2				1300	armor_chain_hands_b	2	2												C	
 130	Blessed Chain Boots	armor_feet		1				1200	armor_chain_feet_b	6	1												C	
-131	Blessed Chain Coif	armor_head		1			[wisdom,1]	2000	armor_chain_head_b	4	2						chainbl						C	
-132	Trollskin Cuirass	armor_chest		3	0,0,0,0,25,0			2400	armor_leather_chest_green	5	0						leathergr							
+131	Blessed Chain Coif	armor_head		1			[wisdom,1]	2000	armor_chain_head_b	4	2						chain						C	
+132	Trollskin Cuirass	armor_chest		3	0,0,0,0,25,0			2400	armor_leather_chest_green	5	0						leather							
 133	Trollskin Leggings	armor_legs		3	0,0,0,0,25,0			2300	armor_leather_legs_green	5	0													
 134	Trollskin Gauntlets	armor_arms		2	0,0,0,0,25,0			1500	armor_leather_hands_green	2	0													
 135	Trollskin Boots	armor_feet		2	0,0,0,0,25,0			1500	armor_leather_feet_green	2	0													
-136	Trollskin Cap	armor_head		2	0,0,0,0,25,0			1500	armor_leather_head_green	2	0						leathergr							
-137	Tolassian Chain Shirt	armor_chest		3	0,0,0,10,0,0			2000	armor_chain_chest_red	7	0						mailrd						W,R,C	
+136	Trollskin Cap	armor_head		2	0,0,0,0,25,0			1500	armor_leather_head_green	2	0						leather							
+137	Tolassian Chain Shirt	armor_chest		3	0,0,0,10,0,0			2000	armor_chain_chest_red	7	0						mail						W,R,C	
 138	Tolassian Chain Leggings	armor_legs		2	0,0,0,9,0,0			1600	armor_chain_legs_red	8	0												W,R,C	
 139	Tolassian Chain Gauntlets	armor_arms		2	0,0,0,8,0,0			1200	armor_chain_hands_red	6	0												W,R,C	
 140	Tolassian Chain Boots	armor_feet		2	0,0,0,6,0,0			1000	armor_chain_feet_red	4	0												W,R,C	
-141	Tolassian Chain Coif	armor_head		2	0,0,0,5,0,0			1100	armor_chain_head_red	4	0						chainrd						W,R,C	
-142	Blessed Platemail Vest	armor_chest		3				8600	armor_plate_chest_blue	9	4						platebl						C	
+141	Tolassian Chain Coif	armor_head		2	0,0,0,5,0,0			1100	armor_chain_head_red	4	0						chain						W,R,C	
+142	Blessed Platemail Vest	armor_chest		3				8600	armor_plate_chest_blue	9	4						plate						C	
 143	Blessed Platemail Leggings	armor_legs		3				7500	armor_plate_legs_blue	6	4												C	
 144	Blessed Platemail Gauntlets	armor_arms		2				4900	armor_plate_hands_blue	8	3												C	
 145	Blessed Platemail Boots	armor_feet		2				4600	armor_plate_feet_blue	6	2												C	
@@ -51,19 +50,19 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 148	Assassin's Gauntlets	armor_arms		2	3,0,0,0,5,0		[tinkering,2]	1100	armor_leather_hands2	6	0												R	
 149	Assassin's Boots	armor_feet		2	0,5,0,0,5,0			1200	armor_leather_feet2	5	0												R	
 150	Assassin's Hood	armor_head		2	0,0,0,0,5,0		[gossip,1]	1200	armor_leather_head2	6	0						hood						R	
-151	Legion Breastplate	armor_chest		4	7,7,0,0,0,0			11000	armor_plate_chest_yellow	9	0						plate4						W	
+151	Legion Breastplate	armor_chest		4	7,7,0,0,0,0			11000	armor_plate_chest_yellow	9	0						plate						W	
 152	Legion Leggings	armor_legs		4	5,5,0,0,0,0			8900	armor_plate_legs_yellow	7	0												W	
 153	Legion Gauntlets	armor_arms		3	4,4,0,0,0,0			6000	armor_plate_hands_yellow	4	0												W	
 154	Legion Boots	armor_feet		4	4,4,0,0,0,0			6500	armor_plate_feet_yellow	2	0												W	
-155	Legion Helm	armor_head		3	4,4,0,0,0,0			7000	armor_plate_head_yellow	3	0						plate4						W	
+155	Legion Helm	armor_head		3	4,4,0,0,0,0			7000	armor_plate_head_yellow	3	0						plate						W	
 156	Velites Chain Shirt	armor_chest		3				4200	armor_chain_chest_g	11	0						mail						W,R	
 157	Velites Chain Leggings	armor_legs		2				3900	armor_chain_legs_g	11	0												W,R	
 158	Velites Chain Gauntlets	armor_arms		2				2200	armor_chain_hands_g	8	0												W,R	
 159	Velites Chain Boots	armor_feet		2				2500	armor_chain_feet_g	6	0												W,R	
-160	Velites Chain Coif	armor_head		2				2100	armor_chain_head_g	6	0						chaingr						W,R	
-161	Blessed Platemail Helm	armor_head		2			[wisdom,1]	4600	armor_plate_head_blue	5	3						platebl						C	
-162	Myrosian Breastplate	armor_chest		5	0,0,16,0,0,4			16000	armor_plate_chest_epic	15	0						platemr						W	
-163	Primal Ice Chain Shirt	armor_chest		4	"""-12,12,0,0,0,0"""			2000	armor_chain_chest_b	6	0						mailbl						W,R,C	
+160	Velites Chain Coif	armor_head		2				2100	armor_chain_head_g	6	0						chain						W,R	
+161	Blessed Platemail Helm	armor_head		2			[wisdom,1]	4600	armor_plate_head_blue	5	3						plate						C	
+162	Myrosian Breastplate	armor_chest		5	0,0,16,0,0,4			16000	armor_plate_chest_epic	15	0						plate						W	
+163	Primal Ice Chain Shirt	armor_chest		4	"""-12,12,0,0,0,0"""			2000	armor_chain_chest_b	6	0						mail						W,R,C	
 164	Primal Ice Chain Leggings	armor_legs		3	"""-10,10,0,0,0,0"""			1600	armor_chain_legs_b	6	0												W,R,C	
 165	Primal Ice Chain Gauntlets	armor_arms		3	"""-10,6,0,0,0,0"""			1200	armor_chain_hands_b	4	0												W,R,C	
 166	Primal Ice Chain Boots	armor_feet		3	"""-10,6,0,0,0,0"""			1000	armor_chain_feet_b	3	0												W,R,C	
@@ -71,30 +70,30 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 168	Myrosian Gauntlets	armor_arms		3	0,0,7,0,0,2			6000	armor_plate_hands_epic	9	0												W	
 169	Myrosian Leggings	armor_legs		5	0,0,9,0,0,4			13000	armor_plate_legs_epic	13	0												W	
 170	Myrosian Boots	armor_feet		4	0,0,5,0,0,5			6000	armor_plate_feet_epic	8	0												W	
-171	Myrosian Helm	armor_head		4	0,0,7,0,0,2			6000	armor_plate_head_epic	9	0						platech						W	
-172	Traitor's Chain Shirt	armor_chest		4	"""-5,0,0,0,0,-5"""			2000	armor_chain_chest_b	6	0						mailbl1						W,R,C	
+171	Myrosian Helm	armor_head		4	0,0,7,0,0,2			6000	armor_plate_head_epic	9	0						plate						W	
+172	Traitor's Chain Shirt	armor_chest		4	"""-5,0,0,0,0,-5"""			2000	armor_chain_chest_b	6	0						mail						W,R,C	
 173	Traitor's Chain Leggings	armor_legs		3	"""-5,0,0,0,0,-5"""			1600	armor_chain_legs_b	6	0												W,R,C	
 174	Traitor's Chain Gauntlets	armor_arms		3	"""0,0,0,0,0,-5"""			1200	armor_chain_hands_b	4	0												W,R,C	
 175	Traitor's Chain Boots	armor_feet		3	"""0,0,0,0,0,-5"""			1000	armor_chain_feet_b	3	0												W,R,C	
 176	Traitor's Chain Coif	armor_head		3	"""0,0,0,0,0,-5"""			1100	armor_chain_head_b	3	0						chain						W,R,C	
 177	Leggings of Shadows	armor_legs		4	15,0,15,0,0,0			1600	armor_chain_legs	9	0												W,R,C	
-180	Shield of the Forge	SHIELD		2	9,0,0,0,0,0		[shield]	1200	armor_shield_round	4	0						shield2						W,C	
-181	Shield of the Storm	SHIELD		2	0,0,13,0,0,0		[shield]	1200	armor_shield_round2	4	0						shield2bl						W,C	
-182	Charred Buckler	SHIELD		1	8,0,0,0,0,0		[shield]	500	armor_buckler_red	8	0						bucklerrd							
-183	Lesser Shield of Life	SHIELD		2	0,0,0,9,0,0		[shield]	500	armor_shield	0	0						shield5						W,C	
+180	Shield of the Forge	SHIELD		2	9,0,0,0,0,0		[shield]	1200	armor_shield_round	4	0						shield						W,C	
+181	Shield of the Storm	SHIELD		2	0,0,13,0,0,0		[shield]	1200	armor_shield_round2	4	0						shield						W,C	
+182	Charred Buckler	SHIELD		1	8,0,0,0,0,0		[shield]	500	armor_buckler_red	8	0						buckler							
+183	Lesser Shield of Life	SHIELD		2	0,0,0,9,0,0		[shield]	500	armor_shield	0	0						shield						W,C	
 184	Steel Shield	SHIELD		3			[shield]	1300	armor_shield	7	0						shield						W	
-185	Hero's Shield	SHIELD		3			[gossip,2][shield]	3000	armor_shield	8	0						shield6						W,C	
+185	Hero's Shield	SHIELD		3			[gossip,2][shield]	3000	armor_shield	8	0						shield						W,C	
 186	Petrified Wood Buckler	SHIELD		2	12,0,0,12,0,0		[shield]	3000	armor_buckler	8	0						buckler							
 187	Shield of Life	SHIELD		3	0,0,0,9,0,10		[shield]	4000	armor_shield	0	0						shield						W,C	
-188	Red Leather Buckler	SHIELD		2	20,0,0,0,0,0		[shield]	1500	armor_buckler_red	8	0						bucklerrd							
-189	Red Leather Shield	SHIELD		3	20,0,0,0,0,0		[shield]	1800	armor_shield_round3	11	0						shield2rd						W,C	
-190	Large Chitin Shield	SHIELD		3	0,0,0,0,9,18		[shield]	4400	armor_shield_scales	0	0						shield2ch						W,C,R	
+188	Red Leather Buckler	SHIELD		2	20,0,0,0,0,0		[shield]	1500	armor_buckler_red	8	0						buckler							
+189	Red Leather Shield	SHIELD		3	20,0,0,0,0,0		[shield]	1800	armor_shield_round3	11	0						shield						W,C	
+190	Large Chitin Shield	SHIELD		3	0,0,0,0,9,18		[shield]	4400	armor_shield_scales	0	0						shield						W,C,R	
 191	Scutum	SHIELD		4			[shield]	3000	armor_shield	10	0						shield						W	
-192	Chitin Shield	SHIELD		2	0,0,0,0,5,18		[shield]	4400	armor_shield_scales	0	0						shield2ch						W,C,R	
+192	Chitin Shield	SHIELD		2	0,0,0,0,5,18		[shield]	4400	armor_shield_scales	0	0						shield						W,C,R	
 193	Anointed Shield	SHIELD		2	0,0,0,0,0,10		[shield]	1500	armor_shield	6	0						shield						W,C	
 194	Infernal Aegis	SHIELD		4	20,0,0,0,0,0		[shield]	5000	armor_shield	12	0						shield						W	
 195	Sailor Buckler	SHIELD		2	0,10,0,0,0,0		[shield]	1500	buckler_steel	7	0						buckler							
-196	Shield of the Dragon Hunter	SHIELD		5	25,25,0,0,0,0		[shield][gossip,2]	5000	armor_shield	12	0						shield7						W	
+196	Shield of the Dragon Hunter	SHIELD		5	25,25,0,0,0,0		[shield][gossip,2]	5000	armor_shield	12	0						shield						W	
 197	Wisdom of the Seas	SHIELD		3	0,25,0,0,0,0	0,0,0,1,0,0	[shield][wisdom,2]	5000	buckler_steel	12	0						buckler							
 198	Enchanted Scutum	SHIELD		5			[shield]	5000	armor_shield	14	0						shield						W,C	
 201	Goblin Flesh-Cutter	WEAPON	goblin_fleshcutter	0				25	weapon_dagger4	0	0						dagger						R	
@@ -117,25 +116,25 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 218	The Undermother's Hide	armor_chest		5	0,0,0,10,0,10			10000	carapace2	10	0						leather							
 219	Anointed Cuirass	armor_chest		1	0,0,0,25,0,0			500	armor_leather_chest1	5	0						leather						W,R,C	
 220	Jungle Boots	armor_feet		2	0,0,0,0,25,0			1900	armor_leather_feet_green	7	0													
-221	Holy Helm	armor_head		2	0,0,20,0,0,0		[wisdom,1]	4600	armor_plate_head_blue	8	8						platebl						C	
-222	Centurion Helm	armor_head		3	0,0,12,0,0,5	0,0,0,0,0,1		7000	armor_plate_head_yellow	6	0						plate4						W,C	
-232	Thuramiam Breastplate	armor_chest		4	0,20,0,0,0,5			10000	armor_plate_chest_epic	10	10						plate3						W,C,M	
+221	Holy Helm	armor_head		2	0,0,20,0,0,0		[wisdom,1]	4600	armor_plate_head_blue	8	8						plate						C	
+222	Centurion Helm	armor_head		3	0,0,12,0,0,5	0,0,0,0,0,1		7000	armor_plate_head_yellow	6	0						plate						W,C	
+232	Thuramiam Breastplate	armor_chest		4	0,20,0,0,0,5			10000	armor_plate_chest_epic	10	10						plate						W,C,M	
 233	Thuramiam Plate Gauntlets	armor_arms		3	0,6,0,0,0,3			7000	armor_plate_hands_epic	2	2												W,C,M	
 234	Thuramiam Plate Leggings	armor_legs		3	0,12,0,0,0,5			9000	armor_plate_legs_epic	6	6												W,C,M	
 235	Thuramiam Plate Boots	armor_feet		2	0,5,0,0,0,2			4000	armor_plate_feet_epic	5	5												W,C,M	
 236	Thuramiam Plate Helm	armor_head		2	0,7,0,0,0,5			4000	armor_plate_head_epic	4	4												W,C,M	
-240	Gladiator Shield	SHIELD		2			[shield]	10	armor_shield_round	5	0						shield2						W,C	
+240	Gladiator Shield	SHIELD		2			[shield]	10	armor_shield_round	5	0						shield						W,C	
 241	Gladiator Cuirass	armor_chest		1				10	armor_leather_chest1	3	0						leather							
 242	Gladiator Buckler	SHIELD		1			[shield]	10	armor_buckler	3	0						buckler							
 243	Gladiator  Chainmail Shirt	armor_chest		2				10	armor_chain_chest	11	0						mail						W,C	
 244	Gladiator  Hardened Leather Cap	armor_head		0				10	armor_leather_head2	4	0						leather						W,R,C	
 245	Gladiator  Leather Boots	armor_feet		1				10	armor_leather_feet1	0	0													
 246	Gladiator Leather Leggings	armor_legs		1				10	armor_leather_legs1	3	0													
-250	Ashen Chestplate	armor_chest		6	20,0,0,0,0,8			20000	armor_plate_chest_black	15	9						plate2						W,C	
+250	Ashen Chestplate	armor_chest		6	20,0,0,0,0,8			20000	armor_plate_chest_black	15	9						plate						W,C	
 251	Ashen Gauntlets	armor_arms		3	0,0,15,0,0,4			6000	armor_plate_hands_black	9	6												W,C	
 252	Ashen Leggings	armor_legs		5	0,0,11,0,0,4			13000	armor_plate_legs_black	13	5												W,C	
 253	Ashen Boots	armor_feet		4	0,0,9,0,0,5		[stability]	6000	armor_plate_feet_black	8	4												W,C	
-254	Ashen Helm	armor_head		4	0,0,10,0,0,10		[wisdom,1]	6000	armor_plate_head_black	9	5						plate2						W,C	
+254	Ashen Helm	armor_head		4	0,0,10,0,0,10		[wisdom,1]	6000	armor_plate_head_black	9	5						plate						W,C	
 255	Laminated Vest	armor_chest		7	10,0,20,0,0,0		[stability]	4600	vest3	16	0						plate						W	
 256	Kevlar Vest	armor_chest		6	10,0,20,0,0,0			3000	vest2	12	0						mail						W,R,C	
 257	Conductive Vest	armor_chest		7	0,0,20,0,0,10		[stunimmunity]	3000	vest1	10	30						plate						C	
@@ -143,21 +142,21 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 259	Strange Hood	armor_head		2			[rad]	2000	hood_rad	0	0						hood							
 260	Plexifiber Robes	armor_chest		4	0,0,20,0,0,10		[stability]	3000	robe_ark	10	45						tunic						M	
 261	Hunter's Leggings	armor_legs		3	8,8,0,0,0,0			3000	armor_leather_legs_green	8	0												W,R,C	
-262	Jeweled Breastplate	armor_chest		4	15,0,0,0,0,10			30000	armor_plate_chest_epic	15	15						plate3						W,C	
-263	Hunter's Armor	armor_chest		4	0,0,10,0,0,0			7000	armor_leather_chest_green	20	0						leathergr						W,R,C	
+262	Jeweled Breastplate	armor_chest		4	15,0,0,0,0,10			30000	armor_plate_chest_epic	15	15						plate						W,C	
+263	Hunter's Armor	armor_chest		4	0,0,10,0,0,0			7000	armor_leather_chest_green	20	0						leather						W,R,C	
 300	Apprentice Tunic	armor_chest		1				140	robe1_brown	2	4						tunic						C,M	
 301	Apprentice Pants	armor_legs		0				110	armor_leather_legs_green	2	3												C,M	
-302	Apprentice Hood	armor_head		0				25	armor_leather_head_green	0	2						hoodgr						C,M	
+302	Apprentice Hood	armor_head		0				25	armor_leather_head_green	0	2						hood						C,M	
 303	Apprentice Gloves	armor_arms		0				110	armor_leather_hands_green	1	2												C,M	
 304	Apprentice Boots	armor_feet		0				160	armor_leather_feet_green	1	2												C,M	
 305	Journeyman Tunic	armor_chest		1				400	robe1_blue	5	7						tunic_blue						C,M	
 306	Journeyman Pants	armor_legs		1				380	armor_leather_legs_blue	3	4												C,M	
 307	Journeyman Gloves	armor_arms		0				230	armor_blue_gloves	2	4												C,M	
 308	Journeyman Boots	armor_feet		1				200	armor_leather_feet_blue	1	3												C,M	
-309	Journeyman Cap	armor_head		0				220	armor_leather_head_blue	0	4						hoodbl						C,M	
+309	Journeyman Cap	armor_head		0				220	armor_leather_head_blue	0	4						hood						C,M	
 310	Conjurer Gloves	armor_arms		1				230	armor_blue_gloves	2	5												C,M	
 311	Conjurer Boots	armor_feet		1				200	armor_leather_feet_blue	4	6												C,M	
-312	Conjurer Hood	armor_head		1			[detection,1]	220	armor_leather_head_blue	2	5						hoodbl						C,M	
+312	Conjurer Hood	armor_head		1			[detection,1]	220	armor_leather_head_blue	2	5						hood						C,M	
 313	Conjurer Pantaloons	armor_legs		2	0,0,5,0,0,0			700	armor_leather_legs_blue	3	5												C,M	
 314	Conjurer Tunic	armor_chest		2	5,5,0,0,0,0			800	robe1_blue	5	9						tunic_blue						C,M	
 320	Firedancer Robes	armor_chest		1	16,0,0,0,0,0			600	robe1_red	2	8						tunic_red						M	
@@ -180,7 +179,7 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 337	Ragged Mittens	armor_arms		1	0,16,16,0,0,0			3000	mittens	4	8												C,M	
 338	Gloves of the Archmage	armor_arms		2	13,0,0,0,0,13		[wisdom,1]	5000	mittens_blue	0	13												C,M	
 339	Hood of the Hermit	armor_head		2	10,0,10,0,0,0		[detection,1][wisdom,1]	8000	armor_leather_head3	5	12												C,M	
-340	Explorer Gauntlets	armor_arms		3	0,0,10,0,0,0	0,0,1,0,0,0	[tinkering,2]	3000	armor_leather_hands2	8	0						leatheryl						W,R	
+340	Explorer Gauntlets	armor_arms		3	0,0,10,0,0,0	0,0,1,0,0,0	[tinkering,2]	3000	armor_leather_hands2	8	0						leather						W,R	
 341	Robe of the White Mage	armor_chest		2	0,12,0,0,0,12			1500	robe_white	8	12						tunic_white						M	
 360	Scepter of the Underworld	WEAPON	wand_death_4	0			[wand][arcane,4]	4500	staff5	0	0						rod						M	
 361	Wand of the Arcanist	WEAPON	wand_arcanist	0			[wand][arcane,3]	9000	wand10	0	0						rod						M	
@@ -220,12 +219,12 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 399	Tesla Rod	WEAPON	staff_tesla	0			[staff][arcane,3][emp,3]	6000	tesla_rod	0	0						greatstaff						M	
 400	Dirk	SHIELD		0			[offhand]	180	dirk	0	0	2					sword						W,R	
 401	Main Gauche	SHIELD		1			[offhand]	600	dirk_blue	0	0	2					sword						R	
-402	Lightning Dirk	SHIELD		0			[offhand][stun,1]	1300	dirk_shock	0	0	3	s	stun	5	1	swordbl						W,R	
+402	Lightning Dirk	SHIELD		0			[offhand][stun,1]	1300	dirk_shock	0	0	3	s	stun	5	1	sword						W,R	
 403	Hatchet	SHIELD		0			[offhand]	900	hatchet	0	0	3					axe						W,R	
 404	Toecutter	SHIELD		0			[offhand][slow,1]	1300	hatchet2	0	0	3		slow	6	3	axe						W,R	
 405	Flaming Hatchet	SHIELD		0			[offhand]	900	hatchet_fire	0	0	2	f				axe						W,R	
 406	Bluesteel Dirk	SHIELD		0			[offhand]	1800	dirk_blue	0	0	4					sword						R	
-407	Flaming Dirk	SHIELD		0			[offhand]	1800	dirk_fire	0	0	4	f				swordrd						R	
+407	Flaming Dirk	SHIELD		0			[offhand]	1800	dirk_fire	0	0	4	f				sword						R	
 408	Cursed Fang	SHIELD		0			[offhand][stun,1]	1000	fang2	0	0	4	d	stun	5	1	sword						R	
 409	Main Gauche of Shadows	SHIELD		1			[offhand][slow,1]	2000	dirk_dblue	0	0	3	d	slow	6	3	sword						R	
 410	Dirk of the Gambler	SHIELD		1			[offhand][slow,1]	2800	dirk	0	0	5		slow	6	3	sword						R	
@@ -331,9 +330,9 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 618	Mystic Bone Mace	WEAPON	bone_mace	0			[stun,1][beastslayer,1]	3500	mace_bone2	0	20						mace						W,C	
 619	Lightning Falchion of Defense	WEAPON	falchion_shock	2			[vicious,2]	5000	falchion_blue	0	0						longsword						W,R	
 620	Glacier Stone	WEAPON	ice_mace2	0				2500	weapon_mace_white	0	0						mace						W,C	
-621	Lament	WEAPON	sword_ice_3	0			[slow,1]	-1	weapon_longsword_ice	0	0						longswordfr						W,R	
+621	Lament	WEAPON	sword_ice_3	0			[slow,1]	-1	weapon_longsword_ice	0	0						longsword						W,R	
 622	Demonclaw	WEAPON	greatsword_cruelty3	0			[vicious,2][slow,1]	13000	weapon_greatsword	0	0						zweihander						W	
-623	Ghostfinger	SHIELD		1			[offhand][stun,1]	2000	dirk_dblue	0	0	5	s	stun	5	1	swordbl						R	
+623	Ghostfinger	SHIELD		1			[offhand][stun,1]	2000	dirk_dblue	0	0	5	s	stun	5	1	sword						R	
 624	Ancestral Blade of the Deer	WEAPON	sword_ice_4	0			[stun,1]	25000	weapon_longsword_ice	0	0						longsword						W,R	
 625	Godslayer	WEAPON	tier5_dagger_death	0			[vicious,2]	8000	weapon_dagger_death_epic	0	0						dagger						R	
 700	Silver Bow	WEAPON	medium_bow3	0			[silver]	1900	weapon_shortbow	0	0						shortbow						W,R	
@@ -373,7 +372,7 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 736	Imperial Trollhunter Bow	WEAPON	epic_short_bow_fire	0				5000	weapon_bow_fire	0	0						shortbow						W,R	
 737	Thunder	WEAPON	greatsword_thunder	0				1500	zweihander2	0	0						zweihander						W	
 740	Axe of the Depths	WEAPON	mino_greataxe_epic	0				3000	battleaxe5	0	0						battleaxe						W	
-741	Axe of the Minotaur Kings	WEAPON	mino_greataxe_epic_shock	0			[vicious,1]	5000	battleaxe	0	0						battleaxebl						W	
+741	Axe of the Minotaur Kings	WEAPON	mino_greataxe_epic_shock	0			[vicious,1]	5000	battleaxe	0	0						battleaxe						W	
 742	Maul of Terror	WEAPON	maul_terror	0			[vicious,2][banishing,3]	8000	maul	0	0						maul						W,C	
 750	Energy Blade	WEAPON	tech_sword	0			[emp,2]	1500	powerblade	0	0						longsword						W,C	
 751	Pneumatic Mallet	WEAPON	tech_maul	0			[emp,3]	1500	powermaul	0	0						maul						W,C	
@@ -403,7 +402,7 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 775	The Lord's Fist	WEAPON	death_mace3	0			[vicious,1]	1200	skull_mace	0	0						mace						W,C	
 776	Hunter's Machete	WEAPON	tier4_shortsword_shock	2			[beastslayer,2][silver]	5000	weapon_dagger3	0	0						shortsword						W,R	
 777	Magma Dagger	WEAPON	tier4_firedagger	0				1000	weapon_dagger_fire	0	0						dagger						W,R	
-778	Dancing Flame	WEAPON	tier4_shortsword_fire	0			[vicious,2]	6000	weapon_shortsword_fire2	0	0						shortswordrd						W,R	
+778	Dancing Flame	WEAPON	tier4_shortsword_fire	0			[vicious,2]	6000	weapon_shortsword_fire2	0	0						shortsword						W,R	
 779	Golden Wand	WEAPON	wand_spirit_4	0			[wand][arcane,2][banishing,2]	3000	wand_golden	0	0						wand						M	
 1001	Minotaur Horn	general		0				280	horn	0	0													1
 1002	Damaged Wolf Pelt	general		0				50	grey_damaged_pelt	0	0													1
@@ -784,7 +783,10 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 13003	Kassian legs	armor_feet		1	0,0,0,5,0,5			1200	armor_leather_feet1	0	0												M	
 13004	Kassian longsword	WEAPON	kassian lsword	0			[silver]	0	weapon_sword_long_magic4	0	0						longsword						M	
 13005	Regordiand_necklace	necklace		0	10,10,0,0,0,5			-1	medallion1	0	0													
-13006	Iron crossbow	WEAPON	iron_crossbow	0				140	weapon_bow_fire	0	0						crossbow						W,R	
+13006	gorx_armor	armor_chest		5	25,-30,0,0,-25,-10			1500	gorx_chest	15	0						plate						W,C	
+13007	Gorx_crown	armor_head		-8	20,-30,0,0,0,0	0,0,0,0,0,2	[gossip,1]	5000	gorx_crown	-17	25												C,M	
+13008	Gorx_axe	WEAPON	Gaxe_fire	0			[vicious,2]	1400	gorx_axe	0	0						battleaxe						W,C	
+13100	Iron crossbow	WEAPON	iron_crossbow	0				140	weapon_bow_fire	0	0						crossbow						W,R	
 14000	Dock Key	general		0				90	key1	0	0													1
 15000	rog_summon_goblin	POTION		0				1500	rog_summon	0	0													0
 15001	kogot_summon_wolf	POTION		0				2000	kogot_summon	0	0													0
@@ -844,7 +846,7 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 22006	Soul Drinker	WEAPON	greataxe_death_3+	0			[beastslayer,2]	18000	battleaxe	0	0						battleaxe						W	
 22007	Executioner's Axe	WEAPON	mino_greataxe+	0			[vicious,2]	4000	battleaxe1	0	0						battleaxe						W	
 22008	Permafrost Greataxe	WEAPON	greataxe_ice_3+	0			[paralysis,1]	2900	greataxe_frost	0	0						battleaxe						W	
-22009	Axe of the Minotaur Kings	WEAPON	mino_greataxe_epic_shock+	0			[vicious,1]	5000	battleaxe4battleaxe	0	0						battleaxebl						W	
+22009	Axe of the Minotaur Kings	WEAPON	mino_greataxe_epic_shock+	0			[vicious,1]	5000	battleaxe4battleaxe	0	0						battleaxe						W	
 23000	Steel Longsword	WEAPON	steel_longsword+	0				500	weapon_longsword1	0	0						longsword						W,R	
 23001	Bluesteel Longsword	WEAPON	bluesteel_longsword+	0				1600	weapon_longsword2	0	0						longsword						W,R	
 23002	Silver Longsword	WEAPON	steel_longsword+	0			[silver]	1000	weapon_longsword_white	0	0						longsword						W,R	
@@ -909,7 +911,7 @@ item_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value	icon
 27004	Shortsword of Frost	WEAPON	ice_shortsword+	0				800	weapon_shortsword_ice	0	0						shortsword						W,R	
 27005	Primal Icicle	WEAPON	tier4_shortsword_ice+	0			[orcslayer,2]	9000	shortsword_ice	0	0						shortsword						W,R	
 27006	Magma Shortsword	WEAPON	magma_shortsword+	0				1250	weapon_mace_red	0	0						macerd						W,C	
-27007	Dancing Flame	WEAPON	tier4_shortsword_fire+	0			[vicious,2]	6000	weapon_shortsword_fire2	0	0						shortswordrd						W,R	
+27007	Dancing Flame	WEAPON	tier4_shortsword_fire+	0			[vicious,2]	6000	weapon_shortsword_fire2	0	0						shortsword						W,R	
 27008	Hunter's Machete	WEAPON	tier4_shortsword_shock+	2			[beastslayer,2][silver]	5000	weapon_dagger3	0	0						shortsword						W,R	
 27009	Deathclaw	WEAPON	deathclaw_dagger+	0				2000	weapon_dagger3	0	0						shortsword						W,R	
 27010	Icicle	WEAPON	tier4_shortsword_ice_b+	0			[orcslayer,1]	9000	shortsword_ice	0	0						shortsword						W,R	

@@ -453,3 +453,4 @@ iltera_shard	samostrel2	9	15	18	140	13	8	1	1				arrow1		3	d
 valhella_shard	samostrel3	7	17	18	160	13	8	1	1				arrow1		3	f				
 greatsword_wights	flash_and_bones	6	11	4	200	8	1	1												
 bluesteel_longsword_gorxv2	Blue steel longsword	5	10	6	200	10	1								4	f				
+Gaxe_fire	greataxe_fire4	5	13	6	200	9	1	1							4	f				

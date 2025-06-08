@@ -1,7 +1,7 @@
 index	type	text	text_ES	Go To	conditions	actions	requisites
 1	Q	Здравствуй путник, зачем же время занесло тебя в это место?		2			
 2	A	Получить опыт		5			
-2	A	Получить очки навыка		10			
+2	A	Получить очки навыка и золото		10			
 2	A	Получать очки статистики		15			
 2	A	Далее		20			
 5	Q	Сколько опыта тебя интересует		6			
@@ -12,6 +12,7 @@ index	type	text	text_ES	Go To	conditions	actions	requisites
 10	Q	Сколько ОН тебя интересут		11			
 11	A	5		10		"GainSkillPoint#;GainSkillPoint#;GainSkillPoint#;GainSkillPoint#;GainSkillPoint#"	
 11	A	4		10		TrainSkill#summoner
+11	A	5000 золотых		0		GainGold#5000
 11	A	назад		1			
 15	Q	Сколько ОС тебя интересут		16			
 16	A	5		15		"GainTrait#;GainTrait#;GainTrait#;GainTrait#;GainTrait#"	

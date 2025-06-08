@@ -589,9 +589,15 @@
 
     if-ne v0, v5, :cond_8
 
-    invoke-virtual {p0, v4, v7}, Lnet/fdgames/GameEntities/Character;->d(IF)V
+    const/4 v0, 0x4
 
-    invoke-virtual {p0, v7}, Lnet/fdgames/GameEntities/Character;->f(F)V
+    const/high16 v1, 0x41a00000    # 20.0f
+
+    invoke-virtual {p0, v0, v1}, Lnet/fdgames/GameEntities/Character;->d(IF)V
+
+    const/high16 v1, 0x41a00000    # 20.0f
+
+    invoke-virtual {p0, v1}, Lnet/fdgames/GameEntities/Character;->f(F)V
 
     :cond_7
     :goto_1
@@ -608,13 +614,13 @@
     :cond_8
     if-ne v0, v1, :cond_9
 
-    const/4 v0, 0x5
+    const/16 v0, 0x8
 
-    const/high16 v1, 0x41600000    # 14.0f
+    const/high16 v1, 0x41c80000    # 25.0f
 
     invoke-virtual {p0, v0, v1}, Lnet/fdgames/GameEntities/Character;->d(IF)V
 
-    const/high16 v0, 0x41600000    # 14.0f
+    const/high16 v0, 0x41c80000    # 25.0f
 
     invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/Character;->f(F)V
 
@@ -623,13 +629,13 @@
     :cond_9
     if-ne v0, v4, :cond_7
 
-    const/16 v0, 0x8
+    const/16 v0, 0xc
 
-    const/high16 v1, 0x41800000    # 16.0f
+    const/high16 v1, 0x41c80000    # 25.0f
 
     invoke-virtual {p0, v0, v1}, Lnet/fdgames/GameEntities/Character;->d(IF)V
 
-    const/high16 v0, 0x41800000    # 16.0f
+    const/high16 v0, 0x41c80000    # 25.0f
 
     invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/Character;->f(F)V
 
@@ -9042,6 +9048,13 @@
 
     :cond_1e
     const/4 v5, 0x3
+
+    if-ne v3, v5, :cond_intervention_lv4
+
+    mul-int/lit8 v2, v4, 0x6
+
+    :cond_intervention_lv4
+    const/4 v5, 0x4
 
     if-ne v3, v5, :cond_1f
 

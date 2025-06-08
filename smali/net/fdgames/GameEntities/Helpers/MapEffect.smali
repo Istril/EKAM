@@ -343,7 +343,7 @@
 
     if-eqz v0, :cond_3
 
-    const/4 v0, 0x6
+    const/16 v0, 0xa
 
     invoke-virtual {v8, v0}, Lnet/fdgames/GameEntities/Character;->l(I)V
 
@@ -358,7 +358,7 @@
 
     if-eqz v0, :cond_4
 
-    const/16 v0, 0x8
+    const/16 v0, 0xf
 
     invoke-virtual {v8, v0}, Lnet/fdgames/GameEntities/Character;->l(I)V
 
@@ -373,7 +373,7 @@
 
     if-eqz v0, :cond_2
 
-    const/16 v0, 0xa
+    const/16 v0, 0x19
 
     invoke-virtual {v8, v0}, Lnet/fdgames/GameEntities/Character;->l(I)V
 

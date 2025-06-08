@@ -3275,6 +3275,27 @@ small_circon
   orig: 64, 64
   offset: 0, 0
   index: -1
+gorx_chest
+  rotate: false
+  xy: 199, 629
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+gorx_axe
+  rotate: false
+  xy: 265, 695
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+gorx_crown
+  rotate: false
+  xy: 331, 761
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
 
 runes.png
 format: RGBA8888

@@ -98,11 +98,12 @@ Sacred Fire	A	N	C	N	A surge of purifying flames erupts 2 meters ahead of you, co
 Intervention	P	Y	C	N	In your hour of most need, the Gods intercede to save your life. When you are injured down to death, all your remaining mana is spent, and you are healed.						Intervención	En tu hora de más necesidad, los Dioses interceden para salvar tu vida. Cuando te hieran mortalmente, todo tu maná se gasta, y te curarás.
 					You are healed for 2 HP for each mana point you had left	1						Te curas 2HP por cada punto de mana que te quedase
 					You are healed for 4 HP for each mana point you had left	1						Te curas 4HP por cada punto de mana que te quedase
-					You are healed for 8 HP for each mana point you had left	1						Te curas 8HP por cada punto de mana que te quedase
+					You are healed for 6 HP for each mana point you had left	2						Te curas 6HP por cada punto de mana que te quedase
+					You are healed for 8 HP for each mana point you had left	2						Te curas 8HP por cada punto de mana que te quedase
 Arbenos' Might	A	Y	C	N	The power of Arbenos the Warrior envelopes you, in the form of sacred flames. You will do more damage, both normal and fire based. Double effect with 2H weapons.						Poder de Arbenos	El Poder de Arbenos el Guerrero te envuelve, en forma de llamas sagradas. Ganas un bonificador al daño, además de daño por fuego. Efecto doble con armas de 2 manos.
-					You do +3 damage, and +4 fire damage, for 12 seconds.	1	20	2				Haces +3 daño, y +4 daño adicional por fuego, durante 12 segundos.
-					You do +5 damage, and +4 fire damage, for 14 seconds.	2	20	4				Haces +5 daño, y +4 daño adicional por fuego, durante 14 segundos.
-					You do +8 damage, and +4 fire damage, for 16 seconds.	3	20	7				Haces +8 daño, y +4 daño adicional por fuego, durante 16 segundos.
+					You do +3 damage, and +4 fire damage, for 12 seconds.	1	35	2				Haces +3 daño, y +4 daño adicional por fuego, durante 12 segundos.
+					You do +5 damage, and +4 fire damage, for 14 seconds.	2	30	4				Haces +5 daño, y +4 daño adicional por fuego, durante 14 segundos.
+					You do +8 damage, and +4 fire damage, for 16 seconds.	3	28	7				Haces +8 daño, y +4 daño adicional por fuego, durante 16 segundos.
 Crusader	P	Y	C	N	You have received training as a warrior priest. You know the most efficient ways to combat the undead, causing them Spirit Damage able to bypass armor.						Cruzado	Has recibido entrenamiento como sacerdote-guerrero, y conoces las mejores formas de combatir a los muertos-vivientes causándoles daño espiritual, capaz de sobrepasar su armadura.
 					Your hits have a 2% stun chance. Against undead, +2 damage	1						Probabilidad de aturdir del 2%. Contra muertos vivientes, +2 al daño
 					Your hits have a 4% stun chance. Against undead, +4 damage	2						Probabilidad de aturdir del 4%. Contra muertos vivientes, +4 al daño
@@ -112,5 +113,5 @@ Nivaria's Barrier	P	Y	C	N	The mystical power of Nivaria protects you permanently
 					gain +2 armor, an extra +2 vs undead attacks.	1						Ganas +2 armadura, y +2 extra contra muertos vivientes.
 					gain +3 armor, an extra +3 vs undead attacks.	2						Ganas +3 armadura, y +3 extra contra muertos vivientes.
 Thelume's Wisdom	A	N	C	N	You are inspired by the revelations of Thelume. You can detect hidden things and see through illusions.						Sabiduría de Thelume	Eres inspirado por las revelaciones de Thelume. Puedes detectar cosas ocultas, o ver a través de ilusiones.
-					75% chance of detecting hidden items in a 10m radius. You'll also know about undiscovered doors in the area.	1	30	3				75% de descubrir objetos ocultos en un radio de 10m, y sabrás si aun hay puertas secretas en la zona.
-					95% chance of detecting hidden items in a 20m radius. You'll also know about undiscovered doors in the area.	1	30	5				95% de descubrir objetos ocultos en un radio de 20m, y sabrás cuantas puertas secretas hay en la zona.
+					75% chance of detecting hidden items in a 10m radius. You'll also know about undiscovered doors in the area.	1	15	3				75% de descubrir objetos ocultos en un radio de 10m, y sabrás si aun hay puertas secretas en la zona.
+					95% chance of detecting hidden items in a 20m radius. You'll also know about undiscovered doors in the area.	1	15	5				95% de descubrir objetos ocultos en un radio de 20m, y sabrás cuantas puertas secretas hay en la zona.

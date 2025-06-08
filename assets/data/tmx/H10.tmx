@@ -1067,7 +1067,7 @@
     <property name="faction" value="#civilian#"/>
     <property name="name" value="@WEAPONSMITH_SEVAE"/>
     <property name="portrait" value="14"/>
-    <property name="shop_items">100,101,102,103,104,107,120,502,503,504,505,506,507,508,509,601,3200,13006
+    <property name="shop_items">100,101,102,103,104,107,120,502,503,504,505,506,507,508,509,601,3200,13006,13100
 </property>
     <property name="shop_modifier" value="1"/>
     <property name="sprite" value="male_blue_1"/>

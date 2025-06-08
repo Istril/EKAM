@@ -1972,16 +1972,16 @@
 
     if-ne v0, v1, :cond_32
 
-    const/16 v1, 0x4a
+    const/16 v1, 0xa
 
-    const/16 v7, 0x4a
+    const/16 v7, 0xa
 
     :goto_9
     if-ne v0, v6, :cond_44
 
-    const/16 v4, 0x8a
+    const/16 v4, 0x14
 
-    const/16 v7, 0x8a
+    const/16 v7, 0x14
 
     :goto_a
     if-ne v0, v5, :cond_43
