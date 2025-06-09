@@ -98,16 +98,16 @@ skeleton_warrior		warrior	6	12	ice_shortsword	4	-60,80,0,300,180,0	0.9	[undead][
 skeleton_archer		rogue	6	12	frost_bow	2	-80,125,0,300,180,0	0.9	[undead]	skeleton_archer	skeleton_archer	1	archery#3	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
 skeleton_evoker		cleric	6	12	death_ray	1	-60,20,0,300,180,0	0.9	[undead]	skeleton_evoker	skeleton_mage	1	heal_wounds#3	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
 skeleton_champion	strong	warrior	10	16	sword_ice_2	6	-80,80,0,300,180,0	1	[undead][shield]	skeleton_champion	adt_skeleton	1	"duel#2;resilience#2"	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
-skeleton_hero	strong	warrior	13	18	sword_ice_3	6	-60,50,0,300,180,0	1	[undead][shield]	skeleton_hero	skeleton_knight	1	flurry#1,2	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
+skeleton_hero	strong	warrior	13	16	sword_ice_3	6	-60,50,0,300,180,0	1	[undead][shield]	skeleton_hero	skeleton_knight	1	flurry#1,2	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
 skeleton_dragoon	strong	cleric	13	17	axe_magma	4	300,-150,50,300,180,0	1	[undead][shield]	fire_imp	adt_skeleton_red	1	arbenos_might#3	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
-zombie		warrior	2	18	iron_dagger	2	-25,50,25,100,100,0	0.9	[undead]	zombie	adt_zombie	1		patroller	enemy	M	0			"zombie1;zombie2;zombie3"	
-desert_mummy		warrior	5	17	toxic_bite	4	"""-75,50,-25,100,200,0"""	0.9	[undead]	undead_2	adt_zombie	1		patroller	enemy	M	0			"zombie1;zombie2;zombie3"	
-ancient_mummy	strong	warrior	8	18	toxic_bite	5	"""-80,40,40,100,300,0"""	0.9	[undead][toxic_aura]	undead_2	adt_zombie	1		patroller	enemy	M	0			"zombie1;zombie2;zombie3"	
-ghost	weak	rogue	4	20	ghost_touch	15	-50,-50,-80,100,100,0	1.05	[undead][ghost][detector]		ghost	1	stab#1	patroller	enemy	M	0			skeleton2	
-ghost_initiate	strong	rogue	8	12	ghost_touch	10	0,0,20,200,200,0	1.05	[undead][ghost]	quest_g9_initiate	ghost	1	stab#2	patroller	enemy	M	0			skeleton2	
-wraith		warrior	8	18	wraith_touch	18	"""-40,-40,-50,120,120,0"""	1.05	[undead][ghost][detector]		ghost	1	stab#1	patroller	enemy	M	0			skeleton2	
+zombie		warrior	2	12	iron_dagger	2	-25,50,25,100,100,0	0.9	[undead]	zombie	adt_zombie	1		patroller	enemy	M	0			"zombie1;zombie2;zombie3"	
+desert_mummy		warrior	5	10	toxic_bite	4	"""-75,50,-25,100,200,0"""	0.9	[undead]	undead_2	adt_zombie	1		patroller	enemy	M	0			"zombie1;zombie2;zombie3"	
+ancient_mummy	strong	warrior	8	14	toxic_bite	5	"""-80,40,40,100,300,0"""	0.9	[undead][toxic_aura]	undead_2	adt_zombie	1		patroller	enemy	M	0			"zombie1;zombie2;zombie3"	
+ghost	weak	rogue	4	8	ghost_touch	15	-50,-50,-80,100,100,0	1.05	[undead][ghost][detector]		ghost	1	stab#1	patroller	enemy	M	0			skeleton2	
+ghost_initiate	strong	rogue	8	10	ghost_touch	10	0,0,20,200,200,0	1.05	[undead][ghost]	quest_g9_initiate	ghost	1	stab#2	patroller	enemy	M	0			skeleton2	
+wraith		warrior	8	15	wraith_touch	18	"""-40,-40,-50,120,120,0"""	1.05	[undead][ghost][detector]		ghost	1	stab#1	patroller	enemy	M	0			skeleton2	
 vengeful_wraith	miniboss	rogue	9	16	wraith_touch	20	"""-50,-50,-80,200,200,0"""	1.05	[undead][ghost][detector]		ghost	1		patroller	enemy	M	0			skeleton2	
-death_knight	strong	warrior	13	23	death_knight	13	"""-80,-60,-100,150,150,0"""	1	[undead][ghost][detector]	death_knight	death_knight	1	resilience#2	patroller	enemy	M	0			skeleton3	
+death_knight	strong	warrior	13	16	death_knight	13	"""-80,-60,-100,150,150,0"""	1	[undead][ghost][detector]	death_knight	death_knight	1	resilience#2	patroller	enemy	M	0			skeleton3	
 morfados	strong	warrior	15	15	greataxe_death_3	20	"""175,-75,-100,120,120,0"""	1	[undead][ghost][detector]		death_knight	1.1	"duel#3;resilience#3;whirlwind#2"	patroller	enemy	M	0		StartConversation#morfados,morfados_defeated	skeleton3	
 D11_abbot	boss	warrior	22	22	death_ray_epic	13	"""50,-200,300,300,300,50"""	1	[undead][detector]	abbot	skeleton_mage_high	1	"fury#3;resilience#3;duel#1"	patroller	neutral	M	0		"SetVariable#cursed_abbey,90;SetVariable#curse_foga_lifted,1"	skeleton3	
 nightwalker_lord	boss	warrior	14	17	nightwalker_touch	15	-50,-50,-80,100,100,0	1.05	[undead][ghost]		ghost	1.4	"fury#2;resilience#1"	patroller	enemy	M	0			skeleton3	
@@ -148,16 +148,16 @@ varannari_male	human	warrior	5	6	steel_longsword	3		1			male_var_warrior	1.1		pa
 varannari_female	human	warrior	5	6	steel_longsword	3		1			female_var_warrior	1.1		patroller	player	F	0				
 varannari_rebel		warrior	6	8	steel_longsword	5		1			male_var_warrior	1.1		patroller	player	M	0				
 varannari_hostile_rebel		warrior	5	8	steel_longsword	3		1			male_var_warrior	1.1		patroller	enemy	M	0				
-bandit_male		rogue	3	15	iron_dagger	1		1		bandit_3	male_black_ssword	1		patroller	bandits	M	0				
-bandit_ranged	weak	rogue	4	15	thrown_knife	1		1		bandit_3	male_black_ssword	1		patroller	bandits	M	0				
-bandit_female_elite		rogue	5	17	bluesteel_shortsword	2		1		bandit_5	female_purple_ssword	1	stab#2	patroller	bandits	F	0				
-bandit_male_elite		rogue	5	17	bluesteel_shortsword	2		1		bandit_5	male_red_ssword	1	stab#2	patroller	bandits	M	0				
-bandit_male_assasin		rogue	8	17	bluesteel_dagger_poison	5		1		bandit_5	male_black_ssword	1	stab#3	patroller	bandits	M	0				
-outlaw		warrior	7	17	steel_longsword	3		1	[shield]	outlaw	male_leather	1	bash#1	patroller	enemy	M	0				
-outlaw_archer		rogue	7	17	long_bow	2		1		outlaw	male_archer	1	archery#3	patroller	enemy	M	0				
-outlaw_chief	miniboss	warrior	10	17	bluesteel_longsword	6		1	[shield]	outlaw_chest_10	male_mail	1	"flurry#2;resilience#2"	patroller	enemy	M	0				
-outlaw_archer_elite		rogue	10	17	long_bow	3		1		outlaw_elite_archer	male_archer	1	archery#3	patroller	enemy	M	0				
-outlaw_king	miniboss	rogue	16	16	poison_bow_tier4	6		1		bandit_king	male_archer	1.05	"archery#3;precission_shots#2;massive_criticals#2"	patroller	enemy	M	0				
+bandit_male		rogue	3	9	iron_dagger	1		1		bandit_3	male_black_ssword	1		patroller	bandits	M	0				
+bandit_ranged	weak	rogue	4	9	thrown_knife	1		1		bandit_3	male_black_ssword	1		patroller	bandits	M	0				
+bandit_female_elite		rogue	5	13	bluesteel_shortsword	2		1		bandit_5	female_purple_ssword	1	stab#2	patroller	bandits	F	0				
+bandit_male_elite		rogue	5	13	bluesteel_shortsword	2		1		bandit_5	male_red_ssword	1	stab#2	patroller	bandits	M	0				
+bandit_male_assasin		rogue	8	14	bluesteel_dagger_poison	5		1		bandit_5	male_black_ssword	1	stab#3	patroller	bandits	M	0				
+outlaw		warrior	7	15	steel_longsword	3		1	[shield]	outlaw	male_leather	1	bash#1	patroller	enemy	M	0				
+outlaw_archer		rogue	7	15	long_bow	2		1		outlaw	male_archer	1	archery#3	patroller	enemy	M	0				
+outlaw_chief	miniboss	warrior	10	16	bluesteel_longsword	6		1	[shield]	outlaw_chest_10	male_mail	1	"flurry#2;resilience#2"	patroller	enemy	M	0				
+outlaw_archer_elite		rogue	10	16	long_bow	3		1		outlaw_elite_archer	male_archer	1	archery#3	patroller	enemy	M	0				
+outlaw_king	miniboss	rogue	18	18	poison_bow_tier4	6		1		bandit_king	male_archer	1.05	"archery#3;precission_shots#2;massive_criticals#2"	patroller	enemy	M	0				
 male_nightblade		rogue	10	17	bluesteel_dagger_poison	5		1		nightblade	male_black_ssword	1	"stab#3;assassinate#3"	patroller	enemy	M	0				
 female_nightblade		rogue	10	17	bluesteel_dagger_poison	5		1		nightblade	female_purple_ssword	1	"stab#3;assassinate#3"	patroller	enemy	F	0				
 cultist_male		warrior	2	6	iron_dagger	0		1		bandit_5	male_black_ssword	1		patroller	enemy	M	0				
@@ -195,7 +195,7 @@ friguld_guard		warrior	11	11	steel_longsword	4	0,0,0,0,250,0	1	[shield]		male_le
 friguld_captain	strong	warrior	16	16	bluesteel_greatsword	6	0,0,0,0,250,0	1	[shield]		male_knight	1	"duel#2;resilience#2"	patroller	player	M	0				
 dumek	miniboss	warrior	12	12	bluesteel_longsword	18		1	[immortal][shield]		male_knight	1		patroller	player	M	32		setVariable#dumek_dead,1		
 orc_warlord_xurta	miniboss	warrior	11	12	bluesteel_greatsword	5	50,20,25,75,50,15	1	[orc][shield]	orc_king	adt_orc_warrior	1.25	"whirlwind#2;bash#1"	patroller	enemy	M	0		"setVariable#kb_fort_conquered,1;setVariable#fort_assault,90;NPCDespawn#routing_orc"	"orc;orc2"	
-wyvern	strong	warrior	9	22	wyvern_claw	8	"""0,50,50,25,50,0"""	1		wyvern2	wyvern	1.1		patroller	enemy	M	0			monster_deep_3	
+wyvern	strong	warrior	9	15	wyvern_claw	8	"""0,50,50,25,50,0"""	1		wyvern2	wyvern	1.1		patroller	enemy	M	0			monster_deep_3	
 tolassian_priest	miniboss	cleric	9	13	death_ray	5	0,0,0,100,100,0	1	[undead]	skeleton	skeleton_knight	1		patroller	enemy	M	0	VariableLower#dark_matters,15	setVariable#dark_matters,15	"skeleton1;skeleton2;skeleton3"	
 urcrymdrax	boss	warrior	16	16	ice_claw_15	11	"""-30,200,40,0,0,0"""	1.1	[detector][giant]	dragon_lite	wyvern_white	1.5		patroller	enemy	M	0		setVariable#dragonslayer,1	monster_deep_2	
 faazvolfrul	boss	warrior	18	18	fire_claw_15	11	"""300,-50,100,50,0,0"""	1.1	[detector][fire_elemental][giant]	dragon	wyvern_red	1.5		patroller	enemy	M	0		setVariable#dragonslayer,1	monster_deep_2	
@@ -258,7 +258,7 @@ golem_iron	strong	warrior	15	18	giant_punch	9	90,10,250,250,250,70	0.9		iron_gol
 hill_giant	strong	warrior	15	20	giant_punch	5	0,80,30,60,60,30	1.1	[giant]	giant	giant	1.07	bash#2	patroller	enemy	M	0			"giant1;giant2"	
 hill_giant_chieftain	miniboss	warrior	16	17	giant_punch	5	0,80,30,60,60,30	1.1	[giant]	"giant;humanoid_boss;shards_boss_low"	giant	1.1	bash#3	patroller	enemy	M	0			"giant1;giant2"	
 D13_giant_chief	boss	warrior	20	20	giant_punch	8	0,80,30,60,60,30	1.1	[giant]	"giant;humanoid_boss;D13_giant"	giant	1.16	bash#3	patroller	enemy	M	0			"giant1;giant2"	
-ice_giant	strong	warrior	15	24	ice_punch_2	5	-40,100,30,60,60,30	1	[giant]	ice_giant	ice_giant	1.07	bash#2	patroller	enemy	M	0			"giant1;giant2"	
+ice_giant	strong	warrior	15	19	ice_punch_2	5	-40,100,30,60,60,30	1	[giant]	ice_giant	ice_giant	1.07	bash#2	patroller	enemy	M	0			"giant1;giant2"	
 ghostly_scribe	miniboss	warrior	9	11	wraith_touch	20	-25,-25,-40,100,100,0	1.05	[undead][ghost][detector]		ghost	1		patroller	neutral	M	79			skeleton2	
 mercia_royal_1	miniboss	warrior	17	17	shock_elemental_epic	4	-30,30,300,180,180,0	0.9	[detector][undead][shield]	mercia_royal_1	skeleton_mage	1.1		patroller	enemy	M	0		"ItemHide#grate_royal_1;ItemWalkable#grate_royal_1"		
 mercia_royal_2	miniboss	warrior	18	18	paralysis_epic	4	0,0,0,180,180,0	0.9	[detector][undead][shield]	mercia_royal_2	death_knight	1.1		patroller	enemy	M	0		"ItemHide#grate_royal_2;ItemWalkable#grate_royal_2"		
@@ -315,8 +315,8 @@ D12_warrior	strong	warrior	13	13	bluesteel_longsword	5		1	[shield]		male_mail	1	
 D12_warrior_silver	strong	warrior	13	13	bluesteel_longsword	18		1	[shield][silver]		male_mail	1		patroller	player	M	10		IncVariable#D12_dead,1		
 D12_xerla	miniboss	warrior	16	16	bluesteel_greatsword	18		1	[shield][silver]		female_knight	1		patroller	player	F	30		IncVariable#D12_dead,1		
 horror	boss	warrior	22	22	undermother_bite	12	50,50,50,100,90,240	1.3	[beast][giant][detector][growth][outsider]	horror	horror_LARGE	0.8		patroller	enemy	M	0			monster_deep_3	
-steel_spider		warrior	18	25	robot_melee	2	300,300,-80,300,300,0	1	[explosive][robot]	robot	robot2	0.85		patroller	enemy	M	0			robot1	
-steel_wizard	strong	warrior	18	25	ion_cannon	2	300,300,-80,300,300,0	1	[explosive][robot][detector]	robot	robot	0.9		patroller	enemy	M	0			robot2	
+steel_spider		warrior	18	22	robot_melee	2	300,300,-80,300,300,0	1	[explosive][robot]	robot	robot2	0.85		patroller	enemy	M	0			robot1	
+steel_wizard	strong	warrior	18	22	ion_cannon	2	300,300,-80,300,300,0	1	[explosive][robot][detector]	robot	robot	0.9		patroller	enemy	M	0			robot2	
 valeran	boss	warrior	20	20	fire_claw_15	25	250,250,250,0,0,200	1	[shield]	valeran	"composite/male_plate;composite/male_head2;composite/male_mainhand_battleaxe"	1	"flurry#3;resilience#3;bash#3;heavyhand#3"	patroller	player	M	52				
 war_droid	miniboss	warrior	24	24	ion_cannon2	6	300,300,-50,300,300,0	1	[explosive][robot][detector]	ark_chest2	robot	1.15		patroller	enemy	M	0			robot2	
 I3_amarisa	miniboss	cleric	16	16	lightning3	4	240,60,60,60,60,60	1			"composite/female_tunic;composite/female_head3"	1		patroller	neutral	F	19		SetVariable#where_is_amarisa,200		
@@ -414,9 +414,9 @@ C12_lich_mylora	boss	warrior	25	25	greataxe_death_3	17	"""-60,20,40,180,180,250"
 C12_lich_blafarne	boss	rogue	26	26	permafrost_bow_npc	6	300,300,-150,300,-200,40	1.1	[detector][undead][ghost]	"lich;C12_blafarne"	skeleton_archer	1.1	"archery#3;precission_shots#2;massive_criticals#3"	patroller	enemy	M	0				
 F6_golem_war	miniboss	warrior	28	28	robot_melee	23	50,0,250,250,250,70	2	[detector]	"iron_golem;F6_golem"	golem	1.1	"heavyhand#3;fury#3"	patroller	enemy	M	0			monster_deep_3	
 F6_rexadon_boss	miniboss	cleric	18	18	war_maul	7	30,30,30,-30,80,30	1	[shield]	rexadon_chest	rexadon_lord	1	"holy_shield#3;heal_wounds#3;heavyhand#2"	patroller	enemy	M	113				
-old_one	strong	warrior	17	24	fire_claw_15	4	250,-40,250,250,250,60	1	[undead]		ghoul	1		patroller	enemy	M	0			monster_deep_3	
-old_one_green		warrior	18	25	toxic_spit	1	"""-40,250,250,250,250,80"""	1	[undead][detector][toxic_aura]		ghoul_green	.85		patroller	enemy	M	0			monster_deep_3	
-old_one_purple	miniboss	warrior	19	26	death_claw_20	1	250,250,-60,250,250,50	1	[undead][detector][shield]		ghoul_purple	1.2	"heavyhand#2;flurry#3"	patroller	enemy	M	0			monster_deep_3	
+old_one	strong	warrior	17	20	fire_claw_15	4	250,-40,250,250,250,60	1	[undead]		ghoul	1		patroller	enemy	M	0			monster_deep_3	
+old_one_green		warrior	18	22	toxic_spit	1	"""-40,250,250,250,250,80"""	1	[undead][detector][toxic_aura]		ghoul_green	.85		patroller	enemy	M	0			monster_deep_3	
+old_one_purple	miniboss	warrior	19	22	death_claw_20	1	250,250,-60,250,250,50	1	[undead][detector][shield]		ghoul_purple	1.2	"heavyhand#2;flurry#3"	patroller	enemy	M	0			monster_deep_3	
 clockwork	weak	rogue	12	12	bluesteel_longsword	0	40,40,40,0,0,0	1.5	[explosive][detector]		golem	0.4		patroller	enemy	M	0				
 F6_azeran	boss	warrior	23	23	ice_shot_epic	9	150,250,120,150,0,-20	1			"male_tunic_blue;composite/male_mainhand_staff"	1		patroller	neutral	M	115		SetVariable#temple_sleepers,90		
 F6_azeran_clone		warrior	16	16	fire_shot_epic	5	50,250,120,40,40,40	1			"male_tunic_blue;composite/male_mainhand_staff"	1		patroller	enemy	M	0				
