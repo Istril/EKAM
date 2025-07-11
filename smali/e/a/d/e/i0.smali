@@ -498,7 +498,7 @@
 
     move-result v2
 
-    const/16 v3, 0xd
+    const/16 v3, 0x11
 
     if-ge v2, v3, :cond_1
 

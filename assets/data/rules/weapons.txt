@@ -265,6 +265,7 @@ landsknechta	Landsknechta	9	15	7	200	14	1			1					6	p	paralysis	6	1
 landsknechta_nps	Landsknechta	9	15	7	200	14	1			1					6	p	paralysis	10	1	
 mace_paladin	paladin_knight	8	20	9	200	8	1								9	p				
 staff_paladin	paladin_clerik	10	15	7	200	10	7	1	1			s	ray2		25	p	paralysis	10	1	
+staff_acolyte	paladin_Acolyte	5	7	7	200	10	11	1	1			s	ray2		12	p				
 bow_paladin	paladin_archer	15	25	7	200	10	7	1	1				arrow1		7	p				
 maul_paladin	inquisitor	12	15	7	200	8	1	1							7	p	stun	15	1	
 greatsword_paladin	gatekeeper	30	40	7	200	9	1	1							10	p	stun	15	1	
@@ -456,3 +457,5 @@ fabskeleton2_Gsword	fabgs	2	8	6	200	9	1	1							8	t
 spiritw_sword	spwsword	2	6	6	200	12	1							p						
 spiritw_berserk_sword	spwsword	4	8	8	200	16	1							p						
 spiritw_legattwoh_sword	spwsword	5	10	8	200	6	1	1						p	7	s				
+spirit_punch_1	Ice elemental	3	7	1	200	10	1								4	s				
+spirit_punch_2	Ice elemental	5	10	1	200	10	1								8	s				

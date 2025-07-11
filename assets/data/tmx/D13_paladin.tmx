@@ -1851,8 +1851,17 @@
     <property name="conditions" value="VariableLower#TMP_D13_grateE,1"/>
    </properties>
   </object>
-  <object id="219" name="stair in second floor" type="transition" x="2142.5" y="417.5" width="33.5" height="62.5"/>
-  <object id="220" name="tp from second floor" type="entry" gid="17" x="2176" y="384" width="64" height="64"/>
+  <object id="219" name="stair in second floor" type="transition" x="2142.5" y="417.5" width="33.5" height="62.5">
+   <properties>
+    <property name="area_id" value="D13_paladinsecondfloor"/>
+    <property name="entry_id" value="225"/>
+   </properties>
+  </object>
+  <object id="220" name="tp from second floor" type="entry" gid="17" x="2176" y="384" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="770"/>
+   </properties>
+  </object>
   <object id="229" name="grate" type="mapitem" gid="21" x="544" y="1024" width="64" height="64">
    <properties>
     <property name="active" value=""/>

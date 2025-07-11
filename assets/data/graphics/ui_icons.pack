@@ -710,3 +710,29 @@ sword
   orig: 32, 32
   offset: 0, 0
   index: -1
+
+ui_icons2.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+skill_bg6
+  rotate: false
+  xy: 758, 277
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+skill_bg7
+  rotate: false
+  xy: 758, 211
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+skill_bg8
+  rotate: false
+  xy: 758, 145
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

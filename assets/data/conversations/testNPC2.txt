@@ -7,6 +7,6 @@ index	type	text	text_ES	Go To	conditions	actions	requisites
 10	Q	Мне нужна помощь. Я пришел сюда, чтобы узнать больше о духах.		11			
 11	A	Духи жизни		0		TrainSkill#spiritualism	
 11	A	Духи войны		0		TrainSkill#war_spirit	
-11	A	Духи войны		0		TrainSkill#spirit_protection	
+11	A	Магистр спиритуализма		0		TrainSkill#spirit_protection	
 100	Q	Мне нужна помощь. Я пришел сюда, чтобы узнать больше о некромантии.		101			
 101	A	Плоть и кости		0		TrainSkill#flash_and_bones	

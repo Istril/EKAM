@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="377">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="383">
  <properties>
   <property name="indoor" value=""/>
   <property name="maxlight" value="60"/>
@@ -2931,7 +2931,7 @@
   </object>
   <object id="303" name="Secret Door" type="secretdoor" gid="21" x="1502.83" y="763.167" width="64" height="64">
    <properties>
-    <property name="maxlevel" value="19"/>
+    <property name="maxlevel" value="18"/>
     <property name="minlevel" value="17"/>
     <property name="secretdoor_tag" value="D13_scards2"/>
    </properties>
@@ -3450,6 +3450,40 @@
     <property name="conditions" value="VariableEqual#false,1"/>
     <property name="spawn" value="Paladin_ranger"/>
     <property name="tag" value="ambush"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="378" name="archer roomA1" type="transition" x="1824" y="736" width="64" height="32">
+   <properties>
+    <property name="area_id" value="D13_paladin"/>
+    <property name="entry_id" value="61"/>
+   </properties>
+  </object>
+  <object id="379" name="warrior" type="spawn" gid="19" x="1568" y="704" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="380" name="warrior" type="spawn" gid="19" x="1728" y="768" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="381" name="warrior" type="spawn" gid="19" x="1600" y="864" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="382" name="warrior" type="spawn" gid="19" x="1664" y="704" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Paladin_warrior"/>
+    <property name="tag" value="Paladin_warrior"/>
     <property name="wander" value="1"/>
    </properties>
   </object>

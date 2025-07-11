@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="58">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="65">
  <properties>
   <property name="indoor" value=""/>
   <property name="maxlight" value="60"/>
@@ -1242,7 +1242,7 @@
  </layer>
  <layer id="3" name="ground" width="96" height="96">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACu3aW07CQBSAYRJrXIDRbZC4YReD8bYTYRNC7CTDMNW2YXpEvy85D+X28LcMpbBaAfBbPF4ND+3pH0v/WPrH0j+W/rH0j6U/AAAAAAAAAAAAAAAAADDHw/Wyw7FDk/VCo/+p1P/upu3oX5f3v200+g/L+9+fafQfb876c2i87b5m10/a1n+a1H/KWjKmv/V/nLz/tjuej35S47x/2T09Nu//st9+6ue1cw5a07L/png9Ti3Zv+VcqnXR/5zr/ya7f1fsy7Ez9Jzy9ktVHke1z8455z+1/rWG5Xtsyj74C/1bH//Wn+/5/I3Vsv/7fvu5n7fOuWdNy/6+f/2s1fdf1x/Gcf0nluufsVz/j+X3r1h+/43l/w8AAAAAAAAAAAD/2ydy0WS2AJAAAA==
+   H4sIAAAAAAAACu3aTW7CMBAGUBapeoCovQZS77+j6t9NCpcoqLFqXCMchG1FeU+aRQhk8SUME4fNBgAAAAAAAAAAAAAAAAAAAAAAoMzLQ9vi3CmTbaOS/38h/6fHuiX/vDj/sVLJ/7I4/+c7lfzL3dJ/Thnvh986TBW25T9PyH9OLynJX//P2w/nFeef7vueKmQc55/mHt4b5/9+3H6d6mMwg4asxqhX18x/lxxv7UL2If+xcf41awlCf47nlG2S/z37/y7af0jOZWld+kz6+hKUXEe5385b5p9c/rkM0+/YnHOwxPxbX//6z5/e/X/tWs8/X8ftt6k+h3XPnkHL+d/913W17n+tP5Sx/tOX9c++rP/35flXX57/9uX/DwAAAAAAAAAAAOv2AxnaXJEAkAAA
   </data>
  </layer>
  <layer id="4" name="ground2" width="96" height="96">
@@ -1257,7 +1257,7 @@
  </layer>
  <layer id="6" name="objects" width="96" height="96">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACu3YQU6DQBQGYBIDJ9CFp3dp0q3eQGOv5KILw2KiQoehlPI67fclE0gzCfDz+jJM0wAAAAAAAAAAAAAAAAAAAAAAAMxzaJvmocuPx8Exd176rR9dF/201+eUTD7b3/P3Nj9vOHfJte7FlpnIf6zP5GOillMfSb1k6Zx0Lf4rZXKsjyydL/8x/SfWs/xDPWUyeW2PH88h/7Et63/qO+OcUfN7zd17qf5fVvg/rKXm/Ie+rijXuXYV3nPyt473lT5HzfkP1Vj/NfefLft/aa9v6fiusGYS6/9Y1v+x1H8s+z+x5B+rz+Rto/WD/MfUfyz5x7rUnuStfScBAAAAAAAAAADcqh+K553NAJAAAA==
+   H4sIAAAAAAAACu3YQU6EMBQGYBIDJ9CFl/NqLk3c6g0045E00YWyIGqh05GZ4VH5vqSBTJpQft68FJoGAAAAAAAAAAAAAAAAAAAAAADgMB9t01x0+XGZHHPnpd/60XXRd7s+f8nkuf0+f2zz89K5c661FUtmIv+xPpOnPbU89JGhl8ydM1yL30qZTPWRufPlP6b/xLqW/6LS/eZVJpO7dvp4jK3n32f/luS4ZP3ve884ZtTyXKfWmVt7qf5vT/B/OJVa8u9r/aaQ225FuR7qvpI1T/X6n3X8Usl9pGrJ/7/Wfy39J7r/l771zR3pnmKt3r/W+Rq4/6mlTs8prR37/1jqP5bvP7HkH6vP5GGh/YP8x9R/LPnHOtc3yZrfkwAAAAAAAAAAALbkE1GFaVsAkAAA
   </data>
  </layer>
  <layer id="7" name="roofs" width="96" height="96">
@@ -1285,6 +1285,48 @@
   <object id="57" name="entry propovednik" type="entry" gid="17" x="3008" y="1888" width="64" height="64">
    <properties>
     <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="58" name="Acolyte" type="spawn" gid="19" x="1792" y="2016" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Acolyte"/>
+    <property name="tag" value="Paladin_Acolyte"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="59" name="Acolyte" type="spawn" gid="19" x="1728" y="2016" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Acolyte"/>
+    <property name="tag" value="Paladin_Acolyte"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="60" name="Acolyte" type="spawn" gid="19" x="1792" y="1824" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Acolyte"/>
+    <property name="tag" value="Paladin_Acolyte"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="61" name="Acolyte" type="spawn" gid="19" x="1728" y="1824" width="64" height="64">
+   <properties>
+    <property name="spawn" value="Acolyte"/>
+    <property name="tag" value="Paladin_Acolyte"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="62" name="convTrigger bishop" type="trigger" x="1503" y="1756.33" width="182.667" height="290.5">
+   <properties>
+    <property name="actions" value="StartConversation#eger,tutorial_eger;SetVariable#conv_tutor,5"/>
+    <property name="conditions" value="VariableLower#bishop,2"/>
+   </properties>
+  </object>
+  <object id="64" name="bischop" type="spawn" gid="19" x="1568" y="1920" width="64" height="64">
+   <properties>
+    <property name="spawn" value="bischop"/>
+    <property name="tag" value="bischop"/>
+    <property name="unique_tag" value="bischop"/>
+    <property name="wander" value="1"/>
    </properties>
   </object>
  </objectgroup>

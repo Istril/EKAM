@@ -455,3 +455,8 @@ mortification1			Умертвие
 spirit_legioner			Дух легионера							
 spirit_berserker			Дух берсерка							
 spirit_legate			Дух легата							
+spirit_golem1			Сотканный из духов голем							
+spirit_golem2			Сотканный из духов голем							
+spirit_golem3			Сотканный из духов голем							
+Acolyte			Аколит							
+bischop			Проповедник							

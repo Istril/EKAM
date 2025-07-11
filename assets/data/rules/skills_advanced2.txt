@@ -49,3 +49,6 @@ spirit_protection	P	N		N	You can endure death magic thanks to your training. Gai
 					Gain +12 to resist death	1						Gana +12 a resistir muerte
 					Gain +24 to resist death	1						Gana +24 a resistir muerte
 					Gain +36 to resist death	1						Gana +36 a resistir muerte
+					Gain +36 to resist death	1						Gana +36 a resistir muerte
+					Gain +36 to resist death	1						Gana +36 a resistir muerte
+					Gain +36 to resist death	1						Gana +36 a resistir muerte
