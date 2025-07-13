@@ -1376,7 +1376,7 @@
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->hardcoded_resistances:Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances;
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_0
 
     invoke-virtual {v0, p1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances;->a(Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;)I
 
@@ -1392,11 +1392,10 @@
 
     add-int/2addr v0, v1
 
-    :cond_0
     :goto_0
     return v0
 
-    :cond_1
+    :cond_0
     iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->inventory:Lnet/fdgames/GameEntities/CharacterSheet/CharacterInventory;
 
     invoke-virtual {v0, p1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterInventory;->a(Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;)I
@@ -1419,7 +1418,7 @@
 
     sget-object v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;->e:Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;
 
-    if-ne p1, v2, :cond_2
+    if-ne p1, v2, :cond_1
 
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->I()Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;
 
@@ -1449,10 +1448,10 @@
 
     add-int/2addr v0, v2
 
-    :cond_2
+    :cond_1
     sget-object v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;->g:Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;
 
-    if-ne p1, v2, :cond_3
+    if-ne p1, v2, :cond_2
 
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->I()Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;
 
@@ -1482,10 +1481,10 @@
 
     add-int/2addr v0, v2
 
-    :cond_3
+    :cond_2
     sget-object v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;->f:Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;
 
-    if-ne p1, v2, :cond_4
+    if-ne p1, v2, :cond_3
 
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->I()Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;
 
@@ -1529,10 +1528,10 @@
 
     add-int/2addr v0, v2
 
-    :cond_4
+    :cond_3
     sget-object v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;->b:Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;
 
-    if-ne p1, v2, :cond_5
+    if-ne p1, v2, :cond_4
 
     iget-object v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
@@ -1548,10 +1547,10 @@
 
     add-int/2addr v0, v1
 
-    :cond_5
+    :cond_4
     sget-object v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;->c:Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;
 
-    if-ne p1, v2, :cond_6
+    if-ne p1, v2, :cond_5
 
     iget-object v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
@@ -1567,10 +1566,10 @@
 
     add-int/2addr v0, v1
 
-    :cond_6
+    :cond_5
     sget-object v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;->d:Lnet/fdgames/GameEntities/CharacterSheet/CharacterResistances$ResistanceType;
 
-    if-ne p1, v2, :cond_7
+    if-ne p1, v2, :cond_6
 
     iget-object v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
@@ -1586,7 +1585,7 @@
 
     add-int/2addr v0, v1
 
-    :cond_7
+    :cond_6
     iget-object v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
     const-string v3, "spirit_protection"

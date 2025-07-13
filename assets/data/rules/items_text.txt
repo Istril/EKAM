@@ -997,3 +997,4 @@ item_ID	name	description	name_ES	description_ES	name_RU	desc_RU	name_PT	desc_PT	
 50009	S_Citrin				Маленький цитрин	Маленький ярко-голубой камушек													
 50010	Circon				Циркон	Ярко-жёлтый камень													
 50011	S_circon				Маленький циркон	Маленький ярко-жёлтый камушек													
+50012	adminbook				Админбук	тест													

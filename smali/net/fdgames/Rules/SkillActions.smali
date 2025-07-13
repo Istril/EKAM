@@ -2178,7 +2178,7 @@
 
     const/4 v3, 0x0
 
-    const/high16 v5, 0x41a00000    # 12.0f
+    const/high16 v5, 0x41a00000    # 20.0f
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 

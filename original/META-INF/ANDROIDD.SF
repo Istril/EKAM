@@ -1,6 +1,6 @@
 Signature-Version: 1.0
 Created-By: 1.0 (Android)
-SHA1-Digest-Manifest: BK+z/nC4xLX89ftwDV7LJda0NkQ=
+SHA1-Digest-Manifest: g0SS+z5sHBv+Vyu1gBV+fvDjr0o=
 X-Android-APK-Signed: 2, 3
 
 Name: AndroidManifest.xml
@@ -20,6 +20,9 @@ SHA1-Digest: /mXxjjl1jDlO/PjnU8QD5q3OYTc=
 
 Name: assets/data/conversations/C10_stonefang.txt
 SHA1-Digest: YrdhVvqCKy3IpXFea7HTbwD75eA=
+
+Name: assets/data/conversations/C10_testzone_tpbook.txt
+SHA1-Digest: h/W5IOSIVzZMtlKsXfvK6i1isys=
 
 Name: assets/data/conversations/C11_bed_1.txt
 SHA1-Digest: TAThHlRiHGvRqFqsPf/ssuVHogM=
@@ -662,6 +665,9 @@ SHA1-Digest: EdgfAMfUpwiIz91Dm+GkJE36Lqg=
 
 Name: assets/data/conversations/H10_tomb_lever.txt
 SHA1-Digest: oUgGNc/rVCUpYrENW6TKggdbqHw=
+
+Name: assets/data/conversations/H11_cave_goblin_king_v2.txt
+SHA1-Digest: N96nHGjhiAAN30f/5En2x6oyK/A=
 
 Name: assets/data/conversations/H11_maln.txt
 SHA1-Digest: FlIhjtg4+zv/FR85aDM7n4DTQZo=
@@ -3522,6 +3528,9 @@ SHA1-Digest: 2sS1KsJ7AjqV3umkXVdrGoGCY7o=
 Name: assets/data/conversations/orclair_niur.txt
 SHA1-Digest: P8grDnPWYMhRcwwiCw/dfr971OY=
 
+Name: assets/data/conversations/paladin_bishop.txt
+SHA1-Digest: Y9Xa5Wxx4jodTfL/F6cQqaq76R4=
+
 Name: assets/data/conversations/paladin_boss_barrier.txt
 SHA1-Digest: neQnrUJDkPflOlLgCbpMkQaWJFk=
 
@@ -3535,7 +3544,7 @@ Name: assets/data/conversations/paladin_dock_bridge.txt
 SHA1-Digest: M+AXUeWvpP6gxpROnMcToU9/qP4=
 
 Name: assets/data/conversations/paladin_dockdoor.txt
-SHA1-Digest: mEDrZbRcKbNvujArFNX3AQatFkg=
+SHA1-Digest: N8G6b1UzxtBmk5dm5HxFwIYrFpU=
 
 Name: assets/data/conversations/paladin_tpcardinal_book.txt
 SHA1-Digest: 1tvxsby3B6+GCJmg+7j/aswVEmY=
@@ -3655,7 +3664,10 @@ Name: assets/data/conversations/tdoor.txt
 SHA1-Digest: zPc6+/q4uTSxFA9kUuLACE3hO8o=
 
 Name: assets/data/conversations/testNPC.txt
-SHA1-Digest: POEWz8I1PrJdopxzoFf/2Tm4HfQ=
+SHA1-Digest: lF6jG9v0lUutDe1S4eGcelVZEeo=
+
+Name: assets/data/conversations/testNPC2.txt
+SHA1-Digest: qmXZf3mw6u/F7Cd3HBtNlKDO6/w=
 
 Name: assets/data/conversations/test_companion.txt
 SHA1-Digest: EpqdPMOgBVnzTGQir275s0UWxF4=
@@ -3673,7 +3685,7 @@ Name: assets/data/conversations/tutorial_colodec.txt
 SHA1-Digest: YZ1HKX8+zqDlEhSh7gHHLHC4YIA=
 
 Name: assets/data/conversations/tutorial_eger.txt
-SHA1-Digest: ZzHWHKKD6OMgEAaT4KFhaAN9Enk=
+SHA1-Digest: EyECIZiBF4OEgijtMCUnGjjIwLQ=
 
 Name: assets/data/conversations/varannari_hunters.txt
 SHA1-Digest: oUYCUiAtPWfOt7yTz1zC2WM8pVk=
@@ -3685,64 +3697,64 @@ Name: assets/data/conversations/vigilant_knight.txt
 SHA1-Digest: fLDXttnYBnB23/vIsGCnoBElOP0=
 
 Name: assets/data/conversations/wood_ore1.txt
-SHA1-Digest: KLACjrLg6U6vkw0miVSAnxrQkg4=
+SHA1-Digest: 3xK278hgmB88y500R+alsws4ilU=
 
 Name: assets/data/conversations/wood_ore10.txt
-SHA1-Digest: jU/T7I7XychsGEoXYZC+AQXQT2s=
+SHA1-Digest: pYgZwE+15DlduQuCh6mMW63dtT0=
 
 Name: assets/data/conversations/wood_ore11.txt
-SHA1-Digest: TkqNIkY2Ha9Xzme4arVh+G/jYgc=
+SHA1-Digest: DGKnnJoxAEMldewOW6p/B4Fq8KY=
 
 Name: assets/data/conversations/wood_ore12.txt
-SHA1-Digest: 3ZULKFI7hXzlWun8HI0YegYEimM=
+SHA1-Digest: ZZwBt8dwesEFsedfQMBkBMWlALA=
 
 Name: assets/data/conversations/wood_ore13.txt
-SHA1-Digest: YrBku38mTWzJKPvCLg1guvwq+BY=
+SHA1-Digest: InltPIwSknh7eQnxfb1q0iqOLhE=
 
 Name: assets/data/conversations/wood_ore14.txt
-SHA1-Digest: dPnPIkNXqfNPHXuRthi+M+HUk6c=
+SHA1-Digest: BrtL2qTBTHMRMxCN9g9IEPW3YUc=
 
 Name: assets/data/conversations/wood_ore15.txt
-SHA1-Digest: F28rOFCSv6IDrlm0z7k7TaWLrU8=
+SHA1-Digest: X6JVysI9sNvGZYk3EkwbJYaW7PY=
 
 Name: assets/data/conversations/wood_ore16.txt
-SHA1-Digest: yPR/fXenpv/g310m9e012Ba84aE=
+SHA1-Digest: xlIgjtIFWwCANgDAan9SpkJY6XE=
 
 Name: assets/data/conversations/wood_ore17.txt
-SHA1-Digest: WaWw9FrgRVmbtbhQ0DleV87QDcg=
+SHA1-Digest: IhyN+SJ+o8rehjz660FmqyELNW4=
 
 Name: assets/data/conversations/wood_ore18.txt
-SHA1-Digest: TcOoHJhcWQb1/SrOyYb5OVuZXhw=
+SHA1-Digest: uoaGGFThBWDeo/QTICEGQoy4DJE=
 
 Name: assets/data/conversations/wood_ore19.txt
-SHA1-Digest: MWC8WAR3+/b+OubHDt/LvVuAy98=
+SHA1-Digest: NAQsitQXWVoZH+/kmx9K8M/FHtc=
 
 Name: assets/data/conversations/wood_ore2.txt
-SHA1-Digest: 8wXuFkkIKY/o5wkWwAY1py3dRN4=
+SHA1-Digest: ed2dPbAD6wKlIzO8W+6qSoluClM=
 
 Name: assets/data/conversations/wood_ore20.txt
-SHA1-Digest: iBnyKQwVMedFNWDkhJHmyEbWjn8=
+SHA1-Digest: 4Y8FGXYmf7nafqaAvubIzWI0I4s=
 
 Name: assets/data/conversations/wood_ore3.txt
-SHA1-Digest: bouRjnWA90HUPnTTurMqbzFkoVg=
+SHA1-Digest: Fgpo2NFdRrOBCB6KSzmDFHOuUNQ=
 
 Name: assets/data/conversations/wood_ore4.txt
-SHA1-Digest: LQFW6qSkZPlUnYV/HGozyhCOBQ4=
+SHA1-Digest: 056ftxwq2wUECZfjmPGNTZxTHi4=
 
 Name: assets/data/conversations/wood_ore5.txt
-SHA1-Digest: f8nczZCAlQXqhdMNDV7EBYBE1OM=
+SHA1-Digest: XDWj7wfkoG8GswwufjX5xTP/BaA=
 
 Name: assets/data/conversations/wood_ore6.txt
-SHA1-Digest: F/oXnvU7sp/adkDWSnd84fjzmPA=
+SHA1-Digest: x/VZhtHfXQuST8AnMZzeVZ3XfvE=
 
 Name: assets/data/conversations/wood_ore7.txt
-SHA1-Digest: 75UbquPEl71qHwK+7ykdgJ4qPOM=
+SHA1-Digest: i6P8OYXucHnhTjd76lKxLaYucys=
 
 Name: assets/data/conversations/wood_ore8.txt
-SHA1-Digest: ZF8l8i9Wd1r6NVqMmzEmUEKrpq4=
+SHA1-Digest: PGcHz9KlvGg3caB/xEmExa9v1mo=
 
 Name: assets/data/conversations/wood_ore9.txt
-SHA1-Digest: Gq3pzv6ixkiZ3StFL/F1hKgxlIg=
+SHA1-Digest: AGKzINZBQqHqT+4jeleHJVu5Xt4=
 
 Name: assets/data/graphics/activables.pack
 SHA1-Digest: sJueIQ5djesiCU6dhPJKOFnTp8A=
@@ -3772,7 +3784,7 @@ Name: assets/data/graphics/flags_linear.pack
 SHA1-Digest: WSmnEOpz0Cv+5fYjfP6N/itwIa8=
 
 Name: assets/data/graphics/items.pack
-SHA1-Digest: lws7HQOlR8OtjS+nvs2NCZ9uts8=
+SHA1-Digest: lCg5PhMVCOAMW8xuAEdNZSI/UYs=
 
 Name: assets/data/graphics/items.png
 SHA1-Digest: a12wpABO3MLxLeCkD9E2lJSfKuQ=
@@ -3781,7 +3793,7 @@ Name: assets/data/graphics/items2.png
 SHA1-Digest: qxDSdVQWPhkibSjP/ZqQ0AbNmkE=
 
 Name: assets/data/graphics/items3.png
-SHA1-Digest: 3S4kQrXMNUEkhL213/ACXBB8X9c=
+SHA1-Digest: aWiCV1L6S/NGMDqaz7reMSh3JIs=
 
 Name: assets/data/graphics/items_linear.pack
 SHA1-Digest: aSbH8WiDzbxVfsoqKDja71Mlchs=
@@ -4080,6 +4092,12 @@ SHA1-Digest: 349+gXtqJBjwqJWTKbJYyvLQB/Y=
 Name: assets/data/graphics/portraits/male/116.png
 SHA1-Digest: ampsbyp7Bnz5KCwrN4sp/RUY8I4=
 
+Name: assets/data/graphics/portraits/male/117.png
+SHA1-Digest: 8rPMel9UCsiqP1HYGIWGvPylwJQ=
+
+Name: assets/data/graphics/portraits/male/118.png
+SHA1-Digest: mV0u7mpHl6KW4SoYod3m/bEpErQ=
+
 Name: assets/data/graphics/portraits/male/12.png
 SHA1-Digest: X1McO89juuNIf4pRKxVdD04uCEM=
 
@@ -4372,13 +4390,13 @@ Name: assets/data/graphics/runes.png
 SHA1-Digest: avH05Tq5hE/6sx6g02+xA37PRJ8=
 
 Name: assets/data/graphics/skills.pack
-SHA1-Digest: Av9cfWRGXIPCOoRdUtin0bQvxBg=
+SHA1-Digest: XUEwEcKX2N3Oicvbj7Yp3BuLB78=
 
 Name: assets/data/graphics/skills.png
 SHA1-Digest: jXnN6IWHxrRzeajAH0ZGyApub64=
 
 Name: assets/data/graphics/skills2.png
-SHA1-Digest: mYQXiQM1UBJwWEaDiBuQ/VNse2w=
+SHA1-Digest: kZd+zEQXMpeJXOfxVCWenAiVIWM=
 
 Name: assets/data/graphics/skills_linear.pack
 SHA1-Digest: 94zoK50hRwetE+Z5mWme//GXy7g=
@@ -4387,10 +4405,13 @@ Name: assets/data/graphics/sum_weapon.png
 SHA1-Digest: h2Q0I8cHD0P4kCvSlU28z+8PzXY=
 
 Name: assets/data/graphics/ui_icons.pack
-SHA1-Digest: Uqo+ClTUshlBZU1SzlRJ0TiaBJQ=
+SHA1-Digest: pdTuLlY7WrL9z6fwDqf33s35bV8=
 
 Name: assets/data/graphics/ui_icons.png
 SHA1-Digest: XhYlORd0ckEtkKNzPMFp1q2C6F8=
+
+Name: assets/data/graphics/ui_icons2.png
+SHA1-Digest: xndNRr/KVTgAC+PnEWTOi+eJw58=
 
 Name: assets/data/graphics/ui_icons_linear.pack
 SHA1-Digest: OoC/W4a0n1T4M7ixrBFmldD99/w=
@@ -4990,7 +5011,7 @@ Name: assets/data/quests/goblin_hunt3.txt
 SHA1-Digest: FqQw2264Tx/7FU4YpUhMYAmek18=
 
 Name: assets/data/quests/hide_for_carpet.txt
-SHA1-Digest: ffqm/rr0oIKIbGv2bg3iusq9wqw=
+SHA1-Digest: 574Mptoi8KPsLRwt/ZADwhpjUiM=
 
 Name: assets/data/quests/honor_among_thieves.txt
 SHA1-Digest: NKNGGNFogL1LyvMxOfI46yVYs+U=
@@ -5236,7 +5257,7 @@ Name: assets/data/quests/world_stage.txt
 SHA1-Digest: 6fw/cPsGkOvg+7miSvAzvdEq2gw=
 
 Name: assets/data/rules/RU/skills.txt
-SHA1-Digest: /U8F3VdYP6sx3oWjwZbKbMTc3Cw=
+SHA1-Digest: 9ftC9OgvXFNTXRS7+KVZnUIm7j4=
 
 Name: assets/data/rules/RU/skills2.txt
 SHA1-Digest: CL62JlFnwIDB1ZbmaEYt55lWSY8=
@@ -5245,34 +5266,34 @@ Name: assets/data/rules/RU/skills3.txt
 SHA1-Digest: MuiR0H5AxnIDSkJXaj1d8xRETvw=
 
 Name: assets/data/rules/RU/skills_advanced.txt
-SHA1-Digest: i3fvAjbgegNojXYTxpolZSzEn6Y=
+SHA1-Digest: W1Al2ypwNClWrHnu61JXiSNrMPU=
 
 Name: assets/data/rules/RU/skills_advanced2.txt
-SHA1-Digest: pnoX+L7G1GYl5rbQtNgC124DE7Y=
+SHA1-Digest: 7RH5rZjcbBVU9Dwpbq+vsp6eWHY=
 
 Name: assets/data/rules/RU/skills_advanced3.txt
 SHA1-Digest: 4SeKCndcyuD+qbJF7x5Wqp03fGk=
 
 Name: assets/data/rules/bestiary.txt
-SHA1-Digest: 0Wx2732H7A6UsEoSY/uPjm1KQqw=
+SHA1-Digest: vAXrHEyBHtuMiddePAhDhxoGDK0=
 
 Name: assets/data/rules/bestiary_names.txt
-SHA1-Digest: ADKlRUFoUPbhUKfuc2v+6SsEHws=
+SHA1-Digest: sO/EKcMcbBr0elrD1jFHApaUKVg=
 
 Name: assets/data/rules/cleanvariables.txt
 SHA1-Digest: CBg2TPtyipxYwUsHqEU031dM/dA=
 
 Name: assets/data/rules/items.txt
-SHA1-Digest: 6M90HGyP6H4O4tu5BQoEjIo+zaw=
+SHA1-Digest: Ds20fnYib7j2t+KFzx/c2RYOPcc=
 
 Name: assets/data/rules/items_text.txt
-SHA1-Digest: dPImOmOaZM2q3UMhwOkX/Uxjghk=
+SHA1-Digest: B8bPPhjmeWXxAcNIbGB5rVBay/8=
 
 Name: assets/data/rules/loot.txt
-SHA1-Digest: bs/EFgN2OA/YrYcUhnRCPkNmTAI=
+SHA1-Digest: RnvuxAuuWoriMsdmVpE2RmaIi+Y=
 
 Name: assets/data/rules/map_effects.txt
-SHA1-Digest: dSckDNd7htlUqZMHYSiH/q7qqRQ=
+SHA1-Digest: 3nsrLByNRA3OhuHNLidptpeulcw=
 
 Name: assets/data/rules/offhand_weapons.txt
 SHA1-Digest: +mmSeDi/mUxRli2dDx5MpgbI7Yo=
@@ -5290,7 +5311,7 @@ Name: assets/data/rules/rewards/potions.txt
 SHA1-Digest: gXETc1NKi2L3U7372oZdxDA7kxY=
 
 Name: assets/data/rules/skills.txt
-SHA1-Digest: NXuYmiB0yyDJz7pNLh14Z5naVDg=
+SHA1-Digest: t9f9p8M0sYWiqqpN6sQx3P4/bRw=
 
 Name: assets/data/rules/skills2.txt
 SHA1-Digest: ylGF8Oh1bbgrXESl6s3AeOZShYI=
@@ -5299,10 +5320,10 @@ Name: assets/data/rules/skills3.txt
 SHA1-Digest: F9iMLuorEIrq3juP1aOSM78ae5U=
 
 Name: assets/data/rules/skills_advanced.txt
-SHA1-Digest: rHbaZ7NnKTyILPygwIMnl2bb6rU=
+SHA1-Digest: eWhhjpJqGDMgkcggeb0V2ffe94E=
 
 Name: assets/data/rules/skills_advanced2.txt
-SHA1-Digest: BNfidJaPg3DHLaFC98YZotcgvUs=
+SHA1-Digest: zkziu7xnXgVWo3XUNGamE9hpIMQ=
 
 Name: assets/data/rules/skills_advanced3.txt
 SHA1-Digest: 5VaY2P6Y0sG7RsTMywueyIRt4Co=
@@ -5311,7 +5332,7 @@ Name: assets/data/rules/traps.txt
 SHA1-Digest: 2XhUWbT7CUF7d201Y7w97lRgVFc=
 
 Name: assets/data/rules/weapons.txt
-SHA1-Digest: L1osUalx/VJ4pQAEg8ooSisSA4w=
+SHA1-Digest: FGQYN/xtFp/+EPeFtJ0KJDuI8Jo=
 
 Name: assets/data/sounds/batrax.mp3
 SHA1-Digest: d4iJ/M6txBN6npggsXT3/Gw0dfg=
@@ -5673,6 +5694,13 @@ SHA1-Digest: VIl+sws2okgiyXpt+KwKWWlFNns=
 Name: assets/data/sprites/composite/female_mainhand_battleaxe.png
 SHA1-Digest: Yr0ehyUsb3X2CKmBCDLRJNeG6wQ=
 
+Name: assets/data/sprites/composite/female_mainhand_crossbow.png
+SHA1-Digest: ctszeb8Ouc8Hi67lEn7RrhXyZnI=
+
+Name: assets/data/sprites/composite/female_mainhand_crossbow_ranged.pn
+ g
+SHA1-Digest: iR9INJ3enmf4FSLBY5hyBmQteL0=
+
 Name: assets/data/sprites/composite/female_mainhand_dagger.png
 SHA1-Digest: MUv09Neoi9wn8GHSrsCAjF/2HRg=
 
@@ -5858,6 +5886,12 @@ SHA1-Digest: ISzezS/VUlOy/9B/qgNFG2jwIUI=
 Name: assets/data/sprites/composite/male_mainhand_battleaxe.png
 SHA1-Digest: EPNUywnOEaHGdR4D6xiAeBzracs=
 
+Name: assets/data/sprites/composite/male_mainhand_crossbow.png
+SHA1-Digest: 1CKB38jO6n/WM+cH0xUlW9QmrCI=
+
+Name: assets/data/sprites/composite/male_mainhand_crossbow_ranged.png
+SHA1-Digest: +KHNR38Ix8LKtbYnxtVdjFv5+NA=
+
 Name: assets/data/sprites/composite/male_mainhand_dagger.png
 SHA1-Digest: F+fyLvQr7/agcZ7haOLZdGVtxzw=
 
@@ -5902,6 +5936,9 @@ SHA1-Digest: W+nAf12hu1a1W0/v1Wj0EYr+5fQ=
 
 Name: assets/data/sprites/composite/male_mainhand_shortsword.png
 SHA1-Digest: VL2jtTsrfoSwEMjjLUZZpqLVN54=
+
+Name: assets/data/sprites/composite/male_mainhand_spiritstaff.png
+SHA1-Digest: XP2euHiyA7CLQ77byEABUh33sLU=
 
 Name: assets/data/sprites/composite/male_mainhand_staff.png
 SHA1-Digest: YQIRYJ8yMRwa3DytUnah9PXZZN4=
@@ -6175,6 +6212,9 @@ SHA1-Digest: ULVj/TSvrb+GLT3LtYJBn03addo=
 
 Name: assets/data/sprites/ice_giant.png
 SHA1-Digest: nFUb7CzOtyqQ4pIl9lapVjgCVB0=
+
+Name: assets/data/sprites/knight_wights.png
+SHA1-Digest: cdOvA1RoKdEThszIf290tYU5stM=
 
 Name: assets/data/sprites/loot.png
 SHA1-Digest: W6eDDXV4h39S4qE+wkRvP9wAwzA=
@@ -6504,7 +6544,7 @@ Name: assets/data/tmx/C10.tmx
 SHA1-Digest: z+EW+2UwmjYrEPKG8W8g8LTiu4M=
 
 Name: assets/data/tmx/C10_test_zone.tmx
-SHA1-Digest: 7iWd8KLyzjCXUACAM6z20W3kBIM=
+SHA1-Digest: eSngVhQ9lVKT1/BsU/eixgiYK/E=
 
 Name: assets/data/tmx/C11.tmx
 SHA1-Digest: OURd1SFSWNa+JNEJq64Ki8T3W0s=
@@ -6552,22 +6592,22 @@ Name: assets/data/tmx/D13.tmx
 SHA1-Digest: CbYIA5y2GFbHwjs01I9gF5PQJ58=
 
 Name: assets/data/tmx/D13_paladin.tmx
-SHA1-Digest: XFS2mfXkFL76F5JxGVG7PGRGTdI=
+SHA1-Digest: lQCfCIDkCJHe8Q0RUUwRIJ7bfJo=
 
 Name: assets/data/tmx/D13_paladinarhiepiscoproom.tmx
-SHA1-Digest: wFPtGcXFfuiynPLEe04mKry3hmI=
+SHA1-Digest: 18qZKHBx8Eq5kHortRuQt2xD430=
 
 Name: assets/data/tmx/D13_paladindungeon.tmx
-SHA1-Digest: DbLgVlaqsu9VGF/bxGKkwtVfO+o=
+SHA1-Digest: CZ5gqrOMx7MZgySlWiby91ZQ4LA=
 
 Name: assets/data/tmx/D13_paladinnastoytelroom.tmx
 SHA1-Digest: OaRFDoGcxu3RePrP7u0Z1XXhHpU=
 
 Name: assets/data/tmx/D13_paladinpropovednikroom.tmx
-SHA1-Digest: XSN2r0vnSjsgwouyVv+bkJ/Ldo8=
+SHA1-Digest: A4S8qxVDSpUHnIaUv+InyZlMUlI=
 
 Name: assets/data/tmx/D13_paladinsecondfloor.tmx
-SHA1-Digest: s0eI9BhRdlKs76PjA1HwbkDNjHY=
+SHA1-Digest: oEiZV5Kyz5HMvnTZQWg5X1olX+k=
 
 Name: assets/data/tmx/D13_paladinwatherroom.tmx
 SHA1-Digest: 9NhQMvVX9pRyY+BwmJx5wqAMFac=
@@ -6618,7 +6658,7 @@ Name: assets/data/tmx/E10_maze_2.tmx
 SHA1-Digest: 8vDWGph65YDwV1d/xT+3hNGdeqE=
 
 Name: assets/data/tmx/E10_tower.tmx
-SHA1-Digest: 3xC3JoocdBNeiTUtMU+DQHBAGag=
+SHA1-Digest: Ig5azkCsKrM42my0eOT0KZMsSXY=
 
 Name: assets/data/tmx/E10_tower1.tmx
 SHA1-Digest: whKVDQtzrggx+vHkPP8kXq/eN0k=
@@ -6762,7 +6802,7 @@ Name: assets/data/tmx/G9_cave.tmx
 SHA1-Digest: hFuCLwcrU1F1Cws4btdsqzYEpWM=
 
 Name: assets/data/tmx/H10.tmx
-SHA1-Digest: 1yOpO7CMCqUaYkPHYPezbN30NQk=
+SHA1-Digest: VonxJkhiIH1V3AuP+3xME728D2g=
 
 Name: assets/data/tmx/H10_mine.tmx
 SHA1-Digest: 7Qdj93u9ipSEBv80pBk3UrfBRc4=
@@ -6786,7 +6826,7 @@ Name: assets/data/tmx/H11_cauldron.tmx
 SHA1-Digest: nYIW3ETIuwiHuGFtAS+ZA1pE7wQ=
 
 Name: assets/data/tmx/H11_cave_1.tmx
-SHA1-Digest: 1SQbTfq2c1FRP+4j7bGHuxNpJY0=
+SHA1-Digest: 0r5hbXGxGWFHNJ0RWbHmFFTxGsI=
 
 Name: assets/data/tmx/H11_maln_shop.tmx
 SHA1-Digest: XqUNF35psKJgTc23VOreDcmQhAk=
@@ -6849,7 +6889,7 @@ Name: assets/data/tmx/I10_tower.tmx
 SHA1-Digest: RGPh0zpjdArvygMZLV0crPDGpvs=
 
 Name: assets/data/tmx/I10_tutorial.tmx
-SHA1-Digest: GIDjRcpko6B1Lx95FrnN1Pa8hSU=
+SHA1-Digest: FFHkkNDnhHSW0wDiS5cQ2MbZt8A=
 
 Name: assets/data/tmx/I10_tutorial_eger_house.tmx
 SHA1-Digest: UGmShCGveaM4JeSMQ0/ukqOrhQc=
@@ -7029,7 +7069,7 @@ Name: assets/data/tmx/adt_tiled_dungeon3.png
 SHA1-Digest: qBJrGQVQrOxYTJbkLzoMWb0ck2c=
 
 Name: assets/data/tmx/adt_tiled_dungeon5.png
-SHA1-Digest: xPHo603VP8L6nr2tJqgNMzdyaCw=
+SHA1-Digest: DkA2ygsvSF0fblR296U0aSvrTNU=
 
 Name: assets/data/tmx/adt_tiled_dungeon_dark.png
 SHA1-Digest: ikcsi72jsI8qSEPFWbeDMf56Z8g=
@@ -7173,7 +7213,7 @@ Name: assets/data/tmx/dungeon4.tsx
 SHA1-Digest: WnA1UfEmb8twAz+PszzknYnYoWM=
 
 Name: assets/data/tmx/dungeon5.tsx
-SHA1-Digest: dVIuVDxKIXfP0tVH1GzraGe5O8U=
+SHA1-Digest: GwVTICRyJ77+/l21WqnQUshO120=
 
 Name: assets/data/tmx/dungeon_dark.tsx
 SHA1-Digest: j3+aM9Pq5w0lF7HHABSA6hkptC0=
@@ -7660,9 +7700,6 @@ SHA1-Digest: N0gdT6sKQPorZLiKLyCcU89Oqpo=
 
 Name: assets/data/tmx/wizardtower.tsx
 SHA1-Digest: T9QiwDKkzyBu2dNKLJIZ+RUa79Q=
-
-Name: assets/data/tmx/С10_test_zone.tmx
-SHA1-Digest: BItfkSAItSOIzr2IM7sgJL1xtmU=
 
 Name: assets/data/ui/arrow_left.png
 SHA1-Digest: cb5ZvUQmO4ADKA98d7p4oqkzeZE=
@@ -8241,7 +8278,7 @@ Name: billing.properties
 SHA1-Digest: JrRvOp94Tk0Z5hd3dCDOIkzYDng=
 
 Name: classes.dex
-SHA1-Digest: gNy94qRBq6Ud9Vg8Fe3xo6iTmVk=
+SHA1-Digest: sxdqSF0rygXRTkJFB0RKUZgMZts=
 
 Name: com/badlogic/gdx.gwt.xml
 SHA1-Digest: AK0fzC79XDRfqJfInvQ2JHAndqQ=

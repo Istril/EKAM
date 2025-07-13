@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset name="gate" tilewidth="64" tileheight="128">
+<tileset name="adt_tiled_dungeon5" tilewidth="64" tileheight="128">
  <image source="adt_tiled_dungeon5.png" width="1024" height="1920"/>
  <tile id="48">
   <properties>

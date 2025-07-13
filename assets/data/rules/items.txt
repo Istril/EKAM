@@ -997,3 +997,4 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 50009	S_Citrin	general		0				90	small_citrin	0	0													1
 50010	Circon	general		0				90	circon	0	0													1
 50011	S_circon	general		0				90	small_circon	0	0													1
+50012	adminbook	potion		0				90	topaz	0	0									"GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#"				1

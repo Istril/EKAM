@@ -430,6 +430,7 @@ Paladin_inquisitor	strong	cleric	18	22	maul_paladin	15	150,80,60,100,-90,100	1	[
 Unbrekeble	boss	warrior	18	18	greatmaul_paladin	30	150,150,150,150,-150,150	1	[detector][shield]	unbrekeble	"composite/male_plate;composite/male_head"	1.3	"resilience#3;bush#2"	patroller	enemy	M	0		SetVariable#stbar,5		
 Acolyte		cleric	15	15	staff_acolyte	2	0,50,50,80,-60,100	1		outlaw_chest_10	male_tunic_grey	1	heal_wounds#4	patroller	neutral	M	0				
 bischop	boss	cleric	18	18	staff_paladin	6	150,80,70,200,-50,300	1	[detector]	bischop	male_tunic_grey	1.3	"holy_shield#3;heal_wounds#4"	patroller	neutral	M	118		"ItemDeactivate#holyb1;ItemWalkable#holyb1"		
+arhibishop2		cleric	15	15	staff_acolyte	2	0,50,50,80,-60,100	1		outlaw_chest_10	male_tunic_grey	1	heal_wounds#4	patroller	neutral	M	0				
 amarisa	npc	mage	6	7		0		1			adaon	1		patroller	player	M	116				
 kassianv1	strong	warrior	9	11	kassian lsword	15		1	[shield]	knight	male_tunic_blue	1		patroller	player	M	10				
 elemental_fire_01	strong	warrior	10	25	fire_punch_1	5	300,-100,60,60,60,0	1	[outsider][fire_elemental]		fire_elemental	.65		patroller	enemy	M	0				

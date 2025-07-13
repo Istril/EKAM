@@ -460,3 +460,4 @@ spirit_golem2			Сотканный из духов голем
 spirit_golem3			Сотканный из духов голем							
 Acolyte			Аколит							
 bischop			Проповедник							
+arhibishop2			Тень Архиепископа							

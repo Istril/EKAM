@@ -396,7 +396,7 @@
     move v6, v5
 
     :goto_0
-    if-ge v6, v2, :cond_c
+    if-ge v6, v2, :cond_10
 
     iget-object v7, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;->value:[I
 
@@ -404,9 +404,9 @@
 
     aget v0, v0, v6
 
-    const/16 v8, 0x88 #Вложенное в трейт количество очков СУММАРНО !!!Это последний уровень трейтов!!!
+    const/16 v8, 0x88
 
-    if-lt v0, v8, :cond_my15
+    if-lt v0, v8, :cond_0
 
     const/16 v0, 0x10
 
@@ -419,139 +419,139 @@
 
     goto :goto_0
 
-    :cond_my15
-    const/16 v8, 0x78 # Вложенное в трейт количество очков СУММАРНО
+    :cond_0
+    const/16 v8, 0x78
 
-    if-lt v0, v8, :cond_my14
+    if-lt v0, v8, :cond_1
 
-    const/16 v0, 0xf # Если вышеописанное число совпало, установить значение текущего трейта на 15
-
-    goto :goto_1
-
-    :cond_my14
-    const/16 v8, 0x69 # Вложенное в трейт количество очков СУММАРНО
-
-    if-lt v0, v8, :cond_my13
-
-    const/16 v0, 0xe # Если вышеописанное число совпало, установить значение текущего трейта на 14
+    const/16 v0, 0xf
 
     goto :goto_1
 
-    :cond_my13
-    const/16 v8, 0x5B # Вложенное в трейт количество очков СУММАРНО
+    :cond_1
+    const/16 v8, 0x69
 
-    if-lt v0, v8, :cond_my12
+    if-lt v0, v8, :cond_2
 
-    const/16 v0, 0xd # Если вышеописанное число совпало, установить значение текущего трейта на 13
+    const/16 v0, 0xe
 
     goto :goto_1
 
-    :cond_my12
+    :cond_2
+    const/16 v8, 0x5b
+
+    if-lt v0, v8, :cond_3
+
+    const/16 v0, 0xd
+
+    goto :goto_1
+
+    :cond_3
     const/16 v8, 0x4e
 
-    if-lt v0, v8, :cond_0
+    if-lt v0, v8, :cond_4
 
     const/16 v0, 0xc
 
     goto :goto_1
 
-    :cond_0
+    :cond_4
     const/16 v8, 0x42
 
-    if-lt v0, v8, :cond_1
+    if-lt v0, v8, :cond_5
 
     const/16 v0, 0xb
 
     goto :goto_1
 
-    :cond_1
+    :cond_5
     const/16 v8, 0x37
 
-    if-lt v0, v8, :cond_2
+    if-lt v0, v8, :cond_6
 
     move v0, v1
 
     goto :goto_1
 
-    :cond_2
+    :cond_6
     const/16 v8, 0x2d
 
-    if-lt v0, v8, :cond_3
+    if-lt v0, v8, :cond_7
 
     const/16 v0, 0x9
 
     goto :goto_1
 
-    :cond_3
+    :cond_7
     const/16 v8, 0x24
 
-    if-lt v0, v8, :cond_4
+    if-lt v0, v8, :cond_8
 
     const/16 v0, 0x8
 
     goto :goto_1
 
-    :cond_4
+    :cond_8
     const/16 v8, 0x1c
 
-    if-lt v0, v8, :cond_5
+    if-lt v0, v8, :cond_9
 
     const/4 v0, 0x7
 
     goto :goto_1
 
-    :cond_5
+    :cond_9
     const/16 v8, 0x15
 
-    if-lt v0, v8, :cond_6
+    if-lt v0, v8, :cond_a
 
     move v0, v2
 
     goto :goto_1
 
-    :cond_6
+    :cond_a
     const/16 v8, 0xf
 
-    if-lt v0, v8, :cond_7
+    if-lt v0, v8, :cond_b
 
     const/4 v0, 0x5
 
     goto :goto_1
 
-    :cond_7
-    if-lt v0, v1, :cond_8
+    :cond_b
+    if-lt v0, v1, :cond_c
 
     const/4 v0, 0x4
 
     goto :goto_1
 
-    :cond_8
-    if-lt v0, v2, :cond_9
+    :cond_c
+    if-lt v0, v2, :cond_d
 
     move v0, v3
 
     goto :goto_1
 
-    :cond_9
-    if-lt v0, v3, :cond_a
+    :cond_d
+    if-lt v0, v3, :cond_e
 
     const/4 v0, 0x2
 
     goto :goto_1
 
-    :cond_a
-    if-lt v0, v4, :cond_b
+    :cond_e
+    if-lt v0, v4, :cond_f
 
     move v0, v4
 
     goto :goto_1
 
-    :cond_b
+    :cond_f
     move v0, v5
 
     goto :goto_1
 
-    :cond_c
+    :cond_10
     return-void
 .end method
 
@@ -589,61 +589,9 @@
 
     const/16 v2, 0x69
 
-    if-ne v1, v2, :cond_16
-
-    const/16 v1, 0x78
-
-    aput v1, v0, p1
-
-    :cond_16
-    iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;->spentPoints:[I
-
-    aget v1, v0, p1
-
-    const/16 v2, 0x5B
-
-    if-ne v1, v2, :cond_15
-
-    const/16 v1, 0x69
-
-    aput v1, v0, p1
-
-    :cond_15
-    iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;->spentPoints:[I
-
-    aget v1, v0, p1
-
-    const/16 v2, 0x4e
-
-    if-ne v1, v2, :cond_14
-
-    const/16 v1, 0x5B
-
-    aput v1, v0, p1
-
-    :cond_14
-    iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;->spentPoints:[I
-
-    aget v1, v0, p1
-
-    const/16 v2, 0x42
-
-    if-ne v1, v2, :cond_13
-
-    const/16 v1, 0x4e
-
-    aput v1, v0, p1
-
-    :cond_13
-    iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;->spentPoints:[I
-
-    aget v1, v0, p1
-
-    const/16 v2, 0x37
-
     if-ne v1, v2, :cond_1
 
-    const/16 v1, 0x42
+    const/16 v1, 0x78
 
     aput v1, v0, p1
 
@@ -652,11 +600,11 @@
 
     aget v1, v0, p1
 
-    const/16 v2, 0x2d
+    const/16 v2, 0x5b
 
     if-ne v1, v2, :cond_2
 
-    const/16 v1, 0x37
+    const/16 v1, 0x69
 
     aput v1, v0, p1
 
@@ -665,11 +613,11 @@
 
     aget v1, v0, p1
 
-    const/16 v2, 0x24
+    const/16 v2, 0x4e
 
     if-ne v1, v2, :cond_3
 
-    const/16 v1, 0x2d
+    const/16 v1, 0x5b
 
     aput v1, v0, p1
 
@@ -678,11 +626,11 @@
 
     aget v1, v0, p1
 
-    const/16 v2, 0x1c
+    const/16 v2, 0x42
 
     if-ne v1, v2, :cond_4
 
-    const/16 v1, 0x24
+    const/16 v1, 0x4e
 
     aput v1, v0, p1
 
@@ -691,11 +639,11 @@
 
     aget v1, v0, p1
 
-    const/16 v2, 0x15
+    const/16 v2, 0x37
 
     if-ne v1, v2, :cond_5
 
-    const/16 v1, 0x1c
+    const/16 v1, 0x42
 
     aput v1, v0, p1
 
@@ -704,9 +652,11 @@
 
     aget v1, v0, p1
 
-    if-ne v1, v7, :cond_6
+    const/16 v2, 0x2d
 
-    const/16 v1, 0x15
+    if-ne v1, v2, :cond_6
+
+    const/16 v1, 0x37
 
     aput v1, v0, p1
 
@@ -715,53 +665,102 @@
 
     aget v1, v0, p1
 
-    if-ne v1, v6, :cond_7
+    const/16 v2, 0x24
 
-    aput v7, v0, p1
+    if-ne v1, v2, :cond_7
+
+    const/16 v1, 0x2d
+
+    aput v1, v0, p1
 
     :cond_7
     iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;->spentPoints:[I
 
     aget v1, v0, p1
 
-    if-ne v1, v5, :cond_8
+    const/16 v2, 0x1c
 
-    aput v6, v0, p1
+    if-ne v1, v2, :cond_8
+
+    const/16 v1, 0x24
+
+    aput v1, v0, p1
 
     :cond_8
     iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;->spentPoints:[I
 
     aget v1, v0, p1
 
-    if-ne v1, v4, :cond_9
+    const/16 v2, 0x15
 
-    aput v5, v0, p1
+    if-ne v1, v2, :cond_9
+
+    const/16 v1, 0x1c
+
+    aput v1, v0, p1
 
     :cond_9
     iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;->spentPoints:[I
 
     aget v1, v0, p1
 
-    if-ne v1, v3, :cond_a
+    if-ne v1, v7, :cond_a
 
-    aput v4, v0, p1
+    const/16 v1, 0x15
+
+    aput v1, v0, p1
 
     :cond_a
     iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;->spentPoints:[I
 
     aget v1, v0, p1
 
-    if-nez v1, :cond_b
+    if-ne v1, v6, :cond_b
+
+    aput v7, v0, p1
+
+    :cond_b
+    iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;->spentPoints:[I
+
+    aget v1, v0, p1
+
+    if-ne v1, v5, :cond_c
+
+    aput v6, v0, p1
+
+    :cond_c
+    iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;->spentPoints:[I
+
+    aget v1, v0, p1
+
+    if-ne v1, v4, :cond_d
+
+    aput v5, v0, p1
+
+    :cond_d
+    iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;->spentPoints:[I
+
+    aget v1, v0, p1
+
+    if-ne v1, v3, :cond_e
+
+    aput v4, v0, p1
+
+    :cond_e
+    iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;->spentPoints:[I
+
+    aget v1, v0, p1
+
+    if-nez v1, :cond_f
 
     aput v3, v0, p1
 
-    :cond_b
+    :cond_f
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterTraits;->b()V
 
     return-void
 .end method
 
-# метод сброса всех трейтов
 .method public c()V
     .locals 3
 

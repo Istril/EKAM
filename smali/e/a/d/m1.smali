@@ -1079,7 +1079,7 @@
     const/16 v0, 0x14
 
     :cond_19
-    if-ne v1, v11, :cond_41
+    if-ne v1, v11, :cond_43
 
     const/4 v0, 0x7
 
@@ -1542,7 +1542,7 @@
     const/16 v2, 0x8
 
     :goto_6
-    if-ne v3, v12, :cond_40
+    if-ne v3, v12, :cond_42
 
     const/16 v1, 0x18
 
@@ -2390,7 +2390,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_flash_and_bones1
+    if-eqz v0, :cond_3e
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -2406,87 +2406,87 @@
 
     move-result v0
 
-    if-eqz v0, :cond_flash_and_bones1
+    if-eqz v0, :cond_3e
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
     move-result-object v0
 
     const-string v1, "spiritualism"
-
-    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
-
-    :cond_flash_and_bones1
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "flash_and_bones"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_war_spirit
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "flash_and_bones"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_war_spirit
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "flash_and_bones"
-
-    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
-
-    :cond_war_spirit
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "war_spirit"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3e
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "war_spirit"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3e
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "war_spirit"
 
     invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
 
     :cond_3e
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "flash_and_bones"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3f
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "flash_and_bones"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3f
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "flash_and_bones"
+
+    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_3f
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "war_spirit"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_40
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "war_spirit"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_40
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "war_spirit"
+
+    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_40
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
     const-string v1, "gate"
@@ -2593,7 +2593,7 @@
 
     invoke-virtual {v1, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->k(Ljava/lang/String;)V
 
-    if-ne v0, v8, :cond_3f
+    if-ne v0, v8, :cond_41
 
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
@@ -2607,7 +2607,7 @@
 
     invoke-virtual {v1, v2, v8, v3}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
 
-    :cond_3f
+    :cond_41
     if-ne v0, v12, :cond_0
 
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
@@ -2624,12 +2624,12 @@
 
     goto/16 :goto_0
 
-    :cond_40
+    :cond_42
     move v0, v2
 
     goto/16 :goto_7
 
-    :cond_41
+    :cond_43
     move v7, v0
 
     goto/16 :goto_5

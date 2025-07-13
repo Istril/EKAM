@@ -1674,7 +1674,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_2
+    if-eqz v1, :cond_next1
 
     const/16 v1, 0xc84
 
@@ -1687,6 +1687,37 @@
     const/16 v1, 0x139d
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameWorld/WorldContainer;->b(I)Z
+
+    goto :goto_0
+
+    :cond_next1
+    new-instance v0, Lnet/fdgames/GameWorld/WorldContainer;
+
+    invoke-direct {v0, p1}, Lnet/fdgames/GameWorld/WorldContainer;-><init>(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lnet/fdgames/GameWorld/GameData;->worldContainers:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    const-string v1, "alchemy_chest"
+
+    invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    const/16 v1, 0xc84 # присваивает v1 значение 0xc84
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameWorld/WorldContainer;->b(I)Z # выдаёт в сундук предмет 0xc84 3204
+
+    invoke-virtual {v0, v3}, Lnet/fdgames/GameWorld/WorldContainer;->b(I)Z # Выдаёт в сундук предмет 0x139c 5020 
+
+    invoke-virtual {v0, v3}, Lnet/fdgames/GameWorld/WorldContainer;->b(I)Z # Выдаёт в сундук предмет 0x139c 5020 
+
+    const/16 v1, 0x139d # присваивает v1 значение 0x139d
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameWorld/WorldContainer;->b(I)Z # Выдаёт в сундук предмет 0x139d 5021
 
     goto :goto_0
 .end method
