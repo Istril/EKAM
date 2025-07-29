@@ -732,18 +732,20 @@ item_ID	name	description	name_ES	description_ES	name_RU	desc_RU	name_PT	desc_PT	
 625	Fiendish Dagger	A ritual weapon that sucks the life out of your victims.	Daga Demoníaca	Un arma ritual que absorbe la vida de tus víctimas.	Дьявольский Кинжал	Ритуальное оружие, которое высасывает жизнь из ваших жертв.	Adaga Diabólica	Uma adaga cerimonial que suga a vida de suas vítimas.	Teuflischer Dolch	Eine rituelle Waffe, die deinen Opfern das Leben aussaugt.	Szatański Sztylet	Rytualna broń, która wysysa życie z twoich ofiar.						
 4021	Battle Gorget	Necklaces are fancy, but not everyone is a hippie.	Gorguera de Batalla	Los collares están bien, pero no todo el mundo es un hippie.	Боевой латный воротник	Причудливый ошейник, но не все же хиппи.	Colar de Batalha	Gargantilhas são chiques, mas nem todo mundo é um hippie.	Kampfringkragen	Halsketten sind schick, aber nicht jeder ist ein Hippie.	Bitewny Naszyjnik	Naszyjniki są fajne, ale nie każdy jest hippisem.						
 5053	Panacea	+40 to Resist Fire, Cold and Shock for 20s.	Panacea	+40 a Resistir Fuego, Frío y Descargas durante 20s.	Панацея	+40 Сопротивения огню, холоду и шоку на 20 сек.	Panaceia	Dá +40 de resistência a fogo, frio e choque por 20s	Allheilmittel	+40 auf Resistenz gegen Feuer, Kälte und Schock für 20 Sekunden.	Panaceum	+40 do odporności na Ogień, Zimno i Elektryczność na 20 sekund.						
-11000	Sabercat pelt	sabercat	Panacea	+40 a Resistir	Шкура саблезуба	Прекрасный коврик для ног.	Panaceia	Dá +40 de resistência a fogo, frio e choque por 20s	Allheilmittel	+40 auf Resistenz gegen Feuer, Kälte und Schock für 20 Sekunden.	Panaceum	+40 do odporności na Ogień, Zimno i Elektryczność na 20 sekund.					Panacea	+40 Resistenza Fuoco, Freddo e Shock per 20sec.
-11001	Empty flask	sabercat	Panacea	+40 a Resistir	Пустая колба	И зачем ты это купил?	Panaceia	Dá +40 de resistência a fogo, frio e choque por 20s	Allheilmittel	+40 auf Resistenz gegen Feuer, Kälte und Schock für 20 Sekunden.	Panaceum	+40 do odporności na Ogień, Zimno i Elektryczność na 20 sekund.					Panacea	+40 Resistenza Fuoco, Freddo e Shock per 20sec.
-11002	Empty flask	sabercat	Panacea	+40 a Resistir	Маленькая пустая колба	Зелья в ней нет, как и толку тоже.	Panaceia	Dá +40 de resistência a fogo, frio e choque por 20s	Allheilmittel	+40 auf Resistenz gegen Feuer, Kälte und Schock für 20 Sekunden.	Panaceum	+40 do odporności na Ogień, Zimno i Elektryczność na 20 sekund.					Panacea	+40 Resistenza Fuoco, Freddo e Shock per 20sec.
-11003	water flask				Большая колба воды	Большая колба воды, база любого алхимического эликсира.													
-11004	water flask				Малая колба воды	Малая колба воды, база любого алхимического зелья.													
-11005	otvar				Травяной отвар	Горький на вкус. Приготовлен каким то старым дедом. Одни минусы.													
-11006	otvar recipe				Рецепт травяного отвара	Он ещё и хранил его рецепт... Какой ужас.													
-11007	otvar recipe_learned				Изученный рецепт травяного отвара	4 синих орхидеи, 6 красных орхидеи, флакон воды,1 мертвьюнок,флакон крови. Теперь ясно почему у него такой отвратительный вкус.													
-11008	halfotvar				Травяной отвар	Вы сделали глоток, разом опустошив кружку на треть. Хватит на два применения.													
-11009	halfhalfotvar				Травяной отвар	Вы сделали глоток, разом опустошив кружку ещё на половину. Хватит на одно применения.													
-11010	emptycup				Пустая кружка	Старый ворчун просил вас не терять эту кружку... Он даже так оставил память о себе.													
-12000	Steel ore				Стальная руда	Второсортная руда, однако лучше своего младшего брата													
+11000	Sabercat pelt				Шкура саблезуба	Прекрасный коврик для ног.													
+11001	apple				Красное яблоко	Красное, вкусное яблоко.													
+11002	demon horn				Рог демона	Трофей каждого демоноборца.													
+11003	ectoplasm				Эктоплазма	Интересная субстанция получаемая после борьбы с духами и призраками. Конечно если вы победили.													
+11004	sapphire dust				Сапфировый порошок	Измельченный сапфир.													
+11005	steel dust				Стальной порошок	Стальной слиток прошедший множество обработок для получения подобного материала.													
+11006	ruby dust				Рубиновый порошок	Измельченный рубин.													
+11007	water flask				Флакон с водой	Обыденная вещь каждого уважающего алхимика.													
+11008	blood flask				Флакон с кровью	Достаточно сложный в получении ингредиент и достаточно дорогой.													
+11009	empty flask				Пустая колба	Ещё более примитивный предмет в обиходе алхимиков и даже других жителей.													
+11010	vampire blood flask				Флакон с кровью вампира	Кровь вампира ценнее чем кровь обычного человека, сложнее в получении, ну и соответсвенно ещё дороже.													
+11011	Liquid fire flask				Колба жидкого огонь	Маги айсмиста до сих пор не могут понять как подобное вообще возможно.													
+11012	vial of omniscience				Фиал всезнания	Один из драгоценных подарков богини мудрости и знания своим подданым													
+11013	vial of perfection				Фиал совершенства	Чем-то похож на фиал всезнания, но гораздо ценнее. Немногие из служителей Эалинны получали этот предмет.													
 12001	Steel bar				Стальной слиток	Хороший металл, твердый и ковкий.													
 12002	Bluesteel ore				Руда синей стали	Редкая и дорогая руда. Достойна того, чтобы ее добыть.													
 12003	Bluesteel bar				Слиток синей стали	Из этого можно сделать действительно хорошее снаряжение.												

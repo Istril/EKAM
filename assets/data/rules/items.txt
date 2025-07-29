@@ -732,17 +732,19 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 10039	Remains of Saint Ladia	general		0				100	remains	0	0													
 10040	Remains of Saint Perso	general		0				100	remains	0	0													
 11000	Sabercat pelt	general		0				500	sabercat_pelt	0	0													1
-11001	Empty flask	general		0				140	empty_flask	0	0													0
-11002	Empty flask	general		0				90	empty_small_flask	0	0													1
-11003	water flask	general		0				140	empty_flask	0	0													0
-11004	water flask	general		0				90	empty_small_flask	0	0													1
-11005	otvar	POTION		0				1500	krujka	0	0									"HalfRecovery#;GainItem#11008"				1
-11006	otvar recipe	POTION		0				4500	empty_small_flask	0	0									"SetVariable#Otvar,1;LoseItem#11006;GainItem#11007"				0
-11007	otvar recipe_learned	general		0				1500	empty_small_flask	0	0													0
-11008	halfotvar	POTION		0				1000	krujka	0	0									"HalfRecovery#;GainItem#11009"				1
-11009	halfhalfotvar	POTION		0				500	krujka	0	0									"HalfRecovery#;GainItem#11010"				1
-11010	emptycup	general		0				500	krujka	0	0													1
-12000	Steel ore	general		0				50	empty_small_flask	0	0													0
+11001	apple	POTION		0				70	apple_alchemy	0	0									GainHP#6				1
+11002	demon horn	general		0				190	demon_horn_alchemy	0	0													1
+11003	ectoplasm	general		0				140	ectoplasm_alchemy	0	0													1
+11004	sapphire_dust	general		0				190	sapphire_dust_alchemy	0	0													1
+11005	steel dust	general		0				250	steel_dust_alchemy	0	0													1
+11006	ruby dust	general		0				200	ruby_dust_alchemy	0	0													1
+11007	water flask	general		0				80	water_flask_alchemy	0	0													1#
+11008	blood flask	general		0				230	blood_flask_alchemy	0	0													1#
+11009	empty flask	general		0				45	empty_flask_alchemy	0	0													1#
+11010	vampire blood flask	general		0				750	vampire_blood_flask_alchemy	0	0													1#
+11011	Liquid fire flask	general		0				850	Liquid_fire_flask_alchemy	0	0													1#
+11012	vial of omniscience	POTION		0				4000	vial_of_omniscience_alchemy	0	0													1#
+11013	vial of perfection	POTION		0				4500	vial_of_perfection_alchemy	0	0													1#
 12001	Steel bar	general		0				250	steel_bar	0	0													0
 12002	Bluesteel ore	general		0				80	bluesteel_ore	0	0													0
 12003	Bluesteel bar	general		0				500	bluesteel_bar	0	0													0

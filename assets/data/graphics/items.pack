@@ -3460,3 +3460,687 @@ worm_summon
   orig: 64, 64
   offset: 0, 0
   index: -1
+
+alchemy.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+apple_alchemy
+  rotate: false
+  xy: 1, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+demon_horn_alchemy
+  rotate: false
+  xy: 1, 893
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ectoplasm_alchemy
+  rotate: false
+  xy: 67, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+sapphire_dust_alchemy
+  rotate: false
+  xy: 1, 827
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+steel_dust_alchemy
+  rotate: false
+  xy: 67, 893
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ruby_dust_alchemy
+  rotate: false
+  xy: 133, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+water_flask_alchemy
+  rotate: false
+  xy: 1, 761
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+blood_flask_alchemy
+  rotate: false
+  xy: 67, 827
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+empty_flask_alchemy
+  rotate: false
+  xy: 133, 893
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+vampire_blood_flask_alchemy
+  rotate: false
+  xy: 199, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+Liquid_fire_flask_alchemy
+  rotate: false
+  xy: 1, 695
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+vial_of_omniscience_alchemy
+  rotate: false
+  xy: 67, 761
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+vial_of_perfection_alchemy
+  rotate: false
+  xy: 133, 827
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_feet_b
+  rotate: false
+  xy: 199, 893
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_feet_g
+  rotate: false
+  xy: 265, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_feet_red
+  rotate: false
+  xy: 1, 629
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_hands
+  rotate: false
+  xy: 67, 695
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_hands_b
+  rotate: false
+  xy: 133, 761
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_hands_g
+  rotate: false
+  xy: 199, 827
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_hands_red
+  rotate: false
+  xy: 265, 893
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_head
+  rotate: false
+  xy: 331, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_head_b
+  rotate: false
+  xy: 1, 563
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_head_g
+  rotate: false
+  xy: 67, 629
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_head_red
+  rotate: false
+  xy: 133, 695
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_legs
+  rotate: false
+  xy: 199, 761
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_legs_b
+  rotate: false
+  xy: 265, 827
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_legs_g
+  rotate: false
+  xy: 331, 893
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_legs_red
+  rotate: false
+  xy: 397, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_chest1
+  rotate: false
+  xy: 1, 497
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_chest2
+  rotate: false
+  xy: 67, 563
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_chest_green
+  rotate: false
+  xy: 133, 629
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_feet1
+  rotate: false
+  xy: 199, 695
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_feet2
+  rotate: false
+  xy: 265, 761
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_feet_blue
+  rotate: false
+  xy: 331, 827
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_feet_green
+  rotate: false
+  xy: 397, 893
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_feet_red
+  rotate: false
+  xy: 463, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_hands1
+  rotate: false
+  xy: 1, 431
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_hands2
+  rotate: false
+  xy: 67, 497
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_hands_blue
+  rotate: false
+  xy: 133, 563
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_hands_green
+  rotate: false
+  xy: 199, 629
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_head1
+  rotate: false
+  xy: 265, 695
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_head3
+  rotate: false
+  xy: 331, 761
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_head_blue
+  rotate: false
+  xy: 397, 827
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_head_green
+  rotate: false
+  xy: 463, 893
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_legs1
+  rotate: false
+  xy: 529, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_legs2
+  rotate: false
+  xy: 1, 365
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_legs_blue
+  rotate: false
+  xy: 67, 431
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_leather_legs_green
+  rotate: false
+  xy: 133, 497
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_chest
+  rotate: false
+  xy: 199, 563
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_chest_black
+  rotate: false
+  xy: 265, 629
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_chest_blue
+  rotate: false
+  xy: 331, 695
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_chest_epic
+  rotate: false
+  xy: 397, 761
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_chest_yellow
+  rotate: false
+  xy: 463, 827
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_feet
+  rotate: false
+  xy: 529, 893
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_feet_black
+  rotate: false
+  xy: 595, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_feet_blue
+  rotate: false
+  xy: 1, 299
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_feet_epic
+  rotate: false
+  xy: 67, 365
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_feet_magic
+  rotate: false
+  xy: 133, 431
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_feet_yellow
+  rotate: false
+  xy: 199, 497
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_hands
+  rotate: false
+  xy: 265, 563
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_hands_black
+  rotate: false
+  xy: 331, 629
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_hands_blue
+  rotate: false
+  xy: 397, 695
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_hands_epic
+  rotate: false
+  xy: 463, 761
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_hands_yellow
+  rotate: false
+  xy: 529, 827
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_head
+  rotate: false
+  xy: 595, 893
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_head_black
+  rotate: false
+  xy: 661, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_head_blue
+  rotate: false
+  xy: 1, 233
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_head_epic
+  rotate: false
+  xy: 67, 299
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_head_yellow
+  rotate: false
+  xy: 133, 365
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_legs
+  rotate: false
+  xy: 199, 431
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_legs_black
+  rotate: false
+  xy: 265, 497
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_legs_blue
+  rotate: false
+  xy: 331, 563
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_legs_epic
+  rotate: false
+  xy: 397, 629
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_legs_yellow
+  rotate: false
+  xy: 463, 695
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_shield_round
+  rotate: false
+  xy: 529, 761
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_shield_round2
+  rotate: false
+  xy: 595, 827
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_shield_round3
+  rotate: false
+  xy: 661, 893
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_shield_scales
+  rotate: false
+  xy: 727, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+axe1
+  rotate: false
+  xy: 1, 167
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+axe2
+  rotate: false
+  xy: 67, 233
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+axe3
+  rotate: false
+  xy: 133, 299
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+axe4
+  rotate: false
+  xy: 199, 365
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+axe_flames
+  rotate: false
+  xy: 265, 431
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+battleaxe1
+  rotate: false
+  xy: 331, 497
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+battleaxe2
+  rotate: false
+  xy: 397, 563
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+battleaxe3
+  rotate: false
+  xy: 463, 629
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+battleaxe4
+  rotate: false
+  xy: 529, 695
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+battleaxe5
+  rotate: false
+  xy: 595, 761
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+belt1
+  rotate: false
+  xy: 661, 827
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+belt2
+  rotate: false
+  xy: 727, 893
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+blue_substance
+  rotate: false
+  xy: 793, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+book1
+  rotate: false
+  xy: 1, 101
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+book4
+  rotate: false
+  xy: 67, 167
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+buckler_steel
+  rotate: false
+  xy: 133, 233
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+carapace
+  rotate: false
+  xy: 199, 299
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+carapace2
+  rotate: false
+  xy: 265, 365
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+card_blue
+  rotate: false
+  xy: 331, 431
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
