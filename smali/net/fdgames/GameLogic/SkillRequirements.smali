@@ -28,6 +28,7 @@
 
 .field private Trap_Master:I
 
+.field private flash_and_bones:I
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
@@ -193,9 +194,20 @@
 
     move-result v3
 
-    if-eqz v3, :cond_b
+    if-eqz v3, :cond_fab
 
     iput v0, p0, Lnet/fdgames/GameLogic/SkillRequirements;->Mage_armor:I
+
+    :cond_fab
+    const-string v3, "flash_and_bones"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_b
+
+    iput v0, p0, Lnet/fdgames/GameLogic/SkillRequirements;->flash_and_bones:I
 
     :cond_b
     const-string v3, "lesser_summoning"
@@ -355,6 +367,18 @@
     move-result v1
 
     iget v2, p0, Lnet/fdgames/GameLogic/SkillRequirements;->Mage_armor:I
+
+    if-lt v1, v2, :cond_0
+
+    iget-object v1, p1, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v2, "flash_and_bones"
+
+    invoke-virtual {v1, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v1
+
+    iget v2, p0, Lnet/fdgames/GameLogic/SkillRequirements;->flash_and_bones:I
 
     if-lt v1, v2, :cond_0
 
@@ -591,7 +615,7 @@
     :cond_8
     iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->Mage_armor:I
 
-    if-lez v1, :cond_9
+    if-lez v1, :cond_fab
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -604,6 +628,29 @@
     invoke-static {v1, v0, v2}, Ld/a/a/a/a;->c(Ljava/lang/String;Ljava/lang/StringBuilder;Ljava/lang/String;)V
 
     iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->Mage_armor:I
+
+    const-string v2, ","
+
+    invoke-static {v0, v1, v2}, Ld/a/a/a/a;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    :cond_fab
+    iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->flash_and_bones:I
+
+    if-lez v1, :cond_9
+
+    invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, "flash_and_bones"
+
+    const-string v2, " "
+
+    invoke-static {v1, v0, v2}, Ld/a/a/a/a;->c(Ljava/lang/String;Ljava/lang/StringBuilder;Ljava/lang/String;)V
+
+    iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->flash_and_bones:I
 
     const-string v2, ","
 
@@ -943,7 +990,7 @@
     :cond_8
     iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->Mage_armor:I
 
-    if-lez v1, :cond_9
+    if-lez v1, :cond_fab
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -956,6 +1003,29 @@
     invoke-static {v1, v0, v2}, Ld/a/a/a/a;->c(Ljava/lang/String;Ljava/lang/StringBuilder;Ljava/lang/String;)V
 
     iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->Mage_armor:I
+
+    const-string v2, ","
+
+    invoke-static {v0, v1, v2}, Ld/a/a/a/a;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    :cond_fab
+    iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->flash_and_bones:I
+
+    if-lez v1, :cond_9
+
+    invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, "flash_and_bones"
+
+    const-string v2, " "
+
+    invoke-static {v1, v0, v2}, Ld/a/a/a/a;->c(Ljava/lang/String;Ljava/lang/StringBuilder;Ljava/lang/String;)V
+
+    iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->flash_and_bones:I
 
     const-string v2, ","
 

@@ -638,3 +638,220 @@ spirit_protection
   orig: 64, 64
   offset: 0, 0
   index: -1
+spirit_golem
+  rotate: false
+  xy: 331, 67
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+eerie_laughter
+  rotate: false
+  xy: 397, 133
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+ice_ward
+  rotate: false
+  xy: 463, 199
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+infantry_training
+  rotate: false
+  xy: 529, 265
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+intervention
+  rotate: false
+  xy: 595, 331
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+invisibility
+  rotate: false
+  xy: 331, 1
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+kick
+  rotate: false
+  xy: 397, 67
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+lesser_summoning
+  rotate: false
+  xy: 463, 133
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+lightning_bolt
+  rotate: false
+  xy: 529, 199
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+mage_armor
+  rotate: false
+  xy: 595, 265
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+mage_barrier
+  rotate: false
+  xy: 661, 331
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+magical_training
+  rotate: false
+  xy: 397, 1
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+mana_surge
+  rotate: false
+  xy: 463, 67
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+massive_criticals
+  rotate: false
+  xy: 529, 133
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+nivarias_barrier
+  rotate: false
+  xy: 595, 199
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+poison_master
+  rotate: false
+  xy: 661, 265
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+precission_shots
+  rotate: false
+  xy: 727, 331
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+precission_strikes
+  rotate: false
+  xy: 463, 1
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+rapid_fire
+  rotate: false
+  xy: 529, 67
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+resilience
+  rotate: false
+  xy: 595, 133
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+retribution
+  rotate: false
+  xy: 661, 199
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+sacred_fire
+  rotate: false
+  xy: 727, 265
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+shield_expert
+  rotate: false
+  xy: 793, 331
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+shock_ward
+  rotate: false
+  xy: 529, 1
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+smite
+  rotate: false
+  xy: 595, 67
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+smoke_bomb
+  rotate: false
+  xy: 661, 133
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+sneak_attack
+  rotate: false
+  xy: 727, 199
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+spiritual_ward
+  rotate: false
+  xy: 793, 265
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+sprint
+  rotate: false
+  xy: 859, 331
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+stab
+  rotate: false
+  xy: 595, 1
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+staff_mastery
+  rotate: false
+  xy: 661, 67
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

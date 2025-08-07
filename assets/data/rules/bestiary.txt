@@ -460,7 +460,8 @@ fabskeleton1		warrior	2	10	iron_longsword	2	-80,40,0,300,150,-75	0.9	[undead][ou
 fabskeleton2		cleric	2	10	fabskeleton2_Gsword	5	-80,40,0,300,150,-50	0.9	[undead][outsider][shield]		skeleton_weak	1	arbenos_might#2	patroller	enemy	M	0		"Summon#fabskeleton1,4,60;Summon#fabskeleton1,4,60"	"skeleton1;skeleton2;skeleton3"	
 spirit_legioner		warrior	6	10	spiritw_sword	0	-250,250,-300,250,250,40	1	[outsider]		death_knight	1		patroller	enemy	M	0		GainShield#8,12		
 spirit_berserk		warrior	6	10	spiritw_berserk_sword	0	-250,250,-300,250,250,40	1	[outsider]		death_knight	1		patroller	enemy	M	0		GainMight#6,12		
-spirit_legat		warrior	6	15	spiritw_legattwoh_sword	0	-250,250,-300,250,250,80	1	[outsider]		death_knight	1		patroller	enemy	M	0		"GainShield#10,20;GainMight#10,20"		
-spirit_golem1	strong	warrior	10	25	spirit_punch_1	0	"""-250,250,-300,250,250,100"""	1	[outsider][ice_elemental]		ice_elemental	.65		patroller	enemy	M	0				
-spirit_golem2	strong	warrior	10	25	spirit_punch_1	0	"""-250,250,-300,250,250,100"""	1	[outsider][ice_elemental]		ice_elemental	.65		patroller	enemy	M	0				
-spirit_golem3	strong	warrior	10	25	spirit_punch_2	0	"""-250,250,-300,250,250,100"""	1	[outsider][ice_elemental]		ice_elemental	.65		patroller	enemy	M	0				
+spirit_legat		warrior	6	15	spiritw_legattwoh_sword	0	-250,250,-300,250,250,80	1	[shield][outsider]		death_knight	1		patroller	enemy	M	0		"GainShield#10,20;GainMight#10,20"		
+spirit_golem1	strong	warrior	10	25	spirit_punch_1	0	-250,210,-300,150,150,100	1	[outsider]		ice_elemental	.65		patroller	enemy	M	0				
+spirit_golem2	strong	warrior	10	25	spirit_punch_2	0	-200,200,-300,200,200,140	1	[outsider]		ice_elemental	.65		patroller	enemy	M	0				
+spirit_golem3	strong	warrior	10	25	spirit_punch_3	0	-150,250,-300,250,250,180	1	[outsider]		ice_elemental	.65		patroller	enemy	M	0		"Summon#small_golem3,2,30;Summon#small_golem3,2,30;Summon#small_golem3,2,30;Summon#small_golem3,2,30"		
+small_golem3	strong	warrior	2	2	small_spirit_punch_1	0	-300,100,-300,100,100,50	1	[outsider]		ice_elemental	.65		patroller	enemy	M	0				
