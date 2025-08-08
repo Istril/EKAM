@@ -837,23 +837,23 @@
 
     if-ne v3, v5, :cond_c2el
 
-    move v2, v4
+    const/4 v2, 0x3
 
-    move v0, v1
+    const/4 v0, 0x4
 
     :goto_2el
     if-ne v3, v1, :cond_5bel
 
     const/4 v0, 0x4
 
-    const/4 v1, 0x4
+    const/4 v1, 0x5
 
     :goto_3el
     if-ne v3, v4, :cond_d2el
 
-    const/4 v1, 0x5
+    const/4 v1, 0x6
 
-    const/4 v0, 0x6
+    const/4 v0, 0x7
 
     move v4, v0
 

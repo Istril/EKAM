@@ -458,6 +458,7 @@ spirit_legate			Дух легата
 spirit_golem1			Сотканный из духов голем							
 spirit_golem2			Сотканный из духов голем							
 spirit_golem3			Сотканный из духов голем							
+small_golem3			Маленький голем из духов							
 Acolyte			Аколит							
 bischop			Проповедник							
 arhibishop2			Тень Архиепископа							
