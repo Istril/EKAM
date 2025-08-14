@@ -54,6 +54,8 @@
 
 .field public undead:Z
 
+.field public explosive_poison:Z
+
 .field public vampire:Z
 
 
@@ -347,19 +349,30 @@
     iput-boolean v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;->outsider:Z
 
     :cond_17
+    const-string v1, "[explosive_poison]"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_18
+
+    iput-boolean v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;->explosive_poison:Z
+
+    :cond_18
     const-string v1, "[vampire]"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_18
+    if-eqz v0, :cond_19
 
     iput-boolean v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;->undead:Z
 
     iput-boolean v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;->vampire:Z
 
-    :cond_18
+    :cond_19
     return-void
 .end method
 
@@ -712,7 +725,7 @@
     goto/16 :goto_0
 
     :cond_16
-    const-string v0, "vampire"
+    const-string v0, "explosive_poison"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -720,11 +733,24 @@
 
     if-eqz v0, :cond_17
 
-    iget-boolean v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;->shadow:Z
+    iget-boolean v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;->explosive_poison:Z
 
     goto/16 :goto_0
 
     :cond_17
+    const-string v0, "vampire"
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_18
+
+    iget-boolean v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;->shadow:Z
+
+    goto/16 :goto_0
+
+    :cond_18
     const/4 v0, 0x0
 
     goto/16 :goto_0
@@ -999,9 +1025,20 @@
     move-result-object v0
 
     :cond_16
-    iget-boolean v1, p0, Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;->vampire:Z
+    iget-boolean v1, p0, Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;->explosive_poison:Z
 
     if-eqz v1, :cond_17
+
+    const-string v1, "explosive_poison "
+
+    invoke-static {v0, v1}, Ld/a/a/a/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    :cond_17
+    iget-boolean v1, p0, Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;->vampire:Z
+
+    if-eqz v1, :cond_40
 
     const-string v1, "vampire "
 
@@ -1009,7 +1046,7 @@
 
     move-result-object v0
 
-    :cond_17
+    :cond_40
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z

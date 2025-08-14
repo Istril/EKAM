@@ -7846,7 +7846,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_5e
+    if-eqz v0, :cond_poison_ex
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -7854,7 +7854,7 @@
 
     move-result v0
 
-    const/16 v1, 0xc
+    const/16 v1, 0xc #уровень моба и выше при котором сработает взрыв 5
 
     if-le v0, v1, :cond_5d
 
@@ -7885,6 +7885,53 @@
     invoke-static {v0, v1, v2, v3}, Lnet/fdgames/Rules/AreaEffects;->b(IIILjava/lang/String;)V
 
     goto :goto_17
+
+    :cond_poison_ex
+    const-string v0, "EXPLODE1"
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5e
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->z()I
+
+    move-result v0
+
+    const/16 v1, 0xc #уровень моба и выше при котором сработает взрыв 5
+
+    if-le v0, v1, :cond_expe
+
+    iget v0, p0, Lnet/fdgames/GameEntities/MapObject;->x:I
+
+    iget v1, p0, Lnet/fdgames/GameEntities/MapObject;->y:I
+
+    const/4 v2, 0x0
+
+    const-string v3, "explo_poison_2"
+
+    invoke-static {v0, v1, v2, v3}, Lnet/fdgames/Rules/AreaEffects;->b(IIILjava/lang/String;)V
+
+    :goto_expoison1
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->l()V
+
+    goto/16 :goto_0
+
+    :cond_expe
+    iget v0, p0, Lnet/fdgames/GameEntities/MapObject;->x:I
+
+    iget v1, p0, Lnet/fdgames/GameEntities/MapObject;->y:I
+
+    const/4 v2, 0x0
+
+    const-string v3, "explo_poison_1"
+
+    invoke-static {v0, v1, v2, v3}, Lnet/fdgames/Rules/AreaEffects;->b(IIILjava/lang/String;)V
+
+    goto :goto_expoison1
 
     :cond_5e
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/MapActor;->N()Z
@@ -10471,7 +10518,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_50
+    if-eqz v3, :cond_expoison
 
     const-string v2, "EXPLODE"
 
@@ -10488,6 +10535,46 @@
     const v2, 0x3f3851ec    # 0.72f
 
     :cond_50
+    const-string v3, "DESTROY"
+
+    invoke-virtual/range {p0 .. p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v4
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v3, v4, v2}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
+
+    goto/16 :goto_1a
+
+    :cond_expoison
+    move-object/from16 v0, p0
+
+    iget-object v3, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    const-string v4, "explosive_poison"
+
+    invoke-virtual {v3, v4}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->c(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_expoison1
+
+    const-string v2, "EXPLODE1"
+
+    invoke-virtual/range {p0 .. p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v3
+
+    const v4, 0x3f333333    # 0.7f
+
+    move-object/from16 v0, p0
+
+    invoke-virtual {v0, v2, v3, v4}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
+
+    const v2, 0x3f3851ec    # 0.72f
+
+    :cond_expoison1
     const-string v3, "DESTROY"
 
     invoke-virtual/range {p0 .. p0}, Lnet/fdgames/GameEntities/GameObject;->m()I

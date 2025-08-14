@@ -462,3 +462,4 @@ small_golem3			Маленький голем из духов
 Acolyte			Аколит							
 bischop			Проповедник							
 arhibishop2			Тень Архиепископа							
+goblin_zealot1	Zealot	Fanático	Кабумчик	Zelote	Zelot	Gorliwy goblin	Fanatik	fanatik	Fanatico	

@@ -44,4 +44,4 @@ combustion_weak_1	explosion	explosión	30	f	28	.6	"fire_medium;fire_1"	combustio
 combustion_weak_2	explosion	explosión	40	f	28	.6	"fire_1;fire_2;fire_3"	combustion2	.2	.2
 combustion_weak_3	explosion	explosión	58	f	28	.6	"fire_1;fire_2;fire_3"	combustion3	.2	.2
 explo_poison_1	explosion	explosión	130	p	28	.6	"fire_1;fire_2;fire_3"		.2	.2
-explo_poison_1	explosion	explosión	130	p	28	.6	"fire_1;fire_2;fire_3"		.2	.2
+explo_poison_2	explosion	explosión	130	p	28	.6	"fire_1;fire_2;fire_3"		.2	.2
