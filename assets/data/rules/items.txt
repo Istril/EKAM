@@ -735,17 +735,27 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 11001	apple	POTION		0				70	apple_alchemy	0	0									GainHP#6				1
 11002	demon horn	general		0				190	demon_horn_alchemy	0	0													1
 11003	ectoplasm	general		0				140	ectoplasm_alchemy	0	0													1
-11004	sapphire_dust	general		0				190	sapphire_dust_alchemy	0	0													1
+11004	sapphire dust	general		0				190	sapphire_dust_alchemy	0	0													1
 11005	steel dust	general		0				250	steel_dust_alchemy	0	0													1
 11006	ruby dust	general		0				200	ruby_dust_alchemy	0	0													1
-11007	water flask	general		0				80	water_flask_alchemy	0	0													1#
-11008	blood flask	general		0				230	blood_flask_alchemy	0	0													1#
-11009	empty flask	general		0				45	empty_flask_alchemy	0	0													1#
-11010	vampire blood flask	general		0				750	vampire_blood_flask_alchemy	0	0													1#
-11011	Liquid fire flask	general		0				850	Liquid_fire_flask_alchemy	0	0													1#
-11012	vial of omniscience	POTION		0				4000	vial_of_omniscience_alchemy	0	0													1#
-11013	vial of perfection	POTION		0				4500	vial_of_perfection_alchemy	0	0													1#
-12001	Steel bar	general		0				250	steel_bar	0	0													0
+11007	water flask	general		0				80	water_flask_alchemy	0	0													1
+11008	blood flask	general		0				230	blood_flask_alchemy	0	0													1
+11009	empty flask	general		0				45	empty_flask_alchemy	0	0													1
+11010	vampire blood flask	general		0				750	vampire_blood_flask_alchemy	0	0													1
+11011	Liquid fire flask	general		0				850	Liquid_fire_flask_alchemy	0	0													1
+11012	vial of omniscience	POTION		0				4000	vial_of_omniscience_alchemy	0	0													1
+11013	vial of perfection	POTION		0				4500	vial_of_perfection_alchemy	0	0													1
+11014	scarlet moss	general		0				150	scarlet_moss_alchemy	0	0													1
+11015	clear ice	general		0				400	clear_ice_alchemy	0	0													1
+11016	manticore eye	general		0				220	manticore_eye_alchemy	0	0													1
+11017	emerald dust	general		0				250	emerald_dust_alchemy	0	0													1
+11018	claw lausk	general		0				450	claw_alchemy	0	0													1
+11019	azureberries	general		0				340	azure_berries_alchemy	0	0													1
+11020	night orchid	general		0				480	night_orchid_alchemy	0	0													1
+11021	bone fragments	general		0				35	bone_fragments_alchemy	0	0													1
+11022	giants finger	general		0				590	giants_finger_alchemy	0	0													1
+11023	ash rose	general		0				600	ash_rose_alchemy	0	0													1
+11024	manticore sting	general		0				290	manticore_sting_alchemy	0	0													1
 12002	Bluesteel ore	general		0				80	bluesteel_ore	0	0													0
 12003	Bluesteel bar	general		0				500	bluesteel_bar	0	0													0
 12004	Blessed bluesteel bar	general		0				800	empty_small_flask	0	0													0
@@ -1000,3 +1010,5 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 50010	Circon	general		0				90	circon	0	0													1
 50011	S_circon	general		0				90	small_circon	0	0													1
 50012	adminbook	potion		0				90	topaz	0	0									"GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#"				1
+50013	Admin_wand	WEAPON	Test_wand	0			[staff][emp,3]	6000	tesla_rod	0	0						greatstaff							
+50014	admin_armor	armor_chest		1				100	armor_leather_chest1	2500	900						leather							

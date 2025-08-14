@@ -3556,77 +3556,77 @@ vial_of_perfection_alchemy
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_feet_b
+scarlet_moss_alchemy
   rotate: false
   xy: 199, 893
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_feet_g
+clear_ice_alchemy
   rotate: false
   xy: 265, 959
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_feet_red
+manticore_eye_alchemy
   rotate: false
   xy: 1, 629
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_hands
+emerald_dust_alchemy
   rotate: false
   xy: 67, 695
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_hands_b
+claw_alchemy
   rotate: false
   xy: 133, 761
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_hands_g
+azure_berries_alchemy
   rotate: false
   xy: 199, 827
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_hands_red
+night_orchid_alchemy
   rotate: false
   xy: 265, 893
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_head
+bone_fragments_alchemy
   rotate: false
   xy: 331, 959
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_head_b
+giants_finger_alchemy
   rotate: false
   xy: 1, 563
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_head_g
+ash_rose_alchemy
   rotate: false
   xy: 67, 629
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_head_red
+manticore_sting_alchemy
   rotate: false
   xy: 133, 695
   size: 64, 64

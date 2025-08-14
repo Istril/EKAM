@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="44">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="46">
  <properties>
   <property name="music" value="dark_chamber"/>
   <property name="name" value="Sagar Enclave"/>
@@ -1120,7 +1120,7 @@
  </layer>
  <layer id="6" name="objects" width="60" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1sEJwkAQBdCFdOVBUBDFrmzCZrQQ043JwYtimNWdqPgezCFhwu7wGUgpAAAAAAAAAADPLYfaNKrVzHd/xe7u+Rj45tKV0neP739x3neYN1fNLt56Fw3Pn3veMatDRW9rn5g3ozdKvrnkO93b2jfnu004X7657O9072moc8Pz5Zvr3/Z3/B9eB6umN1r7/BEBAEKu0NEjNw==
+   eJzt1sEJwkAQBdCFdOUhoCCKXWkRNqOFxG5MDrmoKxvdiYrvwRyyTNgMn4GkBAAAAAAAAACQ1/a1rlTLmb/9Fdub52PBO12T0qW5P//Fed9h3lhTdnHsXVS8f+55h6z2D84Pmd7aPjFvRG+pb8k311ubfGPJN28TcL98Y9nf572nvs4V75dvrH/b3+F/eFVYU3pLaxc/IgBAkSugByO5
   </data>
  </layer>
  <layer id="7" name="roofs" width="60" height="60">
@@ -1211,6 +1211,14 @@
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="items" value="11000,11001,11002,11003,11004,11005,11006,11007,11008,11009,11010,11011,11012,11013"/>
+    <property name="name" value="@CHEST"/>
+    <property name="tag" value="C10_test_crate"/>
+   </properties>
+  </object>
+  <object id="45" name="crate" type="container" gid="249" x="800" y="1280" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="items" value="50013,50014"/>
     <property name="name" value="@CHEST"/>
     <property name="tag" value="C10_test_crate"/>
    </properties>

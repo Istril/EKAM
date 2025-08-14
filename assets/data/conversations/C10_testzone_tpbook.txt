@@ -2,6 +2,7 @@ index	type	text	text_ES	Go To	conditions	actions	requisites
 1	Q	Куда вы хотите переместится		2			
 2	A	Столицы		100			
 2	A	Модовые локации		200			
+2	A	Ванильные локации		300			
 2	A	Далее		3			
 100	Q	Выберите место		101			
 101	A	Нью-Гаранд		0		Travel#NG,999,0	
@@ -13,3 +14,6 @@ index	type	text	text_ES	Go To	conditions	actions	requisites
 103	A	Мельторра		0			
 200	Q	Выберите место		201			
 201	A	Орден паладинов		0		Travel#D13_paladin,50,0	
+300	Q	Выберите место		301			
+301	A	Ковчег		0		Travel#I3_ark,1,0	
+301	A	Подземка с стрипсидумом		0		Travel#H4_cave,1,0	
