@@ -461,4 +461,5 @@ spirit_punch_1	sg1	3	7	1	200	10	1								4	s
 spirit_punch_2	sg2	5	10	1	200	10	1							p	4	s				
 spirit_punch_3	sg3	8	13	1	200	10	1							p	8	s				
 small_spirit_punch_1	ssg3	1	1	1	200	10	1								2	s				
+necro_egg_claw	NEC	0	0	1	200	1	0													
 Test_wand	Tesla Emitter A2	40	80	100	200	25	7		1			w	ion_single	s			emp	20	2	

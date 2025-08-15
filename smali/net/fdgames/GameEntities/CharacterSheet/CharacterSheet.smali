@@ -3043,6 +3043,10 @@
 
     if-eq v0, v1, :cond_0
 
+    const/4 v1, 0x5
+
+    if-eq v0, v1, :cond_te
+
     const/4 v0, 0x0
 
     :goto_0
@@ -3077,6 +3081,15 @@
 
     :cond_3
     const-string v0, "fire_elemental"
+
+    invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->c(Ljava/lang/String;)Z
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_te
+    const-string v0, "toxic_elemental"
 
     invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->c(Ljava/lang/String;)Z
 
