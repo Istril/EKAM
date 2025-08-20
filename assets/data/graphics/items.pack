@@ -3633,28 +3633,28 @@ manticore_sting_alchemy
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_legs
+harbinger_of_death
   rotate: false
   xy: 199, 761
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_legs_b
+eltes
   rotate: false
   xy: 265, 827
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_legs_g
+zertella
   rotate: false
   xy: 331, 893
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_chain_legs_red
+holy_woter
   rotate: false
   xy: 397, 959
   size: 64, 64

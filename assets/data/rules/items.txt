@@ -749,13 +749,24 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 11015	clear ice	general		0				400	clear_ice_alchemy	0	0													1
 11016	manticore eye	general		0				220	manticore_eye_alchemy	0	0													1
 11017	emerald dust	general		0				250	emerald_dust_alchemy	0	0													1
-11018	claw lausk	general		0				450	claw_alchemy	0	0													1
+11018	claw lousk	general		0				450	claw_alchemy	0	0													1
 11019	azureberries	general		0				340	azure_berries_alchemy	0	0													1
 11020	night orchid	general		0				480	night_orchid_alchemy	0	0													1
 11021	bone fragments	general		0				35	bone_fragments_alchemy	0	0													1
 11022	giants finger	general		0				590	giants_finger_alchemy	0	0													1
-11023	ash rose	general		0				600	ash_rose_alchemy	0	0													1
+11023	ash rose	general		0				650	ash_rose_alchemy	0	0													1
 11024	manticore sting	general		0				290	manticore_sting_alchemy	0	0													1
+11025	harbinger of death	general		0				950	harbinger_of_death	0	0													1
+11026	eltes	general		0				190	eltes	0	0													1
+11027	zertella	general		0				325	zertella	0	0													1
+11028	holy woter	general		0				240	holy_woter	0	0													1
+11029	lousk scales	general		0				170	lousk_scales	0	0													1
+11030	lousk heart	general		0				1800	lousk_heart	0	0													1
+11031	ashen plant	general		0				540	ashen_plant	0	0													1
+11032	demon heart	general		0				1000	demon_heart	0	0													1
+11033	vampire dust	general		0				95	vampire_dust	0	0													1
+11034	gwensdalin lotus	general		0				1000	gwensdalin_lotus	0	0													1
+11035	black rose	general		0				0	black_rose	0	0													1
 12002	Bluesteel ore	general		0				80	bluesteel_ore	0	0													0
 12003	Bluesteel bar	general		0				500	bluesteel_bar	0	0													0
 12004	Blessed bluesteel bar	general		0				800	empty_small_flask	0	0													0
