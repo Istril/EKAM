@@ -462,4 +462,6 @@ small_golem3			Маленький голем из духов
 Acolyte			Аколит							
 bischop			Проповедник							
 arhibishop2			Тень Архиепископа							
-necro_egg			яйцо							
+necro_egg			Некротическое вместилище							
+necro_egg2			яйцо							
+necro_egg3			яйцо							

@@ -46,17 +46,21 @@ war_spirit	A	N	M	N					flash_and_bones#2	PER#4	Maestría de la Tierra	Puedes con
 					Summon a level 10 Earth Elemental	2	40	40				Convoca a un elemental de Tierra de nivel 11
 					Summon a level 13 Iron Golem	4	100	60				Convoca a un Gólem de Hierro de nivel 15
 spirit_protection	P	N		N						END#2	Barrera: Muerte	Puedes resistir daño de muerte gracias a tu entrenamiento. Gana una bonificación a tu resistencia a Muerte, que se acumula con otros bonos.
-					Gain +12 to resist death	1						Gana +12 a resistir muerte
-					Gain +24 to resist death	1						Gana +24 a resistir muerte
-					Gain +36 to resist death	1						Gana +36 a resistir muerte
-					Gain +36 to resist death	1						Gana +36 a resistir muerte
-					Gain +36 to resist death	1						Gana +36 a resistir muerte
-					Gain +36 to resist death	1						Gana +36 a resistir muerte
+					Gain +12 to resist death	1						Gana +10 a resistir muerte
+					Gain +24 to resist death	1						Gana +20 a resistir muerte
+					Gain +36 to resist death	1						Gana +30 a resistir muerte
+					Gain +36 to resist death	1						Gana +40 a resistir muerte
+					Gain +36 to resist death	1						Gana +50 a resistir muerte
+					Gain +36 to resist death	1						Gana +60 a resistir muerte
 spirit_golem	A	N	M	N					lesser_summoning#2	PER#4	Maestría de la Tierra	Puedes convocar un elemental del Plano de la Tierra durante 3 minutos. Sólo puedes mantener una criatura convocada a la vez y su nivel no puede superar el tuyo.
 					Summon a level 7 Earth Elemental	1	40	30				Convoca a un elemental de Tierra de nivel 8
 					Summon a level 10 Earth Elemental	2	40	40				Convoca a un elemental de Tierra de nivel 11
 					Summon a level 13 Iron Golem	4	100	60				Convoca a un Gólem de Hierro de nivel 15
 eerie_laughter	A	N	M	N	 				lesser_summoning#2			
+					Paralize for 3 seconds all the undead enemies in a 2 meter radius	1	20	4				Paraliza durante 3 segundos a los enemigos muertos vivientes en un radio de 2 metros
+					Paralize for 4 seconds all the undead enemies in a 4 meter radius	2	20	5				Paraliza durante 4 segundos a los enemigos muertos vivientes en un radio de 4 metros
+					Paralize for 5 seconds all the undead enemies in a 6 meter radius	3	20	6				Paraliza durante 5 segundos a los enemigos muertos vivientes en un radio de 6 metros
+bone_dance	A	N	M	N	 				lesser_summoning#2			
 					Paralize for 3 seconds all the undead enemies in a 2 meter radius	1	20	4				Paraliza durante 3 segundos a los enemigos muertos vivientes en un radio de 2 metros
 					Paralize for 4 seconds all the undead enemies in a 4 meter radius	2	20	5				Paraliza durante 4 segundos a los enemigos muertos vivientes en un radio de 4 metros
 					Paralize for 5 seconds all the undead enemies in a 6 meter radius	3	20	6				Paraliza durante 5 segundos a los enemigos muertos vivientes en un radio de 6 metros

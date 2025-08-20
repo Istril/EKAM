@@ -17,3 +17,4 @@ index	type	text	text_ES	Go To	conditions	actions	requisites
 100	Q	Мне нужна помощь. Я пришел сюда, чтобы узнать больше о некромантии.		101			
 101	A	Плоть и кости		0		TrainSkill#flash_and_bones	
 101	A	турн_андед-тест		0		TrainSkill#eerie_laughter	
+101	A	Танец костей		0		TrainSkill#bone_dance	

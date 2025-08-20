@@ -581,11 +581,5 @@
   </object>
   <object id="100" name="Light" type="light" gid="245" x="1111" y="161" width="64" height="64"/>
   <object id="101" name="Light" type="light" gid="245" x="1117" y="216" width="64" height="64"/>
-  <object id="103" name="Zealot" type="spawn" gid="243" x="2304" y="1568" width="64" height="64">
-   <properties>
-    <property name="spawn" value="necro_egg"/>
-    <property name="wander" value="0"/>
-   </properties>
-  </object>
  </objectgroup>
 </map>

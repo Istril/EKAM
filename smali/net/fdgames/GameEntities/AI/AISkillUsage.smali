@@ -705,6 +705,33 @@
     goto/16 :goto_0
 
     :cond_13
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "bone_dance"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_14
+
+    .line 18
+    invoke-static {v2, v3}, Lnet/fdgames/Helpers/FDUtils;->a(II)I
+
+    move-result v0
+
+    if-ge v0, v4, :cond_14
+
+    .line 19
+    const-string v0, "bone_dance"
+
+    invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
+
+    goto/16 :goto_0
+
+    :cond_14
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/Character;->l0()Z
 
     move-result v0
