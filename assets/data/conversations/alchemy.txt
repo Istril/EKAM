@@ -1,25 +1,61 @@
 index	type	text	text_ES	Go To	conditions	actions	requisites
+1	Q	Продолжить смешивание ингредиентов?		3	VariableEqual#start_alchemy,1		
 1	Q	[BLUE]Алхимия.[] Вы можете создавать зелья по найденным рецептам или смешать ингридиенты надеясь на удачу.		2			
-2	A	Создать по рецепту		3			
+2	A	Открыть хранилище. 		0		OpenWorldContainer#alchemy_chest	
+2	A	Создать по рецепту		100			
 2	A	Смешивать самостоятельно		1000			
-2	A	Открыть хранилище		0		OpenWorldContainer#alchemy_chest	
-3	Q	Выберите рецепт		4			
+3	A	Продолжить комбинирование.		1002			
+3	A	Отложить эксперемент.		1000			
+100	Q	Выберите рецепт		140			
 1000	Q	Выберите действие		1001			
-1001	A	Выберите ингридиенты		1002			
+1001	A	Приступить к комбинирование.		1002		SetVariable#start_alchemy,1	
 1001	A	Перейти к следующему этапу		2500			
 1001	A	Вылить образец.		4000			
-1002	Q	Вы осматриваете свои ингридиенты и трофеи добытые во время странствий по миру. [BLUE]Страница 1/***[].		1003			
-1003	A	Синяя орхидея		1002			
-1003	A	Красная орхидея		1002			
+1002	Q	Вы осматриваете свои ингридиенты и трофеи добытые во время странствий по миру.		1003			
 1003	A	Завершить комбинирование ингредиентов		1000			
-1003	A	Далее		1004			
-1004	Q	Вы осматриваете свои ингридиенты и трофеи добытые во время странствий по миру. [BLUE]Страница 2/***[].		1005			
-1005	A	Мерпл		1004			
-1005	A	Тесур		1004			
-1005	A	Мертвьюнок		1004			
-1005	A	Далее		1006			
-1006	Q	Вы осматриваете свои ингридиенты и трофеи добытые во время странствий по миру. [BLUE]Страница 3/***[].		1007			
-1007	A	Эстер		1006			
-1007	A	Пепельник		1006			
-1007	A	Пепельная роза		1006			
-1007	A	Далее		1008			
+1003	A	Красная орхидея		1002	PlayerHasItem#2101	"LoseItem#2101;IncVariable#red_orchid,1"	
+1003	A	Синяя орхидея		1002	PlayerHasItem#2100	"LoseItem#2100;IncVariable#blue_orchid,1"	
+1003	A	Мерпл		1002	PlayerHasItem#2104	"LoseItem#2104;IncVariable#merple,1"	
+1003	A	Тесур		1002	PlayerHasItem#2105	"LoseItem#2105;IncVariable#tesur,1"	
+1003	A	Мертвьюнок		1002	PlayerHasItem#2103	"LoseItem#2103;IncVariable#deadly_mushroom,1"	
+1003	A	Светящаяся поганка		1002	PlayerHasItem#2102	"LoseItem#2102;IncVariable#glowing_mushroom,1"	
+1003	A	Золотое яблоко		1002	PlayerHasItem#5022	"LoseItem#5022;IncVariable#golden_apple,1"	
+1003	A	Огненная соль		1002	PlayerHasItem#1005	"LoseItem#1005;IncVariable#fire_salt,1"	
+1003	A	Живой лёд		1002	PlayerHasItem#1006	"LoseItem#1006;IncVariable#living_ice,1"	
+1003	A	Искрящийся порошок		1002	PlayerHasItem#1007	"LoseItem#1007;IncVariable#sparkling_powder,1"	
+1003	A	Клык коралловой мамбы		1002	PlayerHasItem#1020	"LoseItem#1020;IncVariable#coral_mamba_fang,1"	
+1003	A	Клык мамбы		1002	PlayerHasItem#1019	"LoseItem#1019;IncVariable#mamba_fang,1"	
+1003	A	Череп		1002	PlayerHasItem#1010	"LoseItem#1010;IncVariable#skull,1"	
+1003	A	Паучьи железы		1002	PlayerHasItem#1008	"LoseItem#1008;IncVariable#spider_glands,1"		
+1003	A	Рубиновый порошок		1002	PlayerHasItem#11006	"LoseItem#11006;IncVariable#ruby_powder,1"	
+1003	A	Сапфировый порошок		1002	PlayerHasItem#11004	"LoseItem#11004;IncVariable#sapphire_powder,1"	
+1003	A	Изумрудный порошок		1002	PlayerHasItem#11017	"LoseItem#11017;IncVariable#emerald_powder,1"	
+1003	A	Стальная крошка		1002	PlayerHasItem#11005	"LoseItem#11005;IncVariable#steel_dust,1"	
+1003	A	Яблоко		1002	PlayerHasItem#11001	"LoseItem#11001;IncVariable#apple,1"	
+1003	A	Рог демона		1002	PlayerHasItem#11002	"LoseItem#11002;IncVariable#demon_horn,1"	
+1003	A	Коготь лауска		1002	PlayerHasItem#11018	"LoseItem#11018;IncVariable#lousk_claw,1"	
+1003	A	Чешуйки лауска		1002	PlayerHasItem#11029	"LoseItem#11029;IncVariable#lousk_scales,1"	
+1003	A	Сердце лауска		1002	PlayerHasItem#11030	"LoseItem#11030;IncVariable#lousk_heart,1"	
+1003	A	Эктоплазма		1002	PlayerHasItem#11003	"LoseItem#11003;IncVariable#ectoplasm,1"	
+1003	A	Глаз мантикоры		1002	PlayerHasItem#11016	"LoseItem#11016;IncVariable#manticore_eye,1"	
+1003	A	Жало мантикоры		1002	PlayerHasItem#11024	"LoseItem#11024;IncVariable#manticore_sting,1"	
+1003	A	Элтес		1002	PlayerHasItem#11026	"LoseItem#11026;IncVariable#eltess,1"	
+1003	A	Палец великана		1002	PlayerHasItem#11022	"LoseItem#11022;IncVariable#giants_finger,1"	
+1003	A	Алый мох		1002	PlayerHasItem#11014	"LoseItem#11014;IncVariable#scarlet_moss,1"	
+1003	A	Ночная орхидея		1002	PlayerHasItem#11020	"LoseItem#11020;IncVariable#night_orchid,1"	
+1003	A	Осколки костей		1002	PlayerHasItem#11021	"LoseItem#11021;IncVariable#bone_shards,1"	
+1003	A	Зертелла		1002	PlayerHasItem#11027	"LoseItem#11027;IncVariable#zertella,1"	
+1003	A	Вестник беды		1002	PlayerHasItem#11025	"LoseItem#11025;IncVariable#harbinger_of_doom,1"	
+1003	A	Лазурные ягоды		1002	PlayerHasItem#11019	"LoseItem#11019;IncVariable#azure_berries,1"	
+1003	A	Пепельник		1002	PlayerHasItem#11031	"LoseItem#11031;IncVariable#ashen_plant,1"	
+1003	A	Сердце демона		1002	PlayerHasItem#11032	"LoseItem#11032;IncVariable#demon_heart,1"	
+1003	A	Пепельная роза		1002	PlayerHasItem#11023	"LoseItem#11023;IncVariable#ashen_rose,1"	
+1003	A	Осколок чистого льда		1002	PlayerHasItem#11015	"LoseItem#11015;IncVariable#shard_of_pure_ice,1"	
+1003	A	Святая вода		1002	PlayerHasItem#11028	"LoseItem#11028;IncVariable#holy_water,1"	
+1003	A	Прах вампира		1002	PlayerHasItem#11033	"LoseItem#11033;IncVariable#vampire_dust,1"	
+1003	A	Лотос Гвендалин		1002	PlayerHasItem#11034	"LoseItem#11034;IncVariable#gwensdalin_lotus,1"	
+1003	A	Черная роза		1002	PlayerHasItem#11035	"LoseItem#11035;IncVariable#black_rose,1"	
+1003	A	Жидкий огонь		1002	PlayerHasItem#11011	"LoseItem#11011;IncVariable#liquid_fire,1"	
+1003	A	Флакон с кровью вампира		1002	PlayerHasItem#11010	"LoseItem#11010;IncVariable#blood_vampire,1"	
+4000	Q	Вы вылили образец.		4001			
+4001	A	Далее		1000		"SetVariable#start_alchemy,0;SetVariable#red_orchid,0;SetVariable#blue_orchid,0;SetVariable#merple,0;SetVariable#tesur,0;SetVariable#deadly_mushroom,0;SetVariable#glowing_mushroom,0;SetVariable#golden_apple,0;SetVariable#fire_salt,0;SetVariable#living_ice,0;SetVariable#sparkling_powder,0;SetVariable#coral_mamba_fang,0;SetVariable#mamba_fang,0;SetVariable#skull,0;SetVariable#spider_glands,0;SetVariable#ruby_powder,0;SetVariable#sapphire_powder,0;SetVariable#emerald_powder,0;SetVariable#steel_dust,0;SetVariable#apple,0;SetVariable#demon_horn,0;SetVariable#lousk_claw,0;SetVariable#lousk_scales,0;SetVariable#lousk_heart,0;SetVariable#ectoplasm,0;SetVariable#manticore_eye,0;SetVariable#manticore_sting,0;SetVariable#eltess,0;SetVariable#giants_finger,0;SetVariable#scarlet_moss,0;SetVariable#night_orchid,0;SetVariable#bone_shards,0;SetVariable#zertella,0;SetVariable#harbinger_of_doom,0;SetVariable#azure_berries,0;SetVariable#ashen_rose,0;SetVariable#shard_of_pure_ice,0;SetVariable#holy_water,0;SetVariable#liquid_fire,0;SetVariable#lousk_scales,0;SetVariable#lousk_heart,0;SetVariable#ashen_plant,0;SetVariable#demon_heart,0;SetVariable#vampire_dust,0;SetVariable#gwensdalin_lotus,0;SetVariable#black_rose,0;SetVariable#blood_vampire,0"	
