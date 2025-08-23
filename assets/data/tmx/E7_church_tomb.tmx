@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="383">
+ <properties>
+  <property name="indoor" value=""/>
+  <property name="maxlight" value="60"/>
+  <property name="music" value="Sovngarde_TESV"/>
+ </properties>
+ <tileset firstgid="1" source="trees.tsx"/>
+ <tileset firstgid="17" source="spawns.tsx"/>
+ <tileset firstgid="25" source="dryground.tsx"/>
+ <tileset firstgid="89" source="town_objects.tsx"/>
+ <tileset firstgid="169" source="rocks.tsx"/>
+ <tileset firstgid="175" name="dungeon" tilewidth="64" tileheight="128" tilecount="240" columns="16">
+  <image source="adt_tiled_dungeon.png" width="1024" height="1920"/>
+  <tile id="48">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="49">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="50">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="51">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="52">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="53">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="54">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="55">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="56">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="57">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="58">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="59">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="60">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="61">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="62">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="63">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="64">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="65">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="66">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="67">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="68">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="69">
+   <properties>
+    <property name="door" value="L"/>
+   </properties>
+  </tile>
+  <tile id="70">
+   <properties>
+    <property name="door" value="R"/>
+   </properties>
+  </tile>
+  <tile id="71">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="72">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="73">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="74">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="75">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="76">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="77">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="78">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="79">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="81">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="82">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="83">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="84">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="85">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="86">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="87">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="88">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="89">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="90">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="91">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="92">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="93">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="94">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="95">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="102">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="103">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="104">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="105">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="106">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="107">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="108">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="109">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="110">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="111">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="112">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="113">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="114">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="115">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="116">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="117">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="118">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="119">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="120">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="121">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="122">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="123">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="124">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="125">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="126">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="127">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="128">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="129">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="130">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="131">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="132">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="133">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="135">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="136">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="142">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="144">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="145">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="147">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="148">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="light" value="brazier"/>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="178">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="179">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="180">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="181">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="182">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="183">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="184">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="185">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="186">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="187">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="188">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="189">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="192">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="193">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="194">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="195">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="196">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="197">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="198">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="199">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="200">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="201">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="202">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="203">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="204">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="205">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="206">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="207">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="208">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="209">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="210">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="211">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="212">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="213">
+   <properties>
+    <property name="door" value="L"/>
+   </properties>
+  </tile>
+  <tile id="214">
+   <properties>
+    <property name="door" value="R"/>
+   </properties>
+  </tile>
+  <tile id="215">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="216">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="217">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="218">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="219">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="220">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="221">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="222">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="223">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="224">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="225">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="226">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="227">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="228">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="229">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="230">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="231">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="232">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="233">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="234">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="235">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="236">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="237">
+   <properties>
+    <property name="blocked" value=""/>
+    <property name="wall" value=""/>
+   </properties>
+  </tile>
+  <tile id="238">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="239">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="415" name="town_objexts2" tilewidth="64" tileheight="64" tilecount="64" columns="8">
+  <image source="town_objects2.png" width="512" height="512"/>
+  <tile id="6">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="light" value="brazier_lamp"/>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="35">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="36">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="479" source="natural_grounds.tsx"/>
+ <tileset firstgid="607" name="grounds indoor 2" tilewidth="64" tileheight="32" tilecount="160" columns="16">
+  <image source="grounds_indoor2.png" width="1024" height="320"/>
+  <tile id="64">
+   <properties>
+    <property name="effect" value="gas_weak"/>
+   </properties>
+  </tile>
+  <tile id="65">
+   <properties>
+    <property name="effect" value="gas_weak"/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="effect" value="death_weak"/>
+   </properties>
+  </tile>
+  <tile id="88">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="89">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="90">
+   <properties>
+    <property name="effect" value="lava2"/>
+   </properties>
+  </tile>
+  <tile id="136">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="142">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="144">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="145">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="147">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="148">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="150">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="152">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="153">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="154">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="156">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="157">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="158">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="159">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="767" name="pof_ground" tilewidth="64" tileheight="32" tilecount="16" columns="8">
+  <image source="mountain_ground.png" width="512" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="783" source="mountain-transitions.tsx"/>
+ <tileset firstgid="801" source="walls_red.tsx"/>
+ <tileset firstgid="816" source="rocks_gray.tsx"/>
+ <tileset firstgid="826" source="rocks_gray_small.tsx"/>
+ <tileset firstgid="838" source="teleporter.tsx"/>
+ <tileset firstgid="839" source="icemist_items.tsx"/>
+ <tileset firstgid="887" source="icemist_large.tsx"/>
+ <tileset firstgid="927" source="dungeon2.tsx"/>
+ <tileset firstgid="1167" source="grounds_indoor.tsx"/>
+ <tileset firstgid="1327" source="dungeon3.tsx"/>
+ <tileset firstgid="1567" source="dungeon stairs.tsx"/>
+ <tileset firstgid="1571" source="dungeon.tsx"/>
+ <tileset firstgid="1811" source="dungeon4.tsx"/>
+ <tileset firstgid="2051" source="town_objects3.tsx"/>
+ <tileset firstgid="2083" source="water.tsx"/>
+ <tileset firstgid="2147" source="town_objexts2.tsx"/>
+ <tileset firstgid="2211" source="grassland.tsx"/>
+ <tileset firstgid="2339" source="grassland_structures.tsx"/>
+ <tileset firstgid="2375" source="dungeon_dark2.tsx"/>
+ <tileset firstgid="2615" source="graveyard2.tsx"/>
+ <tileset firstgid="2679" source="wall_stone_low.tsx"/>
+ <tileset firstgid="2691" source="../../../../code/EKAM/assets/data/tmx/cherch.tsx"/>
+ <tileset firstgid="2790" source="graveyard.tsx"/>
+ <tileset firstgid="2854" source="greenground.tsx"/>
+ <layer id="1" name="nonwalk" width="96" height="96" visible="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3bsQkAMAhEUbdw/03TBgsDARt5D/4C118EAAAAAAAAAAAAAAAAAAAAAAAAALBBXgEAAHvlI2Z1G9sfAAAAAAAAAAAAAABgVv3R/PxsDrTaQcQAkAAA
+  </data>
+ </layer>
+ <layer id="2" name="water" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3TMREAIAwEwdTxL46eCMEDTcKwq+CK/wgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG6s7C6Aecov+NC2ewAAAAAAAAAAAAB4xgF+5/hZAJAAAA==
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3cy0rDQBiA0awEfYlW37JdqXgDQXwwdSu+jXURiOM07TiRPxnPgUFKpRO+TnOjtOvIuTntuseCcXsavcVteSrsudF/Urn+q5Pvf4f0n5b1vwzXu+7b3bjTP4R1H+vKuU84n4FY+sfSHwAAAAAAAAAAAAAAAAAAAIA5Kf3twtLfGmNcaU/9p5Xr+XZW9v/8nvUfa9jzdWTd9xwLplXTUP96Xw1fDqz7jz3P61/P+o91bMNN5jOgf71hw+3Ifij3nP71cv3fM631r3PMfYbLkZ4l9yjcs/gpsoH++kcbNjifuMcqeb309fW3/qPpH0v/WMMG6f66VLp/P/RYf+s/mv6xIhuk1969/3S9vKT1r3/s3C32H7u3PDf6x9I/Vov953T+s2/0WjwnWtLxN+de/+q5Lyq2oaX+6f2fv35c897371lL/ecy97pgm/SPnVv/2Ln1r5873d8cczxucf+/pONvr6X+S5p73eD6j5q75HwnpX/M3C3u/6PmTo+3JdfD+sfOvfT+Nd9fnmI8VI7n3fgEEQrjewCQAAA=
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3XMQ0AAAjAMG4cYw9laOAiJK2CvYsAAAAAAAAAAAAAAAAAAAAAAAAAAGCj87oAAAC4Un4AAAAAAAAAAAAAAADgtQERsFD2AJAAAA==
+  </data>
+ </layer>
+ <objectgroup id="8" name="data"/>
+</map>

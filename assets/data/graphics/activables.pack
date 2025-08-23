@@ -526,3 +526,10 @@ tree
   orig: 64, 64
   offset: 0, 0
   index: -1
+church_enter
+  rotate: false
+  xy: 199, 208
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
