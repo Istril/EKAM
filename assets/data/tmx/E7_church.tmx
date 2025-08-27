@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="389">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="392">
  <properties>
   <property name="indoor" value=""/>
   <property name="maxlight" value="60"/>
@@ -1233,12 +1233,14 @@
  <tileset firstgid="2375" source="dungeon_dark2.tsx"/>
  <tileset firstgid="2615" source="graveyard2.tsx"/>
  <tileset firstgid="2679" source="wall_stone_low.tsx"/>
- <tileset firstgid="2691" source="../../../../code/EKAM/assets/data/tmx/cherch.tsx"/>
+ <tileset firstgid="2691" source="cherch.tsx"/>
  <tileset firstgid="2790" source="graveyard.tsx"/>
  <tileset firstgid="2854" source="greenground.tsx"/>
- <layer id="1" name="nonwalk" width="96" height="96">
+ <tileset firstgid="2918" source="../../../../code/EKAM/assets/data/tmx/spawns.tsx"/>
+ <tileset firstgid="2926" source="../../../../code/EKAM/assets/data/tmx/town_objects3.tsx"/>
+ <layer id="1" name="nonwalk" width="96" height="96" visible="0">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACu3OIQEAAAgDsLegf1MiXCAwW4IlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN18BwAAAADgaAFwuIGeAJAAAA==
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
   </data>
  </layer>
  <layer id="2" name="water" width="96" height="96">
@@ -1248,7 +1250,7 @@
  </layer>
  <layer id="3" name="ground" width="96" height="96">
   <data encoding="base64" compression="gzip">
-   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
+   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
   </data>
  </layer>
  <layer id="4" name="ground2" width="96" height="96">
@@ -1258,12 +1260,17 @@
  </layer>
  <layer id="5" name="scenery" width="96" height="96">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACu3cQQkAQAgAQV/2sH/Jy3AoiDDz3BAbAQAAAAAAAAAAAHRV/nUAAAAAAAAAAAAAAAAAAAAAAICrpv5KPk0AAAAAAAAAbHhUgF1WAJAAAA==
+   H4sIAAAAAAAACu3cMQ0AAAgEMSZ84N8kGgjTJ+14Iq4KAAAAAAAAAAAA+Jq+dQAAAAAAAAAAAAAAAAAAAAAAgFT+SgAAAAAAAAAkWxxuiNkAkAAA
   </data>
  </layer>
  <layer id="6" name="objects" width="96" height="96">
+  <properties>
+   <property name="active" value=""/>
+   <property name="active_sprite" value="grate_l"/>
+   <property name="tag" value="grate_church"/>
+  </properties>
   <data encoding="base64" compression="gzip">
-   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
+   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
   </data>
  </layer>
  <layer id="7" name="roofs" width="96" height="96">
@@ -1272,13 +1279,12 @@
   </data>
  </layer>
  <objectgroup id="8" name="data">
-  <object id="383" name="10" type="transition" x="1072.25" y="2352.75" width="61.5" height="59.5">
+  <object id="383" name="10" type="transition" x="1067" y="2345.75" width="73.5" height="75.5">
    <properties>
     <property name="area_id" value="E7_church"/>
     <property name="entry_id" value="10"/>
    </properties>
   </object>
-  <object id="384" x="1648.75" y="2352.25" width="63.25" height="62.75"/>
   <object id="386" name="enter" type="entry" gid="17" x="1408" y="2976" width="64" height="64">
    <properties>
     <property name="entry_id" value="1"/>
@@ -1293,6 +1299,28 @@
   <object id="388" name="enter" type="entry" gid="17" x="878.333" y="1751" width="64" height="64">
    <properties>
     <property name="entry_id" value="10"/>
+   </properties>
+  </object>
+  <object id="389" name="Dockbeam2" type="mapitem" gid="21" x="608" y="960" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="beam_blue"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="stash"/>
+   </properties>
+  </object>
+  <object id="390" name="dockdoor" type="trigger" x="563.25" y="911" width="58.5" height="64.75">
+   <properties>
+    <property name="actions" value="SetVariable#TMP_E7_ChurchStashGrate,1;ItemHide#stash;ItemWalkable#stash"/>
+    <property name="conditions" value="PlayerHasItem#14001;VariableLower#TMP_E7_ChurchStashGrate,1"/>
+   </properties>
+  </object>
+  <object id="391" name="crate" type="container" gid="2922" x="1408" y="2272" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="items" value="14001"/>
+    <property name="name" value="@CHEST"/>
+    <property name="tag" value="C10_test_crate"/>
    </properties>
   </object>
  </objectgroup>

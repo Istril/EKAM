@@ -810,7 +810,8 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 13007	Gorx_crown	armor_head		-8	20,-30,0,0,0,0	0,0,0,0,0,2	[gossip,1]	5000	gorx_crown	-17	25												C,M	
 13008	Gorx_axe	WEAPON	Gaxe_fire	0			[vicious,2]	1400	gorx_axe	0	0						battleaxe						W,C	
 13100	Iron crossbow	WEAPON	iron_crossbow	0				140	weapon_bow_fire	0	0						crossbow						W,R	
-14000	Dock Key	general		0				90	key1	0	0													1
+14000	Dock Key	general		0				100	key1	0	0													1
+14001	rusty key	general		0				100	key1	0	0													1
 15000	rog_summon_goblin	POTION		0				1500	rog_summon	0	0													0
 15001	kogot_summon_wolf	POTION		0				2000	kogot_summon	0	0													0
 15002	scroll_ghost_summon	POTION		0				2000	ghost_scroll_summon	0	0													0
