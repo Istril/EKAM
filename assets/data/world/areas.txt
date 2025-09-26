@@ -162,3 +162,5 @@ E7_miners_guild					miners_guild		Пристанище шахтёров
 E7_Zenuel					zenuel_tower		Башня Зунуэль					
 H11_maln_shop					zenuel_tower		Магазин "Зелья Мальна"					
 E7_church					Church		Храм "Последняя надежда"					
+E7_church_tomb					Church		Подземелье храма					
+J5_Meltorra					Meltorra		Мельторра					

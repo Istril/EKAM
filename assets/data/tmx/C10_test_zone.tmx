@@ -1165,7 +1165,7 @@
   <object id="30" name="crate" type="container" gid="249" x="640" y="1472" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
-    <property name="items" value="1003,1003,1003,1003,1003"/>
+    <property name="items" value="50015,50016"/>
     <property name="name" value="@CHEST"/>
     <property name="tag" value="C10_test_crate"/>
    </properties>

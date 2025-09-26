@@ -181,3 +181,59 @@ jar_off
   orig: 64, 128
   offset: 0, 0
   index: -1
+runedark_A_a
+  rotate: false
+  xy: 331, 1
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+runedark_A_i
+  rotate: false
+  xy: 397, 131
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+runedark_B_a
+  rotate: false
+  xy: 397, 1
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+runedark_B_i
+  rotate: false
+  xy: 463, 131
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+runedark_C_a
+  rotate: false
+  xy: 463, 1
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+runedark_C_i
+  rotate: false
+  xy: 529, 131
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+runedark_D_a
+  rotate: false
+  xy: 529, 1
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1
+runedark_D_i
+  rotate: false
+  xy: 595, 131
+  size: 64, 128
+  orig: 64, 128
+  offset: 0, 0
+  index: -1

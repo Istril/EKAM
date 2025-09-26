@@ -812,6 +812,7 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 13100	Iron crossbow	WEAPON	iron_crossbow	0				140	weapon_bow_fire	0	0						crossbow						W,R	
 14000	Dock Key	general		0				100	key1	0	0													1
 14001	rusty key	general		0				100	key1	0	0													1
+14002	hint_church_tomb	general		0				100	key1	0	0													1
 15000	rog_summon_goblin	POTION		0				1500	rog_summon	0	0													0
 15001	kogot_summon_wolf	POTION		0				2000	kogot_summon	0	0													0
 15002	scroll_ghost_summon	POTION		0				2000	ghost_scroll_summon	0	0													0
@@ -1024,3 +1025,5 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 50012	adminbook	potion		0				90	topaz	0	0									"GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#"				1
 50013	Admin_wand	WEAPON	Test_wand	0			[staff][emp,3]	6000	tesla_rod	0	0						greatstaff							
 50014	admin_armor	armor_chest		1				100	armor_leather_chest1	2500	900						leather							
+50015	venom_test	POTION		0				150	potion_green	0	0									PoisonWeapon#4,15				1
+50016	fire_test	POTION		0				150	potion_green	0	0									FireWeapon#4,15				1

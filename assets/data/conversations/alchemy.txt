@@ -1,16 +1,17 @@
 index	type	text	text_ES	Go To	conditions	actions	requisites
-1	Q	Продолжить смешивание ингредиентов?		3	VariableEqual#start_alchemy,1		
+1	Q	Продолжить смешивание ингредиентов?		3	VariableGreater#start_alchemy,5		
 1	Q	[BLUE]Алхимия.[] Вы можете создавать зелья по найденным рецептам или смешать ингридиенты надеясь на удачу.		2			
 2	A	Открыть хранилище. 		0		OpenWorldContainer#alchemy_chest	
 2	A	Создать по рецепту		100			
-2	A	Смешивать самостоятельно		1000			
-3	A	Продолжить комбинирование.		1002			
-3	A	Отложить эксперемент.		1000			
+2	A	Смешивать самостоятельно		1000	VariableLower#start_alchemy,5		
+3	A	Продолжить комбинирование.		1002	VariableGreater#start_alchemy,5		
+3	A	Отложить эксперемент.		1			
 100	Q	Выберите рецепт		140			
 1000	Q	Выберите действие		1001			
-1001	A	Приступить к комбинирование.		1002		SetVariable#start_alchemy,1	
-1001	A	Перейти к следующему этапу		2500			
+1001	A	Приступить к комбинирование.		1002		SetVariable#start_alchemy,6	
+1001	A	Перейти к следующему этапу		2500	PlayerHasItem#11007	"LoseItem#11007;IncVariable#water_bottle,1"	
 1001	A	Вылить образец.		4000			
+1001	A	Похоже вы забыли колбы с водой и продолжить зельеварение вы не можете.		0			
 1002	Q	Вы осматриваете свои ингридиенты и трофеи добытые во время странствий по миру.		1003			
 1003	A	Завершить комбинирование ингредиентов		1000			
 1003	A	Красная орхидея		1002	PlayerHasItem#2101	"LoseItem#2101;IncVariable#red_orchid,1"	
@@ -57,6 +58,237 @@ index	type	text	text_ES	Go To	conditions	actions	requisites
 1003	A	Черная роза		1002	PlayerHasItem#11035	"LoseItem#11035;IncVariable#black_rose,1"	
 1003	A	Жидкий огонь		1002	PlayerHasItem#11011	"LoseItem#11011;IncVariable#liquid_fire,1"	
 1003	A	Флакон с кровью вампира		1002	PlayerHasItem#11010	"LoseItem#11010;IncVariable#blood_vampire,1"	
-2500	Q	Вы выбрали ингредиенты и вам осталось лишь настроить силу горения и засечь время.		0			
+2500	Q	Вы выбрали ингредиенты и вам осталось лишь настроить силу горения и засечь время.		2501			
+2501	A	Изменить силу горения.		2510		
+2501	A	Изменить время приготовления.		2520		
+2501	A	Приготовить зелье.		2600		
+2510	Q	Вы разжигаете огонь.		2511			
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 1 градус.		2511	VariableEqual#fire_temperature,1		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 2 градуса.		2511	VariableEqual#fire_temperature,2		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 3 градуса.		2511	VariableEqual#fire_temperature,3		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 4 градуса.		2511	VariableEqual#fire_temperature,4		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 5 градусов.		2511	VariableEqual#fire_temperature,5		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 6 градусов.		2511	VariableEqual#fire_temperature,6		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 7 градусов.		2511	VariableEqual#fire_temperature,7		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 8 градусов.		2511	VariableEqual#fire_temperature,9		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 10 градусов.		2511	VariableEqual#fire_temperature,10		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 11 градусов.		2511	VariableEqual#fire_temperature,11		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 12 градусов.		2511	VariableEqual#fire_temperature,12		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 13 градусов.		2511	VariableEqual#fire_temperature,13		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 14 градусов.		2511	VariableEqual#fire_temperature,14		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 15 градусов.		2511	VariableEqual#fire_temperature,15		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 16 градусов.		2511	VariableEqual#fire_temperature,16		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 17 градусов.		2511	VariableEqual#fire_temperature,17		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 18 градусов.		2511	VariableEqual#fire_temperature,18		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 19 градусов.		2511	VariableEqual#fire_temperature,19		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 20 градусов.		2511	VariableEqual#fire_temperature,20		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 21 градус.		2511	VariableEqual#fire_temperature,21		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 22 градуса.		2511	VariableEqual#fire_temperature,22		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 23 градуса.		2511	VariableEqual#fire_temperature,23		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 24 градуса.		2511	VariableEqual#fire_temperature,24		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 25 градусов.		2511	VariableEqual#fire_temperature,25		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 26 градусов.		2511	VariableEqual#fire_temperature,26		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 27 градусов.		2511	VariableEqual#fire_temperature,27		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 28 градусов.		2511	VariableEqual#fire_temperature,28		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 29 градусов.		2511	VariableEqual#fire_temperature,29		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 30 градусов.		2511	VariableEqual#fire_temperature,30		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 31 градус.		2511	VariableEqual#fire_temperature,31		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 32 градуса.		2511	VariableEqual#fire_temperature,32		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 33 градуса.		2511	VariableEqual#fire_temperature,33		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 34 градуса.		2511	VariableEqual#fire_temperature,34		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 35 градусов.		2511	VariableEqual#fire_temperature,35		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 36 градусов.		2511	VariableEqual#fire_temperature,36		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 37 градусов.		2511	VariableEqual#fire_temperature,37		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 38 градусов.		2511	VariableEqual#fire_temperature,38		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 39 градусов.		2511	VariableEqual#fire_temperature,39		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 40 градусов.		2511	VariableEqual#fire_temperature,40		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 41 градус.		2511	VariableEqual#fire_temperature,41		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 42 градуса.		2511	VariableEqual#fire_temperature,42		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 43 градуса.		2511	VariableEqual#fire_temperature,43		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 44 градуса.		2511	VariableEqual#fire_temperature,44		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 45 градусов.		2511	VariableEqual#fire_temperature,45		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 46 градусов.		2511	VariableEqual#fire_temperature,46		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 47 градусов.		2511	VariableEqual#fire_temperature,47		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 48 градусов.		2511	VariableEqual#fire_temperature,48		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 49 градусов.		2511	VariableEqual#fire_temperature,49		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 50 градусов.		2511	VariableEqual#fire_temperature,50		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 51 градус.		2511	VariableEqual#fire_temperature,51		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 52 градуса.		2511	VariableEqual#fire_temperature,52		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 53 градуса.		2511	VariableEqual#fire_temperature,53		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 54 градуса.		2511	VariableEqual#fire_temperature,54		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 55 градусов.		2511	VariableEqual#fire_temperature,55		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 56 градусов.		2511	VariableEqual#fire_temperature,56		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 57 градусов.		2511	VariableEqual#fire_temperature,57		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 58 градусов.		2511	VariableEqual#fire_temperature,58		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 59 градусов.		2511	VariableEqual#fire_temperature,59		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 60 градусов.		2511	VariableEqual#fire_temperature,60		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 61 градус.		2511	VariableEqual#fire_temperature,61		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 62 градуса.		2511	VariableEqual#fire_temperature,62		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 63 градуса.		2511	VariableEqual#fire_temperature,63		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 64 градуса.		2511	VariableEqual#fire_temperature,64		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 65 градусов.		2511	VariableEqual#fire_temperature,65		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 66 градусов.		2511	VariableEqual#fire_temperature,66		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 67 градусов.		2511	VariableEqual#fire_temperature,67		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 68 градусов.		2511	VariableEqual#fire_temperature,68		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 69 градусов.		2511	VariableEqual#fire_temperature,69		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 70 градусов.		2511	VariableEqual#fire_temperature,70		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 71 градус.		2511	VariableEqual#fire_temperature,71		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 72 градуса.		2511	VariableEqual#fire_temperature,72		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 73 градуса.		2511	VariableEqual#fire_temperature,73		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 74 градуса.		2511	VariableEqual#fire_temperature,74		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 75 градусов.		2511	VariableEqual#fire_temperature,75		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 76 градусов.		2511	VariableEqual#fire_temperature,76		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 77 градусов.		2511	VariableEqual#fire_temperature,77		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 78 градусов.		2511	VariableEqual#fire_temperature,78		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 79 градусов.		2511	VariableEqual#fire_temperature,79		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 80 градусов.		2511	VariableEqual#fire_temperature,80		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 81 градус.		2511	VariableEqual#fire_temperature,81		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 82 градуса.		2511	VariableEqual#fire_temperature,82		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 83 градуса.		2511	VariableEqual#fire_temperature,83		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 84 градуса.		2511	VariableEqual#fire_temperature,84		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 85 градусов.		2511	VariableEqual#fire_temperature,85		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 86 градусов.		2511	VariableEqual#fire_temperature,86		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 87 градусов.		2511	VariableEqual#fire_temperature,87		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 88 градусов.		2511	VariableEqual#fire_temperature,88		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 89 градусов.		2511	VariableEqual#fire_temperature,89		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 90 градусов.		2511	VariableEqual#fire_temperature,90		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 91 градус.		2511	VariableEqual#fire_temperature,91		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 92 градуса.		2511	VariableEqual#fire_temperature,92		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 93 градуса.		2511	VariableEqual#fire_temperature,93		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 94 градуса.		2511	VariableEqual#fire_temperature,94		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 95 градусов.		2511	VariableEqual#fire_temperature,95		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 96 градусов.		2511	VariableEqual#fire_temperature,96		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 97 градусов.		2511	VariableEqual#fire_temperature,97		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 98 градусов.		2511	VariableEqual#fire_temperature,98		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 99 градусов.		2511	VariableEqual#fire_temperature,99		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 100 градусов.		2511	VariableEqual#fire_temperature,100		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 101 градус.		2511	VariableEqual#fire_temperature,101		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 102 градуса.		2511	VariableEqual#fire_temperature,102		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 103 градуса.		2511	VariableEqual#fire_temperature,103		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 104 градуса.		2511	VariableEqual#fire_temperature,104		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 105 градусов.		2511	VariableEqual#fire_temperature,105		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 106 градусов.		2511	VariableEqual#fire_temperature,106		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 107 градусов.		2511	VariableEqual#fire_temperature,107		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 108 градусов.		2511	VariableEqual#fire_temperature,108		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 109 градусов.		2511	VariableEqual#fire_temperature,109		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 110 градусов.		2511	VariableEqual#fire_temperature,110		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 111 градусов.		2511	VariableEqual#fire_temperature,111		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 112 градусов.		2511	VariableEqual#fire_temperature,112		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 113 градусов.		2511	VariableEqual#fire_temperature,113		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 114 градусов.		2511	VariableEqual#fire_temperature,114		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 115 градусов.		2511	VariableEqual#fire_temperature,115		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 116 градусов.		2511	VariableEqual#fire_temperature,116		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 117 градусов.		2511	VariableEqual#fire_temperature,117		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 118 градусов.		2511	VariableEqual#fire_temperature,118		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 119 градусов.		2511	VariableEqual#fire_temperature,119		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 120 градусов.		2511	VariableEqual#fire_temperature,120		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 121 градус.		2511	VariableEqual#fire_temperature,121		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 122 градуса.		2511	VariableEqual#fire_temperature,122		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 123 градуса.		2511	VariableEqual#fire_temperature,123		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 124 градуса.		2511	VariableEqual#fire_temperature,124		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 125 градусов.		2511	VariableEqual#fire_temperature,125		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 126 градусов.		2511	VariableEqual#fire_temperature,126		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 127 градусов.		2511	VariableEqual#fire_temperature,127		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 128 градусов.		2511	VariableEqual#fire_temperature,128		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 129 градусов.		2511	VariableEqual#fire_temperature,129		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 130 градусов.		2511	VariableEqual#fire_temperature,130		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 131 градус.		2511	VariableEqual#fire_temperature,131		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 132 градуса.		2511	VariableEqual#fire_temperature,132		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 133 градуса.		2511	VariableEqual#fire_temperature,133		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 134 градуса.		2511	VariableEqual#fire_temperature,134		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 135 градусов.		2511	VariableEqual#fire_temperature,135		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 136 градусов.		2511	VariableEqual#fire_temperature,136		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 137 градусов.		2511	VariableEqual#fire_temperature,137		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 138 градусов.		2511	VariableEqual#fire_temperature,138		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 139 градусов.		2511	VariableEqual#fire_temperature,139		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 140 градусов.		2511	VariableEqual#fire_temperature,140		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 141 градус.		2511	VariableEqual#fire_temperature,141		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 142 градуса.		2511	VariableEqual#fire_temperature,142		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 143 градуса.		2511	VariableEqual#fire_temperature,143		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 144 градуса.		2511	VariableEqual#fire_temperature,144		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 145 градусов.		2511	VariableEqual#fire_temperature,145		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 146 градусов.		2511	VariableEqual#fire_temperature,146		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 147 градусов.		2511	VariableEqual#fire_temperature,147		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 148 градусов.		2511	VariableEqual#fire_temperature,148		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 149 градусов.		2511	VariableEqual#fire_temperature,149		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 150 градусов.		2511	VariableEqual#fire_temperature,150		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 151 градус.		2511	VariableEqual#fire_temperature,151		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 152 градуса.		2511	VariableEqual#fire_temperature,152		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 153 градуса.		2511	VariableEqual#fire_temperature,153		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 154 градуса.		2511	VariableEqual#fire_temperature,154		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 155 градусов.		2511	VariableEqual#fire_temperature,155		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 156 градусов.		2511	VariableEqual#fire_temperature,156		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 157 градусов.		2511	VariableEqual#fire_temperature,157		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 158 градусов.		2511	VariableEqual#fire_temperature,158		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 159 градусов.		2511	VariableEqual#fire_temperature,159		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 160 градусов.		2511	VariableEqual#fire_temperature,160		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 161 градус.		2511	VariableEqual#fire_temperature,161		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 162 градуса.		2511	VariableEqual#fire_temperature,162		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 163 градуса.		2511	VariableEqual#fire_temperature,163		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 164 градуса.		2511	VariableEqual#fire_temperature,164		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 165 градусов.		2511	VariableEqual#fire_temperature,165		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 166 градусов.		2511	VariableEqual#fire_temperature,166		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 167 градусов.		2511	VariableEqual#fire_temperature,167		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 168 градусов.		2511	VariableEqual#fire_temperature,168		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 169 градусов.		2511	VariableEqual#fire_temperature,169		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 170 градусов.		2511	VariableEqual#fire_temperature,170		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 171 градус.		2511	VariableEqual#fire_temperature,171		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 172 градуса.		2511	VariableEqual#fire_temperature,172		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 173 градуса.		2511	VariableEqual#fire_temperature,173		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 174 градуса.		2511	VariableEqual#fire_temperature,174		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 175 градусов.		2511	VariableEqual#fire_temperature,175		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 176 градусов.		2511	VariableEqual#fire_temperature,176		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 177 градусов.		2511	VariableEqual#fire_temperature,177		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 178 градусов.		2511	VariableEqual#fire_temperature,178		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 179 градусов.		2511	VariableEqual#fire_temperature,179		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 180 градусов.		2511	VariableEqual#fire_temperature,180		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 181 градус.		2511	VariableEqual#fire_temperature,181		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 182 градуса.		2511	VariableEqual#fire_temperature,182		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 183 градуса.		2511	VariableEqual#fire_temperature,183		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 184 градуса.		2511	VariableEqual#fire_temperature,184		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 185 градусов.		2511	VariableEqual#fire_temperature,185		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 186 градусов.		2511	VariableEqual#fire_temperature,186		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 187 градусов.		2511	VariableEqual#fire_temperature,187		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 188 градусов.		2511	VariableEqual#fire_temperature,188		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 189 градусов.		2511	VariableEqual#fire_temperature,189		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 190 градуса.		2511	VariableEqual#fire_temperature,190		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 191 градус.		2511	VariableEqual#fire_temperature,191		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 192 градуса.		2511	VariableEqual#fire_temperature,192		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 193 градуса.		2511	VariableEqual#fire_temperature,193		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 194 градуса.		2511	VariableEqual#fire_temperature,194		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 195 градусов.		2511	VariableEqual#fire_temperature,195		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 196 градусов.		2511	VariableEqual#fire_temperature,196		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 197 градусов.		2511	VariableEqual#fire_temperature,197		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 198 градусов.		2511	VariableEqual#fire_temperature,198		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 199 градусов.		2511	VariableEqual#fire_temperature,199		
+2510	Q	Сейчас сила пламени на глаз оценивается вами приблизительно в 200 градусов.		2511	VariableEqual#fire_temperature,200		
+2511	A	-		2510	VariableEqual#temperature_minus,0	"SetVariable#temperature_plus,0;IncVariable#temperature_minus,1"	
+2511	A	+		2510	VariableEqual#temperature_plus,0	"SetVariable#temperature_minus,0;IncVariable#temperature_plus,1"	
+2511	A	Уменьшить силу пламени на 5 градусов.		2510	"VariableGreater#temperature_minus,1;VariableGreater#fire_temperature,6"	DecVariable#fire_temperature,5	
+2511	A	Уменьшить силу пламени на 50 градусов.		2510	"VariableGreater#temperature_minus,1;VariableGreater#fire_temperature,51"	DecVariable#fire_temperature,50	
+2511	A	Увеличить силу пламени на 5 градусов.		2510	"VariableGreater#temperature_plus,1;VariableLower#fire_temperature,196"	IncVariable#fire_temperature,5	
+2511	A	Увеличить силу пламени на 50 градусов.		2510	"VariableGreater#temperature_plus,1;VariableLower#fire_temperature,151"	IncVariable#fire_temperature,50	
+2511	A	Завершить изменение силы огня.		2500			
+2520	Q	Вы смотрите на алхимически-магическое устройство и думаете какое время отмерить.		2521			
+2520	Q	Вы выставляете на магическом устройстве приблизительно 5 минут.		2521	VariableEqual#potion_timer,5		
+2520	Q	Вы выставляете на магическом устройстве приблизительно 10 минут.		2521	VariableEqual#potion_timer,10		
+2520	Q	Вы выставляете на магическом устройстве приблизительно 15 минут.		2521	VariableEqual#potion_timer,15		
+2520	Q	Вы выставляете на магическом устройстве приблизительно 20 минут.		2521	VariableEqual#potion_timer,20		
+2520	Q	Вы выставляете на магическом устройстве приблизительно 25 минут.		2521	VariableEqual#potion_timer,25		
+2520	Q	Вы выставляете на магическом устройстве приблизительно 30 минут.		2521	VariableEqual#potion_timer,30		
+2520	Q	Вы выставляете на магическом устройстве приблизительно 35 минут.		2521	VariableEqual#potion_timer,35		
+2520	Q	Вы выставляете на магическом устройстве приблизительно 40 минут.		2521	VariableEqual#potion_timer,40		
+2520	Q	Вы выставляете на магическом устройстве приблизительно 45 минут.		2521	VariableEqual#potion_timer,45		
+2520	Q	Вы выставляете на магическом устройстве приблизительно 50 минут.		2521	VariableEqual#potion_timer,50		
+2520	Q	Вы выставляете на магическом устройстве приблизительно 55 минут.		2521	VariableEqual#potion_timer,55		
+2520	Q	Вы выставляете на магическом устройстве приблизительно 60 минут.		2521	VariableEqual#potion_timer,60		
+2521	A	-		2520	VariableEqual#ptimer_minus,0	"SetVariable#ptimer_plus,0;IncVariable#ptimer_minus,1"	
+2521	A	+		2520	VariableEqual#ptimer_plus,0	"SetVariable#ptimer_minus,0;IncVariable#ptimer_plus,1"	
+2521	A	Слабо повернуть механизм регулировки левее.		2520	"VariableGreater#ptimer_minus,1;VariableGreater#ptimer_minus,6"	DecVariable#fire_temperature,5	
+2521	A	Крутить механизм регулировки влево.		2520	"VariableGreater#ptimer_minus,1;VariableGreater#ptimer_minus,31"	DecVariable#fire_temperature,30	
+2521	A	Слабо повернуть механизм регулировки правее.		2520	"VariableGreater#ptimer_plus,1;VariableLower#ptimer_minus,56"	IncVariable#fire_temperature,5	
+2521	A	Крутить механизм регулировки вправо.		2520	"VariableGreater#ptimer_plus,1;VariableLower#ptimer_minus,31"	IncVariable#fire_temperature,30	
+2521	A	Завершить изменение времени.		2500			
+2600	Q	По прошествию времени вы подходите к столу. Цвет зелья приготовленному вами не похож ни на какой из вам известных, во время переливания зелья в колбу происходит взрыв однавременно обжигая и обмораживая ваши руки, несколько капель разлетевшихся капель попадает вам на лицо, вы ощущаете несколько ожогов от ваших неудачных эксперементов.		2700		"LoseHPFire#50;LoseHPCold#50;LoseHPToxic75"	
 4000	Q	Вы вылили образец.		4001			
-4001	A	Далее		1000		"SetVariable#start_alchemy,0;SetVariable#red_orchid,0;SetVariable#blue_orchid,0;SetVariable#merple,0;SetVariable#tesur,0;SetVariable#deadly_mushroom,0;SetVariable#glowing_mushroom,0;SetVariable#golden_apple,0;SetVariable#fire_salt,0;SetVariable#living_ice,0;SetVariable#sparkling_powder,0;SetVariable#coral_mamba_fang,0;SetVariable#mamba_fang,0;SetVariable#skull,0;SetVariable#spider_glands,0;SetVariable#ruby_powder,0;SetVariable#sapphire_powder,0;SetVariable#emerald_powder,0;SetVariable#steel_dust,0;SetVariable#apple,0;SetVariable#demon_horn,0;SetVariable#lousk_claw,0;SetVariable#lousk_scales,0;SetVariable#lousk_heart,0;SetVariable#ectoplasm,0;SetVariable#manticore_eye,0;SetVariable#manticore_sting,0;SetVariable#eltess,0;SetVariable#giants_finger,0;SetVariable#scarlet_moss,0;SetVariable#night_orchid,0;SetVariable#bone_shards,0;SetVariable#zertella,0;SetVariable#harbinger_of_doom,0;SetVariable#azure_berries,0;SetVariable#ashen_rose,0;SetVariable#shard_of_pure_ice,0;SetVariable#holy_water,0;SetVariable#liquid_fire,0;SetVariable#lousk_scales,0;SetVariable#lousk_heart,0;SetVariable#ashen_plant,0;SetVariable#demon_heart,0;SetVariable#vampire_dust,0;SetVariable#gwensdalin_lotus,0;SetVariable#black_rose,0;SetVariable#blood_vampire,0"	
+4001	A	Далее		1000		"SetVariable#start_alchemy,0;SetVariable#red_orchid,0;SetVariable#blue_orchid,0;SetVariable#merple,0;SetVariable#tesur,0;SetVariable#deadly_mushroom,0;SetVariable#glowing_mushroom,0;SetVariable#golden_apple,0;SetVariable#fire_salt,0;SetVariable#living_ice,0;SetVariable#sparkling_powder,0;SetVariable#coral_mamba_fang,0;SetVariable#mamba_fang,0;SetVariable#skull,0;SetVariable#spider_glands,0;SetVariable#ruby_powder,0;SetVariable#sapphire_powder,0;SetVariable#emerald_powder,0;SetVariable#steel_dust,0;SetVariable#apple,0;SetVariable#demon_horn,0;SetVariable#lousk_claw,0;SetVariable#lousk_scales,0;SetVariable#lousk_heart,0;SetVariable#ectoplasm,0;SetVariable#manticore_eye,0;SetVariable#manticore_sting,0;SetVariable#eltess,0;SetVariable#giants_finger,0;SetVariable#scarlet_moss,0;SetVariable#night_orchid,0;SetVariable#bone_shards,0;SetVariable#zertella,0;SetVariable#harbinger_of_doom,0;SetVariable#azure_berries,0;SetVariable#ashen_rose,0;SetVariable#shard_of_pure_ice,0;SetVariable#holy_water,0;SetVariable#liquid_fire,0;SetVariable#lousk_scales,0;SetVariable#lousk_heart,0;SetVariable#ashen_plant,0;SetVariable#demon_heart,0;SetVariable#vampire_dust,0;SetVariable#gwensdalin_lotus,0;SetVariable#black_rose,0;SetVariable#blood_vampire,0;SetVariable#fire_temperature,0;SetVariable#temperature_plus,0;SetVariable#temperature_minus,0"	

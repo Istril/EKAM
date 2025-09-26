@@ -814,6 +814,7 @@ item_ID	name	description	name_ES	description_ES	name_RU	desc_RU	name_PT	desc_PT	
 13100	Iron crossbow				Арбалет из железа	Простое оружие, но очень надёжное.													
 14000	Dock Key				Ключ от доков	Ни с места! кажется я обронил ключ.													
 14001	rusty key				Ржавый ключ	Этот ключ пролежал тут достаточно долго. Повезёт если он доживёт до момента своего применения.													
+14002	hint_church_tomb				Потёртая страница из дневника	на этой странице будет подсказка													
 15000	rog_summon_goblin				Рог гоблинов	Созывает зелёный горох на славную битву.													
 15001	kogot_summon_wolf				Коготь стаи	В нём слышится протяжный волчий вой.													
 15002	scroll_ghost_summon				Свиток потерянной души	В нём были заключены многие доблестные души.													
@@ -1025,3 +1026,5 @@ item_ID	name	description	name_ES	description_ES	name_RU	desc_RU	name_PT	desc_PT	
 50012	adminbook				Админбук	тест													
 50013	Admin_wand				Палка админа	тест													
 50014	admin_armor				Бронька админа	тест													
+50015	venom_test				ядик	тест													
+50016	fire_test				огонёк	тест													

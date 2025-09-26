@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="383">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="434">
  <properties>
   <property name="indoor" value=""/>
   <property name="maxlight" value="60"/>
@@ -1218,58 +1218,212 @@
  <tileset firstgid="826" source="rocks_gray_small.tsx"/>
  <tileset firstgid="838" source="teleporter.tsx"/>
  <tileset firstgid="839" source="icemist_items.tsx"/>
- <tileset firstgid="887" source="icemist_large.tsx"/>
- <tileset firstgid="927" source="dungeon2.tsx"/>
- <tileset firstgid="1167" source="grounds_indoor.tsx"/>
- <tileset firstgid="1327" source="dungeon3.tsx"/>
- <tileset firstgid="1567" source="dungeon stairs.tsx"/>
- <tileset firstgid="1571" source="dungeon.tsx"/>
- <tileset firstgid="1811" source="dungeon4.tsx"/>
- <tileset firstgid="2051" source="town_objects3.tsx"/>
- <tileset firstgid="2083" source="water.tsx"/>
- <tileset firstgid="2147" source="town_objexts2.tsx"/>
- <tileset firstgid="2211" source="grassland.tsx"/>
- <tileset firstgid="2339" source="grassland_structures.tsx"/>
- <tileset firstgid="2375" source="dungeon_dark2.tsx"/>
- <tileset firstgid="2615" source="graveyard2.tsx"/>
- <tileset firstgid="2679" source="wall_stone_low.tsx"/>
- <tileset firstgid="2691" source="cherch.tsx"/>
- <tileset firstgid="2790" source="graveyard.tsx"/>
- <tileset firstgid="2854" source="greenground.tsx"/>
+ <tileset firstgid="887" source="dungeon2.tsx"/>
+ <tileset firstgid="1127" source="grounds_indoor.tsx"/>
+ <tileset firstgid="1287" source="dungeon3.tsx"/>
+ <tileset firstgid="1527" source="dungeon stairs.tsx"/>
+ <tileset firstgid="1531" source="dungeon.tsx"/>
+ <tileset firstgid="1771" source="dungeon4.tsx"/>
+ <tileset firstgid="2011" source="town_objects3.tsx"/>
+ <tileset firstgid="2043" source="water.tsx"/>
+ <tileset firstgid="2107" source="town_objexts2.tsx"/>
+ <tileset firstgid="2171" source="grassland.tsx"/>
+ <tileset firstgid="2299" source="grassland_structures.tsx"/>
+ <tileset firstgid="2335" source="dungeon_dark2.tsx"/>
+ <tileset firstgid="2575" source="graveyard2.tsx"/>
+ <tileset firstgid="2639" source="wall_stone_low.tsx"/>
+ <tileset firstgid="2651" source="cherch.tsx"/>
+ <tileset firstgid="2750" source="graveyard.tsx"/>
+ <tileset firstgid="2814" source="greenground.tsx"/>
+ <tileset firstgid="2878" source="dungeon_white.tsx"/>
+ <tileset firstgid="3118" source="large_object1.tsx"/>
+ <tileset firstgid="3158" source="teleporter2.tsx"/>
  <layer id="1" name="nonwalk" width="96" height="96" visible="0">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACu3bsQkAMAhEUbdw/03TBgsDARt5D/4C118EAAAAAAAAAAAAAAAAAAAAAAAAALBBXgEAAHvlI2Z1G9sfAAAAAAAAAAAAAABgVv3R/PxsDrTaQcQAkAAA
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
   </data>
  </layer>
  <layer id="2" name="water" width="96" height="96">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+   H4sIAAAAAAAACu3cQU6DABRF0U67KjXq/rdkiGnipEINn/cq5yRMdPL/tSJi8XIBAAAAAAAAAADgCK/X9ATntvR/9zWI0j/LOSjLOShL/yz9s/TP8zM4y/dAlv5Z+mfpn6V/lv5Z+mfpn6V/lv5Z+mfpn6V/lv5Z+s95u64fC/3nfFzXDwDYm7/vZ7m+zdI/S/8s/bP0z9J/1s/7SPc+rv+se/eR3F8CADiGe65Zbb/zne310Ni/aZ5pjfu2zTOpsf+ZzkGt/dtmmtK4a+NMUxp3bZxpSuOujTNNad31LD+Dm/s3zrW3tT1Tr0P9t31+yln6b6H/+ej/zfl/1sud98TcOP/PWvb8/OW9L/rPuu3Z9szh2fovmp45fKT/lmdXHzmO1Po6e3SuLc+ubj2O9F/6P6vWPVvn2lvrnq1z7a11z9a59pbY8xn+18be11Rte7Zdh/x1xme73lp8AWRa5NkAkAAA
   </data>
  </layer>
  <layer id="3" name="ground" width="96" height="96">
   <data encoding="base64" compression="gzip">
-   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
+   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
   </data>
  </layer>
  <layer id="4" name="ground2" width="96" height="96">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+   H4sIAAAAAAAACu3dMQqAMAwF0K6FnsKj1AOoHbz/URw6KY5CG3kP/hDI9IesSQkA+LO13Oe9vO/xvfroetM9MEBze4Y5dA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEMIZ4O/UknuYU809AAAAAEAMFwqKiJoAkAAA
   </data>
  </layer>
  <layer id="5" name="scenery" width="96" height="96">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACu3TMREAIAwEwdTxL46eCMEDTcKwq+CK/wgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG6s7C6Aecov+NC2ewAAAAAAAAAAAAB4xgF+5/hZAJAAAA==
+   H4sIAAAAAAAACu3XwQkAIQwEQL/2X5Cg2JfawX0OhZ2pIAR2Q0oBAAAAAAAAAPhu1NsT5Jp2T7i+M9DkgED6n3Sn+7scEMjv9QZ3+B7dDwAAAAAAAAAAAAAAAAAAAAAAAAAAAADAXxZGVXeqAJAAAA==
   </data>
  </layer>
  <layer id="6" name="objects" width="96" height="96">
   <data encoding="base64" compression="gzip">
-   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
+   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
   </data>
  </layer>
  <layer id="7" name="roofs" width="96" height="96">
   <data encoding="base64" compression="gzip">
-   H4sIAAAAAAAACu3XMQ0AAAjAMG4cYw9laOAiJK2CvYsAAAAAAAAAAAAAAAAAAAAAAAAAAGCj87oAAAC4Un4AAAAAAAAAAAAAAADgtQERsFD2AJAAAA==
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
   </data>
  </layer>
- <objectgroup id="8" name="data"/>
+ <objectgroup id="8" name="data">
+  <object id="383" name="Secret Door" type="secretdoor" gid="21" x="2048" y="928" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="23"/>
+    <property name="minlevel" value="19"/>
+    <property name="secretdoor_tag" value="E7_church_tomb1"/>
+   </properties>
+  </object>
+  <object id="384" name="Secret Door" type="secretdoor" gid="21" x="2592" y="1952" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="25"/>
+    <property name="minlevel" value="21"/>
+    <property name="secretdoor_tag" value="E7_church_tomb2"/>
+   </properties>
+  </object>
+  <object id="385" name="crate" type="container" gid="21" x="1888" y="864" width="64" height="64">
+   <properties>
+    <property name="icon" value="corpse5"/>
+    <property name="items" value="14002"/>
+    <property name="name" value="@CHEST"/>
+    <property name="tag" value="E7_church_corpse"/>
+   </properties>
+  </object>
+  <object id="387" x="2021.67" y="2502.33" width="51" height="435.333"/>
+  <object id="388" x="2082.5" y="2571.5"/>
+  <object id="390" x="1375.92" y="2888.25" width="645.083" height="50"/>
+  <object id="392" type="entry" gid="17" x="2130.5" y="2475.5" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+  <object id="409" x="1893" y="2244.33" width="178.333" height="176.333"/>
+  <object id="410" x="1381.67" y="2246.33" width="509" height="49.6667"/>
+  <object id="411" x="1378.67" y="2372" width="114.667" height="512"/>
+  <object id="412" x="1893.33" y="2420" width="51.3334" height="388"/>
+  <object id="413" x="1573" y="2757.67" width="315" height="49"/>
+  <object id="414" x="1572" y="2565.33" width="54.3333" height="189.667"/>
+  <object id="415" x="1495" y="2373.67" width="321.667" height="111"/>
+  <object id="416" x="1702.33" y="2486.33" width="113.333" height="195.333"/>
+  <object id="417" name="enter" type="entry" gid="17" x="2426.5" y="109.5" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="418" name="enter" type="entry" gid="17" x="2494.5" y="105.5" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="419" name="boss_beam" type="mapitem" gid="21" x="1024" y="2592" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune_boss1;Active#rune_boss2"/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="boss_grate"/>
+   </properties>
+  </object>
+  <object id="420" name="boss_beam" type="mapitem" gid="21" x="1024" y="2560" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune_boss1;Active#rune_boss2"/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="boss_grate"/>
+   </properties>
+  </object>
+  <object id="421" name="boss_beam" type="mapitem" gid="21" x="1024" y="2528" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune_boss1;Active#rune_boss2"/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="boss_grate"/>
+   </properties>
+  </object>
+  <object id="422" name="lever5" type="mapitem" gid="21" x="224" y="1280" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever1"/>
+    <property name="toggle_items" value="rune_boss1;boss_grate1"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="423" name="rune 5" type="mapitem" gid="21" x="256" y="1280" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="runedark_D_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="runedark_D_i"/>
+    <property name="tag" value="rune_boss1"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="424" name="bossbeam1" type="mapitem" gid="21" x="288" y="1248" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="grate_l"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune_boss1"/>
+    <property name="tag" value="boss_grate1"/>
+   </properties>
+  </object>
+  <object id="426" x="991.75" y="1825.25" width="31" height="30"/>
+  <object id="427" x="1151.25" y="1823.75" width="32.25" height="31.75"/>
+  <object id="428" type="entry" gid="17" x="314.5" y="1401.5" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+  <object id="429" type="entry" gid="17" x="160" y="2880" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+  <object id="430" type="entry" gid="17" x="1120" y="1824" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+  <object id="431" name="lever5" type="mapitem" gid="21" x="224" y="2720" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever2"/>
+    <property name="toggle_items" value="rune_boss1;boss_grate2"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="432" name="rune 5" type="mapitem" gid="21" x="192" y="2720" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="runedark_D_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="runedark_D_i"/>
+    <property name="tag" value="rune_boss2"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="433" name="bossbeam1" type="mapitem" gid="21" x="128" y="2688" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_effect" value="grate_l"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune_boss2"/>
+    <property name="tag" value="boss_grate2"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>

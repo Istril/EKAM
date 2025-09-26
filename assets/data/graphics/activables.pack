@@ -533,3 +533,10 @@ church_enter
   orig: 64, 64
   offset: 0, 0
   index: -1
+corpse5
+  rotate: false
+  xy: 265, 10
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
