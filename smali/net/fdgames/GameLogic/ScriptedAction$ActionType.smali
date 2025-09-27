@@ -118,6 +118,10 @@
 
 .field public static final enum Z:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
+.field public static final enum FW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+.field public static final enum CW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
 .field public static final enum a0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
 .field public static final enum b:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
@@ -1195,7 +1199,31 @@
 
     sput-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->T0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
-    const/16 v0, 0x61
+    new-instance v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    const-string v1, "FireWeapon"
+
+    const/16 v2, 0x61
+
+    invoke-direct {v0, v1, v2}, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->FW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    new-instance v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    new-instance v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    const-string v1, "ColdWeapon"
+
+    const/16 v2, 0x62
+
+    invoke-direct {v0, v1, v2}, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->CW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    new-instance v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    const/16 v0, 0x63
 
     new-array v0, v0, [Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
@@ -1768,6 +1796,18 @@
     const/16 v1, 0x60
 
     sget-object v2, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->T0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x61
+
+    sget-object v2, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->FW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x62
+
+    sget-object v2, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->CW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     aput-object v2, v0, v1
 

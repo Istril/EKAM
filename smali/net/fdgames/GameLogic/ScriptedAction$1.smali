@@ -1584,7 +1584,49 @@
     .catch Ljava/lang/NoSuchFieldError; {:try_start_60 .. :try_end_60} :catch_0
 
     :goto_60
+    :try_start_61
+    sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$1;->a:[I
+
+    sget-object v1, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->FW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x62
+
+    aput v2, v0, v1
+    :try_end_61
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_61 .. :try_end_61} :catch_65
+
+    :goto_61
+    :try_start_62
+    sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$1;->a:[I
+
+    sget-object v1, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->CW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x63
+
+    aput v2, v0, v1
+    :try_end_62
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_62 .. :try_end_62} :catch_66
+
+    :goto_62
     return-void
+
+    :catch_66
+    move-exception v0
+
+    goto :goto_62
+
+    :catch_65
+    move-exception v0
+
+    goto :goto_61
 
     :catch_0
     move-exception v0

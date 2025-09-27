@@ -7600,7 +7600,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_4f
+    if-eqz v0, :cond_next
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -7627,6 +7627,112 @@
     move-result v1
 
     const-string v2, "POISON_WOREOFF"
+
+    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    sget-object v4, Lcom/badlogic/gdx/graphics/Color;->YELLOW:Lcom/badlogic/gdx/graphics/Color;
+
+    const v5, 0x3f99999a    # 1.2f
+
+    const v6, 0x3f333333    # 0.7f
+
+    invoke-direct/range {v0 .. v6}, Le/a/d/x;-><init>(ILjava/lang/String;FLcom/badlogic/gdx/graphics/Color;FF)V
+
+    invoke-virtual {v7, v0}, Le/a/a/a;->a(Le/a/d/x;)V
+
+    goto/16 :goto_0
+
+    :cond_next
+    const-string v0, "UNFIREWEAPON"
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_next2
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    iput-object v9, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->fire:Ljava/lang/Boolean;
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    const/4 v1, 0x0
+
+    iput v1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->fireBonus:I
+
+    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
+
+    move-result-object v7
+
+    new-instance v0, Le/a/d/x;
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    const-string v2, "FIRE_WOREOFF"
+
+    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    sget-object v4, Lcom/badlogic/gdx/graphics/Color;->YELLOW:Lcom/badlogic/gdx/graphics/Color;
+
+    const v5, 0x3f99999a    # 1.2f
+
+    const v6, 0x3f333333    # 0.7f
+
+    invoke-direct/range {v0 .. v6}, Le/a/d/x;-><init>(ILjava/lang/String;FLcom/badlogic/gdx/graphics/Color;FF)V
+
+    invoke-virtual {v7, v0}, Le/a/a/a;->a(Le/a/d/x;)V
+
+    goto/16 :goto_0
+
+    :cond_next2
+    const-string v0, "UNCOLDWEAPON"
+
+    invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4f
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    iput-object v9, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->cold:Ljava/lang/Boolean;
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    const/4 v1, 0x0
+
+    iput v1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->coldBonus:I
+
+    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
+
+    move-result-object v7
+
+    new-instance v0, Le/a/d/x;
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    const-string v2, "COLD_WOREOFF"
 
     invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
 
@@ -12378,6 +12484,260 @@
     goto :goto_1
 .end method
 
+.method public fire(IF)V
+    .locals 8
+
+    const/4 v5, 0x3
+
+    const/4 v4, 0x2
+
+    const/4 v3, 0x1
+
+    const/high16 v1, 0x3fc00000    # 1.5f
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v2, "poison_master"
+
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-ne v0, v4, :cond_2
+
+    int-to-float v2, p1
+
+    const/high16 v0, 0x3fa00000    # 1.25f
+
+    :goto_0
+    mul-float/2addr v0, v2
+
+    float-to-int p1, v0
+
+    :cond_0
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v2, "poison_master"
+
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-ne v0, v3, :cond_3
+
+    :goto_1
+    mul-float/2addr p2, v1
+
+    :cond_1
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->fire:Ljava/lang/Boolean;
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    iput p1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->fireBonus:I
+
+    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
+
+    move-result-object v7
+
+    new-instance v0, Le/a/d/x;
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    const-string v2, "APPLY_FIRE"
+
+    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    sget-object v4, Lcom/badlogic/gdx/graphics/Color;->YELLOW:Lcom/badlogic/gdx/graphics/Color;
+
+    const v5, 0x3f99999a    # 1.2f
+
+    const v6, 0x3f333333    # 0.7f
+
+    invoke-direct/range {v0 .. v6}, Le/a/d/x;-><init>(ILjava/lang/String;FLcom/badlogic/gdx/graphics/Color;FF)V
+
+    invoke-virtual {v7, v0}, Le/a/a/a;->a(Le/a/d/x;)V
+
+    const-string v0, "UNFIREWEAPON"
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1, p2}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
+
+    return-void
+
+    :cond_2
+    if-ne v0, v5, :cond_0
+
+    int-to-float v2, p1
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_3
+    if-ne v0, v4, :cond_4
+
+    const/high16 v1, 0x3fe00000    # 1.75f
+
+    goto :goto_1
+
+    :cond_4
+    if-ne v0, v5, :cond_1
+
+    const/high16 v1, 0x40000000    # 2.0f
+
+    goto :goto_1
+.end method
+
+.method public cold(IF)V
+    .locals 8
+
+    const/4 v5, 0x3
+
+    const/4 v4, 0x2
+
+    const/4 v3, 0x1
+
+    const/high16 v1, 0x3fc00000    # 1.5f
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v2, "poison_master"
+
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-ne v0, v4, :cond_2
+
+    int-to-float v2, p1
+
+    const/high16 v0, 0x3fa00000    # 1.25f
+
+    :goto_0
+    mul-float/2addr v0, v2
+
+    float-to-int p1, v0
+
+    :cond_0
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v2, "poison_master"
+
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-ne v0, v3, :cond_3
+
+    :goto_1
+    mul-float/2addr p2, v1
+
+    :cond_1
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->cold:Ljava/lang/Boolean;
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    iput p1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->coldBonus:I
+
+    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
+
+    move-result-object v7
+
+    new-instance v0, Le/a/d/x;
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    const-string v2, "APPLY_COLD"
+
+    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    sget-object v4, Lcom/badlogic/gdx/graphics/Color;->YELLOW:Lcom/badlogic/gdx/graphics/Color;
+
+    const v5, 0x3f99999a    # 1.2f
+
+    const v6, 0x3f333333    # 0.7f
+
+    invoke-direct/range {v0 .. v6}, Le/a/d/x;-><init>(ILjava/lang/String;FLcom/badlogic/gdx/graphics/Color;FF)V
+
+    invoke-virtual {v7, v0}, Le/a/a/a;->a(Le/a/d/x;)V
+
+    const-string v0, "UNCOLDWEAPON"
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1, p2}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
+
+    return-void
+
+    :cond_2
+    if-ne v0, v5, :cond_0
+
+    int-to-float v2, p1
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_3
+    if-ne v0, v4, :cond_4
+
+    const/high16 v1, 0x3fe00000    # 1.75f
+
+    goto :goto_1
+
+    :cond_4
+    if-ne v0, v5, :cond_1
+
+    const/high16 v1, 0x40000000    # 2.0f
+
+    goto :goto_1
+.end method
+
 .method public f0()V
     .locals 8
 
@@ -12495,6 +12855,8 @@
 
     return-void
 .end method
+
+
 
 .method public g(F)V
     .locals 2

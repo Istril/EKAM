@@ -233,6 +233,10 @@ GOSSIP_BONUS	Gossip Bonus	Bonus Rumores	Умение слушать	Bônus de Ru
 NEST	Egg nest	Nido de huevos	Кладка яиц	Ninho de ovos	Nest mit Eiern	Egg nest	Kokon s vajíčky	Yumurta folu	Nido di uova	
 APPLY_POISON	Weapon poisoned	Arma envenenada	Оружие отравлено	Arma envenenada	Waffe vergiftet	Weapon poisoned	Zbraň otrávena	Silaha zehir eklendi	Arma avvelenata	
 POISON_WOREOFF	Poison wore off	El veneno se desvanece	Отравление снято	O veneno expirou	Gift hat nachgelassen	Trucizna przestaje działać	Jed přestal být účinný	Zehrin etkisi geçti	Il veleno è svanito	
+APPLY_FIRE			Оружие окутано пламенем	Arma envenenada	Waffe vergiftet	Weapon poisoned	Zbraň otrávena	Silaha zehir eklendi	Arma avvelenata	
+FIRE_WOREOFF			Пламя потухло	Arma envenenada	Waffe vergiftet	Weapon poisoned	Zbraň otrávena	Silaha zehir eklendi	Arma avvelenata	
+APPLY_COLD			Оружие окутано ледянящим холодом	Arma envenenada	Waffe vergiftet	Weapon poisoned	Zbraň otrávena	Silaha zehir eklendi	Arma avvelenata	
+COLD_WOREOFF			Ледянящий холод пропал	Arma envenenada	Waffe vergiftet	Weapon poisoned	Zbraň otrávena	Silaha zehir eklendi	Arma avvelenata	
 RESTORE_PURCHASE	Restore purchase	Restaurar compra	Вернуть покупки	Restaurar compra	Kauf wiederherst.	Przywróć płatność	Obnov nákup	Satın alınanları etkinleştir	Ristabilisci acquisto	
 REGISTER_NOW	Register now!	Registrar ahora!	Регистрация!	Registrar agora!	Registriere dich jetzt!	Zarejestruj się!	Zaregistruj teď!	Şimdi kaydol!	Registrati ora!	
 XP_BONUS	XP Bonus	Bonus de XP	Бонус к ОО	Bônus de XP	XP-Bonus	Bonus do PD	Bonus zkušeností	DEY bonusu	XP Bonus	

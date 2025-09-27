@@ -1028,3 +1028,4 @@ item_ID	name	description	name_ES	description_ES	name_RU	desc_RU	name_PT	desc_PT	
 50014	admin_armor				Бронька админа	тест													
 50015	venom_test				ядик	тест													
 50016	fire_test				огонёк	тест													
+50017	fire_test				Холодок	тест													

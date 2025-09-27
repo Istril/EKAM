@@ -73,6 +73,72 @@
     return-void
 
     :pswitch_1
+    const-string v0, ","
+
+    invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    aget-object v1, v0, v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v1
+
+    aget-object v0, v0, v2
+
+    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Le/a/d/y;->m()Lnet/fdgames/GameEntities/Character;
+
+    move-result-object v2
+
+    int-to-float v0, v0
+
+    invoke-virtual {v2, v1, v0}, Lnet/fdgames/GameEntities/Character;->cold(IF)V
+
+    goto/16 :goto_0
+
+    :pswitch_2
+    const-string v0, ","
+
+    invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    aget-object v1, v0, v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v1
+
+    aget-object v0, v0, v2
+
+    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result v0
+
+    invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Le/a/d/y;->m()Lnet/fdgames/GameEntities/Character;
+
+    move-result-object v2
+
+    int-to-float v0, v0
+
+    invoke-virtual {v2, v1, v0}, Lnet/fdgames/GameEntities/Character;->fire(IF)V
+
+    goto/16 :goto_0
+
+    :pswitch_3
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -409,7 +475,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2
+    :pswitch_4
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -646,7 +712,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3
+    :pswitch_5
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -665,7 +731,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4
+    :pswitch_6
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -690,7 +756,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5
+    :pswitch_7
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -701,7 +767,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_6
+    :pswitch_8
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
     move-result-object v0
@@ -740,7 +806,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_7
+    :pswitch_9
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -749,7 +815,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_8
+    :pswitch_a
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
     move-result-object v0
@@ -814,7 +880,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_9
+    :pswitch_b
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -823,7 +889,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_a
+    :pswitch_c
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -832,7 +898,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_b
+    :pswitch_d
     invoke-static {}, Le/a/d/y;->M()Ljava/lang/Boolean;
 
     move-result-object v0
@@ -866,7 +932,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_c
+    :pswitch_e
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -939,7 +1005,7 @@
 
     goto :goto_1
 
-    :pswitch_d
+    :pswitch_f
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -948,7 +1014,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_e
+    :pswitch_10
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -973,7 +1039,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_f
+    :pswitch_11
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -1006,7 +1072,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_10
+    :pswitch_12
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -1049,7 +1115,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_11
+    :pswitch_13
     invoke-static {v2}, Lnet/fdgames/GameLevel/GameLevel;->a(Z)V
 
     invoke-static {}, Ljava/lang/System;->gc()V
@@ -1082,7 +1148,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_12
+    :pswitch_14
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -1091,7 +1157,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_13
+    :pswitch_15
     invoke-static {v3}, Lnet/fdgames/Rules/Skills;->a(Ljava/lang/String;)Lnet/fdgames/Rules/Skill;
 
     move-result-object v0
@@ -1170,7 +1236,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_14
+    :pswitch_16
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -1179,7 +1245,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_15
+    :pswitch_17
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -1188,7 +1254,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_16
+    :pswitch_18
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -1197,7 +1263,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_17
+    :pswitch_19
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -1243,7 +1309,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_18
+    :pswitch_1a
     invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
 
     move-result-object v0
@@ -1252,7 +1318,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_19
+    :pswitch_1b
     invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
 
     move-result-object v0
@@ -1261,7 +1327,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_1a
+    :pswitch_1c
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
     move-result-object v0
@@ -1283,7 +1349,7 @@
     goto/16 :goto_0
 
     :goto_2
-    :pswitch_1b
+    :pswitch_1d
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->v()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -1348,7 +1414,7 @@
     goto :goto_2
 
     :goto_3
-    :pswitch_1c
+    :pswitch_1e
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->v()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -1411,7 +1477,7 @@
     goto :goto_3
 
     :goto_4
-    :pswitch_1d
+    :pswitch_1f
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->v()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -1460,7 +1526,7 @@
     goto :goto_4
 
     :goto_5
-    :pswitch_1e
+    :pswitch_20
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->v()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -1509,7 +1575,7 @@
     goto :goto_5
 
     :goto_6
-    :pswitch_1f
+    :pswitch_21
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->v()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -1572,7 +1638,7 @@
     goto :goto_6
 
     :goto_7
-    :pswitch_20
+    :pswitch_22
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->v()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -1634,7 +1700,7 @@
 
     goto :goto_7
 
-    :pswitch_21
+    :pswitch_23
     move v2, v1
 
     :goto_8
@@ -1762,7 +1828,7 @@
 
     goto :goto_9
 
-    :pswitch_22
+    :pswitch_24
     move v2, v1
 
     :goto_a
@@ -1910,7 +1976,7 @@
 
     goto :goto_b
 
-    :pswitch_23
+    :pswitch_25
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -1923,7 +1989,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_24
+    :pswitch_26
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -1936,7 +2002,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_25
+    :pswitch_27
     invoke-static {}, Le/a/d/y;->M()Ljava/lang/Boolean;
 
     move-result-object v0
@@ -1990,7 +2056,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_26
+    :pswitch_28
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->e()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -2142,7 +2208,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_27
+    :pswitch_29
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -2185,73 +2251,73 @@
 
     goto/16 :goto_0
 
-    :pswitch_28
-    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameWorld/GameData;->player:Lnet/fdgames/GameEntities/Final/Player;
-
-    const-string v1, "TELEPORT"
-
-    invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1, v6}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameWorld/GameData;->player:Lnet/fdgames/GameEntities/Final/Player;
-
-    const-string v1, "TELEPORT"
-
-    const/high16 v3, 0x40400000    # 3.0f
-
-    invoke-virtual {v0, v1, v2, v3}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
-
-    goto/16 :goto_0
-
-    :pswitch_29
-    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameWorld/GameData;->player:Lnet/fdgames/GameEntities/Final/Player;
-
-    const-string v1, "RECALL"
-
-    invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1, v6}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameWorld/GameData;->player:Lnet/fdgames/GameEntities/Final/Player;
-
-    const-string v1, "RECALL"
-
-    const/high16 v3, 0x40400000    # 3.0f
-
-    invoke-virtual {v0, v1, v2, v3}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
-
-    goto/16 :goto_0
-
     :pswitch_2a
+    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameWorld/GameData;->player:Lnet/fdgames/GameEntities/Final/Player;
+
+    const-string v1, "TELEPORT"
+
+    invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1, v6}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameWorld/GameData;->player:Lnet/fdgames/GameEntities/Final/Player;
+
+    const-string v1, "TELEPORT"
+
+    const/high16 v3, 0x40400000    # 3.0f
+
+    invoke-virtual {v0, v1, v2, v3}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
+
+    goto/16 :goto_0
+
+    :pswitch_2b
+    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameWorld/GameData;->player:Lnet/fdgames/GameEntities/Final/Player;
+
+    const-string v1, "RECALL"
+
+    invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1, v6}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameWorld/GameData;->player:Lnet/fdgames/GameEntities/Final/Player;
+
+    const-string v1, "RECALL"
+
+    const/high16 v3, 0x40400000    # 3.0f
+
+    invoke-virtual {v0, v1, v2, v3}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
+
+    goto/16 :goto_0
+
+    :pswitch_2c
     iget-object v0, p0, Lnet/fdgames/GameLogic/ScriptedAction;->data:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
@@ -2341,7 +2407,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2b
+    :pswitch_2d
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
     move-result-object v0
@@ -2450,7 +2516,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2c
+    :pswitch_2e
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
     move-result-object v0
@@ -2461,7 +2527,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2d
+    :pswitch_2f
     invoke-static {}, Le/a/c/b;->q()Le/a/c/b;
 
     move-result-object v0
@@ -2486,7 +2552,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2e
+    :pswitch_30
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2567,7 +2633,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2f
+    :pswitch_31
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2600,7 +2666,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_30
+    :pswitch_32
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2635,7 +2701,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_31
+    :pswitch_33
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2670,7 +2736,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_32
+    :pswitch_34
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2705,7 +2771,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_33
+    :pswitch_35
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2740,7 +2806,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_34
+    :pswitch_36
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2775,7 +2841,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_35
+    :pswitch_37
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2810,7 +2876,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_36
+    :pswitch_38
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -2847,7 +2913,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_37
+    :pswitch_39
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -2866,7 +2932,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_38
+    :pswitch_3a
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->s()Lnet/fdgames/GameLevel/GameLevelData;
 
     move-result-object v0
@@ -2889,7 +2955,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_39
+    :pswitch_3b
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2922,7 +2988,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3a
+    :pswitch_3c
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2955,7 +3021,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3b
+    :pswitch_3d
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -2966,7 +3032,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3c
+    :pswitch_3e
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -2977,7 +3043,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3d
+    :pswitch_3f
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -3006,7 +3072,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3e
+    :pswitch_40
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -3017,7 +3083,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3f
+    :pswitch_41
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->s()Lnet/fdgames/GameLevel/GameLevelData;
 
     move-result-object v0
@@ -3046,7 +3112,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_40
+    :pswitch_42
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -3075,7 +3141,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_41
+    :pswitch_43
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -3104,7 +3170,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_42
+    :pswitch_44
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -3131,7 +3197,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_43
+    :pswitch_45
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -3158,7 +3224,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_44
+    :pswitch_46
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -3298,7 +3364,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_45
+    :pswitch_47
     const-string v0, ""
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -3445,7 +3511,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_46
+    :pswitch_48
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->e()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -3494,7 +3560,7 @@
 
     goto :goto_11
 
-    :pswitch_47
+    :pswitch_49
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->e()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -3646,7 +3712,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_48
+    :pswitch_4a
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->s()Lnet/fdgames/GameLevel/GameLevelData;
 
     move-result-object v0
@@ -3695,7 +3761,7 @@
 
     goto :goto_15
 
-    :pswitch_49
+    :pswitch_4b
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -3780,7 +3846,7 @@
 
     goto :goto_16
 
-    :pswitch_4a
+    :pswitch_4c
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -3902,7 +3968,7 @@
 
     goto :goto_17
 
-    :pswitch_4b
+    :pswitch_4d
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -3937,7 +4003,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4c
+    :pswitch_4e
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -3972,7 +4038,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4d
+    :pswitch_4f
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4007,7 +4073,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4e
+    :pswitch_50
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4042,7 +4108,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4f
+    :pswitch_51
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4077,7 +4143,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_50
+    :pswitch_52
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4112,7 +4178,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_51
+    :pswitch_53
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
     move-result-object v0
@@ -4208,7 +4274,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_52
+    :pswitch_54
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4253,7 +4319,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_53
+    :pswitch_55
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -4266,7 +4332,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_54
+    :pswitch_56
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -4293,7 +4359,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_55
+    :pswitch_57
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -4320,7 +4386,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_56
+    :pswitch_58
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4337,7 +4403,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_57
+    :pswitch_59
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4354,7 +4420,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_58
+    :pswitch_5a
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -4369,7 +4435,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_59
+    :pswitch_5b
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -4430,7 +4496,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5a
+    :pswitch_5c
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -4491,7 +4557,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5b
+    :pswitch_5d
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -4520,7 +4586,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5c
+    :pswitch_5e
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -4549,7 +4615,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5d
+    :pswitch_5f
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -4623,7 +4689,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5e
+    :pswitch_60
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -4695,7 +4761,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5f
+    :pswitch_61
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -4720,7 +4786,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_60
+    :pswitch_62
     const-string v0, "ERROR 4.2 ;"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -4755,6 +4821,8 @@
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_62
+        :pswitch_61
         :pswitch_60
         :pswitch_5f
         :pswitch_5e
@@ -4872,6 +4940,40 @@
     return-object v0
 
     :pswitch_0
+    const-string v0, "ColdWeapon#"
+
+    invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lnet/fdgames/GameLogic/ScriptedAction;->data:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto/16 :goto_0
+
+    :pswitch_1
+    const-string v0, "FireWeapon#"
+
+    invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lnet/fdgames/GameLogic/ScriptedAction;->data:Ljava/lang/String;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    goto/16 :goto_0
+
+    :pswitch_2
     const-string v0, "UpgradeCompanion#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -4888,7 +4990,7 @@
 
     goto :goto_0
 
-    :pswitch_1
+    :pswitch_3
     const-string v0, "LoseArenaItems#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -4905,7 +5007,7 @@
 
     goto :goto_0
 
-    :pswitch_2
+    :pswitch_4
     const-string v0, "EndGame#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -4922,7 +5024,7 @@
 
     goto :goto_0
 
-    :pswitch_3
+    :pswitch_5
     const-string v0, "PlanarBinding#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -4939,7 +5041,7 @@
 
     goto :goto_0
 
-    :pswitch_4
+    :pswitch_6
     const-string v0, "DisbandAll#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -4956,7 +5058,7 @@
 
     goto :goto_0
 
-    :pswitch_5
+    :pswitch_7
     const-string v0, "FullRecovery#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -4973,7 +5075,7 @@
 
     goto :goto_0
 
-    :pswitch_6
+    :pswitch_8
     const-string v0, "GainBagHolding#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -4990,7 +5092,7 @@
 
     goto :goto_0
 
-    :pswitch_7
+    :pswitch_9
     const-string v0, "HalfRecovery#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5007,7 +5109,7 @@
 
     goto :goto_0
 
-    :pswitch_8
+    :pswitch_a
     const-string v0, "EndTolCurse#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5024,7 +5126,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_9
+    :pswitch_b
     const-string v0, "TolCurse#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5041,7 +5143,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_a
+    :pswitch_c
     const-string v0, "OpenVault#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5058,7 +5160,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_b
+    :pswitch_d
     const-string v0, "HurtNPC#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5075,7 +5177,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_c
+    :pswitch_e
     const-string v0, "DestroyShards#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5092,7 +5194,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_d
+    :pswitch_f
     const-string v0, "TurnUndead#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5109,7 +5211,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_e
+    :pswitch_10
     const-string v0, "Summon#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5126,7 +5228,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_f
+    :pswitch_11
     const-string v0, "GainRandomHP#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5143,7 +5245,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_10
+    :pswitch_12
     const-string v0, "FullRest#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5160,7 +5262,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_11
+    :pswitch_13
     const-string v0, "ForgetPlayerAdvancedSkills#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5177,7 +5279,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_12
+    :pswitch_14
     const-string v0, "TrainSkill#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5194,7 +5296,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_13
+    :pswitch_15
     const-string v0, "ResetCompanion#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5211,7 +5313,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_14
+    :pswitch_16
     const-string v0, "ResetPlayerTraits#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5228,7 +5330,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_15
+    :pswitch_17
     const-string v0, "ResetPlayerSkills#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5245,7 +5347,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_16
+    :pswitch_18
     const-string v0, "OpenWorldContainer#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5262,7 +5364,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_17
+    :pswitch_19
     const-string v0, "StartRender#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5279,7 +5381,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_18
+    :pswitch_1a
     const-string v0, "StopRender#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5296,7 +5398,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_19
+    :pswitch_1b
     const-string v0, "PlayerRobbed#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5313,7 +5415,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_1a
+    :pswitch_1c
     const-string v0, "ItemUnwalkable#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5330,7 +5432,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_1b
+    :pswitch_1d
     const-string v0, "ItemWalkable#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5347,7 +5449,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_1c
+    :pswitch_1e
     const-string v0, "ItemUnblockView#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5364,7 +5466,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_1d
+    :pswitch_1f
     const-string v0, "ItemBlockView#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5381,7 +5483,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_1e
+    :pswitch_20
     const-string v0, "ItemShow#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5398,7 +5500,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_1f
+    :pswitch_21
     const-string v0, "ItemHide#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5415,7 +5517,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_20
+    :pswitch_22
     const-string v0, "ItemDeactivate#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5432,7 +5534,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_21
+    :pswitch_23
     const-string v0, "ItemActivate#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5449,7 +5551,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_22
+    :pswitch_24
     const-string v0, "GainSkillPoint#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5466,7 +5568,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_23
+    :pswitch_25
     const-string v0, "GainTrait#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5483,7 +5585,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_24
+    :pswitch_26
     const-string v0, "OpenShop#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5500,7 +5602,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_25
+    :pswitch_27
     const-string v0, "NPCTryToDespawn#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5517,7 +5619,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_26
+    :pswitch_28
     const-string v0, "Detect#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5534,7 +5636,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_27
+    :pswitch_29
     const-string v0, "Teleport#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5551,7 +5653,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_28
+    :pswitch_2a
     const-string v0, "Recall#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5568,7 +5670,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_29
+    :pswitch_2b
     const-string v0, "Particle#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5585,7 +5687,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2a
+    :pswitch_2c
     const-string v0, "SaveGame#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5602,7 +5704,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2b
+    :pswitch_2d
     const-string v0, "Sleep#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5619,7 +5721,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2c
+    :pswitch_2e
     const-string v0, "StartItemConversation#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5636,7 +5738,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2d
+    :pswitch_2f
     const-string v0, "StartConversation#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5653,7 +5755,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2e
+    :pswitch_30
     const-string v0, "PoisonWeapon#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5670,7 +5772,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2f
+    :pswitch_31
     const-string v0, "GainResistSpirit#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5687,7 +5789,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_30
+    :pswitch_32
     const-string v0, "GainResistShock#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5704,7 +5806,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_31
+    :pswitch_33
     const-string v0, "GainResistToxic#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5721,7 +5823,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_32
+    :pswitch_34
     const-string v0, "GainResistCold#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5738,7 +5840,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_33
+    :pswitch_35
     const-string v0, "GainResistFire#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5755,7 +5857,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_34
+    :pswitch_36
     const-string v0, "GainResistDeath#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5772,7 +5874,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_35
+    :pswitch_37
     const-string v0, "GainEffect#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5789,7 +5891,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_36
+    :pswitch_38
     const-string v0, "GainSpeed#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5806,7 +5908,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_37
+    :pswitch_39
     const-string v0, "GainShield#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5823,7 +5925,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_38
+    :pswitch_3a
     const-string v0, "GainMight#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5840,7 +5942,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_39
+    :pswitch_3b
     const-string v0, "GainInvis#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5857,7 +5959,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3a
+    :pswitch_3c
     const-string v0, "RecoverInventory#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5874,7 +5976,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3b
+    :pswitch_3d
     const-string v0, "LoseInventory#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5891,7 +5993,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3c
+    :pswitch_3e
     const-string v0, "ShowParty#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5908,7 +6010,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3d
+    :pswitch_3f
     const-string v0, "HideParty#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5925,7 +6027,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3e
+    :pswitch_40
     const-string v0, "DisbandParty#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5942,7 +6044,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3f
+    :pswitch_41
     const-string v0, "Disband#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5959,7 +6061,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_40
+    :pswitch_42
     const-string v0, "NPCMoveRandom#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5976,7 +6078,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_41
+    :pswitch_43
     const-string v0, "NPCStopFollowing#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -5993,7 +6095,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_42
+    :pswitch_44
     const-string v0, "NPCdontWait#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6010,7 +6112,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_43
+    :pswitch_45
     const-string v0, "NPCWait#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6027,7 +6129,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_44
+    :pswitch_46
     const-string v0, "NPCAttack#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6044,7 +6146,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_45
+    :pswitch_47
     const-string v0, "NPCFollow#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6061,7 +6163,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_46
+    :pswitch_48
     const-string v0, "NPCHostile#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6078,7 +6180,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_47
+    :pswitch_49
     const-string v0, "NPCDespawn#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6095,7 +6197,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_48
+    :pswitch_4a
     const-string v0, "NPCSpawn#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6112,7 +6214,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_49
+    :pswitch_4b
     const-string v0, "NPCGoTo#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6129,7 +6231,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4a
+    :pswitch_4c
     const-string v0, "Travel#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6146,7 +6248,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4b
+    :pswitch_4d
     const-string v0, "LoseHPDeath#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6163,7 +6265,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4c
+    :pswitch_4e
     const-string v0, "LoseHPCold#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6180,7 +6282,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4d
+    :pswitch_4f
     const-string v0, "LoseHPfire#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6197,7 +6299,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4e
+    :pswitch_50
     const-string v0, "LoseHPToxic#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6214,7 +6316,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4f
+    :pswitch_51
     const-string v0, "LoseHPshock#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6231,7 +6333,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_50
+    :pswitch_52
     const-string v0, "LoseHP#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6248,7 +6350,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_51
+    :pswitch_53
     const-string v0, "CircleRestoration#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6265,7 +6367,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_52
+    :pswitch_54
     const-string v0, "LesserRestoration#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6282,7 +6384,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_53
+    :pswitch_55
     const-string v0, "GetHPFull#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6299,7 +6401,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_54
+    :pswitch_56
     const-string v0, "LoseGold#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6316,7 +6418,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_55
+    :pswitch_57
     const-string v0, "GainGold#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6333,7 +6435,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_56
+    :pswitch_58
     const-string v0, "GainMana#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6350,7 +6452,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_57
+    :pswitch_59
     const-string v0, "GainHP#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6367,7 +6469,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_58
+    :pswitch_5a
     const-string v0, "GainXP#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6384,7 +6486,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_59
+    :pswitch_5b
     const-string v0, "GainItems#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6401,7 +6503,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5a
+    :pswitch_5c
     const-string v0, "LoseItems#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6418,7 +6520,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5b
+    :pswitch_5d
     const-string v0, "LoseItem#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6435,7 +6537,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5c
+    :pswitch_5e
     const-string v0, "GainItem#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6452,7 +6554,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5d
+    :pswitch_5f
     const-string v0, "DecVariable#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6469,7 +6571,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5e
+    :pswitch_60
     const-string v0, "IncVariable#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6486,7 +6588,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5f
+    :pswitch_61
     const-string v0, "SetVariable#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6503,7 +6605,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_60
+    :pswitch_62
     const-string v0, "None#"
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -6524,6 +6626,8 @@
 
     :pswitch_data_0
     .packed-switch 0x0
+        :pswitch_62
+        :pswitch_61
         :pswitch_60
         :pswitch_5f
         :pswitch_5e

@@ -951,9 +951,39 @@
 
     move-result v0
 
-    if-eqz v0, :cond_39
+    if-eqz v0, :cond_next
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->Z:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    goto/16 :goto_1
+
+    :cond_next
+    sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
+
+    const-string v5, "fireweapon"
+
+    invoke-static {v3, v0, v5}, Ld/a/a/a/a;->a(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_next2
+
+    sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->FW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    goto/16 :goto_1
+
+    :cond_next2
+    sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
+
+    const-string v5, "coldweapon"
+
+    invoke-static {v3, v0, v5}, Ld/a/a/a/a;->a(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_39
+
+    sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->CW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 

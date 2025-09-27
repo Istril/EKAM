@@ -86,6 +86,13 @@
 
 .field public stunned:Ljava/lang/Boolean;
 
+.field public fire:Ljava/lang/Boolean;
+
+.field public fireBonus:I
+
+.field public cold:Ljava/lang/Boolean;
+
+.field public coldBonus:I
 
 # direct methods
 .method public constructor <init>()V
@@ -182,6 +189,14 @@
     iput-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->poison:Ljava/lang/Boolean;
 
     iput v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->poisonBonus:I
+
+    iput-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->fire:Ljava/lang/Boolean;
+
+    iput v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->fireBonus:I
+
+    iput-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->cold:Ljava/lang/Boolean;
+
+    iput v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->coldBonus:I
 
     iput-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->duel:Ljava/lang/Boolean;
 
