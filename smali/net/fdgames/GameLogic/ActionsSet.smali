@@ -981,9 +981,54 @@
 
     move-result v0
 
-    if-eqz v0, :cond_39
+    if-eqz v0, :cond_next3
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->CW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    goto/16 :goto_1
+
+    :cond_next3
+    sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
+
+    const-string v5, "shockweapon"
+
+    invoke-static {v3, v0, v5}, Ld/a/a/a/a;->a(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_next4
+
+    sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->SW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    goto/16 :goto_1
+
+    :cond_next4
+    sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
+
+    const-string v5, "deathweapon"
+
+    invoke-static {v3, v0, v5}, Ld/a/a/a/a;->a(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_next5
+
+    sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->DW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    goto/16 :goto_1
+
+    :cond_next5
+    sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
+
+    const-string v5, "spiritweapon"
+
+    invoke-static {v3, v0, v5}, Ld/a/a/a/a;->a(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_39
+
+    sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->SPW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 

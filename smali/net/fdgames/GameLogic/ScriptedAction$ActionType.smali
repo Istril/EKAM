@@ -122,6 +122,12 @@
 
 .field public static final enum CW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
+.field public static final enum SW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+.field public static final enum DW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+.field public static final enum SPW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
 .field public static final enum a0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
 .field public static final enum b:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
@@ -1211,8 +1217,6 @@
 
     new-instance v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
-    new-instance v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
-
     const-string v1, "ColdWeapon"
 
     const/16 v2, 0x62
@@ -1223,7 +1227,37 @@
 
     new-instance v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
-    const/16 v0, 0x63
+    const-string v1, "ShockWeapon"
+
+    const/16 v2, 0x63
+
+    invoke-direct {v0, v1, v2}, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->SW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    new-instance v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    const-string v1, "DeathWeapon"
+
+    const/16 v2, 0x64
+
+    invoke-direct {v0, v1, v2}, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->DW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    new-instance v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    const-string v1, "SpiritWeapon"
+
+    const/16 v2, 0x65
+
+    invoke-direct {v0, v1, v2}, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->SPW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    new-instance v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    const/16 v0, 0x66
 
     new-array v0, v0, [Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
@@ -1808,6 +1842,24 @@
     const/16 v1, 0x62
 
     sget-object v2, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->CW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x63
+
+    sget-object v2, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->SW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x64
+
+    sget-object v2, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->DW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x65
+
+    sget-object v2, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->SPW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     aput-object v2, v0, v1
 

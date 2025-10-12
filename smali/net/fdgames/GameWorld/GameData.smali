@@ -1612,7 +1612,7 @@
     goto :goto_0
 .end method
 
-.method public d(Ljava/lang/String;)Lnet/fdgames/GameWorld/WorldContainer;
+.method public d(Ljava/lang/String;)Lnet/fdgames/GameWorld/WorldContainer; # тремадан чест и подобные ему
     .locals 4
 
     const/16 v3, 0x139c

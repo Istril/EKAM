@@ -94,6 +94,18 @@
 
 .field public coldBonus:I
 
+.field public shock:Ljava/lang/Boolean;
+
+.field public shockBonus:I
+
+.field public death:Ljava/lang/Boolean;
+
+.field public deathBonus:I
+
+.field public spirit:Ljava/lang/Boolean;
+
+.field public spiritBonus:I
+
 # direct methods
 .method public constructor <init>()V
     .locals 3
@@ -197,6 +209,18 @@
     iput-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->cold:Ljava/lang/Boolean;
 
     iput v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->coldBonus:I
+
+    iput-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->shock:Ljava/lang/Boolean;
+
+    iput v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->shockBonus:I
+
+    iput-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->death:Ljava/lang/Boolean;
+
+    iput v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->deathBonus:I
+
+    iput-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->spirit:Ljava/lang/Boolean;
+
+    iput v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->spiritBonus:I
 
     iput-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->duel:Ljava/lang/Boolean;
 

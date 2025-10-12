@@ -1028,3 +1028,6 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 50015	venom_test	POTION		0				150	potion_green	0	0									"PoisonWeapon#4,15;GainItem#50015"				1
 50016	fire_test	POTION		0				150	potion_green	0	0									"FireWeapon#4,15;GainItem#50016"				1
 50017	cold_test	POTION		0				150	potion_green	0	0									"ColdWeapon#8,4;GainItem#50017"				1
+50018	shock_test	POTION		0				150	potion_green	0	0									"ShockWeapon#6,6;GainItem#50018"				1
+50019	death_test	POTION		0				150	potion_green	0	0									"DeathWeapon#13,2;GainItem#50019"				1
+50020	spirit_test	POTION		0				150	potion_green	0	0									"SpiritWeapon#40,3;GainItem#50020"				1

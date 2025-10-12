@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="48">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="51">
  <properties>
   <property name="music" value="dark_chamber"/>
   <property name="name" value="Sagar Enclave"/>
@@ -1105,7 +1105,7 @@
  </layer>
  <layer id="3" name="ground" width="60" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1UEKgDAMBECl/v/NIlgQURqhYLQzsOAhhy5NcZoAAAAAAAAAAO7NnZPddsYlkMicvnk86ZG1b++3eE7GvtG7is5mv99eZ/9r3+O+lj1XO/ynvvW79m3N6fudvqURfb/dd7R9HrHvSP+jaLL2fTsAABmsHnAGGQ==
+   eJzt1lEKhDAMRVFF16P7350IFfrR2hQEk5d7ICCDH15apy4LAAAAAAAAAEDNahgld89RZm8MvbHdPa3OVu/a+T0SS289Cr1nmbdulX2esXdmovfOoFebYu/s+xz9W3R0Htfrq/AfnqV3psNr79fvYu8s9tRrXSvrvd7X96tnV+2t9+tWpvc9qdL7XD+9o/vojdO7DYbe2L3Z9nPG3kznkXW89v49AAAAHlyBkwij
   </data>
  </layer>
  <layer id="4" name="ground2" width="60" height="60">
@@ -1120,7 +1120,7 @@
  </layer>
  <layer id="6" name="objects" width="60" height="60">
   <data encoding="base64" compression="zlib">
-   eJzt1t0JwjAQAOBAt/JBUBDFrRRncBl/5tBtbMG+qNGkNFXp98FRmlybHsdBQwAAAAAAAAAAiJvWsegpZgN/exerh/t9wjOXKoRr9bz+j/V2sbtfx1Jva+h6c2axzZ1kvP/8YX/oeptebV6sbyO5uU4f9r9Rb4ncVL/S31hu3/S3LP2NWxY4X3/LMr/vcw91HHs8X3/LGtv8Nv/D88TIyU2NdfkSAQCS3AC4VyW4
+   eJzt1m0KgkAQANAFb9WPoCCKblV0hi7TxznqNikkRLW6imtF78Eg7o6uwzBgCAAAAAAAAAAAcdMyFg1Ra8qpYzbaV/e3errfJzxzKUK4Fq/rv1hvH7v79V/qrY1db9ssPkadO+nw/nPL/tj1Vr3avFnfRnK7OrXsf6LeHLmpvqW/sdyh6W9e+hu3zHC+/uZlfptzD2UcBzxff/P6t/mt/ofnidElNzXW+UsEAEhyA+kAJS4=
   </data>
  </layer>
  <layer id="7" name="roofs" width="60" height="60">
@@ -1165,7 +1165,7 @@
   <object id="30" name="crate" type="container" gid="249" x="640" y="1472" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
-    <property name="items" value="50015,50016,50017"/>
+    <property name="items" value="50015,50016,50017,50018,50019,50020,5003,5004"/>
     <property name="name" value="@CHEST"/>
     <property name="tag" value="C10_test_crate"/>
    </properties>
@@ -1218,7 +1218,7 @@
   <object id="45" name="crate" type="container" gid="249" x="800" y="1280" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
-    <property name="items" value="50013,50014"/>
+    <property name="items" value="5000,5002,5004,5006,5007,5008,5009,5010,5011,5012,5013,5020"/>
     <property name="name" value="@CHEST"/>
     <property name="tag" value="C10_test_crate"/>
    </properties>
@@ -1230,6 +1230,24 @@
     <property name="items" value="11000,11001,11002,11003,11004,11005,11006,11007,11008,11009,11010,11011,11012,11013,11025,11027"/>
     <property name="name" value="@CHEST"/>
     <property name="tag" value="C10_test_crate"/>
+   </properties>
+  </object>
+  <object id="48" name="crate" type="container" gid="249" x="832" y="1280" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="items" value="5025,5026,5028,5030,5031,5032,5033,5034,5035,5036,6004,6006,6009,6011"/>
+    <property name="name" value="@CHEST"/>
+    <property name="tag" value="C10_test_crate222"/>
+   </properties>
+  </object>
+  <object id="49" name="dockdoor" type="trigger" x="896" y="897" width="62.1667" height="56.6667">
+   <properties>
+    <property name="actions" value="GainItem#77;GainItems#12005,2"/>
+   </properties>
+  </object>
+  <object id="50" name="dockdoor" type="trigger" x="896" y="768" width="62.1667" height="56.6667">
+   <properties>
+    <property name="actions" value="LoseItem#77;LoseItems#12005,2"/>
    </properties>
   </object>
  </objectgroup>

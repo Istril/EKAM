@@ -1616,7 +1616,70 @@
     .catch Ljava/lang/NoSuchFieldError; {:try_start_62 .. :try_end_62} :catch_66
 
     :goto_62
+    :try_start_63
+    sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$1;->a:[I
+
+    sget-object v1, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->SW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x64
+
+    aput v2, v0, v1
+    :try_end_63
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_63 .. :try_end_63} :catch_67
+
+    :goto_63
+    :try_start_64
+    sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$1;->a:[I
+
+    sget-object v1, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->DW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x65
+
+    aput v2, v0, v1
+    :try_end_64
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_64 .. :try_end_64} :catch_68
+
+    :goto_64
+    :try_start_65
+    sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$1;->a:[I
+
+    sget-object v1, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->SPW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    const/16 v2, 0x66
+
+    aput v2, v0, v1
+    :try_end_65
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_65 .. :try_end_65} :catch_69
+
+    :goto_65
     return-void
+
+    :catch_69
+    move-exception v0
+
+    goto :goto_65
+
+    :catch_68
+    move-exception v0
+
+    goto :goto_64
+
+    :catch_67
+    move-exception v0
+
+    goto :goto_63
 
     :catch_66
     move-exception v0

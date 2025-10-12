@@ -14,8 +14,6 @@
 
 .field private d:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
 
-.field private e:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
-
 .field private f:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
 
 .field private g:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
@@ -26,7 +24,6 @@
 
 .field private j:Lcom/badlogic/gdx/scenes/scene2d/ui/Label;
 
-.field private k:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
 
 .field private l:Lcom/badlogic/gdx/scenes/scene2d/ui/Image;
 
@@ -149,24 +146,6 @@
 
     new-instance v0, Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
 
-    const-string v1, "LEADERBOARDS"
-
-    invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {}, Lnet/fdgames/assets/Assets;->e()Lcom/badlogic/gdx/scenes/scene2d/ui/Skin;
-
-    move-result-object v2
-
-    const-string v3, "menuButton"
-
-    invoke-direct {v0, v1, v2, v3}, Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;-><init>(Ljava/lang/String;Lcom/badlogic/gdx/scenes/scene2d/ui/Skin;Ljava/lang/String;)V
-
-    iput-object v0, p0, Le/a/d/e1/t;->e:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
-
-    new-instance v0, Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
-
     const-string v1, "BESTIARY"
 
     invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
@@ -246,24 +225,6 @@
     invoke-direct {v0, v1, v2}, Lcom/badlogic/gdx/scenes/scene2d/ui/Label;-><init>(Ljava/lang/CharSequence;Lcom/badlogic/gdx/scenes/scene2d/ui/Label$LabelStyle;)V
 
     iput-object v0, p0, Le/a/d/e1/t;->j:Lcom/badlogic/gdx/scenes/scene2d/ui/Label;
-
-    new-instance v0, Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
-
-    const-string v1, "CONNECT"
-
-    invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-static {}, Lnet/fdgames/assets/Assets;->e()Lcom/badlogic/gdx/scenes/scene2d/ui/Skin;
-
-    move-result-object v2
-
-    const-string v3, "menuButton"
-
-    invoke-direct {v0, v1, v2, v3}, Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;-><init>(Ljava/lang/String;Lcom/badlogic/gdx/scenes/scene2d/ui/Skin;Ljava/lang/String;)V
-
-    iput-object v0, p0, Le/a/d/e1/t;->k:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
 
     new-instance v0, Lcom/badlogic/gdx/scenes/scene2d/ui/Image;
 
@@ -577,35 +538,7 @@
 
     invoke-virtual {v0, v1}, Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;->width(F)Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;
 
-    iget-object v0, p0, Le/a/d/e1/t;->e:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
-
-    invoke-virtual {p0, v0}, Lcom/badlogic/gdx/scenes/scene2d/ui/Table;->add(Lcom/badlogic/gdx/scenes/scene2d/Actor;)Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;
-
-    move-result-object v0
-
-    sget v1, Le/a/d/e1/t;->o:F
-
-    mul-float/2addr v1, v4
-
-    invoke-virtual {v0, v1}, Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;->width(F)Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;
-
     iget-object v0, p0, Le/a/d/e1/t;->d:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
-
-    new-instance v1, Le/a/d/e1/t$e;
-
-    invoke-direct {v1, p0}, Le/a/d/e1/t$e;-><init>(Le/a/d/e1/t;)V
-
-    invoke-virtual {v0, v1}, Lcom/badlogic/gdx/scenes/scene2d/Actor;->addListener(Lcom/badlogic/gdx/scenes/scene2d/EventListener;)Z
-
-    iget-object v0, p0, Le/a/d/e1/t;->e:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
-
-    new-instance v1, Le/a/d/e1/t$f;
-
-    invoke-direct {v1, p0}, Le/a/d/e1/t$f;-><init>(Le/a/d/e1/t;)V
-
-    invoke-virtual {v0, v1}, Lcom/badlogic/gdx/scenes/scene2d/Actor;->addListener(Lcom/badlogic/gdx/scenes/scene2d/EventListener;)Z
-
-    iget-object v0, p0, Le/a/d/e1/t;->k:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
 
     new-instance v1, Le/a/d/e1/t$g;
 
@@ -674,28 +607,6 @@
     sget v2, Le/a/d/e1/t;->o:F
 
     const/high16 v3, 0x44070000    # 540.0f
-
-    mul-float/2addr v2, v3
-
-    invoke-virtual {v1, v2}, Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;->width(F)Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;
-
-    move-result-object v1
-
-    sget v2, Le/a/d/e1/t;->o:F
-
-    mul-float/2addr v2, v6
-
-    invoke-virtual {v1, v2}, Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;->pad(F)Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;
-
-    iget-object v1, p0, Le/a/d/e1/t;->k:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
-
-    invoke-virtual {v0, v1}, Lcom/badlogic/gdx/scenes/scene2d/ui/Table;->add(Lcom/badlogic/gdx/scenes/scene2d/Actor;)Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;
-
-    move-result-object v1
-
-    sget v2, Le/a/d/e1/t;->o:F
-
-    const/high16 v3, 0x43340000    # 180.0f
 
     mul-float/2addr v2, v3
 
@@ -894,134 +805,4 @@
     invoke-virtual {p0, v0}, Lcom/badlogic/gdx/scenes/scene2d/Actor;->setVisible(Z)V
 
     return-void
-.end method
-
-.method public draw(Lcom/badlogic/gdx/graphics/g2d/Batch;F)V
-    .locals 4
-
-    const/4 v3, 0x1
-
-    const/4 v2, 0x0
-
-    iget-object v0, p0, Le/a/d/e1/t;->m:Lcom/badlogic/gdx/e;
-
-    check-cast v0, Lnet/fdgames/ek/ExiledKingdoms;
-
-    invoke-static {}, Lnet/fdgames/ek/ExiledKingdoms;->e()Lnet/fdgames/ek/IPlatformResolver;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Lnet/fdgames/ek/IPlatformResolver;->j()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    sget-boolean v0, Lnet/fdgames/ek/ExiledKingdoms;->r:Z
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Le/a/d/e1/t;->j:Lcom/badlogic/gdx/scenes/scene2d/ui/Label;
-
-    const-string v1, "CONNECTED_GPLAY_IOS"
-
-    invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/badlogic/gdx/scenes/scene2d/ui/Label;->setText(Ljava/lang/CharSequence;)V
-
-    :goto_0
-    iget-object v0, p0, Le/a/d/e1/t;->k:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
-
-    invoke-virtual {v0}, Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;->getLabel()Lcom/badlogic/gdx/scenes/scene2d/ui/Label;
-
-    move-result-object v0
-
-    const-string v1, "DISCONNECT"
-
-    invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/badlogic/gdx/scenes/scene2d/ui/Label;->setText(Ljava/lang/CharSequence;)V
-
-    iget-object v0, p0, Le/a/d/e1/t;->d:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
-
-    invoke-virtual {v0, v2}, Lcom/badlogic/gdx/scenes/scene2d/ui/Button;->setDisabled(Z)V
-
-    iget-object v0, p0, Le/a/d/e1/t;->e:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
-
-    invoke-virtual {v0, v2}, Lcom/badlogic/gdx/scenes/scene2d/ui/Button;->setDisabled(Z)V
-
-    :goto_1
-    invoke-super {p0, p1, p2}, Lcom/badlogic/gdx/scenes/scene2d/ui/Window;->draw(Lcom/badlogic/gdx/graphics/g2d/Batch;F)V
-
-    return-void
-
-    :cond_0
-    iget-object v0, p0, Le/a/d/e1/t;->j:Lcom/badlogic/gdx/scenes/scene2d/ui/Label;
-
-    const-string v1, "CONNECTED_GPLAY"
-
-    invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/badlogic/gdx/scenes/scene2d/ui/Label;->setText(Ljava/lang/CharSequence;)V
-
-    goto :goto_0
-
-    :cond_1
-    sget-boolean v0, Lnet/fdgames/ek/ExiledKingdoms;->r:Z
-
-    if-eqz v0, :cond_2
-
-    iget-object v0, p0, Le/a/d/e1/t;->j:Lcom/badlogic/gdx/scenes/scene2d/ui/Label;
-
-    const-string v1, "DISCONNECTED_GPLAY_IOS"
-
-    invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/badlogic/gdx/scenes/scene2d/ui/Label;->setText(Ljava/lang/CharSequence;)V
-
-    :goto_2
-    iget-object v0, p0, Le/a/d/e1/t;->k:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
-
-    invoke-virtual {v0}, Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;->getLabel()Lcom/badlogic/gdx/scenes/scene2d/ui/Label;
-
-    move-result-object v0
-
-    const-string v1, "CONNECT"
-
-    invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/badlogic/gdx/scenes/scene2d/ui/Label;->setText(Ljava/lang/CharSequence;)V
-
-    iget-object v0, p0, Le/a/d/e1/t;->d:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
-
-    invoke-virtual {v0, v3}, Lcom/badlogic/gdx/scenes/scene2d/ui/Button;->setDisabled(Z)V
-
-    iget-object v0, p0, Le/a/d/e1/t;->e:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
-
-    invoke-virtual {v0, v3}, Lcom/badlogic/gdx/scenes/scene2d/ui/Button;->setDisabled(Z)V
-
-    goto :goto_1
-
-    :cond_2
-    iget-object v0, p0, Le/a/d/e1/t;->j:Lcom/badlogic/gdx/scenes/scene2d/ui/Label;
-
-    const-string v1, "DISCONNECTED_GPLAY"
-
-    invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/badlogic/gdx/scenes/scene2d/ui/Label;->setText(Ljava/lang/CharSequence;)V
-
-    goto :goto_2
 .end method

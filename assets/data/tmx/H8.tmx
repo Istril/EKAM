@@ -581,13 +581,13 @@
   <object id="49" name="kasconvt" type="trigger" x="2387" y="35" width="25" height="341">
    <properties>
     <property name="actions" value="StartConversation#kassian,Kassian_neer_tomb;SetVariable#conv_H8,5"/>
-    <property name="conditions" value="VariableLower#conv_H8,5"/>
+    <property name="conditions" value="VariableLower#conv_H8,5;NPCinArea#kassian"/>
    </properties>
   </object>
   <object id="50" name="kasconvt" type="trigger" x="2387" y="347" width="666" height="28">
    <properties>
     <property name="actions" value="StartConversation#kassian,Kassian_neer_tomb;SetVariable#conv_H8,5"/>
-    <property name="conditions" value="VariableLower#conv_H8,5"/>
+    <property name="conditions" value="VariableLower#conv_H8,5;NPCinArea#kassian"/>
    </properties>
   </object>
  </objectgroup>

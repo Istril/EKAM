@@ -1029,3 +1029,6 @@ item_ID	name	description	name_ES	description_ES	name_RU	desc_RU	name_PT	desc_PT	
 50015	venom_test				ядик	тест													
 50016	fire_test				огонёк	тест													
 50017	fire_test				Холодок	тест													
+50018	shock_test				Шок	тест													
+50019	death_test				Тлен	тест													
+50020	spirit_test				Свет	тест													

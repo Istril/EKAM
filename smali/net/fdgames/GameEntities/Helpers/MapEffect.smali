@@ -335,7 +335,7 @@
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Helpers/MapEffect;->effect:Ljava/lang/String;
 
-    const-string v1, "healparty1"
+    const-string v1, "healparty1" #Flames of Faith хил ур 1
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -343,14 +343,14 @@
 
     if-eqz v0, :cond_3
 
-    const/16 v0, 0xa
+    const/16 v0, 0xa # число восстанавливаемого здоровья за тик
 
     invoke-virtual {v8, v0}, Lnet/fdgames/GameEntities/Character;->l(I)V
 
     :cond_3
     iget-object v0, p0, Lnet/fdgames/GameEntities/Helpers/MapEffect;->effect:Ljava/lang/String;
 
-    const-string v1, "healparty2"
+    const-string v1, "healparty2" #Flames of Faith хил ур 2
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -358,14 +358,14 @@
 
     if-eqz v0, :cond_4
 
-    const/16 v0, 0xf
+    const/16 v0, 0xf # число восстанавливаемого здоровья за тик
 
     invoke-virtual {v8, v0}, Lnet/fdgames/GameEntities/Character;->l(I)V
 
     :cond_4
     iget-object v0, p0, Lnet/fdgames/GameEntities/Helpers/MapEffect;->effect:Ljava/lang/String;
 
-    const-string v1, "healparty3"
+    const-string v1, "healparty3" #Flames of Faith хил ур 3
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -373,7 +373,7 @@
 
     if-eqz v0, :cond_2
 
-    const/16 v0, 0x19
+    const/16 v0, 0x19 # число восстанавливаемого здоровья за тик
 
     invoke-virtual {v8, v0}, Lnet/fdgames/GameEntities/Character;->l(I)V
 
