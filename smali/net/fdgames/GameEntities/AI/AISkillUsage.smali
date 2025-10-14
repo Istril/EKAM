@@ -274,6 +274,51 @@
 
     move-result v0
 
+    if-eqz v0, :cond_reinc
+
+    invoke-static {v2, v3}, Lnet/fdgames/Helpers/FDUtils;->a(II)I
+
+    move-result v0
+
+    const/16 v1, 0x2d
+
+    if-gt v0, v1, :cond_reinc
+
+    invoke-static {p0}, Lnet/fdgames/GameEntities/AI/AISkillUsage;->a(Lnet/fdgames/GameEntities/Character;)Lnet/fdgames/GameEntities/Character;
+
+    move-result-object v0
+
+    sput-object v0, Lnet/fdgames/GameEntities/AI/AISkillUsage;->a:Lnet/fdgames/GameEntities/Character;
+
+    sget-object v0, Lnet/fdgames/GameEntities/AI/AISkillUsage;->a:Lnet/fdgames/GameEntities/Character;
+
+    if-eqz v0, :cond_reinc
+
+    const-string v0, "heal_wounds"
+
+    invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
+
+    sget-object v0, Lnet/fdgames/GameEntities/AI/AISkillUsage;->a:Lnet/fdgames/GameEntities/Character;
+
+    invoke-virtual {v0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v0
+
+    invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/Character;->o(I)V
+
+    goto :goto_0
+
+    :cond_reinc
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "reincornation"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
     if-eqz v0, :cond_5
 
     invoke-static {v2, v3}, Lnet/fdgames/Helpers/FDUtils;->a(II)I
@@ -294,7 +339,7 @@
 
     if-eqz v0, :cond_5
 
-    const-string v0, "heal_wounds"
+    const-string v0, "reincornation"
 
     invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
 

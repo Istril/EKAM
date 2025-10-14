@@ -659,7 +659,7 @@ bone_dance
   orig: 64, 64
   offset: 0, 0
   index: -1
-infantry_training
+reincornation
   rotate: false
   xy: 529, 265
   size: 64, 64

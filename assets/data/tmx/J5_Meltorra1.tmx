@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="51">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="324">
  <properties>
-  <property name="music" value="dark_chamber"/>
-  <property name="name" value="Sagar Enclave"/>
-  <property name="name_ES" value="Enclave de Sagar"/>
-  <property name="nominimap" value=""/>
+  <property name="faction_civilian" value="thuram"/>
+  <property name="faction_guard" value="thuram"/>
+  <property name="house" value=""/>
+  <property name="maxlight" value="60"/>
+  <property name="music" value="thuram"/>
  </properties>
- <tileset firstgid="1" name="dungeon" tilewidth="64" tileheight="128" tilecount="240" columns="16">
+ <tileset firstgid="1" source="trees.tsx"/>
+ <tileset firstgid="17" source="spawns.tsx"/>
+ <tileset firstgid="25" source="dryground.tsx"/>
+ <tileset firstgid="89" source="town_objects.tsx"/>
+ <tileset firstgid="169" source="rocks.tsx"/>
+ <tileset firstgid="175" name="dungeon" tilewidth="64" tileheight="128" tilecount="240" columns="16">
   <image source="adt_tiled_dungeon.png" width="1024" height="1920"/>
   <tile id="48">
    <properties>
@@ -220,12 +226,14 @@
   <tile id="86">
    <properties>
     <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
     <property name="wall" value=""/>
    </properties>
   </tile>
   <tile id="87">
    <properties>
     <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
     <property name="wall" value=""/>
    </properties>
   </tile>
@@ -467,6 +475,7 @@
   <tile id="140">
    <properties>
     <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
     <property name="wall" value=""/>
    </properties>
   </tile>
@@ -503,9 +512,25 @@
     <property name="obstacle" value=""/>
    </properties>
   </tile>
+  <tile id="147">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="148">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
   <tile id="151">
    <properties>
-    <property name="blocked" value=""/>
+    <property name="light" value="brazier"/>
+    <property name="obstacle" value=""/>
    </properties>
   </tile>
   <tile id="178">
@@ -785,12 +810,14 @@
   <tile id="230">
    <properties>
     <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
     <property name="wall" value=""/>
    </properties>
   </tile>
   <tile id="231">
    <properties>
     <property name="blocked" value=""/>
+    <property name="light" value="torch"/>
     <property name="wall" value=""/>
    </properties>
   </tile>
@@ -841,73 +868,20 @@
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="241" name="dungeon stairs" tilewidth="128" tileheight="128" tilecount="4" columns="4">
-  <image source="dungeon_stairs.png" width="512" height="128"/>
-  <tile id="0">
+ <tileset firstgid="415" name="town_objexts2" tilewidth="64" tileheight="64" tilecount="64" columns="8">
+  <image source="town_objects2.png" width="512" height="512"/>
+  <tile id="6">
    <properties>
     <property name="obstacle" value=""/>
    </properties>
   </tile>
-  <tile id="1">
+  <tile id="7">
    <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
- </tileset>
- <tileset firstgid="245" source="spawns.tsx"/>
- <tileset firstgid="253" name="town_objects" tilewidth="64" tileheight="128" tilecount="80" columns="8">
-  <image source="town_objects.png" width="512" height="1384"/>
-  <tile id="0">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="1">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="2">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="3">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="4">
-   <properties>
+    <property name="light" value="brazier_lamp"/>
     <property name="obstacle" value=""/>
    </properties>
   </tile>
   <tile id="8">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="9">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="10">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="11">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="12">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="13">
    <properties>
     <property name="obstacle" value=""/>
    </properties>
@@ -947,12 +921,7 @@
     <property name="obstacle" value=""/>
    </properties>
   </tile>
-  <tile id="21">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="22">
+  <tile id="23">
    <properties>
     <property name="obstacle" value=""/>
    </properties>
@@ -967,11 +936,6 @@
     <property name="obstacle" value=""/>
    </properties>
   </tile>
-  <tile id="26">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
   <tile id="27">
    <properties>
     <property name="obstacle" value=""/>
@@ -982,262 +946,357 @@
     <property name="obstacle" value=""/>
    </properties>
   </tile>
-  <tile id="29">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
   <tile id="30">
    <properties>
     <property name="obstacle" value=""/>
    </properties>
   </tile>
-  <tile id="31">
+  <tile id="32">
    <properties>
     <property name="obstacle" value=""/>
    </properties>
   </tile>
-  <tile id="40">
+  <tile id="33">
    <properties>
     <property name="obstacle" value=""/>
    </properties>
   </tile>
-  <tile id="41">
+  <tile id="34">
    <properties>
     <property name="obstacle" value=""/>
    </properties>
   </tile>
-  <tile id="42">
+  <tile id="35">
    <properties>
     <property name="obstacle" value=""/>
    </properties>
   </tile>
-  <tile id="43">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="44">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="45">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="48">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="49">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="50">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="51">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="56">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="57">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="58">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="59">
-   <properties>
-    <property name="obstacle" value=""/>
-   </properties>
-  </tile>
-  <tile id="72">
-   <properties>
-    <property name="blocked" value=""/>
-   </properties>
-  </tile>
-  <tile id="73">
-   <properties>
-    <property name="blocked" value=""/>
-   </properties>
-  </tile>
-  <tile id="74">
+  <tile id="36">
    <properties>
     <property name="obstacle" value=""/>
    </properties>
   </tile>
  </tileset>
- <tileset firstgid="333" name="teleporter" tilewidth="192" tileheight="96" tilecount="1" columns="1">
-  <image source="teleporter.png" width="192" height="96"/>
+ <tileset firstgid="479" source="natural_grounds.tsx"/>
+ <tileset firstgid="607" name="grounds indoor 2" tilewidth="64" tileheight="32" tilecount="160" columns="16">
+  <image source="grounds_indoor2.png" width="1024" height="320"/>
+  <tile id="64">
+   <properties>
+    <property name="effect" value="gas_weak"/>
+   </properties>
+  </tile>
+  <tile id="65">
+   <properties>
+    <property name="effect" value="gas_weak"/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="effect" value="death_weak"/>
+   </properties>
+  </tile>
+  <tile id="88">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="89">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="90">
+   <properties>
+    <property name="effect" value="lava2"/>
+   </properties>
+  </tile>
+  <tile id="136">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="137">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="142">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="144">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="145">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="146">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="147">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="148">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="149">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="150">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="151">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="152">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="153">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="154">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="156">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="157">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="158">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
+  <tile id="159">
+   <properties>
+    <property name="effect" value="lava_edge"/>
+   </properties>
+  </tile>
  </tileset>
- <tileset firstgid="334" source="grounds_indoor.tsx"/>
- <tileset firstgid="494" source="town_objexts2.tsx"/>
- <tileset firstgid="558" source="dungeon stairs.tsx"/>
- <tileset firstgid="562" source="forge.tsx"/>
- <tileset firstgid="625" source="cherch.tsx"/>
- <tileset firstgid="724" source="dungeon5.tsx"/>
- <tileset firstgid="964" source="town_objects3.tsx"/>
- <layer id="1" name="nonwalk" width="60" height="60" visible="0">
-  <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+ <tileset firstgid="767" name="pof_ground" tilewidth="64" tileheight="32" tilecount="16" columns="8">
+  <image source="mountain_ground.png" width="512" height="64"/>
+  <tile id="0">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="5">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="6">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="effect" value="lava"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="783" source="mountain-transitions.tsx"/>
+ <tileset firstgid="801" source="walls_red.tsx"/>
+ <tileset firstgid="816" source="rocks_gray.tsx"/>
+ <tileset firstgid="826" source="rocks_gray_small.tsx"/>
+ <tileset firstgid="838" source="teleporter.tsx"/>
+ <tileset firstgid="839" source="icemist_items.tsx"/>
+ <tileset firstgid="887" source="icemist_large.tsx"/>
+ <tileset firstgid="927" source="dungeon2.tsx"/>
+ <tileset firstgid="1167" source="grounds_indoor.tsx"/>
+ <tileset firstgid="1327" source="dungeon3.tsx"/>
+ <tileset firstgid="1567" source="dungeon stairs.tsx"/>
+ <tileset firstgid="1571" source="dungeon.tsx"/>
+ <tileset firstgid="1811" source="dungeon4.tsx"/>
+ <tileset firstgid="2051" source="town_objects3.tsx"/>
+ <tileset firstgid="2083" source="water.tsx"/>
+ <tileset firstgid="2147" source="icemist_walls.tsx"/>
+ <tileset firstgid="2187" source="gate_red.tsx"/>
+ <tileset firstgid="2191" source="ship2.tsx"/>
+ <tileset firstgid="2199" source="grassland.tsx"/>
+ <tileset firstgid="2327" source="ship.tsx"/>
+ <tileset firstgid="2335" source="town_objexts2.tsx"/>
+ <tileset firstgid="2399" source="icemist_walls2.tsx"/>
+ <tileset firstgid="2439" source="grounds_indoor_mod.tsx"/>
+ <tileset firstgid="2599" source="greenground.tsx"/>
+ <tileset firstgid="2663" source="grassland_snow_structures.tsx"/>
+ <layer id="1" name="nonwalk" width="96" height="96" visible="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
   </data>
  </layer>
- <layer id="2" name="water" width="60" height="60">
-  <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+ <layer id="2" name="water" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
   </data>
  </layer>
- <layer id="3" name="ground" width="60" height="60">
-  <data encoding="base64" compression="zlib">
-   eJzt1lEKhDAMRVFF16P7350IFfrR2hQEk5d7ICCDH15apy4LAAAAAAAAAEDNahgld89RZm8MvbHdPa3OVu/a+T0SS289Cr1nmbdulX2esXdmovfOoFebYu/s+xz9W3R0Htfrq/AfnqV3psNr79fvYu8s9tRrXSvrvd7X96tnV+2t9+tWpvc9qdL7XD+9o/vojdO7DYbe2L3Z9nPG3kznkXW89v49AAAAHlyBkwij
+ <layer id="3" name="ground" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2dS5LCMAxEWeT+F2LBgeYSs6BchODYkqyf7X5VXsxisNQtKSZQ4fEA4JfXIVtARk3LP+aCHzxG9eb6Aew1hxd1IjSneLE6mXTfyYfMuq/uwyy63/kwK9o1zz3779wLGhq0zu/P473u/tb2YyYPRvKlngt7+t/FpBFbZjTeq1Lg6l+LcSTOjEhyks7XEf2v8UpjzgQ3j9Hrmob+19gl8WcgInZN/SPzGIUTs+ZZ7u7Mqfm62T2YJU4J2XPLHp8G3By9Y1tZ+wLVA88cOTHNrH2Bkq9XrrtpX8jiwY7aF6geRO4fcS3yJLIHdq79QlQPZJl/GehpYaHD7nPnimcPoPZ/8ewB1H4drx5A7deh9ID1HrvWfsF6BqH221j3AGq/j5X+mD00rGYQZg8NqxmE2qcD/WPR1h+zn4f2NQCzn4f2NQC1zwf6x+Kt//NmrexNL2/ob0sm/Vv/uyq9vKG/LZn0x/zB/Pcmk/7gG+gfi7f+8OCDxf0H9AAdi89goD8d3P+PJUp/eNCe1aOf/6IH+uD7J7FE67+zB1azh/L66AHb2qfssXMPWH3vp7ZPS/9de8DiPdfdPuiBb7xq/7wfeuCDV+2f90MPvPGu/fO+lB5Y2QOK9pb67z6Hos/iO/dAZO1TY1jVgwzaU2NZzYOM9wAo+q/gQdZzH7UHZvYgq/ac+DLEKSG79pw4r/FqxPw66kvzdbNrX+B4oBV75PNXM2lfkHogzSPq+cMZtS9wPRjxIeL525m1L0g8kPjg/fz5GbQvSD24+tDK1/P3F2bSviDNteXFWQOP3x/RPFdFMepBz4/W0thrBbQ08Vgr1PwdmX1YWfcrmXzYSfcrmvNaqvmOutew9gKa09E+O0LzMbjnTugNAAAAAAAAAADk5h9dUHQAAJAAAA==
   </data>
  </layer>
- <layer id="4" name="ground2" width="60" height="60">
-  <data encoding="base64" compression="zlib">
-   eJztzkENAAAIBKCbge3/NIa6QQISAAAAAAAAAAAAAAAAuKdrewDw2wCH3ABx
+ <layer id="4" name="ground2" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
   </data>
  </layer>
- <layer id="5" name="scenery" width="60" height="60">
-  <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+ <layer id="5" name="scenery" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3YMQ0AAAgDQVZU4t8FJkgI5E7BTx0aAQAAAAAAAAAAAMB1ldsFAAAAAABzfJ7AFvsDAAAAAAAAAAAAAAAAAAAAAAAA/zW1DywOAJAAAA==
   </data>
  </layer>
- <layer id="6" name="objects" width="60" height="60">
-  <data encoding="base64" compression="zlib">
-   eJzt1m0KgkAQANAFb9WPoCCKblV0hi7TxznqNikkRLW6imtF78Eg7o6uwzBgCAAAAAAAAAAAcdMyFg1Ra8qpYzbaV/e3errfJzxzKUK4Fq/rv1hvH7v79V/qrY1db9ssPkadO+nw/nPL/tj1Vr3avFnfRnK7OrXsf6LeHLmpvqW/sdyh6W9e+hu3zHC+/uZlfptzD2UcBzxff/P6t/mt/ofnidElNzXW+UsEAEhyA+kAJS4=
+ <layer id="6" name="objects" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3dy07DMBCF4Wz7lFz2Iax4Bh4bocqCJpjE9tgz4/k/qTuEojOXVq2jLAtwtN6W5bnw9XbTvmq/9nm/V2S5UY8ia2PeZzZqcdA785zotVgVMs/ZAtXBUu57M9fBcu57s9VhdZL73ua8Bp56PsfrLHjt+RxPszBb9omHGsyafWK5BrNnn1isQZTsE0s1iJZ9YqEGUbNPNGsQPftEowZk/+hjcBZPZP9gZP70/tGoHUT2eSNqwN75X889RO+f6zkD9P41PWaA3r+uxwzQ+2UkZ4DeLyc5A58y/yYcqZ3B7qkjkRu7p57EDqL327TmR/5tWvJj97Rr2UH0vozaHMlfBvnrqsmR3S+n5j2A3pdVmuf337/2uZSQavJ/6XMpIdXkDzmlefKdpyz6Xxf562L/6KL/dfH5Xxef/3Wxf3SV5mnh3ppZ1H6XyQzI4Pt/XeSvp+V3FN4D2nH+RBf565H4DZcdVI/zt7rIX4/k+RF2UDnpnmUGrutxdooZuK5XrzID53qeG2QGzvXuUWYgb8SZWWbgbyPPK1ODo9F7gT30Q+OsPjNwp3mfRPQaWLhHJWoNLGSfRKuBpeyTKDWwmH0yew0sZ5/MWgMP2Sez1cBT9onX56b8NsvzazzWwGPP53iahRl6PsdyHWbOfc9SHSLlvqf1DFKtZ65a1rsWZH6dxHOrJZ6fjbt9Pa68yBsAAAAAALu+AEN9SIQAkAAA
   </data>
  </layer>
- <layer id="7" name="roofs" width="60" height="60">
-  <data encoding="base64" compression="zlib">
-   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+ <layer id="7" name="roofs" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
   </data>
  </layer>
  <objectgroup id="8" name="data">
-  <object id="13" x="814" y="842"/>
-  <object id="22" name="entry" type="entry" gid="245" x="1134" y="1503.33" width="64" height="64">
+  <object id="322" name="Alchemist" type="staticNPC" gid="19" x="137" y="1555" width="64" height="64">
    <properties>
-    <property name="entry" value="1"/>
-    <property name="entry_id" value="1"/>
+    <property name="facing" value="r"/>
+    <property name="faction" value="thuram"/>
+    <property name="gender" value="f"/>
+    <property name="name" value="@TRADER_JOHANNA"/>
+    <property name="portrait" value="17"/>
+    <property name="shop_items" value="460,7013,7014,6010,6011,6012,6013,5016,5021,5037,5030,5031,5007"/>
+    <property name="shop_modifier" value="1"/>
+    <property name="sprite" value="female_red_1"/>
    </properties>
   </object>
-  <object id="24" name="Chest" type="container" gid="249" x="640" y="1536" width="64" height="64">
+  <object id="323" name="Alchemist" type="staticNPC" gid="19" x="140" y="1294" width="64" height="64">
    <properties>
-    <property name="icon" value="chest_small1"/>
-    <property name="loot_table" value="test_chest1"/>
-    <property name="name" value="@CHEST"/>
-   </properties>
-  </object>
-  <object id="25" name="Bed" type="bed" gid="249" x="990.333" y="1516.33" width="64" height="64"/>
-  <object id="28" name="fisherman" type="staticNPC" gid="247" x="992" y="1408" width="64" height="64">
-   <properties>
-    <property name="conversation" value="testNPC"/>
-    <property name="name" value="Гарет"/>
-    <property name="portrait" value="56"/>
-    <property name="sprite" value="male_red_1"/>
-   </properties>
-  </object>
-  <object id="29" name="weaponsmith" type="staticNPC" gid="247" x="992" y="1280" width="64" height="64">
-   <properties>
-    <property name="faction" value="mercia"/>
-    <property name="name" value="Оружейник Мейл"/>
-    <property name="portrait" value="11"/>
-    <property name="shop_items" value="6011,13007,13008"/>
-    <property name="shop_modifier" value="0.2"/>
-    <property name="sprite" value="male_red_1"/>
-   </properties>
-  </object>
-  <object id="30" name="crate" type="container" gid="249" x="640" y="1472" width="64" height="64">
-   <properties>
-    <property name="icon" value="chest_small1"/>
-    <property name="items" value="50015,50016,50017,50018,50019,50020,5003,5004"/>
-    <property name="name" value="@CHEST"/>
-    <property name="tag" value="C10_test_crate"/>
-   </properties>
-  </object>
-  <object id="31" name="Chest" type="container" gid="249" x="640" y="1600" width="64" height="64">
-   <properties>
-    <property name="icon" value="chest_small1"/>
-    <property name="loot_table" value="test_chest2"/>
-    <property name="name" value="@CHEST"/>
-   </properties>
-  </object>
-  <object id="32" name="Light" type="light" gid="249" x="1120" y="1344" width="64" height="64"/>
-  <object id="33" name="Light" type="light" gid="249" x="1120" y="1536" width="64" height="64"/>
-  <object id="34" name="Light" type="light" gid="249" x="768" y="1536" width="64" height="64"/>
-  <object id="35" name="Light" type="light" gid="249" x="768" y="1312" width="64" height="64"/>
-  <object id="37" name="fisherman1" type="staticNPC" gid="247" x="992" y="1344" width="64" height="64">
-   <properties>
-    <property name="conversation" value="testNPC2"/>
-    <property name="name" value="Гарет"/>
-    <property name="portrait" value="56"/>
-    <property name="sprite" value="male_red_1"/>
-   </properties>
-  </object>
-  <object id="38" name="lever conv" type="conversation" gid="249" x="1152" y="1152" width="64" height="64">
-   <properties>
-    <property name="conversation" value="C10_testzone_tpbook"/>
-    <property name="icon" value="lever"/>
-    <property name="name" value="Книга"/>
-    <property name="tag" value="book"/>
-   </properties>
-  </object>
-  <object id="39" name="Light" type="light" gid="249" x="704" y="1472" width="64" height="64"/>
-  <object id="40" name="Light" type="light" gid="249" x="704" y="1344" width="64" height="64"/>
-  <object id="41" name="Light" type="light" gid="249" x="1216" y="1280" width="64" height="64"/>
-  <object id="42" name="lever conv" type="conversation" gid="249" x="1440" y="1152" width="64" height="64">
-   <properties>
-    <property name="conversation" value="alchemy"/>
-    <property name="icon" value="table2"/>
-    <property name="name" value="Алхимический стол"/>
-   </properties>
-  </object>
-  <object id="43" name="crate" type="container" gid="249" x="640" y="1280" width="64" height="64">
-   <properties>
-    <property name="icon" value="chest_small1"/>
-    <property name="items" value="11000,11001,11002,11003,11004,11005,11006,11007,11008,11009,11010,11011,11012,11013,11025,11027"/>
-    <property name="name" value="@CHEST"/>
-    <property name="tag" value="C10_test_crate"/>
-   </properties>
-  </object>
-  <object id="45" name="crate" type="container" gid="249" x="800" y="1280" width="64" height="64">
-   <properties>
-    <property name="icon" value="chest_small1"/>
-    <property name="items" value="5000,5002,5004,5006,5007,5008,5009,5010,5011,5012,5013,5020"/>
-    <property name="name" value="@CHEST"/>
-    <property name="tag" value="C10_test_crate"/>
-   </properties>
-  </object>
-  <object id="46" name="Bed" type="bed" gid="249" x="1376" y="1248" width="64" height="64"/>
-  <object id="47" name="crate" type="container" gid="249" x="1563" y="1177" width="64" height="64">
-   <properties>
-    <property name="icon" value="chest_small1"/>
-    <property name="items" value="11000,11001,11002,11003,11004,11005,11006,11007,11008,11009,11010,11011,11012,11013,11025,11027"/>
-    <property name="name" value="@CHEST"/>
-    <property name="tag" value="C10_test_crate"/>
-   </properties>
-  </object>
-  <object id="48" name="crate" type="container" gid="249" x="832" y="1280" width="64" height="64">
-   <properties>
-    <property name="icon" value="chest_small1"/>
-    <property name="items" value="5025,5026,5028,5030,5031,5032,5033,5034,5035,5036,6004,6006,6009,6011"/>
-    <property name="name" value="@CHEST"/>
-    <property name="tag" value="C10_test_crate222"/>
+    <property name="facing" value="r"/>
+    <property name="faction" value="thuram"/>
+    <property name="gender" value="f"/>
+    <property name="name" value="@TRADER_JOHANNA"/>
+    <property name="portrait" value="17"/>
+    <property name="shop_items" value="460,7013,7014,6010,6011,6012,6013,5016,5021,5037,5030,5031,5007"/>
+    <property name="shop_modifier" value="1"/>
+    <property name="sprite" value="female_red_1"/>
    </properties>
   </object>
  </objectgroup>

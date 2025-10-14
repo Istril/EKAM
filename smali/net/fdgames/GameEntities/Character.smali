@@ -443,13 +443,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_reincornation
 
     iget v0, p0, Lnet/fdgames/GameEntities/Character;->spellTarget:I
 
     if-nez v0, :cond_1
 
-    invoke-static {p0, p0}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameEntities/Character;)V
+    invoke-static {p0, p0}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameEntities/Character;)V #вызов лечения от скилла
 
     :cond_0
     :goto_0
@@ -491,6 +491,69 @@
     invoke-static {p0, v0}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameEntities/Character;)V
 
     goto :goto_0
+#______________
+    :cond_reincornation
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
+
+    sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v2, "reincornation"
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    iget v0, p0, Lnet/fdgames/GameEntities/Character;->spellTarget:I
+
+    if-nez v0, :cond_r1
+
+    invoke-static {p0, p0}, Lnet/fdgames/Rules/SkillActions;->reincornation(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameEntities/Character;)V #вызов лечения от скилла
+
+    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
+
+    move-result-object v0
+
+    iget v1, p0, Lnet/fdgames/GameEntities/GameObject;->uniqueID:I
+
+    const-string v2, "flash_blue"
+
+    const/16 v3, 0x78
+
+    const v4, 0x3f19999a    # 0.6f
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Le/a/a/a;->a(ILjava/lang/String;IF)V
+
+    const-string v0, ""
+
+    iput-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
+
+    iput v12, p0, Lnet/fdgames/GameEntities/Character;->spellTarget:I
+
+    sget-object v0, Lnet/fdgames/GameEntities/MapActor$ActorState;->b:Lnet/fdgames/GameEntities/MapActor$ActorState;
+
+    invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/MapActor;->a(Lnet/fdgames/GameEntities/MapActor$ActorState;)V
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/MapActor;->U()V
+
+    return-void
+
+    :cond_r1
+    invoke-static {v0}, Lnet/fdgames/GameLevel/GameLevel;->a(I)Lnet/fdgames/GameEntities/Character;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-static {p0, v0}, Lnet/fdgames/Rules/SkillActions;->reincornation(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameEntities/Character;)V
+
+    goto :goto_0
+#____________________
 
     :cond_2
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;

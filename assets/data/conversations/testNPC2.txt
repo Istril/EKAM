@@ -11,9 +11,11 @@ index	type	text	text_ES	Go To	conditions	actions	requisites
 11	A	Далее		12			
 12	Q	Мне нужна помощь. Я пришел сюда, чтобы узнать больше о духах.		13			
 13	A	Сотканный из духов голем		0		TrainSkill#spirit_golem	
-13	A	Доделать		0		TrainSkill#spirit_protection	
+13	A	Перерождение души		0		TrainSkill#reincornation	
 13	A	Магистр спиритуализма		0		TrainSkill#spirit_protection	
 13	A	Далее		14			
+14	Q	Мне нужна помощь. Я пришел сюда, чтобы узнать больше о духах.		15			
+15	A	Перерождение души		0		TrainSkill#reincornation	
 100	Q	Мне нужна помощь. Я пришел сюда, чтобы узнать больше о некромантии.		101			
 101	A	Плоть и кости		0		TrainSkill#flash_and_bones	
 101	A	турн_андед-тест		0		TrainSkill#eerie_laughter	

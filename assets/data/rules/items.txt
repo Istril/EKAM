@@ -1025,7 +1025,7 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 50012	adminbook	potion		0				90	topaz	0	0									"GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#;GainSkillPoint#;GainTrait#"				1
 50013	Admin_wand	WEAPON	Test_wand	0			[staff][emp,3]	6000	tesla_rod	0	0						greatstaff							
 50014	admin_armor	armor_chest		1				100	armor_leather_chest1	2500	900						leather							
-50015	venom_test	POTION		0				150	potion_green	0	0									"PoisonWeapon#4,15;GainItem#50015"				1
+50015	venom_test	POTION		0				150	potion_green	0	0									"PoisonWeapon#4,15;GainItem#50015;LoseHP#250"				1
 50016	fire_test	POTION		0				150	potion_green	0	0									"FireWeapon#4,15;GainItem#50016"				1
 50017	cold_test	POTION		0				150	potion_green	0	0									"ColdWeapon#8,4;GainItem#50017"				1
 50018	shock_test	POTION		0				150	potion_green	0	0									"ShockWeapon#6,6;GainItem#50018"				1

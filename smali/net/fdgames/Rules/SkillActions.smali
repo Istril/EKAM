@@ -1757,6 +1757,311 @@
     goto :goto_1
 .end method
 
+.method public static reincornation(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameEntities/Character;)V
+    .locals 5
+
+    const/4 v4, 0x1
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "reincornation"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I # берётся текущий уровень навыка и помещается в v0
+
+    move-result v1 # уровень навыка перемещается в v1
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet; # берётся инфорация из характеристик персонажа
+
+    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->D()I # точнее его потерянное хп 
+
+    move-result v2 # результат двигаем в v2
+
+    if-ne v1, v4, :cond_8 # v1 не равен v4, если равен то cond 8
+
+    div-int/lit8 v0, v2, 0x2 #v2/2 и помешаем итог в v0
+
+    const/16 v3, 0xc8 # v3 присваиваем 200
+
+    if-gt v0, v3, :cond_x1 # если v0 больше или равен 200 то переходим в cond_x1
+
+    div-int/lit8 v0, v0, 0xa # иначе v0/10
+
+    :cond_x1
+
+    add-int/lit8 v0, v0, 0x28
+
+    :goto_0
+    const/4 v3, 0x2
+
+    if-ne v1, v3, :cond_0
+
+    div-int/lit8 v0, v2, 0x2 #v2/2 и помешаем итог в v0
+
+    const/16 v3, 0x96 # v3 присваиваем 150
+
+    if-gt v0, v3, :cond_x2 # если v0 больше или равен 150 то переходим в cond_x1
+
+    div-int/lit8 v0, v0, 0x7 # иначе v0/10
+
+    :cond_x2
+
+    add-int/lit8 v0, v0, 0x3C
+
+    :cond_0
+    const/4 v3, 0x3
+
+    if-ne v1, v3, :cond_1
+
+    div-int/lit8 v0, v2, 0x2 #v2/2 и помещаем итог в v0
+
+    mul-int/lit8 v0, v2, 0x2 # v2*2 и помещаем итог в v0
+
+    :cond_1
+    const/4 v3, 0x4
+
+    if-ne v1, v3, :cond_2
+
+    const/16 v0, 0x20a
+
+    :cond_2
+    const/4 v3, 0x5
+
+    if-ne v1, v3, :cond_3
+
+    const/16 v0, 0x25a
+
+    :cond_3
+    const/4 v3, 0x6
+
+    if-ne v1, v3, :cond_4
+
+    const/16 v0, 0x30a
+
+    :cond_4
+    const/4 v3, 0x7
+
+    if-ne v1, v3, :cond_5
+
+    const/16 v0, 0x40a
+
+    :cond_5
+    iget-object v1, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v1, v1, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v3, "reincornation"
+
+    invoke-virtual {v1, v3}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->k(Ljava/lang/String;)V
+
+    if-lez v2, :cond_6
+
+    invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/Character;->l(I)V
+
+    sub-int/2addr v0, v2
+
+    :cond_6
+    if-gtz v0, :cond_9
+
+    :cond_7
+    return-void
+
+    :cond_8
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    :cond_9
+    iget-object v1, p1, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    invoke-virtual {v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->D()I
+
+    move-result v1
+
+    if-lez v1, :cond_a
+
+    invoke-virtual {p1, v0}, Lnet/fdgames/GameEntities/Character;->l(I)V
+
+    sub-int/2addr v0, v1
+
+    :cond_a
+    if-lez v0, :cond_7
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/MapActor;->P()Z
+
+    move-result v1
+
+    if-nez v1, :cond_b
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    if-ne v1, v4, :cond_7
+
+    :cond_b
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    invoke-virtual {v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->D()I
+
+    move-result v1
+
+    if-lez v1, :cond_c
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Lnet/fdgames/GameEntities/Character;->l(I)V
+
+    sub-int/2addr v0, v1
+
+    :cond_c
+    if-lez v0, :cond_7
+
+    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lnet/fdgames/GameWorld/GameData;->party:Lnet/fdgames/GameWorld/Party;
+
+    invoke-virtual {v1}, Lnet/fdgames/GameWorld/Party;->h()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_d
+
+    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lnet/fdgames/GameWorld/GameData;->party:Lnet/fdgames/GameWorld/Party;
+
+    invoke-virtual {v1}, Lnet/fdgames/GameWorld/Party;->c()Lnet/fdgames/GameEntities/Final/NPC;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    invoke-virtual {v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->D()I
+
+    move-result v1
+
+    if-lez v1, :cond_d
+
+    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
+
+    move-result-object v2
+
+    iget-object v2, v2, Lnet/fdgames/GameWorld/GameData;->party:Lnet/fdgames/GameWorld/Party;
+
+    invoke-virtual {v2}, Lnet/fdgames/GameWorld/Party;->c()Lnet/fdgames/GameEntities/Final/NPC;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0}, Lnet/fdgames/GameEntities/Character;->l(I)V
+
+    sub-int/2addr v0, v1
+
+    :cond_d
+    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lnet/fdgames/GameWorld/GameData;->party:Lnet/fdgames/GameWorld/Party;
+
+    if-eqz v1, :cond_7
+
+    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lnet/fdgames/GameWorld/GameData;->party:Lnet/fdgames/GameWorld/Party;
+
+    iget-object v1, v1, Lnet/fdgames/GameWorld/Party;->followers:Ljava/util/ArrayList;
+
+    if-eqz v1, :cond_7
+
+    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
+
+    move-result-object v1
+
+    iget-object v1, v1, Lnet/fdgames/GameWorld/GameData;->party:Lnet/fdgames/GameWorld/Party;
+
+    iget-object v1, v1, Lnet/fdgames/GameWorld/Party;->followers:Ljava/util/ArrayList;
+
+    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    move v1, v0
+
+    :cond_e
+    :goto_1
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_7
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lnet/fdgames/GameWorld/Follower;
+
+    if-lez v1, :cond_7
+
+    if-eqz v0, :cond_7
+
+    invoke-virtual {v0}, Lnet/fdgames/GameWorld/Follower;->a()Lnet/fdgames/TiledMap/Objects/NPCSerializedSpawnData;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_7
+
+    invoke-virtual {v0}, Lnet/fdgames/GameWorld/Follower;->a()Lnet/fdgames/TiledMap/Objects/NPCSerializedSpawnData;
+
+    move-result-object v3
+
+    iget-object v3, v3, Lnet/fdgames/TiledMap/Objects/NPCSerializedSpawnData;->tag:Ljava/lang/String;
+
+    if-eqz v3, :cond_7
+
+    invoke-virtual {v0}, Lnet/fdgames/GameWorld/Follower;->a()Lnet/fdgames/TiledMap/Objects/NPCSerializedSpawnData;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/TiledMap/Objects/NPCSerializedSpawnData;->tag:Ljava/lang/String;
+
+    invoke-static {v0}, Lnet/fdgames/GameLevel/GameLevel;->b(Ljava/lang/String;)Lnet/fdgames/GameEntities/Final/NPC;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_e
+
+    iget-object v3, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    invoke-virtual {v3}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->D()I
+
+    move-result v3
+
+    if-lez v3, :cond_e
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Character;->l(I)V
+
+    sub-int v0, v1, v3
+
+    move v1, v0
+
+    goto :goto_1
+.end method
+
 .method public static a(Lnet/fdgames/GameEntities/Character;Z)V
     .locals 9
 

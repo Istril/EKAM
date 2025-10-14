@@ -64,3 +64,7 @@ bone_dance	A	N	M	N	 				lesser_summoning#2
 					Paralize	1	20	4				
 					Paralize	2	20	5				
 					Paralize	3	20	6				
+reincornation	A	N	M	N	 							
+					Paralize	1	2	4				
+					Paralize	2	2	5				
+					Paralize	3	2	6				
