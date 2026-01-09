@@ -1803,7 +1803,7 @@
 
     if-gt v0, v3, :cond_x2 # если v0 больше или равен 150 то переходим в cond_x1
 
-    div-int/lit8 v0, v0, 0x7 # иначе v0/10
+    div-int/lit8 v0, v0, 0x7 # иначе v0/7
 
     :cond_x2
 

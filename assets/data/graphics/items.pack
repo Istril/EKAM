@@ -3661,42 +3661,42 @@ holy_woter
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_leather_chest1
+lousk_scales
   rotate: false
   xy: 1, 497
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_leather_chest2
+lousk_heart
   rotate: false
   xy: 67, 563
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_leather_chest_green
+ashen_plant
   rotate: false
   xy: 133, 629
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_leather_feet1
+demon_heart
   rotate: false
   xy: 199, 695
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_leather_feet2
+vampire_dust
   rotate: false
   xy: 265, 761
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: -1
-armor_leather_feet_blue
+gwensdalin_lotus
   rotate: false
   xy: 331, 827
   size: 64, 64

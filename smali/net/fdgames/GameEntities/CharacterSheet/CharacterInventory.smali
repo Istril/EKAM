@@ -118,7 +118,7 @@
     .locals 2
 
     if-eqz p1, :cond_0
-
+#_ начало для госсип бонуса
     iget v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterInventory;->gossipBonus:I
 
     iget-object v1, p1, Lnet/fdgames/Rules/Item;->attributes:Lnet/fdgames/Rules/ItemAttributes;
@@ -130,7 +130,7 @@
     add-int/2addr v0, v1
 
     iput v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterInventory;->gossipBonus:I
-
+#_ конец для госсип бонуса
     iget v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterInventory;->detectionBonus:I
 
     iget-object v1, p1, Lnet/fdgames/Rules/Item;->attributes:Lnet/fdgames/Rules/ItemAttributes;
