@@ -11,9 +11,10 @@ index	type	text	text_ES	Go To	conditions	actions	requisites
 101	A	Далее		102			
 102	Q	Выберите место		103			
 103	A	Айсмист		0		Travel#IM,999,0	
-103	A	Мельторра		0			
+103	A	Мельторра		0		Travel#J5_Meltorra1,1,0	
 200	Q	Выберите место		201			
 201	A	Орден паладинов		0		Travel#D13_paladin,50,0	
+201	A	Гора		0		Travel#E7,10,0	
 300	Q	Выберите место		301			
 301	A	Ковчег		0		Travel#I3_ark,1,0	
 301	A	Подземка с стрипсидумом		0		Travel#H4_cave,1,0	

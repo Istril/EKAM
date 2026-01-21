@@ -1,4 +1,4 @@
-area_id	PosX	PosY	region	attributes	name	ES	RU	PT	DE	PL	CZ	TR	IT
+area_id	PosX	PosY	region	aributes	name	ES	RU	PT	DE	PL	CZ	TR	IT
 E9	4	8	e_mercia	[outdoor][worldmap]	South Jabal Hills	Colinas Jabal Sur	Южные Холмы Джабала	Colinas Jabal Sul	Südliche Jabal-Hügel	Południowe Wzgórza Jabal	Pohoří Jabal - Jih	Güney Jabal Tepeleri	Colline Jabal Sud
 E10	4	9	e_mercia	[outdoor][worldmap]	North Jabal Hills	Colinas Jabal Norte	Северные Холмы Джабала	Colinas Jabal Norte	Nördliche Jabal-Hügel	Północne Wzgórza Jabal	Pohoří Jabal - Sever	Kuzey Jabal Tepeleri	Colline Jabal Nord
 F8	5	7	e_mercia	[outdoor][worldmap]	Sydarun Oasis	Oasys de Sydarun	Оазис Сидарун	Oasis de Sydarun	Sydarun-Oase	Oaza Sydarun	Sydarunská Oáza	Sydarun Vahası	Oasi Sydarun
@@ -7,7 +7,7 @@ F10	5	9	e_ilmara	[outdoor][worldmap]	Rhöneis Plains	Planicie de Rhöneis	Рён
 G8	6	7	inori	[outdoor][worldmap]	Northern Inori	Inori Norte	Северная Инори	Inori Norte	Nördliche Inori	Północne Inori	Severní Inori	Kuzey İnori	Inori Nord
 G9	6	8	w_varsilia	[outdoor][worldmap]	Kingsbridge	Kingsbridge	Кингсбридж	Kingsbridge	Kingsbridge	Królewski Most	Kingsbridge	Kingsbridge	Kingsbridge
 G10	6	9	n_varsilia	[outdoor][worldmap]	Northern Bluemist River	Río Bluemist Norte	Север реки Блюмист	Rio Bluemist Norte	Nördlicher Bluemist-Fluss	Północna Rzeka Mgieł	Řeka Bluemist - Sever	Kuzey Bluemist Nehri	Fiume Bluemist
-H8	7	7	s_varsilia	[outdoor][worldmap]	New Garand Farmlands	Granjas de New Garand	Предместья Нью-Гаранда	Zona Rural de Nova Garand	Farmland von New Garand	Pola Nowego Garand	Ornice při New Garand	New Garand Tarlaları	Fattorie di New Garand
+H8	7	7	s_varsilia	[outdoor][worldmap]	New Garand Farmlands	Granjas de New Garand	Предместья Нью-Гаранда	Zona Rural de Nova Garand	Farmland von New Garand	Pola Nowego Garand	Ornice při New Garand	New Garand Tarlaları	Faorie di New Garand
 H9	7	8	w_varsilia	[outdoor][worldmap]	Southern Bluemist River	Río Bluemist Sur	Юг реки Блюмист	Rio Bluemist Sul	Südlicher Bluemist-Fluss	Południowa Rzeka Mgieł	Řeka Bluemist - Jih	Güney Bluemist Nehri	Fiume Bluemist
 H10	7	9	n_varsilia	[outdoor][worldmap]	Lannegar Valley	Valle de Lannegar	Ланнегарская Лощина	Vale Lannegar	Lannegar-Tal	Dolina Lannegar	Lannegarské Údolí	Lannegar Vadisi	Valle di Lannegar
 H11	7	10	n_varsilia	[outdoor][worldmap]	Northwest Sagar Forest	Bosque Sagar Noroeste	Северо-запад леса Сагар	Floresta Sagar Noroeste	Nordwestlicher Sagar-Wald	Północnowschodni Las Sagar	Sagarský les - Severozápad	Kuzeybatı Sagar Ormanı 	Foresta Sagar Nordovest
@@ -42,7 +42,7 @@ E12_cave					Cave of Echoes	Cueva de los Ecos	Пещера Отзвуков	Cave
 E10_tower					Tower of Tremadan	Torre de Tremadan	Башня Тремадана	Torre de Tremadan	Tremadans Turm	Wieża Tremadan	Tremadanova věž	Tremadan Kulesi	Torre di Tremadan
 G10_cave					Deepburrow Cave	Cuevas Deepburrow	Глубокие Норы	Caverna Deepburrow	Tieflochhöhle	Głęboka Jaskinia	Jeskyně Deepburrow	Deepburrow Mağarası	Caverne Deepburrow
 D11_abbey_cave					Hellish Cave	Caverna Infernal	Адская Пещера	Caverna Infernal	Höllenhöhle	Piekielna Jaskinia	Pekelná jeskyně	Cehennem Mağarası 	Caverna Infernale
-FT_seventh					The Seventh House	La Séptima Casa	Дом Семи	A Sétima Casa	Das Siebte Haus	Siódmy Dom	Sedmý dům	Yediler Evi	La Settima Casa
+FT_seventh					The Seventh House	La Séptima Casa	Дом Семи	A Sétima Casa	Das Siebte Haus	Siódmy Dom	Sedmý dům	Yediler Evi	La Seima Casa
 F11_tomb					Azagul tomb	Tumba de Azagul	Склеп Азагула	Tumba Azagul	Azagul-Gruft	Grobowiec Azagula	Azagulova hrobka	Azagul Türbesi 	Tomba di Azagul
 D12_cave					Lambar Cave	Cueva Lambar	Пещера Ламбар	Caverna Lambar	Lambar-Höhle	Jaskinia Lambar	Lambarova jeskyně	Lambar Mağarası 	Caverna Lambar
 G7_tomb					Irazur Tomb	Tumba Irazur	Склеп Иразура	Tumba Irazur	Irazur-Gruft	Grobowiec Irazura	Irazurova hrobka	Irazur Türbesi 	Tomba Irazur
@@ -63,11 +63,11 @@ F8_cave					Deepsands Cave	Cuevas Arenasprofundas	Пещера Глубоких 
 H8_tomb					Nayau Tomb	Tumba Nayau	Гробница Найау	Tumba Nayau	Nayau-Gruft	Grobowiec Nayau	Hrobka Nayau	Nayau Türbesi 	Tomba Nayau
 H11_cave_1					Gorx lair	Guarida Gorx	Логово Горха	Covil Gorx	Gorx' Höhle	Kryjówka Gorxa	Gorxovo doupě	Gorx İni 	Tana Gorx
 J9_castle					Imperial Fortress	Fortaleza Imperial	Имперская Крепость	Fortaleza Imperial	Imperiale Festung	Cesarska Twierdza	Pevnost Impéria	İmparatorluk Hisarı 	Fortezza Imperiale
-J10_island					A Small Islet	Un pequeño islote	Островок	Uma Pequena Ilha	Eine kleine Insel	Mała wysepka	Drobný ostrůvek	Küçük Adacık 	Un isolotto
+J10_island					A Small Islet	Un pequeño islote	Островок	Uma Pequena Ilha	Eine kleine Insel	Mała wysepka	Drobný ostrůvek	Küçük Adacık 	Un isoloo
 J9_cave					Askatir Mine	Mina Askatir	Аскатирская Шахта	Mina Askatir	Askatir-Mine	Kopalnia Askatir	Askatirský důl	Askatir Madeni	Miniera Askatir
 I12_cauldron					The Deep Cauldron	El Caldero Profundo	Глубокий Провал	O Caldeirão Profundo	Der tiefe Kessel	Głęboki Kocioł	Hluboký kotel	Cauldron Derinlikleri	Il Calderone Profondo
-J11_tower					Wyverntail Complex	Subterráneo Wyverntail	Подземье Вивернов Хвост	Complexo Wyverntail	Wyvernschwanzkomplex	Kompleks Wiwerniego Ogona	Komplex ve Wyverntail	Ejder Kuyruğu Kompleksi	Sotterraneo Wyverntail
-E9_cave					Jabal Grotto	Gruta de Jabal	Грот Джабал	Gruta de Jabal	Jabal-Grotte	Grota Jabal	Jabalská slůj	Jabal Sığınağı 	Grotta  di Jabal
+J11_tower					Wyverntail Complex	Subterráneo Wyverntail	Подземье Вивернов Хвост	Complexo Wyverntail	Wyvernschwanzkomplex	Kompleks Wiwerniego Ogona	Komplex ve Wyverntail	Ejder Kuyruğu Kompleksi	Soerraneo Wyverntail
+E9_cave					Jabal Groo	Gruta de Jabal	Грот Джабал	Gruta de Jabal	Jabal-Groe	Grota Jabal	Jabalská slůj	Jabal Sığınağı 	Groa  di Jabal
 H10_tomb					Ydaya tomb	Tumba de Ydaya	Гробница Йдайя	Tumba Ydaya	Ydaya-Gruft	Grobowiec Ydaya	Hrobka Ydaya	Ydaya Türbesi 	Tomba di Ydaya
 G9_cave					Bandit Hideout	Guarida de bandidos	Бандитское логово	Esconderijo de Bandidos	Banditenversteck	Kryjówka bandytów	Loupežnická skrýš	Haydut Sığınağı 	Covo dei banditi
 F10_cave					Rhonata Cave	Cueva Rhonata	Пещера Роната	Caverna Rhonata	Rhonata-Höhle	Jaskinia Rhonata	Jeskyně Rhonata	Rhonata Mağarası 	Caverna Rhonata
@@ -91,7 +91,7 @@ H7	7	6	inori	[outdoor][worldmap]	Eastern Inori	Inori Este	Восточная И�
 H6	7	5	inori	[outdoor][worldmap]	Golden Cove	Cala Dorada	Золотая Бухта	Enseada Dourada	Goldene Bucht	Złota Zatoczka	Zlatá zátoka	Altın Koy	Baia Dorata
 G6	6	5	inori	[outdoor][worldmap]	Emerald Valley	Valle Esmeralda	Изумрудная Долина	Vale Esmeralda	Smaragdtal	Szmaragdowa Dolina	Smaragdové údolí	Zümrüt Vadi	Valle Smeralda
 G6_cave					Kurgua Cave	Cueva Kurgua	Пещера Кургуа	Caverna Kurgua	Kurgua-Höhle	Jaskinia Kurgua	Jeskyně Kurgua	Kurgua Mağarası	Cava Kurgua
-H7_temple					Forgotten Temple	Templo Olvidado	Забытый Храм	Templo Esquecido	Vergessener Tempel	Zapomniana Świątynia	Zapomenutý chrám	Unutulmuş Tapınak	Tempio Dimenticato
+H7_temple					Forgoen Temple	Templo Olvidado	Забытый Храм	Templo Esquecido	Vergessener Tempel	Zapomniana Świątynia	Zapomenutý chrám	Unutulmuş Tapınak	Tempio Dimenticato
 H6_bank					Golden Cove Bank	Banco de Cala Dorada	Банк Золотой Бухты	Banco da Enseada Dourada	Bank der Goldenen Bucht	Bank w Złotej Zatoczce	Banka Zlaté zátoky	Altın Koy Sahili	Banca della Baia Dorata
 H6_manor					Governor's Manor	Mansión del Gobernador	Особняк Губернатора	Mansão do Governador	Anwesen des Gouverneurs	Posiadłość Gubernatora	Sídlo guvernéra	Valinin Malikânesi	Villa del Governatore
 NI_house					Nivarian House	Casa de Nivarian	Ниварийский дом	Casa de Nivarian	Haus in Nivarian	Dom w Nivarian	Dům v Nivarian	Nivarya Evi	Casa di Nivarian
@@ -100,10 +100,10 @@ H4	7	3	s_wild	[outdoor][worldmap]	Southern Dragon Mountains	Montañas del Dragó
 H3	7	2	s_wild	[outdoor][worldmap]	Ashen Wastes	Páramos de Cenizas	Пепельные пустоши	Terras Cinzentas	Aschgraues Ödland	Pustkowia Popiołu	Popeleční Pustina	Ashen Atıkları	Rifiuti di Cenere
 I3	8	2	s_wild	[outdoor][worldmap]	Ashen Cape	Cabo de Cenizas	Пепельный мыс	Cabo Cinzento	Kap der Asche	Przylądek Popiołu	Popelečný Mys	Ashen Pelerini	Capo di Cenere
 H4_cave					Bappasalar Cave	Cueva Bappasalar	Пещера Баппасалар	Caverna Bappasalar	Bappasalar-Höhle	Jaskinia Bappasalara	Jeskyně Bappasalara	Bappasalar Mağarası	Cava di Bappasalar
-H3_cave					Sunken Citadel	Ciudadela Hundida	Зотопленная крепость	Cidadela Submersa	Versunkene Zitadelle	Zatopiona Cytadela	Pohřbená Citadela	Batık Kale	Cittadella Affondata.
+H3_cave					Sunken Citadel	Ciudadela Hundida	Зотопленная крепость	Cidadela Submersa	Versunkene Zitadelle	Zatopiona Cytadela	Pohřbená Citadela	Batık Kale	Ciadella Affondata.
 I3_ark					Ark of Lothasan	Arca de Lothasan	Ковчег Лотасана	Arca de Lothasan	Arche von Lothasan	Arka Lothasana	Lothasanova Archa	Lothasan Ark	Arca di Lothasan
 I3_ark2					Ark of Lothasan - Upper Deck	Arca de Lothasan - Cubierta Superior	Ковчег Лотасана - верхняя палуба	Arca de Lothasan - Nível Superior	Arche von Lothasan - Oberes Deck	Arka Lothasana - górne piętro	Lothasanova Archa - Horní paluba	Lothasan Ark - Üst Güvertede	Arca di Lothasan - Piano superiore
-I3_ark3					Ark of Lothasan - Reactor	Arca de Lothasan - Reactor	Ковчег Лотасана - Реактор	Arca de Lothasan - Reator	Arche von Lothasan - Reaktor	Arka Lothasana - reaktor	Lothasanova Archa - Reaktor	Lothasan Ark - Reaktör	Arca di Lothasan - Reattore
+I3_ark3					Ark of Lothasan - Reactor	Arca de Lothasan - Reactor	Ковчег Лотасана - Реактор	Arca de Lothasan - Reator	Arche von Lothasan - Reaktor	Arka Lothasana - reaktor	Lothasanova Archa - Reaktor	Lothasan Ark - Reaktör	Arca di Lothasan - Reaore
 E10_maze_2					Maze of Lamth, level 2	Laberinto de Lamth, nivel 2	Ламтский лабиринт, ярус 2	Labirinto de Lamth, nível 2	Labyrinth von Lamth, Ebene 2	Labirynt Mitu	Lamthův Labyrint, úroveň 2	Lamth Labirenti, Seviye 2	Labirinto di Lamth, livello 2
 E10_cave_ice					Frozen Depths	Profundidades Heladas	Глубинная мерзлота	Profundezas Congeladas	Frostige Tiefen	Mroźne Głębiny	Mrazivá Hlubina	Dondurulmuş Derinlikler	Profondità Ghiacciate.
 I13	8	12	e_thuram	[outdoor][worldmap]	Icemist Fjord	Fiordo de Icemist	Фьорд Айсмиста	Fiorde de Icemist	Icemist-Fjord	Fiord Icemist	Fjord Icemistu	İcemist Fiyort	Fiordo di Icemist
@@ -114,7 +114,7 @@ IM	25	37		[town][worldmap]	Icemist	Icemist	Айсмист	Icemist	Icemist	Icemis
 IM_sewer					Sewer of Horrors	Alcantarilla de los Horrores	Канализация Ужасов	Esgoto dos Horrores	Kanalisation des Grauens	Przerażajace Kanały	Stoka Přízraků	Korkuların Kanalları	Fogne degli Orrori.
 G13_tomb					Desecrated Ruins	Ruinas Profanadas	Оскверненные Руины	Ruínas Profanadas	Entweihte Ruinen	Zbeszczeszczone Ruiny	Znesvěcené Ruiny	İstiridye Harabeleri	Rovine profanate
 IM_manor					Greyrune Manor	Mansión Greyrune	Особняк Грэйруна	Mansão Greyrune	Greyrune-Anwesen	Dwór Szarej Runy	Greyrunovo Sídlo	Greyrune Manor	Maniero Greyrune
-IM_underlevel					Icemist Underlevels	Icemist: Niveles Inferiores	Подземелья Айсмиста	Níveis Inferiores de Icemist	Icemist: Untergeschoss	Podziemia Icemist	Podzemí Icemistu	Icemist Underlevels	Sottolivelli Icemist
+IM_underlevel					Icemist Underlevels	Icemist: Niveles Inferiores	Подземелья Айсмиста	Níveis Inferiores de Icemist	Icemist: Untergeschoss	Podziemia Icemist	Podzemí Icemistu	Icemist Underlevels	Soolivelli Icemist
 IM_planeoffire					Elemental Plane of Fire	Plano Elemental del Fuego	Мир Элементалей	Plano Elemental do Fogo	Elementarebene des Feuers	Wymiar żywiołaków ognia	Elementální Pláň Ohně	Ateşin Elemental Düzlemi	Piano Elementare del Fuoco.
 H4_test					Test Area	Test Area							
 D13	3	12	w_ilmara	[outdoor][worldmap]	Sanctuary Peak	Pico del Santuario	Пик Святилища	Pico do Santuário	Heiliger Gipfel	Szczyt Sanktuarium	Hřeben svatyní		Picco del Santuario
@@ -122,7 +122,7 @@ C13	2	12	w_ilmara	[outdoor][worldmap]	Mount Orogg	Monte Orogg	Гора Орог�
 J7	9	6	s_varsilia	[outdoor][worldmap]	Western Korne	Korne Oeste	Западный Корн	Korne Oeste	Westliches Korne	Zachodnie Korne	Západní Korne		Korne Occidentale
 K7	10	6	s_wild	[outdoor][worldmap]	Eastern Korne	Korne Este	Восточный Корн	Korne Leste	Östliches Korne	Wschodnie Korne	Východní Korne		Korne Orientale
 I9_castle					Castle Storme	Castillo Storme	Замок Сторм	Castelo Storme	Burg Storme	Zamek Storme	Hrad Storme		Castello Storme
-I9_temple					Temple of Blood	Templo de la Sangre	Храм Крови	Templo de Sangue	Bluttempel	Świątynia Krwi	Krvavý Chrám		Tempio del Sangue
+I9_temple					Temple of Blood	Templo de la Sangre	Храм Крови	Templo de Sangue	Bluempel	Świątynia Krwi	Krvavý Chrám		Tempio del Sangue
 FT_arena					Freetown Arena	Arena de Freetown	Арена Фритауна	Arena de Freetown	Arena von Freetown	Arena Wolnego Miasta	Aréna ve Freetown		Arena di Freetown
 D13_sanctuary					Sanctuary of Irossia	Santuario de Irossia	Святилище Айроссии	Santuário de Irossia	Heiligtum von Irossia	Sanktuarium Irossia	Svatyně Irossie		Santuario di Irossa
 C13_pits					Forbidden Pit	Foso Prohibido	Запретная Шахта	Fosso Proibido	Verbotene Grube	Zakazana Otchłań	Zapovězená jáma		Pozzo Proibito
@@ -136,19 +136,19 @@ C11	2	10	wild	[outdoor][worldmap]	Elder Forest	Bosque Anciano	Древний Л�
 C12	2	11	wild	[outdoor][worldmap]	Backwoods Coven	Bosque de las Brujas	Ковен в глуши	Bosque das Bruxas	Hexenwald	Ostępy			Congrega di Backwoods
 J12_castle					Forsaken Fortress	Fortaleza Olvidada	Крепость Отречённых	Fortaleza dos Esquecidos	Festung der Vergessenen	Forteca Zapomnianych			Fortezza dimenticata
 H10_mine_2					Haunted Galleries	Galerías Hechizadas	Проклятые шахты	Galerias Assombradas	Verwunschene Galerie	Nawiedzone Galerie			Gallerie infestate
-H10_mine_3					City of the Ancients	Ciudad de los Ancianos	Город Древних	Cidade dos Anciãos	Stadt der Altvorderen	Miasto Starożytnych			Città degli Arcani
+H10_mine_3					City of the Ancients	Ciudad de los Ancianos	Город Древних	Cidade dos Anciãos	Stadt der Altvorderen	Miasto Starożytnych			Cià degli Arcani
 F6_temple					Temple of the Sleepers	Templo de los Durmientes	Храм Спящих	Templo dos Adormecidos	Tempel der Schläfer	Świątynia Śpiących			Tempio dei Dormienti
-C12_cave					The Undergrove	El Bajobosque	Подземная Роща	O Bosque Subterrâneo	Tiefer Hain	Pod Gajem			La foresta sotterranea
+C12_cave					The Undergrove	El Bajobosque	Подземная Роща	O Bosque Subterrâneo	Tiefer Hain	Pod Gajem			La foresta soerranea
 E10_tower1					T	T	Т	T	T	T	T	T
-IM_planeoffire1					Blood temple	TT	Храм крови	TT	TT	TT	TT	TT
-D13_paladin					Orden	TT	Крепость паладинов	TT	TT	TT	TT	TT
-D13_paladinsecondfloor					Orden	TT	Крепость паладинов: второй этаж	TT	TT	TT	TT	TT
-D13_paladindungeon					Orden	TT	Подземелье	TT	TT	TT	TT	TT
-D13_paladinnastoytelroom					Orden	TT	Тюрьмы	TT	TT	TT	TT	TT
-D13_paladinpropovednikroom					Orden	TT	Молельня	TT	TT	TT	TT	TT
-D13_paladinwatherroom					Orden	TT	Комната смотрителя	TT	TT	TT	TT	TT
-D13_paladinarhiepiscoproom					Orden	TT	Святыня	TT	TT	TT	TT	TT
-C11_Magic_forest					Magic forest	TT	Магический лес	TT	TT	TT	TT	TT
+IM_planeoffire1					Blood temple		Храм крови					
+D13_paladin					Orden		Крепость паладинов					
+D13_paladinsecondfloor					Orden		Крепость паладинов: второй этаж					
+D13_paladindungeon					Orden		Подземелье					
+D13_paladinnastoytelroom					Orden		Тюрьмы					
+D13_paladinpropovednikroom					Orden		Молельня					
+D13_paladinwatherroom					Orden		Комната смотрителя					
+D13_paladinarhiepiscoproom					Orden		Святыня					
+C11_Magic_forest					Magic forest		Магический лес					
 I10_tutorial_eger_house					House		Хижина егеря					
 NG_castle2					Custle New-Garand		Замок Нью-Гаранда					
 NG_cassian_temple					ancient temple		Храм Регордионов					
@@ -163,4 +163,4 @@ E7_Zenuel					zenuel_tower		Башня Зунуэль
 H11_maln_shop					zenuel_tower		Магазин "Зелья Мальна"					
 E7_church					Church		Храм "Последняя надежда"					
 E7_church_tomb					Church		Подземелье храма					
-J5_Meltorra					Meltorra		Мельторра					
+J5_Meltorra1					Meltorra		Мельторра					
