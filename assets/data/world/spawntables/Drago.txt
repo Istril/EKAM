@@ -1,0 +1,7 @@
+spawn_id	name	name_ES	wander	portrait	conversation	shop	shop_modifier	tag	chancemin	faction	conditions	unique	minLevel	maxLevel	aConvRange	aConvConditions
+j11_fire_drake									co	enemy			1	13		
+j11_ice_drake									co	enemy			1	13		
+j11_wyvern									co	enemy			1	13		
+j11_great_fire_drake									co	enemy			14			
+j11_great_ice_drake									co	enemy			14			
+j11_great_wyvern									co	enemy			14			

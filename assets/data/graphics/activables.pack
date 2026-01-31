@@ -540,3 +540,10 @@ corpse5
   orig: 64, 64
   offset: 0, 0
   index: -1
+nest_dragon
+  rotate: false
+  xy: 529, 208
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1

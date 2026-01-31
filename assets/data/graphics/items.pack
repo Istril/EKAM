@@ -3296,6 +3296,13 @@ gorx_crown
   orig: 64, 64
   offset: 0, 0
   index: -1
+egg_dragon
+  rotate: false
+  xy: 331, 299
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
 
 runes.png
 format: RGBA8888

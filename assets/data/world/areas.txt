@@ -164,3 +164,5 @@ H11_maln_shop					zenuel_tower		Магазин "Зелья Мальна"
 E7_church					Church		Храм "Последняя надежда"					
 E7_church_tomb					Church		Подземелье храма					
 J5_Meltorra1					Meltorra		Мельторра					
+J11_path_to_dragon_nest					ptdn		Тропа к драконьему гнезду					
+J11_dragon_nest					dn		Драконье гнездо					

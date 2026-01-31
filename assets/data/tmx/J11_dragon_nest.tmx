@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="96" height="96" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="68">
+ <properties>
+  <property name="music" value="plaint"/>
+  <property name="name" value="Dragon nest"/>
+  <property name="name_ES" value="idk"/>
+ </properties>
+ <tileset firstgid="1" source="grassland.tsx"/>
+ <tileset firstgid="129" source="stoneroad1-grass.tsx"/>
+ <tileset firstgid="147" source="trees.tsx"/>
+ <tileset firstgid="163" source="spawns.tsx"/>
+ <tileset firstgid="171" source="grassland_structures.tsx"/>
+ <tileset firstgid="207" name="town_objects" tilewidth="64" tileheight="128" tilecount="80" columns="8">
+  <image source="town_objects.png" width="512" height="1384"/>
+  <tile id="0">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="7">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="8">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="9">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="10">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="11">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="12">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="13">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="14">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="15">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="19">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="20">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="21">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="22">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="23">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="24">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="25">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="26">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="27">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="28">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="29">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="30">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="31">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="40">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="41">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="42">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="43">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="44">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="45">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="48">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="49">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="50">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="51">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="52">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="53">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="54">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="55">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="56">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="57">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="58">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="59">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="72">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="73">
+   <properties>
+    <property name="blocked" value=""/>
+   </properties>
+  </tile>
+  <tile id="74">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="75">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="76">
+   <properties>
+    <property name="light" value="lamp_rd"/>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="77">
+   <properties>
+    <property name="light" value="lamp_ld"/>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="78">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="287" source="water.tsx"/>
+ <tileset firstgid="351" source="rocks_small.tsx"/>
+ <tileset firstgid="361" source="rocks.tsx"/>
+ <tileset firstgid="367" source="natural_grounds.tsx"/>
+ <tileset firstgid="495" source="rocks_small_blue.tsx"/>
+ <tileset firstgid="505" source="rocks_gray.tsx"/>
+ <tileset firstgid="515" source="rocks_gray_small.tsx"/>
+ <tileset firstgid="527" source="rocks_blue.tsx"/>
+ <tileset firstgid="533" source="cave_dragonegg.tsx"/>
+ <layer id="1" name="nonwalk" width="96" height="96" visible="0">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3YYWqDUBCF0ex/J91lEVqSBpuomXEueA4E2v7Je9/4VHq7AQAAAAAAAAAAAAAAbPf183n8+fFv9Hpuvvahz5b+5tBjS2cz6LH1GncOeuy9x5hDnU86msFnKq5jZ+G4im7ekY6rbGUO+3T1MYP3uruYwWtnNzGH2WvSecjZf8IaJqT0X1vLFST1vwWt4wyp99+ktXTSf1Za91+Ja6qW2n6Ruq4qye0XyWurkL43/WddpX/q/tLXVyF1j+nPpiqJ7/2LxDV1Sttv2nrOkrLnq/ZfTO879Z54lum9T3//tOn9T39/krMbaH830UL/u4nnoPZ/6T/vzHOg/bozZuDaf0//eV2d9N+uupX3zn2qe2m/X+UM9D+magb6H/fpDLSvsbfj1f/P3+FVz7Xe2tc70p86e88APdYaa99vrffz79r3+u861/88+s979QymnzOQwXv/LP3n6Q8AkO8bpIUwCQCQAAA=
+  </data>
+ </layer>
+ <layer id="2" name="water" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3BAQ0AAADCoPdPbQ8HFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/BtM1WAGAJAAAA==
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   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
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3WMQ6AIBAEwOMR+v8nqkRrJWpiZQlRZhquoNhcsRABAAAAAAAAAAAAAAAAAHzR0joA0K3SP1PrEJ0bU8R8nENqnaQPzzd3fcz2X9/dPXZfT+mbfM1bnN2TX+7DX22tAwAAVODPAwAAAAAAAAAAAAAAAAAAAPRiBw/+ZqcAkAAA
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3c7WqDMBSAYfUGqrIb3K+h095696vQj30k7SlakanVeCJ5Hwhjg214kpwkJ22jCAAAAAAAAAAAAAAAAAAAAMAWlXEUfcbNV+jIkigqTPxr0/bS4EYpcbZs3HPT3kxLTPuJ7z9jLrhVSnxjiXub/T41bZfQFy7Y2FcjYnqSubCT/sAyXhnPmeQozDNrXZX14UQ+miyXPDIm7wwyf+dKP4yWyTrqIofH5KRBOTFSk8rYd6W9Jhfkoyf2jEV+0HM28b+sPCYr6kiNZHru/+iJ3XHivy2knhdyPrJj/1v5+YuA58Jv57mvSnGo4qbWFJI6wGf2RR3wvNeUzqgXH8zvfNFnL3vUiV15p2/+1VcL01pzgzMw7rk7caOQM053nD9q/C7rPrjvq297a8U4952XQ7HvOduEfObXMDfeIY/fJXT3+oz/dbXjvcjdLrBBl559KHSQh/Ssfd8I+MhlLXRp3FU8W+tMxns8ECr2aMuwd5ZHYjkadzHAcvOA10xgy+zrRFkT9PAeLj+c6QcAilgL/HD7PA72RKqYC37o+3warId5AHA+8wX9AAAAAAAAAN/9AVARxzwAkAAA
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3cWW7CMBCA4ZgL0IX70dL2AbpcpUdle2ErNKmIlKLEcex4zf9JlSpFgjC2x/Y4kGUAAAAAAAAAAAAAAAAAAAAAAAAAdIxHWXY38n0Xw1QX93vawomxJM57Ib8OfWWfnyjE95S3w0HYvZ8hoU/7sxBm8yzjwIxp3/8h/tq+eozdpXgt8piytn7/qtE2ZR5j3yD3aDk+1b3CA22BAB0b8su3hf5qe7zFpMj7F0lu3+XXniTXTdtnwXqp0TqPzUv+t5TEaNbSPpAznQ+Ltln3EP85bahl1mPc+tx/xCK0fvce2P3Y4rqvbfL3Wwk766mYTS21w+1+uZwndgrv95HoGCjPEE+Vz/cs+s3hMluFuTrV2N/WYNrygE69B82a9rchS+mMOabPwp7Yr1RrpDGc68Y0TnXEVHtUefYiVrJ979RjTS2m/qHrLORz3NRwT2Cydq3myJRz0fkaoyHWvEKkUveyvScr9yjF+ifl3I/w9LnmXon6/6VG/3P/EOZhm3bXenNRb9u0tEGMtREbyrqoyvNSbwoxK2p8W9FhDODP3nG8hnLm5cpSIedAzvU5SMp7LRNzB98xCu0ZAOCWrT76Sd/3hrzTzdzwu2EIB3nHTAxnmakzqdmRx/woa0wTfs+jN6k+L5KaQ4f6Krqrq+Hs+W0Or6q5iX5vV908wNzg14nc4wx7sjDRLu4Qa//q2oC1j3uMhbBwxu4eeQcA2v0CL35JzACQAAA=
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="96" height="96">
+  <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3OAQ0AAAgDoM8C9m9rDJ2DBCQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAfNC1PQAAAAC4bQCCxuTmAJAAAA==
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="43" name="bliz" type="mapeffect" gid="167" x="1088" y="1824" width="64" height="64">
+   <properties>
+    <property name="id" value="blizzard"/>
+   </properties>
+  </object>
+  <object id="44" type="entry" gid="163" x="1568" y="2400" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="45" name="dragon nest path" type="transition" x="1571.33" y="2714.92" width="133.333" height="64.1663">
+   <properties>
+    <property name="area_id" value="J11_path_to_dragon_nest"/>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="46" name="bliz" type="mapeffect" gid="167" x="1376" y="1408" width="64" height="64">
+   <properties>
+    <property name="id" value="blizzard"/>
+   </properties>
+  </object>
+  <object id="47" name="bliz" type="mapeffect" gid="167" x="1792" y="1760" width="64" height="64">
+   <properties>
+    <property name="id" value="blizzard"/>
+   </properties>
+  </object>
+  <object id="48" name="bliz" type="mapeffect" gid="167" x="1440" y="1760" width="64" height="64">
+   <properties>
+    <property name="id" value="blizzard"/>
+   </properties>
+  </object>
+  <object id="49" name="Chest" type="container" gid="167" x="1216" y="1472" width="64" height="64">
+   <properties>
+    <property name="icon" value="nest_dragon"/>
+    <property name="loot_table" value="vorator_nest"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="50" name="Chest" type="container" gid="167" x="896" y="1760" width="64" height="64">
+   <properties>
+    <property name="icon" value="nest_dragon"/>
+    <property name="loot_table" value="vorator_nest"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="51" name="Chest" type="container" gid="167" x="1696" y="2176" width="64" height="64">
+   <properties>
+    <property name="icon" value="nest_dragon"/>
+    <property name="loot_table" value="vorator_nest"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="52" name="Chest" type="container" gid="167" x="1472" y="1504" width="64" height="64">
+   <properties>
+    <property name="icon" value="nest_dragon"/>
+    <property name="loot_table" value="vorator_nest"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="53" name="Chest" type="container" gid="167" x="1856" y="1664" width="64" height="64">
+   <properties>
+    <property name="icon" value="nest_dragon"/>
+    <property name="loot_table" value="vorator_nest"/>
+    <property name="name" value="@NEST"/>
+   </properties>
+  </object>
+  <object id="60" name="arsizza" type="spawn" gid="165" x="1344" y="1472" width="64" height="64">
+   <properties>
+    <property name="spawn" value="j11_Arsizza"/>
+    <property name="tag" value="j11_Arsizza"/>
+    <property name="unique_tag" value="j11_Arsizza"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="61" name="arsi v2" type="spawn" gid="165" x="1376" y="1760" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#Arsizza,1"/>
+    <property name="spawn" value="j11_Arsizza_v2"/>
+    <property name="tag" value="j11_Arsizza_v2"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="62" name="minin_drag" type="spawn" gid="165" x="1152" y="1824" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#Arsizza_dead,1;VariableLower#Arsizza_v2_dead,5"/>
+    <property name="respawn" value="15"/>
+    <property name="spawn" value="j11_minidragon"/>
+    <property name="wander" value="2"/>
+   </properties>
+  </object>
+  <object id="63" name="minin_drag" type="spawn" gid="165" x="1600" y="1824" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#Arsizza_dead,1;VariableLower#Arsizza_v2_dead,5"/>
+    <property name="respawn" value="15"/>
+    <property name="spawn" value="j11_minidragon"/>
+    <property name="wander" value="2"/>
+   </properties>
+  </object>
+  <object id="64" name="minin_drag" type="spawn" gid="165" x="1152" y="1632" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#Arsizza_dead,1;VariableLower#Arsizza_v2_dead,5"/>
+    <property name="respawn" value="30"/>
+    <property name="spawn" value="j11_minidragon"/>
+    <property name="wander" value="2"/>
+   </properties>
+  </object>
+  <object id="65" name="minin_drag" type="spawn" gid="165" x="1600" y="1632" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#Arsizza_dead,1;VariableLower#Arsizza_v2_dead,5"/>
+    <property name="respawn" value="30"/>
+    <property name="spawn" value="j11_minidragon"/>
+    <property name="wander" value="2"/>
+   </properties>
+  </object>
+  <object id="66" name="minin_drag" type="spawn" gid="165" x="1184" y="1376" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#Arsizza_dead,1;VariableLower#Arsizza_v2_dead,5"/>
+    <property name="respawn" value="60"/>
+    <property name="spawn" value="j11_minidragon"/>
+    <property name="wander" value="5"/>
+   </properties>
+  </object>
+  <object id="67" name="minin_drag" type="spawn" gid="165" x="1504" y="1376" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableGreater#Arsizza_dead,1;VariableLower#Arsizza_v2_dead,5"/>
+    <property name="respawn" value="60"/>
+    <property name="spawn" value="j11_minidragon"/>
+    <property name="wander" value="5"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

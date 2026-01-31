@@ -767,6 +767,7 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 11033	vampire dust	general		0				95	vampire_dust	0	0													1
 11034	gwensdalin lotus	general		0				1000	gwensdalin_lotus	0	0													1
 11035	black rose	general		0				0	black_rose	0	0													1
+11036	Dragon Egg	general		0				2100	egg	0	0													1
 12002	Bluesteel ore	general		0				80	bluesteel_ore	0	0													0
 12003	Bluesteel bar	general		0				500	bluesteel_bar	0	0													0
 12004	Blessed bluesteel bar	general		0				800	empty_small_flask	0	0													0
@@ -824,7 +825,7 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 15008	white_wolf_summon	POTION		0				5000	white_wolf_summon	0	0													0
 15009	white_bear_summon	POTION		0				2000	white_bear_summon	0	0													0
 15010	vorator_summon	POTION		0				2500	vorator_summon	0	0													0
-15011	dragon_summon	POTION		0				20000	dragon_summon_arkenston	0	0													0
+15011	dragon_summon	POTION		0				60000	dragon_summon_arkenston	0	0													0
 15012	worm_summon	POTION		0				4500	worm_summon	0	0													0
 18000	wind_rune	general		0				90	wind_rune	0	0													1
 18001	void_eye_rune	general		0				90	void_eye_rune	0	0													1

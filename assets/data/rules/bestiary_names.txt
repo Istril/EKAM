@@ -465,3 +465,12 @@ arhibishop2			Тень Архиепископа
 necro_egg			Некротическое вместилище							
 necro_egg2			яйцо							
 necro_egg3			яйцо							
+j11_Arsizza			Арсизза							
+j11_Arsizza_v2			Арсизза							
+j11_minidragon			Ледяной Драконид							
+j11_fire_drake			Огненный Драконид							
+j11_ice_drake			Ледяной драконид							
+j11_wyvern			Виверна							
+j11_great_fire_drake			Древний огненный драконид							
+j11_great_ice_drake			Древний ледяной драконид							
+j11_great_wyvern			Древняя виверна							

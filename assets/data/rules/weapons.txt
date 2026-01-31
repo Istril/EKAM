@@ -232,6 +232,12 @@ manticore_small	Manticore	11	19	3	200	10	1								10	t
 manticore	Manticore	12	25	3	200	10	1								20	t				
 manticore_great	Manticore	14	30	3	200	10	1								24	t				
 ice_claw_15	Urcrymdrax claw	12	22	5	200	10	1								20	c				
+ice_claw_20	j12_Arsizza_claw	12	22	5	200	10	1								20	c				
+ice_claw_25	j12_ArsizzaV2_claw	15	28	8	200	10	1								12	c				
+ice_claw_30	j12_baby_ArsizzaV2_claw	6	10	7	180	10	1								17	c				
+elder_wyvern_claw	Wyvern	12	24	3	200	9	1								19	t				
+elder_fire_claw_10	fire Drake claw	10	18	3	200	10	1								21	f				
+elder_ice_claw_10	fire Drake claw	10	18	3	200	10	1								21	c				
 ice_claw_epic	Elemental Lord	18	28	5	200	10	1								36	c				
 wyvern_claw_small	Wyvern whelp	5	14	3	200	9	1								4	t				
 fire_claw_10	fire Drake claw	8	15	3	200	10	1								12	f				

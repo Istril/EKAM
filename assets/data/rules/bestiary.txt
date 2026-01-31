@@ -23,9 +23,9 @@ sabercat_corrupted		warrior	13	16	tiger_bite_corrupted	2	-75,25,0,150,0,0	1.3	[b
 polar_bear		warrior	11	14	bear_bite_ice	2	"""-100,250,0,-50,0,0"""	1.1	[beast]	polar_bear	bear_white	1	fury#2	patroller	enemy	M	0			monster_deep_1	
 yeti	strong	warrior	14	15	ice_punch_2	2	"""-125,250,90,30,30,30"""	1.05	[beast]	yeti	yeti	0.9	flurry#2	patroller	enemy	M	0			monster_deep_3	
 yeti_ancient	boss	warrior	20	20	ice_punch_2	4	"""0,250,90,-150,90,30"""	1.1	[beast]	"yeti;consumables_16;shards_boss_fixed"	yeti	1.1	"flurry#3;bash#2"	patroller	enemy	M	0			monster_deep_3	
-vorator		warrior	12	16	vorator_bite	2	"""100,-25,50,100,100,20"""	1.1	[beast]		vorator	1	bash#0,2	patroller	beasts	M	0			monster_deep_3	
-vorator_matriarch	miniboss	warrior	16	16	vorator_bite	5	"""200,-50,50,200,200,30"""	1.1	[beast]		vorator	1.15	"bash#3;heavyhand#3"	patroller	beasts	M	0			monster_deep_3	
-vorator_grozza	boss	warrior	18	18	vorator_bite	6	"""300,50,50,300,300,30"""	1.1	[beast]	"grozza;consumables_16"	vorator	1.3	"bash#3;heavyhand#3;flurry#2"	patroller	beasts	M	0			monster_deep_3	
+vorator		warrior	12	16	vorator_bite	2	"""100,-25,50,100,100,20"""	1.1	[beast]	vorator	vorator	1	bash#0,2	patroller	beasts	M	0			monster_deep_3	
+vorator_matriarch	miniboss	warrior	16	16	vorator_bite	5	"""200,-50,50,200,200,30"""	1.1	[beast]	vorator2	vorator	1.15	"bash#3;heavyhand#3"	patroller	beasts	M	0			monster_deep_3	
+vorator_grozza	boss	warrior	18	18	vorator_bite	6	"""300,50,50,300,300,30"""	1.1	[beast]	"grozza;consumables_16;grozza2"	vorator	1.3	"bash#3;heavyhand#3;flurry#2"	patroller	beasts	M	0			monster_deep_3	
 polar_elder	miniboss	warrior	14	15	bear_bite_ice_elder	4	"""-50,250,40,40,20,0"""	1.1	[beast]	bear_elder	bear_white	1.2	fury#3	patroller	beasts	M	0			monster_deep_1	
 giant_rat		warrior	5	12	toxic_bite	2	0,25,0,-75,70,0	1	[beast]		rat	1		patroller	enemy	M	0			"rat1;rat2;rat3"	
 swamp_rat		warrior	6	10	toxic_bite	2	0,25,0,0,70,0	1	[beast]		rat	1		patroller	enemy	M	0			"rat1;rat2;rat3"	
@@ -404,7 +404,16 @@ C10_centurion	boss	warrior	14	14	bluesteel_longsword	13	60,60,60,0,0,20	1	[detec
 C11_hunting_moon	boss	warrior	20	20	sword_ice_3	12	80,80,80,20,20,20	1	[detector]	C11_hunting_moon	female_var_warrior	1.1	"flurry#3;heavyhand#3;duel#2;fury#2"	patroller	player	F	66	"VariableGreater#last_legion,0;VariableLower#last_legion,30"	SetVariable#last_legion,30		
 varannari_warrior	strong	warrior	11	11	steel_longsword	3	60,60,60,0,0,20	1			male_var_warrior	1.1		patroller	player	M	0				
 varannari_druid	strong	cleric	11	11	ice_blast	3	50,50,50,50,50,30	1	[detector]	witch	female_var	0.9	"holy_shield#2;heal_wounds#2"	patroller	enemy	F	0				
-j12_hidalix	boss	warrior	20	20	ice_claw_15	11	"""-50,200,100,-75,0,80"""	1.1	[detector][giant]	"dragon;consumables_16;shards_boss"	wyvern_white	1.5		patroller	enemy	M	0		"ItemDeactivate#gate1;setVariable#track_forsaken,90;setVariable#dragonslayer,1"	monster_deep_2	
+j12_hidalix	boss	warrior	20	20	ice_claw_15	11	"""-50,200,100,-75,0,80"""	1.1	[detector][giant]	"dragon;consumables_16;shards_boss"	wyvern_white	1.5		patroller	enemy	M	0		"ItemDeactivate#gate1;SetVariable#track_forsaken,90;SetVariable#dragonslayer,1"	monster_deep_2	
+j11_Arsizza	boss	warrior	20	20	ice_claw_20	11	-50,200,200,-150,0,80	1.1	[detector][giant]	"dragon;consumables_16;shards_boss"	wyvern_white	1.3		patroller	enemy	F	68		"StartConversation#j11_Arsizza,j11_Arsizza;SetVariable#Arsizza_dead,2;SetVariable#Arsizza_v2_dead,2"	monster_deep_2	
+j11_Arsizza_v2	boss	warrior	24	24	ice_claw_25	18	200,300,250,-75,100,140	1.1	[detector][giant]	"dragon;consumables_16;shards_boss"	wyvern_white	1.5		patroller	enemy	M	0		"SetVariable#dragonslayer,1;SetVariable#Arsizza_v2_dead,6"	monster_deep_2	
+j11_minidragon		warrior	13	18	ice_claw_30	6	-90,200,60,-100,0,40	1.25			wyvern_white	1		patroller	enemy	M	0			monster_deep_3	
+j11_fire_drake	strong	warrior	10	19	fire_claw_10	10	300,-15,0,0,0,0	1		fire_drake	wyvern_red	0.8		patroller	enemy	M	0			monster_deep_3	
+j11_ice_drake	strong	warrior	10	19	ice_claw_10	10	-25,300,0,0,0,0	1		ice_drake	wyvern_white	0.8		patroller	enemy	M	0			monster_deep_3	
+j11_wyvern	strong	warrior	8	17	wyvern_claw	8	50,75,50,25,85,0	1		wyvern2	wyvern	1.1		patroller	enemy	M	0			monster_deep_3	
+j11_great_fire_drake	strong	warrior	15	22	elder_fire_claw_10	10	300,-125,0,0,50,60	1		j11_gfd	wyvern_red	0.8		patroller	enemy	M	0			monster_deep_3	
+j11_great_ice_drake	strong	warrior	15	22	elder_ice_claw_10	10	-125,300,0,0,50,60	1		j11_gid	wyvern_white	0.8		patroller	enemy	M	0			monster_deep_3	
+j11_great_wyvern	strong	warrior	13	20	elder_wyvern_claw	10	50,75,50,-125,120,60	1		wyvern2	wyvern	1.1		patroller	enemy	M	0			monster_deep_3	
 j12_kalagru	boss	warrior	31	31	undermother_bite	14	200,90,200,90,90,90	1	[detector][fire_elemental][giant][outsider]	"greater_demon;j12_castle_demon"	demon	1.5	"heavyhand#3;fury#2"	patroller	neutral	M	94		"ItemDeactivate#gate3;SetVariable#j12_gate3,1"	monster_deep_2	
 j12_elemental_lord_ice	boss	warrior	27	27	ice_claw_epic	10	140,140,200,200,200,90	1	[detector][ice_elemental][giant][outsider]	J12_elemental_lord	ice_elemental	1.5		patroller	enemy	M	0		"ItemDeactivate#gate2;SetVariable#j12_gate2,1"	monster_deep_3	
 C12_nightmare_dragon	boss	warrior	21	21	death_claw_20	7	"""100,-90,200,300,300,150"""	1.1	[detector][shadow]	consumables_16	wyvern	1.2	fury#3	patroller	enemy	M	0		SetVariable#path_deer,60	monster_deep_2	
