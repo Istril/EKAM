@@ -801,6 +801,8 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 12032	kas_l_key	general		0				0	shovel	0	0													0
 12033	Wood axe	WEAPON	wood_axe	0				150	axe3	0	0						axe	SetVariable#woodaxe,1						0
 12034	adamantite ore	general		0				1000	adamantite_ore	0	0													0
+12035	note_sum_1	general		0				5	letter1	0	0							SetVariable#notes,1						0
+12036	lesser_undead_skb	SCROLL		0				1500	book1	0	0									"TrainSkill#lesser_undead;GainItem#12036"				0
 13000	Landsknechta	WEAPON	landsknechta	0			[paralysis,1]	2800	landskhnaht	0	0						dagger							
 13001	Kassian robe	armor_chest		2	0,0,0,10,0,10			1500	robe_ark	6	7						tunic						M	
 13002	Rune mage gloves	armor_arms		2	0,0,0,10,0,5			2500	armor_blue_gloves	4	5												M	
@@ -810,6 +812,7 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 13006	gorx_armor	armor_chest		5	25,-30,0,0,-25,-10			1500	gorx_chest	15	0						plate						W,C	
 13007	Gorx_crown	armor_head		-8	20,-30,0,0,0,0	0,0,0,0,0,2	[gossip,1]	5000	gorx_crown	-17	25												C,M	
 13008	Gorx_axe	WEAPON	Gaxe_fire	0			[vicious,2]	1400	gorx_axe	0	0						battleaxe						W,C	
+13009	poison_Shortsword	WEAPON	poison_sw	0				4200	weapon_shortsword	0	0						shortsword						W,R	
 13100	Iron crossbow	WEAPON	iron_crossbow	0				140	weapon_bow_fire	0	0						crossbow						W,R	
 14000	Dock Key	general		0				100	key1	0	0													1
 14001	rusty key	general		0				100	key1	0	0													1

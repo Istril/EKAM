@@ -474,3 +474,6 @@ j11_wyvern			Виверна
 j11_great_fire_drake			Древний огненный драконид							
 j11_great_ice_drake			Древний ледяной драконид							
 j11_great_wyvern			Древняя виверна							
+zombie_summon			Поднятый зомби							
+skeleton_summon			Поднятый скелет							
+H10_tomb_undead_commander			Мертвый командор							

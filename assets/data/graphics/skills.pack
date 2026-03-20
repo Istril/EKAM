@@ -666,7 +666,7 @@ reincornation
   orig: 64, 64
   offset: 0, 0
   index: -1
-intervention
+lesser_undead
   rotate: false
   xy: 595, 331
   size: 64, 64

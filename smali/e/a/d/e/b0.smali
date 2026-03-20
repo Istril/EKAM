@@ -587,13 +587,31 @@
     invoke-virtual {v0, v1, v2, v3}, Le/a/a/a;->a(Lnet/fdgames/TiledMap/Objects/Coords;Le/a/a/a$a;F)Lnet/fdgames/assets/MapParticleEffectPool$MapPooledEffect;
 
     :cond_0
+    iget-object v0, p0, Le/a/d/e/b0;->g:Lnet/fdgames/Rules/Skill;
+
+    iget-object v0, v0, Lnet/fdgames/Rules/Skill;->id:Ljava/lang/String;
+
+    const-string v1, "lesser_undead"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :normal_cost
+
+    const/16 v1, 0x3e8 
+    
+    goto :apply_cost
+
+    :normal_cost
+    const/16 v1, 0x1388 
+
+    :apply_cost
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
 
     iget-object v0, v0, Lnet/fdgames/GameWorld/GameData;->player:Lnet/fdgames/GameEntities/Final/Player;
-
-    const/16 v1, 0x1388
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Final/Player;->z(I)Z
 
