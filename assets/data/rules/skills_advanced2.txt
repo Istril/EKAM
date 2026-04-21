@@ -33,34 +33,34 @@ Summoner	P	N	M,C	N	You are capable of strengthening the link between summoned cr
 					The creatures you summon gain +4 levels	0						Las criaturas que invocas ganan +4 niveles
 					The creatures you summon gain +5 levels	0						Las criaturas que invocas ganan +5 niveles
 					The creatures you summon gain +6 levels	0						Las criaturas que invocas ganan +6 niveles
-spiritualism	A	N	M	N	Text				"lesser_summoning#2;flash_and_bones#2"	PER#4		
+spiritualism	A	N	M	N	Text							
 					Summon a level 3 Earth Elemental	2	40	5				
 					Summon a level 10 Earth Elemental	2	60	15				
 					Summon a level 13 Iron Golem	2	100	60				
-flash_and_bones	A	N	M	N					lesser_summoning#2	PER#4	
+flash_and_bones	A	N	M	N							
 					Summon a level 7 Earth Elemental	1	40	20				
 					Summon a level 10 Earth Elemental	1	60	40				
 					Summon a level 13 Iron Golem	4	100	80				
-war_spirit	A	N	M	N					flash_and_bones#2	PER#4	
+war_spirit	A	N	M	N							
 					Summon a level 7 Earth Elemental	1	15	30				
 					Summon a level 10 Earth Elemental	2	15	40				
 					Summon a level 13 Iron Golem	4	50	60				
-spirit_protection	P	N		N						END#2	
-					Gain +12 to resist death	1						
-					Gain +24 to resist death	1						
-					Gain +36 to resist death	1						
-					Gain +36 to resist death	1						
-					Gain +36 to resist death	1						
-					Gain +36 to resist death	1						
-spirit_golem	A	N	M	N					lesser_summoning#2	PER#4	
+spirit_protection	P	N		N						END#6	
+					Gain +10 to all element	2						
+					Gain +20 to all element	2						
+					Gain +30 to all element	4						
+					Gain +40 to all element	4						
+					Gain +50 to all element	4						
+					Gain +60 to all element	4						
+spirit_golem	A	N	M	N							
 					Summon a level 7 Earth Elemental	1	25	25				
 					Summon a level 10 Earth Elemental	2	10	35				
 					Summon a level 13 Iron Golem	4	10	45				
-eerie_laughter	A	N	M	N	 				lesser_summoning#2			
+eerie_laughter	A	N	M	N	 							
 					Paralize	1	20	4				
 					Paralize	2	20	5				
 					Paralize	3	20	6				
-bone_dance	A	N	M	N	 				lesser_summoning#2			
+bone_dance	A	N	M	N	 							
 					Paralize	1	20	4				
 					Paralize	2	20	5				
 					Paralize	3	20	6				
