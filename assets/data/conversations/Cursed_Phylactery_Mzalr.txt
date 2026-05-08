@@ -1,0 +1,4 @@
+index	type	text	text_ES	Go To	conditions	actions
+1	Q	Перед вами алтарь с вырезанным именем [BLUE]Мзалра[]. Вся поверхность алтаря в засохшей крови.		2		
+2	A	Поставить филактерию с заключенной душой.		0	"PlayerHasItem#12051;VariableLower#mzalr,0"	"SetVariable#mzalr,1;LoseItem#12051;ItemHide#grate2;ItemWalkable#grate2"
+2	A	Отшатнуться от алтаря.		0		

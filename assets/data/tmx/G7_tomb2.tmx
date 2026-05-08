@@ -1,0 +1,2280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="80" height="70" tilewidth="64" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="386">
+ <properties>
+  <property name="maxlight" value="50"/>
+  <property name="music" value="something_near"/>
+  <property name="name" value="Irazur Tomb"/>
+  <property name="name_ES" value="Tumba Irazur"/>
+ </properties>
+ <tileset firstgid="1" source="spawns.tsx"/>
+ <tileset firstgid="9" source="town_objects.tsx"/>
+ <tileset firstgid="89" source="grassland.tsx"/>
+ <tileset firstgid="217" source="trees.tsx"/>
+ <tileset firstgid="233" source="natural_grounds.tsx"/>
+ <tileset firstgid="361" source="grounds_indoor.tsx"/>
+ <tileset firstgid="521" source="dungeon2.tsx"/>
+ <tileset firstgid="761" source="town_objexts2.tsx"/>
+ <tileset firstgid="825" source="ruins.tsx"/>
+ <layer id="1" name="water" width="80" height="70">
+  <data encoding="base64" compression="zlib">
+   eJzt2EEOgjAQBVDT26gR7n87w8KIwII6olP7XtIVCRk+0zaZ0wkAAIB/dSm/ruCpppYsdU913BqsJUvdWeqYtJJflt5faim/LD03J7+YVvLLKlN+1/K65s5l/by1NTm6/4byuh6mfzeW9fPW1q84O2LkFyO/GPnFyC9GfjHyi/l0flnnEUc5Ir/e+ll+efSW3975wV695VczP9j7vt7y+8T3nsv3ZkmZRPOb5zZW9Om/qMlv6xyc7/8e1fbfsHGv9LRfl97Zv1lmvxn0dl8CAAAAAAAAAABAZnfJ2Sjg
+  </data>
+ </layer>
+ <layer id="2" name="ground" width="80" height="70">
+  <data encoding="base64" compression="zlib">
+   eJztnN2OqkgUhYU70RcABb0w5rz/WyD9At323E/OZJJ5hIGcWuFzd/GrNja6kopYbpBarF17V1GwWLwwZ+TBYnEqy1sw9ZncFstwsYjKsirLOvz6/VYogj9lbvxVushdu07QSFXn43Ms3+JubvwV4KswPFZ1lp832BWe0oQTrtOcQK7YR1lO38DZyXCsT/Gbw67A9hz1Rx1Z/lRO5tPaFeYY5Dk3/J1mxl/Vvso/8+BSKznanhtu6OMn7J+b/axG58gf/cxqh9pibCGHRVD3j3PzzT5QfCA/bfHizfBM+7b4MVcUhhf6m40r7P9U7pUvTo20bMu2LLH7TNznxtUlnrYOsR9jm2Cf1Ow3xvaeSMKawwRF55Z6zmOI/RhbcUF+xNEY23siNeewcUXn4uNviP0Y277662t7T0gHPBfqI27QX1/7MbZ99dfX9l6gJlTYHyYN5zHEfoxtH06G2N4L8qE2H9h2/M7vXcdRXZtdV0w4l7H8I+hne2/Y//Zdw6TH73GP4/ja6rPr8sn3kru/gn623w1pwxczXugG4+QLw6E+5aW/cWCu+8JwqP97+e84MNd9YTg2I+NvVtrvXNlMlDs8ApQPD+Wv2i8LL3PxZ4Ryl6Htj532Muiv+r5/Mh7F39D+LwV/O6dDXYfY1T8DxvpfFtZzceIshQafJZ5voR2Nwdkn2rmUxBSO6ROnu2fKhxLDk3iwcyebBu40/kuhuzHx6KdCvjfUfzknJW73Tn/7J8pneD9hCNKw7gM5N797Mv7Udw3tr8RZhtI09z9nqO8bqj/ez5AWvxOfwZ956c+g3ub3D1fOZvt84/v4mn8ZEy83zld3E/Dn4+fTwxe3xestMXb8OzXIjV0TwbWK2n6H/S3Be+k/CfRXri/hejm7rqlrHWcfVGtRfoX1+H/rfPDww/ijX9p1Or61nKyzx/mEPvXZhKPjruJr6fqu6vP4w/gb6r/i1XIj/hhz2vjj2oOl0+JPzDus/1o/JadFcMkT8e6OI91puwnrsJ73rMrK6TFyXGouZe/iSvSgvLK9dn2sXZPI+GH5U93f8OMu/jbOXxOjw8x97l3dOnzcdXtn8EG92fWx9FsfN9IffbiNvxX6uz20pjGwcrp1WNs+IuRnlj+7jlO6bPJN+q447NKfxv6KxbHx4xjcPep9JenmDB/l2vQ8uMxrPgN//6d48Y5ibYij4yZ2MXjntMjnhY6upA+c1zDn6BN/m3ITjVkYR9r420Brv9AHqv/jvNThwfUnPfWJv7K3/DHvE4dt+YvmWzTHdEQ5GN3FD5wXcrzbJ/5yvsGXs5yxLRufDo/I+baIvYn7XDpulWc/6rj4DE7sM1B2HKL4Ic4tT+STOvXxJ+0pz9Pc0971fVtwmeF3jVVkm7o+M3X9gY4VIXarXnnmLqyfZ8hQpzHQ2h1bzztE+O899q2OeU3+Qi3+V5bfZfmnLP+68hs2Fspd1P4l2qjYHLv6LX7L3PmLn1349RlVHUvtXYLvNY6l35k/rbBPhH2Zh+qaROF1+QvzFBX2B8wJLRQ3NIdwAB/SmvSn+ghtlWbUDu5HHYnffXipP10LcbEE79IlNZvCjse5Jn9hYT9gt315IO9VLB2H0lqGenGm803RVvqy6jWHT25pv8I+0vIqvNRbhG1xqO8VF0sc+5r85d3wxzrGER9/ypEVc3XPdos2JGEdfysdTgX73CxxTf5i+0HGEF4XXx6jsRrve2RhnetJkzGu9VSwz8oS1+Qv9NWP4KvPMrex0JhjBf5WTn+KudJlFE6bv9i5O+Ka/IX72nGv1aZFBI1Rg+JK+Yt4nnIdEJ/3bJt35zPHfcD+zt5fIr8+/UWOG+XMaxT1d7vwcpwyFeiLbc9fX/v+CWq2CxpXcI7l6DhTbF7j9ynn/xg72tp2LX+M3V04hPU6H+ULmjPVXFYKDa4m5o/xtAlj3t9h39tg3wPS9H+aE9iGdQ6ruQTl1BorND1L+F1g/mHvTdoxmy9Gdx27MMdXH5q38Kfxh8ZGyn93rl/Ufbk18sKpQL9iPmLfaZF7eLXvCLHvo7H3hDnm0//6oPtCGqPJR5m7SIvHcNr5e9tW3z1Jm/eR15Oxsxqmr9JWvPrAORXOFygGcx2lxk9TgT5Fv7L9nOXD914fq1ertcLUNfWl8k2tO2C+/GjwvbfnVu95arouTfm6IG1tobGp48QUsJr0jVl8YGzVuheNNZ4Jdo6BvlvcSONzho3pNrbP7V1ctwa1x7g8Jhd/oR3/A24cQOM=
+  </data>
+ </layer>
+ <layer id="3" name="ground2" width="80" height="70">
+  <data encoding="base64" compression="zlib">
+   eJzt2+sKgjAYBmDxbjreSteZHS8xJAc6hMzQ6XqeP4OI+Ph4t7mYRQH8q100TuE44W8v3T51ASu3bcZD9PmUec1RyOGhkMlvhaxtklYBAAAAAAAAAAAA0M/d0N+4l8xSub8M41zK93hvxmuZrpY1iZ8nbvo22jnqXfxOFP3qPj2b3oV5PGcOt5+/slhx7XOvezlkPPSwGrF32Ge6GWivgVPOqzXP2bZwHo33jqdcDdbO32Ng3zzndLXXsUpvRqnPHvYDcub/Z1LL4cyR0il1ASunf7/J5ewGAOTpBbmVFAA=
+  </data>
+ </layer>
+ <layer id="4" name="objects" width="80" height="70">
+  <data encoding="base64" compression="zlib">
+   eJztXFmOEzEQjXouwzd/SZgAEyYTCYZFAokMGRIC5A78IH5ZbgBIcw1WCU5Gl+JSCk95qV7GTqeeVEridrurXly2y0v3eoouY1L0estSTorUmjQLsGtkbKOfo4Zt7ZuybnaMv8PSnmvm+1vLtnGx5XdeyiuL36VJm0fwjfzd7SB/0uu/yrTfJv06SR8qf5fwQmDvmNTLs1IGRI46zN8bj00hfqXoIn8+LAT2gv/eKuWeR57uGX+S+udr/7oK5a8ejkubbxi5zdi/r/xNzNjMJRwvoXtwLDgqZOVL8z63ZGk+YXzZLy7r3Qaq+KXknrbynpffvzryDxPwd1Fsx7sX5NmcHpJ72sp77uEnBX+S67nUPxeUv3Be33jzqviDOOoo8JwB6QtQQve0lZeL8zgMHf2eIg4x9UKhUCgUCsV+A2L5UyJdW3tsGw8tvro0P3UVsPkbaz0UweYPMSY+rVAoFAqFQqHYAuIf3IeE+y/PyLw27JtbmbQlmcPW8ekGdK3DNRbloHHSBgvlrxZS1b+JaRdwfwSute1au9AUfxPDwdx8hvaxwxrfp1I+l/KF5Nu1et2U/87M7w+RXAB/H5nru8bfs4r62nZye5Cr8If7oFakLq8y9uuqew1sbrg19xB/hx59YO/Ou2K7hyfXetlU+wf17+TAn4cC2o1BQJ/YslKiKf64PTWh+tcP6BNbVkrQ+ANjD1/8sXLEH1X8l8Ou8Uf1nRzweSAdfRPzNNH+hfSJLSslYvqPKcNr3f4Xx8+wPnG/2KxXQP1eM+k5x9tgN8dPCHhuz55XsO12jaNflmk/a7S3uUBydseG7YPfBb4H/P0QPBvjG/y/1qZ9XpP2e0Q+10wa/s8rch3LxHYdz25imWtybW3lge+SPtcG+P63iPs5/mbF//uzQ6ijZ13Y4zKKBzX0irWJO48s5a+Onm2CO88Ti1ibuPOM4L9/Bc9GPR8X/rN/bQjl6E6xPQsFUmeveCz3Lv7+CJ4NZ7jg3GSKs5G0nbfbIuDP59+x5frA8TcT8pCy//XxF9v/chzH3ttl/rizjbaPczIt6tU/HI/Y40Vcw8pp/Ozjj0L6/o5ji1MX/1OmPBf3rvSU7xSR8lf1/D/eH+Nrr4X8pXwnQY78ufp9VzyZkr9Fi/zRNXfaZmG85Gq3pPMvudQ/nOewz+VBWpX3n4TGj67/C3Ti4o/c+YvBmOHXJaGzci7+cP7l1KGrfY45R/7sWOhRCzr6+OPmXzDOyOmdLC7+bNueMHpLYsOYZ1CdOP/NcZ7UHqf5xmVShOIIH38cuvbuuBCgb3/vsdnFX45+mgKhvinXefdc4IojEMqfH662tck2VrHBP8Mi3AA=
+  </data>
+ </layer>
+ <layer id="5" name="roofs" width="80" height="70">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAAAAAAAAAAAAD8GVeAAAE=
+  </data>
+ </layer>
+ <objectgroup id="6" name="data">
+  <object id="2" name="entry from farmlands" type="entry" gid="1" x="2463" y="1694" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="3" name="spikes trap" type="trap" gid="5" x="2240" y="1664" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="9"/>
+    <property name="minlevel" value="7"/>
+    <property name="spawn_chance" value="100"/>
+   </properties>
+  </object>
+  <object id="4" name="spikes trap" type="trap" gid="5" x="2240" y="1696" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="9"/>
+    <property name="minlevel" value="7"/>
+    <property name="spawn_chance" value="100"/>
+   </properties>
+  </object>
+  <object id="5" name="spikes trap" type="trap" gid="5" x="2336" y="1312" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="10"/>
+    <property name="minlevel" value="9"/>
+   </properties>
+  </object>
+  <object id="6" name="spikes trap" type="trap" gid="5" x="2368" y="1312" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="10"/>
+    <property name="minlevel" value="9"/>
+   </properties>
+  </object>
+  <object id="7" name="spikes trap" type="trap" gid="5" x="2400" y="1312" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="10"/>
+    <property name="minlevel" value="9"/>
+   </properties>
+  </object>
+  <object id="8" name="spikes trap" type="trap" gid="5" x="2432" y="1312" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="10"/>
+    <property name="minlevel" value="9"/>
+   </properties>
+  </object>
+  <object id="9" name="spikes trap" type="trap" gid="5" x="2272" y="2080" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="10"/>
+    <property name="minlevel" value="9"/>
+   </properties>
+  </object>
+  <object id="10" name="spikes trap" type="trap" gid="5" x="2304" y="2080" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="10"/>
+    <property name="minlevel" value="9"/>
+   </properties>
+  </object>
+  <object id="11" name="spikes trap" type="trap" gid="5" x="2304" y="2112" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="10"/>
+    <property name="minlevel" value="9"/>
+   </properties>
+  </object>
+  <object id="12" name="spikes trap" type="trap" gid="5" x="2304" y="2144" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="10"/>
+    <property name="minlevel" value="9"/>
+   </properties>
+  </object>
+  <object id="13" name="spikes trap" type="trap" gid="5" x="2272" y="2144" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="10"/>
+    <property name="minlevel" value="9"/>
+   </properties>
+  </object>
+  <object id="14" name="spikes trap" type="trap" gid="5" x="1591" y="1642" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="15" name="Secret Door" type="secretdoor" gid="5" x="288" y="1248" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="10"/>
+    <property name="secretdoor_tag" value="G7_tomb_1"/>
+   </properties>
+  </object>
+  <object id="16" name="Secret Door" type="secretdoor" gid="5" x="736" y="160" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="24"/>
+    <property name="minlevel" value="24"/>
+    <property name="secretdoor_tag" value="G7_tomb_3"/>
+   </properties>
+  </object>
+  <object id="17" name="Inori spawn" type="spawn" gid="3" x="219" y="1663" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="18" name="Inori spawn" type="spawn" gid="3" x="305" y="1604" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="19" name="Inori spawn" type="spawn" gid="3" x="412" y="1884" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="20" name="Inori spawn" type="spawn" gid="3" x="417" y="1935" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="21" name="Inori spawn" type="spawn" gid="3" x="342" y="1698" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="22" name="Inori spawn" type="spawn" gid="3" x="357" y="1403" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="23" name="Inori spawn" type="spawn" gid="3" x="418" y="1411" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="24" name="Inori spawn" type="spawn" gid="3" x="201" y="1367" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="25" name="Inori spawn" type="spawn" gid="3" x="166" y="1869" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="26" name="Inori spawn" type="spawn" gid="3" x="224" y="1939" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="27" name="spikes trap" type="trap" gid="5" x="278" y="1077" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="28" name="spikes trap" type="trap" gid="5" x="294" y="994" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="29" name="spikes trap" type="trap" gid="5" x="284" y="815" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="30" name="Inori spawn" type="spawn" gid="3" x="248" y="1352" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="31" name="mummy" type="spawn" gid="3" x="281" y="957" width="64" height="64">
+   <properties>
+    <property name="spawn" value="ancient_mummy"/>
+   </properties>
+  </object>
+  <object id="32" name="mummy" type="spawn" gid="3" x="641" y="490" width="64" height="64">
+   <properties>
+    <property name="spawn" value="ancient_mummy"/>
+   </properties>
+  </object>
+  <object id="33" name="mummy" type="spawn" gid="3" x="1009" y="506" width="64" height="64">
+   <properties>
+    <property name="spawn" value="ancient_mummy"/>
+   </properties>
+  </object>
+  <object id="34" name="mummy" type="spawn" gid="3" x="1068" y="495" width="64" height="64">
+   <properties>
+    <property name="spawn" value="ancient_mummy"/>
+   </properties>
+  </object>
+  <object id="35" name="mummy" type="spawn" gid="3" x="1321" y="490" width="64" height="64">
+   <properties>
+    <property name="spawn" value="ancient_mummy"/>
+   </properties>
+  </object>
+  <object id="36" name="mummy" type="spawn" gid="3" x="1412" y="505" width="64" height="64">
+   <properties>
+    <property name="spawn" value="ancient_mummy"/>
+   </properties>
+  </object>
+  <object id="37" name="Inori spawn" type="spawn" gid="3" x="266" y="838" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="38" name="Secret Door" type="secretdoor" gid="5" x="1024" y="384" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="17"/>
+    <property name="minlevel" value="15"/>
+    <property name="secretdoor_tag" value="G7_tomb_2"/>
+   </properties>
+  </object>
+  <object id="39" name="spikes trap" type="trap" gid="5" x="1453" y="1632" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="40" name="spikes trap" type="trap" gid="5" x="1353" y="1629" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="41" name="spikes trap" type="trap" gid="5" x="1272" y="1645" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="42" name="spikes trap" type="trap" gid="5" x="1148" y="1628" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="43" name="spikes trap" type="trap" gid="5" x="1099" y="1640" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="44" name="spikes trap" type="trap" gid="5" x="940" y="1634" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="45" name="spikes trap" type="trap" gid="5" x="891" y="1646" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="46" name="spikes trap" type="trap" gid="5" x="801" y="1637" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="47" name="spikes trap" type="trap" gid="5" x="708" y="1638" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="48" name="spikes trap" type="trap" gid="5" x="629" y="1641" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="49" name="spikes trap" type="trap" gid="5" x="569" y="1620" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="50" name="spikes trap" type="trap" gid="5" x="1021" y="1640" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="51" name="spikes trap" type="trap" gid="5" x="224" y="1408" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="10"/>
+    <property name="minlevel" value="10"/>
+   </properties>
+  </object>
+  <object id="52" name="conversationTrigger" type="trigger" x="1845" y="1430" width="27" height="358">
+   <properties>
+    <property name="actions" value="SetVariable#TMP_trap2_G7,1;ItemActivate#grate1;ItemActivate#gas_trap;ItemDeactivate#grate2"/>
+    <property name="conditions" value="VariableLower#TMP_trap_G7,1"/>
+   </properties>
+  </object>
+  <object id="53" name="grate" type="mapitem" gid="5" x="1792" y="1504" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="54" name="grate" type="mapitem" gid="5" x="1792" y="1536" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="55" name="grate" type="mapitem" gid="5" x="1792" y="1472" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="56" name="grate" type="mapitem" gid="5" x="1792" y="1568" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="57" name="grate" type="mapitem" gid="5" x="1792" y="1632" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="58" name="grate" type="mapitem" gid="5" x="1792" y="1664" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="59" name="grate" type="mapitem" gid="5" x="1792" y="1600" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="60" name="grate" type="mapitem" gid="5" x="1792" y="1696" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="61" name="grate" type="mapitem" gid="5" x="1792" y="1728" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="62" name="grate" type="mapitem" gid="5" x="1792" y="1760" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="63" name="grate" type="mapitem" gid="5" x="2080" y="1696" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="64" name="grate" type="mapitem" gid="5" x="2080" y="1504" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="65" name="grate" type="mapitem" gid="5" x="2080" y="1632" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="66" name="grate" type="mapitem" gid="5" x="2080" y="1728" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="67" name="grate" type="mapitem" gid="5" x="2080" y="1664" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="68" name="grate" type="mapitem" gid="5" x="2080" y="1536" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="69" name="grate" type="mapitem" gid="5" x="2080" y="1760" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="70" name="grate" type="mapitem" gid="5" x="2080" y="1600" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="71" name="grate" type="mapitem" gid="5" x="2080" y="1472" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="72" name="grate" type="mapitem" gid="5" x="2080" y="1568" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="73" name="statue conv" type="conversation" gid="5" x="1728" y="1312" width="64" height="64">
+   <properties>
+    <property name="conditions" value="VariableEqual#TMP_trap2_G7,1;isItemActive#grate1"/>
+    <property name="conversation" value="G7_tomb_statue"/>
+    <property name="icon" value="statue2"/>
+    <property name="name" value="@STATUE"/>
+   </properties>
+  </object>
+  <object id="74" name="flames" type="mapeffect" gid="5" x="1920" y="1632" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="75" name="flames" type="mapeffect" gid="5" x="1952" y="1632" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="76" name="flames" type="mapeffect" gid="5" x="1984" y="1632" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="77" name="flames" type="mapeffect" gid="5" x="2016" y="1632" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="78" name="flames" type="mapeffect" gid="5" x="2048" y="1632" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="79" name="flames" type="mapeffect" gid="5" x="1888" y="1632" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="80" name="flames" type="mapeffect" gid="5" x="1856" y="1632" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="81" name="flames" type="mapeffect" gid="5" x="1824" y="1632" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="82" name="flames" type="mapeffect" gid="5" x="1952" y="1760" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="83" name="flames" type="mapeffect" gid="5" x="1984" y="1760" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="84" name="flames" type="mapeffect" gid="5" x="2048" y="1760" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="85" name="flames" type="mapeffect" gid="5" x="2016" y="1760" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="86" name="flames" type="mapeffect" gid="5" x="1824" y="1760" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="87" name="flames" type="mapeffect" gid="5" x="1856" y="1760" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="88" name="flames" type="mapeffect" gid="5" x="1920" y="1760" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="89" name="flames" type="mapeffect" gid="5" x="1888" y="1760" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="90" name="flames" type="mapeffect" gid="5" x="1952" y="1728" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="91" name="flames" type="mapeffect" gid="5" x="1984" y="1728" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="92" name="flames" type="mapeffect" gid="5" x="2048" y="1728" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="93" name="flames" type="mapeffect" gid="5" x="2016" y="1728" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="94" name="flames" type="mapeffect" gid="5" x="1824" y="1728" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="95" name="flames" type="mapeffect" gid="5" x="1856" y="1728" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="96" name="flames" type="mapeffect" gid="5" x="1920" y="1728" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="97" name="flames" type="mapeffect" gid="5" x="1888" y="1728" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="98" name="flames" type="mapeffect" gid="5" x="1984" y="1696" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="99" name="flames" type="mapeffect" gid="5" x="2016" y="1696" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="100" name="flames" type="mapeffect" gid="5" x="1952" y="1696" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="101" name="flames" type="mapeffect" gid="5" x="1920" y="1696" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="102" name="flames" type="mapeffect" gid="5" x="1856" y="1696" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="103" name="flames" type="mapeffect" gid="5" x="2048" y="1696" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="104" name="flames" type="mapeffect" gid="5" x="1824" y="1696" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="105" name="flames" type="mapeffect" gid="5" x="1888" y="1696" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="106" name="flames" type="mapeffect" gid="5" x="1984" y="1664" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="107" name="flames" type="mapeffect" gid="5" x="2016" y="1664" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="108" name="flames" type="mapeffect" gid="5" x="1952" y="1664" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="109" name="flames" type="mapeffect" gid="5" x="1920" y="1664" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="110" name="flames" type="mapeffect" gid="5" x="1856" y="1664" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="111" name="flames" type="mapeffect" gid="5" x="2048" y="1664" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="112" name="flames" type="mapeffect" gid="5" x="1824" y="1664" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="113" name="flames" type="mapeffect" gid="5" x="1888" y="1664" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="114" name="flames" type="mapeffect" gid="5" x="1984" y="1600" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="115" name="flames" type="mapeffect" gid="5" x="2016" y="1600" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="116" name="flames" type="mapeffect" gid="5" x="1952" y="1600" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="117" name="flames" type="mapeffect" gid="5" x="1920" y="1600" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="118" name="flames" type="mapeffect" gid="5" x="1856" y="1600" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="119" name="flames" type="mapeffect" gid="5" x="2048" y="1600" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="120" name="flames" type="mapeffect" gid="5" x="1824" y="1600" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="121" name="flames" type="mapeffect" gid="5" x="1888" y="1600" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="122" name="flames" type="mapeffect" gid="5" x="1984" y="1568" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="123" name="flames" type="mapeffect" gid="5" x="2016" y="1568" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="124" name="flames" type="mapeffect" gid="5" x="1952" y="1568" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="125" name="flames" type="mapeffect" gid="5" x="1920" y="1568" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="126" name="flames" type="mapeffect" gid="5" x="1856" y="1568" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="127" name="flames" type="mapeffect" gid="5" x="2048" y="1568" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="128" name="flames" type="mapeffect" gid="5" x="1824" y="1568" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="129" name="flames" type="mapeffect" gid="5" x="1888" y="1568" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="130" name="flames" type="mapeffect" gid="5" x="1984" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="131" name="flames" type="mapeffect" gid="5" x="2016" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="132" name="flames" type="mapeffect" gid="5" x="1952" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="133" name="flames" type="mapeffect" gid="5" x="1920" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="134" name="flames" type="mapeffect" gid="5" x="1856" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="135" name="flames" type="mapeffect" gid="5" x="2048" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="136" name="flames" type="mapeffect" gid="5" x="1824" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="137" name="flames" type="mapeffect" gid="5" x="1888" y="1536" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="138" name="flames" type="mapeffect" gid="5" x="1984" y="1504" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="139" name="flames" type="mapeffect" gid="5" x="1952" y="1504" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="140" name="flames" type="mapeffect" gid="5" x="1920" y="1504" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="141" name="flames" type="mapeffect" gid="5" x="1856" y="1504" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="142" name="flames" type="mapeffect" gid="5" x="2048" y="1504" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="143" name="flames" type="mapeffect" gid="5" x="1824" y="1504" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="144" name="flames" type="mapeffect" gid="5" x="1888" y="1504" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="145" name="flames" type="mapeffect" gid="5" x="1984" y="1472" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="146" name="flames" type="mapeffect" gid="5" x="1952" y="1472" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="147" name="flames" type="mapeffect" gid="5" x="1920" y="1472" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="148" name="flames" type="mapeffect" gid="5" x="1856" y="1472" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="149" name="flames" type="mapeffect" gid="5" x="1888" y="1472" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="150" name="spikes trap" type="trap" gid="5" x="2372" y="1397" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="9"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="70"/>
+   </properties>
+  </object>
+  <object id="151" name="spikes trap" type="trap" gid="5" x="2359" y="1436" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="9"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="70"/>
+   </properties>
+  </object>
+  <object id="152" name="spikes trap" type="trap" gid="5" x="2384" y="1996" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="9"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="70"/>
+   </properties>
+  </object>
+  <object id="153" name="spikes trap" type="trap" gid="5" x="2371" y="2035" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="9"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="70"/>
+   </properties>
+  </object>
+  <object id="154" name="Inori spawn" type="spawn" gid="3" x="2373" y="2118" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="155" name="Inori spawn" type="spawn" gid="3" x="2370" y="1350" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="156" name="warrior" type="spawn" gid="3" x="1453" y="563" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="157" name="warrior" type="spawn" gid="3" x="1080" y="557" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="158" name="champion" type="spawn" gid="3" x="219" y="2071" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_champion"/>
+   </properties>
+  </object>
+  <object id="160" name="warrior" type="spawn" gid="3" x="941" y="211" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="161" name="evoker" type="spawn" gid="3" x="820" y="164" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_evoker"/>
+   </properties>
+  </object>
+  <object id="162" name="evoker" type="spawn" gid="3" x="961" y="175" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_evoker"/>
+   </properties>
+  </object>
+  <object id="163" name="evoker" type="spawn" gid="3" x="873" y="181" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_evoker"/>
+   </properties>
+  </object>
+  <object id="164" name="lich" type="spawn" gid="3" x="517" y="161" width="64" height="64">
+   <properties>
+    <property name="spawn" value="lich_G7"/>
+    <property name="unique_tag" value="lich_G7"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="166" name="champion" type="spawn" gid="3" x="549" y="197" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_champion"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="170" name="Chest" type="container" gid="5" x="151" y="1699" width="64" height="64">
+   <properties>
+    <property name="icon" value="sarcophagus"/>
+    <property name="loot_table" value="dungeon_chest_5"/>
+    <property name="name" value="@SARCOPHAGUS"/>
+   </properties>
+  </object>
+  <object id="171" name="Chest" type="container" gid="5" x="153" y="1575" width="64" height="64">
+   <properties>
+    <property name="icon" value="sarcophagus"/>
+    <property name="loot_table" value="dungeon_chest_5"/>
+    <property name="name" value="@SARCOPHAGUS"/>
+   </properties>
+  </object>
+  <object id="178" name="Librarian" type="spawn" gid="3" x="1776" y="494" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="179" name="Librarian" type="spawn" gid="3" x="1714" y="462" width="64" height="64">
+   <properties>
+    <property name="name" value="Librarian"/>
+    <property name="name_ES" value="Bibliotecario"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="180" name="Librarian" type="spawn" gid="3" x="1738" y="516" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="181" name="Librarian" type="spawn" gid="3" x="1771" y="453" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="182" name="Librarian" type="spawn" gid="3" x="1696" y="483" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="183" name="Librarian" type="spawn" gid="3" x="1761" y="416" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="185" name="mummy" type="spawn" gid="3" x="293" y="492" width="64" height="64">
+   <properties>
+    <property name="spawn" value="ancient_mummy"/>
+   </properties>
+  </object>
+  <object id="187" name="warrior" type="spawn" gid="3" x="251" y="555" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="188" name="warrior" type="spawn" gid="3" x="335" y="556" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="190" name="champion" type="spawn" gid="3" x="537" y="241" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_champion"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="191" name="flames" type="mapeffect" gid="5" x="1856" y="1792" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="192" name="flames" type="mapeffect" gid="5" x="1856" y="1824" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="193" name="flames" type="mapeffect" gid="5" x="1856" y="1856" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="194" name="flames" type="mapeffect" gid="5" x="1856" y="1888" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="195" name="flames" type="mapeffect" gid="5" x="1856" y="1920" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="196" name="flames" type="mapeffect" gid="5" x="1856" y="1952" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="197" name="flames" type="mapeffect" gid="5" x="1856" y="1984" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="198" name="flames" type="mapeffect" gid="5" x="1536" y="1728" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="199" name="flames" type="mapeffect" gid="5" x="1568" y="1728" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="200" name="flames" type="mapeffect" gid="5" x="1536" y="1760" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="201" name="flames" type="mapeffect" gid="5" x="1568" y="1760" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="202" name="flames" type="mapeffect" gid="5" x="1536" y="1792" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="203" name="flames" type="mapeffect" gid="5" x="1568" y="1792" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="204" name="flames" type="mapeffect" gid="5" x="1568" y="1888" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="205" name="flames" type="mapeffect" gid="5" x="1568" y="1856" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="206" name="flames" type="mapeffect" gid="5" x="1568" y="1824" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="207" name="flames" type="mapeffect" gid="5" x="1536" y="1856" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="208" name="flames" type="mapeffect" gid="5" x="1536" y="1888" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="209" name="flames" type="mapeffect" gid="5" x="1536" y="1824" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="210" name="flames" type="mapeffect" gid="5" x="1568" y="1920" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="211" name="flames" type="mapeffect" gid="5" x="1536" y="1920" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="212" name="flames" type="mapeffect" gid="5" x="1664" y="1984" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="213" name="flames" type="mapeffect" gid="5" x="1696" y="1984" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="214" name="flames" type="mapeffect" gid="5" x="1728" y="1984" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="215" name="flames" type="mapeffect" gid="5" x="1760" y="1984" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="216" name="flames" type="mapeffect" gid="5" x="1792" y="1984" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="217" name="flames" type="mapeffect" gid="5" x="1824" y="1984" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="218" name="flames" type="mapeffect" gid="5" x="1856" y="2016" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="219" name="flames" type="mapeffect" gid="5" x="1888" y="2016" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="220" name="grate" type="mapitem" gid="5" x="2240" y="1984" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="grate2"/>
+   </properties>
+  </object>
+  <object id="221" name="grate" type="mapitem" gid="5" x="2240" y="2016" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="grate2"/>
+   </properties>
+  </object>
+  <object id="222" name="grate" type="mapitem" gid="5" x="2240" y="2048" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="tag" value="grate2"/>
+   </properties>
+  </object>
+  <object id="223" name="mummy" type="spawn" gid="3" x="1554" y="2010" width="64" height="64">
+   <properties>
+    <property name="spawn" value="ancient_mummy"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="224" name="spikes trap" type="trap" gid="5" x="2080" y="2016" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="225" name="spikes trap" type="trap" gid="5" x="1568" y="1952" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="226" name="spikes trap" type="trap" gid="5" x="1536" y="1696" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="227" name="spikes trap" type="trap" gid="5" x="1568" y="1696" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="228" name="flames" type="mapeffect" gid="5" x="1920" y="2016" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="229" name="flames" type="mapeffect" gid="5" x="1952" y="2016" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="230" name="flames" type="mapeffect" gid="5" x="1984" y="2016" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="231" name="flames" type="mapeffect" gid="5" x="2016" y="2016" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="232" name="flames" type="mapeffect" gid="5" x="2048" y="2016" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="233" name="Event" type="spawn" gid="3" x="711" y="498" width="64" height="64">
+   <properties>
+    <property name="event_location" value="G7_tomb_1"/>
+    <property name="event_spawn" value="1"/>
+    <property name="spawn" value="ancient_mummy"/>
+   </properties>
+  </object>
+  <object id="237" name="Secret Door" type="secretdoor" gid="5" x="1984" y="1440" width="64" height="64">
+   <properties>
+    <property name="maxlevel" value="24"/>
+    <property name="minlevel" value="24"/>
+    <property name="secretdoor_tag" value="G7_tomb2_3"/>
+   </properties>
+  </object>
+  <object id="239" name="rune 101 I" type="mapitem" gid="5" x="1920" y="1184" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_B_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_B_i"/>
+    <property name="tag" value="rune101"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="240" name="lever5" type="mapitem" gid="5" x="1888" y="1216" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever100"/>
+    <property name="toggle_items" value="rune100"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="241" name="grate" type="mapitem" gid="5" x="1824" y="1312" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune100;Inactive#rune101;Inactive#rune102;Active#rune103;Active#rune104;Inactive#rune105"/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="grateA2"/>
+   </properties>
+  </object>
+  <object id="242" name="grate" type="mapitem" gid="5" x="1824" y="1344" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune100;Inactive#rune101;Inactive#rune102;Active#rune103;Active#rune104;Inactive#rune105"/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="grateA1"/>
+   </properties>
+  </object>
+  <object id="243" name="rune 102 I" type="mapitem" gid="5" x="1952" y="1184" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_C_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_C_i"/>
+    <property name="tag" value="rune102"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="244" name="rune 103 A" type="mapitem" gid="5" x="1984" y="1184" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_A_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_A_i"/>
+    <property name="tag" value="rune103"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="245" name="rune 104 A" type="mapitem" gid="5" x="2016" y="1184" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_A_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_A_i"/>
+    <property name="tag" value="rune104"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="246" name="rune 100 A" type="mapitem" gid="5" x="1888" y="1184" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_D_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_D_i"/>
+    <property name="tag" value="rune100"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="247" name="rune 105 I" type="mapitem" gid="5" x="2048" y="1184" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_B_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_B_i"/>
+    <property name="tag" value="rune105"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="249" name="lever5" type="mapitem" gid="5" x="1920" y="1216" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever101"/>
+    <property name="toggle_items" value="rune101"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="250" name="lever5" type="mapitem" gid="5" x="1952" y="1216" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever102"/>
+    <property name="toggle_items" value="rune102"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="251" name="lever5" type="mapitem" gid="5" x="1984" y="1216" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever103"/>
+    <property name="toggle_items" value="rune103"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="252" name="lever5" type="mapitem" gid="5" x="2016" y="1216" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever104"/>
+    <property name="toggle_items" value="rune104"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="253" name="lever5" type="mapitem" gid="5" x="2048" y="1216" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever105"/>
+    <property name="toggle_items" value="rune105"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="254" name="grate" type="mapitem" gid="5" x="1664" y="1984" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="grateA3"/>
+   </properties>
+  </object>
+  <object id="255" name="spikes trap" type="trap" gid="5" x="1984" y="1408" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="256" name="spikes trap" type="trap" gid="5" x="1888" y="1248" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="257" name="spikes trap" type="trap" gid="5" x="1952" y="1312" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="258" name="spikes trap" type="trap" gid="5" x="1984" y="1312" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="259" name="spikes trap" type="trap" gid="5" x="1984" y="1248" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="260" name="spikes trap" type="trap" gid="5" x="2048" y="1248" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="261" name="spikes trap" type="trap" gid="5" x="1856" y="1184" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="262" name="spikes trap" type="trap" gid="5" x="2080" y="1344" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="263" name="spikes trap" type="trap" gid="5" x="1888" y="1344" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="264" name="spikes trap" type="trap" gid="5" x="1792" y="1312" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="265" name="spikes trap" type="trap" gid="5" x="1760" y="1280" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="266" name="spikes trap" type="trap" gid="5" x="1888" y="1312" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="7"/>
+   </properties>
+  </object>
+  <object id="267" name="warrior" type="spawn" gid="3" x="1920" y="1280" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="268" name="warrior" type="spawn" gid="3" x="2016" y="1280" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="270" name="warrior" type="spawn" gid="3" x="2336" y="1728" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="271" name="warrior" type="spawn" gid="3" x="2336" y="1664" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="273" name="spikes trap" type="trap" gid="5" x="2368" y="1888" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="9"/>
+    <property name="minlevel" value="7"/>
+    <property name="spawn_chance" value="100"/>
+   </properties>
+  </object>
+  <object id="274" name="spikes trap" type="trap" gid="5" x="2400" y="1504" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="9"/>
+    <property name="minlevel" value="7"/>
+    <property name="spawn_chance" value="100"/>
+   </properties>
+  </object>
+  <object id="275" name="spikes trap" type="trap" gid="5" x="1696" y="1632" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="9"/>
+    <property name="minlevel" value="7"/>
+    <property name="random_range" value="2"/>
+    <property name="spawn_chance" value="70"/>
+   </properties>
+  </object>
+  <object id="307" name="warrior" type="spawn" gid="3" x="1216" y="1632" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="308" name="warrior" type="spawn" gid="3" x="1344" y="1632" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="309" name="warrior" type="spawn" gid="3" x="1088" y="1632" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="310" name="warrior" type="spawn" gid="3" x="928" y="1632" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="311" name="warrior" type="spawn" gid="3" x="768" y="1664" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="312" name="Inori spawn" type="spawn" gid="3" x="224" y="1600" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="313" name="Inori spawn" type="spawn" gid="3" x="448" y="1920" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="314" name="Inori spawn" type="spawn" gid="3" x="416" y="1440" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="315" name="Inori spawn" type="spawn" gid="3" x="256" y="2048" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="316" name="Inori spawn" type="spawn" gid="3" x="192" y="1856" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="317" name="warrior" type="spawn" gid="3" x="704" y="544" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="318" name="grate" type="mapitem" gid="5" x="256" y="736" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_l"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune1000;"/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="grateA2"/>
+   </properties>
+  </object>
+  <object id="319" name="grate" type="mapitem" gid="5" x="288" y="736" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_l"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune1000;"/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="grateA2"/>
+   </properties>
+  </object>
+  <object id="320" name="grate" type="mapitem" gid="5" x="320" y="736" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_l"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune1000;"/>
+    <property name="inactive_sprite" value=""/>
+    <property name="tag" value="grateA2"/>
+   </properties>
+  </object>
+  <object id="321" name="rune 100 A" type="mapitem" gid="5" x="960" y="992" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_D_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_D_i"/>
+    <property name="tag" value="rune1000"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="322" name="lever5" type="mapitem" gid="5" x="928" y="992" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever1000"/>
+    <property name="toggle_items" value="rune1000"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="323" name="mummy" type="spawn" gid="3" x="512" y="992" width="64" height="64">
+   <properties>
+    <property name="spawn" value="ancient_mummy"/>
+   </properties>
+  </object>
+  <object id="324" name="mummy" type="spawn" gid="3" x="800" y="1088" width="64" height="64">
+   <properties>
+    <property name="spawn" value="ancient_mummy"/>
+   </properties>
+  </object>
+  <object id="325" name="mummy" type="spawn" gid="3" x="800" y="864" width="64" height="64">
+   <properties>
+    <property name="spawn" value="ancient_mummy"/>
+   </properties>
+  </object>
+  <object id="326" name="mummy" type="spawn" gid="3" x="928" y="960" width="64" height="64">
+   <properties>
+    <property name="spawn" value="ancient_mummy"/>
+   </properties>
+  </object>
+  <object id="327" name="warrior" type="spawn" gid="3" x="576" y="960" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="328" name="warrior" type="spawn" gid="3" x="800" y="928" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="329" name="warrior" type="spawn" gid="3" x="736" y="1024" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="330" name="warrior" type="spawn" gid="3" x="896" y="1024" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="331" name="warrior" type="spawn" gid="3" x="736" y="1120" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="332" name="warrior" type="spawn" gid="3" x="320" y="1088" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="333" name="warrior" type="spawn" gid="3" x="256" y="1152" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_warrior"/>
+   </properties>
+  </object>
+  <object id="335" name="spikes trap" type="trap" gid="5" x="384" y="992" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="336" name="spikes trap" type="trap" gid="5" x="445.333" y="973.333" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="337" name="spikes trap" type="trap" gid="5" x="511" y="961" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="338" name="spikes trap" type="trap" gid="5" x="587.667" y="987" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="339" name="spikes trap" type="trap" gid="5" x="641.667" y="967.667" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="50"/>
+   </properties>
+  </object>
+  <object id="340" name="evoker" type="spawn" gid="3" x="2272" y="1664" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_evoker"/>
+   </properties>
+  </object>
+  <object id="341" name="evoker" type="spawn" gid="3" x="1952" y="1280" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_evoker"/>
+   </properties>
+  </object>
+  <object id="342" name="evoker" type="spawn" gid="3" x="1856" y="1248" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_evoker"/>
+   </properties>
+  </object>
+  <object id="343" name="evoker" type="spawn" gid="3" x="1088" y="1664" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_evoker"/>
+   </properties>
+  </object>
+  <object id="344" name="evoker" type="spawn" gid="3" x="320" y="1568" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_evoker"/>
+   </properties>
+  </object>
+  <object id="345" name="evoker" type="spawn" gid="3" x="320" y="1152" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_evoker"/>
+   </properties>
+  </object>
+  <object id="346" name="champion" type="spawn" gid="3" x="896" y="1056" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_champion"/>
+   </properties>
+  </object>
+  <object id="347" name="champion" type="spawn" gid="3" x="904.25" y="210.75" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_champion"/>
+   </properties>
+  </object>
+  <object id="348" name="spikes trap" type="trap" gid="5" x="1024" y="416" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="20"/>
+    <property name="minlevel" value="20"/>
+   </properties>
+  </object>
+  <object id="349" name="Librarian" type="spawn" gid="3" x="1104" y="558" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="350" name="Librarian" type="spawn" gid="3" x="1042" y="526" width="64" height="64">
+   <properties>
+    <property name="name" value="Librarian"/>
+    <property name="name_ES" value="Bibliotecario"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="351" name="Librarian" type="spawn" gid="3" x="992" y="544" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="352" name="Librarian" type="spawn" gid="3" x="1099" y="517" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="353" name="Librarian" type="spawn" gid="3" x="1024" y="547" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="354" name="Librarian" type="spawn" gid="3" x="1089" y="480" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="355" name="Librarian" type="spawn" gid="3" x="752" y="558" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="356" name="Librarian" type="spawn" gid="3" x="690" y="526" width="64" height="64">
+   <properties>
+    <property name="name" value="Librarian"/>
+    <property name="name_ES" value="Bibliotecario"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="357" name="Librarian" type="spawn" gid="3" x="640.333" y="564.333" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="358" name="Librarian" type="spawn" gid="3" x="747" y="517" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="359" name="Librarian" type="spawn" gid="3" x="672" y="547" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="360" name="Librarian" type="spawn" gid="3" x="737" y="480" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="361" name="Librarian" type="spawn" gid="3" x="256" y="512" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="362" name="Librarian" type="spawn" gid="3" x="274" y="558" width="64" height="64">
+   <properties>
+    <property name="name" value="Librarian"/>
+    <property name="name_ES" value="Bibliotecario"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="363" name="Librarian" type="spawn" gid="3" x="298" y="612" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="364" name="Librarian" type="spawn" gid="3" x="331" y="549" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="365" name="Librarian" type="spawn" gid="3" x="256" y="579" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="366" name="Librarian" type="spawn" gid="3" x="321" y="512" width="64" height="64">
+   <properties>
+    <property name="name" value="@LIBRARIAN"/>
+    <property name="spawn" value="wraith"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="367" name="flames" type="mapeffect" gid="5" x="256" y="768" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="368" name="flames" type="mapeffect" gid="5" x="288" y="768" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="369" name="flames" type="mapeffect" gid="5" x="320" y="768" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="370" name="flames" type="mapeffect" gid="5" x="320" y="768" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="371" name="flames" type="mapeffect" gid="5" x="288" y="736" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="372" name="flames" type="mapeffect" gid="5" x="256" y="736" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+  <object id="385" name="flames" type="mapeffect" gid="5" x="320" y="736" width="64" height="64">
+   <properties>
+    <property name="id" value="gas"/>
+    <property name="inactive" value=""/>
+    <property name="tag" value="gas_trap"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

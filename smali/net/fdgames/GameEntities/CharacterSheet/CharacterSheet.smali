@@ -1594,7 +1594,7 @@
 
     move-result v2
 
-    mul-int/lit8 v2, v2, 0xa
+    mul-int/lit8 v2, v2, 0x8
 
     add-int/2addr v0, v2
 

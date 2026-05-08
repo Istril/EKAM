@@ -65,14 +65,14 @@
 
     move-result v0
 
+# Фактическое начало
     packed-switch v0, :pswitch_data_0
-
     :cond_0
     :goto_0
     :pswitch_0
     return-void
 
-    :pswitch_1
+    :pswitch_1 #SpiritWeapon
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -105,7 +105,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2
+    :pswitch_2 #DeathWeapon
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -138,7 +138,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3
+    :pswitch_3 #ShockWeapon
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -171,7 +171,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4
+    :pswitch_4 #ColdWeapon
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -204,7 +204,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5
+    :pswitch_5 #FireWeapon
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;

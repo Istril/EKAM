@@ -166,3 +166,6 @@ E7_church_tomb					Church		Подземелье храма
 J5_Meltorra1					Meltorra		Мельторра					
 J11_path_to_dragon_nest					ptdn		Тропа к драконьему гнезду					
 J11_dragon_nest					dn		Драконье гнездо					
+G7_tomb2					Irazur Tomb	Tumba Irazur	Склеп Иразура	Tumba Irazur	Irazur-Gruft	Grobowiec Irazura	Irazurova hrobka	Irazur Türbesi 	Tomba Irazur
+H10_reward_room					reward_room		Сокровищница					
+H10_Cursed_altar					reward_room		???					

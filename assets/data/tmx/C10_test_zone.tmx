@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="56">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="58">
  <properties>
   <property name="music" value="dark_chamber"/>
   <property name="name" value="Sagar Enclave"/>
@@ -1249,7 +1249,22 @@
   <object id="55" name="crate" type="container" gid="249" x="1056" y="1216" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
-    <property name="items" value="12036,12037,12038,12039,12040,12041,12042,12043,12044,12045"/>
+    <property name="items" value="12036,12037,12038,12039,12040,12041,12042,12043,12044,12045,12046"/>
+    <property name="name" value="@CHEST"/>
+    <property name="tag" value="C10_test_crate"/>
+   </properties>
+  </object>
+  <object id="56" name="Xidar" type="spawn" gid="247" x="1024" y="864" width="64" height="64">
+   <properties>
+    <property name="faction" value="beasts"/>
+    <property name="spawn" value="xidar"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="57" name="crate" type="container" gid="249" x="640" y="1344" width="64" height="64">
+   <properties>
+    <property name="icon" value="chest_small1"/>
+    <property name="items" value="12050,12049,12051,12052"/>
     <property name="name" value="@CHEST"/>
     <property name="tag" value="C10_test_crate"/>
    </properties>

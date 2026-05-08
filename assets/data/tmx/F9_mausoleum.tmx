@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="isometric" width="88" height="80" tilewidth="64" tileheight="32">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="88" height="80" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="286">
  <properties>
   <property name="maxlight" value="30"/>
   <property name="music" value="dark_chamber"/>
@@ -12,7 +12,7 @@
  <tileset firstgid="489" source="town_objects.tsx"/>
  <tileset firstgid="569" source="grounds_indoor.tsx"/>
  <tileset firstgid="729" source="town_objexts2.tsx"/>
- <tileset firstgid="793" name="tomb" tilewidth="64" tileheight="128">
+ <tileset firstgid="793" name="tomb" tilewidth="64" tileheight="128" tilecount="40" columns="10">
   <image source="tomb.png" width="640" height="512"/>
   <tile id="0">
    <properties>
@@ -174,569 +174,578 @@
  </tileset>
  <tileset firstgid="833" source="grassland.tsx"/>
  <tileset firstgid="961" source="town_objects3.tsx"/>
- <layer name="nonwalk" width="88" height="80" visible="0">
+ <layer id="1" name="nonwalk" width="88" height="80" visible="0">
   <data encoding="base64" compression="zlib">
    eJztwYEAAAAAw6D5U1/hAFUBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwGG4AAAE=
   </data>
  </layer>
- <layer name="water" width="88" height="80">
+ <layer id="2" name="water" width="88" height="80">
   <data encoding="base64" compression="zlib">
    eJzt21tqwzAUQMGAV5VX97+sIEJJCwG7Sg5pmxm4/+aAQZbk3Q4AAAAAAACAd3FYXv0E/9voe9I4o29L35a+LX1b+rb0benb0vf5jsttBn2f77zcBgBgjT31lr4AAPxlX/cafzqsG98LHxpnnPG09G3p29K3pW9L35a+LX1b+rb0bek7b8tZpL7ztrTTd56+LX1b+rb0benb0/e19G3p29J33n75/r/avRn0nbP1bgNzvPstfVv6tvRtfK4N9L1aW0PNzqDv1SP3cH/j2usCATkvew==
   </data>
  </layer>
- <layer name="ground" width="88" height="80">
+ <layer id="3" name="ground" width="88" height="80">
   <data encoding="base64" compression="zlib">
    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
   </data>
  </layer>
- <layer name="ground2" width="88" height="80">
+ <layer id="4" name="ground2" width="88" height="80">
   <data encoding="base64" compression="zlib">
    eJzt3M1SgzAQwHEGT5SWevA98Or4tHrwzfTqKyhKZnZoNknpQiH5/2a8dFoLy7Lks1UFAABg67lOe71X3oc4LXZa7GGHvLURytXUPD563sf1iXPxTY3ViZj+WSO32po6voQDMQUAADPQhsCeDf04X58ZZfji2pvJsY/e3PGczgnfPY15O9azex53LkJtm+G50RLjoJLGnZc4148bP59Tfq75bHn6/a7OYC4mJ3PO+S3wuen94p5XJcYW9g6Gc0bvNv8mS9yvwKWh7fWZeG9814xDLKWPtOW2jNoKiXxYVknjFQCA7YqtMZ47x6O1I+as5UhpW5eyRmSpfgZzeety+cq6kNtpc1DT2rbXPjrW8/JQVa8z/6BjXAGAhnExAD70kZaX0zo+AABK5numMwZqa2ibPo4xdWP6bt+O2/cp269unoXrEHcWcZXzU5143cW8HWPeePbapvQftt7H8B2f1TGfxvWLR5G/Ps0kz+Wca+xY9pTvfW3z21uuBlw7N90p60m3nqPXspgTaJVr5Z59/WSPRiwP9xxjeW5W46laPLRaocVXXgPWGvwb6kLK/msfX9supzF0i9rQTepvSh3uZ9TrEsn7PjR2eG1bbM/111po/z819HaN6Lv5aM8yXx8DukOgpvry2OU8OR7mYirzVOazL+aybu+pT7ZFrC8EAMT8AKi1F8k=
   </data>
  </layer>
- <layer name="scenery" width="88" height="80">
+ <layer id="5" name="scenery" width="88" height="80">
   <data encoding="base64" compression="zlib">
    eJzt3N2OgjAQBlDTO37XN9l9/6fbNHGSUsEtEdRszrkhRuTicxhbKVwuAADHGFLbfl3jfgAcZ9Z7AQDeznwYAGCf75PGT9PGcXvjtUON8nwZWQMAfJ7WdVTwqcp5hnoGAID/46jrb3Gcn2rLuc66fgoAAAAAAFf/Qb/Fl9x3K9e2bd0L5jlL7co88z13+XkIW/nFvu5japPP7z7d1+l8y7lbWacp230ir8gzv44so46HqsZ5TtT03JDrmDxjpdXwoPf26fH78XmWtjLp0nI7Vb2jrFn1+7eu6gV1P+jS8rsYb3kbq7Ura7bMdy3DWba7rJ33WTl2K8dyem2baaUv1Of+YIzwtL76vYqxcDnPiB5sjgEAr/ULqNUGHw==
   </data>
  </layer>
- <layer name="objects" width="88" height="80">
+ <layer id="6" name="objects" width="88" height="80">
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
- <layer name="roofs" width="88" height="80">
+ <layer id="7" name="roofs" width="88" height="80">
   <data encoding="base64" compression="zlib">
    eJzt0MsNABAAREHhqBBH+m9KCzThm5kG3mZDAAAAAAAAAOAnJZ1eAHC/Gtc3+obGL9r8KvsLAAAAAAAAAAAAAAAAAAAAAAB4xAD15gGM
   </data>
  </layer>
- <objectgroup name="data" width="88" height="80">
-  <object name="exit to Grasslands" type="transition" x="2775" y="1346" width="48" height="101">
+ <objectgroup id="8" name="data">
+  <object id="1" name="exit to Grasslands" type="transition" x="2775" y="1346" width="48" height="101">
    <properties>
     <property name="area_id" value="F9"/>
     <property name="entry_id" value="1"/>
    </properties>
   </object>
-  <object type="entry" gid="481" x="2716" y="1383">
+  <object id="2" type="entry" gid="481" x="2716" y="1383" width="64" height="64">
    <properties>
     <property name="entry_id" value="1"/>
    </properties>
   </object>
-  <object name="Secret Door" type="secretdoor" gid="485" x="1152" y="2176">
+  <object id="3" name="Secret Door" type="secretdoor" gid="485" x="1152" y="2176" width="64" height="64">
    <properties>
     <property name="maxlevel" value="20"/>
     <property name="minlevel" value="17"/>
     <property name="secretdoor_tag" value="F9_mausoleum_1"/>
    </properties>
   </object>
-  <object name="Secret Door" type="secretdoor" gid="485" x="1056" y="544">
+  <object id="4" name="Secret Door" type="secretdoor" gid="485" x="1056" y="544" width="64" height="64">
    <properties>
     <property name="maxlevel" value="21"/>
     <property name="minlevel" value="21"/>
     <property name="secretdoor_tag" value="F9_mausoleum_2"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="356" y="883">
+  <object id="5" name="flames" type="mapeffect" gid="485" x="356" y="883" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="420" y="915">
+  <object id="6" name="flames" type="mapeffect" gid="485" x="420" y="915" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="388" y="947"/>
-  <object name="flames" type="mapeffect" gid="485" x="356" y="915">
+  <object id="7" name="Light" type="light" gid="485" x="388" y="947" width="64" height="64"/>
+  <object id="8" name="flames" type="mapeffect" gid="485" x="356" y="915" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="324" y="883">
+  <object id="9" name="flames" type="mapeffect" gid="485" x="324" y="883" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="357" y="898"/>
-  <object name="flames" type="mapeffect" gid="485" x="388" y="915">
+  <object id="10" name="Light" type="light" gid="485" x="357" y="898" width="64" height="64"/>
+  <object id="11" name="flames" type="mapeffect" gid="485" x="388" y="915" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="457" y="752">
+  <object id="12" name="flames" type="mapeffect" gid="485" x="457" y="752" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="501" y="970">
+  <object id="13" name="flames" type="mapeffect" gid="485" x="501" y="970" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="508" y="982"/>
-  <object name="flames" type="mapeffect" gid="485" x="457" y="783">
+  <object id="14" name="Light" type="light" gid="485" x="508" y="982" width="64" height="64"/>
+  <object id="15" name="flames" type="mapeffect" gid="485" x="457" y="783" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="425" y="752">
+  <object id="16" name="flames" type="mapeffect" gid="485" x="425" y="752" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="458" y="767"/>
-  <object name="flames" type="mapeffect" gid="485" x="489" y="784">
+  <object id="17" name="Light" type="light" gid="485" x="458" y="767" width="64" height="64"/>
+  <object id="18" name="flames" type="mapeffect" gid="485" x="489" y="784" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="435" y="632">
+  <object id="19" name="flames" type="mapeffect" gid="485" x="435" y="632" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="499" y="664">
+  <object id="20" name="flames" type="mapeffect" gid="485" x="499" y="664" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="467" y="696"/>
-  <object name="flames" type="mapeffect" gid="485" x="435" y="664">
+  <object id="21" name="Light" type="light" gid="485" x="467" y="696" width="64" height="64"/>
+  <object id="22" name="flames" type="mapeffect" gid="485" x="435" y="664" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="405" y="634">
+  <object id="23" name="flames" type="mapeffect" gid="485" x="405" y="634" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="435" y="646"/>
-  <object name="flames" type="mapeffect" gid="485" x="467" y="664">
+  <object id="24" name="Light" type="light" gid="485" x="435" y="646" width="64" height="64"/>
+  <object id="25" name="flames" type="mapeffect" gid="485" x="467" y="664" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="538" y="850"/>
-  <object name="flames" type="mapeffect" gid="485" x="547" y="842">
+  <object id="26" name="Light" type="light" gid="485" x="538" y="850" width="64" height="64"/>
+  <object id="27" name="flames" type="mapeffect" gid="485" x="547" y="842" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="569" y="867">
+  <object id="28" name="flames" type="mapeffect" gid="485" x="569" y="867" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="537" y="867">
+  <object id="29" name="flames" type="mapeffect" gid="485" x="537" y="867" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="440" y="518"/>
-  <object name="flames" type="mapeffect" gid="485" x="439" y="503">
+  <object id="30" name="Light" type="light" gid="485" x="440" y="518" width="64" height="64"/>
+  <object id="31" name="flames" type="mapeffect" gid="485" x="439" y="503" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="471" y="535">
+  <object id="32" name="flames" type="mapeffect" gid="485" x="471" y="535" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="449" y="537">
+  <object id="33" name="flames" type="mapeffect" gid="485" x="449" y="537" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="596" y="506">
+  <object id="34" name="flames" type="mapeffect" gid="485" x="596" y="506" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="532" y="506">
+  <object id="35" name="flames" type="mapeffect" gid="485" x="532" y="506" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="533" y="489"/>
-  <object name="flames" type="mapeffect" gid="485" x="532" y="474">
+  <object id="36" name="Light" type="light" gid="485" x="533" y="489" width="64" height="64"/>
+  <object id="37" name="flames" type="mapeffect" gid="485" x="532" y="474" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="564" y="506">
+  <object id="38" name="flames" type="mapeffect" gid="485" x="564" y="506" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="573" y="529"/>
-  <object name="flames" type="mapeffect" gid="485" x="500" y="474">
+  <object id="39" name="Light" type="light" gid="485" x="573" y="529" width="64" height="64"/>
+  <object id="40" name="flames" type="mapeffect" gid="485" x="500" y="474" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="704" y="233">
+  <object id="41" name="flames" type="mapeffect" gid="485" x="704" y="233" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="640" y="233">
+  <object id="42" name="flames" type="mapeffect" gid="485" x="640" y="233" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="641" y="216"/>
-  <object name="flames" type="mapeffect" gid="485" x="640" y="201">
+  <object id="43" name="Light" type="light" gid="485" x="641" y="216" width="64" height="64"/>
+  <object id="44" name="flames" type="mapeffect" gid="485" x="640" y="201" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="672" y="233">
+  <object id="45" name="flames" type="mapeffect" gid="485" x="672" y="233" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="608" y="201">
+  <object id="46" name="flames" type="mapeffect" gid="485" x="608" y="201" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="643" y="425">
+  <object id="47" name="flames" type="mapeffect" gid="485" x="643" y="425" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="509" y="313">
+  <object id="48" name="flames" type="mapeffect" gid="485" x="509" y="313" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="510" y="296"/>
-  <object name="flames" type="mapeffect" gid="485" x="509" y="281">
+  <object id="49" name="Light" type="light" gid="485" x="510" y="296" width="64" height="64"/>
+  <object id="50" name="flames" type="mapeffect" gid="485" x="509" y="281" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="541" y="313">
+  <object id="51" name="flames" type="mapeffect" gid="485" x="541" y="313" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="641" y="413"/>
-  <object name="flames" type="mapeffect" gid="485" x="477" y="281">
+  <object id="52" name="Light" type="light" gid="485" x="641" y="413" width="64" height="64"/>
+  <object id="53" name="flames" type="mapeffect" gid="485" x="477" y="281" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="501" y="1001">
+  <object id="54" name="flames" type="mapeffect" gid="485" x="501" y="1001" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="436" y="254">
+  <object id="55" name="flames" type="mapeffect" gid="485" x="436" y="254" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="372" y="254">
+  <object id="56" name="flames" type="mapeffect" gid="485" x="372" y="254" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="373" y="237"/>
-  <object name="flames" type="mapeffect" gid="485" x="372" y="222">
+  <object id="57" name="Light" type="light" gid="485" x="373" y="237" width="64" height="64"/>
+  <object id="58" name="flames" type="mapeffect" gid="485" x="372" y="222" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="404" y="254">
+  <object id="59" name="flames" type="mapeffect" gid="485" x="404" y="254" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="342" y="224">
+  <object id="60" name="flames" type="mapeffect" gid="485" x="342" y="224" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="397" y="368">
+  <object id="61" name="flames" type="mapeffect" gid="485" x="397" y="368" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="333" y="368">
+  <object id="62" name="flames" type="mapeffect" gid="485" x="333" y="368" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="334" y="351"/>
-  <object name="flames" type="mapeffect" gid="485" x="333" y="336">
+  <object id="63" name="Light" type="light" gid="485" x="334" y="351" width="64" height="64"/>
+  <object id="64" name="flames" type="mapeffect" gid="485" x="333" y="336" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="365" y="368">
+  <object id="65" name="flames" type="mapeffect" gid="485" x="365" y="368" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="303" y="338">
+  <object id="66" name="flames" type="mapeffect" gid="485" x="303" y="338" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="265" y="299">
+  <object id="67" name="flames" type="mapeffect" gid="485" x="265" y="299" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="201" y="299">
+  <object id="68" name="flames" type="mapeffect" gid="485" x="201" y="299" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="202" y="282"/>
-  <object name="flames" type="mapeffect" gid="485" x="201" y="267">
+  <object id="69" name="Light" type="light" gid="485" x="202" y="282" width="64" height="64"/>
+  <object id="70" name="flames" type="mapeffect" gid="485" x="201" y="267" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="233" y="299">
+  <object id="71" name="flames" type="mapeffect" gid="485" x="233" y="299" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="171" y="269">
+  <object id="72" name="flames" type="mapeffect" gid="485" x="171" y="269" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="book" type="conversation" gid="485" x="2006" y="1526">
+  <object id="73" name="book" type="conversation" gid="485" x="2006" y="1526" width="64" height="64">
    <properties>
     <property name="conversation" value="F9_mausoleum_book_traitors"/>
     <property name="icon" value="book"/>
     <property name="name" value="@BOOK"/>
    </properties>
   </object>
-  <object name="book" type="conversation" gid="485" x="2423" y="789">
+  <object id="74" name="book" type="conversation" gid="485" x="2423" y="789" width="64" height="64">
    <properties>
     <property name="conversation" value="F9_mausoleum_book_records"/>
     <property name="icon" value="book"/>
     <property name="name" value="@BOOK"/>
    </properties>
   </object>
-  <object name="book" type="conversation" gid="485" x="1521" y="1361">
+  <object id="75" name="book" type="conversation" gid="485" x="1521" y="1361" width="64" height="64">
    <properties>
     <property name="conversation" value="F9_mausoleum_book_fallen"/>
     <property name="icon" value="book"/>
     <property name="name" value="@BOOK"/>
    </properties>
   </object>
-  <object name="book" type="conversation" gid="485" x="570" y="1006">
+  <object id="76" name="book" type="conversation" gid="485" x="570" y="1006" width="64" height="64">
    <properties>
     <property name="conversation" value="F9_mausoleum_book_flaming"/>
     <property name="icon" value="book"/>
     <property name="name" value="@BOOK"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="495" y="935">
+  <object id="77" name="flames" type="mapeffect" gid="485" x="495" y="935" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="319" y="522">
+  <object id="78" name="flames" type="mapeffect" gid="485" x="319" y="522" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="183" y="390"/>
-  <object name="flames" type="mapeffect" gid="485" x="214" y="407">
+  <object id="79" name="Light" type="light" gid="485" x="183" y="390" width="64" height="64"/>
+  <object id="80" name="flames" type="mapeffect" gid="485" x="214" y="407" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="192" y="409">
+  <object id="81" name="flames" type="mapeffect" gid="485" x="192" y="409" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="182" y="375">
+  <object id="82" name="flames" type="mapeffect" gid="485" x="182" y="375" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="Light" type="light" gid="485" x="334" y="652"/>
-  <object name="flames" type="mapeffect" gid="485" x="365" y="669">
+  <object id="83" name="Light" type="light" gid="485" x="334" y="652" width="64" height="64"/>
+  <object id="84" name="flames" type="mapeffect" gid="485" x="365" y="669" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="343" y="671">
+  <object id="85" name="flames" type="mapeffect" gid="485" x="343" y="671" width="64" height="64">
    <properties>
     <property name="id" value="small_flames"/>
    </properties>
   </object>
-  <object name="flames" type="mapeffect" gid="485" x="333" y="637">
+  <object id="86" name="flames" type="mapeffect" gid="485" x="333" y="637" width="64" height="64">
    <properties>
     <property name="id" value="flames"/>
    </properties>
   </object>
-  <object name="niche" type="conversation" gid="485" x="426" y="1206">
+  <object id="87" name="niche" type="conversation" gid="485" x="426" y="1206" width="64" height="64">
    <properties>
     <property name="conversation" value="F9_mausoleum_niche"/>
     <property name="icon" value="tomb"/>
     <property name="name" value="@NICHE"/>
    </properties>
   </object>
-  <object name=" sign" type="conversation" gid="485" x="2459" y="1357">
+  <object id="88" name=" sign" type="conversation" gid="485" x="2459" y="1357" width="64" height="64">
    <properties>
     <property name="conversation" value="F9_mausoleum_sign"/>
     <property name="icon" value="notice"/>
     <property name="name" value="@NOTICE"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="1246" y="2202">
+  <object id="89" name="Chest" type="container" gid="485" x="1246" y="2202" width="64" height="64">
    <properties>
     <property name="icon" value="corpse1"/>
     <property name="loot_table" value="F9_traitor,F9_corpse_quest"/>
     <property name="name" value="@CORPSE"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="1374" y="2394">
+  <object id="90" name="Chest" type="container" gid="485" x="1374" y="2394" width="64" height="64">
    <properties>
     <property name="icon" value="corpse1"/>
     <property name="loot_table" value="F9_traitor"/>
     <property name="name" value="@CORPSE"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="1470" y="1976">
+  <object id="91" name="Chest" type="container" gid="485" x="1470" y="1976" width="64" height="64">
    <properties>
     <property name="icon" value="corpse1"/>
     <property name="loot_table" value="F9_traitor"/>
     <property name="name" value="@CORPSE"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2364" y="1161">
+  <object id="92" name="Skeletons" type="spawn" gid="483" x="2364" y="1161" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2491" y="883">
+  <object id="93" name="Skeletons" type="spawn" gid="483" x="2491" y="883" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2492" y="812">
+  <object id="94" name="Skeletons" type="spawn" gid="483" x="2492" y="812" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2259" y="799">
+  <object id="95" name="Skeletons" type="spawn" gid="483" x="2259" y="799" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2034" y="883">
+  <object id="96" name="Skeletons" type="spawn" gid="483" x="2034" y="883" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2155" y="999">
+  <object id="97" name="Skeletons" type="spawn" gid="483" x="2155" y="999" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2020" y="1148">
+  <object id="98" name="Skeletons" type="spawn" gid="483" x="2020" y="1148" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2001" y="1242">
+  <object id="99" name="Skeletons" type="spawn" gid="483" x="2001" y="1242" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1798" y="1005">
+  <object id="100" name="Skeletons" type="spawn" gid="483" x="1798" y="1005" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1809" y="911">
+  <object id="101" name="Skeletons" type="spawn" gid="483" x="1809" y="911" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2043" y="797">
+  <object id="102" name="Skeletons" type="spawn" gid="483" x="2043" y="797" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2141" y="702">
+  <object id="103" name="Skeletons" type="spawn" gid="483" x="2141" y="702" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="evoker" type="spawn" gid="483" x="2111" y="321">
+  <object id="104" name="evoker" type="spawn" gid="483" x="2111" y="321" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_evoker"/>
    </properties>
   </object>
-  <object name="evoker" type="spawn" gid="483" x="1758" y="593">
+  <object id="105" name="evoker" type="spawn" gid="483" x="1758" y="593" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_evoker"/>
    </properties>
   </object>
-  <object name="evoker" type="spawn" gid="483" x="1899" y="315">
+  <object id="106" name="evoker" type="spawn" gid="483" x="1899" y="315" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_evoker"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2008" y="459">
+  <object id="107" name="Skeletons" type="spawn" gid="483" x="2008" y="459" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1901" y="521">
+  <object id="108" name="Skeletons" type="spawn" gid="483" x="1901" y="521" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2079" y="431">
+  <object id="109" name="Skeletons" type="spawn" gid="483" x="2079" y="431" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2243" y="487">
+  <object id="110" name="Skeletons" type="spawn" gid="483" x="2243" y="487" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1783" y="405">
+  <object id="111" name="Skeletons" type="spawn" gid="483" x="1783" y="405" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2194" y="1416">
+  <object id="112" name="Skeletons" type="spawn" gid="483" x="2194" y="1416" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="2215" y="1386">
+  <object id="113" name="Skeletons" type="spawn" gid="483" x="2215" y="1386" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1916" y="1419">
+  <object id="114" name="Skeletons" type="spawn" gid="483" x="1916" y="1419" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1692" y="1389">
+  <object id="115" name="Skeletons" type="spawn" gid="483" x="1692" y="1389" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="2281" y="1403">
+  <object id="116" name="spikes trap" type="trap" gid="485" x="2272" y="1408" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="100"/>
+   </properties>
+  </object>
+  <object id="117" name="spikes trap" type="trap" gid="485" x="2082" y="1627" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -745,7 +754,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="2082" y="1627">
+  <object id="118" name="spikes trap" type="trap" gid="485" x="2003" y="1786" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -754,7 +763,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="2003" y="1786">
+  <object id="119" name="spikes trap" type="trap" gid="485" x="2084" y="1885" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -763,7 +772,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="2084" y="1885">
+  <object id="120" name="spikes trap" type="trap" gid="485" x="2039" y="2031" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -772,7 +781,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="2039" y="2031">
+  <object id="121" name="spikes trap" type="trap" gid="485" x="2032" y="2234" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -781,7 +790,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="2032" y="2234">
+  <object id="122" name="spikes trap" type="trap" gid="485" x="2077" y="2126" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -790,128 +799,119 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="2077" y="2126">
-   <properties>
-    <property name="id" value="spikes"/>
-    <property name="maxlevel" value="11"/>
-    <property name="minlevel" value="9"/>
-    <property name="random_range" value="4"/>
-    <property name="spawn_chance" value="50"/>
-   </properties>
-  </object>
-  <object name="Chest" type="container" gid="485" x="1212" y="2045">
+  <object id="123" name="Chest" type="container" gid="485" x="1212" y="2045" width="64" height="64">
    <properties>
     <property name="icon" value="corpse1"/>
     <property name="loot_table" value="F9_traitor"/>
     <property name="name" value="@CORPSE"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="1659" y="2010">
+  <object id="124" name="Chest" type="container" gid="485" x="1659" y="2010" width="64" height="64">
    <properties>
     <property name="icon" value="corpse1"/>
     <property name="loot_table" value="F9_traitor"/>
     <property name="name" value="@CORPSE"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1650" y="2422">
+  <object id="125" name="Skeletons" type="spawn" gid="483" x="1650" y="2422" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="respawn" value="60"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1721" y="2368">
+  <object id="126" name="Skeletons" type="spawn" gid="483" x="1721" y="2368" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="respawn" value="60"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1689" y="2265">
+  <object id="127" name="Skeletons" type="spawn" gid="483" x="1689" y="2265" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="respawn" value="60"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1663" y="2098">
+  <object id="128" name="Skeletons" type="spawn" gid="483" x="1663" y="2098" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="respawn" value="60"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1531" y="2096">
+  <object id="129" name="Skeletons" type="spawn" gid="483" x="1531" y="2096" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="respawn" value="45"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1515" y="2244">
+  <object id="130" name="Skeletons" type="spawn" gid="483" x="1515" y="2244" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="respawn" value="45"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1425" y="2084">
+  <object id="131" name="Skeletons" type="spawn" gid="483" x="1425" y="2084" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="respawn" value="60"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1739" y="2009">
+  <object id="132" name="Skeletons" type="spawn" gid="483" x="1739" y="2009" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="respawn" value="60"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1411" y="2272">
+  <object id="133" name="Skeletons" type="spawn" gid="483" x="1411" y="2272" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="respawn" value="45"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1288" y="2391">
+  <object id="134" name="Skeletons" type="spawn" gid="483" x="1288" y="2391" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="respawn" value="60"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1344" y="2103">
+  <object id="135" name="Skeletons" type="spawn" gid="483" x="1344" y="2103" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="respawn" value="60"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1289" y="1991">
+  <object id="136" name="Skeletons" type="spawn" gid="483" x="1289" y="1991" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="respawn" value="60"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1227" y="2146">
+  <object id="137" name="Skeletons" type="spawn" gid="483" x="1227" y="2146" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="respawn" value="60"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1227" y="2274">
+  <object id="138" name="Skeletons" type="spawn" gid="483" x="1227" y="2274" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="respawn" value="60"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="1013" y="2195">
+  <object id="139" name="spikes trap" type="trap" gid="485" x="1013" y="2195" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="18"/>
@@ -920,7 +920,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="902" y="2184">
+  <object id="140" name="spikes trap" type="trap" gid="485" x="902" y="2184" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="18"/>
@@ -929,7 +929,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="782" y="2156">
+  <object id="141" name="spikes trap" type="trap" gid="485" x="782" y="2156" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="18"/>
@@ -938,42 +938,42 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="2546" y="720">
+  <object id="142" name="Chest" type="container" gid="485" x="2546" y="720" width="64" height="64">
    <properties>
     <property name="icon" value="shelf"/>
-    <property name="items" value="6010,5010,5001,5001"/>
+    <property name="items" value="6010,5010,5001,5001,12038"/>
     <property name="name" value="@SHELF"/>
     <property name="unique_tag" value="F9_mausoleum_shelf"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="716" y="2260">
+  <object id="143" name="Skeletons" type="spawn" gid="483" x="704" y="2176" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="706" y="2086">
+  <object id="144" name="Skeletons" type="spawn" gid="483" x="706" y="2086" width="64" height="64">
    <properties>
     <property name="name" value="@TRAITOR"/>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Death Knight" type="spawn" gid="483" x="611" y="2217">
+  <object id="145" name="Death Knight" type="spawn" gid="483" x="611" y="2217" width="64" height="64">
    <properties>
     <property name="spawn" value="death_knight"/>
    </properties>
   </object>
-  <object name="Death Knight" type="spawn" gid="483" x="646" y="2129">
+  <object id="146" name="Death Knight" type="spawn" gid="483" x="646" y="2129" width="64" height="64">
    <properties>
     <property name="spawn" value="death_knight"/>
    </properties>
   </object>
-  <object name="Death Knight" type="spawn" gid="483" x="567" y="2141">
+  <object id="147" name="Death Knight" type="spawn" gid="483" x="567" y="2141" width="64" height="64">
    <properties>
     <property name="spawn" value="death_knight"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="1620" y="214">
+  <object id="148" name="Chest" type="container" gid="485" x="1620" y="214" width="64" height="64">
    <properties>
     <property name="icon" value="chest_big1"/>
     <property name="items" value="2609,3019,328"/>
@@ -981,21 +981,21 @@
     <property name="unique_tag" value="F9_mausoleum_chest1"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="1422" y="464">
+  <object id="149" name="Chest" type="container" gid="485" x="1422" y="464" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="loot_table" value="dungeon_chest_9"/>
     <property name="name" value="@CHEST"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="1716" y="980">
+  <object id="150" name="Chest" type="container" gid="485" x="1716" y="980" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="loot_table" value="dungeon_chest_9"/>
     <property name="name" value="@CHEST"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="534" y="2067">
+  <object id="151" name="Chest" type="container" gid="485" x="534" y="2067" width="64" height="64">
    <properties>
     <property name="icon" value="chest_big1"/>
     <property name="items" value="6005,6005,172,5025,459"/>
@@ -1003,7 +1003,7 @@
     <property name="unique_tag" value="F9_mausoleum_chest2"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="1048" y="150">
+  <object id="152" name="Chest" type="container" gid="485" x="1048" y="150" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="items" value="6008,6008,168"/>
@@ -1011,7 +1011,7 @@
     <property name="unique_tag" value="F9_mausoleum_chest3"/>
    </properties>
   </object>
-  <object name="grate" type="mapitem" gid="485" x="1632" y="1408">
+  <object id="153" name="grate" type="mapitem" gid="485" x="1632" y="1408" width="64" height="64">
    <properties>
     <property name="active" value=""/>
     <property name="active_sprite" value="grate_r"/>
@@ -1019,7 +1019,7 @@
     <property name="tag" value="grate"/>
    </properties>
   </object>
-  <object name="grate" type="mapitem" gid="485" x="1632" y="1440">
+  <object id="154" name="grate" type="mapitem" gid="485" x="1632" y="1440" width="64" height="64">
    <properties>
     <property name="active" value=""/>
     <property name="active_sprite" value="grate_r"/>
@@ -1027,7 +1027,7 @@
     <property name="tag" value="grate"/>
    </properties>
   </object>
-  <object name="lever" type="mapitem" gid="485" x="1440" y="512">
+  <object id="155" name="lever" type="mapitem" gid="485" x="1440" y="512" width="64" height="64">
    <properties>
     <property name="active_sprite" value="lever_on"/>
     <property name="inactive" value=""/>
@@ -1035,42 +1035,42 @@
     <property name="tag" value="lever"/>
    </properties>
   </object>
-  <object name="lever conv" type="conversation" gid="485" x="1421" y="509">
+  <object id="156" name="lever conv" type="conversation" gid="485" x="1421" y="509" width="64" height="64">
    <properties>
     <property name="conversation" value="E10_maze_lever"/>
     <property name="icon" value="lever"/>
     <property name="name" value="@LEVER"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="1468" y="518">
+  <object id="157" name="spikes trap" type="trap" gid="485" x="1468" y="518" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="20"/>
     <property name="minlevel" value="20"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="1059" y="597">
+  <object id="158" name="spikes trap" type="trap" gid="485" x="1059" y="597" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="18"/>
     <property name="minlevel" value="13"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="1058" y="191">
+  <object id="159" name="spikes trap" type="trap" gid="485" x="1058" y="191" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="20"/>
     <property name="minlevel" value="20"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="539" y="2201">
+  <object id="160" name="Chest" type="container" gid="485" x="539" y="2201" width="64" height="64">
    <properties>
     <property name="icon" value="corpse1"/>
     <property name="loot_table" value="F9_traitor"/>
     <property name="name" value="@CORPSE"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="217" y="1402">
+  <object id="161" name="Chest" type="container" gid="485" x="217" y="1402" width="64" height="64">
    <properties>
     <property name="icon" value="chest_big1"/>
     <property name="items" value="5016,5013,5008"/>
@@ -1078,223 +1078,223 @@
     <property name="unique_tag" value="F9_mausoleum_chest4"/>
    </properties>
   </object>
-  <object name="Death Knight" type="spawn" gid="483" x="1470" y="558">
+  <object id="162" name="Death Knight" type="spawn" gid="483" x="1470" y="558" width="64" height="64">
    <properties>
     <property name="spawn" value="death_knight"/>
    </properties>
   </object>
-  <object name="Death Knight" type="spawn" gid="483" x="243" y="1492">
+  <object id="163" name="Death Knight" type="spawn" gid="483" x="243" y="1492" width="64" height="64">
    <properties>
     <property name="spawn" value="death_knight"/>
    </properties>
   </object>
-  <object name="Death Knight" type="spawn" gid="483" x="283" y="1415">
+  <object id="164" name="Death Knight" type="spawn" gid="483" x="283" y="1415" width="64" height="64">
    <properties>
     <property name="spawn" value="death_knight"/>
    </properties>
   </object>
-  <object name="Death Knight" type="spawn" gid="483" x="305" y="1492">
+  <object id="165" name="Death Knight" type="spawn" gid="483" x="305" y="1492" width="64" height="64">
    <properties>
     <property name="spawn" value="death_knight"/>
    </properties>
   </object>
-  <object name="Lich" type="spawn" gid="483" x="988" y="329">
+  <object id="166" name="Lich" type="spawn" gid="483" x="988" y="329" width="64" height="64">
    <properties>
     <property name="spawn" value="mausoleum_lich"/>
     <property name="unique_tag" value="F9_mausoleum_lich"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="981" y="694">
+  <object id="167" name="Chest" type="container" gid="485" x="981" y="694" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="loot_table" value="imperial_chest_15"/>
     <property name="name" value="@CHEST"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="437" y="1014">
+  <object id="168" name="Chest" type="container" gid="485" x="437" y="1014" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="loot_table" value="imperial_chest_15"/>
     <property name="name" value="@CHEST"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="246" y="214">
+  <object id="169" name="Chest" type="container" gid="485" x="246" y="214" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="loot_table" value="dragoon_chest_15"/>
     <property name="name" value="@CHEST"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1326" y="1279">
+  <object id="170" name="Skeletons" type="spawn" gid="483" x="1326" y="1279" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1330" y="1387">
+  <object id="171" name="Skeletons" type="spawn" gid="483" x="1330" y="1387" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1310" y="1460">
+  <object id="172" name="Skeletons" type="spawn" gid="483" x="1310" y="1460" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1308" y="1022">
+  <object id="173" name="Skeletons" type="spawn" gid="483" x="1308" y="1022" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1204" y="970">
+  <object id="174" name="Skeletons" type="spawn" gid="483" x="1204" y="970" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1038" y="966">
+  <object id="175" name="Skeletons" type="spawn" gid="483" x="1120" y="928" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="905" y="952">
+  <object id="176" name="Skeletons" type="spawn" gid="483" x="905" y="952" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1059" y="681">
+  <object id="177" name="Skeletons" type="spawn" gid="483" x="1059" y="681" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="909" y="1213">
+  <object id="178" name="Skeletons" type="spawn" gid="483" x="909" y="1213" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1031" y="1219">
+  <object id="179" name="Skeletons" type="spawn" gid="483" x="1031" y="1219" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="517" y="1220">
+  <object id="180" name="Skeletons" type="spawn" gid="483" x="517" y="1220" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="596" y="1159">
+  <object id="181" name="Skeletons" type="spawn" gid="483" x="596" y="1159" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="591" y="1100">
+  <object id="182" name="Skeletons" type="spawn" gid="483" x="591" y="1100" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="490" y="1542">
+  <object id="183" name="Skeletons" type="spawn" gid="483" x="490" y="1542" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="606" y="1510">
+  <object id="184" name="Skeletons" type="spawn" gid="483" x="606" y="1510" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="651" y="1428">
+  <object id="185" name="Skeletons" type="spawn" gid="483" x="651" y="1428" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="208" y="1491">
+  <object id="186" name="Chest" type="container" gid="485" x="208" y="1491" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="loot_table" value="imperial_chest_15"/>
     <property name="name" value="@CHEST"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1099" y="651">
+  <object id="187" name="Skeletons" type="spawn" gid="483" x="1099" y="651" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1050" y="360">
+  <object id="188" name="Skeletons" type="spawn" gid="483" x="1050" y="360" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Dragoon" type="spawn" gid="483" x="362" y="804">
+  <object id="189" name="Dragoon" type="spawn" gid="483" x="362" y="804" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_dragoon"/>
    </properties>
   </object>
-  <object name="Dragoon" type="spawn" gid="483" x="446" y="820">
+  <object id="190" name="Dragoon" type="spawn" gid="483" x="446" y="820" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_dragoon"/>
    </properties>
   </object>
-  <object name="Dragoon" type="spawn" gid="483" x="524" y="798">
+  <object id="191" name="Dragoon" type="spawn" gid="483" x="524" y="798" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_dragoon"/>
    </properties>
   </object>
-  <object name="Dragoon" type="spawn" gid="483" x="452" y="579">
+  <object id="192" name="Dragoon" type="spawn" gid="483" x="452" y="579" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_dragoon"/>
    </properties>
   </object>
-  <object name="Dragoon" type="spawn" gid="483" x="523" y="542">
+  <object id="193" name="Dragoon" type="spawn" gid="483" x="523" y="542" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_dragoon"/>
    </properties>
   </object>
-  <object name="Dragoon" type="spawn" gid="483" x="555" y="347">
+  <object id="194" name="Dragoon" type="spawn" gid="483" x="555" y="347" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_dragoon"/>
    </properties>
   </object>
-  <object name="Dragoon" type="spawn" gid="483" x="538" y="412">
+  <object id="195" name="Dragoon" type="spawn" gid="483" x="538" y="412" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_dragoon"/>
    </properties>
   </object>
-  <object name="Dragoon" type="spawn" gid="483" x="303" y="377">
+  <object id="196" name="Dragoon" type="spawn" gid="483" x="303" y="377" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_dragoon"/>
    </properties>
   </object>
-  <object name="Dragoon" type="spawn" gid="483" x="216" y="356">
+  <object id="197" name="Dragoon" type="spawn" gid="483" x="216" y="356" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_dragoon"/>
    </properties>
   </object>
-  <object name="Demon" type="spawn" gid="483" x="569" y="281">
+  <object id="198" name="Demon" type="spawn" gid="483" x="569" y="281" width="64" height="64">
    <properties>
     <property name="spawn" value="demon_fire"/>
    </properties>
   </object>
-  <object name="Demon" type="spawn" gid="483" x="602" y="250">
+  <object id="199" name="Demon" type="spawn" gid="483" x="602" y="250" width="64" height="64">
    <properties>
     <property name="spawn" value="demon_fire"/>
    </properties>
   </object>
-  <object name="Demon" type="spawn" gid="483" x="195" y="227">
+  <object id="200" name="Demon" type="spawn" gid="483" x="195" y="227" width="64" height="64">
    <properties>
     <property name="spawn" value="demon_fire"/>
    </properties>
   </object>
-  <object name="Demon" type="spawn" gid="483" x="169" y="394">
+  <object id="201" name="Demon" type="spawn" gid="483" x="169" y="394" width="64" height="64">
    <properties>
     <property name="spawn" value="demon_fire"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="564" y="180">
+  <object id="202" name="Chest" type="container" gid="485" x="564" y="180" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="loot_table" value="dragoon_chest_15"/>
     <property name="name" value="@CHEST"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="927" y="1164">
+  <object id="203" name="spikes trap" type="trap" gid="485" x="927" y="1164" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -1303,7 +1303,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="948" y="1230">
+  <object id="204" name="spikes trap" type="trap" gid="485" x="948" y="1230" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -1312,7 +1312,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="869" y="1241">
+  <object id="205" name="spikes trap" type="trap" gid="485" x="869" y="1241" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -1321,7 +1321,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="485" x="848" y="1176">
+  <object id="206" name="spikes trap" type="trap" gid="485" x="848" y="1176" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -1330,35 +1330,473 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="820" y="919">
+  <object id="207" name="Chest" type="container" gid="485" x="820" y="919" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="loot_table" value="imperial_chest_15"/>
     <property name="name" value="@CHEST"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="1087" y="1189">
+  <object id="208" name="Skeletons" type="spawn" gid="483" x="1087" y="1189" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="483" x="936" y="402">
+  <object id="209" name="Skeletons" type="spawn" gid="483" x="936" y="402" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="485" x="1942" y="1206">
+  <object id="210" name="Chest" type="container" gid="485" x="1942" y="1206" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="loot_table" value="dungeon_chest_9"/>
     <property name="name" value="@CHEST"/>
    </properties>
   </object>
-  <object name="Event" type="spawn" gid="483" x="1658" y="394" width="64" height="64">
+  <object id="211" name="Event" type="spawn" gid="483" x="1658" y="394" width="64" height="64">
    <properties>
     <property name="event_location" value="F9_mausoleum_1"/>
     <property name="event_spawn" value="1"/>
     <property name="spawn" value="death_knight"/>
+   </properties>
+  </object>
+  <object id="212" name="Death Knight" type="spawn" gid="483" x="1312" y="1312" width="64" height="64">
+   <properties>
+    <property name="spawn" value="death_knight"/>
+   </properties>
+  </object>
+  <object id="213" name="Death Knight" type="spawn" gid="483" x="1728" y="1408" width="64" height="64">
+   <properties>
+    <property name="spawn" value="death_knight"/>
+   </properties>
+  </object>
+  <object id="214" name="Death Knight" type="spawn" gid="483" x="2368" y="1216" width="64" height="64">
+   <properties>
+    <property name="spawn" value="death_knight"/>
+   </properties>
+  </object>
+  <object id="215" name="Death Knight" type="spawn" gid="483" x="2272" y="960" width="64" height="64">
+   <properties>
+    <property name="spawn" value="death_knight"/>
+   </properties>
+  </object>
+  <object id="217" name="Death Knight" type="spawn" gid="483" x="1504" y="512" width="64" height="64">
+   <properties>
+    <property name="spawn" value="death_knight"/>
+   </properties>
+  </object>
+  <object id="218" name="Death Knight" type="spawn" gid="483" x="1088" y="736" width="64" height="64">
+   <properties>
+    <property name="spawn" value="death_knight"/>
+   </properties>
+  </object>
+  <object id="219" name="Skeletons" type="spawn" gid="483" x="1088" y="320" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="220" name="Skeletons" type="spawn" gid="483" x="1152" y="384" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="221" name="Skeletons" type="spawn" gid="483" x="1056" y="448" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="222" name="Skeletons" type="spawn" gid="483" x="960" y="384" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="223" name="Skeletons" type="spawn" gid="483" x="960" y="480" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="224" name="Skeletons" type="spawn" gid="483" x="1088" y="416" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="225" name="Skeletons" type="spawn" gid="483" x="1216" y="384" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="226" name="Skeletons" type="spawn" gid="483" x="1984" y="800" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="227" name="Skeletons" type="spawn" gid="483" x="2112" y="768" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="228" name="Skeletons" type="spawn" gid="483" x="2304" y="896" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="229" name="Skeletons" type="spawn" gid="483" x="2016" y="992" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="230" name="Skeletons" type="spawn" gid="483" x="2432" y="1184" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="231" name="Skeletons" type="spawn" gid="483" x="2432" y="1248" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="232" name="Skeletons" type="spawn" gid="483" x="2304" y="1152" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="233" name="Skeletons" type="spawn" gid="483" x="2144" y="1408" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="234" name="Skeletons" type="spawn" gid="483" x="1920" y="1376" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="235" name="Skeletons" type="spawn" gid="483" x="1728" y="1376" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons2"/>
+   </properties>
+  </object>
+  <object id="236" name="spikes trap" type="trap" gid="485" x="2272" y="1376" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="100"/>
+   </properties>
+  </object>
+  <object id="237" name="spikes trap" type="trap" gid="485" x="2080" y="1408" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="100"/>
+   </properties>
+  </object>
+  <object id="238" name="spikes trap" type="trap" gid="485" x="2016" y="1408" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="100"/>
+   </properties>
+  </object>
+  <object id="239" name="spikes trap" type="trap" gid="485" x="2170" y="1414" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="100"/>
+   </properties>
+  </object>
+  <object id="240" name="spikes trap" type="trap" gid="485" x="1964" y="1382" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="100"/>
+   </properties>
+  </object>
+  <object id="241" name="spikes trap" type="trap" gid="485" x="1835" y="1429" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="100"/>
+   </properties>
+  </object>
+  <object id="242" name="spikes trap" type="trap" gid="485" x="1764" y="1380" width="64" height="64">
+   <properties>
+    <property name="id" value="spikes"/>
+    <property name="maxlevel" value="11"/>
+    <property name="minlevel" value="9"/>
+    <property name="random_range" value="4"/>
+    <property name="spawn_chance" value="100"/>
+   </properties>
+  </object>
+  <object id="243" name="grate" type="mapitem" gid="485" x="1568" y="1408" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune101;Active#rune102;Active#rune103;Active#rune100;Active#rune104"/>
+    <property name="nonwalk" value=""/>
+    <property name="tag" value="grate"/>
+   </properties>
+  </object>
+  <object id="244" name="grate" type="mapitem" gid="485" x="1568" y="1440" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune101;Active#rune102;Active#rune103;Active#rune100;Active#rune104"/>
+    <property name="nonwalk" value=""/>
+    <property name="tag" value="grate"/>
+   </properties>
+  </object>
+  <object id="245" name="rune 101" type="mapitem" gid="485" x="1952" y="1152" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_B_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_B_i"/>
+    <property name="tag" value="rune101"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="246" name="lever5" type="mapitem" gid="485" x="1984" y="1152" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever101"/>
+    <property name="toggle_items" value="rune101"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="247" name="rune 102" type="mapitem" gid="485" x="669.167" y="2239.5" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_B_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_B_i"/>
+    <property name="tag" value="rune102"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="248" name="lever5" type="mapitem" gid="485" x="704" y="2240" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever102"/>
+    <property name="toggle_items" value="rune102"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="249" name="rune 103" type="mapitem" gid="485" x="1728" y="896" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_B_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_B_i"/>
+    <property name="tag" value="rune103"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="250" name="lever5" type="mapitem" gid="485" x="1824" y="864" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever103"/>
+    <property name="toggle_items" value="rune103"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="251" name="rune 104" type="mapitem" gid="485" x="2048" y="704" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_B_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_B_i"/>
+    <property name="tag" value="rune104"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="252" name="lever5" type="mapitem" gid="485" x="2048" y="736" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever104"/>
+    <property name="toggle_items" value="rune104"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="253" name="grate" type="mapitem" gid="485" x="1088" y="864" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_l"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="Active#rune110"/>
+    <property name="nonwalk" value=""/>
+    <property name="tag" value="grate"/>
+   </properties>
+  </object>
+  <object id="257" name="rune 102" type="mapitem" gid="485" x="288" y="256" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="rune_B_a"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="rune_B_i"/>
+    <property name="tag" value="rune110"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="258" name="lever5" type="mapitem" gid="485" x="288" y="224" width="64" height="64">
+   <properties>
+    <property name="active_sprite" value="lever_on"/>
+    <property name="inactive" value=""/>
+    <property name="inactive_sprite" value="lever_off"/>
+    <property name="tag" value="lever110"/>
+    <property name="toggle_items" value="rune110"/>
+    <property name="walkable" value=""/>
+   </properties>
+  </object>
+  <object id="259" name="Skeletons" type="spawn" gid="483" x="1856" y="384" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="260" name="Skeletons" type="spawn" gid="483" x="1728" y="448" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="261" name="Skeletons" type="spawn" gid="483" x="2112" y="576" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="262" name="Skeletons" type="spawn" gid="483" x="2176" y="384" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="263" name="Skeletons" type="spawn" gid="483" x="2048" y="352" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="264" name="Skeletons" type="spawn" gid="483" x="2144" y="448" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="265" name="Skeletons" type="spawn" gid="483" x="1216" y="1024" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="266" name="Skeletons" type="spawn" gid="483" x="1039" y="946.333" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="267" name="Skeletons" type="spawn" gid="483" x="992" y="960" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="268" name="Skeletons" type="spawn" gid="483" x="1088" y="992" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="269" name="Skeletons" type="spawn" gid="483" x="1056" y="768" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="270" name="Skeletons" type="spawn" gid="483" x="960" y="992" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="271" name="Skeletons" type="spawn" gid="483" x="992" y="1152" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="272" name="Skeletons" type="spawn" gid="483" x="672" y="1088" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="273" name="Skeletons" type="spawn" gid="483" x="672" y="1216" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="274" name="Skeletons" type="spawn" gid="483" x="512" y="1088" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="275" name="Skeletons" type="spawn" gid="483" x="608" y="1248" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="276" name="Skeletons" type="spawn" gid="483" x="512" y="1152" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="277" name="Skeletons" type="spawn" gid="483" x="704" y="1152" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="278" name="Skeletons" type="spawn" gid="483" x="2080" y="1728" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="279" name="Skeletons" type="spawn" gid="483" x="2048" y="1600" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="280" name="Skeletons" type="spawn" gid="483" x="2080" y="1824" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="281" name="Skeletons" type="spawn" gid="483" x="2080" y="2016" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="282" name="Skeletons" type="spawn" gid="483" x="1952" y="2208" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="283" name="Skeletons" type="spawn" gid="483" x="2048" y="2144" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="284" name="Skeletons" type="spawn" gid="483" x="1888" y="2240" width="64" height="64">
+   <properties>
+    <property name="spawntable" value="skeletons"/>
+   </properties>
+  </object>
+  <object id="285" type="entry" gid="481" x="1056" y="2176" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="250"/>
    </properties>
   </object>
  </objectgroup>

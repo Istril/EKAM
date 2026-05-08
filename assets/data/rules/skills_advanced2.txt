@@ -72,3 +72,12 @@ lesser_undead	A	N	M	N
 					Paralize	1	10	10				
 					Paralize	2	20	20				
 					Paralize	1	30	30				
+spider_swarm	A	N	M	N	 							
+					Paralize	1	20	15				
+					Paralize	2	40	30				
+					Paralize	3	80	60				
+web_dimension	A	N	M	N	 							
+					Paralize	1	120	60				
+					Paralize	2	250	300				
+curseds	A	N	M	N	 							
+					Paralize	6	150	300				

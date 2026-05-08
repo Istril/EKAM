@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="isometric" renderorder="right-down" width="80" height="70" tilewidth="64" tileheight="32" nextobjectid="237">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="80" height="70" tilewidth="64" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="237">
  <properties>
   <property name="maxlight" value="50"/>
   <property name="music" value="something_near"/>
@@ -15,32 +15,32 @@
  <tileset firstgid="521" source="dungeon2.tsx"/>
  <tileset firstgid="761" source="town_objexts2.tsx"/>
  <tileset firstgid="825" source="ruins.tsx"/>
- <layer name="water" width="80" height="70">
+ <layer id="1" name="water" width="80" height="70">
   <data encoding="base64" compression="zlib">
    eJzt1EEKwkAMhtEyt1FR7387mYXY2lX5kSbyHmQ1m/A1dFkAAAD4V9dx9gYfR3apsvfc495wlyp7V9lj6tKvyu1/69Svys2t6Zfp0q+qSv1uYztrl7F/7zbTr+/vMbbzNr/dc+zfu81Z/Dsy+mX0y+iX0S+jX0a/jH4Z/TL6ZfTL6JfRL6NfRr+Mfhn9Mvpl9AMAAAAAAAAAAIA6Xu7mIL0=
   </data>
  </layer>
- <layer name="ground" width="80" height="70">
+ <layer id="2" name="ground" width="80" height="70">
   <data encoding="base64" compression="zlib">
    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
   </data>
  </layer>
- <layer name="ground2" width="80" height="70">
+ <layer id="3" name="ground2" width="80" height="70">
   <data encoding="base64" compression="zlib">
    eJzt2+FqwjAQAODi26jTV9lzWqfzEUVmIGYdFl3NNX7fn0Ap5TiuSVNyXQe8q3UxTmE74bOj+6gdwAj94mfcL+rGMWR1HTfF9Snr9Vl9wDymOtx08WryGDBfuVRry6pR/O1rIH+74DkFAAAAAAAAAAAA/k+0s6FzE/lcMu8t6vlliC71xqRehaEz9/xWfk8c5O1hZU9H2RPFsEueTkWP2yvrcHX/lrDK2F8977VQ4ymH/QNrh3XmtgbyOXDK92rO72wu7UfLteOkrkbL6+97ZN5859zK57GI/dFzcNl7WA9omf/P1NbCnqOmz9oBzJz8PaeVvRsA0KYzdvoYDg==
   </data>
  </layer>
- <layer name="objects" width="80" height="70">
+ <layer id="4" name="objects" width="80" height="70">
   <data encoding="base64" compression="zlib">
    eJztXNtuEzEQjbY/wzNvbWmAlqbhUi6iSDRKabuU/AMviFcufwBI/AZXCb6MHdWjDu6M7cmuu+52jjTKxuvL+MTjy2ZmRyPDkDGpRqOjRnaqvjXpFtCvsesb/Rx33NdVV9fNgfG30fTnmrt+4/Vtqzrjd97IicfvkUubJ/CN/N3vmL+J0+GE6EOlJvrW5HtXY2MjUg93/1eT9tulXyfp6z3wB/p9DdS5s/L/9aSR6Up3dhDj71jRzhYZl7NG1ohsZuTv3op8H7jaYe53pQe0/zpQV4xfLXLwdzfAX249YvwcKtoB+73VyIOAPO+Yv+OI/Uq4KP404y80/+UC6DcpePyVzt92wpjPaQfQ/g0nt5k6S+cvF+i+iBOOl1gZ3AuOK1392rwvPDlyn7BnW63O650Dy9ilpkyuvAfN9Rch/3oP/MHahPtduk5xemjK5Mp7EOCnD/4090sZfxKMv3je0H7zoviDc9RmpJ01shagxMrkysud8zisC+ueIQ0p48JgMBgMBoPBYDAYDAaDwWAwGAwGg8FwHuADURP/CPyvbWi+26mYOA7m7jPmxw7/8X1s5FMjn0m+Ifn3aLDv+v0+kQvg7wNz/6ryx/kgL8Mf+kHVZCzXV8Cuuf/cY/xtMOno+wC+O2+JD8/QxyWMP9+HPNRn8CFZY9Il35Gh88f51MTG3yqTftn4g/kG4yAwJmJG/Grmbv6Zufu1y+vPR8vYL4fLxh/VV/IRn5D4Dszj98f4kzFlePX7o11/cf+828jD6tRvCcb3gknnxnspgH5z/MSAcXto1+gb5/db2ke/bNJ+KjgpdfxpYnd8+Db4XWF7wN8PRdt4vsHfa+Hm5wWZv8fkc8Gk4e9ck/tYJ87rGLuJdS7IvYWXB64ft+APbP9bQnmOv/1KF9PURs+24GL7EI9a6JXaJy4OU8tfGz1zgovnSUVqn54K9vtX0TbquVfp46DaCuXoTnUWCwXSxle8DffA3x9FeYwh6zo2MgV0nvfnIuAvZN+p9Wqxryzb5/ob4i91/eU4Ti27J8x/GpTKHxfb6Ns4J9Mqffxxcay4H/H3i/gOkZL2zyH+KLTv79j2OJX4nzL1SdxL6X2+U0TL37Jxz1g+xdZeKfnr+p0EGpTIn7TuS+fJPvk7zMgfzlczb87C85I0b2mfv5Qy/vA5hx+XB2nLvP8ktn+Ufi/pnTKl85eCLYZfSWKxchJ/+PxlV9DVj2MukT//LPQkg44h/rjnL9K7Kvo4dyAk/vy+PWP01pwNU9qgOnH2W+JzUn+fFtqXaRE7R4T44zC0d8fFAGv7u0CfJf5KtNM+EFubSn3uXgqkcwTC+AtDmlu7nGMNp/gHWQbcAA==
   </data>
  </layer>
- <layer name="roofs" width="80" height="70">
+ <layer id="5" name="roofs" width="80" height="70">
   <data encoding="base64" compression="zlib">
    eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAAAAAAAAAAAAD8GVeAAAE=
   </data>
  </layer>
- <objectgroup name="data">
+ <objectgroup id="6" name="data">
   <object id="1" name="exit to NG" type="transition" x="2517" y="1665" width="40" height="54">
    <properties>
     <property name="area_id" value="G7"/>
@@ -1330,7 +1330,7 @@
   <object id="184" name="Chest" type="container" gid="5" x="1708" y="375" width="64" height="64">
    <properties>
     <property name="icon" value="shelf"/>
-    <property name="items" value="5013,3017,5021,6008"/>
+    <property name="items" value="5013,3017,5021,6008, 12039"/>
     <property name="name" value="@SHELF"/>
     <property name="unique_tag" value="G7_tomb_shelf"/>
    </properties>

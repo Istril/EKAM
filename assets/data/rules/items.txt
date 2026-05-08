@@ -615,7 +615,7 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 4501	Crown of Galade	armor_head		2	0,0,0,0,0,0	0,0,0,2,0,0	[detection,2]	-1	crown1	25	0							SetVariable#lost_kingdom,20	VariableEqual#lost_kingdom,10					
 4502	Tiara of the Mentalist	armor_head		2	0,0,10,0,0,10		[detection,1]	4000	crown1	0	15												C,M	
 4503	Greater Tiara of the Heavens	armor_head		2	0,0,25,0,0,0	0,0,0,2,0,0	[detection,2]	9999	crown1	15	0													
-5000	Potion of Light Healing	POTION		0				10	potion_red	0	0									"GainHP#30"				1
+5000	Potion of Light Healing	POTION		0				10	potion_red	0	0									GainHP#30				1
 5001	Potion of Moderate Healing	POTION		0				250	potion_red2	0	0									GainHP#60				1
 5002	Potion of Lesser Shielding	POTION		0				100	potion_yellow	0	0									GainShield#6,12				1
 5003	Potion of Shielding	POTION		0				200	potion_yellow	0	0									GainShield#10,12				1
@@ -804,14 +804,22 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 12035	note_sum_1	general		0				5	letter1	0	0							SetVariable#notes,1						0
 12036	lesser_undead_skb_T1	SCROLL		0				1500	book1	0	0									"TrainSkill#lesser_undead;GainItem#12036"				0
 12037	spider_swarm_skb_T1	SCROLL		0				1500	book1	0	0									"TrainSkill#spider_swarm;GainItem#12037"				0
-12038	spiritualism_skb_T2	SCROLL		0				5000	book1	0	0									"TrainSkill#spiritualism;GainItem#12038"				0
-12039	flash_and_bones_skb_T1	SCROLL		0				1500	book1	0	0									"TrainSkill#flash_and_bones;GainItem#12039"				0
-12040	war_spirit_skb_T1	SCROLL		0				1500	book1	0	0									"TrainSkill#war_spirit;GainItem#12040"				0
-12041	spirit_protection_skb_T2	SCROLL		0				1500	book1	0	0									"TrainSkill#spirit_protection;GainItem#12041"				0
-12042	spirit_golem_skb_T3	SCROLL		0				1500	book1	0	0									"TrainSkill#spirit_golem;GainItem#12042"				0
-12043	eerie_laughter_skb_T2	SCROLL		0				1500	book1	0	0									"TrainSkill#eerie_laughter;GainItem#12043"				0
-12044	bone_dance_skb_T2	SCROLL		0				1500	book1	0	0									"TrainSkill#bone_dance;GainItem#12044"				0
-12045	reincornation_skb_T2	SCROLL		0				1500	book1	0	0									"TrainSkill#reincornation;GainItem#12045"				0
+12038	flash_and_bones_skb_T1	SCROLL		0				1500	book1	0	0									"TrainSkill#flash_and_bones;GainItem#12038"				0
+12039	war_spirit_skb_T1	SCROLL		0				1500	book1	0	0									"TrainSkill#war_spirit;GainItem#12040"				0
+12040	spiritualism_skb_T2	SCROLL		0				5000	book1	0	0									"TrainSkill#spiritualism;GainItem#12038"				0
+12041	spirit_protection_skb_T2	SCROLL		0				5000	book1	0	0									"TrainSkill#spirit_protection;GainItem#12041"				0
+12042	eerie_laughter_skb_T2	SCROLL		0				5000	book1	0	0									"TrainSkill#eerie_laughter;GainItem#12043"				0
+12043	bone_dance_skb_T2	SCROLL		0				5000	book1	0	0									"TrainSkill#bone_dance;GainItem#12044"				0
+12044	spirit_golem_skb_T3	SCROLL		0				10000	book1	0	0									"TrainSkill#spirit_golem;GainItem#12042"				0
+12045	reincornation_skb_T3	SCROLL		0				10000	book1	0	0									"TrainSkill#reincornation;GainItem#12045"				0
+12046	web_dimension_skb_T3	SCROLL		0				10000	book1	0	0									"TrainSkill#web_dimension;GainItem#12046"				0
+12047	web_dimension_skbl_T3_lock	general		0				2400	book5	0	0													0
+12048	return_E9	SCROLL		0				0	small_amethist	0	0									Travel#E9_cave,1,0				0
+12049	curseds_skb_T2	SCROLL		0				5000	book1	0	0									"TrainSkill#curseds;GainItem#12049"				0
+12050	curseds_skbl_T2_lock	scroll		0				4000	book5	0	0									"Travel#H10_Cursed_altar,1,0;GainItem#12050"				0
+12051	Phylactery Mzaalr	general		0				12500	phylactery	0	0													0
+12052	Phylactery Mikelia	general		0				15000	phylactery	0	0													0
+12053	return_G7	SCROLL		0				0	small_circon	0	0									Travel#G7_tomb,1,0				0
 13000	Landsknechta	WEAPON	landsknechta	0			[paralysis,1]	2800	landskhnaht	0	0						dagger							
 13001	Kassian robe	armor_chest		2	0,0,0,10,0,10			1500	robe_ark	6	7						tunic						M	
 13002	Rune mage gloves	armor_arms		2	0,0,0,10,0,5			2500	armor_blue_gloves	4	5												M	

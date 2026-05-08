@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="60" height="60" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="91">
+ <properties>
+  <property name="indoor" value=""/>
+  <property name="maxlight" value="50"/>
+  <property name="music" value="dark_chamber"/>
+  <property name="name" value="Tower of Tremadan"/>
+  <property name="name_ES" value="Torre de Tremadan"/>
+ </properties>
+ <tileset firstgid="1" source="dungeon.tsx"/>
+ <tileset firstgid="241" name="dungeon stairs" tilewidth="128" tileheight="128" tilecount="4" columns="4">
+  <image source="dungeon_stairs.png" width="512" height="128"/>
+  <tile id="0">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="245" source="spawns.tsx"/>
+ <tileset firstgid="253" source="cave.tsx"/>
+ <tileset firstgid="493" source="town_objects.tsx"/>
+ <tileset firstgid="573" source="gate_blue.tsx"/>
+ <tileset firstgid="577" source="grounds_indoor.tsx"/>
+ <tileset firstgid="737" source="teleporter.tsx"/>
+ <tileset firstgid="738" source="artifacts.tsx"/>
+ <tileset firstgid="742" source="town_objects3.tsx"/>
+ <tileset firstgid="774" source="town_objexts2.tsx"/>
+ <tileset firstgid="838" source="dungeon5.tsx"/>
+ <tileset firstgid="1078" source="dungeon2.tsx"/>
+ <layer id="1" name="nonwalk" width="60" height="60" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt0bEJAAAIBLHff2UbN7ATQZIJDi4BAAAAAOCrug5glb8AAAAAAAAAwKQBhxcB9w==
+  </data>
+ </layer>
+ <layer id="2" name="water" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer id="3" name="ground" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztll2OgzAMhM3PBSAtlAL3v2YzwqO47L7wgrLa+SSLrHFWTDxJYyaEEEIIIYQQQggh/it9jkeOIUfrwXGXo8kxel3yfPJ36TS/C3W1Qo3U1vuzCTnq4LMNtd0pj+dwq4Jr8Bvx/UuOzUp/2TOM1xyzHb1GJJ/T+pwx/N3equAasW/QR69SL7w6e/5tRefkdQ8ra8Z1625VcA3uyT3H045vfttPn69eO1nRyzzGg8/nXqgVehd+ZB+hefc8NLCPk5V1QO1m376PUStnP0I3z15o5Z7dvBa9x1osIRf9XXt/uXfxjdD3ssOjyC9WfDz6u8mDNdwHs49rP5/pZ/qV+3fyHHr4DO/wxDrw3OpD3Sv8r1qhl1crZzW9yR7zTMPaRG/Ty7sH9fe3KrhGvEvFO0O8b8T9zfOq+SXHNarZz7wnoFc8rzDm73C8Q1E7agYP5pKVs73m+6QQQgghhBBCCCGEEEIIIYQQf40PatgL6g==
+  </data>
+ </layer>
+ <layer id="4" name="ground2" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer id="5" name="scenery" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <layer id="6" name="objects" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzt1UEKwjAQAMC+y4PgodAHKKhfqPobD/7WChVCaQ7WJkQzA0uXFJZd0qRNAwAAAECttkO0Y7zzfbB2HuIYWY+tdVkn+MwpQc2S5+0i+Vo1S3MI8leflyCuC2vuvm0qoem8oT7IHxl6yWHu27uPz37m3a8L76va9nd6fm8La5Z8fmu7n/1/161ZmjZBbLJOAAAAAAAAAP/tCSC7GbA=
+  </data>
+ </layer>
+ <layer id="7" name="roofs" width="60" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20PBxQAAAAAAAAAAAAAAAAA8GY4QAAB
+  </data>
+ </layer>
+ <objectgroup id="8" name="data">
+  <object id="83" name="grate" type="mapitem" gid="249" x="736" y="672" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="VariableGreater#micellia,1;VariableGreater#mzalr,1"/>
+    <property name="nonwalk" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="84" name="grate" type="mapitem" gid="249" x="736" y="928" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="VariableGreater#micellia,1;VariableGreater#mzalr,1"/>
+    <property name="nonwalk" value=""/>
+    <property name="tag" value="grate1"/>
+   </properties>
+  </object>
+  <object id="85" name="lever conv" type="conversation" gid="249" x="943.25" y="813.75" width="64" height="64">
+   <properties>
+    <property name="conversation" value="Cursed_Phylactery_Mzalr"/>
+    <property name="icon" value="altar2"/>
+    <property name="name" value="Алтарь"/>
+   </properties>
+  </object>
+  <object id="86" name="lever conv" type="conversation" gid="249" x="943" y="748" width="64" height="64">
+   <properties>
+    <property name="conversation" value="Cursed_Phylactery_Mikellia"/>
+    <property name="icon" value="altar2"/>
+    <property name="name" value="Алтарь"/>
+   </properties>
+  </object>
+  <object id="87" name="lever conv" type="conversation" gid="249" x="800" y="800" width="64" height="64">
+   <properties>
+    <property name="conversation" value="Cursed_Phylacteria_spell"/>
+    <property name="icon" value="book"/>
+    <property name="name" value="Постамент для книги"/>
+   </properties>
+  </object>
+  <object id="88" name="return in F9_mausoleum" type="transition" x="1262.25" y="717.083" width="50.5" height="125.25">
+   <properties>
+    <property name="area_id" value="F9_mausoleum"/>
+    <property name="entry_id" value="250"/>
+   </properties>
+  </object>
+  <object id="89" type="entry" gid="245" x="1228.5" y="777.5" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="90" name="grate" type="mapitem" gid="249" x="736" y="800" width="64" height="64">
+   <properties>
+    <property name="active" value=""/>
+    <property name="active_sprite" value="grate_r"/>
+    <property name="barrier" value=""/>
+    <property name="conditions_deactivate" value="VariableGreater#micellia,1;VariableGreater#mzalr,1"/>
+    <property name="nonwalk" value=""/>
+    <property name="tag" value="grate2"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

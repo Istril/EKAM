@@ -1,0 +1,4 @@
+index	type	text	text_ES	Go To	conditions	actions
+1	Q	Перед вами алтарь с вырезанным именем [BLUE]Микеллиа[]. Воздух рядом с алтарём пропитан энергией смерти.		2		
+2	A	Поставить филактерию с заключенной душой.		0	"PlayerHasItem#12052;VariableLower#micellia,0"	"SetVariable#micellia,5;LoseItem#12052;ItemHide#grate1;ItemWalkable#grate1"
+2	A	Отшатнуться от алтаря.		0		

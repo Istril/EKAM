@@ -185,7 +185,9 @@ madman_sargos	A scarred vagabond	Vagabundo desfigurado	Изувеченный б
 druid_tyogos	Tyogos	Tyogos	Тийогос	Tyogos	Tyogos	Tyogos	Tyogos	Tyogos	Tyogos	
 bodyguard_surtag	Surtag	Surtag	Суртаг	Surtag	Surtag	Surtag	Surtag	Surtag	Surtag	
 xidar	Lady Xidar	Lady Xidar	Леди Зидар	Lady Xidar	Lady Xidar	Pani Xidar	Lady Xidar	Leydi Xidar	Lady Xidar	
+xidar2	Lady Xidar	Lady Xidar	Леди Зидар	Lady Xidar	Lady Xidar	Pani Xidar	Lady Xidar	Leydi Xidar	Lady Xidar	
 lich_G7	Araim Darkflames	Araim Llamaoscura	Араим Тёмнопламень	Araim Darkflames	Araim Dunkelflamme	Araim Czarny Płomień	Araim Darkflame	Araim Darkflame	Araim Lamaoscura	
+lich_G7_second	Araim Darkflames	Araim Llamaoscura	Араим Тёмнопламень	Araim Darkflames	Araim Dunkelflamme	Araim Czarny Płomień	Araim Darkflame	Araim Darkflame	Araim Lamaoscura	
 rogue_archer_8	Archer	Arquero	Стрелок	Arqueiro	Bogenschütze	Łucznik	Lučištník	Okçu	Arciere	
 rogue_melee_8	Rogue	Pícaro	Негодяй	Patife	Dieb	Łotrzyk	Darebák	Düzenbaz	Vagabondo	
 rodo	Rodo	Rodo	Родо	Rodo	Rodo	Rodo	Rodo	Rodo	Rodo	
@@ -462,9 +464,6 @@ small_golem3			Маленький голем из духов
 Acolyte			Аколит							
 bischop			Проповедник							
 arhibishop2			Тень Архиепископа							
-necro_egg			Некротическое вместилище							
-necro_egg2			яйцо							
-necro_egg3			яйцо							
 j11_Arsizza			Арсизза							
 j11_Arsizza_v2			Арсизза							
 j11_minidragon			Ледяной Драконид							
@@ -476,4 +475,11 @@ j11_great_ice_drake			Древний ледяной драконид
 j11_great_wyvern			Древняя виверна							
 zombie_summon			Поднятый зомби							
 skeleton_summon			Поднятый скелет							
+spider_lesser_summon			Низший паук							
+spider_lesser_summon2			Низший паук							
+bloodcrawler_summon			Кровожвал							
+spider_summon			Средний паук							
+range_spider_summon1			Песчаный паук						
+range_spider_summon2			Песчаный паук						
+range_spider_summon3			Песчаный паук						
 H10_tomb_undead_commander			Мертвый командор							

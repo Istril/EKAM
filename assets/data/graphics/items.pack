@@ -3296,6 +3296,20 @@ gorx_crown
   orig: 64, 64
   offset: 0, 0
   index: -1
+book5
+  rotate: false
+  xy: 397, 827
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+phylactery
+  rotate: false
+  xy: 463, 893
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
 egg_dragon
   rotate: false
   xy: 331, 299

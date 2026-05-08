@@ -2641,7 +2641,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_40
+    if-eqz v0, :cond_spider_swarm # новый скилл переход
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -2657,7 +2657,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_40
+    if-eqz v0, :cond_spider_swarm
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -2666,6 +2666,80 @@
     const-string v1, "lesser_undead"
 
     invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_spider_swarm
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "spider_swarm"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_web_dimension
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "spider_swarm"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_web_dimension
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "spider_swarm"
+
+    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_web_dimension
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "web_dimension"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_40
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "web_dimension"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_40
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "web_dimension"
+
+    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+#______________________________________________
+#-----Новый скилл,new skill, todo ToDo TODO !!!
+#______________________________________________
 
     :cond_40
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
@@ -3100,6 +3174,22 @@
     if-nez v1, :cond_3
 
     const-string v1, "lesser_undead"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    const-string v1, "spider_swarm"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    const-string v1, "web_dimension"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
