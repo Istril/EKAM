@@ -1497,28 +1497,28 @@
 
     if-ne v1, v4, :cond_8
 
-    const/16 v0, 0x5e
+    const/16 v0, 0x32
 
     :goto_0
     const/4 v3, 0x2
 
     if-ne v1, v3, :cond_0
 
-    const/16 v0, 0x10a
+    const/16 v0, 0x7D
 
     :cond_0
     const/4 v3, 0x3
 
     if-ne v1, v3, :cond_1
 
-    const/16 v0, 0x15a
+    const/16 v0, 0xAF
 
     :cond_1
     const/4 v3, 0x4
 
     if-ne v1, v3, :cond_2
 
-    const/16 v0, 0x20a
+    const/16 v0, 0xFA
 
     :cond_2
     const/4 v3, 0x5

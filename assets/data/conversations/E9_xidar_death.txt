@@ -9,6 +9,6 @@
 10	Q	Вам удаётся поймать собой все три кинжала.		20			
 11	Q	Вы бросаетесь на Ксидар не замечая два кинжала летящих на вас с двух сторон.		21			
 12	Q	Вам удалось заметить оставшиеся два ножа и парировать их. В следующий миг вас окутывает дымка и вас переносят в другое место.		22			
-20	A	[BLUE]Далее[].		0		Travel#E9_Xidar_second_fight,10,0	
-21	A	[BLUE]Далее[].		0		"LoseHPPoison#20;GainMana#-15;LoseHPPoison#20;GainMana#-15;Travel#E9_Xidar_second_fight,10,0"	
-22	A	[BLUE]Далее[].		0		"Travel#E9_Xidar_second_fight,10,0"	
+20	A	[BLUE]Далее[].		0		Travel#E9_Xidar_second_fight,1,0	
+21	A	[BLUE]Далее[].		0		"LoseHPPoison#20;GainMana#-15;LoseHPPoison#20;GainMana#-15;Travel#E9_Xidar_second_fight,1,0"	
+22	A	[BLUE]Далее[].		0		"Travel#E9_Xidar_second_fight,1,0"	

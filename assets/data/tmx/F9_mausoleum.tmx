@@ -631,17 +631,7 @@
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object id="95" name="Skeletons" type="spawn" gid="483" x="2259" y="799" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
   <object id="96" name="Skeletons" type="spawn" gid="483" x="2034" y="883" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
-  <object id="97" name="Skeletons" type="spawn" gid="483" x="2155" y="999" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
@@ -662,11 +652,6 @@
    </properties>
   </object>
   <object id="101" name="Skeletons" type="spawn" gid="483" x="1809" y="911" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
-  <object id="102" name="Skeletons" type="spawn" gid="483" x="2043" y="797" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
@@ -963,11 +948,6 @@
     <property name="spawn" value="death_knight"/>
    </properties>
   </object>
-  <object id="146" name="Death Knight" type="spawn" gid="483" x="646" y="2129" width="64" height="64">
-   <properties>
-    <property name="spawn" value="death_knight"/>
-   </properties>
-  </object>
   <object id="147" name="Death Knight" type="spawn" gid="483" x="567" y="2141" width="64" height="64">
    <properties>
     <property name="spawn" value="death_knight"/>
@@ -1125,11 +1105,6 @@
     <property name="name" value="@CHEST"/>
    </properties>
   </object>
-  <object id="170" name="Skeletons" type="spawn" gid="483" x="1326" y="1279" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
   <object id="171" name="Skeletons" type="spawn" gid="483" x="1330" y="1387" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
@@ -1150,16 +1125,6 @@
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object id="175" name="Skeletons" type="spawn" gid="483" x="1120" y="928" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons2"/>
-   </properties>
-  </object>
-  <object id="176" name="Skeletons" type="spawn" gid="483" x="905" y="952" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons2"/>
-   </properties>
-  </object>
   <object id="177" name="Skeletons" type="spawn" gid="483" x="1059" y="681" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
@@ -1171,21 +1136,6 @@
    </properties>
   </object>
   <object id="179" name="Skeletons" type="spawn" gid="483" x="1031" y="1219" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons2"/>
-   </properties>
-  </object>
-  <object id="180" name="Skeletons" type="spawn" gid="483" x="517" y="1220" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons2"/>
-   </properties>
-  </object>
-  <object id="181" name="Skeletons" type="spawn" gid="483" x="596" y="1159" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons2"/>
-   </properties>
-  </object>
-  <object id="182" name="Skeletons" type="spawn" gid="483" x="591" y="1100" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
@@ -1337,16 +1287,6 @@
     <property name="name" value="@CHEST"/>
    </properties>
   </object>
-  <object id="208" name="Skeletons" type="spawn" gid="483" x="1087" y="1189" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons2"/>
-   </properties>
-  </object>
-  <object id="209" name="Skeletons" type="spawn" gid="483" x="936" y="402" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons2"/>
-   </properties>
-  </object>
   <object id="210" name="Chest" type="container" gid="485" x="1942" y="1206" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
@@ -1371,12 +1311,7 @@
     <property name="spawn" value="death_knight"/>
    </properties>
   </object>
-  <object id="214" name="Death Knight" type="spawn" gid="483" x="2368" y="1216" width="64" height="64">
-   <properties>
-    <property name="spawn" value="death_knight"/>
-   </properties>
-  </object>
-  <object id="215" name="Death Knight" type="spawn" gid="483" x="2272" y="960" width="64" height="64">
+  <object id="214" name="Death Knight" type="spawn" gid="483" x="2176" y="800" width="64" height="64">
    <properties>
     <property name="spawn" value="death_knight"/>
    </properties>
@@ -1391,11 +1326,6 @@
     <property name="spawn" value="death_knight"/>
    </properties>
   </object>
-  <object id="219" name="Skeletons" type="spawn" gid="483" x="1088" y="320" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons2"/>
-   </properties>
-  </object>
   <object id="220" name="Skeletons" type="spawn" gid="483" x="1152" y="384" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
@@ -1406,17 +1336,7 @@
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object id="222" name="Skeletons" type="spawn" gid="483" x="960" y="384" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons2"/>
-   </properties>
-  </object>
   <object id="223" name="Skeletons" type="spawn" gid="483" x="960" y="480" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons2"/>
-   </properties>
-  </object>
-  <object id="224" name="Skeletons" type="spawn" gid="483" x="1088" y="416" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
@@ -1441,12 +1361,7 @@
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object id="229" name="Skeletons" type="spawn" gid="483" x="2016" y="992" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons2"/>
-   </properties>
-  </object>
-  <object id="230" name="Skeletons" type="spawn" gid="483" x="2432" y="1184" width="64" height="64">
+  <object id="229" name="Skeletons" type="spawn" gid="483" x="2080" y="960" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
@@ -1457,21 +1372,6 @@
    </properties>
   </object>
   <object id="232" name="Skeletons" type="spawn" gid="483" x="2304" y="1152" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons2"/>
-   </properties>
-  </object>
-  <object id="233" name="Skeletons" type="spawn" gid="483" x="2144" y="1408" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons2"/>
-   </properties>
-  </object>
-  <object id="234" name="Skeletons" type="spawn" gid="483" x="1920" y="1376" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons2"/>
-   </properties>
-  </object>
-  <object id="235" name="Skeletons" type="spawn" gid="483" x="1728" y="1376" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
@@ -1544,7 +1444,7 @@
     <property name="active" value=""/>
     <property name="active_sprite" value="grate_r"/>
     <property name="barrier" value=""/>
-    <property name="conditions_deactivate" value="Active#rune101;Active#rune102;Active#rune103;Active#rune100;Active#rune104"/>
+    <property name="conditions_deactivate" value="Active#rune101;Active#rune102;Active#rune103;Active#rune104"/>
     <property name="nonwalk" value=""/>
     <property name="tag" value="grate"/>
    </properties>
@@ -1554,7 +1454,7 @@
     <property name="active" value=""/>
     <property name="active_sprite" value="grate_r"/>
     <property name="barrier" value=""/>
-    <property name="conditions_deactivate" value="Active#rune101;Active#rune102;Active#rune103;Active#rune100;Active#rune104"/>
+    <property name="conditions_deactivate" value="Active#rune101;Active#rune102;Active#rune103;Active#rune104"/>
     <property name="nonwalk" value=""/>
     <property name="tag" value="grate"/>
    </properties>
@@ -1694,21 +1594,6 @@
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object id="265" name="Skeletons" type="spawn" gid="483" x="1216" y="1024" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
-  <object id="266" name="Skeletons" type="spawn" gid="483" x="1039" y="946.333" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
-  <object id="267" name="Skeletons" type="spawn" gid="483" x="992" y="960" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
   <object id="268" name="Skeletons" type="spawn" gid="483" x="1088" y="992" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
@@ -1724,22 +1609,7 @@
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object id="271" name="Skeletons" type="spawn" gid="483" x="992" y="1152" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
   <object id="272" name="Skeletons" type="spawn" gid="483" x="672" y="1088" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
-  <object id="273" name="Skeletons" type="spawn" gid="483" x="672" y="1216" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
-  <object id="274" name="Skeletons" type="spawn" gid="483" x="512" y="1088" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
@@ -1759,27 +1629,12 @@
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object id="278" name="Skeletons" type="spawn" gid="483" x="2080" y="1728" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
   <object id="279" name="Skeletons" type="spawn" gid="483" x="2048" y="1600" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
   <object id="280" name="Skeletons" type="spawn" gid="483" x="2080" y="1824" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
-  <object id="281" name="Skeletons" type="spawn" gid="483" x="2080" y="2016" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
-  <object id="282" name="Skeletons" type="spawn" gid="483" x="1952" y="2208" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>

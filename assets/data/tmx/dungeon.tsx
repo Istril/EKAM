@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset name="dungeon" tilewidth="64" tileheight="128">
+<tileset version="1.8" tiledversion="1.8.6" name="dungeon" tilewidth="64" tileheight="128" tilecount="240" columns="16">
  <image source="adt_tiled_dungeon.png" width="1024" height="1920"/>
  <tile id="48">
   <properties>
@@ -520,6 +520,16 @@
  <tile id="151">
   <properties>
    <property name="light" value="brazier"/>
+   <property name="obstacle" value=""/>
+  </properties>
+ </tile>
+ <tile id="152">
+  <properties>
+   <property name="obstacle" value=""/>
+  </properties>
+ </tile>
+ <tile id="153">
+  <properties>
    <property name="obstacle" value=""/>
   </properties>
  </tile>

@@ -1364,7 +1364,7 @@
     <property name="tag" value="azeran_ambush"/>
    </properties>
   </object>
-  <object id="92" type="transition" x="1960" y="24" width="80" height="144">
+  <object id="92" name="test zone" type="transition" x="1960" y="24" width="80" height="144">
    <properties>
     <property name="area_id" value="C10_test_zone"/>
     <property name="entry_id" value="1"/>

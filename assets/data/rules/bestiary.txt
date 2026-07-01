@@ -4,7 +4,7 @@ batrax_theurgist		cleric	7	12	ice_blast	1	-40,80,30,30,25,0	1		batrax_theurgist	
 worm		warrior	8	12	carrion_bite	3	20,20,-30,-40,150,80	1	[beast]	carrion	worm	0.75		patroller	beasts	M	0			insect	
 devourer		warrior	10	12	devourer_bite	5	50,50,-10,-40,150,80	1	[beast]	devourer	worm	1		patroller	beasts	M	0			insect	
 spider_lesser		warrior	2	8	toxic_bite	0	0,0,-30,0,0,0	1.3	[beast]	spider_lesser	spider	0.6		patroller	beasts	M	0			insect	
-bloodcrawler	weak	warrior	5	10	toxic_bite	0	0,0,-70,0,0,0	1.3	[beast]	spider_lesser	spider	0.5		patroller	beasts	M	0			insect	
+bloodcrawler	weak	warrior	5	7	toxic_bite	0	0,0,-70,0,0,0	1.3	[beast]	spider_lesser	spider	0.5		patroller	beasts	M	0			insect	
 spider		warrior	4	13	toxic_bite	2	0,0,-40,0,100,0	1.1	[beast]	spider	spider	1		patroller	beasts	M	0			insect	
 sand_spider	weak	rogue	5	13	acid_blast	0	0,0,-30,0,100,0	1.1	[beast]	spider	spider	0.8		patroller	beasts	M	0			insect	
 spider_monstruous		warrior	8	16	toxic_bite_monstruous	4	0,0,-60,-50,250,0	1	[beast]	spider	spider	1.25		patroller	beasts	M	0			insect	
@@ -95,10 +95,10 @@ antilion		warrior	4	12	iron_shortsword	3	0,0,0,0,-40,0	1.15	[beast][shield]		adt
 antilion_warrior		warrior	5	12	iron_longsword	4	0,0,0,0,-40,0	1.15	[beast][shield]	antillion_warrior	adt_antilion_warrior	1		patroller	enemy	M	0			insect	
 skeleton		warrior	2	10	iron_longsword	2	-80,40,0,300,150,0	0.9	[undead][shield]	skeleton	skeleton_weak	1		patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
 skeleton_warrior		warrior	6	12	ice_shortsword	4	-60,80,0,300,180,0	0.9	[undead][shield]	skeleton_warrior	adt_skeleton	1	bash#1	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
-skeleton_archer		rogue	6	12	frost_bow	2	-80,125,0,300,180,0	0.9	[undead]	skeleton_archer	skeleton_archer	1	archery#3	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
+skeleton_archer		rogue	6	10	frost_bow	2	-80,125,0,300,180,0	0.9	[undead]	skeleton_archer	skeleton_archer	1	archery#2	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
 skeleton_evoker		cleric	6	12	death_ray	1	-60,20,0,300,180,0	0.9	[undead]	skeleton_evoker	skeleton_mage	1	heal_wounds#3	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
-skeleton_champion	strong	warrior	10	14	sword_ice_2	6	-80,80,0,300,180,0	1	[undead][shield]	skeleton_champion	adt_skeleton	1	"duel#2;resilience#2"	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
-skeleton_hero	strong	warrior	13	16	sword_ice_3	6	-60,50,0,300,180,0	1	[undead][shield]	skeleton_hero	skeleton_knight	1	flurry#1,2	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
+skeleton_champion	strong	warrior	10	12	sword_ice_2	5	-80,80,0,300,180,0	1	[undead][shield]	skeleton_champion	adt_skeleton	1	"duel#2;resilience#1"	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
+skeleton_hero	strong	warrior	12	14	sword_ice_3	6	-60,50,0,300,180,0	1	[undead][shield]	skeleton_hero	skeleton_knight	1	flurry#1,2	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
 skeleton_dragoon	strong	cleric	13	17	axe_magma	4	300,-150,50,300,180,0	1	[undead][shield]	fire_imp	adt_skeleton_red	1	arbenos_might#3	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
 zombie		warrior	2	12	iron_dagger	2	-25,50,25,100,100,0	0.9	[undead]	zombie	adt_zombie	1		patroller	enemy	M	0			"zombie1;zombie2;zombie3"	
 desert_mummy		warrior	5	10	toxic_bite	4	"""-75,50,-25,100,200,0"""	0.9	[undead]	undead_2	adt_zombie	1		patroller	enemy	M	0			"zombie1;zombie2;zombie3"	
@@ -217,7 +217,7 @@ bodyguard_surtag	miniboss	warrior	13	13	greatsword_cruelty	9	40,0,40,40,40,20	1	
 xidar	boss	cleric	16	16	death_ray	8	50,50,50,80,80,80	1	[detector]	xidar	female_var	0.9	holy_shield#4	patroller	beasts	F	36		"setVariable#spider_spawn_sf,100;StartConversation#xidar,E9_xidar_death;ItemHide#barrier1;ItemWalkable#barrier1;ItemHide#barrier2;ItemWalkable#barrier2"		
 xidar2	boss	cleric	16	16	death_ray	8	70,70,70,120,120,120	3	[detector]	"xidar2;skill_tome_100"	female_var	0.9	holy_shield#4	patroller	beasts	F	36		"setVariable#spider_spawn_sf,0;setVariable#web_terror,90;ItemHide#barrier1;ItemWalkable#barrier1;ItemHide#barrier2;ItemWalkable#barrier2"		
 lich_G7	boss	cleric	18	18	death_ray_epic	12	120,0,50,300,300,-20	1.1	[detector][undead][ghost]		skeleton_mage_high	1.05	holy_shield#4	patroller	enemy	M	0		Travel#G7_tomb2,1,0		
-lich_G7_second	boss	cleric	18	18	death_ray_epic	12	160,25,75,300,300,-20	1.1	[detector][undead][ghost]		skeleton_mage_high	1.05	holy_shield#4	patroller	enemy	M	0	Travel#H10_reward_room,1,0			
+lich_G7_second	boss	cleric	18	18	death_ray_epic	12	160,25,75,300,300,-20	1.1	[detector][undead][ghost]		skeleton_mage_high	1.05	holy_shield#4	patroller	enemy	M	0		ItemHide#grate2;ItemWalkable#grate2		
 lich_H7	boss	cleric	19	19	death_ray_epic	12	150,25,75,300,300,75	1.1	[detector][undead][ghost]	"h7_high_priest;lich"	skeleton_mage_high	1.05	holy_shield#4	patroller	enemy	M	0				
 lich_H10	boss	cleric	18	18	lightning_epic	12	120,20,0,180,180,0	1.1	[detector][undead][ghost]	"h10_lich;lich"	skeleton_mage_high	1.05	holy_shield#4	patroller	enemy	M	0				
 mausoleum_lich	boss	cleric	18	18	death_ray_epic	12	120,20,0,300,300,0	1.1	[detector][undead][ghost]	"mausoleum_lich;lich"	skeleton_mage_high	1.05	holy_shield#4	patroller	enemy	M	0				
@@ -253,7 +253,7 @@ witch_greater	strong	cleric	13	22	death_ray_15	4	50,50,50,50,50,30	1	[detector]	
 D8_nightwalker	miniboss	warrior	15	15	nightwalker_touch	25	150,150,-175,300,300,50	1.05	[undead][ghost][shield]	D8_nightwalker	ghost	1.25		patroller	enemy	M	0	VariableLower#ancient_verses,100	SetVariable#ancient_verses,100	skeleton3	
 NI_nightwalker	miniboss	warrior	12	12	nightwalker_touch	25	90,90,-100,90,90,50	1.05	[undead][ghost][shield]	NI_nightwalker	ghost	1.25		patroller	enemy	M	0		SetVariable#collectionist,90	skeleton3	
 elemental_earth_lesser	strong	warrior	9	9	steel_longsword	5	90,70,70,70,-75,65	0.95	[outsider]	rock_golem	golem_rock	0.7		patroller	enemy	M	0			monster_deep_3	
-elemental_earth	strong	warrior	13	23	war_maul_heavy	12	120,120,120,180,-75,65	0.95	[detector][shield][outsider]	rock_golem	golem_rock	0.85		patroller	enemy	M	0			monster_deep_3	
+elemental_earth	strong	warrior	13	18	war_maul_heavy	12	120,120,120,180,-75,65	0.95	[detector][shield][outsider]	rock_golem	golem_rock	0.85		patroller	enemy	M	0			monster_deep_3	
 elemental_acid		warrior	12	12	acid_touch	3	90,90,80,250,250,100	0.95	[detector][toxic_elemental][outsider]		golem_green	0.8		patroller	enemy	M	0			monster_deep_3	
 golem_iron_lesser	strong	warrior	12	12	giant_punch	4	20,60,250,250,250,70	0.9			golem	0.8		patroller	enemy	M	0			monster_deep_3	
 golem_iron	strong	warrior	15	18	giant_punch	9	90,10,250,250,250,70	0.9		iron_golem	golem	1		patroller	enemy	M	0			monster_deep_3	
@@ -486,3 +486,4 @@ range_spider_summon1	weak	rogue	5	13	acid_blast_sum	0	0,0,-30,0,100,0	1.1	[beast
 range_spider_summon2	weak	rogue	5	13	acid_blast_sum	0	0,0,-30,0,100,0	1.1	[beast]	spider	spider	0.8		patroller	beasts	M	0		"Summon#range_spider_summon3,4,10;ummon#range_spider_summon3,4,10"	insect	
 range_spider_summon3	weak	rogue	5	13	acid_blast_sum	0	0,0,-30,0,100,0	1.1	[beast]	spider	spider	0.8		patroller	beasts	M	0			insect	
 H10_tomb_undead_commander	boss	warrior	6	8	poison_shortsword_boss	6	-80,120,0,300,120,0	1	[undead][detector][shield]	"H10_tomb_undead_commander;trait_tome_100;skill_tome_100"	skeleton_knight	1.2	"flurry#1;bush#2"	patroller	enemy	M	0			"skeleton1;skeleton2;skeleton3"	
+ancient_pharaon	miniboss	warrior	13	13	toxic_bite	5	-60,20,20,120,300,0	0.9	[undead][toxic_aura]	undead_2	adt_zombie	1		patroller	enemy	M	0			"zombie1;zombie2;zombie3"	

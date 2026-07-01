@@ -311,7 +311,7 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 599	Heavy Scimitar	WEAPON	scimitar	0			[vicious,1]	2700	scimitar	0	0						zweihander						W	
 600	Sacrificial Dagger	WEAPON	steel_dagger	0			[holy,1][banishing,1]	600	weapon_dagger2	0	0						dagger							
 601	Short Bow	WEAPON	short_bow	0				150	weapon_shortbow	0	0						shortbow						W,R	
-602	Hunting Bow	WEAPON	medium_bow2	0				650	weapon_bow	0	0						longbow						W,R	
+602	Hunting Bow	WEAPON	medium_bow	0				650	weapon_bow	0	0						longbow						W,R	
 603	Oaken Bow	WEAPON	long_bow	0				1300	weapon_bow	0	0						longbow						W,R	
 604	Hunter's Mark	WEAPON	medium_bow	0			[beastslayer,2]	1200	weapon_bow	0	0						longbow						W,R	
 605	Lightning Blade	WEAPON	sword_shock_2	0				4500	weapon_longsword_shock	0	0						longsword						W,R	
@@ -819,7 +819,9 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 12050	curseds_skbl_T2_lock	scroll		0				4000	book5	0	0									"Travel#H10_Cursed_altar,1,0;GainItem#12050"				0
 12051	Phylactery Mzaalr	general		0				12500	phylactery	0	0													0
 12052	Phylactery Mikelia	general		0				15000	phylactery	0	0													0
-12053	return_G7	SCROLL		0				0	small_circon	0	0									Travel#G7_tomb,1,0				0
+12053	return_G7	general		0				0	small_circon	0	0													0
+12054	ring of steel will	ring		3	0,0,0,0,0,1		[stunimmunity]	850	ring5	-25	0												W	0
+12055	teleport_scr_inf	SCROLL		0				2250	scroll1b	0	0									"Teleport#;GainItem#12055"		INT#2		0
 13000	Landsknechta	WEAPON	landsknechta	0			[paralysis,1]	2800	landskhnaht	0	0						dagger							
 13001	Kassian robe	armor_chest		2	0,0,0,10,0,10			1500	robe_ark	6	7						tunic						M	
 13002	Rune mage gloves	armor_arms		2	0,0,0,10,0,5			2500	armor_blue_gloves	4	5												M	
@@ -830,6 +832,9 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 13007	Gorx_crown	armor_head		-8	20,-30,0,0,0,0	0,0,0,0,0,2	[gossip,1]	5000	gorx_crown	-17	25												C,M	
 13008	Gorx_axe	WEAPON	Gaxe_fire	0			[vicious,2]	1400	gorx_axe	0	0						battleaxe						W,C	
 13009	poison_Shortsword	WEAPON	poison_sw	0				4200	weapon_shortsword	0	0						shortsword						W,R	
+13010	Cry web	WEAPON	wand_toxic_4	0			[wand]	300	web_cry	0	0						wand						M	
+13011	Palm of Araim	WEAPON	palm_of_araim	0			[vicious,1]	3200	permafrost_bow	0	0						longbow						W,R	
+13012	pharaon_sword	WEAPON	pharaon_sword	0			[vicious,1]	6500	zweihander3	0	0						zweihander						W	
 13100	Iron crossbow	WEAPON	iron_crossbow	0				140	weapon_bow_fire	0	0						crossbow						W,R	
 14000	Dock Key	general		0				100	key1	0	0													1
 14001	rusty key	general		0				100	key1	0	0													1
@@ -994,6 +999,7 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 29017	Permafrost Bow	WEAPON	permafrost_bow+	0			[stun,1]	1800	permafrost_bow	0	0						longbow						W,R	
 29018	Silver Bow of Malan	WEAPON	malan_bow+	0			[holy,3][banishing,3][silver]	8000	longbow_shock	0	0						longbow						W,R	
 29019	Wyrmslayer	WEAPON	epic_short_bow_fire+	0			[vicious,2][beastslayer,2]	5000	weapon_bow_fire	0	0						shortbow						W,R	
+29020	Palm of Araim	WEAPON	palm_of_araim+	0			[vicious,1]	3200	permafrost_bow	0	0						longbow						W,R	
 30000	Staff of Force	WEAPON	staff_1+	0			[staff]	140	staff0	0	0						staff						M	
 30001	Caduceus of Scorching	WEAPON	staff_fire_1+	0			[staff][arcane,1]	1800	staff3	0	0						staff						M	
 30002	Staff of Mighty Missiles	WEAPON	staff_3+	0			[staff]	3600	staff1	0	0						staff						M	
@@ -1030,6 +1036,7 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 31016	Imperial Battlemage Wand	WEAPON	wand_fire_3+	0			[wand][arcane,1]	1000	wand7	0	0						rod						M	
 31017	Scepter of the Underworld	WEAPON	wand_death_4+	0			[wand][arcane,4]	4500	staff5	0	0						rod						M	
 31018	Wand of Scorching	WEAPON	wand_fire_1+	0			[wand][arcane,1]	200	wand7	0	0						rod						M	
+31019	Cry web	WEAPON	wand_toxic_4+	0			[wand]	300	web_cry	0	0						wand						M	
 50000	Scroll of Detection	SCROLL		0				240	scroll4	0	0									Travel#C10_test_zone,1,12				1
 50000	Scroll of Detection	SCROLL		0				240	scroll4	0	0									Travel#C10_test_zone,1,12				1
 50001	test	general		0				90	bottle_water	0	0													1

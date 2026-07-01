@@ -16,6 +16,8 @@ gas_persistent_5	toxic gas	gas tóxico	20	t	24	0	gas_2		1	1
 gas_weak	toxic gas	gas tóxico	9	t	24	0	gas_weak		0	0
 gas_death	death cloud	nube de muerte	60	d	24	0	gas_death		0	0
 death_weak	death cloud	nube de muerte	100	d	24	0	gas_death		0	0
+death_weak2	death cloud	nube de muerte	40	d	24	0	gas_death		0	0
+death_gas	death cloud	nube de muerte	25	d	24	0	gas_death		0	0
 flames_faith_weak1	Flames of Faith	Llamas de la Fé	10	sp	24	6	fire_medium_purple	healparty1	.1	.1
 flames_faith_weak2	Flames of Faith	Llamas de la Fé	20	sp	24	6	fire_medium_purple	healparty2	.1	.1
 flames_faith_weak3	Flames of Faith	Llamas de la Fé	30	sp	24	6	fire_medium_purple	healparty3	.1	.1
