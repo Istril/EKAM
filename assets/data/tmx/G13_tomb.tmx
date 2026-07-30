@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="isometric" width="72" height="64" tilewidth="64" tileheight="32">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="72" height="64" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="97">
  <properties>
   <property name="maxlight" value="70"/>
   <property name="music" value="dark_chamber"/>
@@ -17,75 +17,75 @@
  <tileset firstgid="921" source="natural_grounds_2.tsx"/>
  <tileset firstgid="1113" source="dungeon stairs.tsx"/>
  <tileset firstgid="1117" source="icemist_large.tsx"/>
- <layer name="nonwalk" width="72" height="64" visible="0">
+ <layer id="1" name="nonwalk" width="72" height="64" visible="0">
   <data encoding="base64" compression="zlib">
    eJztwTEBAAAAwqD1T20LL6AAAAAAAAAAAAAAAAAAAAAAAIC3AUgAAAE=
   </data>
  </layer>
- <layer name="water" width="72" height="64">
+ <layer id="2" name="water" width="72" height="64">
   <data encoding="base64" compression="zlib">
    eJzt2DEKgDAQRcFcR4Px/rdzA2mygp0YZAZev2z5SwEAAFawRXXE3R6dURsx6/85vj5iITXV+c+spQAAAADgr/JWyKxvp/b3Z/ZlAAAAAAAAAADedAHTfgSD
   </data>
  </layer>
- <layer name="ground" width="72" height="64">
+ <layer id="3" name="ground" width="72" height="64">
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
- <layer name="ground2" width="72" height="64">
+ <layer id="4" name="ground2" width="72" height="64">
   <data encoding="base64" compression="zlib">
    eJzt2G0KgkAUBVDB1Vhm7qS2WVRrrOANGESSiSPNOTAozJ/n5eJXVQEAAAAA8IvbyP5pkSkAAJY39h4En1xzDwATufcxh0vuAQAAvuD7DWAdzrkHgD/iH9/8ZAqQ17bOPcH6bGQySV+/9qkfnHeFZNq+uc42ctk/1jH2h3mU2rcm8ki5dLGeWR1ipT71hWSUejHsRBNZpAx2cUxdawrJZirPOEpyBzi/DbA=
   </data>
  </layer>
- <layer name="scenery" width="72" height="64">
+ <layer id="5" name="scenery" width="72" height="64">
   <data encoding="base64" compression="zlib">
-   eJzt0LENACAMA8FIbMMusP841BQpoAEpdxPYHwEAAAAAAAAAAAAAAAAAAACwm+31gn9Ua9Ev/45inTI6ACcWkOEBcA==
+   eJzt0KsNACAQREESusFQCfRfDhqBQfDJzVSw+1ICAAAAAAAAAAAAAAAAAAAAmPV8e8E7orUom39bsE4rOpxV9eZzAxs1AaI=
   </data>
  </layer>
- <layer name="objects" width="72" height="64">
+ <layer id="6" name="objects" width="72" height="64">
   <data encoding="base64" compression="zlib">
    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
   </data>
  </layer>
- <layer name="roofs" width="72" height="64">
+ <layer id="7" name="roofs" width="72" height="64">
   <data encoding="base64" compression="zlib">
    eJzt27ENgDAMRcFEQlmTUMGS2Y0J3CU4EncTfL3CnUsBAIDvjJq9AAAAAADWuo7sBfvq2oRObQC297jVoVsbAAAAAAAAgF9pfkVhqhchFwLJ
   </data>
  </layer>
- <objectgroup name="data" width="72" height="64">
-  <object name="stairs down" type="transition" x="89" y="1888" width="52" height="86">
+ <objectgroup id="8" name="data">
+  <object id="1" name="stairs down" type="transition" x="89" y="1888" width="52" height="86">
    <properties>
     <property name="area_id" value="G13"/>
     <property name="entry_id" value="1"/>
    </properties>
   </object>
-  <object type="entry" gid="1" x="229" y="1941">
+  <object id="2" type="entry" gid="1" x="229" y="1941" width="64" height="64">
    <properties>
     <property name="entry_id" value="1"/>
    </properties>
   </object>
-  <object name="Secret Door" type="secretdoor" gid="5" x="1408" y="544">
+  <object id="3" name="Secret Door" type="secretdoor" gid="5" x="1408" y="544" width="64" height="64">
    <properties>
     <property name="maxlevel" value="17"/>
     <property name="minlevel" value="17"/>
     <property name="secretdoor_tag" value="G13_tomb_1"/>
    </properties>
   </object>
-  <object name="Secret Door" type="secretdoor" gid="5" x="320" y="608">
+  <object id="4" name="Secret Door" type="secretdoor" gid="5" x="320" y="608" width="64" height="64">
    <properties>
     <property name="maxlevel" value="17"/>
     <property name="minlevel" value="17"/>
     <property name="secretdoor_tag" value="G13_tomb_2"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="5" x="1199" y="633">
+  <object id="5" name="Chest" type="container" gid="5" x="1199" y="633" width="64" height="64">
    <properties>
     <property name="icon" value="sarcophagus"/>
     <property name="loot_table" value="dungeon_chest_17"/>
     <property name="name" value="@SARCOPHAGUS"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="5" x="1208" y="1000">
+  <object id="6" name="Chest" type="container" gid="5" x="1208" y="1000" width="64" height="64">
    <properties>
     <property name="icon" value="sarcophagus"/>
     <property name="loot_table" value="dungeon_chest_7"/>
@@ -93,7 +93,7 @@
     <property name="quest_location" value="F11_tomb_1"/>
    </properties>
   </object>
-  <object name="bridge" type="mapitem" gid="5" x="736" y="448">
+  <object id="7" name="bridge" type="mapitem" gid="5" x="736" y="448" width="64" height="64">
    <properties>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
@@ -101,7 +101,7 @@
     <property name="tag" value="bridge"/>
    </properties>
   </object>
-  <object name="bridge" type="mapitem" gid="5" x="736" y="480">
+  <object id="8" name="bridge" type="mapitem" gid="5" x="736" y="480" width="64" height="64">
    <properties>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
@@ -109,7 +109,7 @@
     <property name="tag" value="bridge"/>
    </properties>
   </object>
-  <object name="bridge" type="mapitem" gid="5" x="736" y="512">
+  <object id="9" name="bridge" type="mapitem" gid="5" x="736" y="512" width="64" height="64">
    <properties>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
@@ -117,7 +117,7 @@
     <property name="tag" value="bridge"/>
    </properties>
   </object>
-  <object name="bridge" type="mapitem" gid="5" x="736" y="544">
+  <object id="10" name="bridge" type="mapitem" gid="5" x="736" y="544" width="64" height="64">
    <properties>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
@@ -125,7 +125,7 @@
     <property name="tag" value="bridge"/>
    </properties>
   </object>
-  <object name="bridge" type="mapitem" gid="5" x="736" y="576">
+  <object id="11" name="bridge" type="mapitem" gid="5" x="736" y="576" width="64" height="64">
    <properties>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
@@ -133,7 +133,7 @@
     <property name="tag" value="bridge"/>
    </properties>
   </object>
-  <object name="bridge" type="mapitem" gid="5" x="736" y="608">
+  <object id="12" name="bridge" type="mapitem" gid="5" x="736" y="608" width="64" height="64">
    <properties>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
@@ -141,7 +141,7 @@
     <property name="tag" value="bridge"/>
    </properties>
   </object>
-  <object name="bridge" type="mapitem" gid="5" x="736" y="640">
+  <object id="13" name="bridge" type="mapitem" gid="5" x="736" y="640" width="64" height="64">
    <properties>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
@@ -149,7 +149,7 @@
     <property name="tag" value="bridge"/>
    </properties>
   </object>
-  <object name="bridge" type="mapitem" gid="5" x="736" y="672">
+  <object id="14" name="bridge" type="mapitem" gid="5" x="736" y="672" width="64" height="64">
    <properties>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
@@ -157,7 +157,7 @@
     <property name="tag" value="bridge"/>
    </properties>
   </object>
-  <object name="bridge" type="mapitem" gid="5" x="736" y="704">
+  <object id="15" name="bridge" type="mapitem" gid="5" x="736" y="704" width="64" height="64">
    <properties>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
@@ -165,7 +165,7 @@
     <property name="tag" value="bridge"/>
    </properties>
   </object>
-  <object name="bridge" type="mapitem" gid="5" x="736" y="736">
+  <object id="16" name="bridge" type="mapitem" gid="5" x="736" y="736" width="64" height="64">
    <properties>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
@@ -173,7 +173,7 @@
     <property name="tag" value="bridge"/>
    </properties>
   </object>
-  <object name="bridge" type="mapitem" gid="5" x="736" y="768">
+  <object id="17" name="bridge" type="mapitem" gid="5" x="736" y="768" width="64" height="64">
    <properties>
     <property name="active_sprite" value="grid_ground_brown"/>
     <property name="bridge" value=""/>
@@ -181,235 +181,235 @@
     <property name="tag" value="bridge"/>
    </properties>
   </object>
-  <object name="statue conv" type="conversation" gid="5" x="662" y="380">
+  <object id="18" name="statue conv" type="conversation" gid="5" x="662" y="380" width="64" height="64">
    <properties>
     <property name="conversation" value="G13_tomb_statue"/>
     <property name="icon" value="statue2"/>
     <property name="name" value="@STATUE"/>
    </properties>
   </object>
-  <object name="archer" type="spawn" gid="3" x="768" y="1470">
+  <object id="19" name="archer" type="spawn" gid="3" x="768" y="1470" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_archer"/>
    </properties>
   </object>
-  <object name="archer" type="spawn" gid="3" x="825" y="1485">
+  <object id="20" name="archer" type="spawn" gid="3" x="825" y="1485" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_archer"/>
    </properties>
   </object>
-  <object name="archer" type="spawn" gid="3" x="925" y="1486">
+  <object id="21" name="archer" type="spawn" gid="3" x="925" y="1486" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_archer"/>
    </properties>
   </object>
-  <object name="archer" type="spawn" gid="3" x="882" y="1500">
+  <object id="22" name="archer" type="spawn" gid="3" x="882" y="1500" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_archer"/>
    </properties>
   </object>
-  <object name="archer" type="spawn" gid="3" x="771" y="1503">
+  <object id="23" name="archer" type="spawn" gid="3" x="771" y="1503" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_archer"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="869" y="1629">
+  <object id="24" name="Skeletons" type="spawn" gid="3" x="869" y="1629" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="463" y="1577">
+  <object id="25" name="Skeletons" type="spawn" gid="3" x="463" y="1577" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="1201" y="1193">
+  <object id="26" name="Skeletons" type="spawn" gid="3" x="1201" y="1193" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="1470" y="1181">
+  <object id="27" name="Skeletons" type="spawn" gid="3" x="1470" y="1181" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="1448" y="1253">
+  <object id="28" name="Skeletons" type="spawn" gid="3" x="1448" y="1253" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="witch" type="spawn" gid="3" x="1475" y="1116" width="64" height="64">
+  <object id="29" name="witch" type="spawn" gid="3" x="1475" y="1116" width="64" height="64">
    <properties>
     <property name="spawn" value="witch"/>
    </properties>
   </object>
-  <object name="witch" type="spawn" gid="3" x="1490" y="1368" width="64" height="64">
+  <object id="30" name="witch" type="spawn" gid="3" x="1490" y="1368" width="64" height="64">
    <properties>
     <property name="spawn" value="witch"/>
    </properties>
   </object>
-  <object name="witch" type="spawn" gid="3" x="98" y="1082" width="64" height="64">
+  <object id="31" name="witch" type="spawn" gid="3" x="98" y="1082" width="64" height="64">
    <properties>
     <property name="spawn" value="witch"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="137" y="930">
+  <object id="32" name="Skeletons" type="spawn" gid="3" x="137" y="930" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="362" y="1055">
+  <object id="33" name="Skeletons" type="spawn" gid="3" x="362" y="1055" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="608" y="1366">
+  <object id="34" name="Skeletons" type="spawn" gid="3" x="608" y="1366" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="1024" y="896">
+  <object id="35" name="Skeletons" type="spawn" gid="3" x="1024" y="896" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="witch" type="spawn" gid="3" x="1519" y="608" width="64" height="64">
+  <object id="36" name="witch" type="spawn" gid="3" x="1519" y="608" width="64" height="64">
    <properties>
     <property name="spawn" value="witch"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="1107" y="1872">
+  <object id="37" name="Skeletons" type="spawn" gid="3" x="1107" y="1872" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="952" y="1862">
+  <object id="38" name="Skeletons" type="spawn" gid="3" x="952" y="1862" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="905" y="1911">
+  <object id="39" name="Skeletons" type="spawn" gid="3" x="905" y="1911" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="807" y="1839">
+  <object id="40" name="Skeletons" type="spawn" gid="3" x="807" y="1839" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="789" y="1937">
+  <object id="41" name="Skeletons" type="spawn" gid="3" x="789" y="1937" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="1219" y="1847">
+  <object id="42" name="Skeletons" type="spawn" gid="3" x="1219" y="1847" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="1189" y="1544">
+  <object id="43" name="Skeletons" type="spawn" gid="3" x="1189" y="1544" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="1296" y="1606">
+  <object id="44" name="Skeletons" type="spawn" gid="3" x="1296" y="1606" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="556" y="1572">
+  <object id="45" name="Skeletons" type="spawn" gid="3" x="556" y="1572" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="1498" y="921">
+  <object id="46" name="Skeletons" type="spawn" gid="3" x="1498" y="921" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="1348" y="638">
+  <object id="47" name="Skeletons" type="spawn" gid="3" x="1348" y="638" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="1480" y="684">
+  <object id="48" name="Skeletons" type="spawn" gid="3" x="1480" y="684" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="5" x="1479" y="1079">
+  <object id="49" name="Chest" type="container" gid="5" x="1479" y="1079" width="64" height="64">
    <properties>
     <property name="icon" value="sarcophagus"/>
     <property name="loot_table" value="dungeon_chest_17"/>
     <property name="name" value="@SARCOPHAGUS"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="5" x="1486" y="1432">
+  <object id="50" name="Chest" type="container" gid="5" x="1486" y="1432" width="64" height="64">
    <properties>
     <property name="icon" value="sarcophagus"/>
     <property name="loot_table" value="dungeon_chest_17"/>
     <property name="name" value="@SARCOPHAGUS"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="5" x="82" y="994">
+  <object id="51" name="Chest" type="container" gid="5" x="82" y="994" width="64" height="64">
    <properties>
     <property name="icon" value="sarcophagus"/>
     <property name="loot_table" value="dungeon_chest_17"/>
     <property name="name" value="@SARCOPHAGUS"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="5" x="83" y="670">
+  <object id="52" name="Chest" type="container" gid="5" x="83" y="670" width="64" height="64">
    <properties>
     <property name="icon" value="sarcophagus"/>
     <property name="loot_table" value="dungeon_chest_17"/>
     <property name="name" value="@SARCOPHAGUS"/>
    </properties>
   </object>
-  <object name="Skeleton" type="spawn" gid="3" x="1394" y="220">
+  <object id="53" name="Skeleton" type="spawn" gid="3" x="1394" y="220" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_hero"/>
     <property name="wander" value="0"/>
    </properties>
   </object>
-  <object name="Skeleton" type="spawn" gid="3" x="1178" y="197">
+  <object id="54" name="Skeleton" type="spawn" gid="3" x="1178" y="197" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_hero"/>
     <property name="wander" value="0"/>
    </properties>
   </object>
-  <object name="Skeleton" type="spawn" gid="3" x="695" y="160">
+  <object id="55" name="Skeleton" type="spawn" gid="3" x="695" y="160" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_hero"/>
     <property name="wander" value="0"/>
    </properties>
   </object>
-  <object name="Skeleton" type="spawn" gid="3" x="836" y="168">
+  <object id="56" name="Skeleton" type="spawn" gid="3" x="836" y="168" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_hero"/>
     <property name="wander" value="0"/>
    </properties>
   </object>
-  <object name="Skeleton" type="spawn" gid="3" x="288" y="284">
+  <object id="57" name="Skeleton" type="spawn" gid="3" x="288" y="284" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_hero"/>
     <property name="wander" value="0"/>
    </properties>
   </object>
-  <object name="Skeleton" type="spawn" gid="3" x="348" y="169">
+  <object id="58" name="Skeleton" type="spawn" gid="3" x="348" y="169" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_hero"/>
     <property name="wander" value="0"/>
    </properties>
   </object>
-  <object name="Dragon" type="spawn" gid="3" x="2006" y="1814">
+  <object id="59" name="Dragon" type="spawn" gid="3" x="2006" y="1814" width="64" height="64">
    <properties>
     <property name="spawn" value="g13_dragon"/>
     <property name="unique_tag" value="G13_dragon_white"/>
     <property name="wander" value="2"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="841" y="1351">
+  <object id="60" name="spikes trap" type="trap" gid="5" x="841" y="1351" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -418,7 +418,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="1001" y="1342">
+  <object id="61" name="spikes trap" type="trap" gid="5" x="1001" y="1342" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -427,7 +427,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="1037" y="1275">
+  <object id="62" name="spikes trap" type="trap" gid="5" x="1037" y="1275" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -436,7 +436,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="987" y="1058">
+  <object id="63" name="spikes trap" type="trap" gid="5" x="987" y="1058" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -445,7 +445,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="1024" y="977">
+  <object id="64" name="spikes trap" type="trap" gid="5" x="1024" y="977" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -454,7 +454,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="682" y="1380">
+  <object id="65" name="spikes trap" type="trap" gid="5" x="682" y="1380" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -463,7 +463,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="441" y="1350">
+  <object id="66" name="spikes trap" type="trap" gid="5" x="441" y="1350" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -472,7 +472,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="340" y="1161">
+  <object id="67" name="spikes trap" type="trap" gid="5" x="340" y="1161" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -481,7 +481,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="355" y="912">
+  <object id="68" name="spikes trap" type="trap" gid="5" x="355" y="912" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -490,7 +490,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="1390" y="903">
+  <object id="69" name="spikes trap" type="trap" gid="5" x="1390" y="903" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -499,7 +499,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="1368" y="288">
+  <object id="70" name="spikes trap" type="trap" gid="5" x="1368" y="288" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -508,7 +508,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="768" y="171">
+  <object id="71" name="spikes trap" type="trap" gid="5" x="768" y="171" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -517,7 +517,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="374" y="292">
+  <object id="72" name="spikes trap" type="trap" gid="5" x="374" y="292" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -526,34 +526,34 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="witch" type="spawn" gid="3" x="155" y="666" width="64" height="64">
+  <object id="73" name="witch" type="spawn" gid="3" x="155" y="666" width="64" height="64">
    <properties>
     <property name="spawn" value="witch"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="306" y="702">
+  <object id="74" name="Skeletons" type="spawn" gid="3" x="306" y="702" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons2"/>
    </properties>
   </object>
-  <object name="Lich" type="spawn" gid="3" x="702" y="1056">
+  <object id="75" name="Lich" type="spawn" gid="3" x="702" y="1056" width="64" height="64">
    <properties>
     <property name="spawn" value="lich"/>
     <property name="unique_tag" value="G13_lich"/>
     <property name="wander" value="0"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="826" y="1092">
+  <object id="76" name="Skeletons" type="spawn" gid="3" x="826" y="1092" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Skeletons" type="spawn" gid="3" x="640" y="1181">
+  <object id="77" name="Skeletons" type="spawn" gid="3" x="640" y="1181" width="64" height="64">
    <properties>
     <property name="spawntable" value="skeletons"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="5" x="662" y="1029">
+  <object id="78" name="Chest" type="container" gid="5" x="662" y="1029" width="64" height="64">
    <properties>
     <property name="icon" value="sarcophagus"/>
     <property name="items" value="6009,6010,2535,2633"/>
@@ -561,26 +561,26 @@
     <property name="unique_tag" value="G13_sarcophagus1"/>
    </properties>
   </object>
-  <object name="evoker" type="spawn" gid="3" x="247" y="147">
+  <object id="79" name="evoker" type="spawn" gid="3" x="247" y="147" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_evoker"/>
     <property name="wander" value="0"/>
    </properties>
   </object>
-  <object name="evoker" type="spawn" gid="3" x="1273" y="111">
+  <object id="80" name="evoker" type="spawn" gid="3" x="1273" y="111" width="64" height="64">
    <properties>
     <property name="spawn" value="skeleton_evoker"/>
     <property name="wander" value="0"/>
    </properties>
   </object>
-  <object name="corpse" type="conversation" gid="5" x="828" y="1917">
+  <object id="81" name="corpse" type="conversation" gid="5" x="828" y="1917" width="64" height="64">
    <properties>
     <property name="conversation" value="G13_corpse"/>
     <property name="icon" value="corpse3"/>
     <property name="name" value="@CORPSE"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="437" y="1939">
+  <object id="82" name="spikes trap" type="trap" gid="5" x="437" y="1939" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -589,7 +589,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="498" y="1910">
+  <object id="83" name="spikes trap" type="trap" gid="5" x="498" y="1910" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -598,7 +598,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="568" y="1936">
+  <object id="84" name="spikes trap" type="trap" gid="5" x="568" y="1936" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -607,7 +607,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="544" y="1851">
+  <object id="85" name="spikes trap" type="trap" gid="5" x="544" y="1851" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -616,7 +616,7 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="spikes trap" type="trap" gid="5" x="635" y="1960">
+  <object id="86" name="spikes trap" type="trap" gid="5" x="635" y="1960" width="64" height="64">
    <properties>
     <property name="id" value="spikes"/>
     <property name="maxlevel" value="11"/>
@@ -625,55 +625,55 @@
     <property name="spawn_chance" value="50"/>
    </properties>
   </object>
-  <object name="Skeleton" type="spawn" gid="3" x="1817" y="254">
+  <object id="87" name="Skeleton" type="spawn" gid="3" x="1817" y="254" width="64" height="64">
    <properties>
     <property name="spawn" value="yeti"/>
     <property name="wander" value="0"/>
    </properties>
   </object>
-  <object name="Skeleton" type="spawn" gid="3" x="2007" y="961">
+  <object id="88" name="Skeleton" type="spawn" gid="3" x="2007" y="961" width="64" height="64">
    <properties>
     <property name="spawn" value="yeti"/>
    </properties>
   </object>
-  <object name="Skeleton" type="spawn" gid="3" x="2123" y="1013">
+  <object id="89" name="Skeleton" type="spawn" gid="3" x="2123" y="1013" width="64" height="64">
    <properties>
     <property name="spawn" value="yeti"/>
    </properties>
   </object>
-  <object name="Skeleton" type="spawn" gid="3" x="2153" y="873">
+  <object id="90" name="Skeleton" type="spawn" gid="3" x="2153" y="873" width="64" height="64">
    <properties>
     <property name="spawn" value="yeti"/>
    </properties>
   </object>
-  <object name="Skeleton" type="spawn" gid="3" x="1914" y="1054">
+  <object id="91" name="Skeleton" type="spawn" gid="3" x="1914" y="1054" width="64" height="64">
    <properties>
     <property name="spawn" value="yeti"/>
    </properties>
   </object>
-  <object name="Skeleton" type="spawn" gid="3" x="1945" y="1407">
+  <object id="92" name="Skeleton" type="spawn" gid="3" x="1945" y="1407" width="64" height="64">
    <properties>
     <property name="spawn" value="yeti"/>
    </properties>
   </object>
-  <object name="Skeleton" type="spawn" gid="3" x="2069" y="1533">
+  <object id="93" name="Skeleton" type="spawn" gid="3" x="2069" y="1533" width="64" height="64">
    <properties>
     <property name="spawn" value="yeti"/>
    </properties>
   </object>
-  <object name="Skeleton" type="spawn" gid="3" x="1914" y="1561">
+  <object id="94" name="Skeleton" type="spawn" gid="3" x="1914" y="1561" width="64" height="64">
    <properties>
     <property name="spawn" value="yeti"/>
    </properties>
   </object>
-  <object name="Secret Door" type="secretdoor" gid="5" x="1984" y="352">
+  <object id="95" name="Secret Door" type="secretdoor" gid="5" x="1984" y="352" width="64" height="64">
    <properties>
     <property name="maxlevel" value="19"/>
     <property name="minlevel" value="19"/>
     <property name="secretdoor_tag" value="G13_tomb_3"/>
    </properties>
   </object>
-  <object name="Chest" type="container" gid="5" x="730" y="1498">
+  <object id="96" name="Chest" type="container" gid="5" x="730" y="1498" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
     <property name="loot_table" value="dungeon_chest_17"/>

@@ -187,7 +187,7 @@ bodyguard_surtag	Surtag	Surtag	Суртаг	Surtag	Surtag	Surtag	Surtag	Surtag	S
 xidar	Lady Xidar	Lady Xidar	Леди Зидар	Lady Xidar	Lady Xidar	Pani Xidar	Lady Xidar	Leydi Xidar	Lady Xidar	
 xidar2	Lady Xidar	Lady Xidar	Леди Зидар	Lady Xidar	Lady Xidar	Pani Xidar	Lady Xidar	Leydi Xidar	Lady Xidar	
 lich_G7	Araim Darkflames	Araim Llamaoscura	Араим Тёмнопламень	Araim Darkflames	Araim Dunkelflamme	Araim Czarny Płomień	Araim Darkflame	Araim Darkflame	Araim Lamaoscura	
-lich_G7_second	Araim Darkflames	Araim Llamaoscura	Араим Тёмнопламень	Araim Darkflames	Araim Dunkelflamme	Araim Czarny Płomień	Araim Darkflame	Araim Darkflame	Araim Lamaoscura	
+lich_G7_second	Araim Darkflames	Araim Llamaoscura	Араим Вахралис	Araim Darkflames	Araim Dunkelflamme	Araim Czarny Płomień	Araim Darkflame	Araim Darkflame	Araim Lamaoscura	
 rogue_archer_8	Archer	Arquero	Стрелок	Arqueiro	Bogenschütze	Łucznik	Lučištník	Okçu	Arciere	
 rogue_melee_8	Rogue	Pícaro	Негодяй	Patife	Dieb	Łotrzyk	Darebák	Düzenbaz	Vagabondo	
 rodo	Rodo	Rodo	Родо	Rodo	Rodo	Rodo	Rodo	Rodo	Rodo	
@@ -483,3 +483,7 @@ range_spider_summon1			Песчаный паук
 range_spider_summon2			Песчаный паук						
 range_spider_summon3			Песчаный паук						
 H10_tomb_undead_commander			Мертвый командор							
+ancient_pharaon			Древний Фараон							
+ghost_st			Призрак							
+lich2_F9			Хранитель могил							
+skeleton_F9			Скелет							

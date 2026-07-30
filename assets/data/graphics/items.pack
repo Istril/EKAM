@@ -3317,6 +3317,13 @@ egg_dragon
   orig: 64, 64
   offset: 0, 0
   index: -1
+web_cry
+  rotate: false
+  xy: 529, 959
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
 
 runes.png
 format: RGBA8888

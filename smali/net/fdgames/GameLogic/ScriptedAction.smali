@@ -1331,7 +1331,7 @@
 
     invoke-virtual {v3}, Le/a/d/y;->a()Lcom/badlogic/gdx/scenes/scene2d/Stage;
 
-    invoke-virtual {v1, v2, v0}, Le/a/d/e/b0;->a(Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;Lnet/fdgames/Rules/Skill;)V
+    invoke-virtual {v1, v2, v0}, Le/a/d/e/b0;->a(Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;Lnet/fdgames/Rules/Skill;)V #метод разблокировки кнопки в зависимости от указаноого тута золота
 
     goto/16 :goto_0
 

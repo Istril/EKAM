@@ -2032,21 +2032,21 @@
 
     const-string v2, "earth_mastery"
 
-    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I # получаем уровень навыка
 
-    move-result v0
+    move-result v0 # помещаем результат в v0
 
-    if-ne v0, v5, :cond_36
+    if-ne v0, v5, :cond_36 # если v0 не равно v5 (1) переходим на cond_36
 
-    const-string v2, "golem_01"
+    const-string v2, "golem_01" # ID (имя) призываемого существа
 
-    const/16 v3, 0x8
+    const/16 v3, 0x8 # его уровень
 
-    const/16 v5, 0xb4
+    const/16 v5, 0xb4 # его время жизни
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_36
+    :cond_36 #второй уровень
     if-ne v0, v1, :cond_37
 
     const-string v1, "golem_02"
@@ -2057,8 +2057,8 @@
 
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_37
-    if-ne v0, v4, :cond_38
+    :cond_37 # третий
+    if-ne v0, v4, :cond_38 # выход в начало метода
 
     const-string v0, "golem_03"
 
@@ -2110,9 +2110,9 @@
 
     const-string v2, "small_blue_spirit"
 
-    const/4 v3, 0x3
+    const/4 v3, 0x3 # уровень
 
-    const/16 v5, 0x1e
+    const/16 v5, 0x1e # время жизни 
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 

@@ -142,6 +142,7 @@ index	type	text	text_ES	Go To	conditions	actions
 503	A	Лук вечной мерзлоты		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#773"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#773;GainItem#29017"
 503	A	Серебрянный лук Малана		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#765"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#765;GainItem#29018"
 503	A	Убийца змей		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#754"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#754;GainItem#29019"
+503	A	Длань Араима		0	"PlayerHasItems#12028,3;PlayerHasItems#12026,5;PlayerHasItem#754"	"LoseItems#12028,3;LoseItems#12026,5;LoseItem#754;GainItem#29020"
 503	A	Назад		3		
 111	Q	Улучшение арбалетов требует 2 слитка металла, 3 дерева и 2 нити.		504		
 504	A	Назад		3		
@@ -253,6 +254,7 @@ index	type	text	text_ES	Go To	conditions	actions
 513	A	Имперская палочка боевого мага		0	"PlayerHasItems#12026,8;PlayerHasItem#389"	"LoseItems#12026,8;LoseItem#389;GainItem#31016"
 513	A	Скипетр Преисподней		0	"PlayerHasItems#12026,8;PlayerHasItem#360"	"LoseItems#12026,8;LoseItem#360;GainItem#31017"
 513	A	Опаляющий Жезл		0	"PlayerHasItems#12026,8;PlayerHasItem#372"	"LoseItems#12026,8;LoseItem#372;GainItem#31018"
+513	A	Плач паутины		0	"PlayerHasItems#12026,8;PlayerHasItem#13010"	"LoseItems#12026,8;LoseItem#13010;GainItem#31019"
 513	A	Назад		3		
 161	Q	Улучшение посохов требует 5 древесины и 1 камень соответствующий стихии оружия (Рубин, Циркон, Сапфир, Аметист, Изумруд, Цитрин)		514		
 514	A	Посох Силы		0	"PlayerHasItems#12026,5;PlayerHasItem#380"	"LoseItems#12026,5;LoseItem#380;GainItem#30000"

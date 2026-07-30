@@ -492,7 +492,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 v2, 0x1388
+    const/16 v2, 0x1388 # визуальное отображение
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -545,7 +545,7 @@
     return-object v0
 .end method
 
-.method private b()V
+.method private b()V # метод списания денег. за изучения навыка
     .locals 4
 
     const-string v0, "levelup"
@@ -597,14 +597,31 @@
 
     move-result v0
 
+    if-eqz v0, :cond_next1
+
+    const/16 v1, 0x3e8 #1000
+    
+    goto :apply_cost
+
+    :cond_next1
+    iget-object v0, p0, Le/a/d/e/b0;->g:Lnet/fdgames/Rules/Skill;
+
+    iget-object v0, v0, Lnet/fdgames/Rules/Skill;->id:Ljava/lang/String;
+
+    const-string v1, "spiritualism"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
     if-eqz v0, :normal_cost
 
-    const/16 v1, 0x3e8 
+    const/16 v1, 0x2710 #10000
     
     goto :apply_cost
 
     :normal_cost
-    const/16 v1, 0x1388 
+    const/16 v1, 0x1388 #5000
 
     :apply_cost
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
@@ -687,6 +704,77 @@
 
     if-eqz v0, :cond_0
 
+    # === НАЧАЛО ЦЕПОЧКИ ПРОВЕРОК ===
+    # 1. Проверяем на lesser_undead
+    iget-object v0, p2, Lnet/fdgames/Rules/Skill;->id:Ljava/lang/String;
+
+    const-string v1, "lesser_undead"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cost_lesser_undead
+
+    # 2. Проверяем на spiritualism
+    iget-object v0, p2, Lnet/fdgames/Rules/Skill;->id:Ljava/lang/String;
+
+    const-string v1, "spiritualism"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cost_spiritualism
+
+    # 3. Цена по умолчанию для всех остальных навыков
+    const/16 v1, 0x1388         # 5000 золота
+
+    goto :update_ui_text
+
+    :cost_lesser_undead
+    const/16 v1, 0x3e8          # 1000 золота
+
+    goto :update_ui_text
+
+    :cost_spiritualism
+    const/16 v1, 0x2710         # 10000 золота
+
+    :update_ui_text
+    # === ДИНАМИЧЕСКИЙ ТЕКСТ КНОПКИ (UI) ===
+    # Перенесено СЮДА, чтобы выполняться ДО непосредственной проверки золота - его мы игнорируем
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "LEARN"
+
+    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "("
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v2, "gp)"
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object v2, p0, Le/a/d/e/b0;->c:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
+
+    invoke-virtual {v2, v0}, Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;->setText(Ljava/lang/String;)V
+    # === КОНЕЦ ОБНОВЛЕНИЯ UI ===
+
+    # Теперь запрашиваем золото игрока в регистр v0
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -697,9 +785,11 @@
 
     move-result v0
 
-    const/16 v1, 0x1388
-
+    # Сравниваем золото игрока (v0) с установленной ценой (v1)
     if-lt v0, v1, :cond_0
+
+    # Восстанавливаем булеву единицу в v2 для последующих вызовов
+    const/4 v2, 0x1
 
     invoke-virtual {p1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->P()Z
 
@@ -716,6 +806,8 @@
     if-eqz v0, :cond_1
 
     :cond_0
+    const/4 v2, 0x1 # На всякий случай жестко возвращаем 1 перед блокировкой
+
     iget-object v0, p0, Le/a/d/e/b0;->c:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
 
     invoke-virtual {v0, v2}, Lcom/badlogic/gdx/scenes/scene2d/ui/Button;->setDisabled(Z)V

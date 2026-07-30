@@ -1497,28 +1497,28 @@
 
     if-ne v1, v4, :cond_8
 
-    const/16 v0, 0x5e
+    const/16 v0, 0x32
 
     :goto_0
     const/4 v3, 0x2
 
     if-ne v1, v3, :cond_0
 
-    const/16 v0, 0x10a
+    const/16 v0, 0x7D
 
     :cond_0
     const/4 v3, 0x3
 
     if-ne v1, v3, :cond_1
 
-    const/16 v0, 0x15a
+    const/16 v0, 0xAF
 
     :cond_1
     const/4 v3, 0x4
 
     if-ne v1, v3, :cond_2
 
-    const/16 v0, 0x20a
+    const/16 v0, 0xFA
 
     :cond_2
     const/4 v3, 0x5
@@ -1772,7 +1772,7 @@
 
     move-result v1 # уровень навыка перемещается в v1
 
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet; # берётся инфорация из характеристик персонажа
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet; # берётся информация из характеристик персонажа
 
     invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->D()I # точнее его потерянное хп 
 
@@ -1780,7 +1780,7 @@
 
     if-ne v1, v4, :cond_8 # v1 не равен v4, если равен то cond 8
 
-    div-int/lit8 v0, v2, 0x2 #v2/2 и помешаем итог в v0
+    div-int/lit8 v0, v2, 0x2 #v2/2 и помещаем итог в v0
 
     const/16 v3, 0xc8 # v3 присваиваем 200
 
@@ -1790,14 +1790,14 @@
 
     :cond_x1
 
-    add-int/lit8 v0, v0, 0x28
+    add-int/lit8 v0, v0, 0x28 #  прибавляем 40
 
     :goto_0
     const/4 v3, 0x2
 
     if-ne v1, v3, :cond_0
 
-    div-int/lit8 v0, v2, 0x2 #v2/2 и помешаем итог в v0
+    div-int/lit8 v0, v2, 0x2 #v2/2 и помещаем итог в v0
 
     const/16 v3, 0x96 # v3 присваиваем 150
 
