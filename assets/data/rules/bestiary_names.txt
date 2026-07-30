@@ -483,7 +483,11 @@ range_spider_summon1			Песчаный паук
 range_spider_summon2			Песчаный паук						
 range_spider_summon3			Песчаный паук						
 H10_tomb_undead_commander			Мертвый командор							
+<<<<<<< HEAD
 ancient_pharaon			Древний Фараон							
 ghost_st			Призрак							
 lich2_F9			Хранитель могил							
 skeleton_F9			Скелет							
+=======
+ancient_pharaon			Древний Фараон							
+>>>>>>> a62d8d822dde2e0cb29c2c5f570da9bb6c5b2f81
