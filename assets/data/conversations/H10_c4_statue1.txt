@@ -1,7 +1,5 @@
 index	type	text	text_ES	Go To	conditions	actions	requisites
-1	Q	В комнате залитой огнём, вы подходите к каменной статуе украшенной драгоценными камнями. Но одного камня не хватает.		2	VariableEqual#H10_c4_geminfo		
-1	Q	В комнате залитой огнём, вы подходите к каменной статуе украшенной драгоценными камнями. Но что-то в ней не так.		2	VariableEqual#H10_c4_statueinfo		
-1	Q	В комнате залитой огнём, вы подходите к каменной статуе украшенной драгоценными камнями.		2			
+1	Q	Древняя, идеально сохранившаяся статуя, вероятно, времён империи. В ней нет ничего необычного, вы видели множество таких во время своих путешествий.		2	VariableEqual#H10_c4_geminfo				
 2	A	Один из камней		20			
 2	A	Присмотреться.		3	VariableEqual#H10_c4_geminfo,10	SetVariable#H10_c4_geminfo,10	AWA#3
 2	A	[TEAL](Маг)Присмотреться[].		4	"PlayerIsClass#wizard;VariableEqual#H10_c4_statuemageinfo,10"	SetVariable#H10_c4_statuemageinfo,10	

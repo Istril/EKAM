@@ -201,7 +201,7 @@
  </layer>
  <layer id="6" name="objects" width="88" height="80">
   <data encoding="base64" compression="zlib">
-   eJztXMFu3DYQVVZAem1zWzveXTtp2qYFaiMBsl/Q/k8QtJd8QD6h35Frat/6OQXS3pw4QDWxCE8nM+QMydmVbD6A0IqkSOqJnBnOSNt1DQ0NDdPCd33XHYzpBP3+vt/3yPYPzA2kDTnX8LQcyrdDurzXdVeLrvs4pBf9df5tRuDu4ZBW6PfBeH7W33BzPibg6BydbxU8SeVWfvGzpuOlayM3v+aaOkRtAW8cHiX6u9ghv6H+g2H+vyRl9Pz9vXi5dF5zTWnaelKB39PK/HqiZh9rRVs/ZvBLZfbZuJ4fD+nbIf005v1g1HnQzwumfBu5JlbGtVWT30PSFjeWo/6aQwkcv0FmA94O6bfxyOFy8f9+Y/cnlf0hX9K9iZRZ+siBpq1lJr8eY4KyGJc1UJPfIyd+jx359YanfJD6m9L8/T2/6eL+PdrK4Xfdx/WKZkxBR65G/XfG9OOBmn0E/R10PNX7kJ4y/F6Quk8z56/UHwDW1tVgwx4N+u9wSA8X85O/XNt4r4b3aBgpm1c7RskultqQ2o3ZCNbn4c1vTBYEpPgN64KuiRODrcvphkcZ9i9XP3bdHPjl2sT3su3TbYANckHyUnvJGpgrv9Y2YP6ek7zUXrIG7gq/WPcGWRPqv0L1XjHXavO4sphOKMWU+OVAOZcSJ/fh+Jj0B34Q8GcHG3A1Ji+//6mSX4CWG5CjnO8zh18LYG8KvvzFIl33ktRZomezQs+nlHdqj8Lz/qW7fs44dmGx9WvOXws0e38Jy/HZAP4Zj3/1aV+4pl1s/2JYYxa4zX3wq/G9SvAaV8oXmTOGffFb4mOCZ3OfyIyVQs6koNVvoa4GkkyHvFJdHeRZkI858ouD13NfF/IL9xvihNwRxy9i9WgcUtIrMIZ3w/FPpgzW4idhzsFcjM3HZ0x/Pw9568I5XDp/sfyGfT8c35BjgFSO82N9xfIBki4CfxFwFePLa/7W4PdKiEOXQLrfmI3wa6S9zeI6xfr7u4K85drV+G23guy0PB/ruKR8ST6U7KVBN75n+C3dn0v+YCw3pXd5gk7ZJb/S3iWUlfYX/M6BB+rnLsWSGf9Xiy/9wyHtY/5KKLFNwrVBjnj5JKx8WfbX1nFI+ZJ8wPElut6oPYLr4jVZa18swcovt7/GcuWElGvHnTN/P689pX0AsuQK1f1A7LepzN9jIi8wOHmiHbdUT/KnBV3wr8Av3Tun/Ape9tqxkV+r/wPvvzaR+Z6zPmO2G9V9sbjIp8U07GGANX4T2k/1kXN/lr1Hyu6aCr9W+zC0z8UgcV7O/X2WqYLtRudBTJbk9q+BlV/rOLzn7weBMzoP1hFdmNu/Bjn6Laf9XcsHKptTvngvfq327CljI0gpjFvDb459FLuGlqXa97LPqH9Vsmmld6tSMUgtv/S7ixCL3KC8A5Qv9Untb7zvwDHQcH845hnq4XjcCuXR2Ck3dtw/922LZNNa4kUYwf5L8Qv6HuIJr8fz19HacXw0+MWeVYpZfBPZ59SOZ3Dtp/rYxXs7XsjxUVvbiV2j4XcX7+14oZZu9OQ36Jca8mHXiNnhFnjya9WdnA/7uULPlSRJv8V4sazLEn499m8Bx/2XsfZdIuXjm4J+m2KsXYuYj8/iP2v82sHZv1zKtX+170OWxL2mzK/2/j1if7UwZX5vAzC/sW8xGvJQEqdvSKPJB180fn3R+PVF49cXjV9f3FV+sU9swxzp/6ytmHwaC+LeQ8H2We5/JswROfMqFkOX2ryr87fk+ykJc+aXi+HSdWp5T2xJ1q30Pw3SfztAfbrfnTO/8A4GjoOW/neCx33PmV/Net43v9I3IXOAZpycP5OLdYHvvuT7YAk0TncyYb8pxVFf177xmFel31/vE8DH1xXjhHNZt7uCxo+qjaPv6r/MKKbsX9fwYeHMw/69Te/5zMU+mws0sU6Lrm78+kK7f4vl0zXUYm038LB/2/y9QZMPvmj8+gLry/ANA+dPp99J0N/4urnshRsapoj/AFXLIBw=
+   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
   </data>
  </layer>
  <layer id="7" name="roofs" width="88" height="80">
@@ -1437,131 +1437,6 @@
     <property name="minlevel" value="9"/>
     <property name="random_range" value="4"/>
     <property name="spawn_chance" value="100"/>
-   </properties>
-  </object>
-  <object id="243" name="grate" type="mapitem" gid="485" x="1568" y="1408" width="64" height="64">
-   <properties>
-    <property name="active" value=""/>
-    <property name="active_sprite" value="grate_r"/>
-    <property name="barrier" value=""/>
-    <property name="conditions_deactivate" value="Active#rune101;Active#rune102;Active#rune103;Active#rune104"/>
-    <property name="nonwalk" value=""/>
-    <property name="tag" value="grate"/>
-   </properties>
-  </object>
-  <object id="244" name="grate" type="mapitem" gid="485" x="1568" y="1440" width="64" height="64">
-   <properties>
-    <property name="active" value=""/>
-    <property name="active_sprite" value="grate_r"/>
-    <property name="barrier" value=""/>
-    <property name="conditions_deactivate" value="Active#rune101;Active#rune102;Active#rune103;Active#rune104"/>
-    <property name="nonwalk" value=""/>
-    <property name="tag" value="grate"/>
-   </properties>
-  </object>
-  <object id="245" name="rune 101" type="mapitem" gid="485" x="1952" y="1152" width="64" height="64">
-   <properties>
-    <property name="active_sprite" value="rune_B_a"/>
-    <property name="inactive" value=""/>
-    <property name="inactive_sprite" value="rune_B_i"/>
-    <property name="tag" value="rune101"/>
-    <property name="walkable" value=""/>
-   </properties>
-  </object>
-  <object id="246" name="lever5" type="mapitem" gid="485" x="1984" y="1152" width="64" height="64">
-   <properties>
-    <property name="active_sprite" value="lever_on"/>
-    <property name="inactive" value=""/>
-    <property name="inactive_sprite" value="lever_off"/>
-    <property name="tag" value="lever101"/>
-    <property name="toggle_items" value="rune101"/>
-    <property name="walkable" value=""/>
-   </properties>
-  </object>
-  <object id="247" name="rune 102" type="mapitem" gid="485" x="669.167" y="2239.5" width="64" height="64">
-   <properties>
-    <property name="active_sprite" value="rune_B_a"/>
-    <property name="inactive" value=""/>
-    <property name="inactive_sprite" value="rune_B_i"/>
-    <property name="tag" value="rune102"/>
-    <property name="walkable" value=""/>
-   </properties>
-  </object>
-  <object id="248" name="lever5" type="mapitem" gid="485" x="704" y="2240" width="64" height="64">
-   <properties>
-    <property name="active_sprite" value="lever_on"/>
-    <property name="inactive" value=""/>
-    <property name="inactive_sprite" value="lever_off"/>
-    <property name="tag" value="lever102"/>
-    <property name="toggle_items" value="rune102"/>
-    <property name="walkable" value=""/>
-   </properties>
-  </object>
-  <object id="249" name="rune 103" type="mapitem" gid="485" x="1728" y="896" width="64" height="64">
-   <properties>
-    <property name="active_sprite" value="rune_B_a"/>
-    <property name="inactive" value=""/>
-    <property name="inactive_sprite" value="rune_B_i"/>
-    <property name="tag" value="rune103"/>
-    <property name="walkable" value=""/>
-   </properties>
-  </object>
-  <object id="250" name="lever5" type="mapitem" gid="485" x="1824" y="864" width="64" height="64">
-   <properties>
-    <property name="active_sprite" value="lever_on"/>
-    <property name="inactive" value=""/>
-    <property name="inactive_sprite" value="lever_off"/>
-    <property name="tag" value="lever103"/>
-    <property name="toggle_items" value="rune103"/>
-    <property name="walkable" value=""/>
-   </properties>
-  </object>
-  <object id="251" name="rune 104" type="mapitem" gid="485" x="2048" y="704" width="64" height="64">
-   <properties>
-    <property name="active_sprite" value="rune_B_a"/>
-    <property name="inactive" value=""/>
-    <property name="inactive_sprite" value="rune_B_i"/>
-    <property name="tag" value="rune104"/>
-    <property name="walkable" value=""/>
-   </properties>
-  </object>
-  <object id="252" name="lever5" type="mapitem" gid="485" x="2048" y="736" width="64" height="64">
-   <properties>
-    <property name="active_sprite" value="lever_on"/>
-    <property name="inactive" value=""/>
-    <property name="inactive_sprite" value="lever_off"/>
-    <property name="tag" value="lever104"/>
-    <property name="toggle_items" value="rune104"/>
-    <property name="walkable" value=""/>
-   </properties>
-  </object>
-  <object id="253" name="grate" type="mapitem" gid="485" x="1088" y="864" width="64" height="64">
-   <properties>
-    <property name="active" value=""/>
-    <property name="active_sprite" value="grate_l"/>
-    <property name="barrier" value=""/>
-    <property name="conditions_deactivate" value="Active#rune110"/>
-    <property name="nonwalk" value=""/>
-    <property name="tag" value="grate"/>
-   </properties>
-  </object>
-  <object id="257" name="rune 102" type="mapitem" gid="485" x="288" y="256" width="64" height="64">
-   <properties>
-    <property name="active_sprite" value="rune_B_a"/>
-    <property name="inactive" value=""/>
-    <property name="inactive_sprite" value="rune_B_i"/>
-    <property name="tag" value="rune110"/>
-    <property name="walkable" value=""/>
-   </properties>
-  </object>
-  <object id="258" name="lever5" type="mapitem" gid="485" x="288" y="224" width="64" height="64">
-   <properties>
-    <property name="active_sprite" value="lever_on"/>
-    <property name="inactive" value=""/>
-    <property name="inactive_sprite" value="lever_off"/>
-    <property name="tag" value="lever110"/>
-    <property name="toggle_items" value="rune110"/>
-    <property name="walkable" value=""/>
    </properties>
   </object>
   <object id="259" name="Skeletons" type="spawn" gid="483" x="1856" y="384" width="64" height="64">
