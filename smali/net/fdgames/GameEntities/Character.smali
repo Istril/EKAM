@@ -443,13 +443,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_reincornation
+    if-eqz v0, :cond_2
 
     iget v0, p0, Lnet/fdgames/GameEntities/Character;->spellTarget:I
 
     if-nez v0, :cond_1
 
-    invoke-static {p0, p0}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameEntities/Character;)V #вызов лечения от скилла
+    invoke-static {p0, p0}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameEntities/Character;)V
 
     :cond_0
     :goto_0
@@ -491,8 +491,8 @@
     invoke-static {p0, v0}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameEntities/Character;)V
 
     goto :goto_0
-#______________
-    :cond_reincornation
+
+    :cond_2
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -507,13 +507,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2
+    if-eqz v0, :cond_4
 
     iget v0, p0, Lnet/fdgames/GameEntities/Character;->spellTarget:I
 
-    if-nez v0, :cond_r1
+    if-nez v0, :cond_3
 
-    invoke-static {p0, p0}, Lnet/fdgames/Rules/SkillActions;->reincornation(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameEntities/Character;)V #вызов лечения от скилла
+    invoke-static {p0, p0}, Lnet/fdgames/Rules/SkillActions;->reincornation(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameEntities/Character;)V
 
     invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
 
@@ -543,7 +543,7 @@
 
     return-void
 
-    :cond_r1
+    :cond_3
     invoke-static {v0}, Lnet/fdgames/GameLevel/GameLevel;->a(I)Lnet/fdgames/GameEntities/Character;
 
     move-result-object v0
@@ -553,9 +553,8 @@
     invoke-static {p0, v0}, Lnet/fdgames/Rules/SkillActions;->reincornation(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameEntities/Character;)V
 
     goto :goto_0
-#____________________
 
-    :cond_2
+    :cond_4
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -570,7 +569,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_5
+    if-eqz v0, :cond_7
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -582,16 +581,16 @@
 
     move-result v0
 
-    if-ne v0, v5, :cond_3
+    if-ne v0, v5, :cond_5
 
     invoke-static {p0, v12}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Z)V
 
-    :cond_3
-    if-ne v0, v1, :cond_4
+    :cond_5
+    if-ne v0, v1, :cond_6
 
     invoke-static {p0, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Z)V
 
-    :cond_4
+    :cond_6
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -600,9 +599,9 @@
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->k(Ljava/lang/String;)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    :cond_5
+    :cond_7
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -617,13 +616,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_8
 
     invoke-static {p0, v12}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Z)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
-    :cond_6
+    :cond_8
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -638,7 +637,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_a
+    if-eqz v0, :cond_c
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -650,7 +649,7 @@
 
     move-result v0
 
-    if-ne v0, v5, :cond_8
+    if-ne v0, v5, :cond_a
 
     const/4 v0, 0x4
 
@@ -662,7 +661,7 @@
 
     invoke-virtual {p0, v1}, Lnet/fdgames/GameEntities/Character;->f(F)V
 
-    :cond_7
+    :cond_9
     :goto_1
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -674,8 +673,8 @@
 
     goto/16 :goto_0
 
-    :cond_8
-    if-ne v0, v1, :cond_9
+    :cond_a
+    if-ne v0, v1, :cond_b
 
     const/16 v0, 0x8
 
@@ -689,8 +688,8 @@
 
     goto :goto_1
 
-    :cond_9
-    if-ne v0, v4, :cond_7
+    :cond_b
+    if-ne v0, v4, :cond_9
 
     const/16 v0, 0xc
 
@@ -704,7 +703,7 @@
 
     goto :goto_1
 
-    :cond_a
+    :cond_c
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -719,7 +718,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_elN # next skill
+    if-eqz v0, :cond_11
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -731,21 +730,21 @@
 
     move-result v3
 
-    if-ne v3, v5, :cond_c
+    if-ne v3, v5, :cond_e
 
     move v2, v4
 
     move v0, v1
 
     :goto_2
-    if-ne v3, v1, :cond_5b
+    if-ne v3, v1, :cond_7d
 
     const/4 v0, 0x4
 
     const/4 v1, 0x4
 
     :goto_3
-    if-ne v3, v4, :cond_d
+    if-ne v3, v4, :cond_f
 
     const/4 v1, 0x5
 
@@ -766,13 +765,13 @@
 
     move-result-object v2
 
-    :cond_b
+    :cond_d
     :goto_5
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
-    if-eqz v0, :cond_e
+    if-eqz v0, :cond_10
 
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -782,7 +781,7 @@
 
     iget-boolean v3, v0, Lnet/fdgames/GameEntities/GameObject;->destroy:Z
 
-    if-nez v3, :cond_b
+    if-nez v3, :cond_d
 
     iget-object v3, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -792,7 +791,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_b
+    if-eqz v3, :cond_d
 
     invoke-virtual {v0}, Lnet/fdgames/GameEntities/MapObject;->q()Lnet/fdgames/TiledMap/Objects/Coords;
 
@@ -808,7 +807,7 @@
 
     mul-int/lit8 v5, v4, 0x20
 
-    if-gt v3, v5, :cond_b
+    if-gt v3, v5, :cond_d
 
     sget-object v3, Lnet/fdgames/GameWorld/GameWorld;->c:Lnet/fdgames/GameWorld/WorldFactions;
 
@@ -824,7 +823,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_b
+    if-eqz v3, :cond_d
 
     int-to-float v3, v1
 
@@ -832,19 +831,19 @@
 
     goto :goto_5
 
-    :cond_c
+    :cond_e
     move v2, v12
 
     move v0, v12
 
     goto :goto_2
 
-    :cond_d
+    :cond_f
     move v4, v0
 
     goto :goto_4
 
-    :cond_e
+    :cond_10
     invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
 
     move-result-object v0
@@ -870,8 +869,8 @@
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->k(Ljava/lang/String;)V
 
     goto/16 :goto_0
-#_______________________________________________
-    :cond_elN
+
+    :cond_11
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -886,7 +885,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_f # next skill
+    if-eqz v0, :cond_16
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -898,21 +897,21 @@
 
     move-result v3
 
-    if-ne v3, v5, :cond_c2el
+    if-ne v3, v5, :cond_13
 
     const/4 v2, 0x3
 
     const/4 v0, 0x4
 
-    :goto_2el
-    if-ne v3, v1, :cond_5bel
+    :goto_6
+    if-ne v3, v1, :cond_7e
 
     const/4 v0, 0x4
 
     const/4 v1, 0x5
 
-    :goto_3el
-    if-ne v3, v4, :cond_d2el
+    :goto_7
+    if-ne v3, v4, :cond_14
 
     const/4 v1, 0x6
 
@@ -920,7 +919,7 @@
 
     move v4, v0
 
-    :goto_4el
+    :goto_8
     const-string v0, "spell1"
 
     invoke-static {v0}, Lnet/fdgames/assets/GameAssets;->i(Ljava/lang/String;)V
@@ -933,13 +932,13 @@
 
     move-result-object v2
 
-    :cond_b2
-    :goto_5el
+    :cond_12
+    :goto_9
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
-    if-eqz v0, :cond_e2el
+    if-eqz v0, :cond_15
 
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -963,7 +962,7 @@
 
     mul-int/lit8 v5, v4, 0x20
 
-    if-gt v3, v5, :cond_b2
+    if-gt v3, v5, :cond_12
 
     sget-object v3, Lnet/fdgames/GameWorld/GameWorld;->c:Lnet/fdgames/GameWorld/WorldFactions;
 
@@ -979,27 +978,27 @@
 
     move-result v3
 
-    if-eqz v3, :cond_b2
+    if-eqz v3, :cond_12
 
     int-to-float v3, v1
 
     invoke-virtual {v0, v3}, Lnet/fdgames/GameEntities/Character;->m(F)V
 
-    goto :goto_5el
+    goto :goto_9
 
-    :cond_c2el
+    :cond_13
     move v2, v12
 
     move v0, v12
 
-    goto :goto_2el
+    goto :goto_6
 
-    :cond_d2el
+    :cond_14
     move v4, v0
 
-    goto :goto_4el
+    goto :goto_8
 
-    :cond_e2el
+    :cond_15
     invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
 
     move-result-object v0
@@ -1026,7 +1025,7 @@
 
     goto/16 :goto_0
 
-    :cond_f
+    :cond_16
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -1041,7 +1040,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_10
+    if-eqz v0, :cond_17
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -1073,7 +1072,7 @@
 
     goto/16 :goto_0
 
-    :cond_10
+    :cond_17
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -1088,7 +1087,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_16
+    if-eqz v0, :cond_1d
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -1100,14 +1099,14 @@
 
     move-result v6
 
-    if-ne v6, v5, :cond_13
+    if-ne v6, v5, :cond_1a
 
     move v0, v4
 
     move v3, v1
 
-    :goto_6
-    if-ne v6, v1, :cond_14
+    :goto_a
+    if-ne v6, v1, :cond_1b
 
     const/4 v0, 0x5
 
@@ -1115,8 +1114,8 @@
 
     move v3, v4
 
-    :goto_7
-    if-ne v6, v4, :cond_5c
+    :goto_b
+    if-ne v6, v4, :cond_7f
 
     const/4 v3, 0x5
 
@@ -1126,7 +1125,7 @@
 
     move v1, v0
 
-    :goto_8
+    :goto_c
     invoke-virtual {p0, v1, v7}, Lnet/fdgames/GameEntities/Character;->h(IF)V
 
     invoke-virtual {p0, v3, v7}, Lnet/fdgames/GameEntities/Character;->e(IF)V
@@ -1143,7 +1142,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_11
+    if-eqz v0, :cond_18
 
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
@@ -1181,7 +1180,7 @@
 
     invoke-virtual {v0, v2, v7}, Lnet/fdgames/GameEntities/Character;->g(IF)V
 
-    :cond_11
+    :cond_18
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -1212,13 +1211,13 @@
 
     move-result-object v4
 
-    :cond_12
-    :goto_9
+    :cond_19
+    :goto_d
     invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
-    if-eqz v0, :cond_15
+    if-eqz v0, :cond_1c
 
     invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -1236,7 +1235,7 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_12
+    if-eqz v0, :cond_19
 
     invoke-virtual {v0, v1, v7}, Lnet/fdgames/GameEntities/Character;->h(IF)V
 
@@ -1244,21 +1243,21 @@
 
     invoke-virtual {v0, v2, v7}, Lnet/fdgames/GameEntities/Character;->g(IF)V
 
-    goto :goto_9
+    goto :goto_d
 
-    :cond_13
+    :cond_1a
     move v0, v12
 
     move v3, v12
 
-    goto/16 :goto_6
+    goto/16 :goto_a
 
-    :cond_14
+    :cond_1b
     move v2, v12
 
-    goto/16 :goto_7
+    goto/16 :goto_b
 
-    :cond_15
+    :cond_1c
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -1269,7 +1268,7 @@
 
     goto/16 :goto_0
 
-    :cond_16
+    :cond_1d
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -1284,7 +1283,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_22
+    if-eqz v0, :cond_29
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -1296,9 +1295,9 @@
 
     move-result v0
 
-    if-lez v0, :cond_1b
+    if-lez v0, :cond_22
 
-    if-ne v0, v5, :cond_18
+    if-ne v0, v5, :cond_1f
 
     const-string v0, "lightning_bolt1"
 
@@ -1306,7 +1305,7 @@
 
     move-result-object v3
 
-    :goto_a
+    :goto_e
     sget-object v2, Lnet/fdgames/GameEntities/Helpers/Damage$DamageType;->e:Lnet/fdgames/GameEntities/Helpers/Damage$DamageType;
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
@@ -1319,9 +1318,9 @@
 
     move-result v6
 
-    if-lez v6, :cond_1f
+    if-lez v6, :cond_26
 
-    if-ne v6, v5, :cond_1c
+    if-ne v6, v5, :cond_23
 
     const/4 v0, 0x5
 
@@ -1331,7 +1330,7 @@
 
     add-int/lit8 v0, v0, 0xa
 
-    :goto_b
+    :goto_f
     new-instance v4, Lnet/fdgames/GameEntities/Helpers/DamageData;
 
     invoke-direct {v4, v2, v0, v5}, Lnet/fdgames/GameEntities/Helpers/DamageData;-><init>(Lnet/fdgames/GameEntities/Helpers/Damage$DamageType;IZ)V
@@ -1390,7 +1389,7 @@
 
     move-result v1
 
-    if-nez v1, :cond_17
+    if-nez v1, :cond_1e
 
     invoke-static {}, Le/a/c/b;->q()Le/a/c/b;
 
@@ -1410,8 +1409,8 @@
 
     move-result v1
 
-    :cond_17
-    if-lez v1, :cond_20
+    :cond_1e
+    if-lez v1, :cond_27
 
     invoke-static {v1}, Lnet/fdgames/GameLevel/GameLevel;->a(I)Lnet/fdgames/GameEntities/Character;
 
@@ -1457,8 +1456,8 @@
 
     goto/16 :goto_0
 
-    :cond_18
-    if-ne v0, v1, :cond_19
+    :cond_1f
+    if-ne v0, v1, :cond_20
 
     const-string v0, "lightning_bolt2"
 
@@ -1466,10 +1465,10 @@
 
     move-result-object v3
 
-    goto/16 :goto_a
+    goto/16 :goto_e
 
-    :cond_19
-    if-ne v0, v4, :cond_1a
+    :cond_20
+    if-ne v0, v4, :cond_21
 
     const-string v0, "lightning_bolt3"
 
@@ -1477,12 +1476,12 @@
 
     move-result-object v3
 
-    goto/16 :goto_a
+    goto/16 :goto_e
 
-    :cond_1a
+    :cond_21
     const/4 v2, 0x4
 
-    if-ne v0, v2, :cond_1b
+    if-ne v0, v2, :cond_22
 
     const-string v0, "lightning_bolt4"
 
@@ -1490,15 +1489,15 @@
 
     move-result-object v3
 
-    goto/16 :goto_a
+    goto/16 :goto_e
 
-    :cond_1b
+    :cond_22
     const/4 v3, 0x0
 
-    goto/16 :goto_a
+    goto/16 :goto_e
 
-    :cond_1c
-    if-ne v6, v1, :cond_1d
+    :cond_23
+    if-ne v6, v1, :cond_24
 
     const/4 v1, 0x5
 
@@ -1512,13 +1511,13 @@
 
     move-result v0
 
-    :goto_c
+    :goto_10
     add-int/2addr v0, v1
 
-    goto/16 :goto_b
+    goto/16 :goto_f
 
-    :cond_1d
-    if-ne v6, v4, :cond_1e
+    :cond_24
+    if-ne v6, v4, :cond_25
 
     const/16 v1, 0x8
 
@@ -1532,15 +1531,15 @@
 
     move-result v0
 
-    :goto_d
+    :goto_11
     mul-int/lit8 v0, v0, 0x2
 
-    goto :goto_c
+    goto :goto_10
 
-    :cond_1e
+    :cond_25
     const/4 v1, 0x4
 
-    if-ne v6, v1, :cond_1f
+    if-ne v6, v1, :cond_26
 
     const/16 v1, 0x8
 
@@ -1554,14 +1553,14 @@
 
     move-result v0
 
-    goto :goto_d
+    goto :goto_11
 
-    :cond_1f
+    :cond_26
     move v0, v12
 
-    goto/16 :goto_b
+    goto/16 :goto_f
 
-    :cond_20
+    :cond_27
     new-instance v0, Lnet/fdgames/TiledMap/Objects/Coords;
 
     invoke-direct {v0, v12, v12}, Lnet/fdgames/TiledMap/Objects/Coords;-><init>(II)V
@@ -1572,7 +1571,7 @@
 
     cmpl-float v0, v0, v1
 
-    if-nez v0, :cond_21
+    if-nez v0, :cond_28
 
     iget v0, p0, Lnet/fdgames/GameEntities/MapActor;->speedY:F
 
@@ -1580,7 +1579,7 @@
 
     cmpl-float v0, v0, v1
 
-    if-nez v0, :cond_21
+    if-nez v0, :cond_28
 
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/MapObject;->q()Lnet/fdgames/TiledMap/Objects/Coords;
 
@@ -1594,7 +1593,7 @@
 
     move-result-object v0
 
-    :goto_e
+    :goto_12
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
 
     move-result v5
@@ -1617,7 +1616,7 @@
 
     goto/16 :goto_0
 
-    :cond_21
+    :cond_28
     iget v0, p0, Lnet/fdgames/GameEntities/MapActor;->speedX:F
 
     const/high16 v1, 0x42c80000    # 100.0f
@@ -1678,9 +1677,9 @@
 
     invoke-direct {v0, v1, v2}, Lnet/fdgames/TiledMap/Objects/Coords;-><init>(II)V
 
-    goto :goto_e
+    goto :goto_12
 
-    :cond_22
+    :cond_29
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -1695,7 +1694,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_27
+    if-eqz v0, :cond_2e
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -1707,14 +1706,14 @@
 
     move-result v6
 
-    if-ne v6, v5, :cond_25
+    if-ne v6, v5, :cond_2c
 
     const/4 v3, 0x6
 
     move v2, v4
 
-    :goto_f
-    if-ne v6, v1, :cond_26
+    :goto_13
+    if-ne v6, v1, :cond_2d
 
     const/16 v1, 0x9
 
@@ -1722,8 +1721,8 @@
 
     const/16 v0, 0xf
 
-    :goto_10
-    if-ne v6, v4, :cond_23
+    :goto_14
+    if-ne v6, v4, :cond_2a
 
     const/16 v0, 0x14
 
@@ -1731,10 +1730,10 @@
 
     const/4 v2, 0x5
 
-    :cond_23
+    :cond_2a
     const/4 v3, 0x4
 
-    if-ne v6, v3, :cond_24
+    if-ne v6, v3, :cond_2b
 
     const/16 v1, 0x15
 
@@ -1742,7 +1741,7 @@
 
     const/4 v2, 0x6
 
-    :cond_24
+    :cond_2b
     const/high16 v3, 0x43340000    # 180.0f
 
     invoke-virtual {p0, v3, v2, v1, v0}, Lnet/fdgames/GameEntities/Character;->a(FIII)V
@@ -1757,21 +1756,21 @@
 
     goto/16 :goto_0
 
-    :cond_25
+    :cond_2c
     move v3, v12
 
     move v2, v12
 
-    goto :goto_f
+    goto :goto_13
 
-    :cond_26
+    :cond_2d
     move v0, v12
 
     move v1, v3
 
-    goto :goto_10
+    goto :goto_14
 
-    :cond_27
+    :cond_2e
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -1786,7 +1785,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2d
+    if-eqz v0, :cond_34
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -1798,7 +1797,7 @@
 
     move-result v2
 
-    if-ne v2, v5, :cond_28
+    if-ne v2, v5, :cond_2f
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -1808,19 +1807,19 @@
 
     const/4 v3, 0x4
 
-    if-lt v0, v3, :cond_2b
+    if-lt v0, v3, :cond_32
 
     move v0, v4
 
-    :goto_11
+    :goto_15
     const-string v3, "familiar_1"
 
     const/16 v4, 0x78
 
     invoke-static {p0, v3, v0, v4}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_28
-    if-ne v2, v1, :cond_2a
+    :cond_2f
+    if-ne v2, v1, :cond_31
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -1830,25 +1829,25 @@
 
     const/4 v0, 0x6
 
-    if-lt v1, v0, :cond_2c
+    if-lt v1, v0, :cond_33
 
     const/4 v0, 0x5
 
-    :goto_12
+    :goto_16
     const/4 v2, 0x7
 
-    if-lt v1, v2, :cond_29
+    if-lt v1, v2, :cond_30
 
     const/4 v0, 0x6
 
-    :cond_29
+    :cond_30
     const-string v1, "familiar_2"
 
     const/16 v2, 0x78
 
     invoke-static {p0, v1, v0, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_2a
+    :cond_31
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -1859,17 +1858,17 @@
 
     goto/16 :goto_0
 
-    :cond_2b
+    :cond_32
     move v0, v1
 
-    goto :goto_11
+    goto :goto_15
 
-    :cond_2c
+    :cond_33
     const/4 v0, 0x4
 
-    goto :goto_12
+    goto :goto_16
 
-    :cond_2d
+    :cond_34
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -1884,7 +1883,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_31
+    if-eqz v0, :cond_38
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -1896,7 +1895,7 @@
 
     move-result v0
 
-    if-ne v0, v5, :cond_2e
+    if-ne v0, v5, :cond_35
 
     const-string v2, "elemental_fire_01"
 
@@ -1906,8 +1905,8 @@
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_2e
-    if-ne v0, v1, :cond_2f
+    :cond_35
+    if-ne v0, v1, :cond_36
 
     const-string v1, "elemental_fire_02"
 
@@ -1917,8 +1916,8 @@
 
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_2f
-    if-ne v0, v4, :cond_30
+    :cond_36
+    if-ne v0, v4, :cond_37
 
     const-string v0, "elemental_fire_03"
 
@@ -1928,7 +1927,7 @@
 
     invoke-static {p0, v0, v1, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_30
+    :cond_37
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -1939,7 +1938,7 @@
 
     goto/16 :goto_0
 
-    :cond_31
+    :cond_38
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -1954,7 +1953,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_35
+    if-eqz v0, :cond_3c
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -1966,7 +1965,7 @@
 
     move-result v0
 
-    if-ne v0, v5, :cond_32
+    if-ne v0, v5, :cond_39
 
     const-string v2, "elemental_ice_01"
 
@@ -1976,8 +1975,8 @@
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_32
-    if-ne v0, v1, :cond_33
+    :cond_39
+    if-ne v0, v1, :cond_3a
 
     const-string v1, "elemental_ice_02"
 
@@ -1987,8 +1986,8 @@
 
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_33
-    if-ne v0, v4, :cond_34
+    :cond_3a
+    if-ne v0, v4, :cond_3b
 
     const-string v0, "elemental_ice_03"
 
@@ -1998,7 +1997,7 @@
 
     invoke-static {p0, v0, v1, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_34
+    :cond_3b
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -2009,7 +2008,7 @@
 
     goto/16 :goto_0
 
-    :cond_35
+    :cond_3c
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -2024,7 +2023,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_39
+    if-eqz v0, :cond_40
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -2032,22 +2031,22 @@
 
     const-string v2, "earth_mastery"
 
-    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I # получаем уровень навыка
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
 
-    move-result v0 # помещаем результат в v0
+    move-result v0
 
-    if-ne v0, v5, :cond_36 # если v0 не равно v5 (1) переходим на cond_36
+    if-ne v0, v5, :cond_3d
 
-    const-string v2, "golem_01" # ID (имя) призываемого существа
+    const-string v2, "golem_01"
 
-    const/16 v3, 0x8 # его уровень
+    const/16 v3, 0x8
 
-    const/16 v5, 0xb4 # его время жизни
+    const/16 v5, 0xb4
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_36 #второй уровень
-    if-ne v0, v1, :cond_37
+    :cond_3d
+    if-ne v0, v1, :cond_3e
 
     const-string v1, "golem_02"
 
@@ -2057,8 +2056,8 @@
 
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_37 # третий
-    if-ne v0, v4, :cond_38 # выход в начало метода
+    :cond_3e
+    if-ne v0, v4, :cond_3f
 
     const-string v0, "golem_03"
 
@@ -2068,7 +2067,7 @@
 
     invoke-static {p0, v0, v1, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_38
+    :cond_3f
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -2079,7 +2078,7 @@
 
     goto/16 :goto_0
 
-    :cond_39
+    :cond_40
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -2094,7 +2093,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_flash_and_bones
+    if-eqz v0, :cond_44
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -2106,22 +2105,22 @@
 
     move-result v0
 
-    if-ne v0, v5, :cond_3a
+    if-ne v0, v5, :cond_41
 
     const-string v2, "small_blue_spirit"
 
-    const/4 v3, 0x3 # уровень
+    const/4 v3, 0x3
 
-    const/16 v5, 0x1e # время жизни 
-
-    invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
+    const/16 v5, 0x1e
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_3a
-    if-ne v0, v1, :cond_3b
+    invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
+
+    :cond_41
+    if-ne v0, v1, :cond_42
 
     const-string v1, "small_blue_spirit1"
 
@@ -2137,8 +2136,8 @@
 
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_3b
-    if-ne v0, v4, :cond_3c
+    :cond_42
+    if-ne v0, v4, :cond_43
 
     const-string v0, "blue_spirit"
 
@@ -2148,7 +2147,7 @@
 
     invoke-static {p0, v0, v1, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_3c
+    :cond_43
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -2159,7 +2158,7 @@
 
     goto/16 :goto_0
 
-    :cond_flash_and_bones
+    :cond_44
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -2174,7 +2173,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_ws
+    if-eqz v0, :cond_48
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -2186,7 +2185,7 @@
 
     move-result v0
 
-    if-ne v0, v5, :cond_fab
+    if-ne v0, v5, :cond_45
 
     const-string v2, "mortification1"
 
@@ -2196,8 +2195,8 @@
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_fab
-    if-ne v0, v1, :cond_fab1
+    :cond_45
+    if-ne v0, v1, :cond_46
 
     const-string v1, "mortification2"
 
@@ -2207,8 +2206,8 @@
 
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_fab1
-    if-ne v0, v4, :cond_fab2
+    :cond_46
+    if-ne v0, v4, :cond_47
 
     const-string v0, "mortification3"
 
@@ -2218,7 +2217,7 @@
 
     invoke-static {p0, v0, v1, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_fab2
+    :cond_47
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -2229,7 +2228,7 @@
 
     goto/16 :goto_0
 
-    :cond_ws
+    :cond_48
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -2244,7 +2243,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_spirit_golem
+    if-eqz v0, :cond_4c
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -2258,7 +2257,7 @@
 
     const/16 v5, 0x1
 
-    if-ne v0, v5, :cond_ws1
+    if-ne v0, v5, :cond_49
 
     const-string v2, "spirit_legioner"
 
@@ -2268,11 +2267,10 @@
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_ws1
-
+    :cond_49
     const/16 v1, 0x2
 
-    if-ne v0, v1, :cond_ws2
+    if-ne v0, v1, :cond_4a
 
     const-string v1, "spirit_berserk"
 
@@ -2282,11 +2280,10 @@
 
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_ws2
-
+    :cond_4a
     const/16 v1, 0x3
 
-    if-ne v0, v1, :cond_ws3
+    if-ne v0, v1, :cond_4b
 
     const-string v0, "spirit_legat"
 
@@ -2296,7 +2293,7 @@
 
     invoke-static {p0, v0, v1, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_ws3
+    :cond_4b
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -2307,7 +2304,7 @@
 
     goto/16 :goto_0
 
-    :cond_spirit_golem
+    :cond_4c
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -2322,7 +2319,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_bone_egg
+    if-eqz v0, :cond_50
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -2336,7 +2333,7 @@
 
     const/16 v5, 0x1
 
-    if-ne v0, v5, :cond_sg1
+    if-ne v0, v5, :cond_4d
 
     const-string v2, "spirit_golem1"
 
@@ -2346,11 +2343,10 @@
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_sg1
-
+    :cond_4d
     const/16 v1, 0x2
 
-    if-ne v0, v1, :cond_sg2
+    if-ne v0, v1, :cond_4e
 
     const-string v1, "spirit_golem2"
 
@@ -2360,11 +2356,10 @@
 
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_sg2
-
+    :cond_4e
     const/16 v1, 0x3
 
-    if-ne v0, v1, :cond_sg3
+    if-ne v0, v1, :cond_4f
 
     const-string v0, "spirit_golem3"
 
@@ -2374,7 +2369,7 @@
 
     invoke-static {p0, v0, v1, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_sg3
+    :cond_4f
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -2385,7 +2380,7 @@
 
     goto/16 :goto_0
 
-    :cond_bone_egg
+    :cond_50
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -2400,7 +2395,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_lesser_undead_skill
+    if-eqz v0, :cond_54
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -2414,7 +2409,7 @@
 
     const/16 v5, 0x1
 
-    if-ne v0, v5, :cond_bone_egg_1
+    if-ne v0, v5, :cond_51
 
     const-string v2, "necro_egg"
 
@@ -2424,11 +2419,10 @@
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_bone_egg_1
-
+    :cond_51
     const/16 v1, 0x2
 
-    if-ne v0, v1, :cond_bone_egg_2
+    if-ne v0, v1, :cond_52
 
     const-string v1, "necro_egg2"
 
@@ -2438,11 +2432,10 @@
 
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_bone_egg_2
-
+    :cond_52
     const/16 v1, 0x3
 
-    if-ne v0, v1, :cond_bone_egg_3
+    if-ne v0, v1, :cond_53
 
     const-string v0, "necro_egg3"
 
@@ -2452,7 +2445,7 @@
 
     invoke-static {p0, v0, v1, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_bone_egg_3
+    :cond_53
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -2463,7 +2456,7 @@
 
     goto/16 :goto_0
 
-    :cond_lesser_undead_skill
+    :cond_54
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -2478,7 +2471,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_spider_swarm
+    if-eqz v0, :cond_58
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -2492,7 +2485,7 @@
 
     const/16 v5, 0x1
 
-    if-ne v0, v5, :cond_lesser_undead_skill_lvl2
+    if-ne v0, v5, :cond_55
 
     const-string v2, "zombie_summon"
 
@@ -2502,11 +2495,10 @@
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_lesser_undead_skill_lvl2
-
+    :cond_55
     const/16 v1, 0x2
 
-    if-ne v0, v1, :cond_lesser_undead_skill_lvl3
+    if-ne v0, v1, :cond_56
 
     const-string v1, "zombie_summon"
 
@@ -2515,13 +2507,13 @@
     const/16 v3, 0x78
 
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
+
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_lesser_undead_skill_lvl3
-
+    :cond_56
     const/16 v1, 0x3
 
-    if-ne v0, v1, :cond_lesser_undead_skill_end
+    if-ne v0, v1, :cond_57
 
     const-string v0, "skeleton_summon"
 
@@ -2530,9 +2522,10 @@
     const/16 v2, 0x78
 
     invoke-static {p0, v0, v1, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
+
     invoke-static {p0, v0, v1, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_lesser_undead_skill_end
+    :cond_57
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -2543,7 +2536,7 @@
 
     goto/16 :goto_0
 
-    :cond_spider_swarm
+    :cond_58
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -2558,7 +2551,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_web_dimension # Переход на след навык fireball
+    if-eqz v0, :cond_5c
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -2572,47 +2565,47 @@
 
     const/16 v5, 0x1
 
-    if-ne v0, v5, :cond_spider_swarm_lvl2
+    if-ne v0, v5, :cond_59
 
     const-string v2, "spider_lesser_summon"
 
     const/4 v3, 0x6
 
-    const/16 v5, 0x3C
+    const/16 v5, 0x3c
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_spider_swarm_lvl2
-
+    :cond_59
     const/16 v1, 0x2
 
-    if-ne v0, v1, :cond_spider_swarm_lvl3
+    if-ne v0, v1, :cond_5a
 
     const-string v1, "spider_lesser_summon"
 
     const/16 v2, 0x10
 
-    const/16 v3, 0x3C
+    const/16 v3, 0x3c
 
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
+
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_spider_swarm_lvl3
-
+    :cond_5a
     const/16 v1, 0x3
 
-    if-ne v0, v1, :cond_spider_swarm_end
+    if-ne v0, v1, :cond_5b
 
     const-string v0, "spider_lesser_summon2"
 
     const/16 v1, 0x10
 
-    const/16 v2, 0x2D
+    const/16 v2, 0x2d
 
     invoke-static {p0, v0, v1, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
+
     invoke-static {p0, v0, v1, v2}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_spider_swarm_end
+    :cond_5b
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -2623,7 +2616,7 @@
 
     goto/16 :goto_0
 
-    :cond_web_dimension
+    :cond_5c
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -2638,7 +2631,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3d # Переход на след навык fireball
+    if-eqz v0, :cond_5f
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -2652,7 +2645,7 @@
 
     const/16 v5, 0x1
 
-    if-ne v0, v5, :cond_web_dimension_lvl2
+    if-ne v0, v5, :cond_5d
 
     const-string v2, "spider_summon"
 
@@ -2661,13 +2654,13 @@
     const/16 v5, 0x78
 
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
+
     invoke-static {p0, v2, v3, v5}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_web_dimension_lvl2
-
+    :cond_5d
     const/16 v1, 0x2
 
-    if-ne v0, v1, :cond_web_dimension_end
+    if-ne v0, v1, :cond_5e
 
     const-string v1, "spider_summon"
 
@@ -2676,9 +2669,10 @@
     const/16 v3, 0x78
 
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
+
     invoke-static {p0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_web_dimension_end
+    :cond_5e
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -2689,11 +2683,7 @@
 
     goto/16 :goto_0
 
-#______________________________________________
-#-----Новый скилл,new skill, todo ToDo TODO !!!
-#______________________________________________
-
-    :cond_3d
+    :cond_5f
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -2708,7 +2698,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_46
+    if-eqz v0, :cond_68
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -2720,16 +2710,16 @@
 
     move-result v0
 
-    if-lez v0, :cond_3e
+    if-lez v0, :cond_60
 
-    if-ne v0, v5, :cond_41
+    if-ne v0, v5, :cond_63
 
-    :cond_3e
+    :cond_60
     const-string v0, "fireball_weak_1"
 
     move-object v7, v0
 
-    :goto_13
+    :goto_17
     const-string v0, "spell_major"
 
     invoke-static {v0}, Lnet/fdgames/assets/GameAssets;->i(Ljava/lang/String;)V
@@ -2770,7 +2760,7 @@
 
     move-result v1
 
-    if-nez v1, :cond_3f
+    if-nez v1, :cond_61
 
     invoke-static {}, Le/a/c/b;->q()Le/a/c/b;
 
@@ -2790,8 +2780,8 @@
 
     move-result v1
 
-    :cond_3f
-    if-lez v1, :cond_44
+    :cond_61
+    if-lez v1, :cond_66
 
     invoke-static {v1}, Lnet/fdgames/GameLevel/GameLevel;->a(I)Lnet/fdgames/GameEntities/Character;
 
@@ -2839,11 +2829,11 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_40
+    if-eqz v0, :cond_62
 
     invoke-virtual {v0, v7}, Lnet/fdgames/GameEntities/Final/Projectile;->a(Ljava/lang/String;)V
 
-    :cond_40
+    :cond_62
     invoke-virtual {v6}, Lnet/fdgames/GameEntities/MapObject;->q()Lnet/fdgames/TiledMap/Objects/Coords;
 
     move-result-object v0
@@ -2852,36 +2842,36 @@
 
     goto/16 :goto_0
 
-    :cond_41
-    if-ne v0, v1, :cond_42
+    :cond_63
+    if-ne v0, v1, :cond_64
 
     const-string v0, "fireball_weak_2"
 
     move-object v7, v0
 
-    goto :goto_13
+    goto :goto_17
 
-    :cond_42
-    if-ne v0, v4, :cond_43
+    :cond_64
+    if-ne v0, v4, :cond_65
 
     const-string v0, "fireball_weak_3"
 
     move-object v7, v0
 
-    goto/16 :goto_13
+    goto/16 :goto_17
 
-    :cond_43
+    :cond_65
     const/4 v1, 0x4
 
-    if-ne v0, v1, :cond_3e
+    if-ne v0, v1, :cond_60
 
     const-string v0, "fireball_weak_4"
 
     move-object v7, v0
 
-    goto/16 :goto_13
+    goto/16 :goto_17
 
-    :cond_44
+    :cond_66
     new-instance v0, Lnet/fdgames/TiledMap/Objects/Coords;
 
     invoke-direct {v0, v12, v12}, Lnet/fdgames/TiledMap/Objects/Coords;-><init>(II)V
@@ -2892,7 +2882,7 @@
 
     cmpl-float v0, v0, v1
 
-    if-nez v0, :cond_45
+    if-nez v0, :cond_67
 
     iget v0, p0, Lnet/fdgames/GameEntities/MapActor;->speedY:F
 
@@ -2900,7 +2890,7 @@
 
     cmpl-float v0, v0, v1
 
-    if-nez v0, :cond_45
+    if-nez v0, :cond_67
 
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/MapObject;->q()Lnet/fdgames/TiledMap/Objects/Coords;
 
@@ -2916,7 +2906,7 @@
 
     move-object v2, v0
 
-    :goto_14
+    :goto_18
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
 
     move-result v0
@@ -2947,7 +2937,7 @@
 
     goto/16 :goto_0
 
-    :cond_45
+    :cond_67
     iget v0, p0, Lnet/fdgames/GameEntities/MapActor;->speedX:F
 
     const/high16 v1, 0x42c80000    # 100.0f
@@ -3010,9 +3000,9 @@
 
     move-object v2, v0
 
-    goto :goto_14
+    goto :goto_18
 
-    :cond_46
+    :cond_68
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -3027,7 +3017,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_4e
+    if-eqz v0, :cond_70
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -3039,15 +3029,15 @@
 
     move-result v0
 
-    if-lez v0, :cond_4b
+    if-lez v0, :cond_6d
 
-    if-ne v0, v5, :cond_49
+    if-ne v0, v5, :cond_6b
 
     const-string v0, "dc_weak_1"
 
     move-object v7, v0
 
-    :goto_15
+    :goto_19
     const-string v0, "spell_major"
 
     invoke-static {v0}, Lnet/fdgames/assets/GameAssets;->i(Ljava/lang/String;)V
@@ -3088,7 +3078,7 @@
 
     move-result v1
 
-    if-nez v1, :cond_47
+    if-nez v1, :cond_69
 
     invoke-static {}, Le/a/c/b;->q()Le/a/c/b;
 
@@ -3108,8 +3098,8 @@
 
     move-result v1
 
-    :cond_47
-    if-lez v1, :cond_4c
+    :cond_69
+    if-lez v1, :cond_6e
 
     invoke-static {v1}, Lnet/fdgames/GameLevel/GameLevel;->a(I)Lnet/fdgames/GameEntities/Character;
 
@@ -3157,11 +3147,11 @@
 
     move-result-object v0
 
-    if-eqz v0, :cond_48
+    if-eqz v0, :cond_6a
 
     invoke-virtual {v0, v7}, Lnet/fdgames/GameEntities/Final/Projectile;->a(Ljava/lang/String;)V
 
-    :cond_48
+    :cond_6a
     invoke-virtual {v6}, Lnet/fdgames/GameEntities/MapObject;->q()Lnet/fdgames/TiledMap/Objects/Coords;
 
     move-result-object v0
@@ -3170,32 +3160,32 @@
 
     goto/16 :goto_0
 
-    :cond_49
-    if-ne v0, v1, :cond_4a
+    :cond_6b
+    if-ne v0, v1, :cond_6c
 
     const-string v0, "dc_weak_2"
 
     move-object v7, v0
 
-    goto :goto_15
+    goto :goto_19
 
-    :cond_4a
-    if-ne v0, v4, :cond_4b
+    :cond_6c
+    if-ne v0, v4, :cond_6d
 
     const-string v0, "dc_weak_3"
 
     move-object v7, v0
 
-    goto/16 :goto_15
+    goto/16 :goto_19
 
-    :cond_4b
+    :cond_6d
     const-string v0, "dc_1"
 
     move-object v7, v0
 
-    goto/16 :goto_15
+    goto/16 :goto_19
 
-    :cond_4c
+    :cond_6e
     new-instance v0, Lnet/fdgames/TiledMap/Objects/Coords;
 
     invoke-direct {v0, v12, v12}, Lnet/fdgames/TiledMap/Objects/Coords;-><init>(II)V
@@ -3206,7 +3196,7 @@
 
     cmpl-float v0, v0, v1
 
-    if-nez v0, :cond_4d
+    if-nez v0, :cond_6f
 
     iget v0, p0, Lnet/fdgames/GameEntities/MapActor;->speedY:F
 
@@ -3214,7 +3204,7 @@
 
     cmpl-float v0, v0, v1
 
-    if-nez v0, :cond_4d
+    if-nez v0, :cond_6f
 
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/MapObject;->q()Lnet/fdgames/TiledMap/Objects/Coords;
 
@@ -3230,7 +3220,7 @@
 
     move-object v2, v0
 
-    :goto_16
+    :goto_1a
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
 
     move-result v0
@@ -3261,7 +3251,7 @@
 
     goto/16 :goto_0
 
-    :cond_4d
+    :cond_6f
     iget v0, p0, Lnet/fdgames/GameEntities/MapActor;->speedX:F
 
     const/high16 v1, 0x42c80000    # 100.0f
@@ -3324,9 +3314,9 @@
 
     move-object v2, v0
 
-    goto :goto_16
+    goto :goto_1a
 
-    :cond_4e
+    :cond_70
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -3341,7 +3331,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_4f
+    if-eqz v0, :cond_71
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -3373,7 +3363,7 @@
 
     goto/16 :goto_0
 
-    :cond_4f
+    :cond_71
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -3388,7 +3378,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_57
+    if-eqz v0, :cond_79
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -3440,15 +3430,15 @@
 
     move-result v2
 
-    if-lez v2, :cond_50
+    if-lez v2, :cond_72
 
-    if-ne v2, v5, :cond_52
+    if-ne v2, v5, :cond_74
 
-    :cond_50
+    :cond_72
     const-string v6, "ice_storm_weak_1"
 
-    :goto_17
-    if-nez v0, :cond_51
+    :goto_1b
+    if-nez v0, :cond_73
 
     invoke-static {}, Le/a/c/b;->q()Le/a/c/b;
 
@@ -3468,8 +3458,8 @@
 
     move-result v0
 
-    :cond_51
-    if-lez v0, :cond_55
+    :cond_73
+    if-lez v0, :cond_77
 
     invoke-static {v0}, Lnet/fdgames/GameLevel/GameLevel;->a(I)Lnet/fdgames/GameEntities/Character;
 
@@ -3539,30 +3529,30 @@
 
     goto/16 :goto_0
 
-    :cond_52
-    if-ne v2, v1, :cond_53
+    :cond_74
+    if-ne v2, v1, :cond_75
 
     const-string v6, "ice_storm_weak_2"
 
-    goto :goto_17
+    goto :goto_1b
 
-    :cond_53
-    if-ne v2, v4, :cond_54
+    :cond_75
+    if-ne v2, v4, :cond_76
 
     const-string v6, "ice_storm_weak_3"
 
-    goto :goto_17
+    goto :goto_1b
 
-    :cond_54
+    :cond_76
     const/4 v1, 0x4
 
-    if-ne v2, v1, :cond_50
+    if-ne v2, v1, :cond_72
 
     const-string v6, "ice_storm_weak_4"
 
-    goto :goto_17
+    goto :goto_1b
 
-    :cond_55
+    :cond_77
     new-instance v0, Lnet/fdgames/TiledMap/Objects/Coords;
 
     invoke-direct {v0, v12, v12}, Lnet/fdgames/TiledMap/Objects/Coords;-><init>(II)V
@@ -3573,7 +3563,7 @@
 
     cmpl-float v0, v0, v1
 
-    if-nez v0, :cond_56
+    if-nez v0, :cond_78
 
     iget v0, p0, Lnet/fdgames/GameEntities/MapActor;->speedY:F
 
@@ -3581,7 +3571,7 @@
 
     cmpl-float v0, v0, v1
 
-    if-nez v0, :cond_56
+    if-nez v0, :cond_78
 
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/MapObject;->q()Lnet/fdgames/TiledMap/Objects/Coords;
 
@@ -3597,7 +3587,7 @@
 
     move-object v8, v0
 
-    :goto_18
+    :goto_1c
     new-instance v0, Lnet/fdgames/GameEntities/Final/MapEffectEntity;
 
     iget v1, p0, Lnet/fdgames/GameEntities/MapObject;->x:I
@@ -3628,7 +3618,7 @@
 
     goto/16 :goto_0
 
-    :cond_56
+    :cond_78
     iget v0, p0, Lnet/fdgames/GameEntities/MapActor;->speedX:F
 
     const/high16 v1, 0x42c80000    # 100.0f
@@ -3691,9 +3681,9 @@
 
     move-object v8, v0
 
-    goto :goto_18
+    goto :goto_1c
 
-    :cond_57
+    :cond_79
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -3726,14 +3716,14 @@
 
     move-result v2
 
-    if-ne v0, v5, :cond_59
+    if-ne v0, v5, :cond_7b
 
     const/16 v0, 0x32
 
     invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/Character;->j(I)V
 
-    :cond_58
-    :goto_19
+    :cond_7a
+    :goto_1d
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -3744,17 +3734,17 @@
 
     goto/16 :goto_0
 
-    :cond_59
-    if-ne v0, v1, :cond_5a
+    :cond_7b
+    if-ne v0, v1, :cond_7c
 
     add-int/lit8 v0, v2, 0x4b
 
     invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/Character;->j(I)V
 
-    goto :goto_19
+    goto :goto_1d
 
-    :cond_5a
-    if-ne v0, v4, :cond_58
+    :cond_7c
+    if-ne v0, v4, :cond_7a
 
     mul-int/lit8 v0, v2, 0x2
 
@@ -3762,24 +3752,22 @@
 
     invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/Character;->j(I)V
 
-    goto :goto_19
+    goto :goto_1d
 
-# need test and editing
-
-    :cond_5b
+    :cond_7d
     move v1, v2
 
     goto/16 :goto_3
 
-    :cond_5bel
+    :cond_7e
     move v1, v2
 
-    goto/16 :goto_3el
+    goto/16 :goto_7
 
-    :cond_5c
+    :cond_7f
     move v1, v0
 
-    goto/16 :goto_8
+    goto/16 :goto_c
 .end method
 
 
@@ -5831,7 +5819,7 @@
     :cond_f
     const/4 v1, 0x3
 
-    if-ne v7, v1, :cond_63
+    if-ne v7, v1, :cond_6a
 
     const/high16 v0, 0x3f400000    # 0.75f
 
@@ -6305,7 +6293,7 @@
     :cond_20
     const/4 v4, 0x3
 
-    if-ne v1, v4, :cond_62
+    if-ne v1, v4, :cond_69
 
     const/16 v2, 0x80
 
@@ -6506,7 +6494,7 @@
     :cond_24
     const/4 v3, 0x3
 
-    if-ne v2, v3, :cond_61
+    if-ne v2, v3, :cond_68
 
     const/high16 v0, 0x40400000    # 3.0f
 
@@ -6531,7 +6519,7 @@
 
     iget-boolean v2, v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterInventory;->shield:Z
 
-    if-eqz v2, :cond_60
+    if-eqz v2, :cond_67
 
     const/high16 v2, 0x3f800000    # 1.0f
 
@@ -6977,7 +6965,7 @@
     :cond_2f
     const/4 v3, 0x4
 
-    if-ne v1, v3, :cond_5f
+    if-ne v1, v3, :cond_66
 
     const/high16 v0, 0x40200000    # 2.5f
 
@@ -7893,7 +7881,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_next
+    if-eqz v0, :cond_4f
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -7939,14 +7927,14 @@
 
     goto/16 :goto_0
 
-    :cond_next
+    :cond_4f
     const-string v0, "UNFIREWEAPON"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_next2
+    if-eqz v0, :cond_50
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -7992,14 +7980,14 @@
 
     goto/16 :goto_0
 
-    :cond_next2
+    :cond_50
     const-string v0, "UNCOLDWEAPON"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_next3
+    if-eqz v0, :cond_51
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8045,14 +8033,14 @@
 
     goto/16 :goto_0
 
-    :cond_next3
+    :cond_51
     const-string v0, "UNSHOCKWEAPON"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_next4
+    if-eqz v0, :cond_52
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8098,14 +8086,14 @@
 
     goto/16 :goto_0
 
-    :cond_next4
+    :cond_52
     const-string v0, "UNDEATHWEAPON"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_next5
+    if-eqz v0, :cond_53
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8151,14 +8139,14 @@
 
     goto/16 :goto_0
 
-    :cond_next5
+    :cond_53
     const-string v0, "UNSPIRITWEAPON"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_4f
+    if-eqz v0, :cond_54
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8204,14 +8192,14 @@
 
     goto/16 :goto_0
 
-    :cond_4f
+    :cond_54
     const-string v0, "UNRAPID_FIRE"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_50
+    if-eqz v0, :cond_55
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8223,14 +8211,14 @@
 
     goto/16 :goto_0
 
-    :cond_50
+    :cond_55
     const-string v0, "UNFLURRY"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_51
+    if-eqz v0, :cond_56
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8242,14 +8230,14 @@
 
     goto/16 :goto_0
 
-    :cond_51
+    :cond_56
     const-string v0, "UNEVASION"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_52
+    if-eqz v0, :cond_57
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8259,14 +8247,14 @@
 
     goto/16 :goto_0
 
-    :cond_52
+    :cond_57
     const-string v0, "UNFATIGUE"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_53
+    if-eqz v0, :cond_58
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8276,14 +8264,14 @@
 
     goto/16 :goto_0
 
-    :cond_53
+    :cond_58
     const-string v0, "UNMAGEARMOR"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_54
+    if-eqz v0, :cond_59
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8303,14 +8291,14 @@
 
     goto/16 :goto_0
 
-    :cond_54
+    :cond_59
     const-string v0, "UNRESISTCOLD"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_55
+    if-eqz v0, :cond_5a
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8326,14 +8314,14 @@
 
     goto/16 :goto_0
 
-    :cond_55
+    :cond_5a
     const-string v0, "UNRESISTDEATH"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_56
+    if-eqz v0, :cond_5b
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8349,14 +8337,14 @@
 
     goto/16 :goto_0
 
-    :cond_56
+    :cond_5b
     const-string v0, "UNRESISTFIRE"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_57
+    if-eqz v0, :cond_5c
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8372,14 +8360,14 @@
 
     goto/16 :goto_0
 
-    :cond_57
+    :cond_5c
     const-string v0, "UNRESISTSHOCK"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_58
+    if-eqz v0, :cond_5d
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8395,14 +8383,14 @@
 
     goto/16 :goto_0
 
-    :cond_58
+    :cond_5d
     const-string v0, "UNRESISTSPIRIT"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_59
+    if-eqz v0, :cond_5e
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8418,14 +8406,14 @@
 
     goto/16 :goto_0
 
-    :cond_59
+    :cond_5e
     const-string v0, "UNRESISTTOXIC"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_5a
+    if-eqz v0, :cond_5f
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8441,14 +8429,14 @@
 
     goto/16 :goto_0
 
-    :cond_5a
+    :cond_5f
     const-string v0, "UNRESISTGLOBAL"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_5b
+    if-eqz v0, :cond_60
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8462,27 +8450,27 @@
 
     goto/16 :goto_0
 
-    :cond_5b
+    :cond_60
     const-string v0, "DESTROY"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_5c
+    if-eqz v0, :cond_61
 
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->l()V
 
     goto/16 :goto_0
 
-    :cond_5c
+    :cond_61
     const-string v0, "EXPLODE"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_poison_ex
+    if-eqz v0, :cond_63
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8490,9 +8478,9 @@
 
     move-result v0
 
-    const/16 v1, 0xc #уровень моба и выше при котором сработает взрыв 5
+    const/16 v1, 0xc
 
-    if-le v0, v1, :cond_5d
+    if-le v0, v1, :cond_62
 
     iget v0, p0, Lnet/fdgames/GameEntities/MapObject;->x:I
 
@@ -8509,7 +8497,7 @@
 
     goto/16 :goto_0
 
-    :cond_5d
+    :cond_62
     iget v0, p0, Lnet/fdgames/GameEntities/MapObject;->x:I
 
     iget v1, p0, Lnet/fdgames/GameEntities/MapObject;->y:I
@@ -8522,14 +8510,14 @@
 
     goto :goto_17
 
-    :cond_poison_ex
+    :cond_63
     const-string v0, "EXPLODE1"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_5e
+    if-eqz v0, :cond_65
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -8537,9 +8525,9 @@
 
     move-result v0
 
-    const/16 v1, 0xc #уровень моба и выше при котором сработает взрыв 5
+    const/16 v1, 0xc
 
-    if-le v0, v1, :cond_expe
+    if-le v0, v1, :cond_64
 
     iget v0, p0, Lnet/fdgames/GameEntities/MapObject;->x:I
 
@@ -8551,12 +8539,12 @@
 
     invoke-static {v0, v1, v2, v3}, Lnet/fdgames/Rules/AreaEffects;->b(IIILjava/lang/String;)V
 
-    :goto_expoison1
+    :goto_18
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->l()V
 
     goto/16 :goto_0
 
-    :cond_expe
+    :cond_64
     iget v0, p0, Lnet/fdgames/GameEntities/MapObject;->x:I
 
     iget v1, p0, Lnet/fdgames/GameEntities/MapObject;->y:I
@@ -8567,9 +8555,9 @@
 
     invoke-static {v0, v1, v2, v3}, Lnet/fdgames/Rules/AreaEffects;->b(IIILjava/lang/String;)V
 
-    goto :goto_expoison1
+    goto :goto_18
 
-    :cond_5e
+    :cond_65
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/MapActor;->N()Z
 
     move-result v0
@@ -8624,27 +8612,27 @@
 
     goto/16 :goto_0
 
-    :cond_5f
+    :cond_66
     move v1, v0
 
     goto/16 :goto_12
 
-    :cond_60
+    :cond_67
     move v2, v0
 
     goto/16 :goto_d
 
-    :cond_61
+    :cond_68
     move v3, v1
 
     goto/16 :goto_c
 
-    :cond_62
+    :cond_69
     move v1, v0
 
     goto/16 :goto_9
 
-    :cond_63
+    :cond_6a
     move v1, v0
 
     goto/16 :goto_4
@@ -8781,7 +8769,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_59
+    if-nez v2, :cond_5b
 
     move-object/from16 v0, p0
 
@@ -8840,7 +8828,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_21
+    if-nez v2, :cond_22
 
     :cond_2
     const/4 v2, 0x0
@@ -8912,14 +8900,14 @@
     move-object v14, v2
 
     :goto_2
-    if-lez p2, :cond_24
+    if-lez p2, :cond_25
 
     invoke-static/range {p2 .. p2}, Lnet/fdgames/GameLevel/GameLevel;->d(I)Lnet/fdgames/GameEntities/MapSprite;
 
     move-result-object v9
 
     :goto_3
-    if-lez p4, :cond_5b
+    if-lez p4, :cond_5d
 
     invoke-static/range {p4 .. p4}, Lnet/fdgames/Rules/Rules;->c(I)Lnet/fdgames/Rules/Item;
 
@@ -8934,19 +8922,19 @@
 
     sget-object v3, Lnet/fdgames/GameEntities/Helpers/Damage$DamageType;->b:Lnet/fdgames/GameEntities/Helpers/Damage$DamageType;
 
-    if-ne v2, v3, :cond_2d
+    if-ne v2, v3, :cond_2e
 
-    if-eqz v9, :cond_29
+    if-eqz v9, :cond_2a
 
     invoke-virtual {v9}, Lnet/fdgames/GameEntities/MapSprite;->x()Z
 
     move-result v2
 
-    if-eqz v2, :cond_29
+    if-eqz v2, :cond_2a
 
     instance-of v2, v9, Lnet/fdgames/GameEntities/Character;
 
-    if-eqz v2, :cond_29
+    if-eqz v2, :cond_2a
 
     move-object v2, v9
 
@@ -8958,7 +8946,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_29
+    if-eqz v2, :cond_2a
 
     invoke-static/range {p2 .. p2}, Lnet/fdgames/GameLevel/GameLevel;->a(I)Lnet/fdgames/GameEntities/Character;
 
@@ -8972,7 +8960,7 @@
 
     iget-boolean v3, v3, Lnet/fdgames/Rules/WeaponStats;->ranged:Z
 
-    if-eqz v3, :cond_25
+    if-eqz v3, :cond_26
 
     const/high16 v2, 0x3f800000    # 1.0f
 
@@ -8981,7 +8969,7 @@
 
     cmpl-float v3, v2, v3
 
-    if-lez v3, :cond_29
+    if-lez v3, :cond_2a
 
     const-string v3, "FLANKED"
 
@@ -9096,7 +9084,7 @@
 
     iget v2, v4, Lnet/fdgames/Rules/ItemAttributes;->orc_slayer:I
 
-    if-lez v2, :cond_2a
+    if-lez v2, :cond_2b
 
     const-string v2, "orc"
 
@@ -9104,7 +9092,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_2a
+    if-eqz v2, :cond_2b
 
     iget v2, v4, Lnet/fdgames/Rules/ItemAttributes;->orc_slayer:I
 
@@ -9239,13 +9227,13 @@
 
     iget-boolean v2, v2, Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;->shapechanger:Z
 
-    if-eqz v2, :cond_5a
+    if-eqz v2, :cond_5c
 
-    if-eqz v9, :cond_2b
+    if-eqz v9, :cond_2c
 
     instance-of v2, v9, Lnet/fdgames/GameEntities/Character;
 
-    if-eqz v2, :cond_2b
+    if-eqz v2, :cond_2c
 
     move-object v2, v9
 
@@ -9253,7 +9241,7 @@
 
     iget-object v2, v2, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
-    if-eqz v2, :cond_2b
+    if-eqz v2, :cond_2c
 
     invoke-virtual {v2}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->k()Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;
 
@@ -9261,13 +9249,13 @@
 
     iget-boolean v2, v2, Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;->silver:Z
 
-    if-eqz v2, :cond_2b
+    if-eqz v2, :cond_2c
 
     :cond_c
     const/4 v2, 0x0
 
     :goto_8
-    if-eqz v2, :cond_5a
+    if-eqz v2, :cond_5c
 
     move-object/from16 v0, p1
 
@@ -9308,7 +9296,7 @@
 
     move-result v3
 
-    if-nez v3, :cond_2e
+    if-nez v3, :cond_2f
 
     :cond_d
     const/4 v2, 0x0
@@ -9323,13 +9311,13 @@
     iput v2, v0, Lnet/fdgames/GameEntities/Helpers/Damage;->hp:I
 
     :cond_e
-    if-eqz p3, :cond_36
+    if-eqz p3, :cond_37
 
-    if-eqz v9, :cond_36
+    if-eqz v9, :cond_37
 
     instance-of v2, v9, Lnet/fdgames/GameEntities/Character;
 
-    if-eqz v2, :cond_36
+    if-eqz v2, :cond_37
 
     move-object v2, v9
 
@@ -9341,13 +9329,13 @@
 
     const/4 v4, 0x1
 
-    if-ne v3, v4, :cond_32
+    if-ne v3, v4, :cond_33
 
     :cond_f
     const/4 v2, 0x0
 
     :goto_b
-    if-eqz v2, :cond_36
+    if-eqz v2, :cond_37
 
     move-object/from16 v0, p0
 
@@ -9551,7 +9539,7 @@
 
     move-result v4
 
-    if-ne v3, v4, :cond_37
+    if-ne v3, v4, :cond_38
 
     :cond_11
     const/4 v2, 0x0
@@ -9593,7 +9581,7 @@
     iput v3, v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->mageArmorElementalBonus:I
 
     :cond_13
-    if-eqz p3, :cond_3d
+    if-eqz p3, :cond_3e
 
     const-string v2, "CRIT"
 
@@ -9714,11 +9702,11 @@
 
     move-result v2
 
-    if-lez v2, :cond_42
+    if-lez v2, :cond_43
 
     const/4 v3, 0x1
 
-    if-ne v2, v3, :cond_3f
+    if-ne v2, v3, :cond_40
 
     const/high16 v2, 0x3f800000    # 1.0f
 
@@ -9753,7 +9741,7 @@
     if-eqz v2, :cond_19
 
     :cond_18
-    if-eqz v9, :cond_43
+    if-eqz v9, :cond_44
 
     invoke-virtual {v9}, Lnet/fdgames/GameEntities/MapObject;->r()Ljava/lang/String;
 
@@ -9782,7 +9770,7 @@
 
     instance-of v5, v0, Lnet/fdgames/GameEntities/Final/NPC;
 
-    if-eqz v5, :cond_44
+    if-eqz v5, :cond_45
 
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
@@ -9800,7 +9788,7 @@
 
     move-result v5
 
-    if-eqz v5, :cond_44
+    if-eqz v5, :cond_45
 
     const/4 v5, 0x1
 
@@ -9982,7 +9970,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_20
+    if-eqz v2, :cond_21
 
     move-object/from16 v0, p0
 
@@ -9996,7 +9984,7 @@
 
     move-result v2
 
-    if-lez v2, :cond_20
+    if-lez v2, :cond_21
 
     move-object/from16 v0, p0
 
@@ -10006,7 +9994,7 @@
 
     move-result v2
 
-    if-lez v2, :cond_20
+    if-lez v2, :cond_21
 
     move-object/from16 v0, p0
 
@@ -10036,7 +10024,7 @@
 
     const/4 v2, 0x1
 
-    if-ne v3, v2, :cond_45
+    if-ne v3, v2, :cond_46
 
     mul-int/lit8 v2, v4, 0x2
 
@@ -10050,18 +10038,18 @@
     :cond_1e
     const/4 v5, 0x3
 
-    if-ne v3, v5, :cond_intervention_lv4
+    if-ne v3, v5, :cond_1f
 
     mul-int/lit8 v2, v4, 0x6
 
-    :cond_intervention_lv4
+    :cond_1f
     const/4 v5, 0x4
 
-    if-ne v3, v5, :cond_1f
+    if-ne v3, v5, :cond_20
 
     mul-int/lit8 v2, v4, 0x8
 
-    :cond_1f
+    :cond_20
     move-object/from16 v0, p0
 
     invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Character;->l(I)V
@@ -10122,14 +10110,14 @@
 
     if-eqz v2, :cond_0
 
-    :cond_20
+    :cond_21
     invoke-virtual/range {p0 .. p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
 
     move-result v2
 
     const/4 v3, 0x1
 
-    if-ne v2, v3, :cond_46
+    if-ne v2, v3, :cond_47
 
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
@@ -10143,7 +10131,7 @@
 
     move-result v2
 
-    if-lez v2, :cond_46
+    if-lez v2, :cond_47
 
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
@@ -10223,7 +10211,7 @@
 
     goto/16 :goto_0
 
-    :cond_21
+    :cond_22
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
@@ -10238,7 +10226,7 @@
 
     const/4 v3, 0x1
 
-    if-ne v2, v3, :cond_23
+    if-ne v2, v3, :cond_24
 
     const/16 v2, 0x23
 
@@ -10257,11 +10245,11 @@
 
     const/4 v4, 0x2
 
-    if-ne v3, v4, :cond_22
+    if-ne v3, v4, :cond_23
 
     const/16 v2, 0x32
 
-    :cond_22
+    :cond_23
     const/4 v3, 0x1
 
     const/16 v4, 0x64
@@ -10276,7 +10264,7 @@
 
     goto/16 :goto_1
 
-    :cond_23
+    :cond_24
     const/4 v2, 0x0
 
     goto :goto_14
@@ -10330,19 +10318,19 @@
 
     goto/16 :goto_2
 
-    :cond_24
+    :cond_25
     const/4 v9, 0x0
 
     goto/16 :goto_3
 
-    :cond_25
+    :cond_26
     iget-object v3, v2, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
-    if-eqz v3, :cond_28
+    if-eqz v3, :cond_29
 
     iget-object v3, v3, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
-    if-eqz v3, :cond_28
+    if-eqz v3, :cond_29
 
     const-string v4, "sneak_attack"
 
@@ -10352,31 +10340,31 @@
 
     const/4 v4, 0x1
 
-    if-ne v3, v4, :cond_26
+    if-ne v3, v4, :cond_27
 
     const/high16 v2, 0x3fc00000    # 1.5f
 
     goto/16 :goto_5
 
-    :cond_26
+    :cond_27
     const/4 v4, 0x2
 
-    if-ne v3, v4, :cond_27
+    if-ne v3, v4, :cond_28
 
     const v2, 0x3fd9999a    # 1.7f
 
     goto/16 :goto_5
 
-    :cond_27
+    :cond_28
     const/4 v4, 0x3
 
-    if-ne v3, v4, :cond_28
+    if-ne v3, v4, :cond_29
 
     const/high16 v2, 0x40000000    # 2.0f
 
     goto/16 :goto_5
 
-    :cond_28
+    :cond_29
     iget-object v2, v2, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v2, v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
@@ -10389,65 +10377,65 @@
 
     goto/16 :goto_5
 
-    :cond_29
+    :cond_2a
     const-string v3, ""
 
     goto/16 :goto_6
 
-    :cond_2a
+    :cond_2b
     const/4 v2, 0x0
 
     goto/16 :goto_7
 
-    :cond_2b
-    if-lez p4, :cond_2c
+    :cond_2c
+    if-lez p4, :cond_2d
 
-    if-eqz v10, :cond_2c
+    if-eqz v10, :cond_2d
 
     iget-object v2, v10, Lnet/fdgames/Rules/Item;->attributes:Lnet/fdgames/Rules/ItemAttributes;
 
     iget-boolean v4, v2, Lnet/fdgames/Rules/ItemAttributes;->hasAttributes:Z
 
-    if-eqz v4, :cond_2c
+    if-eqz v4, :cond_2d
 
     iget v2, v2, Lnet/fdgames/Rules/ItemAttributes;->silver:I
 
     if-gtz v2, :cond_c
 
-    :cond_2c
+    :cond_2d
     const/4 v2, 0x1
 
     goto/16 :goto_8
 
-    :cond_2d
+    :cond_2e
     const-string v2, ""
 
     move-object v13, v2
 
     goto/16 :goto_9
 
-    :cond_2e
+    :cond_2f
     const/4 v2, 0x1
 
-    if-ne v3, v2, :cond_31
+    if-ne v3, v2, :cond_32
 
     const/16 v2, 0x32
 
     :goto_15
     const/4 v4, 0x2
 
-    if-ne v3, v4, :cond_2f
+    if-ne v3, v4, :cond_30
 
     const/16 v2, 0x46
 
-    :cond_2f
+    :cond_30
     const/4 v4, 0x3
 
-    if-ne v3, v4, :cond_30
+    if-ne v3, v4, :cond_31
 
     const/16 v2, 0x5a
 
-    :cond_30
+    :cond_31
     const/4 v3, 0x1
 
     const/16 v4, 0x64
@@ -10490,12 +10478,12 @@
 
     goto/16 :goto_a
 
-    :cond_31
+    :cond_32
     const/4 v2, 0x0
 
     goto :goto_15
 
-    :cond_32
+    :cond_33
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
@@ -10584,25 +10572,25 @@
 
     const/4 v2, 0x1
 
-    if-ne v3, v2, :cond_35
+    if-ne v3, v2, :cond_36
 
     const/16 v2, 0xa
 
     :goto_16
     const/4 v4, 0x2
 
-    if-ne v3, v4, :cond_33
+    if-ne v3, v4, :cond_34
 
     const/16 v2, 0x19
 
-    :cond_33
+    :cond_34
     const/4 v4, 0x3
 
-    if-ne v3, v4, :cond_34
+    if-ne v3, v4, :cond_35
 
     const/16 v2, 0x32
 
-    :cond_34
+    :cond_35
     const/4 v3, 0x1
 
     const/16 v4, 0x64
@@ -10617,12 +10605,12 @@
 
     goto/16 :goto_b
 
-    :cond_35
+    :cond_36
     const/4 v2, 0x0
 
     goto :goto_16
 
-    :cond_36
+    :cond_37
     const-string v2, ""
 
     const/4 v3, 0x0
@@ -10633,7 +10621,7 @@
 
     goto/16 :goto_c
 
-    :cond_37
+    :cond_38
     iget-object v3, v2, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     invoke-virtual {v3}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->L()Lnet/fdgames/Rules/WeaponStats;
@@ -10664,7 +10652,7 @@
 
     const/4 v3, 0x1
 
-    if-ne v6, v3, :cond_3b
+    if-ne v6, v3, :cond_3c
 
     const/high16 v4, 0x42000000    # 32.0f
 
@@ -10673,7 +10661,7 @@
     :goto_17
     const/4 v3, 0x2
 
-    if-ne v6, v3, :cond_3c
+    if-ne v6, v3, :cond_3d
 
     const/16 v3, 0xa
 
@@ -10684,7 +10672,7 @@
     :goto_18
     const/4 v7, 0x3
 
-    if-ne v6, v7, :cond_38
+    if-ne v6, v7, :cond_39
 
     const/high16 v4, 0x42800000    # 64.0f
 
@@ -10692,8 +10680,8 @@
 
     const/16 v3, 0x1e
 
-    :cond_38
-    if-lez v3, :cond_39
+    :cond_39
+    if-lez v3, :cond_3a
 
     const/4 v6, 0x1
 
@@ -10703,18 +10691,18 @@
 
     move-result v6
 
-    if-ge v6, v3, :cond_39
+    if-ge v6, v3, :cond_3a
 
     const/high16 v3, 0x3f800000    # 1.0f
 
     invoke-virtual {v2, v3}, Lnet/fdgames/GameEntities/Character;->m(F)V
 
-    :cond_39
+    :cond_3a
     const/4 v3, 0x0
 
     cmpl-float v3, v4, v3
 
-    if-lez v3, :cond_3a
+    if-lez v3, :cond_3b
 
     float-to-double v6, v4
 
@@ -10724,7 +10712,7 @@
 
     invoke-virtual {v2, v6, v7, v3}, Lnet/fdgames/GameEntities/MapActor;->a(DLnet/fdgames/TiledMap/Objects/Coords;)V
 
-    :cond_3a
+    :cond_3b
     if-lez v5, :cond_11
 
     new-instance v3, Lnet/fdgames/GameEntities/Helpers/DamageData;
@@ -10753,19 +10741,19 @@
 
     goto/16 :goto_d
 
-    :cond_3b
+    :cond_3c
     const/4 v4, 0x0
 
     const/4 v5, 0x0
 
     goto :goto_17
 
-    :cond_3c
+    :cond_3d
     const/4 v3, 0x0
 
     goto :goto_18
 
-    :cond_3d
+    :cond_3e
     const/high16 v7, 0x3f800000    # 1.0f
 
     goto/16 :goto_e
@@ -10856,17 +10844,17 @@
     goto/16 :goto_f
 
     :pswitch_c
-    if-eqz v10, :cond_3e
+    if-eqz v10, :cond_3f
 
     iget-object v2, v10, Lnet/fdgames/Rules/Item;->weaponStats:Lnet/fdgames/Rules/WeaponStats;
 
-    if-eqz v2, :cond_3e
+    if-eqz v2, :cond_3f
 
     invoke-virtual {v2}, Lnet/fdgames/Rules/WeaponStats;->c()Z
 
     move-result v2
 
-    if-eqz v2, :cond_3e
+    if-eqz v2, :cond_3f
 
     invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
 
@@ -10884,7 +10872,7 @@
 
     goto/16 :goto_f
 
-    :cond_3e
+    :cond_3f
     invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
 
     move-result-object v2
@@ -10901,54 +10889,54 @@
 
     goto/16 :goto_f
 
-    :cond_3f
+    :cond_40
     const/4 v3, 0x2
 
-    if-ne v2, v3, :cond_40
+    if-ne v2, v3, :cond_41
 
     const v2, 0x3fb33333    # 1.4f
 
     goto/16 :goto_10
 
-    :cond_40
+    :cond_41
     const/4 v3, 0x3
 
-    if-ne v2, v3, :cond_41
+    if-ne v2, v3, :cond_42
 
     const v2, 0x3fcccccd    # 1.6f
 
     goto/16 :goto_10
 
-    :cond_41
+    :cond_42
     const/4 v3, 0x4
 
-    if-ne v2, v3, :cond_42
+    if-ne v2, v3, :cond_43
 
     const v2, 0x3fe66666    # 1.8f
 
     goto/16 :goto_10
 
-    :cond_42
+    :cond_43
     const/high16 v2, 0x3f000000    # 0.5f
 
     goto/16 :goto_10
 
-    :cond_43
+    :cond_44
     const-string v3, ""
 
     goto/16 :goto_11
 
-    :cond_44
+    :cond_45
     const/4 v5, 0x0
 
     goto/16 :goto_12
 
-    :cond_45
+    :cond_46
     const/4 v2, 0x0
 
     goto/16 :goto_13
 
-    :cond_46
+    :cond_47
     move-object/from16 v0, p0
 
     iget-object v2, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
@@ -10959,7 +10947,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_47
+    if-nez v2, :cond_48
 
     move-object/from16 v0, p0
 
@@ -10971,7 +10959,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_4a
+    if-eqz v2, :cond_4b
 
     move-object/from16 v0, p0
 
@@ -10981,9 +10969,9 @@
 
     move-result v2
 
-    if-nez v2, :cond_4a
+    if-nez v2, :cond_4b
 
-    :cond_47
+    :cond_48
     const/4 v2, 0x1
 
     move v3, v2
@@ -10995,7 +10983,7 @@
 
     instance-of v2, v0, Lnet/fdgames/GameEntities/Final/NPC;
 
-    if-eqz v2, :cond_48
+    if-eqz v2, :cond_49
 
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
@@ -11013,30 +11001,30 @@
 
     move-result v2
 
-    if-nez v2, :cond_49
-
-    :cond_48
-    if-eqz v3, :cond_4b
+    if-nez v2, :cond_4a
 
     :cond_49
+    if-eqz v3, :cond_4c
+
+    :cond_4a
     :goto_1a
     invoke-virtual/range {p0 .. p0}, Lnet/fdgames/GameEntities/MapActor;->E()V
 
     goto/16 :goto_0
 
-    :cond_4a
+    :cond_4b
     const/4 v2, 0x0
 
     move v3, v2
 
     goto :goto_19
 
-    :cond_4b
+    :cond_4c
     const/4 v2, 0x1
 
     move/from16 v0, p2
 
-    if-eq v0, v2, :cond_4c
+    if-eq v0, v2, :cond_4d
 
     invoke-static/range {p2 .. p2}, Lnet/fdgames/GameLevel/GameLevel;->b(I)Lnet/fdgames/GameEntities/MapActor;
 
@@ -11044,7 +11032,7 @@
 
     check-cast v2, Lnet/fdgames/GameEntities/Final/NPC;
 
-    if-eqz v2, :cond_51
+    if-eqz v2, :cond_53
 
     invoke-static/range {p2 .. p2}, Lnet/fdgames/GameLevel/GameLevel;->b(I)Lnet/fdgames/GameEntities/MapActor;
 
@@ -11056,9 +11044,9 @@
 
     move-result v2
 
-    if-eqz v2, :cond_51
+    if-eqz v2, :cond_53
 
-    :cond_4c
+    :cond_4d
     const/4 v3, 0x0
 
     const/4 v2, 0x0
@@ -11077,17 +11065,17 @@
 
     iget-object v5, v2, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
-    if-eqz v5, :cond_4d
+    if-eqz v5, :cond_4e
 
     iget-boolean v5, v2, Lnet/fdgames/GameEntities/GameObject;->destroy:Z
 
-    if-nez v5, :cond_4d
+    if-nez v5, :cond_4e
 
     invoke-virtual {v2}, Lnet/fdgames/GameEntities/MapActor;->N()Z
 
     move-result v5
 
-    if-nez v5, :cond_4d
+    if-nez v5, :cond_4e
 
     iget-object v5, v2, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -11099,15 +11087,15 @@
 
     move-result v5
 
-    if-eqz v5, :cond_52
+    if-eqz v5, :cond_54
 
-    :cond_4d
+    :cond_4e
     :goto_1b
-    if-eqz v9, :cond_4e
+    if-eqz v9, :cond_4f
 
     instance-of v2, v9, Lnet/fdgames/GameEntities/Character;
 
-    if-eqz v2, :cond_4e
+    if-eqz v2, :cond_4f
 
     check-cast v9, Lnet/fdgames/GameEntities/Character;
 
@@ -11119,9 +11107,9 @@
 
     iget-boolean v2, v2, Lnet/fdgames/Rules/WeaponStats;->ranged:Z
 
-    if-eqz v2, :cond_56
+    if-eqz v2, :cond_58
 
-    :cond_4e
+    :cond_4f
     :goto_1c
     const/high16 v2, 0x41200000    # 10.0f
 
@@ -11139,11 +11127,11 @@
 
     move-result v3
 
-    if-eqz v3, :cond_4f
+    if-eqz v3, :cond_50
 
     const/high16 v2, 0x41a00000    # 20.0f
 
-    :cond_4f
+    :cond_50
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
@@ -11154,7 +11142,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_expoison
+    if-eqz v3, :cond_51
 
     const-string v2, "EXPLODE"
 
@@ -11170,7 +11158,6 @@
 
     const v2, 0x3f3851ec    # 0.72f
 
-    :cond_50
     const-string v3, "DESTROY"
 
     invoke-virtual/range {p0 .. p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
@@ -11183,7 +11170,7 @@
 
     goto/16 :goto_1a
 
-    :cond_expoison
+    :cond_51
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
@@ -11194,7 +11181,7 @@
 
     move-result v3
 
-    if-eqz v3, :cond_expoison1
+    if-eqz v3, :cond_52
 
     const-string v2, "EXPLODE1"
 
@@ -11210,7 +11197,7 @@
 
     const v2, 0x3f3851ec    # 0.72f
 
-    :cond_expoison1
+    :cond_52
     const-string v3, "DESTROY"
 
     invoke-virtual/range {p0 .. p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
@@ -11223,7 +11210,7 @@
 
     goto/16 :goto_1a
 
-    :cond_51
+    :cond_53
     const/4 v2, 0x1
 
     move-object/from16 v0, p0
@@ -11232,10 +11219,10 @@
 
     goto :goto_1b
 
-    :cond_52
+    :cond_54
     iget v5, v2, Lnet/fdgames/GameEntities/Character;->SkillUseData_lastStabbed_id:I
 
-    if-ne v5, v4, :cond_4d
+    if-ne v5, v4, :cond_4e
 
     iget v4, v2, Lnet/fdgames/GameEntities/Character;->SkillUseData_lastStabTime:F
 
@@ -11259,7 +11246,7 @@
 
     cmpg-double v4, v4, v6
 
-    if-gez v4, :cond_4d
+    if-gez v4, :cond_4e
 
     iget-object v4, v2, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -11271,29 +11258,29 @@
 
     move-result v4
 
-    if-eqz v4, :cond_4d
+    if-eqz v4, :cond_4e
 
     const/4 v5, 0x1
 
-    if-ne v4, v5, :cond_53
+    if-ne v4, v5, :cond_55
 
     const/16 v3, 0x1e
 
-    :cond_53
+    :cond_55
     const/4 v5, 0x2
 
-    if-ne v4, v5, :cond_54
+    if-ne v4, v5, :cond_56
 
     const/16 v3, 0x32
 
-    :cond_54
+    :cond_56
     const/4 v5, 0x3
 
-    if-ne v4, v5, :cond_55
+    if-ne v4, v5, :cond_57
 
     const/16 v3, 0x4b
 
-    :cond_55
+    :cond_57
     const/4 v4, 0x1
 
     const/16 v5, 0x64
@@ -11302,7 +11289,7 @@
 
     move-result v4
 
-    if-gt v4, v3, :cond_4d
+    if-gt v4, v3, :cond_4e
 
     iget-object v3, v2, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -11360,7 +11347,7 @@
 
     goto/16 :goto_1b
 
-    :cond_56
+    :cond_58
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v2
@@ -11381,7 +11368,7 @@
 
     move-result v2
 
-    if-lez v2, :cond_4e
+    if-lez v2, :cond_4f
 
     iget-object v3, v9, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -11397,15 +11384,15 @@
 
     const/4 v3, 0x1
 
-    if-eq v2, v3, :cond_58
+    if-eq v2, v3, :cond_5a
 
     const/4 v3, 0x2
 
-    if-eq v2, v3, :cond_57
+    if-eq v2, v3, :cond_59
 
     const/4 v3, 0x3
 
-    if-ne v2, v3, :cond_4e
+    if-ne v2, v3, :cond_4f
 
     iget-object v2, v9, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -11421,7 +11408,7 @@
 
     goto/16 :goto_1c
 
-    :cond_57
+    :cond_59
     iget-object v2, v9, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v2, v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
@@ -11436,7 +11423,7 @@
 
     goto/16 :goto_1c
 
-    :cond_58
+    :cond_5a
     iget-object v2, v9, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v2, v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
@@ -11451,7 +11438,7 @@
 
     goto/16 :goto_1c
 
-    :cond_59
+    :cond_5b
     invoke-virtual/range {p0 .. p0}, Lnet/fdgames/GameEntities/MapActor;->N()Z
 
     move-result v2
@@ -11462,19 +11449,17 @@
 
     goto/16 :goto_0
 
-    :cond_5a
+    :cond_5c
     move-object v13, v3
 
     goto/16 :goto_9
 
-    :cond_5b
+    :cond_5d
     const/4 v2, 0x0
 
     move-object v10, v2
 
     goto/16 :goto_4
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -12385,6 +12370,133 @@
     return-void
 .end method
 
+.method public cold(IF)V
+    .locals 8
+
+    const/4 v5, 0x3
+
+    const/4 v4, 0x2
+
+    const/4 v3, 0x1
+
+    const/high16 v1, 0x3fc00000    # 1.5f
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v2, "poison_master"
+
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-ne v0, v4, :cond_2
+
+    int-to-float v2, p1
+
+    const/high16 v0, 0x3fa00000    # 1.25f
+
+    :goto_0
+    mul-float/2addr v0, v2
+
+    float-to-int p1, v0
+
+    :cond_0
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v2, "poison_master"
+
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-ne v0, v3, :cond_3
+
+    :goto_1
+    mul-float/2addr p2, v1
+
+    :cond_1
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->cold:Ljava/lang/Boolean;
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    iput p1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->coldBonus:I
+
+    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
+
+    move-result-object v7
+
+    new-instance v0, Le/a/d/x;
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    const-string v2, "APPLY_COLD"
+
+    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    sget-object v4, Lcom/badlogic/gdx/graphics/Color;->YELLOW:Lcom/badlogic/gdx/graphics/Color;
+
+    const v5, 0x3f99999a    # 1.2f
+
+    const v6, 0x3f333333    # 0.7f
+
+    invoke-direct/range {v0 .. v6}, Le/a/d/x;-><init>(ILjava/lang/String;FLcom/badlogic/gdx/graphics/Color;FF)V
+
+    invoke-virtual {v7, v0}, Le/a/a/a;->a(Le/a/d/x;)V
+
+    const-string v0, "UNCOLDWEAPON"
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1, p2}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
+
+    return-void
+
+    :cond_2
+    if-ne v0, v5, :cond_0
+
+    int-to-float v2, p1
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_3
+    if-ne v0, v4, :cond_4
+
+    const/high16 v1, 0x3fe00000    # 1.75f
+
+    goto :goto_1
+
+    :cond_4
+    if-ne v0, v5, :cond_1
+
+    const/high16 v1, 0x40000000    # 2.0f
+
+    goto :goto_1
+.end method
+
 .method public d(F)V
     .locals 8
 
@@ -12529,6 +12641,133 @@
     const/4 v0, 0x1
 
     goto :goto_0
+.end method
+
+.method public death(IF)V
+    .locals 8
+
+    const/4 v5, 0x3
+
+    const/4 v4, 0x2
+
+    const/4 v3, 0x1
+
+    const/high16 v1, 0x3fc00000    # 1.5f
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v2, "poison_master"
+
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-ne v0, v4, :cond_2
+
+    int-to-float v2, p1
+
+    const/high16 v0, 0x3fa00000    # 1.25f
+
+    :goto_0
+    mul-float/2addr v0, v2
+
+    float-to-int p1, v0
+
+    :cond_0
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v2, "poison_master"
+
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-ne v0, v3, :cond_3
+
+    :goto_1
+    mul-float/2addr p2, v1
+
+    :cond_1
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->death:Ljava/lang/Boolean;
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    iput p1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->deathBonus:I
+
+    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
+
+    move-result-object v7
+
+    new-instance v0, Le/a/d/x;
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    const-string v2, "APPLY_DEATH"
+
+    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    sget-object v4, Lcom/badlogic/gdx/graphics/Color;->YELLOW:Lcom/badlogic/gdx/graphics/Color;
+
+    const v5, 0x3f99999a    # 1.2f
+
+    const v6, 0x3f333333    # 0.7f
+
+    invoke-direct/range {v0 .. v6}, Le/a/d/x;-><init>(ILjava/lang/String;FLcom/badlogic/gdx/graphics/Color;FF)V
+
+    invoke-virtual {v7, v0}, Le/a/a/a;->a(Le/a/d/x;)V
+
+    const-string v0, "UNDEATHWEAPON"
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1, p2}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
+
+    return-void
+
+    :cond_2
+    if-ne v0, v5, :cond_0
+
+    int-to-float v2, p1
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_3
+    if-ne v0, v4, :cond_4
+
+    const/high16 v1, 0x3fe00000    # 1.75f
+
+    goto :goto_1
+
+    :cond_4
+    if-ne v0, v5, :cond_1
+
+    const/high16 v1, 0x40000000    # 2.0f
+
+    goto :goto_1
 .end method
 
 .method protected e(F)V
@@ -12936,6 +13175,124 @@
     goto :goto_1
 .end method
 
+.method public f0()V
+    .locals 8
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->d()V
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/Character;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, ":"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v1, "SKILL_POINT_GAINED"
+
+    invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lnet/fdgames/Helpers/GameConsole;->a(Ljava/lang/String;)V
+
+    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameWorld/GameData;->log:Lnet/fdgames/GameWorld/GameLog;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/Character;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, ":"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, "SKILL_POINT_GAINED"
+
+    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameWorld/GameLog;->a(Ljava/lang/String;)V
+
+    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
+
+    move-result-object v7
+
+    new-instance v0, Le/a/d/x;
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    const-string v2, "SKILL_POINT_GAINED"
+
+    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    sget-object v4, Lcom/badlogic/gdx/graphics/Color;->BLUE:Lcom/badlogic/gdx/graphics/Color;
+
+    const v6, 0x3f333333    # 0.7f
+
+    move v5, v3
+
+    invoke-direct/range {v0 .. v6}, Le/a/d/x;-><init>(ILjava/lang/String;FLcom/badlogic/gdx/graphics/Color;FF)V
+
+    invoke-virtual {v7, v0}, Le/a/a/a;->a(Le/a/d/x;)V
+
+    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/MapObject;->q()Lnet/fdgames/TiledMap/Objects/Coords;
+
+    move-result-object v1
+
+    sget-object v2, Le/a/a/a$a;->d:Le/a/a/a$a;
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v0, v1, v2, v3}, Le/a/a/a;->a(Lnet/fdgames/TiledMap/Objects/Coords;Le/a/a/a$a;F)Lnet/fdgames/assets/MapParticleEffectPool$MapPooledEffect;
+
+    const-string v0, "levelup"
+
+    invoke-static {v0}, Lnet/fdgames/assets/GameAssets;->i(Ljava/lang/String;)V
+
+    return-void
+.end method
+
 .method public fire(IF)V
     .locals 8
 
@@ -13062,634 +13419,6 @@
 
     goto :goto_1
 .end method
-
-.method public cold(IF)V
-    .locals 8
-
-    const/4 v5, 0x3
-
-    const/4 v4, 0x2
-
-    const/4 v3, 0x1
-
-    const/high16 v1, 0x3fc00000    # 1.5f
-
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v2, "poison_master"
-
-    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-ne v0, v4, :cond_2
-
-    int-to-float v2, p1
-
-    const/high16 v0, 0x3fa00000    # 1.25f
-
-    :goto_0
-    mul-float/2addr v0, v2
-
-    float-to-int p1, v0
-
-    :cond_0
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v2, "poison_master"
-
-    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-ne v0, v3, :cond_3
-
-    :goto_1
-    mul-float/2addr p2, v1
-
-    :cond_1
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
-
-    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->cold:Ljava/lang/Boolean;
-
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
-
-    iput p1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->coldBonus:I
-
-    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
-
-    move-result-object v7
-
-    new-instance v0, Le/a/d/x;
-
-    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
-
-    move-result v1
-
-    const-string v2, "APPLY_COLD"
-
-    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    const/high16 v3, 0x3f800000    # 1.0f
-
-    sget-object v4, Lcom/badlogic/gdx/graphics/Color;->YELLOW:Lcom/badlogic/gdx/graphics/Color;
-
-    const v5, 0x3f99999a    # 1.2f
-
-    const v6, 0x3f333333    # 0.7f
-
-    invoke-direct/range {v0 .. v6}, Le/a/d/x;-><init>(ILjava/lang/String;FLcom/badlogic/gdx/graphics/Color;FF)V
-
-    invoke-virtual {v7, v0}, Le/a/a/a;->a(Le/a/d/x;)V
-
-    const-string v0, "UNCOLDWEAPON"
-
-    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
-
-    move-result v1
-
-    invoke-virtual {p0, v0, v1, p2}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
-
-    return-void
-
-    :cond_2
-    if-ne v0, v5, :cond_0
-
-    int-to-float v2, p1
-
-    move v0, v1
-
-    goto :goto_0
-
-    :cond_3
-    if-ne v0, v4, :cond_4
-
-    const/high16 v1, 0x3fe00000    # 1.75f
-
-    goto :goto_1
-
-    :cond_4
-    if-ne v0, v5, :cond_1
-
-    const/high16 v1, 0x40000000    # 2.0f
-
-    goto :goto_1
-.end method
-
-.method public shock(IF)V
-    .locals 8
-
-    const/4 v5, 0x3
-
-    const/4 v4, 0x2
-
-    const/4 v3, 0x1
-
-    const/high16 v1, 0x3fc00000    # 1.5f
-
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v2, "poison_master"
-
-    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-ne v0, v4, :cond_2
-
-    int-to-float v2, p1
-
-    const/high16 v0, 0x3fa00000    # 1.25f
-
-    :goto_0
-    mul-float/2addr v0, v2
-
-    float-to-int p1, v0
-
-    :cond_0
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v2, "poison_master"
-
-    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-ne v0, v3, :cond_3
-
-    :goto_1
-    mul-float/2addr p2, v1
-
-    :cond_1
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
-
-    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->shock:Ljava/lang/Boolean;
-
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
-
-    iput p1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->shockBonus:I
-
-    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
-
-    move-result-object v7
-
-    new-instance v0, Le/a/d/x;
-
-    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
-
-    move-result v1
-
-    const-string v2, "APPLY_SHOCK"
-
-    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    const/high16 v3, 0x3f800000    # 1.0f
-
-    sget-object v4, Lcom/badlogic/gdx/graphics/Color;->YELLOW:Lcom/badlogic/gdx/graphics/Color;
-
-    const v5, 0x3f99999a    # 1.2f
-
-    const v6, 0x3f333333    # 0.7f
-
-    invoke-direct/range {v0 .. v6}, Le/a/d/x;-><init>(ILjava/lang/String;FLcom/badlogic/gdx/graphics/Color;FF)V
-
-    invoke-virtual {v7, v0}, Le/a/a/a;->a(Le/a/d/x;)V
-
-    const-string v0, "UNSHOCKWEAPON"
-
-    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
-
-    move-result v1
-
-    invoke-virtual {p0, v0, v1, p2}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
-
-    return-void
-
-    :cond_2
-    if-ne v0, v5, :cond_0
-
-    int-to-float v2, p1
-
-    move v0, v1
-
-    goto :goto_0
-
-    :cond_3
-    if-ne v0, v4, :cond_4
-
-    const/high16 v1, 0x3fe00000    # 1.75f
-
-    goto :goto_1
-
-    :cond_4
-    if-ne v0, v5, :cond_1
-
-    const/high16 v1, 0x40000000    # 2.0f
-
-    goto :goto_1
-.end method
-
-.method public death(IF)V
-    .locals 8
-
-    const/4 v5, 0x3
-
-    const/4 v4, 0x2
-
-    const/4 v3, 0x1
-
-    const/high16 v1, 0x3fc00000    # 1.5f
-
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v2, "poison_master"
-
-    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-ne v0, v4, :cond_2
-
-    int-to-float v2, p1
-
-    const/high16 v0, 0x3fa00000    # 1.25f
-
-    :goto_0
-    mul-float/2addr v0, v2
-
-    float-to-int p1, v0
-
-    :cond_0
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v2, "poison_master"
-
-    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-ne v0, v3, :cond_3
-
-    :goto_1
-    mul-float/2addr p2, v1
-
-    :cond_1
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
-
-    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->death:Ljava/lang/Boolean;
-
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
-
-    iput p1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->deathBonus:I
-
-    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
-
-    move-result-object v7
-
-    new-instance v0, Le/a/d/x;
-
-    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
-
-    move-result v1
-
-    const-string v2, "APPLY_DEATH"
-
-    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    const/high16 v3, 0x3f800000    # 1.0f
-
-    sget-object v4, Lcom/badlogic/gdx/graphics/Color;->YELLOW:Lcom/badlogic/gdx/graphics/Color;
-
-    const v5, 0x3f99999a    # 1.2f
-
-    const v6, 0x3f333333    # 0.7f
-
-    invoke-direct/range {v0 .. v6}, Le/a/d/x;-><init>(ILjava/lang/String;FLcom/badlogic/gdx/graphics/Color;FF)V
-
-    invoke-virtual {v7, v0}, Le/a/a/a;->a(Le/a/d/x;)V
-
-    const-string v0, "UNDEATHWEAPON"
-
-    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
-
-    move-result v1
-
-    invoke-virtual {p0, v0, v1, p2}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
-
-    return-void
-
-    :cond_2
-    if-ne v0, v5, :cond_0
-
-    int-to-float v2, p1
-
-    move v0, v1
-
-    goto :goto_0
-
-    :cond_3
-    if-ne v0, v4, :cond_4
-
-    const/high16 v1, 0x3fe00000    # 1.75f
-
-    goto :goto_1
-
-    :cond_4
-    if-ne v0, v5, :cond_1
-
-    const/high16 v1, 0x40000000    # 2.0f
-
-    goto :goto_1
-.end method
-
-.method public spirit(IF)V
-    .locals 8
-
-    const/4 v5, 0x3
-
-    const/4 v4, 0x2
-
-    const/4 v3, 0x1
-
-    const/high16 v1, 0x3fc00000    # 1.5f
-
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v2, "poison_master"
-
-    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-ne v0, v4, :cond_2
-
-    int-to-float v2, p1
-
-    const/high16 v0, 0x3fa00000    # 1.25f
-
-    :goto_0
-    mul-float/2addr v0, v2
-
-    float-to-int p1, v0
-
-    :cond_0
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v2, "poison_master"
-
-    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-ne v0, v3, :cond_3
-
-    :goto_1
-    mul-float/2addr p2, v1
-
-    :cond_1
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
-
-    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->spirit:Ljava/lang/Boolean;
-
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
-
-    iput p1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->spiritBonus:I
-
-    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
-
-    move-result-object v7
-
-    new-instance v0, Le/a/d/x;
-
-    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
-
-    move-result v1
-
-    const-string v2, "APPLY_SPIRIT"
-
-    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    const/high16 v3, 0x3f800000    # 1.0f
-
-    sget-object v4, Lcom/badlogic/gdx/graphics/Color;->YELLOW:Lcom/badlogic/gdx/graphics/Color;
-
-    const v5, 0x3f99999a    # 1.2f
-
-    const v6, 0x3f333333    # 0.7f
-
-    invoke-direct/range {v0 .. v6}, Le/a/d/x;-><init>(ILjava/lang/String;FLcom/badlogic/gdx/graphics/Color;FF)V
-
-    invoke-virtual {v7, v0}, Le/a/a/a;->a(Le/a/d/x;)V
-
-    const-string v0, "UNSPIRITWEAPON"
-
-    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
-
-    move-result v1
-
-    invoke-virtual {p0, v0, v1, p2}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
-
-    return-void
-
-    :cond_2
-    if-ne v0, v5, :cond_0
-
-    int-to-float v2, p1
-
-    move v0, v1
-
-    goto :goto_0
-
-    :cond_3
-    if-ne v0, v4, :cond_4
-
-    const/high16 v1, 0x3fe00000    # 1.75f
-
-    goto :goto_1
-
-    :cond_4
-    if-ne v0, v5, :cond_1
-
-    const/high16 v1, 0x40000000    # 2.0f
-
-    goto :goto_1
-.end method
-
-.method public f0()V
-    .locals 8
-
-    const/high16 v3, 0x3f800000    # 1.0f
-
-    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->d()V
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p0}, Lnet/fdgames/GameEntities/Character;->getName()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ":"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "SKILL_POINT_GAINED"
-
-    invoke-static {v1}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lnet/fdgames/Helpers/GameConsole;->a(Ljava/lang/String;)V
-
-    invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameWorld/GameData;->log:Lnet/fdgames/GameWorld/GameLog;
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p0}, Lnet/fdgames/GameEntities/Character;->getName()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, ":"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, "SKILL_POINT_GAINED"
-
-    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameWorld/GameLog;->a(Ljava/lang/String;)V
-
-    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
-
-    move-result-object v7
-
-    new-instance v0, Le/a/d/x;
-
-    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
-
-    move-result v1
-
-    const-string v2, "SKILL_POINT_GAINED"
-
-    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    sget-object v4, Lcom/badlogic/gdx/graphics/Color;->BLUE:Lcom/badlogic/gdx/graphics/Color;
-
-    const v6, 0x3f333333    # 0.7f
-
-    move v5, v3
-
-    invoke-direct/range {v0 .. v6}, Le/a/d/x;-><init>(ILjava/lang/String;FLcom/badlogic/gdx/graphics/Color;FF)V
-
-    invoke-virtual {v7, v0}, Le/a/a/a;->a(Le/a/d/x;)V
-
-    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
-
-    move-result-object v0
-
-    invoke-virtual {p0}, Lnet/fdgames/GameEntities/MapObject;->q()Lnet/fdgames/TiledMap/Objects/Coords;
-
-    move-result-object v1
-
-    sget-object v2, Le/a/a/a$a;->d:Le/a/a/a$a;
-
-    const/4 v3, 0x0
-
-    invoke-virtual {v0, v1, v2, v3}, Le/a/a/a;->a(Lnet/fdgames/TiledMap/Objects/Coords;Le/a/a/a$a;F)Lnet/fdgames/assets/MapParticleEffectPool$MapPooledEffect;
-
-    const-string v0, "levelup"
-
-    invoke-static {v0}, Lnet/fdgames/assets/GameAssets;->i(Ljava/lang/String;)V
-
-    return-void
-.end method
-
-
 
 .method public g(F)V
     .locals 2
@@ -15843,6 +15572,260 @@
     const/4 v0, 0x0
 
     goto :goto_0
+.end method
+
+.method public shock(IF)V
+    .locals 8
+
+    const/4 v5, 0x3
+
+    const/4 v4, 0x2
+
+    const/4 v3, 0x1
+
+    const/high16 v1, 0x3fc00000    # 1.5f
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v2, "poison_master"
+
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-ne v0, v4, :cond_2
+
+    int-to-float v2, p1
+
+    const/high16 v0, 0x3fa00000    # 1.25f
+
+    :goto_0
+    mul-float/2addr v0, v2
+
+    float-to-int p1, v0
+
+    :cond_0
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v2, "poison_master"
+
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-ne v0, v3, :cond_3
+
+    :goto_1
+    mul-float/2addr p2, v1
+
+    :cond_1
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->shock:Ljava/lang/Boolean;
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    iput p1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->shockBonus:I
+
+    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
+
+    move-result-object v7
+
+    new-instance v0, Le/a/d/x;
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    const-string v2, "APPLY_SHOCK"
+
+    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    sget-object v4, Lcom/badlogic/gdx/graphics/Color;->YELLOW:Lcom/badlogic/gdx/graphics/Color;
+
+    const v5, 0x3f99999a    # 1.2f
+
+    const v6, 0x3f333333    # 0.7f
+
+    invoke-direct/range {v0 .. v6}, Le/a/d/x;-><init>(ILjava/lang/String;FLcom/badlogic/gdx/graphics/Color;FF)V
+
+    invoke-virtual {v7, v0}, Le/a/a/a;->a(Le/a/d/x;)V
+
+    const-string v0, "UNSHOCKWEAPON"
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1, p2}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
+
+    return-void
+
+    :cond_2
+    if-ne v0, v5, :cond_0
+
+    int-to-float v2, p1
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_3
+    if-ne v0, v4, :cond_4
+
+    const/high16 v1, 0x3fe00000    # 1.75f
+
+    goto :goto_1
+
+    :cond_4
+    if-ne v0, v5, :cond_1
+
+    const/high16 v1, 0x40000000    # 2.0f
+
+    goto :goto_1
+.end method
+
+.method public spirit(IF)V
+    .locals 8
+
+    const/4 v5, 0x3
+
+    const/4 v4, 0x2
+
+    const/4 v3, 0x1
+
+    const/high16 v1, 0x3fc00000    # 1.5f
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v2, "poison_master"
+
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-ne v0, v4, :cond_2
+
+    int-to-float v2, p1
+
+    const/high16 v0, 0x3fa00000    # 1.25f
+
+    :goto_0
+    mul-float/2addr v0, v2
+
+    float-to-int p1, v0
+
+    :cond_0
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v2, "poison_master"
+
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v0
+
+    if-ne v0, v3, :cond_3
+
+    :goto_1
+    mul-float/2addr p2, v1
+
+    :cond_1
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    invoke-static {v3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->spirit:Ljava/lang/Boolean;
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    iput p1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->spiritBonus:I
+
+    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
+
+    move-result-object v7
+
+    new-instance v0, Le/a/d/x;
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    const-string v2, "APPLY_SPIRIT"
+
+    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const/high16 v3, 0x3f800000    # 1.0f
+
+    sget-object v4, Lcom/badlogic/gdx/graphics/Color;->YELLOW:Lcom/badlogic/gdx/graphics/Color;
+
+    const v5, 0x3f99999a    # 1.2f
+
+    const v6, 0x3f333333    # 0.7f
+
+    invoke-direct/range {v0 .. v6}, Le/a/d/x;-><init>(ILjava/lang/String;FLcom/badlogic/gdx/graphics/Color;FF)V
+
+    invoke-virtual {v7, v0}, Le/a/a/a;->a(Le/a/d/x;)V
+
+    const-string v0, "UNSPIRITWEAPON"
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/GameObject;->m()I
+
+    move-result v1
+
+    invoke-virtual {p0, v0, v1, p2}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
+
+    return-void
+
+    :cond_2
+    if-ne v0, v5, :cond_0
+
+    int-to-float v2, p1
+
+    move v0, v1
+
+    goto :goto_0
+
+    :cond_3
+    if-ne v0, v4, :cond_4
+
+    const/high16 v1, 0x3fe00000    # 1.75f
+
+    goto :goto_1
+
+    :cond_4
+    if-ne v0, v5, :cond_1
+
+    const/high16 v1, 0x40000000    # 2.0f
+
+    goto :goto_1
 .end method
 
 .method public t()Lcom/badlogic/gdx/graphics/g2d/TextureRegion;

@@ -479,3 +479,4 @@ wand_toxic_4+	Cry web+	6	10	6	200	11	7		1			w	acid1		3	t
 palm_of_araim	Permafrost Bow	4	9	5	200	10	7	1	1				arrow1		3	d						
 palm_of_araim+	Permafrost Bow	6	12	5	200	10	7	1	1				arrow1		3	d						
 pharaon_sword	Cruelty Greatsword	6	15	4	200	9	1	1							4	t				
+Broken_captain_sword	Broken_captain_sword	1	1	6	200	10	1								9	d				

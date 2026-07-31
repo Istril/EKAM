@@ -199,7 +199,7 @@
 
     invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
 
-    const-wide/high16 v2, 0x3e70000000000000L    # 5.960464477539063E-8
+    const-wide/high16 v2, 0x3e70000000000000L    # 5.9604644775390625E-8
 
     mul-double/2addr v0, v2
 

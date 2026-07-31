@@ -65,14 +65,14 @@
 
     move-result v0
 
-# Фактическое начало
     packed-switch v0, :pswitch_data_0
+
     :cond_0
     :goto_0
     :pswitch_0
     return-void
 
-    :pswitch_1 #SpiritWeapon
+    :pswitch_1
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -105,7 +105,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2 #DeathWeapon
+    :pswitch_2
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -138,7 +138,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3 #ShockWeapon
+    :pswitch_3
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -171,7 +171,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4 #ColdWeapon
+    :pswitch_4
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -204,7 +204,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5 #FireWeapon
+    :pswitch_5
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -237,7 +237,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_6 # продвинутые навыки компаньонов, опыт за продвижение, стартовые вещи
+    :pswitch_6
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -262,7 +262,7 @@
 
     if-eqz v0, :cond_0
 
-    const v1, 0x9c40 #Число опыта получаемое компаньоном при открытии продвинутых умений - базово стоит 0x9c40 (40000)
+    const v1, 0x9c40
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Final/NPC;->k(I)V
 
@@ -811,7 +811,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_8 # наверное таверны или всплывающая подсказка про таверны
+    :pswitch_8
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -830,7 +830,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_9 # Компаньоны только через скрипт summon
+    :pswitch_9
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -855,7 +855,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_a # что-то связанное с компаньонами
+    :pswitch_a
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -866,7 +866,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_b # рекавери баттон +-
+    :pswitch_b
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
     move-result-object v0
@@ -905,7 +905,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_c # возможно сумка тремадана
+    :pswitch_c
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -914,7 +914,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_d #recovery button
+    :pswitch_d
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
     move-result-object v0
@@ -963,7 +963,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v3}, Lnet/fdgames/GameEntities/Final/Player;->B0()I # навык экстра рекавери
+    invoke-virtual {v3}, Lnet/fdgames/GameEntities/Final/Player;->B0()I
 
     move-result v3
 
@@ -979,7 +979,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_e #что-то про проклятие тола (Включение эффекта?)
+    :pswitch_e
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -988,7 +988,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_f #что-то про проклятие тола (Выключение эффекта?)
+    :pswitch_f
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -997,7 +997,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_10 # что-то для хранилищ ратуши
+    :pswitch_10
     invoke-static {}, Le/a/d/y;->M()Ljava/lang/Boolean;
 
     move-result-object v0
@@ -1031,7 +1031,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_11 # Не известно
+    :pswitch_11
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -1104,7 +1104,7 @@
 
     goto :goto_1
 
-    :pswitch_12 # не известно
+    :pswitch_12
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -1113,7 +1113,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_13 # эффект зелья силы или арбеноса
+    :pswitch_13
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -1138,7 +1138,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_14 # функция summon
+    :pswitch_14
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -1171,7 +1171,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_15 # не известно 
+    :pswitch_15
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -1214,7 +1214,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_16 # не известно
+    :pswitch_16
     invoke-static {v2}, Lnet/fdgames/GameLevel/GameLevel;->a(Z)V
 
     invoke-static {}, Ljava/lang/System;->gc()V
@@ -1247,7 +1247,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_17 # не известно
+    :pswitch_17
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -1256,7 +1256,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_18 # изучение скилла beast master
+    :pswitch_18
     invoke-static {v3}, Lnet/fdgames/Rules/Skills;->a(Ljava/lang/String;)Lnet/fdgames/Rules/Skill;
 
     move-result-object v0
@@ -1331,11 +1331,11 @@
 
     invoke-virtual {v3}, Le/a/d/y;->a()Lcom/badlogic/gdx/scenes/scene2d/Stage;
 
-    invoke-virtual {v1, v2, v0}, Le/a/d/e/b0;->a(Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;Lnet/fdgames/Rules/Skill;)V #метод разблокировки кнопки в зависимости от указаноого тута золота
+    invoke-virtual {v1, v2, v0}, Le/a/d/e/b0;->a(Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;Lnet/fdgames/Rules/Skill;)V
 
     goto/16 :goto_0
 
-    :pswitch_19 # ResetCompanion возможно
+    :pswitch_19
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -1344,7 +1344,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_1a # ResetPlayerTraits возможно
+    :pswitch_1a
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -1353,7 +1353,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_1b # возможно ResetPlayerSkills
+    :pswitch_1b
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -1362,12 +1362,12 @@
 
     goto/16 :goto_0
 
-    :pswitch_1c # сундук тремадана и другие прописанные в том методе
+    :pswitch_1c
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
 
-    invoke-virtual {v0, v3}, Lnet/fdgames/GameWorld/GameData;->d(Ljava/lang/String;)Lnet/fdgames/GameWorld/WorldContainer; #метод сундука тремадана
+    invoke-virtual {v0, v3}, Lnet/fdgames/GameWorld/GameData;->d(Ljava/lang/String;)Lnet/fdgames/GameWorld/WorldContainer;
 
     move-result-object v0
 
@@ -1408,7 +1408,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_1d # не известно
+    :pswitch_1d
     invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
 
     move-result-object v0
@@ -1417,7 +1417,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_1e # не известно
+    :pswitch_1e
     invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
 
     move-result-object v0
@@ -1426,7 +1426,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_1f # не известно
+    :pswitch_1f
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
     move-result-object v0
@@ -1448,7 +1448,7 @@
     goto/16 :goto_0
 
     :goto_2
-    :pswitch_20 # что-то про mapitem
+    :pswitch_20
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->v()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -1513,7 +1513,7 @@
     goto :goto_2
 
     :goto_3
-    :pswitch_21 # что-то про mapitem
+    :pswitch_21
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->v()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -1576,7 +1576,7 @@
     goto :goto_3
 
     :goto_4
-    :pswitch_22 # что-то про mapitem
+    :pswitch_22
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->v()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -1625,7 +1625,7 @@
     goto :goto_4
 
     :goto_5
-    :pswitch_23 # что-то про mapitem
+    :pswitch_23
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->v()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -1674,7 +1674,7 @@
     goto :goto_5
 
     :goto_6
-    :pswitch_24 # что-то про mapitem
+    :pswitch_24
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->v()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -1737,7 +1737,7 @@
     goto :goto_6
 
     :goto_7
-    :pswitch_25 # что-то про mapitem
+    :pswitch_25
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->v()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -1799,7 +1799,7 @@
 
     goto :goto_7
 
-    :pswitch_26 # что-то про mapitem
+    :pswitch_26
     move v2, v1
 
     :goto_8
@@ -1927,7 +1927,7 @@
 
     goto :goto_9
 
-    :pswitch_27 # что-то про mapitem
+    :pswitch_27
     move v2, v1
 
     :goto_a
@@ -2005,7 +2005,7 @@
     goto :goto_a
 
     :cond_14
-    :goto_b # что-то про mapeffect
+    :goto_b
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->u()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -2075,7 +2075,7 @@
 
     goto :goto_b
 
-    :pswitch_28 #GainSkillPoint
+    :pswitch_28
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -2088,7 +2088,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_29 #GainTrait
+    :pswitch_29
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -2101,7 +2101,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2a # не известно
+    :pswitch_2a
     invoke-static {}, Le/a/d/y;->M()Ljava/lang/Boolean;
 
     move-result-object v0
@@ -2155,7 +2155,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2b # что-то про staticNPC
+    :pswitch_2b
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->e()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -2307,7 +2307,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2c #detection, скрипт свитков обнаружения
+    :pswitch_2c
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -2350,7 +2350,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2d #teleport, скрипт свитков телепортации
+    :pswitch_2d
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -2383,7 +2383,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2e #recall, скрипт свитков возврата
+    :pswitch_2e
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -2416,7 +2416,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2f # не известно
+    :pswitch_2f
     iget-object v0, p0, Lnet/fdgames/GameLogic/ScriptedAction;->data:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
@@ -2506,7 +2506,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_30 # переход на верхнюю палобу в лотосане
+    :pswitch_30
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
     move-result-object v0
@@ -2615,7 +2615,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_31 # не известно
+    :pswitch_31
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
     move-result-object v0
@@ -2626,7 +2626,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_32 # что-то связанное с диалогами
+    :pswitch_32
     invoke-static {}, Le/a/c/b;->q()Le/a/c/b;
 
     move-result-object v0
@@ -2651,7 +2651,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_33 # не известно
+    :pswitch_33
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2732,7 +2732,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_34 # не известно
+    :pswitch_34
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2765,7 +2765,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_35 
+    :pswitch_35
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2800,7 +2800,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_36 # скрипт сопротивления урону шоком
+    :pswitch_36
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2835,7 +2835,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_37 # скрипт сопротивления урону ядом
+    :pswitch_37
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2870,7 +2870,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_38 # скрипт сопротивления урону холодом
+    :pswitch_38
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2905,7 +2905,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_39 # скрипт сопротивления урону огня
+    :pswitch_39
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2940,7 +2940,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3a # скрипт сопротивления урону тленом
+    :pswitch_3a
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -2975,7 +2975,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3b # не известно
+    :pswitch_3b
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -3012,7 +3012,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3c # не известно
+    :pswitch_3c
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -3031,7 +3031,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3d # скрипт GainInvis
+    :pswitch_3d
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->s()Lnet/fdgames/GameLevel/GameLevelData;
 
     move-result-object v0
@@ -3054,7 +3054,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3e # GainMight
+    :pswitch_3e
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -3087,7 +3087,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3f # зелья защиты
+    :pswitch_3f
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -3120,7 +3120,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_40 # скрипт из начала игры - адаон обворовывает игрока
+    :pswitch_40
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -3131,7 +3131,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_41 # скрипт из начала игры - адаон обворовывает игрока
+    :pswitch_41
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -3142,7 +3142,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_42 # скприпт с сокрытием компаньонов - как после канализации Нью-Гаранда
+    :pswitch_42
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -3171,7 +3171,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_43 # скприпт с сокрытием компаньонов - как после канализации Нью-Гаранда
+    :pswitch_43
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -3182,7 +3182,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_44 # что-то связанное с Интелектом НПС
+    :pswitch_44
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->s()Lnet/fdgames/GameLevel/GameLevelData;
 
     move-result-object v0
@@ -3211,7 +3211,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_45 # возможно приказ ждать здесь для нпс
+    :pswitch_45
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -3240,7 +3240,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_46 # скприпт связанный с ИИ компаньонов
+    :pswitch_46
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -3269,7 +3269,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_47 # скприпт связанный с ИИ компаньонов - ожидание
+    :pswitch_47
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -3296,7 +3296,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_48 # скприпт связанный с ИИ компаньонов - ожидание
+    :pswitch_48
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -3323,7 +3323,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_49 # скприпт связанный с ИИ компаньонов - стратегии атаки
+    :pswitch_49
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -3463,7 +3463,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4a # скприпт связанный с ИИ компаньонов
+    :pswitch_4a
     const-string v0, ""
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -3610,7 +3610,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4b # скприпт связанный с ИИ компаньонов - патрулирование
+    :pswitch_4b
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->e()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -3659,7 +3659,7 @@
 
     goto :goto_11
 
-    :pswitch_4c # не известно
+    :pswitch_4c
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->e()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -3811,7 +3811,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4d # не известно
+    :pswitch_4d
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->s()Lnet/fdgames/GameLevel/GameLevelData;
 
     move-result-object v0
@@ -3860,7 +3860,7 @@
 
     goto :goto_15
 
-    :pswitch_4e # не известно
+    :pswitch_4e
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -3945,7 +3945,7 @@
 
     goto :goto_16
 
-    :pswitch_4f # метод проверки уровня
+    :pswitch_4f
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -4067,7 +4067,7 @@
 
     goto :goto_17
 
-    :pswitch_50 #LoseHP тленом
+    :pswitch_50
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4102,7 +4102,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_51 #LoseHP холодом
+    :pswitch_51
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4137,7 +4137,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_52 #LoseHP огнём
+    :pswitch_52
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4172,7 +4172,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_53 #LoseHP ядом
+    :pswitch_53
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4207,7 +4207,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_54 #LoseHP шоком
+    :pswitch_54
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4242,7 +4242,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_55 #LoseHP физой
+    :pswitch_55
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4277,20 +4277,20 @@
 
     goto/16 :goto_0
 
-    :pswitch_56 #возможно immortal у компаньонов
+    :pswitch_56
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
     move-result-object v0
 
     iget-object v1, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
-    invoke-virtual {v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->D()I #потерянное хп
+    invoke-virtual {v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->D()I
 
     move-result v1
 
     div-int/lit8 v1, v1, 0x2
 
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Character;->l(I)V # метод эффекта лечения
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Character;->l(I)V
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevelData;->w()Ljava/util/ArrayList;
 
@@ -4373,7 +4373,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_57 # похоже на желтую зельку
+    :pswitch_57
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4384,13 +4384,13 @@
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
-    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->D()I # миссинг хп
+    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->D()I
 
     move-result v1
 
     div-int/lit8 v1, v1, 0x2
 
-    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->E()I # миссинг мана
+    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->E()I
 
     move-result v0
 
@@ -4418,7 +4418,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_58 # возможно sleep
+    :pswitch_58
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -4431,7 +4431,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_59 #LoseGold потеря золота
+    :pswitch_59
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -4458,7 +4458,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5a #GainGold получение золота
+    :pswitch_5a
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -4485,7 +4485,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5b #GainMana?
+    :pswitch_5b
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4502,7 +4502,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5c #GainHP?
+    :pswitch_5c
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
 
     move-result-object v0
@@ -4519,7 +4519,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5d #GainXP
+    :pswitch_5d
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -4534,7 +4534,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5e #GainItem?
+    :pswitch_5e
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -4595,7 +4595,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5f #LoseItem
+    :pswitch_5f
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -4656,7 +4656,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_60 #GainItems?
+    :pswitch_60
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -4685,7 +4685,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_61 #LoseItems?
+    :pswitch_61
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -4714,7 +4714,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_62 #IncRep?
+    :pswitch_62
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -4788,7 +4788,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_63 #DecRep?
+    :pswitch_63
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -4860,7 +4860,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_64 #что-то с variable
+    :pswitch_64
     const-string v0, ","
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -4959,8 +4959,8 @@
         :pswitch_42
         :pswitch_41
         :pswitch_40
-        :pswitch_3f # ниже был :pswitch_0
-        :pswitch_3e # Выше был :pswitch_0 (между 3f и 3e) - как минимум не работает скрипт зелек защиты
+        :pswitch_3f
+        :pswitch_3e
         :pswitch_3d
         :pswitch_3c
         :pswitch_3b
@@ -5175,7 +5175,7 @@
 
     move-result-object v0
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :pswitch_8
     const-string v0, "PlanarBinding#"
@@ -5192,7 +5192,7 @@
 
     move-result-object v0
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :pswitch_9
     const-string v0, "DisbandAll#"
@@ -5209,7 +5209,7 @@
 
     move-result-object v0
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :pswitch_a
     const-string v0, "FullRecovery#"
@@ -5226,7 +5226,7 @@
 
     move-result-object v0
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :pswitch_b
     const-string v0, "GainBagHolding#"
@@ -5243,7 +5243,7 @@
 
     move-result-object v0
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :pswitch_c
     const-string v0, "HalfRecovery#"
@@ -5260,7 +5260,7 @@
 
     move-result-object v0
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :pswitch_d
     const-string v0, "EndTolCurse#"
@@ -6774,8 +6774,6 @@
     move-result-object v0
 
     goto/16 :goto_0
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0

@@ -24,7 +24,6 @@
 
 .field private j:Lcom/badlogic/gdx/scenes/scene2d/ui/Label;
 
-
 .field private l:Lcom/badlogic/gdx/scenes/scene2d/ui/Image;
 
 .field private m:Lcom/badlogic/gdx/e;

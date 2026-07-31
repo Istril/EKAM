@@ -30,6 +30,7 @@
 
 .field private flash_and_bones:I
 
+
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 4
@@ -50,7 +51,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_c
+    if-eqz v0, :cond_d
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -194,22 +195,22 @@
 
     move-result v3
 
-    if-eqz v3, :cond_fab
+    if-eqz v3, :cond_b
 
     iput v0, p0, Lnet/fdgames/GameLogic/SkillRequirements;->Mage_armor:I
 
-    :cond_fab
+    :cond_b
     const-string v3, "flash_and_bones"
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
-    if-eqz v3, :cond_b
+    if-eqz v3, :cond_c
 
     iput v0, p0, Lnet/fdgames/GameLogic/SkillRequirements;->flash_and_bones:I
 
-    :cond_b
+    :cond_c
     const-string v3, "lesser_summoning"
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -222,7 +223,7 @@
 
     goto/16 :goto_0
 
-    :cond_c
+    :cond_d
     return-void
 .end method
 
@@ -615,7 +616,7 @@
     :cond_8
     iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->Mage_armor:I
 
-    if-lez v1, :cond_fab
+    if-lez v1, :cond_9
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -635,10 +636,10 @@
 
     move-result-object v0
 
-    :cond_fab
+    :cond_9
     iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->flash_and_bones:I
 
-    if-lez v1, :cond_9
+    if-lez v1, :cond_a
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -658,10 +659,10 @@
 
     move-result-object v0
 
-    :cond_9
+    :cond_a
     iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->Lesser_summoning:I
 
-    if-lez v1, :cond_a
+    if-lez v1, :cond_b
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -681,10 +682,10 @@
 
     move-result-object v0
 
-    :cond_a
+    :cond_b
     iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->Mana_surge:I
 
-    if-lez v1, :cond_b
+    if-lez v1, :cond_c
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -704,12 +705,12 @@
 
     move-result-object v0
 
-    :cond_b
+    :cond_c
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    if-lez v1, :cond_c
+    if-lez v1, :cond_d
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -723,7 +724,7 @@
 
     const/16 v2, 0x2c
 
-    if-ne v1, v2, :cond_c
+    if-ne v1, v2, :cond_d
 
     const/4 v1, 0x0
 
@@ -737,18 +738,18 @@
 
     move-result-object v0
 
-    :cond_c
+    :cond_d
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    if-lez v1, :cond_d
+    if-lez v1, :cond_e
 
     invoke-virtual {p0, p1}, Lnet/fdgames/GameLogic/SkillRequirements;->a(Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_e
+    if-eqz v1, :cond_f
 
     const-string v1, "[BLACK]"
 
@@ -758,11 +759,11 @@
 
     move-result-object v0
 
-    :cond_d
+    :cond_e
     :goto_0
     return-object v0
 
-    :cond_e
+    :cond_f
     const-string v1, "[RED]"
 
     const-string v2, "[]"
@@ -990,7 +991,7 @@
     :cond_8
     iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->Mage_armor:I
 
-    if-lez v1, :cond_fab
+    if-lez v1, :cond_9
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1010,10 +1011,10 @@
 
     move-result-object v0
 
-    :cond_fab
+    :cond_9
     iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->flash_and_bones:I
 
-    if-lez v1, :cond_9
+    if-lez v1, :cond_a
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1033,10 +1034,10 @@
 
     move-result-object v0
 
-    :cond_9
+    :cond_a
     iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->Lesser_summoning:I
 
-    if-lez v1, :cond_a
+    if-lez v1, :cond_b
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1056,10 +1057,10 @@
 
     move-result-object v0
 
-    :cond_a
+    :cond_b
     iget v1, p0, Lnet/fdgames/GameLogic/SkillRequirements;->Mana_surge:I
 
-    if-lez v1, :cond_b
+    if-lez v1, :cond_c
 
     invoke-static {v0}, Ld/a/a/a/a;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1079,12 +1080,12 @@
 
     move-result-object v0
 
-    :cond_b
+    :cond_c
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    if-lez v1, :cond_c
+    if-lez v1, :cond_d
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -1098,7 +1099,7 @@
 
     const/16 v2, 0x2c
 
-    if-ne v1, v2, :cond_c
+    if-ne v1, v2, :cond_d
 
     const/4 v1, 0x0
 
@@ -1112,6 +1113,6 @@
 
     move-result-object v0
 
-    :cond_c
+    :cond_d
     return-object v0
 .end method

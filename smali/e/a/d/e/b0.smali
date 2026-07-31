@@ -492,7 +492,7 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 v2, 0x1388 # визуальное отображение
+    const/16 v2, 0x1388
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -545,7 +545,7 @@
     return-object v0
 .end method
 
-.method private b()V # метод списания денег. за изучения навыка
+.method private b()V
     .locals 4
 
     const-string v0, "levelup"
@@ -597,13 +597,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_next1
+    if-eqz v0, :cond_1
 
-    const/16 v1, 0x3e8 #1000
-    
-    goto :apply_cost
+    const/16 v1, 0x3e8
 
-    :cond_next1
+    goto :goto_0
+
+    :cond_1
     iget-object v0, p0, Le/a/d/e/b0;->g:Lnet/fdgames/Rules/Skill;
 
     iget-object v0, v0, Lnet/fdgames/Rules/Skill;->id:Ljava/lang/String;
@@ -614,16 +614,16 @@
 
     move-result v0
 
-    if-eqz v0, :normal_cost
+    if-eqz v0, :cond_2
 
-    const/16 v1, 0x2710 #10000
-    
-    goto :apply_cost
+    const/16 v1, 0x2710
 
-    :normal_cost
-    const/16 v1, 0x1388 #5000
+    goto :goto_0
 
-    :apply_cost
+    :cond_2
+    const/16 v1, 0x1388
+
+    :goto_0
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -702,10 +702,8 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_2
 
-    # === НАЧАЛО ЦЕПОЧКИ ПРОВЕРОК ===
-    # 1. Проверяем на lesser_undead
     iget-object v0, p2, Lnet/fdgames/Rules/Skill;->id:Ljava/lang/String;
 
     const-string v1, "lesser_undead"
@@ -714,9 +712,8 @@
 
     move-result v0
 
-    if-nez v0, :cost_lesser_undead
+    if-nez v0, :cond_0
 
-    # 2. Проверяем на spiritualism
     iget-object v0, p2, Lnet/fdgames/Rules/Skill;->id:Ljava/lang/String;
 
     const-string v1, "spiritualism"
@@ -725,24 +722,21 @@
 
     move-result v0
 
-    if-nez v0, :cost_spiritualism
+    if-nez v0, :cond_1
 
-    # 3. Цена по умолчанию для всех остальных навыков
-    const/16 v1, 0x1388         # 5000 золота
+    const/16 v1, 0x1388
 
-    goto :update_ui_text
+    goto :goto_0
 
-    :cost_lesser_undead
-    const/16 v1, 0x3e8          # 1000 золота
+    :cond_0
+    const/16 v1, 0x3e8
 
-    goto :update_ui_text
+    goto :goto_0
 
-    :cost_spiritualism
-    const/16 v1, 0x2710         # 10000 золота
+    :cond_1
+    const/16 v1, 0x2710
 
-    :update_ui_text
-    # === ДИНАМИЧЕСКИЙ ТЕКСТ КНОПКИ (UI) ===
-    # Перенесено СЮДА, чтобы выполняться ДО непосредственной проверки золота - его мы игнорируем
+    :goto_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -772,9 +766,7 @@
     iget-object v2, p0, Le/a/d/e/b0;->c:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
 
     invoke-virtual {v2, v0}, Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;->setText(Ljava/lang/String;)V
-    # === КОНЕЦ ОБНОВЛЕНИЯ UI ===
 
-    # Теперь запрашиваем золото игрока в регистр v0
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
     move-result-object v0
@@ -785,17 +777,15 @@
 
     move-result v0
 
-    # Сравниваем золото игрока (v0) с установленной ценой (v1)
-    if-lt v0, v1, :cond_0
+    if-lt v0, v1, :cond_2
 
-    # Восстанавливаем булеву единицу в v2 для последующих вызовов
     const/4 v2, 0x1
 
     invoke-virtual {p1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->P()Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_2
 
     iget-object v0, p2, Lnet/fdgames/Rules/Skill;->id:Ljava/lang/String;
 
@@ -803,16 +793,16 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_3
 
-    :cond_0
-    const/4 v2, 0x1 # На всякий случай жестко возвращаем 1 перед блокировкой
+    :cond_2
+    const/4 v2, 0x1
 
     iget-object v0, p0, Le/a/d/e/b0;->c:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
 
     invoke-virtual {v0, v2}, Lcom/badlogic/gdx/scenes/scene2d/ui/Button;->setDisabled(Z)V
 
-    :cond_1
+    :cond_3
     invoke-static {v2}, Lnet/fdgames/GameLevel/GameLevel;->b(Z)V
 
     return-void

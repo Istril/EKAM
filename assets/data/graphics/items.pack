@@ -3324,6 +3324,55 @@ web_cry
   orig: 64, 64
   offset: 0, 0
   index: -1
+armor_chain_chest_traitor
+  rotate: false
+  xy: 1, 365
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_hands_traitor
+  rotate: false
+  xy: 67, 431
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_legs_traitor
+  rotate: false
+  xy: 133, 497
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_head_traitor
+  rotate: false
+  xy: 199, 563
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_chain_feet_traitor
+  rotate: false
+  xy: 265, 629
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+broken_captain_sword
+  rotate: false
+  xy: 331, 695
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
+armor_plate_chest_blue
+  rotate: false
+  xy: 331, 695
+  size: 64, 64
+  orig: 64, 64
+  offset: 0, 0
+  index: -1
 
 runes.png
 format: RGBA8888

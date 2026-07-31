@@ -12,6 +12,8 @@
 
 .field public explosive:Z
 
+.field public explosive_poison:Z
+
 .field public fire_elemental:Z
 
 .field public ghost:Z
@@ -53,8 +55,6 @@
 .field public toxic_elemental:Z
 
 .field public undead:Z
-
-.field public explosive_poison:Z
 
 .field public vampire:Z
 
@@ -761,7 +761,7 @@
 
     iget-boolean v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;->undead:Z
 
-    if-eqz v0, :cond_18
+    if-eqz v0, :cond_19
 
     const-string v0, ""
 
@@ -1038,7 +1038,7 @@
     :cond_17
     iget-boolean v1, p0, Lnet/fdgames/GameEntities/CharacterSheet/AttributesSet;->vampire:Z
 
-    if-eqz v1, :cond_40
+    if-eqz v1, :cond_18
 
     const-string v1, "vampire "
 
@@ -1046,26 +1046,26 @@
 
     move-result-object v0
 
-    :cond_40
+    :cond_18
     const-string v1, ""
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_19
+    if-eqz v1, :cond_1a
 
     const-string v0, "None"
 
     :goto_1
     return-object v0
 
-    :cond_18
+    :cond_19
     const-string v0, ""
 
     goto/16 :goto_0
 
-    :cond_19
+    :cond_1a
     invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v0

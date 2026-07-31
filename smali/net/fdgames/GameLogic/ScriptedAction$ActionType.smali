@@ -36,9 +36,13 @@
 
 .field public static final enum C0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
+.field public static final enum CW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
 .field public static final enum D:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
 .field public static final enum D0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+.field public static final enum DW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
 .field public static final enum E:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
@@ -47,6 +51,8 @@
 .field public static final enum F:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
 .field public static final enum F0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+.field public static final enum FW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
 .field public static final enum G:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
@@ -100,6 +106,10 @@
 
 .field public static final enum S0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
+.field public static final enum SPW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
+.field public static final enum SW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
+
 .field public static final enum T:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
 .field public static final enum T0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
@@ -117,16 +127,6 @@
 .field public static final enum Y:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
 .field public static final enum Z:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
-
-.field public static final enum FW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
-
-.field public static final enum CW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
-
-.field public static final enum SW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
-
-.field public static final enum DW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
-
-.field public static final enum SPW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
 .field public static final enum a0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 

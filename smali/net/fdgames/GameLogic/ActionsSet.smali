@@ -55,7 +55,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_60
+    if-eqz v0, :cond_65
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -951,13 +951,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_next
+    if-eqz v0, :cond_39
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->Z:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_next
+    :cond_39
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "fireweapon"
@@ -966,13 +966,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_next2
+    if-eqz v0, :cond_3a
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->FW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_next2
+    :cond_3a
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "coldweapon"
@@ -981,13 +981,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_next3
+    if-eqz v0, :cond_3b
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->CW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_next3
+    :cond_3b
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "shockweapon"
@@ -996,13 +996,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_next4
+    if-eqz v0, :cond_3c
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->SW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_next4
+    :cond_3c
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "deathweapon"
@@ -1011,13 +1011,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_next5
+    if-eqz v0, :cond_3d
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->DW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_next5
+    :cond_3d
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "spiritweapon"
@@ -1026,13 +1026,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_39
+    if-eqz v0, :cond_3e
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->SPW:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_39
+    :cond_3e
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "itemactivate"
@@ -1041,13 +1041,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3a
+    if-eqz v0, :cond_3f
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->m0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_3a
+    :cond_3f
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "itemdeactivate"
@@ -1056,13 +1056,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3b
+    if-eqz v0, :cond_40
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->n0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_3b
+    :cond_40
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "itemhide"
@@ -1071,13 +1071,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3c
+    if-eqz v0, :cond_41
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->o0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_3c
+    :cond_41
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "itemshow"
@@ -1086,13 +1086,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3d
+    if-eqz v0, :cond_42
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->p0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_3d
+    :cond_42
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "itemblockview"
@@ -1101,13 +1101,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3e
+    if-eqz v0, :cond_43
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->q0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_3e
+    :cond_43
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "itemunblockview"
@@ -1116,13 +1116,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3f
+    if-eqz v0, :cond_44
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->r0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_3f
+    :cond_44
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "itemwalkable"
@@ -1131,13 +1131,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_40
+    if-eqz v0, :cond_45
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->s0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_40
+    :cond_45
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "itemunwalkable"
@@ -1146,13 +1146,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_41
+    if-eqz v0, :cond_46
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->t0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_41
+    :cond_46
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "playerrobbed"
@@ -1161,13 +1161,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_42
+    if-eqz v0, :cond_47
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->u0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_42
+    :cond_47
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "stoprender"
@@ -1176,13 +1176,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_43
+    if-eqz v0, :cond_48
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->v0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_43
+    :cond_48
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "startrender"
@@ -1191,13 +1191,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_44
+    if-eqz v0, :cond_49
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->w0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_44
+    :cond_49
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "losehptoxic"
@@ -1206,13 +1206,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_45
+    if-eqz v0, :cond_4a
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->t:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_45
+    :cond_4a
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "losehpshock"
@@ -1221,13 +1221,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_46
+    if-eqz v0, :cond_4b
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->s:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_46
+    :cond_4b
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "losehpfire"
@@ -1236,13 +1236,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_47
+    if-eqz v0, :cond_4c
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->u:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_47
+    :cond_4c
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "losehpcold"
@@ -1251,13 +1251,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_48
+    if-eqz v0, :cond_4d
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->v:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_48
+    :cond_4d
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "losehpdeath"
@@ -1266,13 +1266,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_49
+    if-eqz v0, :cond_4e
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->w:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_49
+    :cond_4e
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "openworldcontainer"
@@ -1281,13 +1281,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_4a
+    if-eqz v0, :cond_4f
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->x0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_4a
+    :cond_4f
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "resetplayerskills"
@@ -1296,13 +1296,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_4b
+    if-eqz v0, :cond_50
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->y0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_4b
+    :cond_50
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "resetplayertraits"
@@ -1311,13 +1311,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_4c
+    if-eqz v0, :cond_51
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->z0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_4c
+    :cond_51
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "resetcompanion"
@@ -1326,13 +1326,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_4d
+    if-eqz v0, :cond_52
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->A0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_4d
+    :cond_52
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "trainskill"
@@ -1341,13 +1341,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_4e
+    if-eqz v0, :cond_53
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->B0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_4e
+    :cond_53
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "forgetplayeradvancedskills"
@@ -1356,13 +1356,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_4f
+    if-eqz v0, :cond_54
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->C0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_4f
+    :cond_54
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "fullrest"
@@ -1371,13 +1371,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_50
+    if-eqz v0, :cond_55
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->D0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_50
+    :cond_55
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "gaineffect"
@@ -1386,13 +1386,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_51
+    if-eqz v0, :cond_56
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->S:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_51
+    :cond_56
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "summon"
@@ -1401,13 +1401,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_52
+    if-eqz v0, :cond_57
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->F0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_52
+    :cond_57
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "turnundead"
@@ -1416,13 +1416,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_53
+    if-eqz v0, :cond_58
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->G0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_53
+    :cond_58
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "destroyshards"
@@ -1431,13 +1431,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_54
+    if-eqz v0, :cond_59
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->H0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_54
+    :cond_59
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "hurtnpc"
@@ -1446,13 +1446,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_55
+    if-eqz v0, :cond_5a
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->I0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_55
+    :cond_5a
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "openvault"
@@ -1461,13 +1461,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_56
+    if-eqz v0, :cond_5b
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->J0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_56
+    :cond_5b
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "tolcurse"
@@ -1476,13 +1476,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_57
+    if-eqz v0, :cond_5c
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->K0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_57
+    :cond_5c
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "endtolcurse"
@@ -1491,13 +1491,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_58
+    if-eqz v0, :cond_5d
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->L0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_58
+    :cond_5d
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "halfrecovery"
@@ -1506,13 +1506,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_59
+    if-eqz v0, :cond_5e
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->M0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_59
+    :cond_5e
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "fullrecovery"
@@ -1521,13 +1521,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_5a
+    if-eqz v0, :cond_5f
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->O0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_5a
+    :cond_5f
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "gainbagholding"
@@ -1536,13 +1536,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_5b
+    if-eqz v0, :cond_60
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->N0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_5b
+    :cond_60
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "planarbinding"
@@ -1551,13 +1551,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_5c
+    if-eqz v0, :cond_61
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->Q0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_5c
+    :cond_61
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "endgame"
@@ -1566,13 +1566,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_5d
+    if-eqz v0, :cond_62
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->R0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_5d
+    :cond_62
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "losearenaitems"
@@ -1581,13 +1581,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_5e
+    if-eqz v0, :cond_63
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->S0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_5e
+    :cond_63
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v5, "upgradecompanion"
@@ -1596,18 +1596,18 @@
 
     move-result v0
 
-    if-eqz v0, :cond_5f
+    if-eqz v0, :cond_64
 
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->T0:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_5f
+    :cond_64
     sget-object v0, Lnet/fdgames/GameLogic/ScriptedAction$ActionType;->b:Lnet/fdgames/GameLogic/ScriptedAction$ActionType;
 
     goto/16 :goto_1
 
-    :cond_60
+    :cond_65
     return-void
 .end method
 

@@ -603,6 +603,7 @@
     <public type="drawable" name="notification_bg_normal" id="0x7f06006e" />
     <public type="drawable" name="notification_bg_normal_pressed" id="0x7f06006f" />
     <public type="drawable" name="notify_panel_notification_icon_bg" id="0x7f060074" />
+    <public type="drawable" name="icon_2" id="0x7f060077" />
     <public type="id" name="ALT" id="0x7f070000" />
     <public type="id" name="CTRL" id="0x7f070001" />
     <public type="id" name="FUNCTION" id="0x7f070002" />

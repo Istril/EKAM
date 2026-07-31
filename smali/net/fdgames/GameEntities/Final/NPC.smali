@@ -2010,7 +2010,7 @@
     invoke-virtual {v6, v5}, Lnet/fdgames/GameEntities/Character;->n(I)V
 
     invoke-virtual {v6, v5}, Lnet/fdgames/GameEntities/Character;->l(I)V
-#_______
+
     :cond_11
     :goto_c
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
@@ -2058,8 +2058,6 @@
     move-result v6
 
     if-nez v6, :cond_33
-
-
 
     :cond_12
     :goto_d
@@ -2594,7 +2592,7 @@
 
     iget-object v1, v1, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
-    add-int/lit16 v0, v0, 0x1e #vampiric blade характеристика регена
+    add-int/lit16 v0, v0, 0x1e
 
     invoke-virtual {v1, v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->j(I)V
 

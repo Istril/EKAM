@@ -33,7 +33,7 @@ Summoner	P	N	M,C	N	You are capable of strengthening the link between summoned cr
 					The creatures you summon gain +4 levels	0						Las criaturas que invocas ganan +4 niveles
 					The creatures you summon gain +5 levels	0						Las criaturas que invocas ganan +5 niveles
 					The creatures you summon gain +6 levels	0						Las criaturas que invocas ganan +6 niveles
-spiritualism	A	N	M	N	Text							
+spiritualism	A	N	M	N	Text								
 					Summon a level 3 Earth Elemental	2	40	5				
 					Summon a level 10 Earth Elemental	2	60	15				
 					Summon a level 13 Iron Golem	2	100	60				
@@ -41,43 +41,43 @@ flash_and_bones	A	N	M	N
 					Summon a level 7 Earth Elemental	1	40	20				
 					Summon a level 10 Earth Elemental	1	60	40				
 					Summon a level 13 Iron Golem	4	100	80				
-war_spirit	A	N	M	N							
+war_spirit	A	N	M	N	Text								
 					Summon a level 7 Earth Elemental	1	15	30				
 					Summon a level 10 Earth Elemental	2	15	40				
 					Summon a level 13 Iron Golem	4	50	60				
-spirit_protection	P	N		N						END#6	
-					Gain +10 to all element	2						
-					Gain +20 to all element	2						
-					Gain +30 to all element	4						
+spirit_protection	P	N		N	Text					END#6		
+					Gain +8 to all element	2						
+					Gain +16 to all element	2						
+					Gain +24 to all element	4						
+					Gain +32 to all element	4						
 					Gain +40 to all element	4						
-					Gain +50 to all element	4						
-					Gain +60 to all element	4						
-spirit_golem	A	N	M	N							
-					Summon a level 7 Earth Elemental	1	25	25				
-					Summon a level 10 Earth Elemental	2	10	35				
-					Summon a level 13 Iron Golem	4	10	45				
-eerie_laughter	A	N	M	N	 							
+					Gain +48 to all element	4						
+spirit_golem	A	N	M	N	Text								
+					Summon a level 7 Earth Elemental	1	15	30				
+					Summon a level 10 Earth Elemental	2	15	40				
+					Summon a level 13 Iron Golem	4	50	60				
+eerie_laughter	A	N	M	N	Text								
 					Paralize	1	20	4				
 					Paralize	2	20	5				
 					Paralize	3	20	6				
-bone_dance	A	N	M	N	 							
+bone_dance	A	N	M	N	Text								
 					Paralize	1	20	4				
 					Paralize	2	20	5				
 					Paralize	3	20	6				
-reincornation	A	N	M	N	 							
+reincornation	A	N	M	N	Text								
 					Paralize	1	2	25				
 					Paralize	2	2	25				
 					Paralize	3	2	25				
-lesser_undead	A	N	M	N	 							
+lesser_undead	A	N	M	N	Text								
 					Paralize	1	10	10				
 					Paralize	2	20	20				
 					Paralize	1	30	30				
-spider_swarm	A	N	M	N	 							
+spider_swarm	A	N	M	N	Text								
 					Paralize	1	20	15				
 					Paralize	2	40	30				
 					Paralize	3	80	60				
-web_dimension	A	N	M	N	 							
+web_dimension	A	N	M	N	Text								
 					Paralize	1	120	60				
 					Paralize	2	250	300				
-curseds	A	N	M	N	 							
+curseds	A	N	M	N	Text								
 					Paralize	6	150	300				

@@ -1612,7 +1612,7 @@
     goto :goto_0
 .end method
 
-.method public d(Ljava/lang/String;)Lnet/fdgames/GameWorld/WorldContainer; # тремадан чест и подобные ему
+.method public d(Ljava/lang/String;)Lnet/fdgames/GameWorld/WorldContainer;
     .locals 4
 
     const/16 v3, 0x139c
@@ -1674,7 +1674,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_next1
+    if-eqz v1, :cond_4
 
     const/16 v1, 0xc84
 
@@ -1690,7 +1690,7 @@
 
     goto :goto_0
 
-    :cond_next1
+    :cond_4
     new-instance v0, Lnet/fdgames/GameWorld/WorldContainer;
 
     invoke-direct {v0, p1}, Lnet/fdgames/GameWorld/WorldContainer;-><init>(Ljava/lang/String;)V
@@ -1707,17 +1707,17 @@
 
     if-eqz v1, :cond_2
 
-    const/16 v1, 0xc84 # присваивает v1 значение 0xc84
+    const/16 v1, 0xc84
 
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameWorld/WorldContainer;->b(I)Z # выдаёт в сундук предмет 0xc84 3204
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameWorld/WorldContainer;->b(I)Z
 
-    invoke-virtual {v0, v3}, Lnet/fdgames/GameWorld/WorldContainer;->b(I)Z # Выдаёт в сундук предмет 0x139c 5020 
+    invoke-virtual {v0, v3}, Lnet/fdgames/GameWorld/WorldContainer;->b(I)Z
 
-    invoke-virtual {v0, v3}, Lnet/fdgames/GameWorld/WorldContainer;->b(I)Z # Выдаёт в сундук предмет 0x139c 5020 
+    invoke-virtual {v0, v3}, Lnet/fdgames/GameWorld/WorldContainer;->b(I)Z
 
-    const/16 v1, 0x139d # присваивает v1 значение 0x139d
+    const/16 v1, 0x139d
 
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameWorld/WorldContainer;->b(I)Z # Выдаёт в сундук предмет 0x139d 5021
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameWorld/WorldContainer;->b(I)Z
 
     goto :goto_0
 .end method

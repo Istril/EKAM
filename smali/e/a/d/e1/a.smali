@@ -923,8 +923,6 @@
 
     invoke-virtual {v1, v2}, Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;->pad(F)Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;
 
-
-
     iget-object v0, p0, Le/a/d/e1/a;->c:Lcom/badlogic/gdx/scenes/scene2d/ui/TextButton;
 
     invoke-virtual {p0, v0}, Lcom/badlogic/gdx/scenes/scene2d/ui/Table;->add(Lcom/badlogic/gdx/scenes/scene2d/Actor;)Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;
@@ -1331,7 +1329,6 @@
 
     return-void
 .end method
-
 
 .method public show(Lcom/badlogic/gdx/scenes/scene2d/Stage;)V
     .locals 5

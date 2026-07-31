@@ -10,6 +10,14 @@
 
 .field public bloodlustBonus:I
 
+.field public cold:Ljava/lang/Boolean;
+
+.field public coldBonus:I
+
+.field public death:Ljava/lang/Boolean;
+
+.field public deathBonus:I
+
 .field public disintegrate:Ljava/lang/Boolean;
 
 .field public disintegrateBonus:I
@@ -21,6 +29,10 @@
 .field public evasion:Ljava/lang/Boolean;
 
 .field public fatigued:Ljava/lang/Boolean;
+
+.field public fire:Ljava/lang/Boolean;
+
+.field public fireBonus:I
 
 .field public flameAura:Z
 
@@ -74,9 +86,17 @@
 
 .field public shielded:Ljava/lang/Boolean;
 
+.field public shock:Ljava/lang/Boolean;
+
+.field public shockBonus:I
+
 .field public slowed:Ljava/lang/Boolean;
 
 .field public speed:Ljava/lang/Boolean;
+
+.field public spirit:Ljava/lang/Boolean;
+
+.field public spiritBonus:I
 
 .field public stab:Ljava/lang/Boolean;
 
@@ -86,25 +106,6 @@
 
 .field public stunned:Ljava/lang/Boolean;
 
-.field public fire:Ljava/lang/Boolean;
-
-.field public fireBonus:I
-
-.field public cold:Ljava/lang/Boolean;
-
-.field public coldBonus:I
-
-.field public shock:Ljava/lang/Boolean;
-
-.field public shockBonus:I
-
-.field public death:Ljava/lang/Boolean;
-
-.field public deathBonus:I
-
-.field public spirit:Ljava/lang/Boolean;
-
-.field public spiritBonus:I
 
 # direct methods
 .method public constructor <init>()V

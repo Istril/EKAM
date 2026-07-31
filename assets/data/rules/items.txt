@@ -835,6 +835,13 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 13010	Cry web	WEAPON	wand_toxic_4	0			[wand]	300	web_cry	0	0						wand						M	
 13011	Palm of Araim	WEAPON	palm_of_araim	0			[vicious,1]	3200	permafrost_bow	0	0						longbow						W,R	
 13012	pharaon_sword	WEAPON	pharaon_sword	0			[vicious,1]	6500	zweihander3	0	0						zweihander						W	
+13013	Traitor's Platemail Shirt	armor_chest		12	"""-10,0,0,0,0,-20"""			1600	armor_chain_chest_traitor	-8	0						mail						W,R,C	
+13014	Traitor's Platemail Leggings	armor_legs		10	"""-5,0,0,0,0,-10"""			1400	armor_chain_legs_traitor	-6	0												W,C	
+13015	Traitor's Platemail Gauntlets	armor_arms		8	"""-4,0,0,0,0,-7"""			800	armor_chain_hands_traitor	-4	0												W,C	
+13016	Traitor's Platemail Boots	armor_feet		8	"""-3,0,0,0,0,-7"""			800	armor_chain_feet_traitor	-4	0												W,C	
+13017	Traitor's Platemail Coif	armor_head		8	"""-5,0,0,0,0,-10"""			800	armor_chain_head_traitor	-4	0						chain						W,C	
+13018	Broken_captain_sword	WEAPON	Broken_captain_sword	0				2200	broken_captain_sword	0	0						longsword						W,R	
+13019	Traitor_shield	SHIELD		4	-8,0,0,0,0,-16		[shield]	1600	armor_shield	10	0						shield						W,C	
 13100	Iron crossbow	WEAPON	iron_crossbow	0				140	weapon_bow_fire	0	0						crossbow						W,R	
 14000	Dock Key	general		0				100	key1	0	0													1
 14001	rusty key	general		0				100	key1	0	0													1
@@ -1059,3 +1066,5 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 50018	shock_test	POTION		0				150	potion_green	0	0									"ShockWeapon#6,6;GainItem#50018"				1
 50019	death_test	POTION		0				150	potion_green	0	0									"DeathWeapon#13,2;GainItem#50019"				1
 50020	spirit_test	POTION		0				150	potion_green	0	0									"SpiritWeapon#40,3;GainItem#50020"				1
+60000	bookskill1	POTION		0				10	book2	0	0									TrainSkill#spirit_golem				1
+60001	bookskill2	POTION		0				10	book2	0	0									TrainSkill#reincornation				1

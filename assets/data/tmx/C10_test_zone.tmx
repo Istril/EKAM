@@ -1158,7 +1158,7 @@
     <property name="name" value="Оружейник Мейл"/>
     <property name="portrait" value="11"/>
     <property name="shop_items" value="6011,13007,13008"/>
-    <property name="shop_modifier" value="0.2"/>
+    <property name="shop_modifier" value="1"/>
     <property name="sprite" value="male_red_1"/>
    </properties>
   </object>
@@ -1269,10 +1269,10 @@
     <property name="tag" value="C10_test_crate"/>
    </properties>
   </object>
-  <object id="58" name="crate" type="container" gid="249" x="1056" y="1568" width="64" height="64">
+  <object id="58" name="crate" type="container" gid="249" x="1056.83" y="1568.5" width="64" height="64">
    <properties>
     <property name="icon" value="chest_small1"/>
-    <property name="items" value="713,602"/>
+    <property name="items" value="713,602,13013,13014,13015,13016,13017,13018,13019,60000,60001"/>
     <property name="name" value="@CHEST"/>
     <property name="tag" value="C10_test_crate"/>
    </properties>

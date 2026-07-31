@@ -25,7 +25,7 @@
 
     const/4 v1, 0x0
 
-    const v5, -0x3361d2af    # -8.293031E7f
+    const v5, -0x3361d2af    # -8.2930312E7f
 
     and-int/lit8 v0, p2, -0x4
 

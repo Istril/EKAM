@@ -487,4 +487,3 @@ ancient_pharaon			Древний Фараон
 ghost_st			Призрак							
 lich2_F9			Хранитель могил							
 skeleton_F9			Скелет							
-ancient_pharaon			Древний Фараон							

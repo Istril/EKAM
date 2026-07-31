@@ -631,9 +631,9 @@
     :cond_a
     sget-boolean v0, Lnet/fdgames/GameEntities/Final/Player;->i:Z
 
-    if-eqz v0, :cond_25
+    if-eqz v0, :cond_26
 
-    if-nez v2, :cond_25
+    if-nez v2, :cond_26
 
     const-string v0, "ENEMIES_AROUND_HIDE"
 
@@ -927,11 +927,11 @@
 
     iput-object v3, v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->rage:Ljava/lang/Boolean;
 
-    if-eq v0, v8, :cond_2b
+    if-eq v0, v8, :cond_2c
 
-    if-eq v0, v12, :cond_2a
+    if-eq v0, v12, :cond_2b
 
-    if-eq v0, v11, :cond_29
+    if-eq v0, v11, :cond_2a
 
     :cond_14
     :goto_3
@@ -1057,7 +1057,7 @@
 
     move-result v1
 
-    if-ne v1, v8, :cond_2c
+    if-ne v1, v8, :cond_2d
 
     invoke-static {v8, v11}, Lnet/fdgames/Helpers/FDUtils;->a(II)I
 
@@ -1079,7 +1079,7 @@
     const/16 v0, 0x14
 
     :cond_19
-    if-ne v1, v11, :cond_43
+    if-ne v1, v11, :cond_4a
 
     const/4 v0, 0x7
 
@@ -1147,7 +1147,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_reinc
+    if-eqz v0, :cond_1b
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -1163,54 +1163,13 @@
 
     move-result v0
 
-    if-eqz v0, :cond_reinc
+    if-eqz v0, :cond_1b
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
     move-result-object v0
 
     const-string v1, "heal_wounds"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v8}, Lnet/fdgames/GameEntities/Character;->o(I)V
-
-    :cond_reinc
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "reincornation"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1b
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "reincornation"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1b
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "reincornation"
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
 
@@ -1223,7 +1182,7 @@
     :cond_1b
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
-    const-string v1, "thelumes_wisdom"
+    const-string v1, "reincornation"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1239,13 +1198,54 @@
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
-    const-string v1, "thelumes_wisdom"
+    const-string v1, "reincornation"
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1c
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "reincornation"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v8}, Lnet/fdgames/GameEntities/Character;->o(I)V
+
+    :cond_1c
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "thelumes_wisdom"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1d
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "thelumes_wisdom"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1d
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -1255,7 +1255,7 @@
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
 
-    :cond_1c
+    :cond_1d
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
     const-string v1, "holy_shield"
@@ -1264,7 +1264,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1d
+    if-eqz v0, :cond_1e
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -1280,7 +1280,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1d
+    if-eqz v0, :cond_1e
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -1306,7 +1306,7 @@
 
     move-result v1
 
-    if-lt v0, v1, :cond_1d
+    if-lt v0, v1, :cond_1e
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -1314,7 +1314,7 @@
 
     invoke-static {v0}, Lnet/fdgames/Rules/SkillActions;->c(Lnet/fdgames/GameEntities/Character;)V
 
-    :cond_1d
+    :cond_1e
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
     const-string v1, "guardian_wolf"
@@ -1323,7 +1323,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_21
+    if-eqz v0, :cond_22
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -1339,7 +1339,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_21
+    if-eqz v0, :cond_22
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -1365,7 +1365,7 @@
 
     move-result v1
 
-    if-lt v0, v1, :cond_21
+    if-lt v0, v1, :cond_22
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -1387,7 +1387,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_21
+    if-eqz v1, :cond_22
 
     iget-object v1, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -1399,7 +1399,7 @@
 
     move-result v1
 
-    if-ne v1, v8, :cond_1e
+    if-ne v1, v8, :cond_1f
 
     const-string v2, "dire_wolf1"
 
@@ -1409,8 +1409,8 @@
 
     invoke-static {v0, v2, v3, v4}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_1e
-    if-ne v1, v12, :cond_1f
+    :cond_1f
+    if-ne v1, v12, :cond_20
 
     const-string v2, "white_wolf1"
 
@@ -1420,8 +1420,8 @@
 
     invoke-static {v0, v2, v3, v4}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_1f
-    if-ne v1, v11, :cond_20
+    :cond_20
+    if-ne v1, v11, :cond_21
 
     const-string v1, "spirit_wolf1"
 
@@ -1431,7 +1431,7 @@
 
     invoke-static {v0, v1, v2, v3}, Lnet/fdgames/Rules/SkillActions;->a(Lnet/fdgames/GameEntities/Character;Ljava/lang/String;II)V
 
-    :cond_20
+    :cond_21
     iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -1440,7 +1440,7 @@
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->k(Ljava/lang/String;)V
 
-    :cond_21
+    :cond_22
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
     const-string v1, "arbenos_might"
@@ -1449,7 +1449,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_22
+    if-eqz v0, :cond_23
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -1465,7 +1465,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_22
+    if-eqz v0, :cond_23
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -1475,7 +1475,7 @@
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
 
-    :cond_22
+    :cond_23
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
     const-string v1, "sacred_fire"
@@ -1484,7 +1484,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2f
+    if-eqz v0, :cond_30
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -1500,7 +1500,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2f
+    if-eqz v0, :cond_30
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -1520,7 +1520,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_2f
+    if-eqz v0, :cond_30
 
     invoke-virtual {v6}, Lnet/fdgames/GameEntities/MapObject;->q()Lnet/fdgames/TiledMap/Objects/Coords;
 
@@ -1576,25 +1576,25 @@
 
     const/16 v0, 0xc
 
-    if-ne v3, v8, :cond_2d
+    if-ne v3, v8, :cond_2e
 
     const/16 v1, 0xc
 
     const/16 v2, 0x8
 
     :goto_6
-    if-ne v3, v12, :cond_42
+    if-ne v3, v12, :cond_49
 
     const/16 v1, 0x18
 
     :goto_7
-    if-ne v3, v11, :cond_23
+    if-ne v3, v11, :cond_24
 
     const/16 v1, 0x30
 
     const/16 v0, 0x14
 
-    :cond_23
+    :cond_24
     const-string v2, "spell1"
 
     invoke-static {v2}, Lnet/fdgames/assets/GameAssets;->i(Ljava/lang/String;)V
@@ -1651,13 +1651,13 @@
 
     move-result-object v2
 
-    :cond_24
+    :cond_25
     :goto_8
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
-    if-eqz v0, :cond_2e
+    if-eqz v0, :cond_2f
 
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -1687,7 +1687,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_24
+    if-eqz v4, :cond_25
 
     const-string v4, "HIT"
 
@@ -1711,7 +1711,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_24
+    if-eqz v4, :cond_25
 
     const-string v4, "HIT"
 
@@ -1723,7 +1723,7 @@
 
     goto :goto_8
 
-    :cond_25
+    :cond_26
     iget-object v0, v1, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -1734,27 +1734,27 @@
 
     move-result v0
 
-    if-ne v0, v8, :cond_26
+    if-ne v0, v8, :cond_27
 
     const/high16 v2, 0x41000000    # 8.0f
 
     invoke-virtual {v1, v2}, Lnet/fdgames/GameEntities/Character;->j(F)V
 
-    :cond_26
-    if-ne v0, v12, :cond_27
+    :cond_27
+    if-ne v0, v12, :cond_28
 
     const/high16 v2, 0x41200000    # 10.0f
 
     invoke-virtual {v1, v2}, Lnet/fdgames/GameEntities/Character;->j(F)V
 
-    :cond_27
-    if-ne v0, v11, :cond_28
+    :cond_28
+    if-ne v0, v11, :cond_29
 
     const/high16 v0, 0x41400000    # 12.0f
 
     invoke-virtual {v1, v0}, Lnet/fdgames/GameEntities/Character;->j(F)V
 
-    :cond_28
+    :cond_29
     iget-object v0, v1, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -1789,7 +1789,7 @@
 
     goto/16 :goto_2
 
-    :cond_29
+    :cond_2a
     iget-object v0, v1, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
@@ -1879,7 +1879,7 @@
 
     goto/16 :goto_3
 
-    :cond_2a
+    :cond_2b
     iget-object v0, v1, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
@@ -1894,7 +1894,7 @@
 
     goto :goto_9
 
-    :cond_2b
+    :cond_2c
     iget-object v0, v1, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
@@ -1907,21 +1907,21 @@
 
     goto :goto_9
 
-    :cond_2c
+    :cond_2d
     const/4 v0, 0x0
 
     move v3, v8
 
     goto/16 :goto_4
 
-    :cond_2d
+    :cond_2e
     const/4 v2, 0x0
 
     const/4 v1, 0x0
 
     goto/16 :goto_6
 
-    :cond_2e
+    :cond_2f
     iget-object v0, v6, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -1930,80 +1930,10 @@
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->k(Ljava/lang/String;)V
 
-    :cond_2f
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "turn_undead"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_elN
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "turn_undead"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_elN
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "turn_undead"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
-
-    :cond_elN
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "eerie_laughter"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_30
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "eerie_laughter"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_30
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "eerie_laughter"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
-
     :cond_30
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
-    const-string v1, "flames_of_faith"
+    const-string v1, "turn_undead"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2019,7 +1949,7 @@
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
-    const-string v1, "flames_of_faith"
+    const-string v1, "turn_undead"
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
 
@@ -2031,14 +1961,14 @@
 
     move-result-object v0
 
-    const-string v1, "flames_of_faith"
+    const-string v1, "turn_undead"
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
 
     :cond_31
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
-    const-string v1, "battle_prayer"
+    const-string v1, "eerie_laughter"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2054,13 +1984,83 @@
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
-    const-string v1, "battle_prayer"
+    const-string v1, "eerie_laughter"
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_32
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "eerie_laughter"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
+
+    :cond_32
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "flames_of_faith"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_33
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "flames_of_faith"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_33
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "flames_of_faith"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
+
+    :cond_33
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "battle_prayer"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_34
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "battle_prayer"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_34
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -2070,80 +2070,10 @@
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
 
-    :cond_32
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "lightning_bolt"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_33
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "lightning_bolt"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_33
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "lightning_bolt"
-
-    invoke-virtual {v0, v1, v13}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
-
-    :cond_33
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "fireball"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_34
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "fireball"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_34
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "fireball"
-
-    invoke-virtual {v0, v1, v13}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
-
     :cond_34
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
-    const-string v1, "death_cloud"
+    const-string v1, "lightning_bolt"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2159,7 +2089,7 @@
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
-    const-string v1, "death_cloud"
+    const-string v1, "lightning_bolt"
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
 
@@ -2171,14 +2101,14 @@
 
     move-result-object v0
 
-    const-string v1, "death_cloud"
+    const-string v1, "lightning_bolt"
 
     invoke-virtual {v0, v1, v13}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
 
     :cond_35
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
-    const-string v1, "combustion"
+    const-string v1, "fireball"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2194,7 +2124,7 @@
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
-    const-string v1, "combustion"
+    const-string v1, "fireball"
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
 
@@ -2206,14 +2136,14 @@
 
     move-result-object v0
 
-    const-string v1, "combustion"
+    const-string v1, "fireball"
 
     invoke-virtual {v0, v1, v13}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
 
     :cond_36
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
-    const-string v1, "ice_storm"
+    const-string v1, "death_cloud"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2229,13 +2159,83 @@
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
-    const-string v1, "ice_storm"
+    const-string v1, "death_cloud"
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_37
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "death_cloud"
+
+    invoke-virtual {v0, v1, v13}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_37
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "combustion"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_38
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "combustion"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_38
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "combustion"
+
+    invoke-virtual {v0, v1, v13}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_38
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "ice_storm"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_39
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "ice_storm"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_39
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -2245,7 +2245,7 @@
 
     invoke-virtual {v0, v1, v13}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
 
-    :cond_37
+    :cond_39
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
     const-string v1, "mage_armor"
@@ -2254,7 +2254,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_38
+    if-eqz v0, :cond_3a
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -2270,7 +2270,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_38
+    if-eqz v0, :cond_3a
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -2282,80 +2282,10 @@
 
     invoke-virtual {v0, v1, v2}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
 
-    :cond_38
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "lesser_summoning"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_39
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "lesser_summoning"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_39
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "lesser_summoning"
-
-    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
-
-    :cond_39
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "fire_mastery"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3a
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "fire_mastery"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3a
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "fire_mastery"
-
-    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
-
     :cond_3a
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
-    const-string v1, "ice_mastery"
+    const-string v1, "lesser_summoning"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2371,7 +2301,7 @@
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
-    const-string v1, "ice_mastery"
+    const-string v1, "lesser_summoning"
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
 
@@ -2383,14 +2313,14 @@
 
     move-result-object v0
 
-    const-string v1, "ice_mastery"
+    const-string v1, "lesser_summoning"
 
     invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
 
     :cond_3b
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
-    const-string v1, "earth_mastery"
+    const-string v1, "fire_mastery"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2406,13 +2336,83 @@
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
-    const-string v1, "earth_mastery"
+    const-string v1, "fire_mastery"
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3c
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "fire_mastery"
+
+    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_3c
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "ice_mastery"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3d
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "ice_mastery"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3d
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "ice_mastery"
+
+    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_3d
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "earth_mastery"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3e
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "earth_mastery"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3e
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -2422,7 +2422,7 @@
 
     invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
 
-    :cond_3c
+    :cond_3e
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
     const-string v1, "disintegrate"
@@ -2431,7 +2431,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3d
+    if-eqz v0, :cond_3f
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -2447,7 +2447,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_3d
+    if-eqz v0, :cond_3f
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -2457,255 +2457,10 @@
 
     invoke-virtual {v0, v1, v13}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
 
-    :cond_3d
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "spiritualism"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3e
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "spiritualism"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3e
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "spiritualism"
-
-    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
-
-    :cond_3e
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "flash_and_bones"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3f
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "flash_and_bones"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3f
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "flash_and_bones"
-
-    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
-
     :cond_3f
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
-    const-string v1, "war_spirit"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_sg
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "war_spirit"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_sg
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "war_spirit"
-
-    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
-
-    :cond_sg
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "spirit_golem"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_bone_dance
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "spirit_golem"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_bone_dance
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "spirit_golem"
-
-    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
-
-    :cond_bone_dance
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "bone_dance"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_lesser_undead
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "bone_dance"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_lesser_undead
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "bone_dance"
-
-    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
-
-    :cond_lesser_undead
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "lesser_undead"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_spider_swarm # новый скилл переход
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "lesser_undead"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_spider_swarm
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "lesser_undead"
-
-    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
-
-    :cond_spider_swarm
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "spider_swarm"
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_web_dimension
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
-    const-string v1, "spider_swarm"
-
-    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_web_dimension
-
-    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
-    move-result-object v0
-
-    const-string v1, "spider_swarm"
-
-    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
-
-    :cond_web_dimension
-    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
-    const-string v1, "web_dimension"
+    const-string v1, "spiritualism"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2721,7 +2476,7 @@
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
 
-    const-string v1, "web_dimension"
+    const-string v1, "spiritualism"
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
 
@@ -2733,15 +2488,256 @@
 
     move-result-object v0
 
-    const-string v1, "web_dimension"
+    const-string v1, "spiritualism"
 
     invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
-
-#______________________________________________
-#-----Новый скилл,new skill, todo ToDo TODO !!!
-#______________________________________________
 
     :cond_40
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "flash_and_bones"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_41
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "flash_and_bones"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_41
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "flash_and_bones"
+
+    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_41
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "war_spirit"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_42
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "war_spirit"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_42
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "war_spirit"
+
+    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_42
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "spirit_golem"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_43
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "spirit_golem"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_43
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "spirit_golem"
+
+    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_43
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "bone_dance"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_44
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "bone_dance"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_44
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "bone_dance"
+
+    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_44
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "lesser_undead"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_45
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "lesser_undead"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_45
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "lesser_undead"
+
+    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_45
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "spider_swarm"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_46
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "spider_swarm"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_46
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "spider_swarm"
+
+    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_46
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
+    const-string v1, "web_dimension"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_47
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "web_dimension"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_47
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "web_dimension"
+
+    invoke-virtual {v0, v1, v10}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_47
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
     const-string v1, "gate"
@@ -2848,7 +2844,7 @@
 
     invoke-virtual {v1, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->k(Ljava/lang/String;)V
 
-    if-ne v0, v8, :cond_41
+    if-ne v0, v8, :cond_48
 
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
 
@@ -2862,7 +2858,7 @@
 
     invoke-virtual {v1, v2, v8, v3}, Lnet/fdgames/GameEntities/GameObject;->a(Ljava/lang/String;IF)V
 
-    :cond_41
+    :cond_48
     if-ne v0, v12, :cond_0
 
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
@@ -2879,12 +2875,12 @@
 
     goto/16 :goto_0
 
-    :cond_42
+    :cond_49
     move v0, v2
 
     goto/16 :goto_7
 
-    :cond_43
+    :cond_4a
     move v7, v0
 
     goto/16 :goto_5
@@ -3126,6 +3122,14 @@
     if-nez v1, :cond_3
 
     const-string v1, "war_spirit"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_3
+
+    const-string v1, "spirit_golem"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
