@@ -487,3 +487,4 @@ ancient_pharaon			Древний Фараон
 ghost_st			Призрак							
 lich2_F9			Хранитель могил							
 skeleton_F9			Скелет							
+skeleton_archer_G13			Скелет Лучника							

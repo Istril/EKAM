@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="72" height="64" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="97">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="72" height="64" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="112">
  <properties>
   <property name="maxlight" value="70"/>
   <property name="music" value="dark_chamber"/>
@@ -59,7 +59,7 @@
     <property name="entry_id" value="1"/>
    </properties>
   </object>
-  <object id="2" type="entry" gid="1" x="229" y="1941" width="64" height="64">
+  <object id="2" name="1" type="entry" gid="1" x="229" y="1941" width="64" height="64">
    <properties>
     <property name="entry_id" value="1"/>
    </properties>
@@ -543,16 +543,6 @@
     <property name="wander" value="0"/>
    </properties>
   </object>
-  <object id="76" name="Skeletons" type="spawn" gid="3" x="826" y="1092" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
-  <object id="77" name="Skeletons" type="spawn" gid="3" x="640" y="1181" width="64" height="64">
-   <properties>
-    <property name="spawntable" value="skeletons"/>
-   </properties>
-  </object>
   <object id="78" name="Chest" type="container" gid="5" x="662" y="1029" width="64" height="64">
    <properties>
     <property name="icon" value="sarcophagus"/>
@@ -678,6 +668,81 @@
     <property name="icon" value="chest_small1"/>
     <property name="loot_table" value="dungeon_chest_17"/>
     <property name="name" value="@CHEST"/>
+   </properties>
+  </object>
+  <object id="97" name="5" type="transition" x="579.5" y="867.5" width="23.25" height="23.75">
+   <properties>
+    <property name="area_id" value="G13"/>
+    <property name="entry_id" value="5"/>
+   </properties>
+  </object>
+  <object id="98" name="6" type="transition" x="803.625" y="866.875" width="23.25" height="23.75">
+   <properties>
+    <property name="area_id" value="G13"/>
+    <property name="entry_id" value="6"/>
+   </properties>
+  </object>
+  <object id="99" name="1" type="transition" x="707.875" y="964.625" width="23.25" height="23.75">
+   <properties>
+    <property name="area_id" value="G13"/>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="100" name="4" type="transition" x="742.625" y="1059.88" width="23.25" height="23.75">
+   <properties>
+    <property name="area_id" value="G13"/>
+    <property name="entry_id" value="4"/>
+   </properties>
+  </object>
+  <object id="101" name="2" type="transition" x="708.375" y="1155.13" width="23.25" height="23.75">
+   <properties>
+    <property name="area_id" value="G13"/>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="102" name="3" type="transition" x="611.875" y="1090.63" width="23.25" height="23.75">
+   <properties>
+    <property name="area_id" value="G13"/>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+  <object id="104" name="2" type="entry" gid="1" x="160" y="1024" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="2"/>
+   </properties>
+  </object>
+  <object id="105" name="3" type="entry" gid="1" x="928" y="1632" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="3"/>
+   </properties>
+  </object>
+  <object id="106" name="4" type="entry" gid="1" x="1216" y="1280" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="4"/>
+   </properties>
+  </object>
+  <object id="107" name="5" type="entry" gid="1" x="1536" y="1344" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="5"/>
+   </properties>
+  </object>
+  <object id="108" name="6" type="entry" gid="1" x="448" y="1632" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="6"/>
+   </properties>
+  </object>
+  <object id="110" name="Lich" type="spawn" gid="3" x="640" y="1184" width="64" height="64">
+   <properties>
+    <property name="spawn" value="lich"/>
+    <property name="unique_tag" value="skeleton_archer2_G13"/>
+    <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="111" name="Lich" type="spawn" gid="3" x="832" y="1120" width="64" height="64">
+   <properties>
+    <property name="spawn" value="skeleton_archer_G13"/>
+    <property name="unique_tag" value="skeleton_archer1_G13"/>
+    <property name="wander" value="1"/>
    </properties>
   </object>
  </objectgroup>
