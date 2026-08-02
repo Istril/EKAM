@@ -250,7 +250,7 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 463	Totem of Protection	SHIELD		2	0,0,0,0,0,20		[stability][orb]	4000	totem1	20	0													
 501	Iron Dagger	WEAPON	iron_dagger	0				25	weapon_dagger	0	0						dagger							
 502	Iron Shortsword	WEAPON	iron_shortsword	0				35	weapon_shortsword	0	0						shortsword						W,R	
-503	Iron Longsword	WEAPON	iron_longsword	0			[beastslayer,2]	50	weapon_longsword	0	0						longsword						W,R	
+503	Iron Longsword	WEAPON	iron_longsword	0				50	weapon_longsword	0	0						longsword						W,R	
 504	Iron Greatsword	WEAPON	iron_greatsword	0				60	weapon_greatsword	0	0						zweihander						W	
 505	Iron Mace	WEAPON	iron_mace	0				50	weapon_mace1	0	0						mace						W,C	
 506	Iron Hammer	WEAPON	iron_hammer	0				40	hammer3	0	0						hammer						W,C	
