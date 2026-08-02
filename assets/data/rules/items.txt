@@ -1068,3 +1068,4 @@ chainitem_ID	name	type	weaponstats	armor	resistances	traitBonus	attributes	value
 50020	spirit_test	POTION		0				150	potion_green	0	0									"SpiritWeapon#40,3;GainItem#50020"				1
 60000	bookskill1	POTION		0				10	book2	0	0									TrainSkill#spirit_golem				1
 60001	bookskill2	POTION		0				10	book2	0	0									TrainSkill#reincornation				1
+60002	bookskill3	POTION		0				10	book2	0	0									TrainSkill#blood_contract				1

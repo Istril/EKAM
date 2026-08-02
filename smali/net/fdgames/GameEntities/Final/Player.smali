@@ -823,7 +823,7 @@
     return v0
 .end method
 
-.method public C0()V
+.method public C0()V # метод начала игры?
     .locals 5
 
     const/16 v4, 0x65
@@ -832,7 +832,7 @@
 
     const/4 v2, 0x0
 
-    const/16 v0, 0xc8
+    const/16 v0, 0xc8 # 200 стартовых монет
 
     iput v0, p0, Lnet/fdgames/GameEntities/Final/Player;->gold:I
 
@@ -863,7 +863,7 @@
     :goto_0
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
-    const/16 v1, 0x9d3
+    const/16 v1, 0x9d3 # письмо о наследстве
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->a(I)Z
 
@@ -876,7 +876,7 @@
     :cond_0
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
-    const/16 v1, 0x12c
+    const/16 v1, 0x12c # Apprentice Tunic - роба
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->a(I)Z
 
@@ -888,7 +888,7 @@
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
-    const/16 v1, 0x12d
+    const/16 v1, 0x12d # Apprentice Tunic - штаны мага
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->a(I)Z
 
@@ -900,7 +900,7 @@
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
-    const/16 v1, 0x172
+    const/16 v1, 0x172 # willow wand - палка
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->a(I)Z
 
@@ -935,7 +935,7 @@
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
-    const/16 v1, 0x1f9
+    const/16 v1, 0x1f9 # железная булава
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->a(I)Z
 
@@ -970,7 +970,7 @@
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
-    const/16 v1, 0x1f6
+    const/16 v1, 0x1f6 #короткий железный меч
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->a(I)Z
 
@@ -1005,7 +1005,7 @@
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
-    const/16 v1, 0x1f7
+    const/16 v1, 0x1f7 # длинный железный меч
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->a(I)Z
 

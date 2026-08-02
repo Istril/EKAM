@@ -137,7 +137,7 @@
 
     new-instance v0, Lcom/badlogic/gdx/scenes/scene2d/ui/Image;
 
-    const-string v1, "help"
+    const-string v1, "help" # кнопка info рядом с каждым из трейтов
 
     invoke-static {v1}, Lnet/fdgames/assets/Assets;->b(Ljava/lang/String;)Lcom/badlogic/gdx/graphics/g2d/TextureRegion;
 

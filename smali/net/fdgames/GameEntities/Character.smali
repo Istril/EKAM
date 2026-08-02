@@ -507,7 +507,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_4
+    if-eqz v0, :cond_bcontract
 
     iget v0, p0, Lnet/fdgames/GameEntities/Character;->spellTarget:I
 
@@ -553,6 +553,91 @@
     invoke-static {p0, v0}, Lnet/fdgames/Rules/SkillActions;->reincornation(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameEntities/Character;)V
 
     goto :goto_0
+
+    :cond_bcontract # хп в ману
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String; # ID заклинания
+
+    sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String; # все буквы переводим в нижний регистр
+
+    move-result-object v0 # помещаем результат в v0
+
+    const-string v2, "blood_contract" # присваиваем v2 значнеие указанное в ""
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z # сравниваем полученный айди и присвоенное нами
+
+    move-result v0 # результат сравнение 0 или 1 помещаем в v0
+
+    if-eqz v0, :cond_4 # если v0 == 0 то преходим в dc (thelume wisdom)
+ 
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "blood_contract"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I #получем лвл нашего навыка
+
+    move-result v0 # результат в v0
+
+    #______________LEVELING_START_____________________#
+
+    const/4 v1, 0x1 #присваиваем v1 значение 1
+
+    if-ne v0, v1, :cond_a7 # если v0 != v1 то идём дальше (проверка на лвл навыка)
+
+    const/16 v1, 0x14 #20
+
+    goto :goto_af
+
+    :cond_a7
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_ad
+
+    const/16 v1, 0x28 #40
+
+    goto :goto_af
+
+    :cond_ad
+    const/16 v1, 0x3c #60
+
+    #______________LEVELING_END_____________________#
+
+    :goto_af
+    invoke-static {p0}, Lnet/fdgames/Rules/SkillActions;->blood_contract(Lnet/fdgames/GameEntities/Character;)V
+
+    invoke-static {}, Le/a/a/a;->h()Le/a/a/a;
+
+    move-result-object v0
+
+    iget v1, p0, Lnet/fdgames/GameEntities/GameObject;->uniqueID:I
+
+    const-string v2, "flash_red"
+
+    const/16 v3, 0x78
+
+    const v4, 0x3f19999a  # 0.6f
+
+    invoke-virtual {v0, v1, v2, v3, v4}, Le/a/a/a;->a(ILjava/lang/String;IF)V
+
+    const-string v0, ""
+
+    iput-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lnet/fdgames/GameEntities/Character;->spellTarget:I
+
+    sget-object v0, Lnet/fdgames/GameEntities/MapActor$ActorState;->b:Lnet/fdgames/GameEntities/MapActor$ActorState;
+
+    invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/MapActor;->a(Lnet/fdgames/GameEntities/MapActor$ActorState;)V
+
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/MapActor;->U()V
+
+    return-void
+
 
     :cond_4
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;

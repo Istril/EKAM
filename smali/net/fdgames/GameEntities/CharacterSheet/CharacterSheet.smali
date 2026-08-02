@@ -556,7 +556,7 @@
     if-ne v0, v4, :cond_6
 
     .line 11
-    invoke-virtual {p0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->z()I
+    invoke-virtual {p0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->z()I # получаем уровень
 
     move-result v0
 
@@ -569,7 +569,7 @@
     :goto_1
     iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->stats:Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;
 
-    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->g()I
+    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->g()I #кэшированная макс мана
 
     move-result v0
 
@@ -589,24 +589,24 @@
     return v1
 .end method
 
-.method public D()I
+.method public D()I # missingHP
     .locals 1
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->stats:Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;
 
-    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->h()I
+    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->h()I #missingHP
 
     move-result v0
 
     return v0
 .end method
 
-.method public E()I
+.method public E()I # missingMana
     .locals 1
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->stats:Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;
 
-    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->i()I
+    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->i()I #missingMana
 
     move-result v0
 

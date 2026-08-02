@@ -3741,38 +3741,6 @@
     goto :goto_0
 
     :cond_3
-    iget-object v0, p0, Le/a/d/e/h;->p:Lnet/fdgames/GameEntities/Character;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->inventory:Lnet/fdgames/GameEntities/CharacterSheet/CharacterInventory;
-
-    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterInventory;->r()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    new-instance v0, Le/a/d/e/h$j;
-
-    const-string v2, "MSG_ITEM_NOT_STACK"
-
-    invoke-static {v2}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v0, p0, v2}, Le/a/d/e/h$j;-><init>(Le/a/d/e/h;Ljava/lang/String;)V
-
-    invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Le/a/d/y;->a()Lcom/badlogic/gdx/scenes/scene2d/Stage;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Lcom/badlogic/gdx/scenes/scene2d/ui/Dialog;->show(Lcom/badlogic/gdx/scenes/scene2d/Stage;)Lcom/badlogic/gdx/scenes/scene2d/ui/Dialog;
-
     goto :goto_1
 
     :cond_4
@@ -9374,7 +9342,7 @@
 
     iget-object v0, p0, Le/a/d/e/h;->d0:Le/a/d/u;
 
-    const-string v4, "EQUIP"
+    const-string v4, "EQUIP" # Кнопка одеть предмет
 
     invoke-static {v4}, Lnet/fdgames/Helpers/GameString;->a(Ljava/lang/String;)Ljava/lang/String;
 

@@ -694,7 +694,7 @@ curseds
   orig: 64, 64
   offset: 0, 0
   index: -1
-lightning_bolt
+blood_contract
   rotate: false
   xy: 529, 199
   size: 64, 64

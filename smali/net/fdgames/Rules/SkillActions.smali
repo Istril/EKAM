@@ -2792,20 +2792,20 @@
 
     invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->D()I # берём потерянное хп
 
-    move-result v2
+    move-result v2 # помещаем в v2
 
-    if-ne v1, v4, :cond_a
+    if-ne v1, v4, :cond_a # сравниваем уровень навыка v4 == 1, v1 != v4; если  v1 не равен v4 то идём на второй уровень
 
-    div-int/lit8 v0, v2, 0x2
+    div-int/lit8 v0, v2, 0x2 #v0 = v2(потерянное хп) / делим на 2
 
-    const/16 v3, 0xc8
+    const/16 v3, 0xc8 # v присваиваем v3 200
 
-    if-gt v0, v3, :cond_0
+    if-gt v0, v3, :cond_0 # если v0 (половина потерянного хп) больше 200 допустим у нас 420 потерянного хп. 420/2 = 210; 210>200 соответственно идём на cond_0
 
-    div-int/lit8 v0, v0, 0xa
+    div-int/lit8 v0, v0, 0xa # если же мы потеряли допустим 160 хп то мы делим эти 160 на 10 и восстановим 16.
 
     :cond_0
-    add-int/lit8 v0, v0, 0x28
+    add-int/lit8 v0, v0, 0x28 #к 210 прибавляем 40
 
     :goto_0
     const/4 v3, 0x2
@@ -3074,4 +3074,70 @@
     move v1, v0
 
     goto :goto_1
+.end method
+.method public static blood_contract(Lnet/fdgames/GameEntities/Character;)V
+    .registers 8
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "blood_contract"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-ne v0, v1, :cond_10
+
+    const/16 v1, 0x14 #20
+
+    goto :goto_18
+
+    :cond_10
+    const/4 v1, 0x2
+
+    if-ne v0, v1, :cond_16
+
+    const/16 v1, 0x28 # 40
+
+    goto :goto_18
+
+    :cond_16
+    const/16 v1, 0x3c # 60
+
+    :goto_18
+    move v2, v1 # присваиваем v2 значение v1
+
+    div-int/lit8 v3, v2, 0x2 # присваиваем v3 значение v2 деленное на 2
+
+    move v6, v2
+
+    iget-object v4, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v4, v4, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->stats:Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;
+
+    iget v5, v4, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->missingHP:I
+    
+    add-int/2addr v5, v2
+
+    iput v5, v4, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->missingHP:I
+
+    iget v5, v4, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->missingMana:I
+    
+    add-int/2addr v5, v6
+
+    invoke-virtual {p0, v6}, Lnet/fdgames/GameEntities/Character;->n(I)V # потерянная мана. с передачей переменной делённой на 2
+ 
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "blood_contract"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->k(Ljava/lang/String;)V
+
+    return-void
 .end method

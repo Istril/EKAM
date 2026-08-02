@@ -409,7 +409,7 @@
 
     iget v7, p0, Le/a/d/y0/b;->b:F
 
-    const/high16 v8, 0x42480000    # 50.0f
+    const/high16 v8, 0x00000000    # 0.0f
 
     mul-float/2addr v7, v8
 
@@ -419,7 +419,7 @@
 
     iget v7, p0, Le/a/d/y0/b;->b:F
 
-    const/high16 v8, 0x42480000    # 50.0f
+    const/high16 v8, 0x00000000    # 0.0f
 
     mul-float/2addr v7, v8
 
@@ -465,7 +465,7 @@
 
     iget v5, p0, Le/a/d/y0/b;->b:F
 
-    const/high16 v6, 0x42a00000    # 80.0f
+    const/high16 v6, 0x42a00000    # 80.0f аватарки трэйтов в инфобоксе
 
     mul-float/2addr v5, v6
 
@@ -477,7 +477,7 @@
 
     move-result-object v0
 
-    const/high16 v5, 0x42200000    # 40.0f
+    const/high16 v5, 0x42200000    # 40.0f аватарки трэйтов в инфобоксе
 
     invoke-virtual {v0, v5}, Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;->spaceTop(F)Lcom/badlogic/gdx/scenes/scene2d/ui/Cell;
 

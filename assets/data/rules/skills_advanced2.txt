@@ -81,3 +81,7 @@ web_dimension	A	N	M	N	Text
 					Paralize	2	250	300				
 curseds	A	N	M	N	Text								
 					Paralize	6	150	300				
+blood_contract	A	N	M	N	Text								
+					Paralize	0	0	2				
+					Paralize	0	0	2				
+					Paralize	0	0	2				
