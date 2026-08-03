@@ -4213,7 +4213,7 @@
     return-void
 .end method
 
-.method public q()I
+.method public q()I # метод получения максимального хп
     .locals 2
 
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->B()I
@@ -4272,7 +4272,7 @@
     return-void
 .end method
 
-.method public r()I
+.method public r()I # метод получения максимальной маны
     .locals 2
 
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->C()I

@@ -50,6 +50,9 @@
 
 .field private p:F
 
+.field public static cache_max_hp:I
+
+.field public static cache_max_mana:I
 
 # direct methods
 .method static constructor <clinit>()V
@@ -1221,7 +1224,7 @@
     invoke-virtual {v0, v8}, Lnet/fdgames/GameEntities/Character;->o(I)V
 
     :cond_blood_contract
-   iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
     const-string v1, "blood_contract"
 
@@ -1229,7 +1232,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1c
+    if-eqz v1, :cond_thelume_wisdom
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -1245,7 +1248,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_1c
+    if-eqz v1, :cond_thelume_wisdom
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
 
@@ -1262,57 +1265,64 @@
     move-result v1
 
     const/4 v2, 0x1
-
     if-ne v1, v2, :cond_bc2 # переход на второй лвл
-
-    const/16 v2, 0x14 # 20
-
-    goto :goto_425
+    const/16 v2, 0xa # 10
+    goto :goto_bc_check
 
     :cond_bc2
     const/4 v2, 0x2
-
     if-ne v1, v2, :cond_bc3
-
-    const/16 v2, 0x28 # 40
-
-    goto :goto_425
+    const/16 v2, 0x6 #
+    goto :goto_bc_check
 
     :cond_bc3
-    const/16 v2, 0x3c # 60
+    const/16 v2, 0x4 #
 
-    :goto_425
+    :goto_bc_check
+    move v4, v2 # Переносим делитель уровня в v4, чтобы не потерять его
+
+    # 1. Получаем объект игрока
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
     move-result-object v1
 
-    iget-object v1, v1, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+    # 2. Вызываем сторонний метод для вычисления и записи максимума ХП
+    invoke-static {v1}, Le/a/d/m1;->calculate_and_cache_max_hp(Lnet/fdgames/GameEntities/Final/Player;)I
+    move-result v2 # v2 = Настоящий Максимум ХП (например, 140)
 
-    invoke-virtual {v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->D()I
+    # 3. Считаем динамический порог блокировки: делим Максимум ХП (v2) на делитель уровня (v4)
+    # Для lvl 1: 140 / 10 = 14 ед.
+    # Для lvl 2: 140 / 40 = 3 ед.
+    # Для lvl 3: 140 / 60 = 2 ед.
+    div-int v3, v2, v4 # v3 = Динамический порог блокировки под текущий уровень навыка
 
-    move-result v1
-
-    add-int/lit8 v3, v2, 0xa
-
-    if-gt v1, v3, :cond_1c
-
+    # 4. Снова запрашиваем текущее ХП игрока для финального сравнения
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+    move-result-object v1
+    iget-object v1, v1, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+    invoke-virtual {v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->q()I
+    move-result v1 # v1 = Текущее ХП прямо сейчас
 
+    # 5. Сравниваем: если текущее ХП строго больше порога уровня, прыгаем на активацию
+    if-gt v1, v3, :cond_allow_skill
+
+    # Если ХП меньше или равно порогу для текущего уровня — кнопка блокируется
+    goto :cond_thelume_wisdom
+
+:cond_allow_skill
+    # --- НАВЫК АКТИВИРУЕТСЯ ---
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
     move-result-object v1
 
     const-string v3, "blood_contract"
-
     invoke-virtual {v1, v3}, Lnet/fdgames/GameEntities/Character;->c(Ljava/lang/String;)Z
 
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
     move-result-object v1
 
     const/4 v3, 0x1
-
     invoke-virtual {v1, v3}, Lnet/fdgames/GameEntities/Character;->o(I)V
 
-    :cond_1c
+    :cond_thelume_wisdom
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
     const-string v1, "thelumes_wisdom"
@@ -3431,422 +3441,323 @@
 
 .method public draw(Lcom/badlogic/gdx/graphics/g2d/Batch;F)V
     .locals 9
-
     const/4 v6, 0x0
-
     const/high16 v3, 0x3f800000    # 1.0f
-
     invoke-interface {p1, v3, v3, v3, v3}, Lcom/badlogic/gdx/graphics/g2d/Batch;->setColor(FFFF)V
-
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
     const-string v1, ""
-
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
     move-result v0
-
     if-eqz v0, :cond_0
-
     :goto_0
     return-void
-
     :cond_0
     invoke-virtual {p0}, Lcom/badlogic/gdx/scenes/scene2d/Actor;->getX()F
-
     move-result v0
-
     sget v1, Le/a/d/m1;->w:F
-
     add-float/2addr v0, v1
-
     iput v0, p0, Le/a/d/m1;->n:F
-
     invoke-virtual {p0}, Lcom/badlogic/gdx/scenes/scene2d/Actor;->getY()F
-
     move-result v0
-
     sget v1, Le/a/d/m1;->w:F
-
     add-float/2addr v0, v1
-
     iput v0, p0, Le/a/d/m1;->o:F
-
     invoke-virtual {p0}, Lcom/badlogic/gdx/scenes/scene2d/Actor;->getWidth()F
-
     move-result v0
-
     sget v1, Le/a/d/m1;->w:F
-
     const/high16 v2, 0x40000000    # 2.0f
-
     mul-float/2addr v1, v2
-
     sub-float/2addr v0, v1
-
     iput v0, p0, Le/a/d/m1;->p:F
-
     iget-object v0, p0, Le/a/d/m1;->g:Lcom/badlogic/gdx/graphics/Color;
-
     iget-object v1, p0, Le/a/d/m1;->f:Lcom/badlogic/gdx/scenes/scene2d/utils/NinePatchDrawable;
-
     invoke-virtual {v1}, Lcom/badlogic/gdx/scenes/scene2d/utils/NinePatchDrawable;->getPatch()Lcom/badlogic/gdx/graphics/g2d/NinePatch;
-
     move-result-object v1
-
     invoke-virtual {v1}, Lcom/badlogic/gdx/graphics/g2d/NinePatch;->getColor()Lcom/badlogic/gdx/graphics/Color;
-
     move-result-object v1
-
     invoke-virtual {v0, v1}, Lcom/badlogic/gdx/graphics/Color;->set(Lcom/badlogic/gdx/graphics/Color;)Lcom/badlogic/gdx/graphics/Color;
-
     sget-boolean v0, Le/a/d/m1;->t:Z
-
     if-eqz v0, :cond_6
-
     iget-boolean v0, p0, Le/a/d/m1;->h:Z
-
     if-eqz v0, :cond_6
-
     iput v3, p0, Le/a/d/m1;->d:F
-
     :cond_1
     :goto_1
     iget v0, p0, Le/a/d/m1;->d:F
-
     cmpl-float v0, v0, v6
-
     if-lez v0, :cond_9
-
     iget-object v0, p0, Le/a/d/m1;->f:Lcom/badlogic/gdx/scenes/scene2d/utils/NinePatchDrawable;
-
     invoke-virtual {v0}, Lcom/badlogic/gdx/scenes/scene2d/utils/NinePatchDrawable;->getPatch()Lcom/badlogic/gdx/graphics/g2d/NinePatch;
-
     move-result-object v0
-
     sget-object v1, Le/a/d/m1;->r:Lcom/badlogic/gdx/graphics/Color;
-
     invoke-virtual {v0, v1}, Lcom/badlogic/gdx/graphics/g2d/NinePatch;->setColor(Lcom/badlogic/gdx/graphics/Color;)V
-
     :goto_2
     iget-object v0, p0, Le/a/d/m1;->f:Lcom/badlogic/gdx/scenes/scene2d/utils/NinePatchDrawable;
-
     iget v2, p0, Le/a/d/m1;->n:F
-
     iget v3, p0, Le/a/d/m1;->o:F
-
     iget v4, p0, Le/a/d/m1;->p:F
-
     move-object v1, p1
-
     move v5, v4
-
     invoke-virtual/range {v0 .. v5}, Lcom/badlogic/gdx/scenes/scene2d/utils/NinePatchDrawable;->draw(Lcom/badlogic/gdx/graphics/g2d/Batch;FFFF)V
-
     iget-object v0, p0, Le/a/d/m1;->f:Lcom/badlogic/gdx/scenes/scene2d/utils/NinePatchDrawable;
-
     invoke-virtual {v0}, Lcom/badlogic/gdx/scenes/scene2d/utils/NinePatchDrawable;->getPatch()Lcom/badlogic/gdx/graphics/g2d/NinePatch;
-
     move-result-object v0
-
     iget-object v1, p0, Le/a/d/m1;->g:Lcom/badlogic/gdx/graphics/Color;
-
     invoke-virtual {v0, v1}, Lcom/badlogic/gdx/graphics/g2d/NinePatch;->setColor(Lcom/badlogic/gdx/graphics/Color;)V
-
     iget v1, p0, Le/a/d/m1;->d:F
-
     cmpl-float v0, v1, v6
-
     if-lez v0, :cond_2
-
     iget-object v0, p0, Le/a/d/m1;->f:Lcom/badlogic/gdx/scenes/scene2d/utils/NinePatchDrawable;
-
     iget v2, p0, Le/a/d/m1;->n:F
-
     iget v3, p0, Le/a/d/m1;->o:F
-
     iget v5, p0, Le/a/d/m1;->p:F
-
     mul-float v4, v5, v1
-
     move-object v1, p1
-
     invoke-virtual/range {v0 .. v5}, Lcom/badlogic/gdx/scenes/scene2d/utils/NinePatchDrawable;->draw(Lcom/badlogic/gdx/graphics/g2d/Batch;FFFF)V
-
     :cond_2
     iget-object v0, p0, Le/a/d/m1;->e:Lcom/badlogic/gdx/scenes/scene2d/utils/TextureRegionDrawable;
-
     if-eqz v0, :cond_3
-
     invoke-virtual {p0, v0}, Lcom/badlogic/gdx/scenes/scene2d/ui/Image;->setDrawable(Lcom/badlogic/gdx/scenes/scene2d/utils/Drawable;)V
-
     invoke-virtual {p0}, Lcom/badlogic/gdx/scenes/scene2d/ui/Image;->getDrawable()Lcom/badlogic/gdx/scenes/scene2d/utils/Drawable;
-
     move-result-object v0
-
     if-eqz v0, :cond_3
-
     invoke-virtual {p0}, Lcom/badlogic/gdx/scenes/scene2d/ui/Image;->getDrawable()Lcom/badlogic/gdx/scenes/scene2d/utils/Drawable;
-
     move-result-object v0
-
     iget v2, p0, Le/a/d/m1;->n:F
-
     iget v3, p0, Le/a/d/m1;->o:F
-
     iget v4, p0, Le/a/d/m1;->p:F
-
     move-object v1, p1
-
     move v5, v4
-
     invoke-interface/range {v0 .. v5}, Lcom/badlogic/gdx/scenes/scene2d/utils/Drawable;->draw(Lcom/badlogic/gdx/graphics/g2d/Batch;FFFF)V
-
     :cond_3
     sget-boolean v0, Lnet/fdgames/ek/ExiledKingdoms;->h:Z
-
     if-eqz v0, :cond_5
-
     sget-boolean v0, Le/a/d/m1;->u:Z
-
     if-eqz v0, :cond_5
-
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->l()Z
-
     move-result v0
-
     if-nez v0, :cond_5
-
     invoke-static {}, Le/a/d/y;->J()Le/a/d/y;
-
     move-result-object v0
-
     invoke-virtual {v0}, Le/a/d/y;->p()I
-
     move-result v0
-
     if-nez v0, :cond_5
-
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
     const-string v1, ""
-
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
     move-result v0
-
     if-nez v0, :cond_5
-
     sget-object v0, Le/a/d/m1;->s:Lcom/badlogic/gdx/graphics/g2d/BitmapFont;
-
     invoke-virtual {v0}, Lcom/badlogic/gdx/graphics/g2d/BitmapFont;->getCache()Lcom/badlogic/gdx/graphics/g2d/BitmapFontCache;
-
     move-result-object v0
-
     invoke-virtual {v0}, Lcom/badlogic/gdx/graphics/g2d/BitmapFontCache;->getColor()Lcom/badlogic/gdx/graphics/Color;
-
     move-result-object v0
-
     sget-object v1, Le/a/d/m1;->s:Lcom/badlogic/gdx/graphics/g2d/BitmapFont;
-
     invoke-virtual {v1}, Lcom/badlogic/gdx/graphics/g2d/BitmapFont;->getScaleX()F
-
     move-result v1
-
     sget-object v2, Le/a/d/m1;->s:Lcom/badlogic/gdx/graphics/g2d/BitmapFont;
-
     invoke-virtual {v2}, Lcom/badlogic/gdx/graphics/g2d/BitmapFont;->getScaleY()F
-
     move-result v2
-
     sget-boolean v3, Lnet/fdgames/ek/ExiledKingdoms;->h:Z
-
     if-eqz v3, :cond_4
-
     sget-object v3, Le/a/d/m1;->s:Lcom/badlogic/gdx/graphics/g2d/BitmapFont;
-
     invoke-virtual {v3}, Lcom/badlogic/gdx/graphics/g2d/BitmapFont;->getData()Lcom/badlogic/gdx/graphics/g2d/BitmapFont$BitmapFontData;
-
     move-result-object v3
-
     const/high16 v4, 0x3f000000    # 0.5f
-
     invoke-virtual {v3, v4}, Lcom/badlogic/gdx/graphics/g2d/BitmapFont$BitmapFontData;->setScale(F)V
-
     sget-object v3, Le/a/d/m1;->s:Lcom/badlogic/gdx/graphics/g2d/BitmapFont;
-
     invoke-virtual {v3}, Lcom/badlogic/gdx/graphics/g2d/BitmapFont;->getCache()Lcom/badlogic/gdx/graphics/g2d/BitmapFontCache;
-
     move-result-object v3
-
     sget-object v4, Le/a/d/y;->k0:Lcom/badlogic/gdx/graphics/Color;
-
     invoke-virtual {v3, v4}, Lcom/badlogic/gdx/graphics/g2d/BitmapFontCache;->setColor(Lcom/badlogic/gdx/graphics/Color;)V
-
     sget-object v3, Le/a/d/m1;->s:Lcom/badlogic/gdx/graphics/g2d/BitmapFont;
-
     iget v4, p0, Le/a/d/m1;->m:I
-
     invoke-static {v4}, Lnet/fdgames/ek/Settings;->b(I)Ljava/lang/String;
-
     move-result-object v4
-
     invoke-virtual {p0}, Lcom/badlogic/gdx/scenes/scene2d/Actor;->getX()F
-
     move-result v5
-
     sget v6, Le/a/d/m1;->v:F
-
     invoke-virtual {p0}, Lcom/badlogic/gdx/scenes/scene2d/Actor;->getY()F
-
     move-result v7
-
     const/high16 v8, 0x42300000    # 44.0f
-
     mul-float/2addr v6, v8
-
     add-float/2addr v5, v6
-
     sget v6, Le/a/d/m1;->v:F
-
     const/high16 v8, 0x41980000    # 19.0f
-
     mul-float/2addr v6, v8
-
     add-float/2addr v6, v7
-
     invoke-virtual {v3, p1, v4, v5, v6}, Lcom/badlogic/gdx/graphics/g2d/BitmapFont;->draw(Lcom/badlogic/gdx/graphics/g2d/Batch;Ljava/lang/CharSequence;FF)Lcom/badlogic/gdx/graphics/g2d/GlyphLayout;
-
     :cond_4
     sget-object v3, Le/a/d/m1;->s:Lcom/badlogic/gdx/graphics/g2d/BitmapFont;
-
     invoke-virtual {v3}, Lcom/badlogic/gdx/graphics/g2d/BitmapFont;->getCache()Lcom/badlogic/gdx/graphics/g2d/BitmapFontCache;
-
     move-result-object v3
-
     invoke-virtual {v3, v0}, Lcom/badlogic/gdx/graphics/g2d/BitmapFontCache;->setColor(Lcom/badlogic/gdx/graphics/Color;)V
-
     sget-object v0, Le/a/d/m1;->s:Lcom/badlogic/gdx/graphics/g2d/BitmapFont;
-
     invoke-virtual {v0}, Lcom/badlogic/gdx/graphics/g2d/BitmapFont;->getData()Lcom/badlogic/gdx/graphics/g2d/BitmapFont$BitmapFontData;
-
     move-result-object v0
-
     invoke-virtual {v0, v1, v2}, Lcom/badlogic/gdx/graphics/g2d/BitmapFont$BitmapFontData;->setScale(FF)V
-
     :cond_5
     invoke-virtual {p0}, Lcom/badlogic/gdx/scenes/scene2d/ui/Widget;->validate()V
-
     goto/16 :goto_0
-
     :cond_6
     sget-boolean v0, Le/a/d/m1;->t:Z
-
     if-nez v0, :cond_7
-
     iget-boolean v0, p0, Le/a/d/m1;->i:Z
-
     if-eqz v0, :cond_7
-
     iput v3, p0, Le/a/d/m1;->d:F
-
     goto/16 :goto_1
-
     :cond_7
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
-
     move-result-object v0
-
     invoke-virtual {v0}, Lnet/fdgames/GameWorld/GameData;->s()F
-
     move-result v0
-
     iget v1, p0, Le/a/d/m1;->c:F
-
     const v2, 0x3e4ccccd    # 0.2f
-
     add-float/2addr v1, v2
-
     cmpl-float v0, v0, v1
-
     if-lez v0, :cond_1
-
     invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
-
     move-result-object v0
-
     iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
-
     iget-object v1, p0, Le/a/d/m1;->b:Ljava/lang/String;
-
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->a(Ljava/lang/String;)F
-
     move-result v0
-
     iput v0, p0, Le/a/d/m1;->d:F
-
     invoke-static {}, Lnet/fdgames/GameWorld/GameData;->O()Lnet/fdgames/GameWorld/GameData;
-
     move-result-object v0
-
     invoke-virtual {v0}, Lnet/fdgames/GameWorld/GameData;->s()F
-
     move-result v0
-
     iput v0, p0, Le/a/d/m1;->c:F
 
-    iget v0, p0, Le/a/d/m1;->d:F
+    # === BLOOD_TO_MANA GRAY CHECK ===
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+    const-string v1, "blood_contract"
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v0
+    if-eqz v0, :cond_btm_gray_end
 
-    cmpl-float v1, v0, v6
+    # 1. Считываем наш кэш МАКСИМАЛЬНОГО ХП, который заполняется при кликах/инициализации
+    sget v1, Le/a/d/m1;->cache_max_hp:I
 
-    if-lez v1, :cond_8
+    # ЗАЩИТА ОТ ВЫЛЕТА ПРИ СТАРТЕ: если мир еще не загружен и кэш равен 0, 
+    # мы досрочно выходим из метода. Кнопка не посереет и игра НЕ вылетит!
+    if-nez v1, :cond_btm_cache_ready
+    goto :cond_btm_gray_end
 
-    const v1, 0x3d8f5c29    # 0.07f
+:cond_btm_cache_ready
+    # 2. Получаем уровень навыка, чтобы выбрать правильный делитель
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+    move-result-object v0
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+    const-string v2, "blood_contract"
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+    move-result v0
 
-    add-float/2addr v0, v1
+    # Выставляем делители (10, 6 или 4) в регистр v2
+    const/4 v2, 0x1
+    if-ne v0, v2, :cond_btm_gray_lvl2
+    const/16 v2, 0xa # lvl 1 делитель = 10
+    goto :cond_btm_gray_calc
 
+:cond_btm_gray_lvl2
+    const/4 v2, 0x2
+    if-ne v0, v2, :cond_btm_gray_lvl3
+    const/4 v2, 0x6  # lvl 2 делитель = 6
+    goto :cond_btm_gray_calc
+
+:cond_btm_gray_lvl3
+    const/4 v2, 0x4  # lvl 3 делитель = 4
+
+:cond_btm_gray_calc
+    # 3. Считаем точный порог: делим Макс ХП (v1) на делитель уровня (v2)
+    # v1 = v1 / v2
+    div-int v1, v1, v2 
+
+    # 4. Убираем зазор в 1 использование (делаем порог на 1 ХП меньше, как в вашем рабочем коде)
+    const/4 v2, 0x1
+    sub-int v1, v1, v2
+
+    # 5. Запрашиваем текущее ХП игрока для финальной проверки
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+    move-result-object v0
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->q()I
+    move-result v0 # v0 = Текущее ХП
+
+    # 6. Если текущее ХП меньше порога (v0 < v1), красим кнопку в серый цвет
+    if-ge v0, v1, :cond_btm_gray_end
+    const/high16 v0, 0x3f800000
     iput v0, p0, Le/a/d/m1;->d:F
+    
+:cond_btm_gray_end
+    # === END BLOOD_TO_MANA GRAY CHECK ===
 
+    iget v0, p0, Le/a/d/m1;->d:F
+    cmpl-float v1, v0, v6
+    if-lez v1, :cond_8
+    const v1, 0x3d8f5c29    # 0.07f
+    add-float/2addr v0, v1
+    iput v0, p0, Le/a/d/m1;->d:F
     :cond_8
     iget v0, p0, Le/a/d/m1;->d:F
-
     cmpl-float v0, v0, v3
-
     if-lez v0, :cond_1
-
     iput v3, p0, Le/a/d/m1;->d:F
-
     goto/16 :goto_1
-
     :cond_9
     iget-boolean v0, p0, Le/a/d/m1;->j:Z
-
     if-eqz v0, :cond_a
-
     iget-object v0, p0, Le/a/d/m1;->f:Lcom/badlogic/gdx/scenes/scene2d/utils/NinePatchDrawable;
-
     invoke-virtual {v0}, Lcom/badlogic/gdx/scenes/scene2d/utils/NinePatchDrawable;->getPatch()Lcom/badlogic/gdx/graphics/g2d/NinePatch;
-
     move-result-object v0
-
     sget-object v1, Lcom/badlogic/gdx/graphics/Color;->GREEN:Lcom/badlogic/gdx/graphics/Color;
-
     invoke-virtual {v0, v1}, Lcom/badlogic/gdx/graphics/g2d/NinePatch;->setColor(Lcom/badlogic/gdx/graphics/Color;)V
-
     goto/16 :goto_2
-
     :cond_a
     iget-object v0, p0, Le/a/d/m1;->f:Lcom/badlogic/gdx/scenes/scene2d/utils/NinePatchDrawable;
-
     invoke-virtual {v0}, Lcom/badlogic/gdx/scenes/scene2d/utils/NinePatchDrawable;->getPatch()Lcom/badlogic/gdx/graphics/g2d/NinePatch;
-
     move-result-object v0
-
     sget-object v1, Le/a/d/m1;->q:Lcom/badlogic/gdx/graphics/Color;
-
     invoke-virtual {v0, v1}, Lcom/badlogic/gdx/graphics/g2d/NinePatch;->setColor(Lcom/badlogic/gdx/graphics/Color;)V
-
     goto/16 :goto_2
+.end method
+
+.method private static calculate_and_cache_max_hp(Lnet/fdgames/GameEntities/Final/Player;)I
+    .locals 4
+    # p0 - объект Player
+
+    # --- 1. ВЫЧИСЛЕНИЕ МАКСИМАЛЬНОГО ХП ---
+    # Забираем недостающее ХП (missingHP) из stats
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->stats:Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;
+    iget v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->missingHP:I # v0 = missingHP
+
+    # Забираем текущее ХП через метод q()
+    iget-object v1, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+    invoke-virtual {v1}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->q()I
+    move-result v1 # v1 = Текущее ХП
+
+    # Складываем (Текущее ХП + Недостающее ХП)
+    add-int/2addr v1, v0 # v1 = Максимальное ХП
+    sput v1, Le/a/d/m1;->cache_max_hp:I # Записываем в кэш ХП
+
+    # --- 2. ВЫЧИСЛЕНИЕ МАКСИМАЛЬНОЙ МАНЫ ---
+    # Забираем недостающую ману (missingMana) из stats
+    iget-object v2, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+    iget-object v2, v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->stats:Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;
+    iget v2, v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->missingMana:I # v2 = missingMana
+
+    # Забираем текущую ману через метод r()
+    iget-object v3, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+    invoke-virtual {v3}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->r()I
+    move-result v3 # v3 = Текущая мана
+
+    # Складываем (Текущая мана + Недостающая мана)
+    add-int/2addr v3, v2 # v3 = Максимальная мана
+    sput v3, Le/a/d/m1;->cache_max_mana:I # Записываем в кэш маны
+
+    # Возвращаем максимум ХП наружу, чтобы кнопка работала без изменений
+    return v1
 .end method

@@ -3092,8 +3092,9 @@
 
     if-ne v0, v1, :cond_10
 
-    const/16 v1, 0x14 #20
-
+    # Уровень 1: Делитель 10 (10% урона от макс ХП)
+    const/16 v1, 0xa
+    invoke-static {p0, v1}, Lnet/fdgames/Rules/SkillActions;->apply_blood_contract(Lnet/fdgames/GameEntities/Character;I)V
     goto :goto_18
 
     :cond_10
@@ -3101,36 +3102,17 @@
 
     if-ne v0, v1, :cond_16
 
-    const/16 v1, 0x28 # 40
-
+    # Уровень 2: Делитель 40 (2.5% урона от макс ХП)
+    const/16 v1, 0x6
+    invoke-static {p0, v1}, Lnet/fdgames/Rules/SkillActions;->apply_blood_contract(Lnet/fdgames/GameEntities/Character;I)V
     goto :goto_18
 
     :cond_16
-    const/16 v1, 0x3c # 60
+    # Уровень 3: Делитель 60 (1.6% урона от макс ХП)
+    const/16 v1, 0x4
+    invoke-static {p0, v1}, Lnet/fdgames/Rules/SkillActions;->apply_blood_contract(Lnet/fdgames/GameEntities/Character;I)V
 
     :goto_18
-    move v2, v1 # присваиваем v2 значение v1
-
-    div-int/lit8 v3, v2, 0x2 # присваиваем v3 значение v2 деленное на 2
-
-    move v6, v2
-
-    iget-object v4, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
-
-    iget-object v4, v4, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->stats:Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;
-
-    iget v5, v4, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->missingHP:I
-    
-    add-int/2addr v5, v2
-
-    iput v5, v4, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->missingHP:I
-
-    iget v5, v4, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->missingMana:I
-    
-    add-int/2addr v5, v6
-
-    invoke-virtual {p0, v6}, Lnet/fdgames/GameEntities/Character;->n(I)V # потерянная мана. с передачей переменной делённой на 2
- 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
     iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
@@ -3138,6 +3120,45 @@
     const-string v1, "blood_contract"
 
     invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->k(Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method private static apply_blood_contract(Lnet/fdgames/GameEntities/Character;I)V
+    .locals 5
+    # p0 - объект Character
+    # p1 - входящий делитель уровня (10 для lvl1, 6 для lvl2, 4 для lvl3)
+
+    # --- 1. РАСЧЕТ УРОНА ПО ЗДОРОВЬЮ ---
+    sget v0, Le/a/d/m1;->cache_max_hp:I
+    if-nez v0, :cond_emergency_hp
+    const/16 v0, 0x8c # Аварийные 140 ХП
+
+:cond_emergency_hp
+    div-int v1, v0, p1 # v1 = Макс ХП / делитель уровня (10, 6 или 4)
+
+    # --- 2. ИСПРАВЛЕННЫЙ РАСЧЕТ МАНЫ ---
+    sget v0, Le/a/d/m1;->cache_max_mana:I
+    if-nez v0, :cond_emergency_mp
+    const/16 v0, 0x64 # Аварийные 100 Маны
+
+:cond_emergency_mp
+    # ИСПРАВЛЕНИЕ: Вместо 0xa (10) делим Макс Ману (v0) на делитель уровня (p1)
+    # Теперь для lvl 2 мана разделится на 6, а для lvl 3 — на 4!
+    div-int v2, v0, p1 # v2 = Динамический реген маны под уровень
+
+    # --- 3. ПРИМЕНЕНИЕ К ХП ---
+    iget-object v3, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+    iget-object v3, v3, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->stats:Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;
+    
+    iget v4, v3, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->missingHP:I
+    add-int/2addr v4, v1
+    iput v4, v3, Lnet/fdgames/GameEntities/CharacterSheet/CharacterStats;->missingHP:I
+
+    # --- 4. ПРИМЕНЕНИЕ К МАНЕ ---
+    neg-int v2, v2 # Инвертируем реген в отрицательное число для метода n(I)
+    neg-int v2, v2 # Инвертируем реген в отрицательное число для метода n(I)
+    invoke-virtual {p0, v2}, Lnet/fdgames/GameEntities/Character;->n(I)V
 
     return-void
 .end method
