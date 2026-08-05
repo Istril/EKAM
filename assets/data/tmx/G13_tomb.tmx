@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="72" height="64" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="112">
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="72" height="64" tilewidth="64" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="115">
  <properties>
   <property name="maxlight" value="70"/>
   <property name="music" value="dark_chamber"/>
@@ -743,6 +743,21 @@
     <property name="spawn" value="skeleton_archer_G13"/>
     <property name="unique_tag" value="skeleton_archer1_G13"/>
     <property name="wander" value="1"/>
+   </properties>
+  </object>
+  <object id="112" name="flames" type="mapeffect" gid="5" x="704" y="928" width="64" height="64">
+   <properties>
+    <property name="id" value="blizzard"/>
+   </properties>
+  </object>
+  <object id="113" name="flames" type="mapeffect" gid="5" x="736" y="1120" width="64" height="64">
+   <properties>
+    <property name="id" value="blizzard"/>
+   </properties>
+  </object>
+  <object id="114" name="flames" type="mapeffect" gid="5" x="544" y="1184" width="64" height="64">
+   <properties>
+    <property name="id" value="blizzard"/>
    </properties>
   </object>
  </objectgroup>

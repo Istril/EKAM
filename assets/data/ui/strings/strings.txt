@@ -405,3 +405,4 @@ DL_STORY	Story	Historia	Сказка	História	Geschichte	Fabuła	Příběh	Hika
 LOWER_DIFFICULTY	Lower Difficulty	Bajar Dificultad	Уменьшить сложность	Reduza a dificuldade	Schwierigkeit reduzieren	Zmniejsz trudność	Snižte obtížnost	Zorluğu azaltın	Ridurre difficoltà	
 LEARNED_BEAST_MASTERY	You learned the Beast Mastery Skill!	¡Has aprendido la Habilidad Maestría de Bestias!	Вы изучили навык ""Повелитель Зверей""!	Você aprendeu a habilidade Mestre das Feras!	Du hast die Fertigkeit Biestmeister erlernt!	Nauczyłeś się umiejętności Mistrz Zwierząt	Naučili jste se dovednost mistrovství zvířat!		Hai imparato l'abilità Maestria degli Animali!	
 POOL	Pool	Estanque	Пруд	Poço	Becken	Sadzawka	Rybník		Stagno	
+TEST	Pool	Estanque	TEST_TEST	Poço	Becken	Sadzawka	Rybník		Stagno	

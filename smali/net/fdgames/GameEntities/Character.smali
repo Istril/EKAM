@@ -10568,18 +10568,18 @@
 
     goto :goto_15
 
-    :cond_33
+    :cond_33 # massive crit
     move-object/from16 v0, p0
 
     iget-object v3, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
-    invoke-virtual {v3}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->q()I
+    invoke-virtual {v3}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->q()I # получение текущего хп
 
-    move-result v3
+    move-result v3 # помещаем результат в v3
 
-    const/16 v4, 0x64
+    const/16 v4, 0x64 # присваиваем v4 значение 100
 
-    if-gt v3, v4, :cond_f
+    if-gt v3, v4, :cond_f # если v3 больше 100 то переходим на метку f
 
     iget-object v3, v2, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 

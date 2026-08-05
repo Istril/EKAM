@@ -441,13 +441,13 @@
 
     move-result v0
 
-    if-lt v0, v7, :cond_10
+    if-lt v0, v7, :cond_10 # если v0 меньше 3, метка 10
 
     new-instance v0, Lnet/fdgames/GameEntities/Helpers/DamageEffect;
 
     sget-object v2, Lnet/fdgames/GameEntities/Helpers/DamageEffect$EffectType;->b:Lnet/fdgames/GameEntities/Helpers/DamageEffect$EffectType;
 
-    const/16 v3, 0xa
+    const/16 v3, 0xa # 3 лвл навыка 10 % шанс оглушить
 
     invoke-direct {v0, v2, v5, v3}, Lnet/fdgames/GameEntities/Helpers/DamageEffect;-><init>(Lnet/fdgames/GameEntities/Helpers/DamageEffect$EffectType;II)V
 
@@ -456,7 +456,7 @@
     goto/16 :goto_0
 
     :cond_10
-    if-lt v0, v5, :cond_3
+    if-lt v0, v5, :cond_3 # меньше 1 то мектка 3
 
     new-instance v0, Lnet/fdgames/GameEntities/Helpers/DamageEffect;
 
@@ -642,7 +642,7 @@
 
     if-eqz v0, :cond_1a
 
-    if-eq v0, v5, :cond_17
+    if-eq v0, v5, :cond_17 # если v0 = v5 (1) то переходим на метку с two handed мастери
 
     if-eq v0, v8, :cond_9
 

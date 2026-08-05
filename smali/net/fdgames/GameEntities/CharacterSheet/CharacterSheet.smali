@@ -2258,7 +2258,7 @@
 
     if-eqz v0, :cond_a
 
-    sget-object v0, Lnet/fdgames/GameEntities/Helpers/Damage$DamageType;->c:Lnet/fdgames/GameEntities/Helpers/Damage$DamageType;
+    sget-object v0, Lnet/fdgames/GameEntities/Helpers/Damage$DamageType;->c:Lnet/fdgames/GameEntities/Helpers/Damage$DamageType; # тип урона
 
     iget-object v1, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
 
@@ -4213,7 +4213,7 @@
     return-void
 .end method
 
-.method public q()I # метод получения максимального хп
+.method public q()I # метод получения текущего хп
     .locals 2
 
     invoke-virtual {p0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->B()I
