@@ -2562,6 +2562,41 @@
     :cond_3f
     iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
 
+    const-string v1, "power_shot"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_spiritualism
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "power_shot"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->e(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_spiritualism
+
+    invoke-static {}, Lnet/fdgames/GameLevel/GameLevel;->h()Lnet/fdgames/GameEntities/Final/Player;
+
+    move-result-object v0
+
+    const-string v1, "power_shot"
+
+    invoke-virtual {v0, v1, v13}, Lnet/fdgames/GameEntities/Character;->a(Ljava/lang/String;F)Z
+
+    :cond_spiritualism
+    iget-object v0, p0, Le/a/d/m1;->b:Ljava/lang/String;
+
     const-string v1, "spiritualism"
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z

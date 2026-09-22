@@ -72,7 +72,7 @@
     :pswitch_0
     return-void
 
-    :pswitch_1
+    :pswitch_1 # spirit_weapon
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -105,7 +105,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_2
+    :pswitch_2 # death_weapon
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -138,7 +138,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_3
+    :pswitch_3 # shock_weapon
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -171,7 +171,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_4
+    :pswitch_4 # cold_weapon
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
@@ -204,7 +204,7 @@
 
     goto/16 :goto_0
 
-    :pswitch_5
+    :pswitch_5 # fire_weapon
     const-string v0, ","
 
     invoke-virtual {v3, v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;

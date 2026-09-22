@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.6" orientation="isometric" renderorder="right-down" width="50" height="50" tilewidth="64" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="73">
+ <properties>
+  <property name="maxlight" value="40"/>
+  <property name="music" value="nerves"/>
+  <property name="name" value="Ydaya tomb"/>
+  <property name="name_ES" value="Tumba de Ydaya"/>
+ </properties>
+ <tileset firstgid="1" source="dungeon.tsx"/>
+ <tileset firstgid="241" name="dungeon stairs" tilewidth="128" tileheight="128" tilecount="4" columns="4">
+  <image source="dungeon_stairs.png" width="512" height="128"/>
+  <tile id="0">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="obstacle" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="245" source="spawns.tsx"/>
+ <tileset firstgid="253" source="cave.tsx"/>
+ <tileset firstgid="493" source="grounds_indoor.tsx"/>
+ <tileset firstgid="653" source="natural_grounds_2.tsx"/>
+ <tileset firstgid="845" source="cave_snow.tsx"/>
+ <layer id="1" name="water" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAADg3wAnEAAB
+  </data>
+ </layer>
+ <layer id="2" name="ground" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztl1EKwyAQRIP3V7OeuIU69GXbfhZtmQcBTROY2dE1PQ5jjDHGmP+gluOI+9XKYzzmWPNfoN91nuXqpc/5Oe9pvDNtauwphzH1y1/gmZ1QDiPVXF40b7g38MwOSJM8KJM6ax74XX60xnp51mA1FZprqj3XUJTr/mnJd1/sJVJtpWvAW6SM9NzAtToX+aCXgXrXcs2JuWit0ccqL9J8Ju3sVfIWSa+e11jvrUB1Vl211qO89oCeNEfyqbxWMMrnfS39PBuZB/V3vLeCCh2qsy7WWj5yDsxn9V5vqDHrzL5Uy3WdSX9L41V50Atr2qGNvZb9jH5Vgx3Od2mLpPd8U3ee/+zPu8DzXdpzr6JX7pfdqEknz4aODJjFrvAcYT4tzXfMIfPuG15r6Bf+TxGe9/ym2nktfUJ9l3vDGGOMMcYYY4z5BjdR6bkp
+  </data>
+ </layer>
+ <layer id="3" name="ground2" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAADg3wAnEAAB
+  </data>
+ </layer>
+ <layer id="4" name="objects" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztldsKgkAQhhd87o7QgSAp67aLCLqsXqQIkZ6nGXBIxNRcYWbj/2BQxGX+j1lX5wAAAAAA/oNZ5NyUah19nsV0P6RaRd/XWYIdtjVZ2edCNTfuc2iZL8lnZs3nSnnODbOoIjbkcqIcN48siREX2UtPjywW5jLp2P9VWqc9l0GPvTVdZB6ZZ/80Xz9S8uhzHoyWx5H6Plr2Tlu8p+WxpL6bHntreTBll7tHFk0Phl32HTOI946uCwP/RJ89ZsVBaHKR87l4NlhzEH7ZY1YdBJmLnLVV3751B6FuLqE4CFUuoTkI7DIuVIgOAAAAAAAAAADC4A0ruDWa
+  </data>
+ </layer>
+ <layer id="5" name="roofs" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwQENAAAAwqD3T20ON6AAAAAAAAAAAADg3wAnEAAB
+  </data>
+ </layer>
+ <objectgroup id="6" name="data">
+  <object id="65" type="entry" gid="245" x="672" y="448" width="64" height="64">
+   <properties>
+    <property name="entry_id" value="1"/>
+   </properties>
+  </object>
+  <object id="66" name="stairs down" type="transition" x="576" y="352" width="127.333" height="25.75">
+   <properties>
+    <property name="area_id" value="H13"/>
+    <property name="entry_id" value="5"/>
+   </properties>
+  </object>
+  <object id="67" name="Yeti" type="spawn" gid="247" x="672" y="672" width="64" height="64">
+   <properties>
+    <property name="spawn" value="yeti_ancient"/>
+    <property name="unique_tag" value="H13_yeti"/>
+    <property name="wander" value="0"/>
+   </properties>
+  </object>
+  <object id="68" name="Yeti" type="spawn" gid="247" x="512" y="640" width="64" height="64">
+   <properties>
+    <property name="spawn" value="yeti"/>
+    <property name="wander" value="4"/>
+   </properties>
+  </object>
+  <object id="69" name="Yeti" type="spawn" gid="247" x="864" y="512" width="64" height="64">
+   <properties>
+    <property name="spawn" value="yeti"/>
+    <property name="wander" value="4"/>
+   </properties>
+  </object>
+  <object id="70" name="flames" type="mapeffect" gid="249" x="544" y="544" width="64" height="64">
+   <properties>
+    <property name="id" value="blizzard"/>
+   </properties>
+  </object>
+  <object id="71" name="flames" type="mapeffect" gid="249" x="896" y="704" width="64" height="64">
+   <properties>
+    <property name="id" value="blizzard"/>
+   </properties>
+  </object>
+  <object id="72" name="flames" type="mapeffect" gid="249" x="672" y="864" width="64" height="64">
+   <properties>
+    <property name="id" value="blizzard"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

@@ -3783,7 +3783,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_pws
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -3850,6 +3850,87 @@
     goto/16 :goto_7
 
     :cond_7f
+    move v1, v0
+
+    :cond_pws
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->spell_id:Ljava/lang/String;
+
+    sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v2, "power_shot"
+
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v2, "power_shot"
+
+    invoke-virtual {v0, v2}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->c(Ljava/lang/String;)I
+
+    move-result v0
+
+    iget-object v2, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    invoke-virtual {v2}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->z()I
+
+    move-result v2
+
+    if-ne v0, v5, :cond_idk1
+
+    const/16 v0, 0x32 # урон 1 лвл
+
+    invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/Character;->j(I)V
+
+    :cond_idk3
+    :goto_idk4
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->skillSet:Lnet/fdgames/GameEntities/Helpers/SkillSet;
+
+    const-string v1, "power_shot"
+
+    invoke-virtual {v0, v1}, Lnet/fdgames/GameEntities/Helpers/SkillSet;->k(Ljava/lang/String;)V
+
+    goto/16 :goto_0
+
+    :cond_idk1
+    if-ne v0, v1, :cond_idk2
+
+    add-int/lit8 v0, v2, 0x4b # урон второй лвл
+
+    invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/Character;->j(I)V
+
+    goto :goto_idk4
+
+    :cond_idk2
+    if-ne v0, v4, :cond_idk3
+
+    mul-int/lit8 v0, v2, 0x2
+
+    add-int/lit8 v0, v0, 0x64 # урон третий лвл
+
+    invoke-virtual {p0, v0}, Lnet/fdgames/GameEntities/Character;->j(I)V
+
+    goto :goto_idk4
+
+    move v1, v2
+
+    goto/16 :goto_3
+
+    move v1, v2
+
+    goto/16 :goto_7
+
     move v1, v0
 
     goto/16 :goto_c
@@ -5497,7 +5578,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_pwshot
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
 
@@ -5512,6 +5593,35 @@
     const/4 v1, 0x0
 
     iput v1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->disintegrateBonus:I
+
+    goto/16 :goto_0
+
+    :cond_pwshot
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->powerShot:Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    iput-object v9, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->powerShot:Ljava/lang/Boolean;
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    const/4 v1, 0x0
+
+    iput v1, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->powerShotBonus:I
 
     goto/16 :goto_0
 
@@ -9878,19 +9988,26 @@
     const/4 v5, 0x1
 
     :goto_12
+    # --- ВАШ ОРИГИНАЛЬНЫЙ КОД СБОРКИ ФЛАГОВ ---
     invoke-static {v6}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     move-result-object v7
 
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
     move-result-object v8
 
     move-object/from16 v5, p1
-
     move v6, v15
 
-    invoke-virtual/range {v2 .. v8}, Lnet/fdgames/GameWorld/GameLog;->a(Ljava/lang/String;Ljava/lang/String;Lnet/fdgames/GameEntities/Helpers/Damage;ILjava/lang/Boolean;Ljava/lang/Boolean;)V
+    # --- НАША ЕДИНСТВЕННАЯ СТРОКА ВЫЗОВА ---
+    # Нам нужно передать: v0(Character), v2(GameLog), v3(String 1), v4(String 2), v5(Damage), v6(int), v7(Boolean 1), v8(Boolean 2)
+    # Поскольку регистры v2..v8 уже идут строго по порядку в вашем методе, 
+    # мы просто скопируем v0 (Character) в v1, чтобы получить непрерывный ряд v1..v8 для /range.
+    # Регистр v1 в этой точке вашего метода уже отработал и полностью свободен.
+    move-object/from16 v1, v0
+
+    # Вызываем наш новый изолированный метод. Передаем диапазон v1..v8 (8 регистров подряд).
+    # Все они гарантированно меньше v15, компилятор не выдаст ошибку!
+    invoke-static/range {v1 .. v8}, Lnet/fdgames/GameEntities/Character;->logGameEventWithHP(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameWorld/GameLog;Ljava/lang/String;Ljava/lang/String;Lnet/fdgames/GameEntities/Helpers/Damage;ILjava/lang/Boolean;Ljava/lang/Boolean;)V
 
     :cond_19
     if-lez p2, :cond_1a
@@ -16287,4 +16404,61 @@
     const/4 v0, 0x1
 
     goto :goto_0
+.end method
+
+.method private static logGameEventWithHP(Lnet/fdgames/GameEntities/Character;Lnet/fdgames/GameWorld/GameLog;Ljava/lang/String;Ljava/lang/String;Lnet/fdgames/GameEntities/Helpers/Damage;ILjava/lang/Boolean;Ljava/lang/Boolean;)V
+    .registers 15
+    # Директива .registers 15 жестко фиксирует регистры от v0 до v14.
+    # Входящие параметры распределяются строго так:
+    # v0..v6   - Локальные регистры (чистые и пустые)
+    # p0 (v7)  - Character
+    # p1 (v8)  - GameLog
+    # p2 (v9)  - String 1
+    # p3 (v10) - String 2
+    # p4 (v11) - Damage
+    # p5 (v12) - int (урон)
+    # p6 (v13) - Boolean 1
+    # p7 (v14) - Boolean 2
+
+    # 1. Вычисляем HP персонажа (используем p0/v7)
+    iget-object v0, v7, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+    
+    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->B()I
+    move-result v1               # v1 = maxHP
+    
+    invoke-virtual {v0}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->D()I
+    move-result v2               # v2 = missingHP
+    
+    sub-int v0, v1, v2          # v0 = currentHP
+
+    # 2. Переносим входящие параметры в локальные регистры v0..v6
+    # Копируем ИЗ v8..v14 В v0..v6. Делаем это последовательно:
+    move-object v3, v8           # Временно сохраняем GameLog (v8) в v3
+    
+    # Теперь копируем все остальные
+    move-object v1, v9           # v1 = String 1
+    move-object v2, v10          # v2 = String 2
+    # v3 уже хранит GameLog, перенесем его на законное нулевое место:
+    move-object v0, v3           # v0 = GameLog
+    
+    move-object v3, v11          # v3 = Damage
+    move v4, v12                 # v4 = int
+    move-object v5, v13          # v5 = Boolean 1
+    move-object v6, v14          # v6 = Boolean 2
+
+    # 3. Пересчитываем HP заново прямо в финальные регистры v7 и v8, 
+    # так как старые v0 и v1 мы только что использовали под GameLog и строки.
+    # Это избавит нас от лишних операций move.
+    iget-object v7, v7, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+    invoke-virtual {v7}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->B()I
+    move-result v8               # v8 = maxHP
+    invoke-virtual {v7}, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->D()I
+    move-result v7               # v7 = missingHP
+    sub-int v7, v8, v7           # v7 = currentHP
+
+    # Финальный вызов! Диапазон регистров от v0 до v8 (строго 9 регистров подряд)
+    # v0(GameLog), v1(Str1), v2(Str2), v3(Damage), v4(int), v5(Bool1), v6(Bool2), v7(currentHP), v8(maxHP)
+    invoke-virtual/range {v0 .. v8}, Lnet/fdgames/GameWorld/GameLog;->a(Ljava/lang/String;Ljava/lang/String;Lnet/fdgames/GameEntities/Helpers/Damage;ILjava/lang/Boolean;Ljava/lang/Boolean;II)V
+
+    return-void
 .end method

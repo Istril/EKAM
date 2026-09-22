@@ -2007,7 +2007,7 @@
     iput v1, v0, Lnet/fdgames/GameEntities/Helpers/Damage;->hp:I
 
     :cond_0
-    if-eqz p4, :cond_1
+    if-eqz p4, :cond_PW
 
     iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
 
@@ -2017,7 +2017,7 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    if-eqz v0, :cond_PW
 
     iget-object v0, v4, Lnet/fdgames/GameEntities/Helpers/DamageData;->damages:Ljava/util/ArrayList;
 
@@ -2054,6 +2054,59 @@
     iget-object v5, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
 
     iget v5, v5, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->disintegrateBonus:I
+
+    add-int/2addr v1, v5
+
+    iput v1, v0, Lnet/fdgames/GameEntities/Helpers/Damage;->hp:I
+
+    :cond_PW
+    if-eqz p4, :cond_1
+
+    iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->powerShot:Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, v4, Lnet/fdgames/GameEntities/Helpers/DamageData;->damages:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lnet/fdgames/GameEntities/Helpers/Damage;
+
+    iget-object v0, v0, Lnet/fdgames/GameEntities/Helpers/Damage;->type:Lnet/fdgames/GameEntities/Helpers/Damage$DamageType;
+
+    sget-object v1, Lnet/fdgames/GameEntities/Helpers/Damage$DamageType;->b:Lnet/fdgames/GameEntities/Helpers/Damage$DamageType;
+
+    if-ne v0, v1, :cond_PWB
+
+    iget-object v0, v4, Lnet/fdgames/GameEntities/Helpers/DamageData;->damages:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lnet/fdgames/GameEntities/Helpers/Damage;
+
+    iget-object v1, v4, Lnet/fdgames/GameEntities/Helpers/DamageData;->damages:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lnet/fdgames/GameEntities/Helpers/Damage;
+
+    iget v1, v1, Lnet/fdgames/GameEntities/Helpers/Damage;->hp:I
+
+    iget-object v5, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    iget v5, v5, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->powerShotBonus:I
 
     add-int/2addr v1, v5
 
@@ -2385,6 +2438,15 @@
     iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
 
     iget v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->disintegrateBonus:I
+
+    invoke-virtual {v4, v1, v0, v3}, Lnet/fdgames/GameEntities/Helpers/DamageData;->a(Lnet/fdgames/GameEntities/Helpers/Damage$DamageType;IZ)V
+
+    goto/16 :goto_2
+
+    :cond_PWB
+    iget-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    iget v0, v0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->powerShotBonus:I
 
     invoke-virtual {v4, v1, v0, v3}, Lnet/fdgames/GameEntities/Helpers/DamageData;->a(Lnet/fdgames/GameEntities/Helpers/Damage$DamageType;IZ)V
 

@@ -22,6 +22,10 @@
 
 .field public disintegrateBonus:I
 
+.field public powerShot:Ljava/lang/Boolean;
+
+.field public powerShotBonus:I
+
 .field public duel:Ljava/lang/Boolean;
 
 .field public duelbonus:I
@@ -166,6 +170,10 @@
     iput-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->disintegrate:Ljava/lang/Boolean;
 
     iput v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->disintegrateBonus:I
+
+    iput-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->powerShot:Ljava/lang/Boolean;
+
+    iput v2, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->powerShotBonus:I
 
     iput-object v0, p0, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->might:Ljava/lang/Boolean;
 

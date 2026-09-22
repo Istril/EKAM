@@ -85,3 +85,7 @@ blood_contract	A	N	C,M	N	Text
 					Paralize	0	0	0				
 					Paralize	0	0	0				
 					Paralize	0	0	0				
+power_shot	A	N	W,R	N	Text								
+					Paralize	0	0	0				
+					Paralize	0	0	0				
+					Paralize	0	0	0				

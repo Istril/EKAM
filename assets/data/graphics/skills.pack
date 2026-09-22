@@ -701,7 +701,7 @@ blood_contract
   orig: 64, 64
   offset: 0, 0
   index: -1
-mage_armor
+power_shot
   rotate: false
   xy: 595, 265
   size: 64, 64

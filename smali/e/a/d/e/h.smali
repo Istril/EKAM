@@ -3662,6 +3662,20 @@
 
     iput v1, v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->disintegrateBonus:I
 
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v4
+
+    iput-object v4, v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->powerShot:Ljava/lang/Boolean;
+
+    iget-object v2, p0, Le/a/d/e/h;->p:Lnet/fdgames/GameEntities/Character;
+
+    iget-object v2, v2, Lnet/fdgames/GameEntities/Character;->sheet:Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;
+
+    iget-object v2, v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterSheet;->effects:Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;
+
+    iput v1, v2, Lnet/fdgames/GameEntities/CharacterSheet/CharacterEffects;->powerShotBonus:I
+
     :goto_0
     iget-object v2, p0, Le/a/d/e/h;->p:Lnet/fdgames/GameEntities/Character;
 

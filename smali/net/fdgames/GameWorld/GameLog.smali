@@ -395,8 +395,18 @@
     goto :goto_0
 .end method
 
-.method public a(Ljava/lang/String;Ljava/lang/String;Lnet/fdgames/GameEntities/Helpers/Damage;ILjava/lang/Boolean;Ljava/lang/Boolean;)V
+.method public a(Ljava/lang/String;Ljava/lang/String;Lnet/fdgames/GameEntities/Helpers/Damage;ILjava/lang/Boolean;Ljava/lang/Boolean;II)V
     .locals 4
+    # Панель регистров параметров (для нестатического метода):
+    # p0 = this (GameLog)
+    # p1 = String
+    # p2 = String
+    # p3 = Damage
+    # p4 = int
+    # p5 = Boolean
+    # p6 = Boolean
+    # p7 = int (currentHP)
+    # p8 = int (maxHP)
 
     invoke-virtual {p5}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -502,6 +512,17 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    # --- НАЧАЛО ВСТАВКИ ОТРИСОВКИ HP ---
+    const-string v1, " ("
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v1, "/"
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p8}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    const-string v1, ")"
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    # --- КОНЕЦ ВСТАВКИ ОТРИСОВКИ HP ---
+
     invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -533,13 +554,14 @@
 
     move-result-object v0
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_2
     const-string v0, ""
 
-    goto :goto_0
+    goto/16 :goto_0
 .end method
+
 
 .method public b()Ljava/util/ArrayList;
     .locals 1
